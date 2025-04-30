@@ -1,0 +1,26 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/CellRelation.json",
+  "title" : "CellRelation",
+  "type" : ["object", "null"],
+  "description" : "CellRelation: Details the index of the cells which is behind and infront of each Face.",
+  "properties" : {
+    "FromCell" : {
+      "type" : "integer",
+      "description" : "Index of the cell the Face is connected to which its normal is pointing away from."
+    },
+    "ToCell" : {
+      "type" : "integer",
+      "description" : "Index of the cell the Face is connected to which its normal is pointing towards."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Geometry.CellRelation"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["FromCell", "ToCell"]
+}

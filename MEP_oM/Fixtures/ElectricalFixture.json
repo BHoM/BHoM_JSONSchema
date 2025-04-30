@@ -1,0 +1,59 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Fixtures/ElectricalFixture.json",
+  "title" : "ElectricalFixture",
+  "type" : ["object", "null"],
+  "description" : "ElectricalFixture: A device used to convey electricity e.g. duplex sockets/receptacles, disconnect/isolator switches (for electrified mechanical equipment), floors boxes.",
+  "properties" : {
+    "Location" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/Node.json"
+    },
+    "OrientationAngle" : {
+      "type" : "number",
+      "description" : "Controls the local plan orientation of the object. Property has a quantity of type Angle meassured in [rad]."
+    },
+    "ElectricalFixtureType" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Enums/ElectricalFixtureType.json"
+    },
+    "GroundFaultCircuitInterrupter" : {
+      "type" : "boolean",
+      "description" : "Ground Fault Circuit Interrupter (GFCI) is a boolean value (true/false) that denotes whether a device is a fast acting circuit breaker designed to shut off power in the event of a ground fault."
+    },
+    "WeatherProof" : {
+      "type" : "boolean",
+      "description" : "Weather Proof is a boolean value (true/false) that denotes whether a device has water/weather tight casting."
+    },
+    "Power" : {
+      "type" : "number",
+      "description" : "The power of the electrical fixture described in kilowatts."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.MEP.Fixtures.ElectricalFixture"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Location", "OrientationAngle", "ElectricalFixtureType", "GroundFaultCircuitInterrupter", "WeatherProof", "Power"]
+}

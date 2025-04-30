@@ -1,0 +1,41 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Fragments/SpaceAnalyticalFragment.json",
+  "title" : "SpaceAnalyticalFragment",
+  "type" : ["object", "null"],
+  "description" : "SpaceAnalyticalFragment: Fragment containing space analytical properties (e.g. domestic hot water supply, daylight factor, heating and cooling sizing method)",
+  "properties" : {
+    "InternalDomesticHotWater" : {
+      "type" : "number",
+      "description" : "The amount of internal domestic hot water supply for the space"
+    },
+    "DaylightFactor" : {
+      "type" : "number"
+    },
+    "FacadeLength" : {
+      "type" : "number",
+      "description" : "The length of the space enclsoure that is adjacent to the outdoors"
+    },
+    "FixedConvectionCoefficient" : {
+      "type" : "number"
+    },
+    "SizeCoolingMethod" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Fragments/SizingMethod.json"
+    },
+    "SizeHeatingMethod" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Fragments/SizingMethod.json"
+    },
+    "RadiantProportion" : {
+      "type" : "number"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.Fragments.SpaceAnalyticalFragment"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["InternalDomesticHotWater", "DaylightFactor", "FacadeLength", "FixedConvectionCoefficient", "SizeCoolingMethod", "SizeHeatingMethod", "RadiantProportion"]
+}

@@ -1,0 +1,47 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/RenderCurve.json",
+  "title" : "RenderCurve",
+  "type" : ["object", "null"],
+  "description" : "RenderCurve: Render a curve with specified colour and thickness.",
+  "properties" : {
+    "Curve" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ICurve.json"
+    },
+    "Thickness" : {
+      "type" : "integer",
+      "description" : "The thickness of the curve. Should be a value greater or equal to 1."
+    },
+    "Colour" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Drawing.Color"
+        },
+        "A" : {
+          "type" : "integer"
+        },
+        "R" : {
+          "type" : "integer"
+        },
+        "G" : {
+          "type" : "integer"
+        },
+        "B" : {
+          "type" : "integer"
+        }
+      },
+      "required" : ["A", "R", "G", "B"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Graphics.RenderCurve"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Curve", "Thickness", "Colour"]
+}

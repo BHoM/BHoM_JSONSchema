@@ -1,0 +1,49 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Lighting_oM/Elements/Luminaire.json",
+  "title" : "Luminaire",
+  "type" : ["object", "null"],
+  "properties" : {
+    "Position" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
+    },
+    "Type" : {
+      "type" : ["string", "null"],
+      "description" : "The type of the Luminaire (e.g. recessed cove, task lighting, etc)"
+    },
+    "Orientation" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Basis.json"
+    },
+    "LuminaireType" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Lighting_oM/Elements/LuminaireType.json"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Lighting.Elements.Luminaire"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Position", "Type", "Orientation", "LuminaireType"]
+}

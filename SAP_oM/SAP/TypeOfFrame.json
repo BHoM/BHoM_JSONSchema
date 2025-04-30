@@ -1,0 +1,32 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/TypeOfFrame.json",
+  "anyOf" : [{
+      "type" : ["string", "null"],
+      "enum" : ["Wood", "PVC", "MetalNoBreak", "Metal4mmBreak", "Metal8mmBreak", "Metal12mmBreak", "Metal20mmBreak", "Metal32mmBreak", "Unknown"]
+    }, {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : ["string", "null"],
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.Environment.SAP.TypeOfFrame"
+            }
+          }
+        },
+        "Value" : {
+          "type" : ["string", "null"],
+          "enum" : ["Wood", "PVC", "MetalNoBreak", "Metal4mmBreak", "Metal8mmBreak", "Metal12mmBreak", "Metal20mmBreak", "Metal32mmBreak", "Unknown"]
+        }
+      }
+    }]
+}

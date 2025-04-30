@@ -1,0 +1,46 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Elements/ModelInstance.json",
+  "title" : "ModelInstance",
+  "type" : ["object", "null"],
+  "description" : "ModelInstance: A generic wrapper BHoM type corresponding to any view-independent Revit element (model elements, e.g. duct or beam). On Push it can be used to generate or update Revit model elements that do not have a correspondent BHoM type, on Pull all Revit model elements that do not have explicit Convert method for given discipline will be converted to ModelInstance.",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Properties/InstanceProperties.json"
+    },
+    "Location" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/IGeometry.json"
+    },
+    "Orientation" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Basis.json"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.Revit.Elements.ModelInstance"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Properties", "Location", "Orientation"]
+}

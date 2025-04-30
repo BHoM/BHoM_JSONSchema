@@ -1,0 +1,40 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Results/FormulaConditionResult.json",
+  "title" : "FormulaConditionResult",
+  "type" : ["object", "null"],
+  "description" : "FormulaConditionResult: Object representing result of FormulaCondition.",
+  "properties" : {
+    "Passed" : {
+      "type" : ["object", "null"],
+      "description" : "Information whether the object passed or failed the condition. Null means inconclusive result.",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "Components" : {
+      "type" : ["object", "null"],
+      "description" : "Values of components (variables) calculated in the process of obtaining the final result."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Verification.Results.FormulaConditionResult"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Passed", "Components"]
+}

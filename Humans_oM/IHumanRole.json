@@ -1,0 +1,46 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Humans_oM/IHumanRole.json",
+  "required" : ["_t"],
+  "properties" : {
+    "_t" : {
+      "enum" : ["BH.oM.Humans.ViewQuality.Spectator", "BH.oM.Humans.Skeleton", "BH.oM.Humans.Employee"]
+    }
+  },
+  "allOf" : [{
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Humans.ViewQuality.Spectator"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Humans_oM/ViewQuality/Spectator.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Humans.Skeleton"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Humans_oM/Skeleton.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Humans.Employee"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Humans_oM/Employee.json"
+      }
+    }]
+}

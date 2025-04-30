@@ -1,0 +1,34 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/MaterialFragments/IInsulationMaterial.json",
+  "required" : ["_t"],
+  "properties" : {
+    "_t" : {
+      "enum" : ["BH.oM.MEP.System.MaterialFragments.LiningMaterial", "BH.oM.MEP.System.MaterialFragments.InsulationMaterial"]
+    }
+  },
+  "allOf" : [{
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.MEP.System.MaterialFragments.LiningMaterial"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/MaterialFragments/LiningMaterial.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.MEP.System.MaterialFragments.InsulationMaterial"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/MaterialFragments/InsulationMaterial.json"
+      }
+    }]
+}

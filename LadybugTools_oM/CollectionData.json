@@ -1,0 +1,56 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/CollectionData.json",
+  "title" : "CollectionData",
+  "type" : ["object", "null"],
+  "properties" : {
+    "HighestValue" : {
+      "type" : "number",
+      "description" : "The maximum value in the collection."
+    },
+    "LowestValue" : {
+      "type" : "number",
+      "description" : "The minimum value in the collection."
+    },
+    "HighestIndex" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "$date" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "LowestIndex" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "$date" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "MedianValue" : {
+      "type" : "number",
+      "description" : "The median (50 percentile) value in the collection."
+    },
+    "MeanValue" : {
+      "type" : "number",
+      "description" : "The mean value of the collection."
+    },
+    "MonthlyMeans" : {
+      "type" : ["array", "null"],
+      "description" : "The mean values for each month.",
+      "items" : {
+        "type" : "number"
+      }
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.LadybugTools.CollectionData"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["HighestValue", "LowestValue", "HighestIndex", "LowestIndex", "MedianValue", "MeanValue", "MonthlyMeans"]
+}

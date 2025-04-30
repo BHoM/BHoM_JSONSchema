@@ -1,0 +1,46 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/Components/BasicArrowMarker.json",
+  "title" : "BasicArrowMarker",
+  "type" : ["object", "null"],
+  "description" : "BasicArrowMarker: Basic arrow head marker.",
+  "properties" : {
+    "HeadLength" : {
+      "type" : "number"
+    },
+    "BaseWidth" : {
+      "type" : "number"
+    },
+    "Closed" : {
+      "type" : "boolean"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Graphics.Components.BasicArrowMarker"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["HeadLength", "BaseWidth", "Closed"]
+}

@@ -1,0 +1,45 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/DeepLearning_oM/Layers/AvgPooling2d.json",
+  "title" : "AvgPooling2d",
+  "type" : ["object", "null"],
+  "properties" : {
+    "KernelSize" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/DeepLearning_oM/Shape2d.json"
+    },
+    "Stride" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/DeepLearning_oM/Shape2d.json"
+    },
+    "Padding" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/DeepLearning_oM/Shape2d.json"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.DeepLearning.Layers.AvgPooling2d"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["KernelSize", "Stride", "Padding"]
+}

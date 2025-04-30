@@ -1,0 +1,33 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/IntegrationSlice.json",
+  "title" : "IntegrationSlice",
+  "type" : ["object", "null"],
+  "description" : "IntegrationSlice: Describes a discrete finite slice of an area. Used for numerical approximation of an integration.",
+  "properties" : {
+    "Width" : {
+      "type" : "number"
+    },
+    "Length" : {
+      "type" : "number"
+    },
+    "Centre" : {
+      "type" : "number"
+    },
+    "Placement" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : "number"
+      }
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Geometry.IntegrationSlice"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Width", "Length", "Centre", "Placement"]
+}

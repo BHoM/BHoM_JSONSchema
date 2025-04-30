@@ -1,0 +1,38 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/AdministrativeInformation.json",
+  "title" : "AdministrativeInformation",
+  "type" : ["object", "null"],
+  "properties" : {
+    "Overview" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/Overview.json"
+    },
+    "CrossReference" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/CrossReference.json"
+    },
+    "ProjectIdentification" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/ProjectIdentification.json"
+    },
+    "ProjectTeam" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/ProjectTeam.json"
+    },
+    "PartIdentification" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/PartIdentification.json"
+    },
+    "ProductDetails" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/ProductDetails.json"
+    },
+    "ManufacturerDetails" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/ManufacturerDetails.json"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.dKoP.AdministrativeInformation"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Overview", "CrossReference", "ProjectIdentification", "ProjectTeam", "PartIdentification", "ProductDetails", "ManufacturerDetails"]
+}

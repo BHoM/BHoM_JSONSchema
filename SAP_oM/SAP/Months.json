@@ -1,0 +1,32 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/Months.json",
+  "anyOf" : [{
+      "type" : ["string", "null"],
+      "enum" : ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+    }, {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : ["string", "null"],
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.Environment.SAP.Months"
+            }
+          }
+        },
+        "Value" : {
+          "type" : ["string", "null"],
+          "enum" : ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+        }
+      }
+    }]
+}

@@ -1,0 +1,58 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/ISettings.json",
+  "required" : ["_t"],
+  "properties" : {
+    "_t" : {
+      "enum" : ["BH.oM.UI.SearchSettings", "BH.oM.Grasshopper.UISettings", "BH.oM.Data.Library.LibrarySettings", "BH.oM.BHoMAnalytics.ToolkitSettings"]
+    }
+  },
+  "allOf" : [{
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.UI.SearchSettings"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/UI_oM/SearchSettings.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Grasshopper.UISettings"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Grasshopper_oM/UISettings.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Data.Library.LibrarySettings"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Library/LibrarySettings.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.BHoMAnalytics.ToolkitSettings"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoMAnalytics_oM/ToolkitSettings.json"
+      }
+    }]
+}

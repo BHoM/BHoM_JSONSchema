@@ -1,0 +1,120 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/AbioticDepletionFossilResourcesMetric.json",
+  "title" : "AbioticDepletionFossilResourcesMetric",
+  "type" : ["object", "null"],
+  "description" : "AbioticDepletionFossilResourcesMetric: Abiotic Depletion of Fossil Resources, measured in Joules (J), refers to the over-extraction of non-renewable materials which can lead to the exhaustion of natural resources. This environmental indicator forms part of an Environmental Product Declaration and should be evaluated based on the Quantity Type stated on the Environmental Product Declaration.",
+  "properties" : {
+    "A1" : {
+      "type" : "number",
+      "description" : "Abiotic depletion of fossil resources relating to the Raw Material Supply module in the Product stage. Property has a quantity of type EnergyPerQuantity meassured in [J per unit]."
+    },
+    "A2" : {
+      "type" : "number",
+      "description" : "Abiotic depletion of fossil resources relating to the Transport module in the Product stage. Property has a quantity of type EnergyPerQuantity meassured in [J per unit]."
+    },
+    "A3" : {
+      "type" : "number",
+      "description" : "Abiotic depletion of fossil resources relating to the Manufacturing module in the Product stage. Property has a quantity of type EnergyPerQuantity meassured in [J per unit]."
+    },
+    "A1toA3" : {
+      "type" : "number",
+      "description" : "Abiotic depletion of fossil resources relating to the full Product stage. Property has a quantity of type EnergyPerQuantity meassured in [J per unit]."
+    },
+    "A4" : {
+      "type" : "number",
+      "description" : "Abiotic depletion of fossil resources relating to the Transport module in the Construction Process stage. Property has a quantity of type EnergyPerQuantity meassured in [J per unit]."
+    },
+    "A5" : {
+      "type" : "number",
+      "description" : "Abiotic depletion of fossil resources relating to the Construction Installation Process module in the Construction Process stage. Property has a quantity of type EnergyPerQuantity meassured in [J per unit]."
+    },
+    "B1" : {
+      "type" : "number",
+      "description" : "Abiotic depletion of fossil resources relating to the Use module in the Use stage. Property has a quantity of type EnergyPerQuantity meassured in [J per unit]."
+    },
+    "B2" : {
+      "type" : "number",
+      "description" : "Abiotic depletion of fossil resources relating to the Maintenance module in the Use stage. Property has a quantity of type EnergyPerQuantity meassured in [J per unit]."
+    },
+    "B3" : {
+      "type" : "number",
+      "description" : "Abiotic depletion of fossil resources relating to the Repair module in the Use stage. Property has a quantity of type EnergyPerQuantity meassured in [J per unit]."
+    },
+    "B4" : {
+      "type" : "number",
+      "description" : "Abiotic depletion of fossil resources relating to the Replacement module in the Use stage. Property has a quantity of type EnergyPerQuantity meassured in [J per unit]."
+    },
+    "B5" : {
+      "type" : "number",
+      "description" : "Abiotic depletion of fossil resources relating to the Refurbishment module in the Use stage. Property has a quantity of type EnergyPerQuantity meassured in [J per unit]."
+    },
+    "B6" : {
+      "type" : "number",
+      "description" : "Abiotic depletion of fossil resources relating to the Operational Energy Use module in the Use stage. Property has a quantity of type EnergyPerQuantity meassured in [J per unit]."
+    },
+    "B7" : {
+      "type" : "number",
+      "description" : "Abiotic depletion of fossil resources relating to the Operational Water Use module in the Use stage. Property has a quantity of type EnergyPerQuantity meassured in [J per unit]."
+    },
+    "B1toB7" : {
+      "type" : "number",
+      "description" : "Abiotic depletion of fossil resources relating to the full Use Stage. Property has a quantity of type EnergyPerQuantity meassured in [J per unit]."
+    },
+    "C1" : {
+      "type" : "number",
+      "description" : "Abiotic depletion of fossil resources relating to the De-construction Demolition module in the End of Life stage. Property has a quantity of type EnergyPerQuantity meassured in [J per unit]."
+    },
+    "C2" : {
+      "type" : "number",
+      "description" : "Abiotic depletion of fossil resources relating to the Transport module in the End of Life stage. Property has a quantity of type EnergyPerQuantity meassured in [J per unit]."
+    },
+    "C3" : {
+      "type" : "number",
+      "description" : "Abiotic depletion of fossil resources relating to the Waste Processing module in the End of Life stage. Property has a quantity of type EnergyPerQuantity meassured in [J per unit]."
+    },
+    "C4" : {
+      "type" : "number",
+      "description" : "Abiotic depletion of fossil resources relating to the Disposal module in the End of Life stage. Property has a quantity of type EnergyPerQuantity meassured in [J per unit]."
+    },
+    "C1toC4" : {
+      "type" : "number",
+      "description" : "Abiotic depletion of fossil resources relating to the full End of Life stage. Property has a quantity of type EnergyPerQuantity meassured in [J per unit]."
+    },
+    "D" : {
+      "type" : "number",
+      "description" : "Abiotic depletion of fossil resources relating to benefits and loads beyond the system boundary. Property has a quantity of type EnergyPerQuantity meassured in [J per unit]."
+    },
+    "MetricType" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/EnvironmentalMetrics.json"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.AbioticDepletionFossilResourcesMetric"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["A1", "A2", "A3", "A1toA3", "A4", "A5", "B1", "B2", "B3", "B4", "B5", "B6", "B7", "B1toB7", "C1", "C2", "C3", "C4", "C1toC4", "D"]
+}

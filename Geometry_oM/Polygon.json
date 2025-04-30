@@ -1,0 +1,30 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Polygon.json",
+  "title" : "Polygon",
+  "type" : ["object", "null"],
+  "description" : "Polygon: Simple Polygon. Closed, planar and non-self intersecting. Can be irregular, convex and/or concave.",
+  "properties" : {
+    "Vertices" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_v" : {
+          "type" : ["array", "null"],
+          "description" : "An ordered set of three-dimensional points defining the curve shape.\nThe list should not contain any duplicate points - the first point in the list will be treated as both the start and end point.",
+          "items" : {
+            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
+          }
+        }
+      }
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Geometry.Polygon"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Vertices"]
+}

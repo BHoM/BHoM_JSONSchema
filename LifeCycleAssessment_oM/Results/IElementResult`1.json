@@ -1,0 +1,242 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/IElementResult`1.json",
+  "required" : ["_t"],
+  "properties" : {
+    "_t" : {
+      "oneOf" : [{
+          "enum" : ["BH.oM.LifeCycleAssessment.Results.WaterDeprivationElementResult", "BH.oM.LifeCycleAssessment.Results.PhotochemicalOzoneCreationTRACIElementResult", "BH.oM.LifeCycleAssessment.Results.PhotochemicalOzoneCreationElementResult", "BH.oM.LifeCycleAssessment.Results.PhotochemicalOzoneCreationCMLElementResult", "BH.oM.LifeCycleAssessment.Results.OzoneDepletionElementResult", "BH.oM.LifeCycleAssessment.Results.EutrophicationTRACIElementResult", "BH.oM.LifeCycleAssessment.Results.EutrophicationTerrestrialElementResult", "BH.oM.LifeCycleAssessment.Results.EutrophicationCMLElementResult", "BH.oM.LifeCycleAssessment.Results.EutrophicationAquaticMarineElementResult", "BH.oM.LifeCycleAssessment.Results.EutrophicationAquaticFreshwaterElementResult", "BH.oM.LifeCycleAssessment.Results.ClimateChangeTotalNoBiogenicElementResult", "BH.oM.LifeCycleAssessment.Results.ClimateChangeTotalElementResult", "BH.oM.LifeCycleAssessment.Results.ClimateChangeLandUseElementResult", "BH.oM.LifeCycleAssessment.Results.ClimateChangeFossilElementResult", "BH.oM.LifeCycleAssessment.Results.ClimateChangeBiogenicElementResult", "BH.oM.LifeCycleAssessment.Results.AcidificationElementResult", "BH.oM.LifeCycleAssessment.Results.AbioticDepletionMineralsAndMetalsElementResult", "BH.oM.LifeCycleAssessment.Results.AbioticDepletionFossilResourcesElementResult"]
+        }, {
+          "pattern" : "^BH\\.oM\\.LifeCycleAssessment\\.Results\\.ElementResult`1\\[\\[.*\\]\\]$"
+        }]
+    }
+  },
+  "allOf" : [{
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.Results.WaterDeprivationElementResult"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/WaterDeprivationElementResult.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.Results.PhotochemicalOzoneCreationTRACIElementResult"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/PhotochemicalOzoneCreationTRACIElementResult.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.Results.PhotochemicalOzoneCreationElementResult"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/PhotochemicalOzoneCreationElementResult.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.Results.PhotochemicalOzoneCreationCMLElementResult"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/PhotochemicalOzoneCreationCMLElementResult.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.Results.OzoneDepletionElementResult"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/OzoneDepletionElementResult.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.Results.EutrophicationTRACIElementResult"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/EutrophicationTRACIElementResult.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.Results.EutrophicationTerrestrialElementResult"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/EutrophicationTerrestrialElementResult.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.Results.EutrophicationCMLElementResult"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/EutrophicationCMLElementResult.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.Results.EutrophicationAquaticMarineElementResult"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/EutrophicationAquaticMarineElementResult.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.Results.EutrophicationAquaticFreshwaterElementResult"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/EutrophicationAquaticFreshwaterElementResult.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "pattern" : "^BH\\.oM\\.LifeCycleAssessment\\.Results\\.ElementResult`1\\[\\[.*\\]\\]$"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/ElementResult`1.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.Results.ClimateChangeTotalNoBiogenicElementResult"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/ClimateChangeTotalNoBiogenicElementResult.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.Results.ClimateChangeTotalElementResult"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/ClimateChangeTotalElementResult.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.Results.ClimateChangeLandUseElementResult"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/ClimateChangeLandUseElementResult.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.Results.ClimateChangeFossilElementResult"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/ClimateChangeFossilElementResult.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.Results.ClimateChangeBiogenicElementResult"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/ClimateChangeBiogenicElementResult.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.Results.AcidificationElementResult"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/AcidificationElementResult.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.Results.AbioticDepletionMineralsAndMetalsElementResult"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/AbioticDepletionMineralsAndMetalsElementResult.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.Results.AbioticDepletionFossilResourcesElementResult"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/AbioticDepletionFossilResourcesElementResult.json"
+      }
+    }]
+}

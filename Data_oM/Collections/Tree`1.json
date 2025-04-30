@@ -1,0 +1,24 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Collections/Tree`1.json",
+  "title" : "Tree`1",
+  "type" : ["object", "null"],
+  "properties" : {
+    "Children" : {
+      "type" : ["object", "null"]
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Value" : { },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "pattern" : "^BH\\.oM\\.Data\\.Collections\\.Tree`1\\[\\[.*\\]\\]$"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Children", "Name", "Value"]
+}

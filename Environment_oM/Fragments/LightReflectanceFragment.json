@@ -1,0 +1,27 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Fragments/LightReflectanceFragment.json",
+  "title" : "LightReflectanceFragment",
+  "type" : ["object", "null"],
+  "description" : "LightReflectanceFragment: Fragment containing red, green and blue light reflectance property",
+  "properties" : {
+    "RedReflectance" : {
+      "type" : "number"
+    },
+    "GreenReflectance" : {
+      "type" : "number"
+    },
+    "BlueReflectance" : {
+      "type" : "number"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.Fragments.LightReflectanceFragment"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["RedReflectance", "GreenReflectance", "BlueReflectance"]
+}

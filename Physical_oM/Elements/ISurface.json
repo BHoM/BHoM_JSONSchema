@@ -1,0 +1,46 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Elements/ISurface.json",
+  "required" : ["_t"],
+  "properties" : {
+    "_t" : {
+      "enum" : ["BH.oM.Physical.Elements.Wall", "BH.oM.Physical.Elements.Roof", "BH.oM.Physical.Elements.Floor"]
+    }
+  },
+  "allOf" : [{
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Physical.Elements.Wall"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Elements/Wall.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Physical.Elements.Roof"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Elements/Roof.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Physical.Elements.Floor"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Elements/Floor.json"
+      }
+    }]
+}

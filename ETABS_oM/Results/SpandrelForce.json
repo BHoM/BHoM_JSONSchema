@@ -1,0 +1,67 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/Results/SpandrelForce.json",
+  "title" : "SpandrelForce",
+  "type" : ["object", "null"],
+  "description" : "SpandrelForce: Base class for all bar result classes. Stores all identifier information and how to sort the results in a collection.",
+  "properties" : {
+    "Location" : {
+      "type" : ["string", "null"]
+    },
+    "FX" : {
+      "type" : "number",
+      "description" : "Axial force along the local x-axis. Positive for tension, negative for compression. Property has a quantity of type Force meassured in [N]."
+    },
+    "FY" : {
+      "type" : "number",
+      "description" : "Shear force along the local y-axis. Generally minor axis shear force. Property has a quantity of type Force meassured in [N]."
+    },
+    "FZ" : {
+      "type" : "number",
+      "description" : "Shear force along the local z-axis. Generally major axis shear force. Property has a quantity of type Force meassured in [N]."
+    },
+    "MX" : {
+      "type" : "number",
+      "description" : "Torsional moment. Property has a quantity of type Moment meassured in [N.m]."
+    },
+    "MY" : {
+      "type" : "number",
+      "description" : "Bending moment about the local y-axis. Generally major axis bending moment. Property has a quantity of type Moment meassured in [N.m]."
+    },
+    "MZ" : {
+      "type" : "number",
+      "description" : "Bending moment about the local z-axis. Generally minor axis bending moment. Property has a quantity of type Moment meassured in [N.m]."
+    },
+    "ObjectId" : {
+      "type" : ["object", "integer", "string", "number", "null"]
+    },
+    "ResultCase" : {
+      "type" : ["object", "integer", "string", "number", "null"]
+    },
+    "ModeNumber" : {
+      "type" : "integer",
+      "description" : "Positive index, starting at one. Only set for cases with modal outputs such as dynamic cases."
+    },
+    "TimeStep" : {
+      "type" : "number",
+      "description" : "Time step for time history results."
+    },
+    "Position" : {
+      "type" : "number",
+      "description" : "Position on the bar as normalised length, i.e. 0 for start, 1 for end and 0.5 for middle."
+    },
+    "Divisions" : {
+      "type" : "integer",
+      "description" : "How many division points along the bar was used when extracting this result. This generally means that this many results with the same ObjectId, ResultCase and TimeStep was extracted."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.ETABS.Results.SpandrelForce"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Location", "FX", "FY", "FZ", "MX", "MY", "MZ"]
+}

@@ -1,0 +1,57 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Equipment/ElectricalEquipment.json",
+  "title" : "ElectricalEquipment",
+  "type" : ["object", "null"],
+  "properties" : {
+    "Location" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/Node.json"
+    },
+    "OrientationAngle" : {
+      "type" : "number",
+      "description" : "Controls the local plan orientation of the object. Property has a quantity of type Angle meassured in [rad]."
+    },
+    "ElectricalEquipmentType" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Enums/ElectricalEquipmentType.json"
+    },
+    "Parts" : {
+      "type" : ["array", "null"],
+      "description" : "A collection of the parts (Electrical Connector) that make up the Electrical Equipment",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Equipment/Parts/IPart.json"
+      }
+    },
+    "Power" : {
+      "type" : "number",
+      "description" : "The power of the electrical equipment described in kilowatts."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.MEP.Equipment.ElectricalEquipment"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Location", "OrientationAngle", "ElectricalEquipmentType", "Parts", "Power"]
+}

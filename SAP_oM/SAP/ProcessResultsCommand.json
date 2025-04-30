@@ -1,0 +1,47 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/ProcessResultsCommand.json",
+  "title" : "ProcessResultsCommand",
+  "type" : ["object", "null"],
+  "properties" : {
+    "ResultFiles" : {
+      "type" : ["array", "null"],
+      "description" : "Paths to the XML results files that will be calculated.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/FileSettings.json"
+      }
+    },
+    "SaveFileDirectory" : {
+      "type" : ["string", "null"],
+      "description" : "Directory to save the results file(s) to."
+    },
+    "DwellingSchedules" : {
+      "type" : ["array", "null"],
+      "description" : "List of dwelling schedules containing information about each individual dwelling in the report.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/Excel/DwellingSchedule.json"
+      }
+    },
+    "TargetDERTERImprovement" : {
+      "type" : "number",
+      "description" : "Provide the target DER/TER improvement as a % between 0 and 100."
+    },
+    "TargetDPERTPERImprovement" : {
+      "type" : "number",
+      "description" : "Provide the target DPER/TPER improvement as a % between 0 and 100."
+    },
+    "TargetDFEETFEEImprovement" : {
+      "type" : "number",
+      "description" : "Provide the target DFEE/TFEE improvement as a % between 0 and 100."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SAP.ProcessResultsCommand"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["ResultFiles", "SaveFileDirectory", "DwellingSchedules", "TargetDERTERImprovement", "TargetDPERTPERImprovement", "TargetDFEETFEEImprovement"]
+}

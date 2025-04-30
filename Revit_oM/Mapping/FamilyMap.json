@@ -1,0 +1,56 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Mapping/FamilyMap.json",
+  "title" : "FamilyMap",
+  "type" : ["object", "null"],
+  "description" : "FamilyMap: An entity defining the relationship relationship between Revit families and BHoM type, to which these families are meant to be converted on Pull.",
+  "properties" : {
+    "Type" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Type"
+        },
+        "Name" : {
+          "type" : ["string", "null"]
+        }
+      }
+    },
+    "FamilyNames" : {
+      "type" : ["array", "null"],
+      "description" : "Names of the families to be converted to a given BHoM type on Pull.",
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.Revit.Mapping.FamilyMap"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Type", "FamilyNames"]
+}

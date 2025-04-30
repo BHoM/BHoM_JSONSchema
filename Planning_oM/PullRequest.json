@@ -1,0 +1,81 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Planning_oM/PullRequest.json",
+  "title" : "PullRequest",
+  "type" : ["object", "null"],
+  "properties" : {
+    "Creator" : {
+      "type" : ["string", "null"]
+    },
+    "Title" : {
+      "type" : ["string", "null"]
+    },
+    "Body" : {
+      "type" : ["string", "null"]
+    },
+    "HtmlUrl" : {
+      "type" : ["string", "null"]
+    },
+    "RepoName" : {
+      "type" : ["string", "null"]
+    },
+    "BranchName" : {
+      "type" : ["string", "null"]
+    },
+    "Number" : {
+      "type" : "integer"
+    },
+    "CreationDate" : {
+      "type" : ["array", "null"],
+      "prefixItems" : [{
+          "type" : "integer"
+        }, {
+          "type" : "integer"
+        }],
+      "items" : false
+    },
+    "MilestoneName" : {
+      "type" : ["string", "null"]
+    },
+    "Additions" : {
+      "type" : "integer"
+    },
+    "Deletions" : {
+      "type" : "integer"
+    },
+    "Reviewers" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Planning.PullRequest"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Creator", "Title", "Body", "HtmlUrl", "RepoName", "BranchName", "Number", "CreationDate", "MilestoneName", "Additions", "Deletions", "Reviewers"]
+}

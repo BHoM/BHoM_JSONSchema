@@ -1,0 +1,29 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/Sustainability.json",
+  "title" : "Sustainability",
+  "type" : ["object", "null"],
+  "properties" : {
+    "NRM2" : {
+      "type" : ["string", "null"]
+    },
+    "EPDCertification" : {
+      "type" : ["string", "null"]
+    },
+    "EmbodiedCarbon" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/EmbodiedCarbon.json"
+    },
+    "SustainableSourcingCertification" : {
+      "type" : ["string", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.dKoP.Sustainability"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["NRM2", "EPDCertification", "EmbodiedCarbon", "SustainableSourcingCertification"]
+}

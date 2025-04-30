@@ -1,0 +1,50 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/RevitPullConfig.json",
+  "title" : "RevitPullConfig",
+  "type" : ["object", "null"],
+  "description" : "RevitPullConfig: Configuration used for adapter interaction with Revit on Pull action.",
+  "properties" : {
+    "Discipline" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Enums/Discipline.json"
+    },
+    "IncludeClosedWorksets" : {
+      "type" : "boolean",
+      "description" : "Elements from closed worksets will be processed if true."
+    },
+    "IncludeNestedElements" : {
+      "type" : "boolean",
+      "description" : "Elements nested within families will be processed if true."
+    },
+    "GeometryConfig" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/PullGeometryConfig.json"
+    },
+    "RepresentationConfig" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/PullRepresentationConfig.json"
+    },
+    "PullMaterialTakeOff" : {
+      "type" : "boolean",
+      "description" : "Material take offs of each pulled element will be attached to resultant BHoMObjects as fragments if true."
+    },
+    "WrapNonBHoMObjects" : {
+      "type" : "boolean",
+      "description" : "If true, the Push action wraps any non-BHoM type into a BH.oM.Adapter.ObjectWrapper, allowing them to make use of the full Adapter workflow."
+    },
+    "AllowHashForComparing" : {
+      "type" : "boolean",
+      "description" : "If true and if no specific EqualityComparer is found for the type, Diffing hashes are computed and used to compare the objects."
+    },
+    "DiffingConfig" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/DiffingConfig.json"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.Revit.RevitPullConfig"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Discipline", "IncludeClosedWorksets", "IncludeNestedElements", "GeometryConfig", "RepresentationConfig", "PullMaterialTakeOff"]
+}

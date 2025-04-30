@@ -1,0 +1,148 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Inspection_oM/Audit.json",
+  "title" : "Audit",
+  "type" : ["object", "null"],
+  "description" : "Audit: An audit that covers all information associated with a single inspection. This includes issues, areas inspected, project information, construction progress, and distribution information.",
+  "properties" : {
+    "Title" : {
+      "type" : ["string", "null"],
+      "description" : "Title of Audit (typically the project name or name of a specific scope of the project)"
+    },
+    "Filename" : {
+      "type" : ["string", "null"],
+      "description" : "Filename of Audit used to identify it when saved to reports or other formats"
+    },
+    "AuditID" : {
+      "type" : ["string", "null"],
+      "description" : "Unique ID of Audit provided by the Audit's source"
+    },
+    "SiteVisitNumber" : {
+      "type" : "integer",
+      "description" : "Site Visit Number of the Audit (this is a sequential number corresponding to the amount of audits conducted for this project up to this point)"
+    },
+    "Client" : {
+      "type" : ["string", "null"],
+      "description" : "Client for which the Audit is being recorded"
+    },
+    "RevisionNumber" : {
+      "type" : "integer",
+      "description" : "Revision Number of the Audit (typically 0, only used when the information related to a specific audit is revised)"
+    },
+    "InspectionDate" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "$date" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "InspectionDateUtc" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "$date" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "IssueDate" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "$date" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "IssueDateUtc" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "$date" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "Author" : {
+      "type" : ["string", "null"],
+      "description" : "Creator of the Audit"
+    },
+    "ProjectNumber" : {
+      "type" : ["string", "null"],
+      "description" : "Project Number of the Project the Audit is for"
+    },
+    "JobLeader" : {
+      "type" : ["string", "null"],
+      "description" : "Job leader of the Project the Audit is for"
+    },
+    "Distribution" : {
+      "type" : ["array", "null"],
+      "description" : "List of people the Audit is distributed to",
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "Attendance" : {
+      "type" : ["array", "null"],
+      "description" : "List of people in attendance during audit",
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "VisitPurpose" : {
+      "type" : ["string", "null"],
+      "description" : "Reason(s) for visit and audit"
+    },
+    "AreasInspected" : {
+      "type" : ["array", "null"],
+      "description" : "List of areas inspected throughout the audit",
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "InstallationProgressObjects" : {
+      "type" : ["array", "null"],
+      "description" : "Installation progress objects from the audit (Each of these corresponds to the status of a specific area inspected)",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Inspection_oM/InstallationProgress.json"
+      }
+    },
+    "IssueNumbers" : {
+      "type" : ["array", "null"],
+      "description" : "Issues from audit. These are reference IssueNumbers to corresponding issues identified during the audit for various areas that need to be addressed, which can include supporting images of the work as applicable.",
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "Score" : {
+      "type" : ["string", "null"],
+      "description" : "Score as a percentage. This represents the amount of issues / areas that have been resolved, and is an optional value not used by all audits."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Inspection.Audit"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Title", "Filename", "AuditID", "SiteVisitNumber", "Client", "RevisionNumber", "InspectionDate", "InspectionDateUtc", "IssueDate", "IssueDateUtc", "Author", "ProjectNumber", "JobLeader", "Distribution", "Attendance", "VisitPurpose", "AreasInspected", "InstallationProgressObjects", "IssueNumbers", "Score"]
+}

@@ -1,0 +1,42 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/File_oM/DirectoryRequest.json",
+  "title" : "DirectoryRequest",
+  "type" : ["object", "null"],
+  "description" : "DirectoryRequest: Used to query Directories or Files.",
+  "properties" : {
+    "Location" : {
+      "type" : ["string", "null"],
+      "description" : "Directory and/or Files from this Location will be queried."
+    },
+    "SearchSubdirectories" : {
+      "type" : "boolean",
+      "description" : "If enabled, look also in subdirectories."
+    },
+    "MaxNesting" : {
+      "type" : "integer",
+      "description" : "If IncludeSubdirectories is true, this sets the maximum subdirectiory nesting level to look in.\nDefaults to -1 which corresponds to no limit."
+    },
+    "SortOrder" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/File_oM/SortOrder.json"
+    },
+    "MaxDirectories" : {
+      "type" : "integer",
+      "description" : "Sets the maximum number of Directories to retrieve, useful when using IncludeSubdirectories.\nDefaults to -1 which corresponds to no limit."
+    },
+    "Exclusions" : {
+      "type" : ["array", "null"],
+      "description" : "These directories will be excluded from the results.\nYou can also specify string Full Paths.",
+      "items" : { }
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.File.DirectoryRequest"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Location", "SearchSubdirectories", "MaxNesting", "SortOrder", "MaxDirectories", "Exclusions"]
+}

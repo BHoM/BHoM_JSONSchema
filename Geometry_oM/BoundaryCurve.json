@@ -1,0 +1,30 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/BoundaryCurve.json",
+  "title" : "BoundaryCurve",
+  "type" : ["object", "null"],
+  "description" : "BoundaryCurve: Closed, planar, non-self intersecting curve built up of multiple curve segments.",
+  "properties" : {
+    "Curves" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_v" : {
+          "type" : ["array", "null"],
+          "description" : "A collection of curves, of any or mixed type, which together define a closed, planar, non-self intersection boundary loop.",
+          "items" : {
+            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ICurve.json"
+          }
+        }
+      }
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Geometry.BoundaryCurve"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Curves"]
+}

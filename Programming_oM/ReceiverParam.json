@@ -1,0 +1,58 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Programming_oM/ReceiverParam.json",
+  "title" : "ReceiverParam",
+  "type" : ["object", "null"],
+  "description" : "ReceiverParam: Input of a syntax node.",
+  "properties" : {
+    "SourceId" : {
+      "type" : "string",
+      "format" : "uuid",
+      "description" : "Guids of the connected data parameters feeding into this."
+    },
+    "DataType" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Type"
+        },
+        "Name" : {
+          "type" : ["string", "null"]
+        }
+      }
+    },
+    "Description" : {
+      "type" : ["string", "null"]
+    },
+    "DefaultValue" : { },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Programming.ReceiverParam"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["SourceId", "DataType", "Description", "DefaultValue"]
+}

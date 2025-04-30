@@ -1,0 +1,22 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Design/IDesignable.json",
+  "required" : ["_t"],
+  "properties" : {
+    "_t" : {
+      "const" : "BH.oM.Structure.Design.StructuralLayout"
+    }
+  },
+  "allOf" : [{
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Structure.Design.StructuralLayout"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Design/StructuralLayout.json"
+      }
+    }]
+}

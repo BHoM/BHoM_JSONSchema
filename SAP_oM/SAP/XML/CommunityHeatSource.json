@@ -1,0 +1,68 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/CommunityHeatSource.json",
+  "title" : "CommunityHeatSource",
+  "type" : ["object", "null"],
+  "properties" : {
+    "HeatSourceType" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "HeatFraction" : {
+      "type" : ["string", "null"],
+      "description" : "Fraction of heat for the system provided by this heat source."
+    },
+    "FuelType" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "PCDFFuelIndex" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "HeatEfficiency" : {
+      "type" : ["string", "null"],
+      "description" : "Heat efficiency in %."
+    },
+    "PowerEfficiency" : {
+      "type" : ["string", "null"],
+      "description" : "Power efficiency in %. Include when heat source is CHP."
+    },
+    "Description" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "CHPElectricityGeneration" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SAP.XML.CommunityHeatSource"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["HeatSourceType", "HeatFraction", "FuelType", "PCDFFuelIndex", "HeatEfficiency", "PowerEfficiency", "Description", "CHPElectricityGeneration"]
+}

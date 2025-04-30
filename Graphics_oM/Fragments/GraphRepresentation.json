@@ -1,0 +1,55 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/Fragments/GraphRepresentation.json",
+  "title" : "GraphRepresentation",
+  "type" : ["object", "null"],
+  "description" : "GraphRepresentation: Fragment for graph representation.",
+  "properties" : {
+    "Groups" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/Fragments/GroupRepresentation.json"
+      }
+    },
+    "Text" : {
+      "type" : ["string", "null"]
+    },
+    "TextPosition" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
+    },
+    "TextDirection" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
+    },
+    "Colour" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Drawing.Color"
+        },
+        "A" : {
+          "type" : "integer"
+        },
+        "R" : {
+          "type" : "integer"
+        },
+        "G" : {
+          "type" : "integer"
+        },
+        "B" : {
+          "type" : "integer"
+        }
+      },
+      "required" : ["A", "R", "G", "B"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Graphics.Fragments.GraphRepresentation"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Groups", "Text", "TextPosition", "TextDirection", "Colour"]
+}

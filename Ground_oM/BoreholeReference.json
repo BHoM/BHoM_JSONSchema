@@ -1,0 +1,73 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Ground_oM/BoreholeReference.json",
+  "title" : "BoreholeReference",
+  "type" : ["object", "null"],
+  "description" : "BoreholeReference: References to associated files, storage links or previous boreholes.",
+  "properties" : {
+    "StartDate" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "$date" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "EndDate" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "$date" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "File" : {
+      "type" : ["string", "null"],
+      "description" : "Associated file reference including instructions and photographs (FILE_FSET)."
+    },
+    "URL" : {
+      "type" : ["string", "null"],
+      "description" : "Link to storage of borehole data."
+    },
+    "OriginalId" : {
+      "type" : ["string", "null"],
+      "description" : "Original hole id (LOCA_ORID)."
+    },
+    "OriginalReference" : {
+      "type" : ["string", "null"],
+      "description" : "Original job reference (LOCA_ORJO)."
+    },
+    "OriginalCompany" : {
+      "type" : ["string", "null"],
+      "description" : "Originating company (LOCA_ORCO)."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Ground.BoreholeReference"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["StartDate", "EndDate", "File", "URL", "OriginalId", "OriginalReference", "OriginalCompany"]
+}

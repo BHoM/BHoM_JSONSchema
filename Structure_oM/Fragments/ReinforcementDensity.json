@@ -1,0 +1,25 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Fragments/ReinforcementDensity.json",
+  "title" : "ReinforcementDensity",
+  "type" : ["object", "null"],
+  "description" : "ReinforcementDensity: The reinforcement density of an element and its material.",
+  "properties" : {
+    "Density" : {
+      "type" : "number",
+      "description" : "The mass of reinforcement per unit volume of the element that owns this fragment. Property has a quantity of type Density meassured in [kg/m³]."
+    },
+    "Material" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/IMaterialFragment.json"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Structure.Fragments.ReinforcementDensity"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Density", "Material"]
+}

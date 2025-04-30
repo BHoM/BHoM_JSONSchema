@@ -1,0 +1,22 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/IContainer.json",
+  "required" : ["_t"],
+  "properties" : {
+    "_t" : {
+      "const" : "BH.oM.Karamba3D.FemModel"
+    }
+  },
+  "allOf" : [{
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Karamba3D.FemModel"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Karamba3D_oM/FemModel.json"
+      }
+    }]
+}

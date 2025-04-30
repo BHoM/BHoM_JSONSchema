@@ -1,0 +1,6 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Requests/FilterModelElements.json",
+  "title" : "FilterModelElements",
+  "type" : ["object", "null"],
+  "description" : "FilterModelElements: IRequest that filters elements that have geometrical representation in the Revit model."
+}

@@ -1,0 +1,375 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/Heating.json",
+  "title" : "Heating",
+  "type" : ["object", "null"],
+  "properties" : {
+    "MainHeatingDetails" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/MainHeatingDetails.json"
+    },
+    "SecondaryHeatingCategory" : {
+      "type" : ["string", "null"],
+      "description" : "Category of heating system for the secondary heating system."
+    },
+    "SecondaryHeatingDataSource" : {
+      "type" : ["string", "null"],
+      "description" : "Source of secondary heating system data; only if secondary heating system."
+    },
+    "SecondaryHeatingEfficiency" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "SecondaryHeatingCommisioningCertificate" : {
+      "type" : ["string", "null"],
+      "description" : "Secondary heating system commisioning certificate number."
+    },
+    "SecondaryHeatingInstallationEngineer" : {
+      "type" : ["string", "null"],
+      "description" : "Secondary heating installation engineer registration reference."
+    },
+    "SecondaryHeatingCode" : {
+      "type" : ["string", "null"],
+      "description" : "Type of secondary heating present in the property."
+    },
+    "SecondaryFuelType" : {
+      "type" : ["string", "null"],
+      "description" : "The type of fuel used to power the secondary heating e.g. Gas, Electricity; only if required."
+    },
+    "SecondaryHeatingPCDFFuelIndex" : {
+      "type" : ["string", "null"],
+      "description" : "PCDF index number of the fuel type, only if Secondary-Fuel-Type is 99 (fuel from database)."
+    },
+    "SecondaryHeatingFlueType" : {
+      "type" : ["string", "null"],
+      "description" : "Secondary flue type; only if secondary efficiency is manufacturer declaration and if there is a flue."
+    },
+    "WaterHeatingCode" : {
+      "type" : ["string", "null"],
+      "description" : "The type of Water Heating present in the Property."
+    },
+    "WaterFuelType" : {
+      "type" : ["string", "null"],
+      "description" : "The type of fuel used to power the central heating e.g. Gas, Electricity.  Not used if water system is main or secondary system."
+    },
+    "ThermalStore" : {
+      "type" : ["string", "null"],
+      "description" : "The type of thermal store; not used if main heating system is community heating scheme."
+    },
+    "ImmersionHeatingType" : {
+      "type" : ["string", "null"],
+      "description" : "The type of immersion heating; only if immersion."
+    },
+    "IsHeatPumpAssistedByImmersion" : {
+      "type" : ["object", "null"],
+      "description" : "Heat pump assisted by immersion?  Only if main heating is heat pump and water heating from heat pump.",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "IsImmersionForSummerUse" : {
+      "type" : ["object", "null"],
+      "description" : "Immersion for summer use?  Only if main heating is solid fuel fire or room heater with boiler.",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "HotWaterStoreManufacturer" : {
+      "type" : ["string", "null"],
+      "description" : "StoreManufacturerName."
+    },
+    "HotWaterStoreModel" : {
+      "type" : ["string", "null"],
+      "description" : "StoreManufacturerName."
+    },
+    "HotWaterStoreCommissioningCertificate" : {
+      "type" : ["string", "null"],
+      "description" : "Store comissioning certificate number."
+    },
+    "HotWaterStoreInstallerEngineerRegistration" : {
+      "type" : ["string", "null"],
+      "description" : "Store installer engineer registration number."
+    },
+    "HotWaterStoreSize" : {
+      "type" : ["string", "null"],
+      "description" : "Hot water store size in litres; if there is a hot water store.  Store refers to hot water store type which can be cylinder (if thermal store is 'none'), hot-water only thermal store or integrated thermal store.  Not applicable if (a) combi boiler whose data source database or (b) instantaneous combi boiler or (c) combi boiler from SAP table or (d) instantaneous water heater."
+    },
+    "HasHotWaterCylinder" : {
+      "type" : ["object", "null"],
+      "description" : "Hot water cylinder?.",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "HotWaterStoreHeatTransferArea" : {
+      "type" : ["string", "null"],
+      "description" : "Used when a heat pump is associated with a separate and specified hot water vessel."
+    },
+    "HotWaterStoreHeatLossSource" : {
+      "type" : ["string", "null"],
+      "description" : "The source of the hot water store heat loss information; if there is a hot water store.  Not applicable if (a) combi boiler whose data source database or (b) instantaneous combi boiler or (c) combi boiler from SAP table or (d) instantaneous water heater."
+    },
+    "HotWaterStoreHeatLoss" : {
+      "type" : ["string", "null"],
+      "description" : "Hot water store declared loss in kWh/day; only if there is a hot water store and if manufacturer declared loss.  Not applicable if (a) combi boiler whose data source database or (b) instantaneous combi boiler or (c) combi boiler from SAP table or (d) instantaneous water heater."
+    },
+    "HotWaterStoreInsulationType" : {
+      "type" : ["string", "null"],
+      "description" : "Hot water store insulation; only if there is a hot water store and if loss from SAP table.  Not applicable if (a) combi boiler whose data source database or (b) instantaneous combi boiler or (c) combi boiler from SAP table or (d) instantaneous water heater."
+    },
+    "HotWaterInsulationThickness" : {
+      "type" : ["string", "null"],
+      "description" : "Hot water store insulation thickness in mm; only if there is a hot water store and if loss from SAP table.  Not applicable if (a) combi boiler whose data source database or (b) instantaneous combi boiler or (c) combi boiler from SAP table or (d) instantaneous water heater."
+    },
+    "PrimaryPipeworkInsulation" : {
+      "type" : ["string", "null"],
+      "description" : "Not applicable to combi boiler or instantaneous water heater."
+    },
+    "HasCylinderThermostat" : {
+      "type" : ["object", "null"],
+      "description" : "Hot water cylinder thermostat?  Not applicable if combi boiler or instantaneous water heater.",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "IsCylinderInHeatedSpace" : {
+      "type" : ["object", "null"],
+      "description" : "Hot water cylinder in heated space?  Not applicable if combi boiler or instantaneous water heater.",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "IsHotWaterSeperatlyTimed" : {
+      "type" : ["object", "null"],
+      "description" : ">Hot water separately timed?  Not applicable if combi boiler or instantaneous water heater.",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "IsHeatPumpInstalledToMIS" : {
+      "type" : ["object", "null"],
+      "description" : "Is heat pump installed to MIS standard?  Only if water heating from hot water only heat pump.",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "IsSecondaryHeatingHETASApproved" : {
+      "type" : ["object", "null"],
+      "description" : "Secondary heating appliance is HETAS approved?  Only if solid fuel.",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "IsThermalStoreNearBoiler" : {
+      "type" : ["object", "null"],
+      "description" : "Thermal store connected to boiler by no more than 1.5 m of insulated pipework?  Only if thermal store.  Not applicable if combi boiler or instantaneous water heater.",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "IsThermalStoreOrCPSUInAiringCupboard" : {
+      "type" : ["object", "null"],
+      "description" : "Thermal store or CPSU in airing cupboard?  Only if (a) boiler with integrated or hot-water-only thermal store, or (b) main heating is CPSU.",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "HotWaterControlsManufacturer" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "HotWaterControlsModel" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "CommunityHeatingSystems" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/CommunityHeatingSystems.json"
+    },
+    "HeatingDesignWaterUse" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "MainHeatingSystemsInteraction" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "SecondaryHeatingDeclaredValues" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/HeatingDeclaredValues.json"
+    },
+    "SolarHeatingDetails" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/SolarHeatingDetails.json"
+    },
+    "StorageWHRS" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/StorageWWHRS.json"
+    },
+    "HasFixedAirConditioning" : {
+      "type" : ["object", "null"],
+      "description" : "Fixed air conditioning?.",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "ShowerOutlets" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/ShowerOutlets.json"
+    },
+    "NumberBaths" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "NumberBathsWWHRS" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "InstantaneousWHRS" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/InstantaneousWWHRS.json"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SAP.XML.Heating"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["MainHeatingDetails", "SecondaryHeatingCategory", "SecondaryHeatingDataSource", "SecondaryHeatingEfficiency", "SecondaryHeatingCommisioningCertificate", "SecondaryHeatingInstallationEngineer", "SecondaryHeatingCode", "SecondaryFuelType", "SecondaryHeatingPCDFFuelIndex", "SecondaryHeatingFlueType", "WaterHeatingCode", "WaterFuelType", "ThermalStore", "ImmersionHeatingType", "IsHeatPumpAssistedByImmersion", "IsImmersionForSummerUse", "HotWaterStoreManufacturer", "HotWaterStoreModel", "HotWaterStoreCommissioningCertificate", "HotWaterStoreInstallerEngineerRegistration", "HotWaterStoreSize", "HasHotWaterCylinder", "HotWaterStoreHeatTransferArea", "HotWaterStoreHeatLossSource", "HotWaterStoreHeatLoss", "HotWaterStoreInsulationType", "HotWaterInsulationThickness", "PrimaryPipeworkInsulation", "HasCylinderThermostat", "IsCylinderInHeatedSpace", "IsHotWaterSeperatlyTimed", "IsHeatPumpInstalledToMIS", "IsSecondaryHeatingHETASApproved", "IsThermalStoreNearBoiler", "IsThermalStoreOrCPSUInAiringCupboard", "HotWaterControlsManufacturer", "HotWaterControlsModel", "CommunityHeatingSystems", "HeatingDesignWaterUse", "MainHeatingSystemsInteraction", "SecondaryHeatingDeclaredValues", "SolarHeatingDetails", "StorageWHRS", "HasFixedAirConditioning", "ShowerOutlets", "NumberBaths", "NumberBathsWWHRS", "InstantaneousWHRS"]
+}

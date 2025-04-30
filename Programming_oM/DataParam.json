@@ -1,0 +1,61 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Programming_oM/DataParam.json",
+  "title" : "DataParam",
+  "type" : ["object", "null"],
+  "description" : "DataParam: Output of a syntax node.",
+  "properties" : {
+    "Data" : { },
+    "TargetIds" : {
+      "type" : ["array", "null"],
+      "description" : "Guids of the connected Receiver parameters.",
+      "items" : {
+        "type" : "string",
+        "format" : "uuid"
+      }
+    },
+    "DataType" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Type"
+        },
+        "Name" : {
+          "type" : ["string", "null"]
+        }
+      }
+    },
+    "Description" : {
+      "type" : ["string", "null"]
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Programming.DataParam"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Data", "TargetIds", "DataType", "Description"]
+}

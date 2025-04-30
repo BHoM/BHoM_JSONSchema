@@ -1,0 +1,32 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/MaterialFragments/Function.json",
+  "anyOf" : [{
+      "type" : ["string", "null"],
+      "enum" : ["Undefined", "Aggregate", "AirGap", "Asphalt", "Blind", "Board", "Brick", "Carpet", "Concrete", "Glass", "Insulation", "Metal", "Plaster", "Screed", "Tile", "Timber"]
+    }, {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : ["string", "null"],
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.Environment.MaterialFragments.Function"
+            }
+          }
+        },
+        "Value" : {
+          "type" : ["string", "null"],
+          "enum" : ["Undefined", "Aggregate", "AirGap", "Asphalt", "Blind", "Board", "Brick", "Carpet", "Concrete", "Glass", "Insulation", "Metal", "Plaster", "Screed", "Tile", "Timber"]
+        }
+      }
+    }]
+}

@@ -1,0 +1,57 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/DiurnalPlotCommand.json",
+  "title" : "DiurnalPlotCommand",
+  "type" : ["object", "null"],
+  "description" : "DiurnalPlotCommand: Use in conjunction with the LadybugToolsAdapter to run a diurnal analysis on a specific key of an epw file, and output a plot.",
+  "properties" : {
+    "EPWFile" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/FileSettings.json"
+    },
+    "EPWKey" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/EPWKey.json"
+    },
+    "Colour" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Drawing.Color"
+        },
+        "A" : {
+          "type" : "integer"
+        },
+        "R" : {
+          "type" : "integer"
+        },
+        "G" : {
+          "type" : "integer"
+        },
+        "B" : {
+          "type" : "integer"
+        }
+      },
+      "required" : ["A", "R", "G", "B"]
+    },
+    "OutputLocation" : {
+      "type" : ["string", "null"],
+      "description" : "The directory to output the file. Leave empty to return a base64 string representation of that image."
+    },
+    "Title" : {
+      "type" : ["string", "null"],
+      "description" : "Title of the plot, will appear above any information on the top of the plot."
+    },
+    "Period" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/DiurnalPeriod.json"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.LadybugTools.DiurnalPlotCommand"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["EPWFile", "EPWKey", "Colour", "OutputLocation", "Title", "Period"]
+}

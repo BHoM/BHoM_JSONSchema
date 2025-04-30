@@ -1,0 +1,44 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Equipment/FanCoilUnit.json",
+  "title" : "FanCoilUnit",
+  "type" : ["object", "null"],
+  "description" : "FanCoilUnit: Fan Coil Units are devices that use a coil and a fan to heat or cool a space",
+  "properties" : {
+    "Parts" : {
+      "type" : ["array", "null"],
+      "description" : "A collection of the parts (Fan, Coil, Electrical Connector) that make up the Fan Coil Unit",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Equipment/Parts/IPart.json"
+      }
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.MEP.Equipment.FanCoilUnit"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Parts"]
+}

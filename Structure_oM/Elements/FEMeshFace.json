@@ -1,0 +1,48 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/FEMeshFace.json",
+  "title" : "FEMeshFace",
+  "type" : ["object", "null"],
+  "description" : "FEMeshFace: Face of an FEMesh. The face is defined by the indices of its nodes in the node list. Geometrical information about position in space is stored on the host FEMesh.",
+  "properties" : {
+    "NodeListIndices" : {
+      "type" : ["array", "null"],
+      "description" : "List of which node indices in the host FEMesh node list that this face is connecting.",
+      "items" : {
+        "type" : "integer"
+      }
+    },
+    "OrientationAngle" : {
+      "type" : "number",
+      "description" : "Defines the angle that the local x and y axes are rotated around the normal (i.e. local z) of the FEMeshFace.\nThe normal of the FEMeshFace is determined by the curl right hand rule dictated by the order of the node list.\nLocal x is found by projecting the global X to the plane of the FEMeshFace and is then rotated with the OrientationAngle, except for the case when the Normal is parallel with the global X. For this case the local y is instead found by projecting global Y to the plane of the FEMeshFace and is then rotated with the OrientationAngle.\nThe remaining local axis is determined by the right hand rule. Property has a quantity of type Angle meassured in [rad]."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Structure.Elements.FEMeshFace"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["NodeListIndices", "OrientationAngle"]
+}

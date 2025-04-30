@@ -1,0 +1,67 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Fixtures/LightFixture.json",
+  "title" : "LightFixture",
+  "type" : ["object", "null"],
+  "description" : "LightFixture: A light fixture is an electrical device that provides illumination.",
+  "properties" : {
+    "Location" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/Node.json"
+    },
+    "OrientationAngle" : {
+      "type" : "number",
+      "description" : "Controls the local plan orientation of the object. Property has a quantity of type Angle meassured in [rad]."
+    },
+    "LuminousFlux" : {
+      "type" : "number",
+      "description" : "The luminous flux is the measure of the perceived power of light."
+    },
+    "ColourTemperature" : {
+      "type" : "number",
+      "description" : "The colour temperature is a means of describing the light fixture's appearance, measured in degrees Kelvin"
+    },
+    "ControlZone" : {
+      "type" : ["string", "null"],
+      "description" : "A means of denoting light fixtures that should be controlled in a similar manner."
+    },
+    "Power" : {
+      "type" : "number",
+      "description" : "The power of the light fixture described in kilowatts."
+    },
+    "Parts" : {
+      "type" : ["array", "null"],
+      "description" : "A means of adding an electrical connector part to the light fixture's properties. Gives the ability to add the voltage, amps, and denotes if the fixture should be on emergency power.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Equipment/Parts/IPart.json"
+      }
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.MEP.Fixtures.LightFixture"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Location", "OrientationAngle", "LuminousFlux", "ColourTemperature", "ControlZone", "Power", "Parts"]
+}

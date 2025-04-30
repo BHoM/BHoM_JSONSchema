@@ -1,0 +1,76 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/UsageLogEntry.json",
+  "title" : "UsageLogEntry",
+  "type" : ["object", "null"],
+  "properties" : {
+    "Time" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "$date" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "UI" : {
+      "type" : ["string", "null"]
+    },
+    "UiVersion" : {
+      "type" : ["string", "null"]
+    },
+    "BHoMVersion" : {
+      "type" : ["string", "null"]
+    },
+    "ComponentId" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "CallerName" : {
+      "type" : ["string", "null"]
+    },
+    "SelectedItem" : { },
+    "FileId" : {
+      "type" : ["string", "null"]
+    },
+    "FileName" : {
+      "type" : ["string", "null"]
+    },
+    "ProjectID" : {
+      "type" : ["string", "null"]
+    },
+    "Errors" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Debugging/Event.json"
+      }
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Base.UsageLogEntry"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Time", "UI", "UiVersion", "BHoMVersion", "ComponentId", "CallerName", "SelectedItem", "FileId", "FileName", "ProjectID", "Errors"]
+}

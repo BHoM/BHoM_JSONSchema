@@ -1,0 +1,41 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/iAuditor_oM/iAuditorConfig.json",
+  "title" : "iAuditorConfig",
+  "type" : ["object", "null"],
+  "description" : "iAuditorConfig: This Config can be specified in the `ActionConfig` input of any Adapter Action (e.g. Push).",
+  "properties" : {
+    "Id" : {
+      "type" : ["string", "null"],
+      "description" : "Specifies ID of the Audit to search for."
+    },
+    "AssetFilePath" : {
+      "type" : ["string", "null"],
+      "description" : "Path to pull/push media assets to/from that relate to the audit."
+    },
+    "IncludeAssetFiles" : {
+      "type" : "boolean",
+      "description" : "Set to true to download / upload asset file sassociated with the audit."
+    },
+    "WrapNonBHoMObjects" : {
+      "type" : "boolean",
+      "description" : "If true, the Push action wraps any non-BHoM type into a BH.oM.Adapter.ObjectWrapper, allowing them to make use of the full Adapter workflow."
+    },
+    "AllowHashForComparing" : {
+      "type" : "boolean",
+      "description" : "If true and if no specific EqualityComparer is found for the type, Diffing hashes are computed and used to compare the objects."
+    },
+    "DiffingConfig" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/DiffingConfig.json"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.iAuditor.iAuditorConfig"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Id", "AssetFilePath", "IncludeAssetFiles"]
+}

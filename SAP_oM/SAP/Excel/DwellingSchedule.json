@@ -1,0 +1,78 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/Excel/DwellingSchedule.json",
+  "title" : "DwellingSchedule",
+  "type" : ["object", "null"],
+  "description" : "DwellingSchedule: The details of roofs from the users excel input.",
+  "properties" : {
+    "DwellingTypeName" : {
+      "type" : ["string", "null"],
+      "description" : "The name of the dwelling the roof is located in."
+    },
+    "Count" : {
+      "type" : "integer",
+      "description" : "The type of roof"
+    },
+    "DwellingOrientation" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/OrientationCode.json"
+    },
+    "FileName" : {
+      "type" : ["string", "null"],
+      "description" : "Heating file name, eg HeatingFile.xml ."
+    },
+    "Level" : {
+      "type" : ["string", "null"],
+      "description" : "Indication of where a flat is located in a building."
+    },
+    "Storeys" : {
+      "type" : ["string", "null"],
+      "description" : "Count of number of storeys present in the block of for this dwelling."
+    },
+    "ConstructionYear" : {
+      "type" : ["string", "null"],
+      "description" : "The year the dwelling was constructed."
+    },
+    "PropertyType" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/TypeOfProperty.json"
+    },
+    "ConstructionType" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/DataTypeCode.json"
+    },
+    "WetRooms" : {
+      "type" : "number",
+      "description" : "The number of wet rooms this dwelling has."
+    },
+    "ShelteredSides" : {
+      "type" : "integer",
+      "description" : "The number of sheltered sides this dwelling has."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SAP.Excel.DwellingSchedule"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["DwellingTypeName", "Count", "DwellingOrientation", "FileName", "Level", "Storeys", "ConstructionYear", "PropertyType", "ConstructionType", "WetRooms", "ShelteredSides"]
+}

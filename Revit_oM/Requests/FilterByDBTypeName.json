@@ -1,0 +1,22 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Requests/FilterByDBTypeName.json",
+  "title" : "FilterByDBTypeName",
+  "type" : ["object", "null"],
+  "description" : "FilterByDBTypeName: IRequest that filters all elements of given Autodesk.Revit.DB type. Information about types can be found in the Revit API documentation.",
+  "properties" : {
+    "TypeName" : {
+      "type" : ["string", "null"],
+      "description" : "Full Revit DB type name, including namespace before the name of the actual type. For example: 'Autodesk.Revit.DB.Wall."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.Revit.Requests.FilterByDBTypeName"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["TypeName"]
+}

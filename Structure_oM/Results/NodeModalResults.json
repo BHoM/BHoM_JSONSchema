@@ -1,0 +1,86 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/NodeModalResults.json",
+  "title" : "NodeModalResults",
+  "type" : ["object", "null"],
+  "description" : "NodeModalResults: Base class for all Node result classes. Stores all identifier information and how to sort the results in a collection.",
+  "properties" : {
+    "UX" : {
+      "type" : "number",
+      "description" : "Translational X component of the mode shape in global coordinates."
+    },
+    "UY" : {
+      "type" : "number",
+      "description" : "Translational Y component of the mode shape in global coordinates."
+    },
+    "UZ" : {
+      "type" : "number",
+      "description" : "Translational Z component of the mode shape in global coordinates."
+    },
+    "RX" : {
+      "type" : "number",
+      "description" : "Rotational component about the X-axis of the mode shape in global coordinates."
+    },
+    "RY" : {
+      "type" : "number",
+      "description" : "Rotational component about the Y-axis of the mode shape in global coordinates."
+    },
+    "RZ" : {
+      "type" : "number",
+      "description" : "Rotational component about the Z-axis of the mode shape in global coordinates."
+    },
+    "NodalMassX" : {
+      "type" : "number",
+      "description" : "Nodal modal mass in the X-direction as defined by orientation basis. Proportional amount of the total modal mass that acts in the X-direction at the specific Node. Property has a quantity of type Mass meassured in [kg]."
+    },
+    "NodalMassY" : {
+      "type" : "number",
+      "description" : "Nodal modal mass in the Y-direction as defined by orientation basis. Proportional amount of the total modal mass that acts in the Y-direction at the specific Node. Property has a quantity of type Mass meassured in [kg]."
+    },
+    "NodalMassZ" : {
+      "type" : "number",
+      "description" : "Nodal modal mass in the Z-direction as defined by orientation basis. Proportional amount of the total modal mass that acts in the Z-direction at the specific Node. Property has a quantity of type Mass meassured in [kg]."
+    },
+    "NodalRotationalMassX" : {
+      "type" : "number",
+      "description" : "Nodal modal mass in the X-direction as defined by orientation basis. Proportional amount of the total modal mass that acts around the X-axis at the specific Node. Property has a quantity of type Mass meassured in [kg]."
+    },
+    "NodalRotationalMassY" : {
+      "type" : "number",
+      "description" : "Nodal modal mass in the Y-direction as defined by orientation basis. Proportional amount of the total modal mass that acts around the X-axis at the specific Node. Property has a quantity of type Mass meassured in [kg]."
+    },
+    "NodalRotationalMassZ" : {
+      "type" : "number",
+      "description" : "Nodal modal mass in the Z-direction as defined by orientation basis. Proportional amount of the total modal mass that acts around the X-axis at the specific Node. Property has a quantity of type Mass meassured in [kg]."
+    },
+    "NormalisationProcedure" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/ModalResultNormalisation.json"
+    },
+    "ObjectId" : {
+      "type" : ["object", "integer", "string", "number", "null"]
+    },
+    "ResultCase" : {
+      "type" : ["object", "integer", "string", "number", "null"]
+    },
+    "ModeNumber" : {
+      "type" : "integer",
+      "description" : "Positive index, starting at one. Only set for cases with modal outputs such as dynamic cases."
+    },
+    "TimeStep" : {
+      "type" : "number",
+      "description" : "Time step for time history results."
+    },
+    "Orientation" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Basis.json"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Structure.Results.NodeModalResults"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["UX", "UY", "UZ", "RX", "RY", "RZ", "NodalMassX", "NodalMassY", "NodalMassZ", "NodalRotationalMassX", "NodalRotationalMassY", "NodalRotationalMassZ", "NormalisationProcedure"]
+}

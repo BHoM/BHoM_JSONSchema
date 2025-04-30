@@ -1,0 +1,26 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Requests/FilterByCategory.json",
+  "title" : "FilterByCategory",
+  "type" : ["object", "null"],
+  "description" : "FilterByCategory: IRequest that filters all elements of a Revit category.",
+  "properties" : {
+    "CategoryName" : {
+      "type" : ["string", "null"],
+      "description" : "Revit category name, as shown in Revit user interface (currently only English supported)."
+    },
+    "CaseSensitive" : {
+      "type" : "boolean",
+      "description" : "If true: only perfect, case sensitive text match will be accepted. If false: capitals and small letters will be treated as equal."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.Revit.Requests.FilterByCategory"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["CategoryName", "CaseSensitive"]
+}

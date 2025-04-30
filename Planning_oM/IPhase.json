@@ -1,0 +1,22 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Planning_oM/IPhase.json",
+  "required" : ["_t"],
+  "properties" : {
+    "_t" : {
+      "const" : "BH.oM.Planning.ConstructionPhase"
+    }
+  },
+  "allOf" : [{
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Planning.ConstructionPhase"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Planning_oM/ConstructionPhase.json"
+      }
+    }]
+}

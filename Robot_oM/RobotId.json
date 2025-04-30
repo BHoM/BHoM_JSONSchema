@@ -1,0 +1,19 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Robot_oM/RobotId.json",
+  "title" : "RobotId",
+  "type" : ["object", "null"],
+  "description" : "RobotId: Fragment storing identifier information of the object in Robot.",
+  "properties" : {
+    "Id" : { },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.Robot.RobotId"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Id"]
+}

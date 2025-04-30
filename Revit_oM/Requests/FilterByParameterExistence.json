@@ -1,0 +1,26 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Requests/FilterByParameterExistence.json",
+  "title" : "FilterByParameterExistence",
+  "type" : ["object", "null"],
+  "description" : "FilterByParameterExistence: IRequest that filters elements the have (or do not have) a parameter with given name.",
+  "properties" : {
+    "ParameterName" : {
+      "type" : ["string", "null"],
+      "description" : "Case sensitive name of the parameter to look for."
+    },
+    "ParameterExists" : {
+      "type" : "boolean",
+      "description" : "If true, elements with the given parameter will be filtered, if false - the opposite."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.Revit.Requests.FilterByParameterExistence"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["ParameterName", "ParameterExists"]
+}

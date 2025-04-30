@@ -1,0 +1,70 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Reporting/IConditionReportingConfig.json",
+  "required" : ["_t"],
+  "properties" : {
+    "_t" : {
+      "enum" : ["BH.oM.Verification.Reporting.ValueConditionReportingConfig", "BH.oM.Verification.Reporting.SingleLogicalConditionReportingConfig", "BH.oM.Verification.Reporting.NumberConditionReportingConfig", "BH.oM.Verification.Reporting.LogicalCollectionConditionReportingConfig", "BH.oM.Verification.Reporting.FormulaConditionReportingConfig"]
+    }
+  },
+  "allOf" : [{
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Verification.Reporting.ValueConditionReportingConfig"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Reporting/ValueConditionReportingConfig.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Verification.Reporting.SingleLogicalConditionReportingConfig"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Reporting/SingleLogicalConditionReportingConfig.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Verification.Reporting.NumberConditionReportingConfig"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Reporting/NumberConditionReportingConfig.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Verification.Reporting.LogicalCollectionConditionReportingConfig"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Reporting/LogicalCollectionConditionReportingConfig.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Verification.Reporting.FormulaConditionReportingConfig"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Reporting/FormulaConditionReportingConfig.json"
+      }
+    }]
+}

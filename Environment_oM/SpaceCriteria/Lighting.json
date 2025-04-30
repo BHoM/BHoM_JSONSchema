@@ -1,0 +1,52 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/Lighting.json",
+  "title" : "Lighting",
+  "type" : ["object", "null"],
+  "description" : "Lighting: Lighting gains are defined as the amount of heat contributed by light fixtures",
+  "properties" : {
+    "Sensible" : {
+      "type" : "number",
+      "description" : "The sensible heat contributed by light fixtures, which contributes to a rise in temperature with no change in phase."
+    },
+    "Profile" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/Profile.json"
+    },
+    "RadiantFraction" : {
+      "type" : "number",
+      "description" : "The radiant fraction depicts the percentage of long wave radiant heat given off by the light fixtures."
+    },
+    "LuminousEfficacy" : {
+      "type" : "number",
+      "description" : "Luminous efficacy is a measure of how well a light fixture produces visible light"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SpaceCriteria.Lighting"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Sensible", "Profile", "RadiantFraction", "LuminousEfficacy"]
+}

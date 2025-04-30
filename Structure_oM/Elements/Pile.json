@@ -1,0 +1,50 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Pile.json",
+  "title" : "Pile",
+  "type" : ["object", "null"],
+  "description" : "Pile: A pile object defined by it's location and section.",
+  "properties" : {
+    "TopNode" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Node.json"
+    },
+    "BottomNode" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Node.json"
+    },
+    "Section" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SectionProperties/ISectionProperty.json"
+    },
+    "OrientationAngle" : {
+      "type" : "number",
+      "description" : "Controls the local axis orientation of the Pile \nFor non-vertical members the local z is aligned with the global Z and rotated with the orientation angle about the local x. \nFor vertical members the local y is aligned with the global Y and rotated with the orientation angle about the local x. \nA Pile is vertical if its projected length to the horizontal plane is less than 0.0001, i.e. a tolerance of 0.1mm on verticality. \nFor general structural conventions please see the documentation. Property has a quantity of type Angle meassured in [rad]."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Structure.Elements.Pile"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["TopNode", "BottomNode", "Section", "OrientationAngle"]
+}

@@ -1,0 +1,75 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Architecture_oM/Theatron/StadiaParameters.json",
+  "title" : "StadiaParameters",
+  "type" : ["object", "null"],
+  "properties" : {
+    "StructBayWidth" : {
+      "type" : "number"
+    },
+    "CornerRadius" : {
+      "type" : "number"
+    },
+    "SideBound" : {
+      "type" : "number"
+    },
+    "EndBound" : {
+      "type" : "number"
+    },
+    "SideRadius" : {
+      "type" : "number"
+    },
+    "EndRadius" : {
+      "type" : "number"
+    },
+    "TheatronRadius" : {
+      "type" : "number"
+    },
+    "NumCornerBays" : {
+      "type" : "integer"
+    },
+    "TypeOfBowl" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Architecture_oM/Theatron/StadiaType.json"
+    },
+    "CornerFraction" : {
+      "type" : "number"
+    },
+    "ActivityArea" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Architecture_oM/Theatron/ActivityArea.json"
+    },
+    "PitchLength" : {
+      "type" : "number"
+    },
+    "PitchWidth" : {
+      "type" : "number"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Architecture.Theatron.StadiaParameters"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["StructBayWidth", "CornerRadius", "SideBound", "EndBound", "SideRadius", "EndRadius", "TheatronRadius", "NumCornerBays", "TypeOfBowl", "CornerFraction", "ActivityArea", "PitchLength", "PitchWidth"]
+}

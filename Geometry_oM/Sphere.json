@@ -1,0 +1,25 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Sphere.json",
+  "title" : "Sphere",
+  "type" : ["object", "null"],
+  "description" : "Sphere: Standard sphere defining the closed bounding surface of constant distance from a point, its Centre",
+  "properties" : {
+    "Centre" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
+    },
+    "Radius" : {
+      "type" : "number",
+      "description" : "Distance from the Centre to the Sphere boundary surface Property has a quantity of type Length meassured in [m]."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Geometry.Sphere"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Centre", "Radius"]
+}

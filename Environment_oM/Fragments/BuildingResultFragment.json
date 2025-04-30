@@ -1,0 +1,24 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Fragments/BuildingResultFragment.json",
+  "title" : "BuildingResultFragment",
+  "type" : ["object", "null"],
+  "description" : "BuildingResultFragment: Fragment containing the peak heating and peak cooling for a buildng",
+  "properties" : {
+    "PeakCooling" : {
+      "type" : "number"
+    },
+    "PeakHeating" : {
+      "type" : "number"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.Fragments.BuildingResultFragment"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["PeakCooling", "PeakHeating"]
+}

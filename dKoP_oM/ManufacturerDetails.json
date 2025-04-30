@@ -1,0 +1,41 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/ManufacturerDetails.json",
+  "title" : "ManufacturerDetails",
+  "type" : ["object", "null"],
+  "properties" : {
+    "ManufactureName" : {
+      "type" : ["string", "null"]
+    },
+    "ManufactureLocation" : {
+      "type" : ["string", "null"]
+    },
+    "ManufactureWebsite" : {
+      "type" : ["string", "null"]
+    },
+    "ContactTelephoneNumber" : {
+      "type" : ["string", "null"]
+    },
+    "ContactEmailAddress" : {
+      "type" : ["string", "null"]
+    },
+    "ISO9001Certificate" : {
+      "type" : ["string", "null"]
+    },
+    "ISO14001Certificate" : {
+      "type" : ["string", "null"]
+    },
+    "WebLinkToProductBrochure" : {
+      "type" : ["string", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.dKoP.ManufacturerDetails"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["ManufactureName", "ManufactureLocation", "ManufactureWebsite", "ContactTelephoneNumber", "ContactEmailAddress", "ISO9001Certificate", "ISO14001Certificate", "WebLinkToProductBrochure"]
+}

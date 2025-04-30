@@ -1,0 +1,20 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Requests/CustomRequest.json",
+  "title" : "CustomRequest",
+  "type" : ["object", "null"],
+  "properties" : {
+    "Body" : {
+      "type" : ["string", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Data.Requests.CustomRequest"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Body"]
+}

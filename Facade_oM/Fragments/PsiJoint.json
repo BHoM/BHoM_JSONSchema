@@ -1,0 +1,22 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Fragments/PsiJoint.json",
+  "title" : "PsiJoint",
+  "type" : ["object", "null"],
+  "description" : "PsiJoint: A Psi value representing the linear joint thermal transmittance in W/m2 along the centerline of a frame edge.",
+  "properties" : {
+    "PsiValue" : {
+      "type" : "number",
+      "description" : "The Psi value for the frame edge."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Facade.Fragments.PsiJoint"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["PsiValue"]
+}

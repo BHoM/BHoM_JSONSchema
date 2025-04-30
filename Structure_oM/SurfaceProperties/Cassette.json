@@ -1,0 +1,73 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/Cassette.json",
+  "title" : "Cassette",
+  "type" : ["object", "null"],
+  "description" : "Cassette: Property for 2D analytical elements, made up of two slabs with parallel ribs running in one direction between them. Ribs and slabs can all be made up of different materials.",
+  "properties" : {
+    "Name" : {
+      "type" : ["string", "null"],
+      "description" : "A unique Name is required for some structural packages to create and identify the object."
+    },
+    "TopThickness" : {
+      "type" : "number",
+      "description" : "The thickness of the slab sitting on top of the ribs. Property has a quantity of type Length meassured in [m]."
+    },
+    "BottomThickness" : {
+      "type" : "number",
+      "description" : "The thickness of the slab sitting beneath the ribs. Property has a quantity of type Length meassured in [m]."
+    },
+    "RibThickness" : {
+      "type" : "number",
+      "description" : "Width of each rib. Property has a quantity of type Length meassured in [m]."
+    },
+    "RibHeight" : {
+      "type" : "number",
+      "description" : "Height of the ribs, equal to the distance between the bottom of the top slab and top of the bottom slab. Property has a quantity of type Length meassured in [m]."
+    },
+    "RibSpacing" : {
+      "type" : "number",
+      "description" : "Centre-centre distance between the ribs. Measured perpendicular to the rib direction. Property has a quantity of type Length meassured in [m]."
+    },
+    "Material" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/IMaterialFragment.json"
+    },
+    "RibMaterial" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/IMaterialFragment.json"
+    },
+    "BottomMaterial" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/IMaterialFragment.json"
+    },
+    "Direction" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/PanelDirection.json"
+    },
+    "PanelType" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/PanelType.json"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Structure.SurfaceProperties.Cassette"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Name", "TopThickness", "BottomThickness", "RibThickness", "RibHeight", "RibSpacing", "Material", "RibMaterial", "BottomMaterial", "Direction", "PanelType"]
+}

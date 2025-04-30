@@ -1,0 +1,32 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Robot_oM/DesignCode_Steel.json",
+  "anyOf" : [{
+      "type" : ["string", "null"],
+      "enum" : ["Default", "BS5950", "BS5950_2000", "BS_EN_1993_1_2005_NA_2008_A1_2014", "ANSI_AISC_360_10"]
+    }, {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : ["string", "null"],
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.Adapters.Robot.DesignCode_Steel"
+            }
+          }
+        },
+        "Value" : {
+          "type" : ["string", "null"],
+          "enum" : ["Default", "BS5950", "BS5950_2000", "BS_EN_1993_1_2005_NA_2008_A1_2014", "ANSI_AISC_360_10"]
+        }
+      }
+    }]
+}

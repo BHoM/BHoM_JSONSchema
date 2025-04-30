@@ -1,0 +1,47 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/File_oM/Directory.json",
+  "title" : "Directory",
+  "type" : ["object", "null"],
+  "description" : "Directory: A Directory. It can include the content of the Directory.",
+  "properties" : {
+    "Location" : {
+      "type" : ["string", "null"],
+      "description" : "Full path of parent Directory. You can also specify a string path."
+    },
+    "Name" : {
+      "type" : ["string", "null"],
+      "description" : "Name of the directory."
+    },
+    "Content" : {
+      "type" : ["array", "null"],
+      "description" : "The content of the Directory.",
+      "items" : { }
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.File.Directory"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Location", "Name", "Content"]
+}

@@ -1,0 +1,65 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Ground_oM/Location.json",
+  "title" : "Location",
+  "type" : ["object", "null"],
+  "description" : "Location: Details for the location of the borehole including project references, phasing and location algorithms.",
+  "properties" : {
+    "Method" : {
+      "type" : ["string", "null"],
+      "description" : "Method of location (LOCA_LOCM)."
+    },
+    "SubDivision" : {
+      "type" : ["string", "null"],
+      "description" : "Site location sub division (within project) code or description (LOCA_LOCA)."
+    },
+    "Phase" : {
+      "type" : ["string", "null"],
+      "description" : "Investigation phase grouping code or description (LOCA_CLST)."
+    },
+    "Alignment" : {
+      "type" : ["string", "null"],
+      "description" : "Alignment identifier (LOCA_ALID)."
+    },
+    "Offset" : {
+      "type" : "number",
+      "description" : "Offset from the alignment (LOCA_OFFS)."
+    },
+    "Chainage" : {
+      "type" : ["string", "null"],
+      "description" : "Chainage relating to the project (LOCA_CNGE)."
+    },
+    "Algorithm" : {
+      "type" : ["string", "null"],
+      "description" : "Reference to details of algorithm used to calculate local grid reference, local ground levels or chainage (LOCA_TRAN)."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Ground.Location"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Method", "SubDivision", "Phase", "Alignment", "Offset", "Chainage", "Algorithm"]
+}

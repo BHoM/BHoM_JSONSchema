@@ -1,0 +1,57 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/EmbodiedSuffering_oM/Elements/MaterialImportSources.json",
+  "title" : "MaterialImportSources",
+  "type" : ["object", "null"],
+  "description" : "MaterialImportSources: An Embodied Suffering object used for defining the import ratios per country for a particular material, utilised in a specific country (e.g. the United States gets all of its timber from Brazil, or that it is 50% from Brazil and 50% from Vietnam.)",
+  "properties" : {
+    "Material" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/EmbodiedSuffering_oM/Elements/Material.json"
+    },
+    "ExportCountries" : {
+      "type" : ["array", "null"],
+      "description" : "List of countries from which the material was imported. Count should match the import ratios.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/EmbodiedSuffering_oM/Elements/Country.json"
+      }
+    },
+    "ImportRatios" : {
+      "type" : ["array", "null"],
+      "description" : "List of material import ratios from each country. For example, if Brazil is the sole country of import for timber the value would be 1.0, if the United Kingdom is responsible for 50% of the imports of steel to a particular country that value would be 0.5. The values do not necessarily need to add to 1.0. Count should match the ExportCountries.",
+      "items" : {
+        "type" : "number"
+      }
+    },
+    "ImportCountry" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/EmbodiedSuffering_oM/Elements/Country.json"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.EmbodiedSuffering.Elements.MaterialImportSources"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Material", "ExportCountries", "ImportRatios", "ImportCountry"]
+}

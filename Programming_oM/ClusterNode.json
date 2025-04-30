@@ -1,0 +1,61 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Programming_oM/ClusterNode.json",
+  "title" : "ClusterNode",
+  "type" : ["object", "null"],
+  "description" : "ClusterNode: Represents a cluster of syntax nodes. This is equivalent to a method declaration.",
+  "properties" : {
+    "Content" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Programming_oM/ClusterContent.json"
+    },
+    "Description" : {
+      "type" : ["string", "null"]
+    },
+    "Outputs" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Programming_oM/DataParam.json"
+      }
+    },
+    "Inputs" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Programming_oM/ReceiverParam.json"
+      }
+    },
+    "IsInline" : {
+      "type" : "boolean"
+    },
+    "IsDeclaration" : {
+      "type" : "boolean"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Programming.ClusterNode"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Content", "Description", "Outputs", "Inputs", "IsInline", "IsDeclaration"]
+}

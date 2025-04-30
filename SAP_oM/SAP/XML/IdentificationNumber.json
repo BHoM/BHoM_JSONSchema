@@ -1,0 +1,44 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/IdentificationNumber.json",
+  "title" : "IdentificationNumber",
+  "type" : ["object", "null"],
+  "properties" : {
+    "CertificateNumber" : {
+      "type" : ["string", "null"],
+      "description" : "The unique identifier assigned to the assessor by the scheme by which they can be identified throughout their membership of the scheme."
+    },
+    "MembershipNumber" : {
+      "type" : ["string", "null"],
+      "description" : "For Scottish DEAs only."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SAP.XML.IdentificationNumber"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["CertificateNumber", "MembershipNumber"]
+}

@@ -1,0 +1,363 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/MainHeating.json",
+  "title" : "MainHeating",
+  "type" : ["object", "null"],
+  "properties" : {
+    "MainHeatingNumber" : {
+      "type" : ["string", "null"],
+      "description" : "Identifies the main heating as system 1 or system 2.  System 1 must always be present, system 2 is included only when there are two systems."
+    },
+    "MainHeatingCategory" : {
+      "type" : ["string", "null"],
+      "description" : "Category of heating system for the main heating system."
+    },
+    "MainHeatingFraction" : {
+      "type" : ["string", "null"],
+      "description" : "Fraction of main heating provided by this system, is 1 if only one main system."
+    },
+    "MainHeatingDataSource" : {
+      "type" : ["string", "null"],
+      "description" : "Source of main heating system data."
+    },
+    "MainHeatingCode" : {
+      "type" : ["string", "null"],
+      "description" : "Main heating code; when heating data source is SAP table."
+    },
+    "MainHeatingManufacturer" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "MainHeatingModel" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "MainHeatingCommissioningCertificate" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "MainHeatingInstallationEngineer" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "MainFuelType" : {
+      "type" : ["string", "null"],
+      "description" : "The type of fuel used to power the central heating e.g. Gas, Electricity; not used if main heating system is community heating scheme."
+    },
+    "MainHeatingControl" : {
+      "type" : ["string", "null"],
+      "description" : "Type of Main Control for the Heating System."
+    },
+    "IsCondensingBoiler" : {
+      "type" : ["object", "null"],
+      "description" : "Is the boiler a condensing boiler?  If boiler efficiency is manufacturer declaration.",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "CondensingBoilerHeatDistribution" : {
+      "type" : ["string", "null"],
+      "description" : "The temperature distribution of the condensing boiler."
+    },
+    "HeatEmitterType" : {
+      "type" : ["string", "null"],
+      "description" : "Identifies the means by which the central heating system (if present) emits heat; only when wet system (radiators or underfloor)."
+    },
+    "UnderfloorHeatEmitterType" : {
+      "type" : ["string", "null"],
+      "description" : "Means by which an underfloor heating system (if present) emits heat; only when wet system (underfloor)."
+    },
+    "MainHeatingFlueType" : {
+      "type" : ["string", "null"],
+      "description" : "The type of main heating flue; only if flued appliance."
+    },
+    "IsFlueFanPresent" : {
+      "type" : ["object", "null"],
+      "description" : "Indicates whether the heating system contains a fan flue; only if boiler.",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "IsCentralHeatingPumpInHeatedSpace" : {
+      "type" : ["object", "null"],
+      "description" : "Central heating pump in heated space?  Only when wet system (radiators or underfloor).",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "IsOilPumpInHeatedSpace" : {
+      "type" : ["object", "null"],
+      "description" : "Oil pump in heated space?  Only if oil boiler.",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "IsInterLockedSystem" : {
+      "type" : ["object", "null"],
+      "description" : "Interlocked system?  Only when wet system (radiators or underfloor).",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "HasSeparateDelayedStart" : {
+      "type" : ["object", "null"],
+      "description" : "True if there is a delayed start control separate from a controller in the database.",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "IsMainHeatingHETASApproved" : {
+      "type" : ["object", "null"],
+      "description" : "Main heating appliance is HETAS approved?  Only if solid fuel.",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "HeatPumpHeatDistribution" : {
+      "type" : ["string", "null"],
+      "description" : "The temperature distribution of the heat pump, for wet systems only."
+    },
+    "GasOrOilBoilerType" : {
+      "type" : ["string", "null"],
+      "description" : "Boiler type; if boiler efficiency is manufacturer declaration and fuel is gas or oil."
+    },
+    "CombiBoilerType" : {
+      "type" : ["string", "null"],
+      "description" : "Combi boiler type; if it is a combi boiler and boiler efficiency is manufacturer declaration."
+    },
+    "CaseHeatEmission" : {
+      "type" : ["string", "null"],
+      "description" : "Case heat emission at full load in kW; if it is a range cooker boiler and boiler efficiency is manufacturer declaration."
+    },
+    "HeatTransferToWater" : {
+      "type" : ["string", "null"],
+      "description" : "Heat transfer to water at full load in kW; if it is a range cooker boiler and boiler efficiency is manufacturer declaration."
+    },
+    "SolidFuelBoilerType" : {
+      "type" : ["string", "null"],
+      "description" : "Boiler type; if boiler efficiency is manufacturer declaration and fuel is solid."
+    },
+    "PCDFFuelIndex" : {
+      "type" : ["string", "null"],
+      "description" : "PCDF index number of the fuel type, only if Main-Fuel-Type is 99 (fuel from database)."
+    },
+    "BoilerFuelFeed" : {
+      "type" : ["string", "null"],
+      "description" : "The type of boiler fuel feed; only if solid fuel boiler with manufacturer declaration."
+    },
+    "ElectricCPSUOperatingTemperature" : {
+      "type" : ["string", "null"],
+      "description" : "Electric CPSU operating temperature in Celcius; only if main heating is electric CPSU."
+    },
+    "BurnerControl" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "EfficiencyType" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "MainHeatingEfficiencyWinter" : {
+      "type" : ["string", "null"],
+      "description" : "To be used if main heating data is manufacturer declaration and Efficiency-Type is winter and summer."
+    },
+    "MainHeatingEfficiencySummer" : {
+      "type" : ["string", "null"],
+      "description" : "To be used if main heating data is manufacturer declaration and Efficiency-Type is winter and summer."
+    },
+    "MainHeatingEfficiency" : {
+      "type" : ["string", "null"],
+      "description" : "If main heating is any system other than heat network."
+    },
+    "MainHeatingSystemType" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "HasFGHRS" : {
+      "type" : ["object", "null"],
+      "description" : "Flue Gas Heat Recovery System.",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "CentralHeatingPumpAge" : {
+      "type" : ["string", "null"],
+      "description" : "Included for systems with a central heating pump, i.e. wet system."
+    },
+    "MainHeatingIndexNumber" : {
+      "type" : ["string", "null"],
+      "description" : "The ID of the heating system from the product database, if system from database."
+    },
+    "FGHRSIndexNumber" : {
+      "type" : ["string", "null"],
+      "description" : "FGHRS index number; only if FGHRS."
+    },
+    "FGHRSEnergySource" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/EnergySource.json"
+    },
+    "MainHeatingDeclaredValues" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/HeatingDeclaredValues.json"
+    },
+    "StorageHeaters" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/StorageHeaters.json"
+    },
+    "EmitterTemperature" : {
+      "type" : ["string", "null"],
+      "description" : "Gas and oil boilers and heat pump from database: 0, 1, 3 or 4. Other heat pump 0, 2 or 4. Other systems NA."
+    },
+    "MCSInstalledHeatPump" : {
+      "type" : ["object", "null"],
+      "description" : "Whether heat pump was installed under the Microgeneration Certification Scheme.",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "ControlIndexNumber" : {
+      "type" : ["string", "null"],
+      "description" : "The ID of the time and temperature zone control from the product database."
+    },
+    "HeatingControllerFunction" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "HeatingControllerEcodesignClass" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "HeatingControllerManufacturer" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "HeatingControllerModel" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SAP.XML.MainHeating"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["MainHeatingNumber", "MainHeatingCategory", "MainHeatingFraction", "MainHeatingDataSource", "MainHeatingCode", "MainHeatingManufacturer", "MainHeatingModel", "MainHeatingCommissioningCertificate", "MainHeatingInstallationEngineer", "MainFuelType", "MainHeatingControl", "IsCondensingBoiler", "CondensingBoilerHeatDistribution", "HeatEmitterType", "UnderfloorHeatEmitterType", "MainHeatingFlueType", "IsFlueFanPresent", "IsCentralHeatingPumpInHeatedSpace", "IsOilPumpInHeatedSpace", "IsInterLockedSystem", "HasSeparateDelayedStart", "IsMainHeatingHETASApproved", "HeatPumpHeatDistribution", "GasOrOilBoilerType", "CombiBoilerType", "CaseHeatEmission", "HeatTransferToWater", "SolidFuelBoilerType", "PCDFFuelIndex", "BoilerFuelFeed", "ElectricCPSUOperatingTemperature", "BurnerControl", "EfficiencyType", "MainHeatingEfficiencyWinter", "MainHeatingEfficiencySummer", "MainHeatingEfficiency", "MainHeatingSystemType", "HasFGHRS", "CentralHeatingPumpAge", "MainHeatingIndexNumber", "FGHRSIndexNumber", "FGHRSEnergySource", "MainHeatingDeclaredValues", "StorageHeaters", "EmitterTemperature", "MCSInstalledHeatPump", "ControlIndexNumber", "HeatingControllerFunction", "HeatingControllerEcodesignClass", "HeatingControllerManufacturer", "HeatingControllerModel"]
+}

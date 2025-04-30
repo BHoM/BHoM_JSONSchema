@@ -1,0 +1,67 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/UI_oM/ParamInfo.json",
+  "title" : "ParamInfo",
+  "type" : ["object", "null"],
+  "properties" : {
+    "DataType" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Type"
+        },
+        "Name" : {
+          "type" : ["string", "null"]
+        }
+      }
+    },
+    "Description" : {
+      "type" : ["string", "null"]
+    },
+    "Kind" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/UI_oM/ParamKind.json"
+    },
+    "HasDefaultValue" : {
+      "type" : "boolean"
+    },
+    "DefaultValue" : { },
+    "IsRequired" : {
+      "type" : "boolean"
+    },
+    "IsSelected" : {
+      "type" : "boolean"
+    },
+    "DefaultValueWarning" : {
+      "type" : ["string", "null"]
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.UI.ParamInfo"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["DataType", "Description", "Kind", "HasDefaultValue", "DefaultValue", "IsRequired", "IsSelected", "DefaultValueWarning"]
+}

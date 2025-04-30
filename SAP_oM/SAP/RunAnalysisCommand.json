@@ -1,0 +1,31 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/RunAnalysisCommand.json",
+  "title" : "RunAnalysisCommand",
+  "type" : ["object", "null"],
+  "properties" : {
+    "FileSettingsInput" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/FileSettings.json"
+    },
+    "FileSettingsOutput" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/FileSettings.json"
+    },
+    "APIKey" : {
+      "type" : ["string", "null"],
+      "description" : "API Key for access."
+    },
+    "PostURL" : {
+      "type" : ["string", "null"],
+      "description" : "Endpoint."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SAP.RunAnalysisCommand"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["FileSettingsInput", "FileSettingsOutput", "APIKey", "PostURL"]
+}

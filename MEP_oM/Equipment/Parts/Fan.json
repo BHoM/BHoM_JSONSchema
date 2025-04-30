@@ -1,0 +1,67 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Equipment/Parts/Fan.json",
+  "title" : "Fan",
+  "type" : ["object", "null"],
+  "description" : "Fan: Fans are devices that create a current of air (used for ventilation and cooling) by rotating blades",
+  "properties" : {
+    "FlowRate" : {
+      "type" : "number",
+      "description" : "Flow Rate denotes the amount of air that is drawn across the fan, measured in m3/s"
+    },
+    "ExternalStaticPressure" : {
+      "type" : "number",
+      "description" : "External static pressure denotes the resistance within the system that the fan has to overcome from filters, grilles, coils, etc"
+    },
+    "Speed" : {
+      "type" : "number",
+      "description" : "Speed denotes the rotational speed of the fan blades"
+    },
+    "DriveType" : {
+      "type" : ["string", "null"],
+      "description" : "Drive type denotes the drive type as either direct or belt"
+    },
+    "SpeedControl" : {
+      "type" : ["string", "null"],
+      "description" : "A device for controlling the fan speed."
+    },
+    "BrakeHorsePower" : {
+      "type" : "number"
+    },
+    "HorsePower" : {
+      "type" : "number"
+    },
+    "Efficiency" : {
+      "type" : "number",
+      "description" : "Efficiency denotes the ratio between the power transferred to airflow produced by the fan and the power used by the fan"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.MEP.Equipment.Parts.Fan"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["FlowRate", "ExternalStaticPressure", "Speed", "DriveType", "SpeedControl", "BrakeHorsePower", "HorsePower", "Efficiency"]
+}

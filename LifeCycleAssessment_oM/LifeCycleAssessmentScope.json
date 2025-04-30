@@ -1,0 +1,78 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/LifeCycleAssessmentScope.json",
+  "title" : "LifeCycleAssessmentScope",
+  "type" : ["object", "null"],
+  "description" : "LifeCycleAssessmentScope: The Life Cycle Assessment Scope fragment intends to provide a method of reporting project criteria (name, area, type, location). This object may be used for studies at any stage of development and can serve as a true means of 'apples to apples' comparison when catalogued. The information provided within this object is utilised for database construction and organisation only, therefore all values will not effect the overall life cycle assessment results.",
+  "properties" : {
+    "AdditionalNotes" : {
+      "type" : ["string", "null"],
+      "description" : "Additional notes should convey project design constraints (eg design for seismic activity) that could affect the overall embodied carbon."
+    },
+    "BiogenicCarbon" : {
+      "type" : "boolean",
+      "description" : "Biogenic Carbon is a true/false that indicates that the project contains materials that originated from a biological source (trees, soil), these materials have the ability sequester/store carbon."
+    },
+    "BuildingLifespan" : {
+      "type" : "integer",
+      "description" : "The assumed lifespan of the building being evaluated.  These values are for categorisation purposes only and will not effect the overall results."
+    },
+    "ConstructionScopeNew" : {
+      "type" : "boolean",
+      "description" : "Identifies the overall construction scope for the project. Set True if New Construction exists within your project."
+    },
+    "ConstructionScopeRenovation" : {
+      "type" : "boolean",
+      "description" : "Identifies the overall construction scope for the project. Set True if Renovation exists within your project."
+    },
+    "ContactName" : {
+      "type" : ["string", "null"],
+      "description" : "The Contact Name denotes the person/people who performed the LCA study."
+    },
+    "GravityStructuralMaterial" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/GravityStructuralMaterial.json"
+    },
+    "LateralStructuralMaterial" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/LateralStructuralMaterial.json"
+    },
+    "LevelOfDevelopment" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/LevelOfDevelopment.json"
+    },
+    "LifeCycleAssessmentPhases" : {
+      "type" : ["array", "null"],
+      "description" : "This is a list of life cycle assessment phases to be accounted for within this assessment. These values are for categorisation purposes only and will not effect the overall results.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/LifeCycleAssessmentPhases.json"
+      }
+    },
+    "ProjectType" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/ProjectType.json"
+    },
+    "ProjectName" : {
+      "type" : ["string", "null"],
+      "description" : "The Project Name denotes the name of the project for reporting purposes."
+    },
+    "ProjectArea" : {
+      "type" : "number",
+      "description" : "The Project Area (m2) denotes the more precise project area which will allow assessment of kgCO2eq/m2 metrics. Property has a quantity of type Area meassured in [m²]."
+    },
+    "SeismicDesignCategory" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/SeismicDesignCategory.json"
+    },
+    "WindSpeedCategory" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/WindSpeedCategory.json"
+    },
+    "Location" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Climate/Location.json"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.LifeCycleAssessment.LifeCycleAssessmentScope"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["AdditionalNotes", "BiogenicCarbon", "BuildingLifespan", "ConstructionScopeNew", "ConstructionScopeRenovation", "ContactName", "GravityStructuralMaterial", "LateralStructuralMaterial", "LevelOfDevelopment", "LifeCycleAssessmentPhases", "ProjectType", "ProjectName", "ProjectArea", "SeismicDesignCategory", "WindSpeedCategory", "Location"]
+}

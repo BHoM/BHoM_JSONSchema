@@ -1,0 +1,82 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/SimulationResult.json",
+  "title" : "SimulationResult",
+  "type" : ["object", "null"],
+  "properties" : {
+    "EpwFile" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/FileSettings.json"
+    },
+    "GroundMaterial" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/IEnergyMaterialOpaque.json"
+    },
+    "ShadeMaterial" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/IEnergyMaterialOpaque.json"
+    },
+    "Name" : {
+      "type" : ["string", "null"],
+      "description" : "The identifier used to distinguish existing results for this object."
+    },
+    "ShadedDownTemperature" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/HourlyContinuousCollection.json"
+    },
+    "ShadedUpTemperature" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/HourlyContinuousCollection.json"
+    },
+    "ShadedRadiantTemperature" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/HourlyContinuousCollection.json"
+    },
+    "ShadedLongwaveMeanRadiantTemperatureDelta" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/HourlyContinuousCollection.json"
+    },
+    "ShadedShortwaveMeanRadiantTemperatureDelta" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/HourlyContinuousCollection.json"
+    },
+    "ShadedMeanRadiantTemperature" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/HourlyContinuousCollection.json"
+    },
+    "UnshadedDownTemperature" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/HourlyContinuousCollection.json"
+    },
+    "UnshadedUpTemperature" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/HourlyContinuousCollection.json"
+    },
+    "UnshadedRadiantTemperature" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/HourlyContinuousCollection.json"
+    },
+    "UnshadedLongwaveMeanRadiantTemperatureDelta" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/HourlyContinuousCollection.json"
+    },
+    "UnshadedShortwaveMeanRadiantTemperatureDelta" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/HourlyContinuousCollection.json"
+    },
+    "UnshadedMeanRadiantTemperature" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/HourlyContinuousCollection.json"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.LadybugTools.SimulationResult"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["EpwFile", "GroundMaterial", "ShadeMaterial", "Name", "ShadedDownTemperature", "ShadedUpTemperature", "ShadedRadiantTemperature", "ShadedLongwaveMeanRadiantTemperatureDelta", "ShadedShortwaveMeanRadiantTemperatureDelta", "ShadedMeanRadiantTemperature", "UnshadedDownTemperature", "UnshadedUpTemperature", "UnshadedRadiantTemperature", "UnshadedLongwaveMeanRadiantTemperatureDelta", "UnshadedShortwaveMeanRadiantTemperatureDelta", "UnshadedMeanRadiantTemperature"]
+}

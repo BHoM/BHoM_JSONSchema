@@ -1,0 +1,41 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/Layouts/OffsetCurveLayout.json",
+  "title" : "OffsetCurveLayout",
+  "type" : ["object", "null"],
+  "description" : "OffsetCurveLayout: Curve layout created by offsetting an element's outer and inner outlines.\nPositive offset value will offset to the inside of the element.",
+  "properties" : {
+    "Offset" : {
+      "type" : "number",
+      "description" : "Offset value. Positive value will offset to the inside of the element. Property has a quantity of type Length meassured in [m]."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Spatial.Layouts.OffsetCurveLayout"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Offset"]
+}

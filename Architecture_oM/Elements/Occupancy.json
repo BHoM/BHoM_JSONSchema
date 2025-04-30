@@ -1,0 +1,56 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Architecture_oM/Elements/Occupancy.json",
+  "title" : "Occupancy",
+  "type" : ["object", "null"],
+  "properties" : {
+    "AreaPerPerson" : {
+      "type" : "number",
+      "description" : "The area per person is representative of the square meters each person occupies within the building or space."
+    },
+    "FemalePercentage" : {
+      "type" : "number",
+      "description" : "Percentage of Females of the total occupant count of the building or space."
+    },
+    "GenderNeutralPercentage" : {
+      "type" : "number",
+      "description" : "Percentage of Gender Neutral of the total occupant count of the building or space."
+    },
+    "MalePercentage" : {
+      "type" : "number",
+      "description" : "Percentage of Males of the total occupant count of the building or space."
+    },
+    "OccupantCount" : {
+      "type" : "integer",
+      "description" : "The total number of people that occupy the building or space."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Architecture.Elements.Occupancy"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["AreaPerPerson", "FemalePercentage", "GenderNeutralPercentage", "MalePercentage", "OccupantCount"]
+}

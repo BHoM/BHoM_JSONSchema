@@ -1,0 +1,42 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/XMLConfig.json",
+  "title" : "XMLConfig",
+  "type" : ["object", "null"],
+  "description" : "XMLConfig: Define configuration settings for pushing and pulling XML files using the XML Adapter.",
+  "properties" : {
+    "File" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/FileSettings.json"
+    },
+    "Schema" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/Enums/Schema.json"
+    },
+    "Settings" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/Settings/IXMLSettings.json"
+    },
+    "RemoveNils" : {
+      "type" : "boolean",
+      "description" : "Determine whether 'nil' XML attributes should be removed when pushing to an XML file."
+    },
+    "WrapNonBHoMObjects" : {
+      "type" : "boolean",
+      "description" : "If true, the Push action wraps any non-BHoM type into a BH.oM.Adapter.ObjectWrapper, allowing them to make use of the full Adapter workflow."
+    },
+    "AllowHashForComparing" : {
+      "type" : "boolean",
+      "description" : "If true and if no specific EqualityComparer is found for the type, Diffing hashes are computed and used to compare the objects."
+    },
+    "DiffingConfig" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/DiffingConfig.json"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.XML.XMLConfig"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["File", "Schema", "Settings", "RemoveNils"]
+}

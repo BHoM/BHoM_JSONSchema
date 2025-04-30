@@ -1,0 +1,32 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Lighting_oM/Enums/MountingType.json",
+  "anyOf" : [{
+      "type" : ["string", "null"],
+      "enum" : ["Undefined", "CeilingMounted", "Cove", "FloorMounted", "Pendant", "Recessed", "WallMounted"]
+    }, {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : ["string", "null"],
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.Lighting.Enums.MountingType"
+            }
+          }
+        },
+        "Value" : {
+          "type" : ["string", "null"],
+          "enum" : ["Undefined", "CeilingMounted", "Cove", "FloorMounted", "Pendant", "Recessed", "WallMounted"]
+        }
+      }
+    }]
+}

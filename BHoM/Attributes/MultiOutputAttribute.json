@@ -1,0 +1,34 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/MultiOutputAttribute.json",
+  "title" : "MultiOutputAttribute",
+  "type" : ["object", "null"],
+  "description" : "MultiOutputAttribute: Attribute providing information about an output parameter of a multi-output method.\nTo be applied to all methods that return BH.oM.Base.Output types.",
+  "properties" : {
+    "Index" : {
+      "type" : "integer",
+      "description" : "Zero-based index of the output parameter this attribute corresponds to."
+    },
+    "Name" : {
+      "type" : ["string", "null"],
+      "description" : "Name of the correspondent output parameter (to be used in the UI)."
+    },
+    "Description" : {
+      "type" : ["string", "null"],
+      "description" : "Description of the correspondent output parameter."
+    },
+    "Classification" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/ClassificationAttribute.json"
+    },
+    "TypeId" : { },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Base.Attributes.MultiOutputAttribute"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Index", "Name", "Description", "Classification"]
+}

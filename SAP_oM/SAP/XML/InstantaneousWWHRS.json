@@ -1,0 +1,68 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/InstantaneousWWHRS.json",
+  "title" : "InstantaneousWWHRS",
+  "type" : ["object", "null"],
+  "properties" : {
+    "WWHRSIndexNumber1" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "WWHRSIndexNumber2" : {
+      "type" : ["string", "null"],
+      "description" : "Omit if no second system."
+    },
+    "WWHRSEfficiency1" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "WWHRSManufacturer1" : {
+      "type" : ["string", "null"],
+      "description" : "Omit if no second system."
+    },
+    "WWHRSModel1" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "WWHRSEfficiency2" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "WWHRSManufacturer2" : {
+      "type" : ["string", "null"],
+      "description" : "Omit if no second system."
+    },
+    "WWHRSModel2" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SAP.XML.InstantaneousWWHRS"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["WWHRSIndexNumber1", "WWHRSIndexNumber2", "WWHRSEfficiency1", "WWHRSManufacturer1", "WWHRSModel1", "WWHRSEfficiency2", "WWHRSManufacturer2", "WWHRSModel2"]
+}

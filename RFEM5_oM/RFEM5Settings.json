@@ -1,0 +1,24 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/RFEM5_oM/RFEM5Settings.json",
+  "title" : "RFEM5Settings",
+  "type" : ["object", "null"],
+  "description" : "RFEM5Settings: This Config can be specified in the `ActionConfig` input of any Adapter Action (e.g. Push).",
+  "properties" : {
+    "Is2DModel" : {
+      "type" : "boolean"
+    },
+    "ZIsUp" : {
+      "type" : "boolean"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.RFEM5.RFEM5Settings"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Is2DModel", "ZIsUp"]
+}

@@ -1,0 +1,22 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Conditions/ISingleLogicalCondition.json",
+  "required" : ["_t"],
+  "properties" : {
+    "_t" : {
+      "const" : "BH.oM.Verification.Conditions.LogicalNotCondition"
+    }
+  },
+  "allOf" : [{
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Verification.Conditions.LogicalNotCondition"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Conditions/LogicalNotCondition.json"
+      }
+    }]
+}

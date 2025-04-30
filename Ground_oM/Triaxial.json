@@ -1,0 +1,72 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Ground_oM/Triaxial.json",
+  "title" : "Triaxial",
+  "type" : ["object", "null"],
+  "description" : "Triaxial: A set of data related to triaxial tests carried out",
+  "properties" : {
+    "Id" : {
+      "type" : ["string", "null"],
+      "description" : "Location identifier relating the borehole to the strata (LOCA_ID)."
+    },
+    "Top" : {
+      "type" : "number",
+      "description" : "Depth to the top of the sample, measured from the top of the borehole (SAMP_TOP). Property has a quantity of type Length meassured in [m]."
+    },
+    "SpecimenDepth" : {
+      "type" : "number",
+      "description" : "Depth to the top of the specimen (SPEC_DPTH). Property has a quantity of type Length meassured in [m]."
+    },
+    "SampleId" : {
+      "type" : ["string", "null"],
+      "description" : "Sample Identification (SAMP_ID)."
+    },
+    "SpecimenReference" : {
+      "type" : ["string", "null"],
+      "description" : "Specimen Reference (SPEC_REF)."
+    },
+    "UndrainedShearStrength" : {
+      "type" : "number",
+      "description" : "Undrained shear strength at failure (TRIT_CU). Property has a quantity of type Pressure meassured in [Pa]."
+    },
+    "FailureMode" : {
+      "type" : ["string", "null"],
+      "description" : "Mode of Failure (TRIT_MODE)."
+    },
+    "Properties" : {
+      "type" : ["array", "null"],
+      "description" : "A list of different properties including references and results.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Ground_oM/ITestProperties.json"
+      }
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Ground.Triaxial"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Id", "Top", "SpecimenDepth", "SampleId", "SpecimenReference", "UndrainedShearStrength", "FailureMode", "Properties"]
+}

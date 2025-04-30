@@ -1,0 +1,95 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/MaterialFragments/SolidMaterial.json",
+  "title" : "SolidMaterial",
+  "type" : ["object", "null"],
+  "description" : "SolidMaterial: Fragment containing solid material properties related to material",
+  "properties" : {
+    "Density" : {
+      "type" : "number"
+    },
+    "Conductivity" : {
+      "type" : "number"
+    },
+    "SpecificHeat" : {
+      "type" : "number"
+    },
+    "VapourResistivity" : {
+      "type" : "number"
+    },
+    "Description" : {
+      "type" : ["string", "null"]
+    },
+    "Roughness" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/MaterialFragments/Roughness.json"
+    },
+    "Refraction" : {
+      "type" : "number"
+    },
+    "SolarReflectanceExternal" : {
+      "type" : "number"
+    },
+    "SolarReflectanceInternal" : {
+      "type" : "number"
+    },
+    "SolarTransmittance" : {
+      "type" : "number"
+    },
+    "LightReflectanceExternal" : {
+      "type" : "number"
+    },
+    "LightReflectanceInternal" : {
+      "type" : "number"
+    },
+    "LightTransmittance" : {
+      "type" : "number"
+    },
+    "EmissivityExternal" : {
+      "type" : "number"
+    },
+    "EmissivityInternal" : {
+      "type" : "number"
+    },
+    "Specularity" : {
+      "type" : "number"
+    },
+    "TransmittedDiffusivity" : {
+      "type" : "number"
+    },
+    "TransmittedSpecularity" : {
+      "type" : "number"
+    },
+    "IgnoreInUValueCalculation" : {
+      "type" : "boolean",
+      "description" : "Define whether or not this material should be ignored in any uValue calculations"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.MaterialFragments.SolidMaterial"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Density", "Conductivity", "SpecificHeat", "VapourResistivity", "Description", "Roughness", "Refraction", "SolarReflectanceExternal", "SolarReflectanceInternal", "SolarTransmittance", "LightReflectanceExternal", "LightReflectanceInternal", "LightTransmittance", "EmissivityExternal", "EmissivityInternal", "Specularity", "TransmittedDiffusivity", "TransmittedSpecularity", "IgnoreInUValueCalculation"]
+}

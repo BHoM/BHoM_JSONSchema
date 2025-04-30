@@ -1,0 +1,41 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Humans_oM/ViewQuality/Cvalue.json",
+  "title" : "Cvalue",
+  "type" : ["object", "null"],
+  "properties" : {
+    "CValue" : {
+      "type" : "number"
+    },
+    "HorizDist" : {
+      "type" : "number"
+    },
+    "HeightAbovePitch" : {
+      "type" : "number"
+    },
+    "AbsoluteDist" : {
+      "type" : "number"
+    },
+    "Focalpoint" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
+    },
+    "ObjectId" : {
+      "type" : ["object", "integer", "string", "number", "null"]
+    },
+    "ResultCase" : {
+      "type" : ["object", "integer", "string", "number", "null"]
+    },
+    "TimeStep" : {
+      "type" : "number"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Humans.ViewQuality.Cvalue"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["CValue", "HorizDist", "HeightAbovePitch", "AbsoluteDist", "Focalpoint"]
+}

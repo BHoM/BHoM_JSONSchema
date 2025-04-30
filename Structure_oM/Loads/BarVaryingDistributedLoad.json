@@ -1,0 +1,74 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/BarVaryingDistributedLoad.json",
+  "title" : "BarVaryingDistributedLoad",
+  "type" : ["object", "null"],
+  "description" : "BarVaryingDistributedLoad: Varying distributed load for bar elements. Can be used to apply force and/or moments.",
+  "properties" : {
+    "StartPosition" : {
+      "type" : "number",
+      "description" : "Distance along the bar between the start node and the start of the loaded region.\nIf RelativePositions is true, this value will be a normalised length where 0 means start and 1 means end, which means this value needs to be within this range.\nIf RelativePositions is false, this value will be in absolute distances."
+    },
+    "ForceAtStart" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
+    },
+    "MomentAtStart" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
+    },
+    "EndPosition" : {
+      "type" : "number",
+      "description" : "Distance along the bar between the start node and the end of the loaded region.\nIf RelativePositions is true, this value will be a normalised length where 0 means start and 1 means end, which means this value needs to be within this range.\nIf RelativePositions is false, this value will be in absolute distances."
+    },
+    "ForceAtEnd" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
+    },
+    "MomentAtEnd" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
+    },
+    "Loadcase" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/Loadcase.json"
+    },
+    "Objects" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/BHoMGroup`1.json"
+    },
+    "Axis" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/LoadAxis.json"
+    },
+    "Projected" : {
+      "type" : "boolean",
+      "description" : "If true the load is projected to the element. This means that the load will be reduced when its direction is at an angle to the element."
+    },
+    "RelativePositions" : {
+      "type" : "boolean",
+      "description" : "If true, the StartPosition and EndPosition will be normalised lengths where 0 means start and 1 means end.\nIf false, the StartPosition and EndPosition will be absolute distances."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Structure.Loads.BarVaryingDistributedLoad"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["StartPosition", "ForceAtStart", "MomentAtStart", "EndPosition", "ForceAtEnd", "MomentAtEnd", "Loadcase", "Objects", "Axis", "Projected", "RelativePositions"]
+}

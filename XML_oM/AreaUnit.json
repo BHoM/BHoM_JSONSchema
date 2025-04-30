@@ -1,0 +1,32 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/AreaUnit.json",
+  "anyOf" : [{
+      "type" : ["string", "null"],
+      "enum" : ["SquareKilometers", "SquareMeters", "SquareCentimeters", "SquareMillimeters", "SquareMiles", "SquareYards", "SquareFeet", "SquareInches"]
+    }, {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : ["string", "null"],
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.Adapters.XML.AreaUnit"
+            }
+          }
+        },
+        "Value" : {
+          "type" : ["string", "null"],
+          "enum" : ["SquareKilometers", "SquareMeters", "SquareCentimeters", "SquareMillimeters", "SquareMiles", "SquareYards", "SquareFeet", "SquareInches"]
+        }
+      }
+    }]
+}

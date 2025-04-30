@@ -1,0 +1,48 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Elements/Sheet.json",
+  "title" : "Sheet",
+  "type" : ["object", "null"],
+  "description" : "Sheet: A wrapper BHoM type for Revit sheet, used to create or update Revit sheets (on Push) and represent them as BHoMObjects (on Pull).",
+  "properties" : {
+    "InstanceProperties" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Properties/InstanceProperties.json"
+    },
+    "SheetName" : {
+      "type" : ["string", "null"],
+      "description" : "Name of the Revit sheet."
+    },
+    "SheetNumber" : {
+      "type" : ["string", "null"],
+      "description" : "Number of the Revit sheet."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.Revit.Elements.Sheet"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["InstanceProperties", "SheetName", "SheetNumber"]
+}

@@ -1,0 +1,37 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/GSA_oM/AnalysisTaskFragment.json",
+  "title" : "AnalysisTaskFragment",
+  "type" : ["object", "null"],
+  "description" : "AnalysisTaskFragment: Fragment to be put on a LoadCombination to help you control the analysis task type to use in GSA and for which stage the combination should be run.",
+  "properties" : {
+    "AnalysisType" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/GSA_oM/AnalysisType.json"
+    },
+    "Stage" : {
+      "type" : "integer",
+      "description" : "The stage number for the combination to be run on."
+    },
+    "ResidualForce" : {
+      "type" : "number",
+      "description" : "Allowed residual Force for convergence, only used for Non-linear analysis."
+    },
+    "ResidualMoment" : {
+      "type" : "number",
+      "description" : "Allowed residual Moment for convergence, only used for Non-linear analysis."
+    },
+    "BeamSlendernessEffect" : {
+      "type" : "boolean",
+      "description" : "Reduce beam stiffness when in compression, only used for Non-linear analysis."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.GSA.AnalysisTaskFragment"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["AnalysisType", "Stage", "ResidualForce", "ResidualMoment", "BeamSlendernessEffect"]
+}

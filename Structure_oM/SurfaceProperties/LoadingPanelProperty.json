@@ -1,0 +1,48 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/LoadingPanelProperty.json",
+  "title" : "LoadingPanelProperty",
+  "type" : ["object", "null"],
+  "description" : "LoadingPanelProperty: Property for 2D analytical elements used to distribute load, without any structural stiffness.",
+  "properties" : {
+    "Name" : {
+      "type" : ["string", "null"],
+      "description" : "A unique Name is required for some structural packages to create and identify the object."
+    },
+    "LoadApplication" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/LoadPanelSupportConditions.json"
+    },
+    "ReferenceEdge" : {
+      "type" : "integer",
+      "description" : "Used to define the direction of the load for when LoadApplication is not AllSides."
+    },
+    "Material" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/IMaterialFragment.json"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Structure.SurfaceProperties.LoadingPanelProperty"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Name", "LoadApplication", "ReferenceEdge", "Material"]
+}

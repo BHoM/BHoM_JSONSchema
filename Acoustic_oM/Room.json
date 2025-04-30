@@ -1,0 +1,100 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Acoustic_oM/Room.json",
+  "title" : "Room",
+  "type" : ["object", "null"],
+  "description" : "Room: An acoustics room is defined by the criteria related to the sound within the space, as well as its geometry",
+  "properties" : {
+    "Boundaries" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/PolySurface.json"
+    },
+    "Area" : {
+      "type" : "number"
+    },
+    "Volume" : {
+      "type" : "number"
+    },
+    "Samples" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Acoustic_oM/Receiver.json"
+      }
+    },
+    "AcousticZone" : {
+      "type" : ["string", "null"],
+      "description" : "This specifies the list of spaces associated with a particular occupant activity's acoustic criteria."
+    },
+    "PublicAddressVoiceAlarmZone" : {
+      "type" : ["string", "null"],
+      "description" : "This specifies the list of spaces associated with similar Public Address and Voice Alarm devices"
+    },
+    "AverageInternalAmbientNoiseLevelRequirement" : {
+      "type" : "integer",
+      "description" : "This acoustic requirement specificies the maximum equivalent continuous noise level of a time-varying noise (LAeq,T) within a space. This metric is usually composed of noise from many sources, near and far and is measured in A-weighted decibels (dBA)."
+    },
+    "MaximumInternalAmbientNoiseLevelRequirement" : {
+      "type" : "integer",
+      "description" : "This acoustic requirement specifies the maximum sound pressure level within a space (LAF,max). It is typically measured using the fast time constant in A-weighted decibels (dBA)."
+    },
+    "ReverberationTime" : {
+      "type" : "number",
+      "description" : "This acoustic requirement specifies the maximum time for a steady sound pressure level in an enclosed space to decay by 60 dB. This parameter is measured in second from the moment the sound source is switched off."
+    },
+    "NoiseRating" : {
+      "type" : "integer",
+      "description" : "Noise rating curves developed by the International Organization for Standardization (ISO) determine the acceptable indoor environment for hearing preservation, speech communication and annoyance. This requirement specifies the maximum noise rating for a space."
+    },
+    "ImpactSoundInsulation" : {
+      "type" : "integer",
+      "description" : "This specifies the required impact sound insulation performance for floors. The single figure target value is typically given in for in-situ field measurements (L'nTw) in decibels. The lower the L'nTw, the better the building element will attenuate impact noises."
+    },
+    "SpeechTransmitionIndex" : {
+      "type" : "number",
+      "description" : "Speech transmission index (STI) is a metric that represents the transmission quality of speech with respect to intelligibility by a speech transmission channel. This acoustic requirement specifies the minimum STI ranging between 0 and 1."
+    },
+    "PrivacyRequirement" : {
+      "type" : ["string", "null"],
+      "description" : "This specifies the acoustic privacy requirements of a space. Acoustic privacy for a space is rated according to the noise sensitivity of a receiving room and the level of activity noise within a source room. It is typically denoted by terms Not Private, Moderate and Confidential, and is used to determine the suitable level of sound insulation (DnT,w) for partitions between spaces."
+    },
+    "MinimumSoundPressureLevel" : {
+      "type" : "integer",
+      "description" : "This acoustic criterion specifies the minimum sound pressure level required at an audience plane from a Public Address or Voice Alarm system, in decibels."
+    },
+    "SoundPressureLevelCoverage" : {
+      "type" : "number",
+      "description" : "This acoustic criterion specifies the minimum coverage area of an audience plane that must attain the Public Address or Voice Alarm MinimumSoundPressureLevel requirement. Typically given as a proportion, input a requirement value between 0-1. e.g. 80% coverage = 0.8."
+    },
+    "AcousticUnderlayRequirement" : {
+      "type" : "boolean",
+      "description" : "By selecting 'True' this boolean indicates the areas of a development that must utilise acoustic underlay in order to attain a suitable impact sound insulation performance (considering the activity in the source rooms and the sensitivity of the receiver room)."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Acoustic.Room"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Boundaries", "Area", "Volume", "Samples", "AcousticZone", "PublicAddressVoiceAlarmZone", "AverageInternalAmbientNoiseLevelRequirement", "MaximumInternalAmbientNoiseLevelRequirement", "ReverberationTime", "NoiseRating", "ImpactSoundInsulation", "SpeechTransmitionIndex", "PrivacyRequirement", "MinimumSoundPressureLevel", "SoundPressureLevelCoverage", "AcousticUnderlayRequirement"]
+}

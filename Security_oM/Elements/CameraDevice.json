@@ -1,0 +1,57 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Security_oM/Elements/CameraDevice.json",
+  "title" : "CameraDevice",
+  "type" : ["object", "null"],
+  "description" : "CameraDevice: A camera object is a electronic security device typically used in closed-circuit television (CCTV) systems.",
+  "properties" : {
+    "EyePosition" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
+    },
+    "TargetPosition" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
+    },
+    "HorizontalFieldOfView" : {
+      "type" : "number",
+      "description" : "The horizontal field of view of the Camera, known as the real-world width length of what the camera views. Property has a quantity of type Length meassured in [m]."
+    },
+    "Mounting" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Security_oM/Enums/MountingType.json"
+    },
+    "Type" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Security_oM/Enums/CameraType.json"
+    },
+    "Megapixels" : {
+      "type" : "number",
+      "description" : "The Camera megapixels that determines its image quality."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Security.Elements.CameraDevice"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["EyePosition", "TargetPosition", "HorizontalFieldOfView", "Mounting", "Type", "Megapixels"]
+}

@@ -1,0 +1,55 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/FireProtection.json",
+  "title" : "FireProtection",
+  "type" : ["object", "null"],
+  "description" : "FireProtection: The fire protection attributes of a space are indicative of the hazard level of the space (which influences the sprinkler count), the sprinkler system type required, and the presence of combustible materials or sloped ceilings.",
+  "properties" : {
+    "HazardType" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/HazardType.json"
+    },
+    "SprinklerSystemType" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/SprinklerSystemType.json"
+    },
+    "CombustibleMaterials" : {
+      "type" : "boolean",
+      "description" : "The presence of combustible materials in the space would indicate the potential need for increasing the hazard type within the space."
+    },
+    "SlopedCeiling" : {
+      "type" : "boolean",
+      "description" : "The presence of a sloped ceiling within the space would indicate the potential need for the area of the ceiling being calculated as if it were flat (i.e. the space would require more sprinklers than by area alone.)"
+    },
+    "MaximumCeilingTemperature" : {
+      "type" : "number",
+      "description" : "The maximum ceiling temperature indicates the temperature rating, classification and color of the sprinklers within the space."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SpaceCriteria.FireProtection"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["HazardType", "SprinklerSystemType", "CombustibleMaterials", "SlopedCeiling", "MaximumCeilingTemperature"]
+}

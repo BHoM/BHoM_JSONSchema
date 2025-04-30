@@ -1,0 +1,72 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/Waffle.json",
+  "title" : "Waffle",
+  "type" : ["object", "null"],
+  "description" : "Waffle: Property for 2D analytical elements, made up of a slab on top of parallel ribs running in two directions, all sharing the same material.",
+  "properties" : {
+    "Name" : {
+      "type" : ["string", "null"],
+      "description" : "A unique Name is required for some structural packages to create and identify the object."
+    },
+    "Thickness" : {
+      "type" : "number",
+      "description" : "The thickness of the slab sitting on top of the ribs. Property has a quantity of type Length meassured in [m]."
+    },
+    "Material" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/IMaterialFragment.json"
+    },
+    "TotalDepthX" : {
+      "type" : "number",
+      "description" : "Total depth measured from the bottom of the ribs in local x-direction to the top of the slab. Property has a quantity of type Length meassured in [m]."
+    },
+    "TotalDepthY" : {
+      "type" : "number",
+      "description" : "Total depth meassured from the bottom of the ribs in local y-direction to the top of the slab. Property has a quantity of type Length meassured in [m]."
+    },
+    "StemWidthX" : {
+      "type" : "number",
+      "description" : "Width of each rib in local x-direction. Property has a quantity of type Length meassured in [m]."
+    },
+    "StemWidthY" : {
+      "type" : "number",
+      "description" : "Width of each rib in local y-direction. Property has a quantity of type Length meassured in [m]."
+    },
+    "SpacingX" : {
+      "type" : "number",
+      "description" : "Centre-Centre distance between the ribs running in local x-direction. Property has a quantity of type Length meassured in [m]."
+    },
+    "SpacingY" : {
+      "type" : "number",
+      "description" : "Centre-Centre distance between the ribs running in local y-direction. Property has a quantity of type Length meassured in [m]."
+    },
+    "PanelType" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/PanelType.json"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Structure.SurfaceProperties.Waffle"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Name", "Thickness", "Material", "TotalDepthX", "TotalDepthY", "StemWidthX", "StemWidthY", "SpacingX", "SpacingY", "PanelType"]
+}

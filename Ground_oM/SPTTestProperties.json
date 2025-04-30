@@ -1,0 +1,73 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Ground_oM/SPTTestProperties.json",
+  "title" : "SPTTestProperties",
+  "type" : ["object", "null"],
+  "description" : "SPTTestProperties: Properties related to the standard penetration test.",
+  "properties" : {
+    "HammerNumber" : {
+      "type" : ["string", "null"],
+      "description" : "Hammer number (ISPT_HAM)."
+    },
+    "Type" : {
+      "type" : ["string", "null"],
+      "description" : "Type of test (SPT_TYPE)."
+    },
+    "WaterDepth" : {
+      "type" : "number",
+      "description" : "Depth to water at time of test, set to NaN if dry (ISPT_WAT). Property has a quantity of type Length meassured in [m]."
+    },
+    "CasingDepth" : {
+      "type" : "number",
+      "description" : "Casing depth at time of test (ISPT_CAS). Property has a quantity of type Length meassured in [m]."
+    },
+    "SoftRock" : {
+      "type" : "boolean",
+      "description" : "True if the standard penetration test was carried out in soft rock. (ISPT_ROCK)."
+    },
+    "WeatherConditions" : {
+      "type" : ["string", "null"],
+      "description" : "Weather conditons during test (ISPT_ENV)."
+    },
+    "Method" : {
+      "type" : ["string", "null"],
+      "description" : "Test method (ISPT_METH)."
+    },
+    "AccreditingBody" : {
+      "type" : ["string", "null"],
+      "description" : "Accrediting body (ISPT_CRED)."
+    },
+    "Status" : {
+      "type" : ["string", "null"],
+      "description" : "Test Status (TEST_STAT)"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Ground.SPTTestProperties"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["HammerNumber", "Type", "WaterDepth", "CasingDepth", "SoftRock", "WeatherConditions", "Method", "AccreditingBody", "Status"]
+}

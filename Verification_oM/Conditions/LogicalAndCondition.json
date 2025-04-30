@@ -1,0 +1,25 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Conditions/LogicalAndCondition.json",
+  "title" : "LogicalAndCondition",
+  "type" : ["object", "null"],
+  "description" : "LogicalAndCondition: Condition that contains a collection of nested conditions, which all need to be met for an object to be considered a pass.",
+  "properties" : {
+    "Conditions" : {
+      "type" : ["array", "null"],
+      "description" : "A collection of conditions to be evaluated in combination.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Conditions/ICondition.json"
+      }
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Verification.Conditions.LogicalAndCondition"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Conditions"]
+}

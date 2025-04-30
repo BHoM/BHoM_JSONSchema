@@ -1,0 +1,126 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/SAPResult.json",
+  "title" : "SAPResult",
+  "type" : ["object", "null"],
+  "description" : "SAPResult: An individual result for a single iteration of a SAP analysis on a dwelling.",
+  "properties" : {
+    "DwellingName" : {
+      "type" : ["string", "null"],
+      "description" : "The name of the dwelling (the plot reference)."
+    },
+    "DwellingCount" : {
+      "type" : "integer",
+      "description" : "The number of dwellings in the block that match this dwelling type."
+    },
+    "Iteration" : {
+      "type" : ["string", "null"],
+      "description" : "The name of the iteration analysed."
+    },
+    "TotalFloorArea" : {
+      "type" : "number",
+      "description" : "The floor area of a single dwelling of this type. Also referred to as the Total Floor Area (TFA)."
+    },
+    "FloorAreaByBlock" : {
+      "type" : "number",
+      "description" : "The total floor area of the dwelling type, calculated as the TotalFloorArea multiplied by the DwellingCount."
+    },
+    "WallArea" : {
+      "type" : "number",
+      "description" : "The total wall area of the dwelling."
+    },
+    "WindowArea" : {
+      "type" : "number",
+      "description" : "The total window area of the dwelling."
+    },
+    "WallToFloorRatio" : {
+      "type" : "number",
+      "description" : "The ratio of walls to floor for the dwelling."
+    },
+    "WindowToFloorRatio" : {
+      "type" : "number",
+      "description" : "The ratio of windows to floor for the dwelling."
+    },
+    "WindowToWallRatio" : {
+      "type" : "number",
+      "description" : "The ratio of window to wall for the dwelling."
+    },
+    "NotionalWindowArea" : {
+      "type" : "number",
+      "description" : "The total notional window area of the dwelling as your benchmark."
+    },
+    "NotionalWindowToWallRatio" : {
+      "type" : "number",
+      "description" : "The ratio of the notional window to wall for the dwelling."
+    },
+    "DER" : {
+      "type" : "number",
+      "description" : "The Dwelling Emission Rate (DER) - calculated as part of the analysis."
+    },
+    "TER" : {
+      "type" : "number",
+      "description" : "The Target Emission Rate (TER) for the dwelling."
+    },
+    "DERTERImprovement" : {
+      "type" : "number",
+      "description" : "The improvement of Emission Rate between the Target (TER) and actual (DER). Calculated as ( (TER - DER) / TER)."
+    },
+    "DPER" : {
+      "type" : "number",
+      "description" : "The Dwelling Primary Energy Rating (DPER) for the dwelling - calculated as part of the analysis."
+    },
+    "TPER" : {
+      "type" : "number",
+      "description" : "The Target Primary Energy Rating (TPER) for the dwelling."
+    },
+    "DPERTPERImprovement" : {
+      "type" : "number",
+      "description" : "The improvement of Primary Energy Rating between the Target (TPER) and actual (DPER). Calculated as ( (TPER - DPER) / TPER)."
+    },
+    "DFEE" : {
+      "type" : "number",
+      "description" : "The Dwelling Fabric Energy Efficiency (DFEE) for the dwelling - calculated as part of the analysis."
+    },
+    "TFEE" : {
+      "type" : "number",
+      "description" : "The Target Fabric Energy Efficiency (TFEE) for the dwelling."
+    },
+    "DFEETFEEImprovement" : {
+      "type" : "number",
+      "description" : "The improvement of Fabric Energy Efficiency between the Target (TFEE) and actual (DFEE). Calculated as ( (TFEE - DFEE) / TFEE)."
+    },
+    "BlockDER" : {
+      "type" : "number",
+      "description" : "Calculation of the Dwelling Emission Rate (DER) multiplied by the total floor area for the dwelling type, calculated as the DER multiplied by FloorAreaByBlock."
+    },
+    "BlockTER" : {
+      "type" : "number",
+      "description" : "Calculation of the Target Emission Rate (TER) multiplied by the total floor area for the dwelling type, calculated as the TER multiplied by FloorAreaByBlock."
+    },
+    "BlockDPER" : {
+      "type" : "number",
+      "description" : "Calculation of the Dwelling Primary Energy Rating (DPER) multiplied by the total floor area for the dwelling type, calculated as the DPER multiplied by the FloorAreaByBlock."
+    },
+    "BlockTPER" : {
+      "type" : "number",
+      "description" : "Calculation of the Target Primary Energy Rating (TPER) multiplied by the total floor area for the dwelling type, calculated as the TPER multiplied by the FloorAreaByBlock."
+    },
+    "BlockDFEE" : {
+      "type" : "number",
+      "description" : "Calculation of the Dwelling Fabric Energy Efficiency (DFEE) multiplied by the total floor area for the dwelling type, calculated as the DFEE multiplied by the FloorAreaByBlock."
+    },
+    "BlockTFEE" : {
+      "type" : "number",
+      "description" : "Calculation of the Target Fabric Energy Efficiency (TFEE) multiplied by the total floor area for the dwelling type, calculated as the TFEE multiplied by the FloorAreaByBlock."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SAP.SAPResult"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["DwellingName", "DwellingCount", "Iteration", "TotalFloorArea", "FloorAreaByBlock", "WallArea", "WindowArea", "WallToFloorRatio", "WindowToFloorRatio", "WindowToWallRatio", "NotionalWindowArea", "NotionalWindowToWallRatio", "DER", "TER", "DERTERImprovement", "DPER", "TPER", "DPERTPERImprovement", "DFEE", "TFEE", "DFEETFEEImprovement", "BlockDER", "BlockTER", "BlockDPER", "BlockTPER", "BlockDFEE", "BlockTFEE"]
+}

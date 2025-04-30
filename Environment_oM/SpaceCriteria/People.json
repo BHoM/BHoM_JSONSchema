@@ -1,0 +1,52 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/People.json",
+  "title" : "People",
+  "type" : ["object", "null"],
+  "description" : "People: People gains are defined as the amount of both latent and sensible heat contributed by people based on their assumed activity level within the space (dancing, sitting, etc)",
+  "properties" : {
+    "Sensible" : {
+      "type" : "number",
+      "description" : "The sensible heat contributed by people, which contributes to a rise in temperature with no change in phase."
+    },
+    "Latent" : {
+      "type" : "number",
+      "description" : "The latent heat contributed by people, which contributes to a change in phase from solid to liquid."
+    },
+    "Profile" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/Profile.json"
+    },
+    "RadiantFraction" : {
+      "type" : "number",
+      "description" : "The radiant fraction depicts the percentage of long wave radiant heat given off by people."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SpaceCriteria.People"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Sensible", "Latent", "Profile", "RadiantFraction"]
+}

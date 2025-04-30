@@ -1,0 +1,54 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/UTCIHeatPlotCommand.json",
+  "title" : "UTCIHeatPlotCommand",
+  "type" : ["object", "null"],
+  "description" : "UTCIHeatPlotCommand: Command that, when executed with the LadybugToolsAdapter, simulates UTCI values and outputs a heatmap. Output is a BH.oM.LadybugTools.PlotInformation containing the plot and extra information about the collection, and the ExternalComfort object that was used to get the UTCI values (whether the simulation ran or not).",
+  "properties" : {
+    "EPWFile" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/FileSettings.json"
+    },
+    "ExternalComfort" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/ExternalComfort.json"
+    },
+    "BinColours" : {
+      "type" : ["array", "null"],
+      "description" : "A list of 10 colours to use for each UTCI category, leave empty to use the default UTCI colours.",
+      "items" : {
+        "type" : ["object", "null"],
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "System.Drawing.Color"
+          },
+          "A" : {
+            "type" : "integer"
+          },
+          "R" : {
+            "type" : "integer"
+          },
+          "G" : {
+            "type" : "integer"
+          },
+          "B" : {
+            "type" : "integer"
+          }
+        },
+        "required" : ["A", "R", "G", "B"]
+      }
+    },
+    "OutputLocation" : {
+      "type" : ["string", "null"],
+      "description" : "Full file path (with file name) to save the plot to. Leave blank to output a base 64 string representation of the image instead."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.LadybugTools.UTCIHeatPlotCommand"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["EPWFile", "ExternalComfort", "BinColours", "OutputLocation"]
+}

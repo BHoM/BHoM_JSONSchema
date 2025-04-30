@@ -1,0 +1,32 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Acoustic_oM/Frequency.json",
+  "anyOf" : [{
+      "type" : ["string", "null"],
+      "enum" : ["Sum", "Hz63", "Hz125", "Hz250", "Hz500", "Hz1000", "Hz2000", "Hz4000", "Hz8000", "Hz16000"]
+    }, {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : ["string", "null"],
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.Acoustic.Frequency"
+            }
+          }
+        },
+        "Value" : {
+          "type" : ["string", "null"],
+          "enum" : ["Sum", "Hz63", "Hz125", "Hz250", "Hz500", "Hz1000", "Hz2000", "Hz4000", "Hz8000", "Hz16000"]
+        }
+      }
+    }]
+}

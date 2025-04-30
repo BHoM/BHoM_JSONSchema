@@ -1,0 +1,75 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/FabricatedISectionProfile.json",
+  "title" : "FabricatedISectionProfile",
+  "type" : ["object", "null"],
+  "description" : "FabricatedISectionProfile: I-shaped profile with parallel flanges that allows for different thicknesses of the web, top flange and bottom flange as well as different top and bottom flange widths.",
+  "properties" : {
+    "Shape" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/ShapeType.json"
+    },
+    "Height" : {
+      "type" : "number",
+      "description" : "Full depth between the extreme fibres of the flanges. Property has a quantity of type Length meassured in [m]."
+    },
+    "TopFlangeWidth" : {
+      "type" : "number",
+      "description" : "Full width of the top flange. Property has a quantity of type Length meassured in [m]."
+    },
+    "BotFlangeWidth" : {
+      "type" : "number",
+      "description" : "Full width of the bottom flange. Property has a quantity of type Length meassured in [m]."
+    },
+    "WebThickness" : {
+      "type" : "number",
+      "description" : "Property has a quantity of type Length meassured in [m]."
+    },
+    "TopFlangeThickness" : {
+      "type" : "number",
+      "description" : "Property has a quantity of type Length meassured in [m]."
+    },
+    "BotFlangeThickness" : {
+      "type" : "number",
+      "description" : "Property has a quantity of type Length meassured in [m]."
+    },
+    "WeldSize" : {
+      "type" : "number",
+      "description" : "Fillet weld size between web and flanges. Measured as the distance between intersection of web and flange perpendicular to the edge of the weld. Property has a quantity of type Length meassured in [m]."
+    },
+    "Edges" : {
+      "type" : ["array", "null"],
+      "description" : "Edge curves that matches the dimensions in the global XY-plane.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ICurve.json"
+      }
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Spatial.ShapeProfiles.FabricatedISectionProfile"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Shape", "Height", "TopFlangeWidth", "BotFlangeWidth", "WebThickness", "TopFlangeThickness", "BotFlangeThickness", "WeldSize", "Edges"]
+}

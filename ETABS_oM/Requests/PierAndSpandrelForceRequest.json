@@ -1,0 +1,37 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/Requests/PierAndSpandrelForceRequest.json",
+  "title" : "PierAndSpandrelForceRequest",
+  "type" : ["object", "null"],
+  "properties" : {
+    "ResultType" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/Requests/PierAndSpandrelResultType.json"
+    },
+    "Cases" : {
+      "type" : ["array", "null"],
+      "description" : "Defines which cases and/or combinations that results should be extracted for. Can generally be set to either Loadcase or Loadcombination objects, or identifiers matching the software. If nothing is provided, results for all cases will be assumed.",
+      "items" : { }
+    },
+    "Modes" : {
+      "type" : ["array", "null"],
+      "description" : "Defines for which modes results should be extracted. Only applicable for some casetypes. If nothing is provided, results for all modes will be assumed.",
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "ObjectIds" : {
+      "type" : ["array", "null"],
+      "description" : "Defines which Nodes that results should be extracted for. Can generally be set to either pulled Node objects, or identifiers matching the software. If nothing is provided, results for all Nodes will be assumed.",
+      "items" : { }
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.ETABS.Requests.PierAndSpandrelForceRequest"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["ResultType", "Cases", "Modes", "ObjectIds"]
+}

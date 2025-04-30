@@ -1,0 +1,133 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/Bluebeam/SAPMarkup.json",
+  "title" : "SAPMarkup",
+  "type" : ["object", "null"],
+  "properties" : {
+    "PageLabel" : {
+      "type" : "integer"
+    },
+    "Subject" : {
+      "type" : ["string", "null"]
+    },
+    "Space" : {
+      "type" : ["string", "null"]
+    },
+    "Author" : {
+      "type" : ["string", "null"]
+    },
+    "Date" : {
+      "type" : ["string", "null"]
+    },
+    "Colour" : {
+      "type" : ["string", "null"]
+    },
+    "Comments" : {
+      "type" : ["string", "null"]
+    },
+    "Length" : {
+      "type" : "number"
+    },
+    "Area" : {
+      "type" : "number"
+    },
+    "Label" : {
+      "type" : ["string", "null"]
+    },
+    "Depth" : {
+      "type" : ["string", "null"],
+      "description" : "By default this is an XML String representation. Most software will automatically handle the conversion to a numerical representation but users can also use the Query.Depth(Markup) method if necessary."
+    },
+    "Layer" : {
+      "type" : ["string", "null"]
+    },
+    "TFAFloorType" : {
+      "type" : ["string", "null"],
+      "description" : "This is a custom property which can be added to Bluebeam for SAP workflow interoperability."
+    },
+    "TFADwellingStorey" : {
+      "type" : "integer",
+      "description" : "This is a custom property which can be added to Bluebeam for SAP workflow interoperability."
+    },
+    "TFABuildingLevel" : {
+      "type" : "integer",
+      "description" : "This is a custom property which can be added to Bluebeam for SAP workflow interoperability."
+    },
+    "TFAHeight" : {
+      "type" : "number",
+      "description" : "This is a custom property which can be added to Bluebeam for SAP workflow interoperability."
+    },
+    "RoofType" : {
+      "type" : ["string", "null"],
+      "description" : "This is a custom property which can be added to Bluebeam for SAP workflow interoperability."
+    },
+    "ThermalBridgeType" : {
+      "type" : ["string", "null"],
+      "description" : "This is a custom property which can be added to Bluebeam for SAP workflow interoperability."
+    },
+    "ThermalBridgeLength" : {
+      "type" : ["string", "null"],
+      "description" : "This is a custom property which can be added to Bluebeam for SAP workflow interoperability."
+    },
+    "OpeningType" : {
+      "type" : ["string", "null"],
+      "description" : "This is a custom property which can be added to Bluebeam for SAP workflow interoperability."
+    },
+    "OpeningLocation" : {
+      "type" : ["string", "null"],
+      "description" : "This is a custom property which can be added to Bluebeam for SAP workflow interoperability."
+    },
+    "OpeningHeight" : {
+      "type" : "number",
+      "description" : "This is a custom property which can be added to Bluebeam for SAP workflow interoperability."
+    },
+    "OpeningOrientation" : {
+      "type" : ["string", "null"],
+      "description" : "This is a custom property which can be added to Bluebeam for SAP workflow interoperability."
+    },
+    "OpeningPitch" : {
+      "type" : ["string", "null"],
+      "description" : "This is a custom property which can be added to Bluebeam for SAP workflow interoperability."
+    },
+    "WallType" : {
+      "type" : ["string", "null"],
+      "description" : "This is a custom property which can be added to Bluebeam for SAP workflow interoperability."
+    },
+    "WallHeight" : {
+      "type" : "number",
+      "description" : "This is a custom property which can be added to Bluebeam for SAP workflow interoperability."
+    },
+    "IsCurtainWall" : {
+      "type" : "boolean",
+      "description" : "This is a custom property which can be added to Bluebeam for SAP workflow interoperability to determine whether this markup is for a Curtain Wall."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SAP.Bluebeam.SAPMarkup"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["PageLabel", "Subject", "Space", "Author", "Date", "Colour", "Comments", "Length", "Area", "Label", "Depth", "Layer", "TFAFloorType", "TFADwellingStorey", "TFABuildingLevel", "TFAHeight", "RoofType", "ThermalBridgeType", "ThermalBridgeLength", "OpeningType", "OpeningLocation", "OpeningHeight", "OpeningOrientation", "OpeningPitch", "WallType", "WallHeight", "IsCurtainWall"]
+}

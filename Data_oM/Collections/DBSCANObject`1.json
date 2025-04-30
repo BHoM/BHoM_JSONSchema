@@ -1,0 +1,24 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Collections/DBSCANObject`1.json",
+  "title" : "DBSCANObject`1",
+  "type" : ["object", "null"],
+  "properties" : {
+    "ClusterItem" : { },
+    "ClusterId" : {
+      "type" : "integer"
+    },
+    "IsVisited" : {
+      "type" : "boolean"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "pattern" : "^BH\\.oM\\.Data\\.Collections\\.DBSCANObject`1\\[\\[.*\\]\\]$"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["ClusterItem", "ClusterId", "IsVisited"]
+}

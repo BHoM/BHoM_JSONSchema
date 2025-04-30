@@ -1,0 +1,32 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/BarDesignProcedureType.json",
+  "anyOf" : [{
+      "type" : ["string", "null"],
+      "enum" : ["Steel", "Concrete", "Aluminum", "ColdFormed", "NoDesign"]
+    }, {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : ["string", "null"],
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.Adapters.SAP2000.BarDesignProcedureType"
+            }
+          }
+        },
+        "Value" : {
+          "type" : ["string", "null"],
+          "enum" : ["Steel", "Concrete", "Aluminum", "ColdFormed", "NoDesign"]
+        }
+      }
+    }]
+}

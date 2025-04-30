@@ -1,0 +1,24 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/FinishesWall.json",
+  "title" : "FinishesWall",
+  "type" : ["object", "null"],
+  "description" : "FinishesWall:",
+  "properties" : {
+    "SideA" : {
+      "type" : ["string", "null"]
+    },
+    "SideB" : {
+      "type" : ["string", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.dKoP.FinishesWall"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["SideA", "SideB"]
+}

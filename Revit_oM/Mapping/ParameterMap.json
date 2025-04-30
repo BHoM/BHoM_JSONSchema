@@ -1,0 +1,56 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Mapping/ParameterMap.json",
+  "title" : "ParameterMap",
+  "type" : ["object", "null"],
+  "description" : "ParameterMap: An entity defining the relationship between object's property names (or names of RevitParameters attached to it) and parameter names of correspondent Revit elements.",
+  "properties" : {
+    "Type" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Type"
+        },
+        "Name" : {
+          "type" : ["string", "null"]
+        }
+      }
+    },
+    "ParameterLinks" : {
+      "type" : ["array", "null"],
+      "description" : "A collection of type property names (or names of RevitParameters) and sets of their correspondent Revit parameter names.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Mapping/IParameterLink.json"
+      }
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.Revit.Mapping.ParameterMap"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Type", "ParameterLinks"]
+}

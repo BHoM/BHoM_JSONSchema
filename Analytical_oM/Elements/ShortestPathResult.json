@@ -1,0 +1,64 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Analytical_oM/Elements/ShortestPathResult.json",
+  "title" : "ShortestPathResult",
+  "type" : ["object", "null"],
+  "description" : "ShortestPathResult: Results associated with the computation of shortest paths.",
+  "properties" : {
+    "ObjectId" : {
+      "type" : ["object", "integer", "string", "number", "null"]
+    },
+    "ResultCase" : {
+      "type" : ["object", "integer", "string", "number", "null"]
+    },
+    "TimeStep" : {
+      "type" : "number",
+      "description" : "Time step for time history results."
+    },
+    "Path" : {
+      "type" : ["array", "null"],
+      "description" : "Shortest path as an ordered collection of entities.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/IBHoMObject.json"
+      }
+    },
+    "Curves" : {
+      "type" : ["array", "null"],
+      "description" : "Shortest path as an ordered collection of ICurves.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ICurve.json"
+      }
+    },
+    "Length" : {
+      "type" : "number",
+      "description" : "Total length of the shortest path. If the graph contained spatial entities and relations the distance traversed. If the graph is non spatial a count of traversed relations."
+    },
+    "Cost" : {
+      "type" : "number",
+      "description" : "Total cost of the shortest path. Sum of each relation weight multiplied by its the length."
+    },
+    "EntitiesVisited" : {
+      "type" : ["array", "null"],
+      "description" : "All entities visited in searching for the path.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/IBHoMObject.json"
+      }
+    },
+    "Relations" : {
+      "type" : ["array", "null"],
+      "description" : "Shortest path as an ordered collection of IRelations.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Analytical_oM/Graph/IRelation.json"
+      }
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Analytical.Elements.ShortestPathResult"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["ObjectId", "ResultCase", "TimeStep", "Path", "Curves", "Length", "Cost", "EntitiesVisited", "Relations"]
+}

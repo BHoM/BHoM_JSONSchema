@@ -1,0 +1,62 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Humans_oM/ViewQuality/AvalueSettings.json",
+  "title" : "AvalueSettings",
+  "type" : ["object", "null"],
+  "properties" : {
+    "EffectiveConeOfVision" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Polyline.json"
+    },
+    "FarClippingPlaneDistance" : {
+      "type" : "number",
+      "description" : "The distance from a spectator to the far clipping plane of their view frustum. Spectators in front of this plane will not be used in the occlusion part of the Avalue calculation. Default value is 1."
+    },
+    "CalculateOcclusion" : {
+      "type" : "boolean",
+      "description" : "Calculate proportion of playing area obstructed by heads of Spectators in front. Default value is false"
+    },
+    "EffectiveConeOfVisionWidth" : {
+      "type" : "number",
+      "description" : "Width of default EffectiveConeOfVision. Default value is 0.115. Used only when no EffectiveConeOfVision is provided."
+    },
+    "EffectiveConeOfVisionHeight" : {
+      "type" : "number",
+      "description" : "Height of default EffectiveConeOfVision. Default value is 0.115. Used only when no EffectiveConeOfVision is provided."
+    },
+    "NearClippingPlaneDistance" : {
+      "type" : "number",
+      "description" : "The distance from a spectator to the near clipping plane of their view frustum. Default value is 0.1. Used only when no EffectiveConeOfVision is provided."
+    },
+    "FocalPoint" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Humans.ViewQuality.AvalueSettings"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["EffectiveConeOfVision", "FarClippingPlaneDistance", "CalculateOcclusion", "EffectiveConeOfVisionWidth", "EffectiveConeOfVisionHeight", "NearClippingPlaneDistance", "FocalPoint"]
+}

@@ -1,0 +1,22 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Analytical_oM/Fragments/IProjectionFragment.json",
+  "required" : ["_t"],
+  "properties" : {
+    "_t" : {
+      "const" : "BH.oM.Analytical.Fragments.ProjectionFragment"
+    }
+  },
+  "allOf" : [{
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Analytical.Fragments.ProjectionFragment"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Analytical_oM/Fragments/ProjectionFragment.json"
+      }
+    }]
+}

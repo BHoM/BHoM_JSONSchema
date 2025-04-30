@@ -1,0 +1,40 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/ColourFragment.json",
+  "title" : "ColourFragment",
+  "type" : ["object", "null"],
+  "description" : "ColourFragment: Indicates a colour associable with a BHoMObject.",
+  "properties" : {
+    "Colour" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Drawing.Color"
+        },
+        "A" : {
+          "type" : "integer"
+        },
+        "R" : {
+          "type" : "integer"
+        },
+        "G" : {
+          "type" : "integer"
+        },
+        "B" : {
+          "type" : "integer"
+        }
+      },
+      "required" : ["A", "R", "G", "B"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Graphics.ColourFragment"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Colour"]
+}

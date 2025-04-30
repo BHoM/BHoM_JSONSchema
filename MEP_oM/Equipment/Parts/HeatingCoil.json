@@ -1,0 +1,65 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Equipment/Parts/HeatingCoil.json",
+  "title" : "HeatingCoil",
+  "type" : ["object", "null"],
+  "description" : "HeatingCoil: Heating coils allow fluids (air) to raise their temperature as they pass through the coil",
+  "properties" : {
+    "SensibleCapacity" : {
+      "type" : "number",
+      "description" : "Sensible capacity indicates the ability for the heating coil to change the temperature of the fluid (air)."
+    },
+    "EnteringDryBulbAirTemperature" : {
+      "type" : "number",
+      "description" : "Entering Dry Bulb Air Temperature indicates the heat intensity of the air entering the system in degrees Celsius"
+    },
+    "LeavingDryBulbAirTemperature" : {
+      "type" : "number",
+      "description" : "Leaving Dry Bulb Air Temperature indicates the heat intensity of the air leaving the system in degrees Celsius"
+    },
+    "EnteringWaterTemperature" : {
+      "type" : "number",
+      "description" : "Entering Water Temperature indicates the heat intensity of the water entering the system in degrees Celsius"
+    },
+    "LeavingWaterTemperature" : {
+      "type" : "number",
+      "description" : "Leaving Water Temperature indicates the heat intensity of the water leaving the system in degrees Celsius"
+    },
+    "PressureDrop" : {
+      "type" : "number",
+      "description" : "Pressure Drop indicates the amount of resistance created by the coil which creates a loss in pressure of the fluid (air)"
+    },
+    "NumberOfRows" : {
+      "type" : "integer",
+      "description" : "Number of Rows indicates the number of rows of coils that the fluid (air) passes through"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.MEP.Equipment.Parts.HeatingCoil"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["SensibleCapacity", "EnteringDryBulbAirTemperature", "LeavingDryBulbAirTemperature", "EnteringWaterTemperature", "LeavingWaterTemperature", "PressureDrop", "NumberOfRows"]
+}

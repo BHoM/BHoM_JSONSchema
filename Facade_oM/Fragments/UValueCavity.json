@@ -1,0 +1,22 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Fragments/UValueCavity.json",
+  "title" : "UValueCavity",
+  "type" : ["object", "null"],
+  "description" : "UValueCavity: A U-Value representing the effective U-Value of cavity insulation. This does not include derating effects from any frame u-values but should be derated for any thermal bridges not modeled.",
+  "properties" : {
+    "UValue" : {
+      "type" : "number",
+      "description" : "The U-Value of the cavity insulation."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Facade.Fragments.UValueCavity"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["UValue"]
+}

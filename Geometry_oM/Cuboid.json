@@ -1,0 +1,33 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Cuboid.json",
+  "title" : "Cuboid",
+  "type" : ["object", "null"],
+  "description" : "Cuboid: A polyhedron. Standard cuboid consisting of six right-angled quadrilateral faces.",
+  "properties" : {
+    "CoordinateSystem" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/CoordinateSystem/Cartesian.json"
+    },
+    "Length" : {
+      "type" : "number",
+      "description" : "Dimension in the local x-axis. The Cuboid will have one face at a distance of Length/2 from the centre along the positive local x-axis and, one face at a distance of Length/2 from the centre along the negative local x-axis. Property has a quantity of type Length meassured in [m]."
+    },
+    "Depth" : {
+      "type" : "number",
+      "description" : "Dimension in the local y-axis. The Cuboid will have one face at a distance of Depth/2 from the centre along the positive local y-axis and, one face at a distance of Depth/2 from the centre along the negative local y-axis. Property has a quantity of type Length meassured in [m]."
+    },
+    "Height" : {
+      "type" : "number",
+      "description" : "Dimension in the local z-axis. The Cuboid will have one face at a distance of Height/2 from the centre along the positive local z-axis and, one face at a distance of Height/2 from the centre along the negative local z-axis. Property has a quantity of type Length meassured in [m]."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Geometry.Cuboid"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["CoordinateSystem", "Length", "Depth", "Height"]
+}

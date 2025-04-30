@@ -1,0 +1,52 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/WindTurbine.json",
+  "title" : "WindTurbine",
+  "type" : ["object", "null"],
+  "properties" : {
+    "ManufacturerName" : {
+      "type" : ["string", "null"],
+      "description" : "Wind turbine manufacturer name."
+    },
+    "Certificate" : {
+      "type" : ["string", "null"],
+      "description" : "Wind turbine certificate."
+    },
+    "RotorDiameter" : {
+      "type" : ["string", "null"],
+      "description" : "Wind turbine rotor diameter in metres."
+    },
+    "HubHeight" : {
+      "type" : ["string", "null"],
+      "description" : "Wind turbine hub height above building in metres."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SAP.XML.WindTurbine"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["ManufacturerName", "Certificate", "RotorDiameter", "HubHeight"]
+}

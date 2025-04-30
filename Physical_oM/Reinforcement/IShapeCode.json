@@ -1,0 +1,442 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/IShapeCode.json",
+  "required" : ["_t"],
+  "properties" : {
+    "_t" : {
+      "enum" : ["BH.oM.Physical.Reinforcement.BS8666.ShapeCode99", "BH.oM.Physical.Reinforcement.BS8666.ShapeCode98", "BH.oM.Physical.Reinforcement.BS8666.ShapeCode77", "BH.oM.Physical.Reinforcement.BS8666.ShapeCode75", "BH.oM.Physical.Reinforcement.BS8666.ShapeCode67", "BH.oM.Physical.Reinforcement.BS8666.ShapeCode64", "BH.oM.Physical.Reinforcement.BS8666.ShapeCode63", "BH.oM.Physical.Reinforcement.BS8666.ShapeCode56", "BH.oM.Physical.Reinforcement.BS8666.ShapeCode52", "BH.oM.Physical.Reinforcement.BS8666.ShapeCode51", "BH.oM.Physical.Reinforcement.BS8666.ShapeCode48", "BH.oM.Physical.Reinforcement.BS8666.ShapeCode47", "BH.oM.Physical.Reinforcement.BS8666.ShapeCode46", "BH.oM.Physical.Reinforcement.BS8666.ShapeCode44", "BH.oM.Physical.Reinforcement.BS8666.ShapeCode41", "BH.oM.Physical.Reinforcement.BS8666.ShapeCode36", "BH.oM.Physical.Reinforcement.BS8666.ShapeCode35", "BH.oM.Physical.Reinforcement.BS8666.ShapeCode34", "BH.oM.Physical.Reinforcement.BS8666.ShapeCode33", "BH.oM.Physical.Reinforcement.BS8666.ShapeCode32", "BH.oM.Physical.Reinforcement.BS8666.ShapeCode31", "BH.oM.Physical.Reinforcement.BS8666.ShapeCode29", "BH.oM.Physical.Reinforcement.BS8666.ShapeCode28", "BH.oM.Physical.Reinforcement.BS8666.ShapeCode27", "BH.oM.Physical.Reinforcement.BS8666.ShapeCode26", "BH.oM.Physical.Reinforcement.BS8666.ShapeCode25", "BH.oM.Physical.Reinforcement.BS8666.ShapeCode24", "BH.oM.Physical.Reinforcement.BS8666.ShapeCode23", "BH.oM.Physical.Reinforcement.BS8666.ShapeCode22", "BH.oM.Physical.Reinforcement.BS8666.ShapeCode21", "BH.oM.Physical.Reinforcement.BS8666.ShapeCode15", "BH.oM.Physical.Reinforcement.BS8666.ShapeCode14", "BH.oM.Physical.Reinforcement.BS8666.ShapeCode13", "BH.oM.Physical.Reinforcement.BS8666.ShapeCode12", "BH.oM.Physical.Reinforcement.BS8666.ShapeCode11", "BH.oM.Physical.Reinforcement.BS8666.ShapeCode00"]
+    }
+  },
+  "allOf" : [{
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode99"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode99.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode98"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode98.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode77"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode77.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode75"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode75.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode67"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode67.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode64"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode64.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode63"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode63.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode56"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode56.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode52"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode52.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode51"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode51.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode48"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode48.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode47"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode47.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode46"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode46.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode44"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode44.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode41"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode41.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode36"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode36.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode35"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode35.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode34"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode34.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode33"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode33.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode32"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode32.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode31"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode31.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode29"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode29.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode28"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode28.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode27"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode27.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode26"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode26.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode25"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode25.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode24"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode24.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode23"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode23.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode22"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode22.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode21"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode21.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode15"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode15.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode14"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode14.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode13"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode13.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode12"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode12.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode11"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode11.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode00"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode00.json"
+      }
+    }]
+}

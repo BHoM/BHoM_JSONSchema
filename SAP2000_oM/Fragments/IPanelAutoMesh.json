@@ -1,0 +1,82 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/Fragments/IPanelAutoMesh.json",
+  "required" : ["_t"],
+  "properties" : {
+    "_t" : {
+      "enum" : ["BH.oM.Adapters.SAP2000.Fragments.PanelAutoMeshByPointsOnEdges", "BH.oM.Adapters.SAP2000.Fragments.PanelAutoMeshByNumberOfObjects", "BH.oM.Adapters.SAP2000.Fragments.PanelAutoMeshByMaximumSize", "BH.oM.Adapters.SAP2000.Fragments.PanelAutoMeshByGeneralDivide", "BH.oM.Adapters.SAP2000.Fragments.PanelAutoMeshByCookieCutPoints", "BH.oM.Adapters.SAP2000.Fragments.PanelAutoMeshByCookieCutLines"]
+    }
+  },
+  "allOf" : [{
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Adapters.SAP2000.Fragments.PanelAutoMeshByPointsOnEdges"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/Fragments/PanelAutoMeshByPointsOnEdges.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Adapters.SAP2000.Fragments.PanelAutoMeshByNumberOfObjects"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/Fragments/PanelAutoMeshByNumberOfObjects.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Adapters.SAP2000.Fragments.PanelAutoMeshByMaximumSize"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/Fragments/PanelAutoMeshByMaximumSize.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Adapters.SAP2000.Fragments.PanelAutoMeshByGeneralDivide"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/Fragments/PanelAutoMeshByGeneralDivide.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Adapters.SAP2000.Fragments.PanelAutoMeshByCookieCutPoints"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/Fragments/PanelAutoMeshByCookieCutPoints.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Adapters.SAP2000.Fragments.PanelAutoMeshByCookieCutLines"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/Fragments/PanelAutoMeshByCookieCutLines.json"
+      }
+    }]
+}

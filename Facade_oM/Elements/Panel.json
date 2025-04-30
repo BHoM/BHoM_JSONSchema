@@ -1,0 +1,57 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Elements/Panel.json",
+  "title" : "Panel",
+  "type" : ["object", "null"],
+  "description" : "Panel: A facade object used to define planar surfaces such as walls",
+  "properties" : {
+    "ExternalEdges" : {
+      "type" : ["array", "null"],
+      "description" : "A collection of Edge objects which defines the external boundary of the panel",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Elements/FrameEdge.json"
+      }
+    },
+    "Openings" : {
+      "type" : ["array", "null"],
+      "description" : "A collection of cutouts or holes in a building surface/panel (e.g. Window, Door, Rooflight)",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Elements/Opening.json"
+      }
+    },
+    "Construction" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Constructions/IConstruction.json"
+    },
+    "Type" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Elements/PanelType.json"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Facade.Elements.Panel"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["ExternalEdges", "Openings", "Construction", "Type"]
+}

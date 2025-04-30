@@ -1,0 +1,57 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Equipment/Parts/Filter.json",
+  "title" : "Filter",
+  "type" : ["object", "null"],
+  "description" : "Filter: Filters are devices that remove solid particles from a system",
+  "properties" : {
+    "Type" : {
+      "type" : ["string", "null"],
+      "description" : "Type denotes the kind of filter (eg fiberglass, pleated, HEPA, washable, etc)"
+    },
+    "MERVRating" : {
+      "type" : "integer",
+      "description" : "MERV Rating is the Minimum Efficiency Rating Value which denotes the effectiveness of the filter's ability to trap small particles)"
+    },
+    "InitialPressureDrop" : {
+      "type" : "number",
+      "description" : "Initial pressure drop describes the pressure drop across a new (unused) filter"
+    },
+    "ReplacementPressureDrop" : {
+      "type" : "number",
+      "description" : "Replacement pressure drop describes the pressure drop across a used filter, and indicates that the filter should be replaced"
+    },
+    "Area" : {
+      "type" : "number",
+      "description" : "Area indicates the face area of the filter in m2"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.MEP.Equipment.Parts.Filter"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Type", "MERVRating", "InitialPressureDrop", "ReplacementPressureDrop", "Area"]
+}

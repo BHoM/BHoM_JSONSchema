@@ -1,0 +1,6 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Requests/FilterEverything.json",
+  "title" : "FilterEverything",
+  "type" : ["object", "null"],
+  "description" : "FilterEverything: IRequest that filters all elements and types in the Revit model. This means a lot of data - please use carefully!"
+}

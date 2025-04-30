@@ -1,0 +1,74 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Humans_oM/Employee.json",
+  "title" : "Employee",
+  "type" : ["object", "null"],
+  "properties" : {
+    "Company" : {
+      "type" : ["string", "null"],
+      "description" : "Company the Employee works for."
+    },
+    "Office" : {
+      "type" : ["string", "null"],
+      "description" : "Office assigned to the Employee."
+    },
+    "Discipline" : {
+      "type" : ["string", "null"],
+      "description" : "Discipline the Employee works in."
+    },
+    "Team" : {
+      "type" : ["string", "null"],
+      "description" : "Team the Employee belongs to."
+    },
+    "Manager" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Humans_oM/Employee.json"
+    },
+    "Grade" : {
+      "type" : ["string", "null"],
+      "description" : "Seniority of the Employee."
+    },
+    "Email" : {
+      "type" : ["string", "null"],
+      "description" : "Company email of the Employee."
+    },
+    "Phone" : {
+      "type" : ["string", "null"],
+      "description" : "Company phone number of the Employee."
+    },
+    "CodeDevelopmentRole" : {
+      "type" : ["string", "null"]
+    },
+    "BusinessUnit" : {
+      "type" : ["string", "null"],
+      "description" : "Business Unit the Employee is assigned to."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Humans.Employee"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Company", "Office", "Discipline", "Team", "Manager", "Grade", "Email", "Phone", "CodeDevelopmentRole", "BusinessUnit"]
+}

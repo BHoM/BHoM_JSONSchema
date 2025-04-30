@@ -1,0 +1,55 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/RenderText.json",
+  "title" : "RenderText",
+  "type" : ["object", "null"],
+  "description" : "RenderText: Render text at a location and orientation in space with specified height, font and colour.",
+  "properties" : {
+    "Text" : {
+      "type" : ["string", "null"],
+      "description" : "The text to render."
+    },
+    "Cartesian" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/CoordinateSystem/Cartesian.json"
+    },
+    "Height" : {
+      "type" : "number",
+      "description" : "Height of the text. Default is 1. Units will be determined by the setting of the user interface that renders the text."
+    },
+    "FontName" : {
+      "type" : ["string", "null"],
+      "description" : "Font used to render the text. Default is Arial."
+    },
+    "Colour" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Drawing.Color"
+        },
+        "A" : {
+          "type" : "integer"
+        },
+        "R" : {
+          "type" : "integer"
+        },
+        "G" : {
+          "type" : "integer"
+        },
+        "B" : {
+          "type" : "integer"
+        }
+      },
+      "required" : ["A", "R", "G", "B"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Graphics.RenderText"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Text", "Cartesian", "Height", "FontName", "Colour"]
+}

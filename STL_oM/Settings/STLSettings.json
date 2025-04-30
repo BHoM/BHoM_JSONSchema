@@ -1,0 +1,44 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/STL_oM/Settings/STLSettings.json",
+  "title" : "STLSettings",
+  "type" : ["object", "null"],
+  "properties" : {
+    "Directory" : {
+      "type" : ["string", "null"],
+      "description" : "Provide the directory where STL files should be stored (pushed) or read (pulled) from. Default is setp"
+    },
+    "DecimalPlaces" : {
+      "type" : "integer",
+      "description" : "Set how many decimal places numbers (such as coordinate locations for X, Y, Z) should have on push, default is set to 6"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.STL.Settings.STLSettings"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Directory", "DecimalPlaces"]
+}

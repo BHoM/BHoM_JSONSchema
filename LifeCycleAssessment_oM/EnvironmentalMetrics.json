@@ -1,0 +1,32 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/EnvironmentalMetrics.json",
+  "anyOf" : [{
+      "type" : ["string", "null"],
+      "enum" : ["Undefined", "AbioticDepletionFossilResources", "AbioticDepletionMineralsAndMetals", "Acidification", "ClimateChangeBiogenic", "ClimateChangeFossil", "ClimateChangeLandUse", "ClimateChangeTotal", "ClimateChangeTotalNoBiogenic", "EutrophicationCML", "EutrophicationAquaticFreshwater", "EutrophicationAquaticMarine", "EutrophicationTerrestrial", "EutrophicationTRACI", "OzoneDepletion", "PhotochemicalOzoneCreation", "PhotochemicalOzoneCreationCML", "PhotochemicalOzoneCreationTRACI", "WaterDeprivation"]
+    }, {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : ["string", "null"],
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.LifeCycleAssessment.EnvironmentalMetrics"
+            }
+          }
+        },
+        "Value" : {
+          "type" : ["string", "null"],
+          "enum" : ["Undefined", "AbioticDepletionFossilResources", "AbioticDepletionMineralsAndMetals", "Acidification", "ClimateChangeBiogenic", "ClimateChangeFossil", "ClimateChangeLandUse", "ClimateChangeTotal", "ClimateChangeTotalNoBiogenic", "EutrophicationCML", "EutrophicationAquaticFreshwater", "EutrophicationAquaticMarine", "EutrophicationTerrestrial", "EutrophicationTRACI", "OzoneDepletion", "PhotochemicalOzoneCreation", "PhotochemicalOzoneCreationCML", "PhotochemicalOzoneCreationTRACI", "WaterDeprivation"]
+        }
+      }
+    }]
+}

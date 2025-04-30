@@ -1,0 +1,40 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Properties/InstanceProperties.json",
+  "title" : "InstanceProperties",
+  "type" : ["object", "null"],
+  "description" : "InstanceProperties: A generic wrapper BHoM type corresponding to any Revit family type. Name of InstanceProperties corresponds to family type name, type parameter values are stored in RevitParametersToPush.",
+  "properties" : {
+    "CategoryName" : {
+      "type" : ["string", "null"]
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.Revit.Properties.InstanceProperties"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["CategoryName"]
+}

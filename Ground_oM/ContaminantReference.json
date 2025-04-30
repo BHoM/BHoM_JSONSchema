@@ -1,0 +1,61 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Ground_oM/ContaminantReference.json",
+  "title" : "ContaminantReference",
+  "type" : ["object", "null"],
+  "description" : "ContaminantReference: References to associated files, remarks and batchcodes.",
+  "properties" : {
+    "Reference" : {
+      "type" : ["string", "null"],
+      "description" : "Reference for the contaminant sample (SAMP_REF)."
+    },
+    "Id" : {
+      "type" : ["string", "null"],
+      "description" : "Unique identifier for the contaminant sample (SAMP_ID)."
+    },
+    "ReceiptDate" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "$date" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "BatchCode" : {
+      "type" : ["string", "null"],
+      "description" : "Batch code for the contaminant sample (ERES_SGRP)."
+    },
+    "Files" : {
+      "type" : ["string", "null"],
+      "description" : "Associated file reference including instructions and photographs (FILE_FSET)."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Ground.ContaminantReference"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Reference", "Id", "ReceiptDate", "BatchCode", "Files"]
+}

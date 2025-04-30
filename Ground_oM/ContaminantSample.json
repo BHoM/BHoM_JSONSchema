@@ -1,0 +1,76 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Ground_oM/ContaminantSample.json",
+  "title" : "ContaminantSample",
+  "type" : ["object", "null"],
+  "description" : "ContaminantSample: A representation of a contaminant sample defined by the depth of the sample, the chemical code and name based on the AGS schema.",
+  "properties" : {
+    "Id" : {
+      "type" : ["string", "null"],
+      "description" : "Location identifier relating the borehole to the strata (LOCA_ID)."
+    },
+    "Top" : {
+      "type" : "number",
+      "description" : "Depth to the top of the sample, measured from the top of the borehole (SAMP_TOP). Property has a quantity of type Length meassured in [m]."
+    },
+    "Chemical" : {
+      "type" : ["string", "null"],
+      "description" : "Chemical code for the contaminant (ERES_CODE)."
+    },
+    "Result" : {
+      "type" : "number",
+      "description" : "The amount of the chemical present (ERES_RTXT). Property has a quantity of type MassFraction meassured in [kg/kg]."
+    },
+    "Type" : {
+      "type" : ["string", "null"],
+      "description" : "The type of sample (SAMP_TYPE)."
+    },
+    "ResultQuantity" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Type"
+        },
+        "Name" : {
+          "type" : ["string", "null"]
+        }
+      }
+    },
+    "ContaminantProperties" : {
+      "type" : ["array", "null"],
+      "description" : "A list of different properties including references, tests, analysis, results and detection.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Ground_oM/IContaminantProperty.json"
+      }
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Ground.ContaminantSample"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Id", "Top", "Chemical", "Result", "Type", "ResultQuantity", "ContaminantProperties"]
+}

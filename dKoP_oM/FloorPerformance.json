@@ -1,0 +1,47 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/FloorPerformance.json",
+  "title" : "FloorPerformance",
+  "type" : ["object", "null"],
+  "properties" : {
+    "Sustainability" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/Sustainability.json"
+    },
+    "Durability" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/Durability.json"
+    },
+    "Acoustics" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/AcousticsFloor.json"
+    },
+    "Fire" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/Fire.json"
+    },
+    "Compartmentation" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/Compartmentation.json"
+    },
+    "Loading" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/Loading.json"
+    },
+    "Vibration" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/Vibration.json"
+    },
+    "Services" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/Services.json"
+    },
+    "Finishes" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/FinishesRoof.json"
+    },
+    "AdditionalFeatures" : {
+      "type" : ["string", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.dKoP.FloorPerformance"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Sustainability", "Durability", "Acoustics", "Fire", "Compartmentation", "Loading", "Vibration", "Services", "Finishes", "AdditionalFeatures"]
+}

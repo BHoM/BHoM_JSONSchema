@@ -1,0 +1,49 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Ground_oM/StratumReference.json",
+  "title" : "StratumReference",
+  "type" : ["object", "null"],
+  "description" : "StratumReference: References to associated files, remarks or lexicon codes.",
+  "properties" : {
+    "Remarks" : {
+      "type" : ["string", "null"],
+      "description" : "General remarks for the investigation (GEOL_REF)."
+    },
+    "LexiconCode" : {
+      "type" : ["string", "null"],
+      "description" : "BGS Lexicon code for the strata (GEOL_BGS)."
+    },
+    "Files" : {
+      "type" : ["string", "null"],
+      "description" : "Associated file reference including instructions and photographs (FILE_FSET)."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Ground.StratumReference"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Remarks", "LexiconCode", "Files"]
+}

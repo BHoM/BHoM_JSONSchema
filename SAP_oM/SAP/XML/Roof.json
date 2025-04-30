@@ -1,0 +1,57 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/Roof.json",
+  "title" : "Roof",
+  "type" : ["object", "null"],
+  "properties" : {
+    "Name" : {
+      "type" : ["string", "null"],
+      "description" : "Unique name which identifies this roof.  Can be just a number, e.g. \"1\".  However, a roof cannot have the same name as a wall."
+    },
+    "Description" : {
+      "type" : ["string", "null"],
+      "description" : "Descriptive notes about the roof."
+    },
+    "UValue" : {
+      "type" : ["string", "null"],
+      "description" : "Exposed roof U-value."
+    },
+    "Area" : {
+      "type" : ["string", "null"],
+      "description" : "Total roof area in square metres, inclusive of any openings."
+    },
+    "Type" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "KappaValue" : {
+      "type" : ["string", "null"],
+      "description" : "Heat capacity per unit area in kJ/m�K."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SAP.XML.Roof"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Name", "Description", "UValue", "Area", "Type", "KappaValue"]
+}

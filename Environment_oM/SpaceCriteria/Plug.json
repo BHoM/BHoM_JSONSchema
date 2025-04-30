@@ -1,0 +1,48 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/Plug.json",
+  "title" : "Plug",
+  "type" : ["object", "null"],
+  "description" : "Plug: Plug gains are defined as the amount of sensible heat contributed by electrical receptacle/outlet loads",
+  "properties" : {
+    "Sensible" : {
+      "type" : "number",
+      "description" : "The sensible heat contributed by plugs, which contributes to a rise in temperature with no change in phase."
+    },
+    "Profile" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/Profile.json"
+    },
+    "RadiantFraction" : {
+      "type" : "number",
+      "description" : "The radiant fraction depicts the percentage of long wave radiant heat given off by plugs."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SpaceCriteria.Plug"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Sensible", "Profile", "RadiantFraction"]
+}

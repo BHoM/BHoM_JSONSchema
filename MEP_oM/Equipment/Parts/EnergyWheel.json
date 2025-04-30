@@ -1,0 +1,125 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Equipment/Parts/EnergyWheel.json",
+  "title" : "EnergyWheel",
+  "type" : ["object", "null"],
+  "description" : "EnergyWheel: Energy wheels are devices that capture sensible and/or latent heat from air which would otherwise be lost to the atmosphere",
+  "properties" : {
+    "OutdoorSummerEnteringDryBulbTemperature" : {
+      "type" : "number",
+      "description" : "Outdoor Summer Entering Dry Bulb Temperature indicates the temperature of the air entering the system in degrees Celsius, without taking humidity into consideration"
+    },
+    "OutdoorSummerEnteringWetBulbTemperature" : {
+      "type" : "number",
+      "description" : "Outdoor Summer Entering Wet Bulb Temperature indicates the temperature of the air entering the system in degrees Celsius, while taking humidity into consideration"
+    },
+    "OutdoorSummerLeavingDryBulbTemperature" : {
+      "type" : "number",
+      "description" : "Outdoor Summer Leaving Dry Bulb Temperature indicates the temperature of the air leaving the system in degrees Celsius, without taking humidity into consideration"
+    },
+    "OutdoorSummerLeavingWetBulbTemperature" : {
+      "type" : "number",
+      "description" : "Outdoor Summer Leaving Wet Bulb Temperature indicates the temperature of the air leaving the system in degrees Celsius, while taking humidity into consideration"
+    },
+    "ReliefSummerEnteringDryBulbTemperature" : {
+      "type" : "number",
+      "description" : "Relief Summer Entering Dry Bulb Temperature indicates the temperature of the air entering the system in degrees Celsius, without taking humidity into consideration"
+    },
+    "ReliefSummerEnteringWetBulbTemperature" : {
+      "type" : "number",
+      "description" : "Relief Summer Entering Wet Bulb Temperature indicates the temperature of the air entering the system in degrees Celsius, while taking humidity into consideration"
+    },
+    "ReliefSummerLeavingDryBulbTemperature" : {
+      "type" : "number",
+      "description" : "Relief Summer Leaving Dry Bulb Temperature indicates the temperature of the air leaving the system in degrees Celsius, without taking humidity into consideration"
+    },
+    "ReliefSummerLeavingWetBulbTemperature" : {
+      "type" : "number",
+      "description" : "Relief Summer Leaving Wet Bulb Temperature indicates the temperature of the air leaving the system in degrees Celsius, while taking humidity into consideration"
+    },
+    "SummerSensibleEffectiveness" : {
+      "type" : "number",
+      "description" : "Summer Sensible Effectiveness denotes the wheel's ability to extract sensible heat as a percentage"
+    },
+    "SummerTotalEffectiveness" : {
+      "type" : "number",
+      "description" : "Summer Sensible Effectiveness denotes the wheel's ability to extract sensible and latent heat (also known as the total) as a percentage"
+    },
+    "OutdoorWinterEnteringDryBulbTemperature" : {
+      "type" : "number",
+      "description" : "Outdoor Winter Entering Dry Bulb Temperature indicates the temperature of the air entering the system in degrees Celsius, without taking humidity into consideration"
+    },
+    "OutdoorWinterEnteringWetBulbTemperature" : {
+      "type" : "number",
+      "description" : "Outdoor Winter Entering Wet Bulb Temperature indicates the temperature of the air entering the system in degrees Celsius, while taking humidity into consideration"
+    },
+    "OutdoorWinterLeavingDryBulbTemperature" : {
+      "type" : "number",
+      "description" : "Outdoor Winter Leaving Dry Bulb Temperature indicates the temperature of the air leaving the system in degrees Celsius, without taking humidity into consideration"
+    },
+    "OutdoorWinterLeavingWetBulbTemperature" : {
+      "type" : "number",
+      "description" : "Outdoor Winter Leaving Wet Bulb Temperature indicates the temperature of the air leaving the system in degrees Celsius, while taking humidity into consideration"
+    },
+    "ReliefWinterEnteringDryBulbTemperature" : {
+      "type" : "number",
+      "description" : "Relief Winter Entering Dry Bulb Temperature indicates the temperature of the air entering the system in degrees Celsius, without taking humidity into consideration"
+    },
+    "ReliefWinterEnteringWetBulbTemperature" : {
+      "type" : "number",
+      "description" : "Relief Winter Entering Wet Bulb Temperature indicates the temperature of the air entering the system in degrees Celsius, while taking humidity into consideration"
+    },
+    "ReliefWinterLeavingDryBulbTemperature" : {
+      "type" : "number",
+      "description" : "Relief Winter Leaving Dry Bulb Temperature indicates the temperature of the air leaving the system in degrees Celsius, without taking humidity into consideration"
+    },
+    "ReliefWinterLeavingWetBulbTemperature" : {
+      "type" : "number",
+      "description" : "Relief Winter Leaving Wet Bulb Temperature indicates the temperature of the air leaving the system in degrees Celsius, while taking humidity into consideration"
+    },
+    "WinterSensibleEffectiveness" : {
+      "type" : "number",
+      "description" : "Winter Sensible Effectiveness denotes the wheel's ability to extract sensible heat as a percentage"
+    },
+    "WinterTotalEffectiveness" : {
+      "type" : "number",
+      "description" : "Winter Sensible Effectiveness denotes the wheel's ability to extract sensible and latent heat (also known as the total) as a percentage"
+    },
+    "Type" : {
+      "type" : ["string", "null"],
+      "description" : "Type indicates the type of wheel (eg air-to-air enthalpy or heat recovery"
+    },
+    "Control" : {
+      "type" : ["string", "null"],
+      "description" : "Control indicates the means of controlling the unit (eg variable frequency controller)"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.MEP.Equipment.Parts.EnergyWheel"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["OutdoorSummerEnteringDryBulbTemperature", "OutdoorSummerEnteringWetBulbTemperature", "OutdoorSummerLeavingDryBulbTemperature", "OutdoorSummerLeavingWetBulbTemperature", "ReliefSummerEnteringDryBulbTemperature", "ReliefSummerEnteringWetBulbTemperature", "ReliefSummerLeavingDryBulbTemperature", "ReliefSummerLeavingWetBulbTemperature", "SummerSensibleEffectiveness", "SummerTotalEffectiveness", "OutdoorWinterEnteringDryBulbTemperature", "OutdoorWinterEnteringWetBulbTemperature", "OutdoorWinterLeavingDryBulbTemperature", "OutdoorWinterLeavingWetBulbTemperature", "ReliefWinterEnteringDryBulbTemperature", "ReliefWinterEnteringWetBulbTemperature", "ReliefWinterLeavingDryBulbTemperature", "ReliefWinterLeavingWetBulbTemperature", "WinterSensibleEffectiveness", "WinterTotalEffectiveness", "Type", "Control"]
+}

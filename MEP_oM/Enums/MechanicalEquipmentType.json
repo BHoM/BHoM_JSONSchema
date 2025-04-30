@@ -1,0 +1,32 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Enums/MechanicalEquipmentType.json",
+  "anyOf" : [{
+      "type" : ["string", "null"],
+      "enum" : ["Undefined", "AirHandlingUnit", "AirSeparator", "AirSourceHeatPump", "Boiler", "CabinetUnitHeater", "Chiller", "CoolingTower", "ExpansionTankVessel", "Fan", "FanCoilUnit", "HeatExchanger", "HeatingAndVentilationUnit", "Pump", "UnitHeater", "VariableAirVolumeBox", "VariableRefrigerantFlowCondenserIndoor", "VariableRefrigerantFlowEvaporatorOutdoor", "WaterSourceHeatPump", "WaterStorageTank"]
+    }, {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : ["string", "null"],
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.MEP.Enums.MechanicalEquipmentType"
+            }
+          }
+        },
+        "Value" : {
+          "type" : ["string", "null"],
+          "enum" : ["Undefined", "AirHandlingUnit", "AirSeparator", "AirSourceHeatPump", "Boiler", "CabinetUnitHeater", "Chiller", "CoolingTower", "ExpansionTankVessel", "Fan", "FanCoilUnit", "HeatExchanger", "HeatingAndVentilationUnit", "Pump", "UnitHeater", "VariableAirVolumeBox", "VariableRefrigerantFlowCondenserIndoor", "VariableRefrigerantFlowEvaporatorOutdoor", "WaterSourceHeatPump", "WaterStorageTank"]
+        }
+      }
+    }]
+}

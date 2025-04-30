@@ -1,0 +1,79 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/TaperFlangeChannelProfile.json",
+  "title" : "TaperFlangeChannelProfile",
+  "type" : ["object", "null"],
+  "description" : "TaperFlangeChannelProfile: C-shaped profile with tapered flanges of the same length and thickness.",
+  "properties" : {
+    "Shape" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/ShapeType.json"
+    },
+    "Height" : {
+      "type" : "number",
+      "description" : "Full depth between the extreme fibres of the flanges. Property has a quantity of type Length meassured in [m]."
+    },
+    "FlangeWidth" : {
+      "type" : "number",
+      "description" : "Full width between the extreme fibres of the web to the toe of the flange. Property has a quantity of type Length meassured in [m]."
+    },
+    "WebThickness" : {
+      "type" : "number",
+      "description" : "Property has a quantity of type Length meassured in [m]."
+    },
+    "FlangeThickness" : {
+      "type" : "number",
+      "description" : "Mean thickness of the flange, taken at 1/2 the flange width Property has a quantity of type Length meassured in [m]."
+    },
+    "FlangeSlope" : {
+      "type" : "number",
+      "description" : "Slope of the flange inner faces, generally from 0 to 1/6. Property has a quantity of type Ratio meassured in [-]."
+    },
+    "RootRadius" : {
+      "type" : "number",
+      "description" : "Fillet radius between inner face of the flanges and the inner face of web. Property has a quantity of type Length meassured in [m]."
+    },
+    "ToeRadius" : {
+      "type" : "number",
+      "description" : "Fillet radius at the end of the flanges. Value must be smaller or equal to the thickness of the flange at the tip. Property has a quantity of type Length meassured in [m]."
+    },
+    "MirrorAboutLocalZ" : {
+      "type" : "boolean",
+      "description" : "If true, the section is mirrored about its local z-axis, resulting in a backwards facing C-shape."
+    },
+    "Edges" : {
+      "type" : ["array", "null"],
+      "description" : "Edge curves that match the dimensions in the global XY-plane.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ICurve.json"
+      }
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Spatial.ShapeProfiles.TaperFlangeChannelProfile"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Shape", "Height", "FlangeWidth", "WebThickness", "FlangeThickness", "FlangeSlope", "RootRadius", "ToeRadius", "MirrorAboutLocalZ", "Edges"]
+}

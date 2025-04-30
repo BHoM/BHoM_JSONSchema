@@ -1,0 +1,56 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Ground_oM/InSituVane.json",
+  "title" : "InSituVane",
+  "type" : ["object", "null"],
+  "description" : "InSituVane: A representation of an in-situ vane test defined by the borehole where the test was carried out and the result.",
+  "properties" : {
+    "Id" : {
+      "type" : ["string", "null"],
+      "description" : "Location identifier relating the borehole to the test (LOCA_ID)."
+    },
+    "Top" : {
+      "type" : "number",
+      "description" : "Depth to the top of the sample, measured from the top of the borehole (IVAN_DEPTH). Property has a quantity of type Length meassured in [m]."
+    },
+    "Properties" : {
+      "type" : ["array", "null"],
+      "description" : "A list of different properties including references, tests, analysis, results and detection.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Ground_oM/ITestProperties.json"
+      }
+    },
+    "Result" : {
+      "type" : "number",
+      "description" : "Vane Test Result (IVAN_IVAN). Property has a quantity of type Pressure meassured in [Pa]."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Ground.InSituVane"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Id", "Top", "Properties", "Result"]
+}

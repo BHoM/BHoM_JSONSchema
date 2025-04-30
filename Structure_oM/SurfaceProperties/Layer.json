@@ -1,0 +1,48 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/Layer.json",
+  "title" : "Layer",
+  "type" : ["object", "null"],
+  "description" : "Layer: A layer object with a given material, orientation, and thickness.",
+  "properties" : {
+    "Material" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/IMaterialFragment.json"
+    },
+    "Orientation" : {
+      "type" : "number",
+      "description" : "The orientation of the material in this layer. Orthotropic materials will be oriented with Z parallel to the panel normal direction, and X rotated counterclockwise about the panel normal by this angle from the panel X axis. Not relevant for isotropic materials. Property has a quantity of type Angle meassured in [rad]."
+    },
+    "Thickness" : {
+      "type" : "number",
+      "description" : "The thickness of this material layer. Property has a quantity of type Length meassured in [m]."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Structure.SurfaceProperties.Layer"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Material", "Orientation", "Thickness"]
+}

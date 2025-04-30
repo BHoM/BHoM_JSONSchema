@@ -1,0 +1,55 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/LoadCombination.json",
+  "title" : "LoadCombination",
+  "type" : ["object", "null"],
+  "description" : "LoadCombination: Load combination class to set up combination of factored Loadcases.",
+  "properties" : {
+    "Name" : {
+      "type" : ["string", "null"],
+      "description" : "A unique Name is required for some structural packages to create and identify the object."
+    },
+    "LoadCases" : {
+      "type" : ["array", "null"],
+      "description" : "The factored Loadcases that make up the combination. Stored as a collection of Tuple<double,ICase> where the double is the factor the case should be scaled by in this combination.",
+      "items" : {
+        "type" : ["array", "null"],
+        "prefixItems" : [{
+            "type" : "number"
+          }, {
+            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/ICase.json"
+          }],
+        "items" : false
+      }
+    },
+    "Number" : {
+      "type" : "integer",
+      "description" : "Unique numeric identifier of the LoadCombination."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Structure.Loads.LoadCombination"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Name", "LoadCases", "Number"]
+}

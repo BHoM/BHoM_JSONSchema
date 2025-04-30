@@ -1,0 +1,47 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Humans_oM/ViewQuality/Evalue.json",
+  "title" : "Evalue",
+  "type" : ["object", "null"],
+  "properties" : {
+    "Torsion" : {
+      "type" : "number"
+    },
+    "HorizViewAng" : {
+      "type" : "number"
+    },
+    "HorizViewVectors" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
+      }
+    },
+    "VertViewVectors" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
+      }
+    },
+    "VertViewAng" : {
+      "type" : "number"
+    },
+    "ObjectId" : {
+      "type" : ["object", "integer", "string", "number", "null"]
+    },
+    "ResultCase" : {
+      "type" : ["object", "integer", "string", "number", "null"]
+    },
+    "TimeStep" : {
+      "type" : "number"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Humans.ViewQuality.Evalue"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Torsion", "HorizViewAng", "HorizViewVectors", "VertViewVectors", "VertViewAng"]
+}

@@ -1,0 +1,6 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Requests/FilterByActiveWorkset.json",
+  "title" : "FilterByActiveWorkset",
+  "type" : ["object", "null"],
+  "description" : "FilterByActiveWorkset: IRequest that filters all elements in active Revit workset."
+}

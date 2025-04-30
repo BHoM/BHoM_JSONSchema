@@ -1,0 +1,34 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/RFEM6_oM/IntermediateDatastructure/Loading/Interfaces/IRFEMLineLoad.json",
+  "required" : ["_t"],
+  "properties" : {
+    "_t" : {
+      "enum" : ["BH.oM.Adapters.RFEM6.IntermediateDatastructure.Geometry.RFEMNonFreeLineLoad", "BH.oM.Adapters.RFEM6.IntermediateDatastructure.Geometry.RFEMFreeLineLoad"]
+    }
+  },
+  "allOf" : [{
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Adapters.RFEM6.IntermediateDatastructure.Geometry.RFEMNonFreeLineLoad"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/RFEM6_oM/IntermediateDatastructure/Geometry/RFEMNonFreeLineLoad.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Adapters.RFEM6.IntermediateDatastructure.Geometry.RFEMFreeLineLoad"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/RFEM6_oM/IntermediateDatastructure/Geometry/RFEMFreeLineLoad.json"
+      }
+    }]
+}

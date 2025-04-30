@@ -1,0 +1,33 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Analytical_oM/Fragments/TargetsDependencyFragment.json",
+  "title" : "TargetsDependencyFragment",
+  "type" : ["object", "null"],
+  "description" : "TargetsDependencyFragment: Dependency fragment used to define one or more Relations that terminate at the specified targets and use the IBHoMObject owning this fragment as the source.",
+  "properties" : {
+    "Targets" : {
+      "type" : ["array", "null"],
+      "description" : "Collection of Guids of entities that are targets for Relations where the IBHoMObject owning this fragment is the source.",
+      "items" : {
+        "type" : "string",
+        "format" : "uuid"
+      }
+    },
+    "Curves" : {
+      "type" : ["array", "null"],
+      "description" : "Collection of ICurves used to represent the Relations.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ICurve.json"
+      }
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Analytical.Fragments.TargetsDependencyFragment"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Targets", "Curves"]
+}

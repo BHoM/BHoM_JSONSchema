@@ -1,0 +1,60 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/PowerPoint_oM/PolylineData.json",
+  "title" : "PolylineData",
+  "type" : ["object", "null"],
+  "description" : "PolylineData: Data corresponding to polylinear data and style properties.",
+  "properties" : {
+    "Path" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Polyline.json"
+    },
+    "Thickness" : {
+      "type" : "number",
+      "description" : "Thickness of the path."
+    },
+    "EdgeColour" : {
+      "type" : ["string", "null"],
+      "description" : "Colour of the edge of the path. No colour change will be made if left empty."
+    },
+    "FillColour" : {
+      "type" : ["string", "null"],
+      "description" : "Fill colour for the shape. If left empty, no fill will be applied."
+    },
+    "FillOpacity" : {
+      "type" : "number",
+      "description" : "Opacity of the fill where 1 means full opacity and 0 means full transperency."
+    },
+    "IsDashed" : {
+      "type" : "boolean",
+      "description" : "Toggles if the line should be dashed or not."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.PowerPoint.PolylineData"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Path", "Thickness", "EdgeColour", "FillColour", "FillOpacity", "IsDashed"]
+}

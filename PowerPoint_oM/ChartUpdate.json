@@ -1,0 +1,80 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/PowerPoint_oM/ChartUpdate.json",
+  "title" : "ChartUpdate",
+  "type" : ["object", "null"],
+  "description" : "ChartUpdate: Allows to update the content of chart element.",
+  "properties" : {
+    "SlideNumber" : {
+      "type" : "integer",
+      "description" : "Number of the slide where the update needs to happen."
+    },
+    "ElementName" : {
+      "type" : ["string", "null"],
+      "description" : "Name of the chart element that needs to be updated."
+    },
+    "Title" : {
+      "type" : ["string", "null"],
+      "description" : "New title for the chart. If left empty, the existing title will not be replaced."
+    },
+    "Series" : {
+      "type" : ["array", "null"],
+      "description" : "Names of the series.",
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "Categories" : {
+      "type" : ["array", "null"],
+      "description" : "Names of the categories.",
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "Data" : {
+      "type" : ["array", "null"],
+      "description" : "Numerical values for the chart data. There must be a list per serie and each list's length must be equal to the number of categories.",
+      "items" : {
+        "type" : ["array", "null"],
+        "items" : {
+          "type" : "number"
+        }
+      }
+    },
+    "CategoryColours" : {
+      "type" : ["array", "null"],
+      "description" : "Hex colour values corresponding to each category.",
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.PowerPoint.ChartUpdate"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["SlideNumber", "ElementName", "Title", "Series", "Categories", "Data", "CategoryColours"]
+}

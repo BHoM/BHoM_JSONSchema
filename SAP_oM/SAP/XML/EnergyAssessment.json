@@ -1,0 +1,64 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/EnergyAssessment.json",
+  "title" : "EnergyAssessment",
+  "type" : ["object", "null"],
+  "properties" : {
+    "AssessmentDate" : {
+      "type" : ["string", "null"],
+      "description" : "In the form yyyy-mm-dd"
+    },
+    "PropertySummary" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/PropertySummary.json"
+    },
+    "EnergyUse" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/EnergyUse.json"
+    },
+    "LowZeroCarbonEnergySources" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/LowZeroCarbonEnergySources.json"
+    },
+    "RenewableHeatIncentive" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/RenewableHeatIncentive.json"
+    },
+    "SuggestedImprovements" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/SuggestedImprovements.json"
+    },
+    "GreenPackageDeal" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/GreenPackageDeal.json"
+    },
+    "AlternativeImprovements" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/SuggestedImprovements.json"
+    },
+    "Addendum" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/Addendum.json"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SAP.XML.EnergyAssessment"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["AssessmentDate", "PropertySummary", "EnergyUse", "LowZeroCarbonEnergySources", "RenewableHeatIncentive", "SuggestedImprovements", "GreenPackageDeal", "AlternativeImprovements", "Addendum"]
+}

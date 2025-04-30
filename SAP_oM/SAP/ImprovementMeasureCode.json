@@ -1,0 +1,32 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/ImprovementMeasureCode.json",
+  "anyOf" : [{
+      "type" : ["string", "null"],
+      "enum" : ["LoftInsulation", "FlatRoofInsulation", "RoomInRoofInsulation", "CavityWallInsulation", "HotWaterCylinderInsulation", "Draughtproofing", "LowEnergyLights", "CylinderThermostat", "HeatingControlsForWetCentralHeatingSystem", "HeatingControlsForWarmAirSystem", "UpgradeBoiler", "SameFuel", "Biomasboiler", "BiomasboilerAsAlternativeImprovement", "BiomassRoomHeaterWithBoiler", "NewOrReplacementFanAssistedStorageHeaters", "NewOrReplacementHighHeatRetentionStorageHeaters", "ReplacementWarmAirUnit", "SolarWaterHeating", "ReplacementDoubleGlazedWindows", "ReplacementDoubleGlazingUnits", "SecondaryGlazing", "SolidWallInsulation", "ExternalInsulationWithCavityWallInsulation", "CondensingOilBoiler", "ChangeHeatingToBandAGasCondensingBoilerNoFuelSwitch", "ChangeHeatingToBandAGasCondensingBoilerFuelSwitch", "FlueGasHeatRecovery", "Photovoltaics", "WindTurbineRoofMounted", "WindTurbineOnMast", "FloorInsulation", "InsulatedDoors", "InstantaneousWasteWaterHeatRecovery", "StorageWasteWaterHeatRecovery", "AirOrGroundSourceHeatPump", "AirOrGroundSourceHeatPumpWithUnderfloorHeating", "MicroCHP"]
+    }, {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : ["string", "null"],
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.Environment.SAP.ImprovementMeasureCode"
+            }
+          }
+        },
+        "Value" : {
+          "type" : ["string", "null"],
+          "enum" : ["LoftInsulation", "FlatRoofInsulation", "RoomInRoofInsulation", "CavityWallInsulation", "HotWaterCylinderInsulation", "Draughtproofing", "LowEnergyLights", "CylinderThermostat", "HeatingControlsForWetCentralHeatingSystem", "HeatingControlsForWarmAirSystem", "UpgradeBoiler", "SameFuel", "Biomasboiler", "BiomasboilerAsAlternativeImprovement", "BiomassRoomHeaterWithBoiler", "NewOrReplacementFanAssistedStorageHeaters", "NewOrReplacementHighHeatRetentionStorageHeaters", "ReplacementWarmAirUnit", "SolarWaterHeating", "ReplacementDoubleGlazedWindows", "ReplacementDoubleGlazingUnits", "SecondaryGlazing", "SolidWallInsulation", "ExternalInsulationWithCavityWallInsulation", "CondensingOilBoiler", "ChangeHeatingToBandAGasCondensingBoilerNoFuelSwitch", "ChangeHeatingToBandAGasCondensingBoilerFuelSwitch", "FlueGasHeatRecovery", "Photovoltaics", "WindTurbineRoofMounted", "WindTurbineOnMast", "FloorInsulation", "InsulatedDoors", "InstantaneousWasteWaterHeatRecovery", "StorageWasteWaterHeatRecovery", "AirOrGroundSourceHeatPump", "AirOrGroundSourceHeatPumpWithUnderfloorHeating", "MicroCHP"]
+        }
+      }
+    }]
+}

@@ -1,0 +1,52 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Elements/ViewPlan.json",
+  "title" : "ViewPlan",
+  "type" : ["object", "null"],
+  "description" : "ViewPlan: A wrapper BHoM type for Revit plan view, used to create or update Revit plans (on Push) and represent them as BHoMObjects (on Pull).",
+  "properties" : {
+    "InstanceProperties" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Properties/InstanceProperties.json"
+    },
+    "LevelName" : {
+      "type" : ["string", "null"],
+      "description" : "Name of Revit level to which the Revit view belongs (Associated Level parameter)."
+    },
+    "ViewName" : {
+      "type" : ["string", "null"],
+      "description" : "Name of the Revit view."
+    },
+    "TemplateName" : {
+      "type" : ["string", "null"],
+      "description" : "Name of the view template applied to the Revit view."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.Revit.Elements.ViewPlan"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["InstanceProperties", "LevelName", "ViewName", "TemplateName"]
+}

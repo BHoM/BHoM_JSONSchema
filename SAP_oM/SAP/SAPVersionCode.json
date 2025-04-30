@@ -1,0 +1,32 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/SAPVersionCode.json",
+  "anyOf" : [{
+      "type" : ["string", "null"],
+      "enum" : ["October2005", "January2008", "June2008", "June2009", "March2010", "Jan2012", "Oct2013", "Oct2020"]
+    }, {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : ["string", "null"],
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.Environment.SAP.SAPVersionCode"
+            }
+          }
+        },
+        "Value" : {
+          "type" : ["string", "null"],
+          "enum" : ["October2005", "January2008", "June2008", "June2009", "March2010", "Jan2012", "Oct2013", "Oct2020"]
+        }
+      }
+    }]
+}

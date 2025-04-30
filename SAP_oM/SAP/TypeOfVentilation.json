@@ -1,0 +1,32 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/TypeOfVentilation.json",
+  "anyOf" : [{
+      "type" : ["string", "null"],
+      "enum" : ["NaturalIntermittentExtractFans", "NaturalPassiveVents", "PositiveInputFromLoft", "PositiveInputFromOutside", "MEVc", "MEVdc", "MV", "MVHR", "NaturalIntermittentExtractFansAndPassiveVents"]
+    }, {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : ["string", "null"],
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.Environment.SAP.TypeOfVentilation"
+            }
+          }
+        },
+        "Value" : {
+          "type" : ["string", "null"],
+          "enum" : ["NaturalIntermittentExtractFans", "NaturalPassiveVents", "PositiveInputFromLoft", "PositiveInputFromOutside", "MEVc", "MEVdc", "MV", "MVHR", "NaturalIntermittentExtractFansAndPassiveVents"]
+        }
+      }
+    }]
+}

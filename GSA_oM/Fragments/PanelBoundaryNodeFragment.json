@@ -1,0 +1,33 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/GSA_oM/Fragments/PanelBoundaryNodeFragment.json",
+  "title" : "PanelBoundaryNodeFragment",
+  "type" : ["object", "null"],
+  "description" : "PanelBoundaryNodeFragment:",
+  "properties" : {
+    "ExternalNodes" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Node.json"
+      }
+    },
+    "OpeningNodes" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["array", "null"],
+        "items" : {
+          "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Node.json"
+        }
+      }
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.GSA.Fragments.PanelBoundaryNodeFragment"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["ExternalNodes", "OpeningNodes"]
+}

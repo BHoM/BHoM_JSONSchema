@@ -1,0 +1,32 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/LoadType.json",
+  "anyOf" : [{
+      "type" : ["string", "null"],
+      "enum" : ["Selfweight", "PointLoad", "PointDisplacement", "PointVelocity", "PointAcceleration", "BarPointLoad", "BarUniformLoad", "BarVaryingLoad", "BarTemperature", "AreaUniformLoad", "AreaVaryingLoad", "AreaTemperature", "Pressure", "Geometrical"]
+    }, {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : ["string", "null"],
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.Structure.Loads.LoadType"
+            }
+          }
+        },
+        "Value" : {
+          "type" : ["string", "null"],
+          "enum" : ["Selfweight", "PointLoad", "PointDisplacement", "PointVelocity", "PointAcceleration", "BarPointLoad", "BarUniformLoad", "BarVaryingLoad", "BarTemperature", "AreaUniformLoad", "AreaVaryingLoad", "AreaTemperature", "Pressure", "Geometrical"]
+        }
+      }
+    }]
+}

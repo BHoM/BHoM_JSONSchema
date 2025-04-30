@@ -1,0 +1,6 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Requests/FilterActiveView.json",
+  "title" : "FilterActiveView",
+  "type" : ["object", "null"],
+  "description" : "FilterActiveView: IRequest that filters the active view in Revit."
+}

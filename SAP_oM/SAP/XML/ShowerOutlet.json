@@ -1,0 +1,52 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/ShowerOutlet.json",
+  "title" : "ShowerOutlet",
+  "type" : ["object", "null"],
+  "properties" : {
+    "ShowerOutletType" : {
+      "type" : ["string", "null"],
+      "description" : "Hot water type for this shower outlet."
+    },
+    "ShowerFlowRate" : {
+      "type" : ["string", "null"],
+      "description" : "The flow rate. Only when a shower is not instantaneous electric. Leave blank if NO flow limiter fitted."
+    },
+    "ShowerPower" : {
+      "type" : ["string", "null"],
+      "description" : "The shower power, only if shower outlet type is instantaneous electric."
+    },
+    "ShowerWWHRS" : {
+      "type" : ["string", "null"],
+      "description" : "The WWHRS with which the shower is connected. If shower outlet type is instantaneous electric shower then only a storage WWHRS can be selected or none."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SAP.XML.ShowerOutlet"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["ShowerOutletType", "ShowerFlowRate", "ShowerPower", "ShowerWWHRS"]
+}

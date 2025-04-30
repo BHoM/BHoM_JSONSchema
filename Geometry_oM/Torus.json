@@ -1,0 +1,32 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Torus.json",
+  "title" : "Torus",
+  "type" : ["object", "null"],
+  "description" : "Torus: A standard solid circular ring torus, formed as a surface of revolution of a circle about an axis.",
+  "properties" : {
+    "Centre" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
+    },
+    "Axis" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
+    },
+    "RadiusMajor" : {
+      "type" : "number",
+      "description" : "Distance from the Torus Centre (and the axis of revolution) to the centre of the circular cross section. Property has a quantity of type Length meassured in [m]."
+    },
+    "RadiusMinor" : {
+      "type" : "number",
+      "description" : "The radius defining the size of the circular cross section. Property has a quantity of type Length meassured in [m]."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Geometry.Torus"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Centre", "Axis", "RadiusMajor", "RadiusMinor"]
+}

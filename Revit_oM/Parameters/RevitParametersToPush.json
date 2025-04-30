@@ -1,0 +1,49 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Parameters/RevitParametersToPush.json",
+  "title" : "RevitParametersToPush",
+  "type" : ["object", "null"],
+  "description" : "RevitParametersToPush: An entity containing parameters attached to the BHoM object that will be set to a correspondent Revit element on push.",
+  "properties" : {
+    "Parameters" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_v" : {
+          "type" : ["array", "null"],
+          "description" : "Collection of parameters to be pushed to a Revit element.",
+          "items" : {
+            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Parameters/RevitParameter.json"
+          }
+        }
+      }
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.Revit.Parameters.RevitParametersToPush"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Parameters"]
+}

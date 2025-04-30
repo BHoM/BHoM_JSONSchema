@@ -1,0 +1,48 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/ConstantThickness.json",
+  "title" : "ConstantThickness",
+  "type" : ["object", "null"],
+  "description" : "ConstantThickness: Simplest property for 2D analytical elements with a constant thickness and homogenous material across the whole element.",
+  "properties" : {
+    "Name" : {
+      "type" : ["string", "null"],
+      "description" : "A unique Name is required for some structural packages to create and identify the object."
+    },
+    "Thickness" : {
+      "type" : "number",
+      "description" : "Defines the distance the element should be extruded along its normal. By default the element will be extruded half the thickness 'upwards' and half the thickness 'downwards' meaning the element base geoemtry will be in the centre of the extrusion. Property has a quantity of type Length meassured in [m]."
+    },
+    "Material" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/IMaterialFragment.json"
+    },
+    "PanelType" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/PanelType.json"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Structure.SurfaceProperties.ConstantThickness"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Name", "Thickness", "Material", "PanelType"]
+}

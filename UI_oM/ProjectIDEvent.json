@@ -1,0 +1,70 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/UI_oM/ProjectIDEvent.json",
+  "title" : "ProjectIDEvent",
+  "type" : ["object", "null"],
+  "properties" : {
+    "UIName" : {
+      "type" : ["string", "null"]
+    },
+    "ProjectID" : {
+      "type" : ["string", "null"]
+    },
+    "FileID" : {
+      "type" : ["string", "null"]
+    },
+    "Type" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Debugging/EventType.json"
+    },
+    "Time" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "$date" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "UtcTime" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "$date" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "StackTrace" : {
+      "type" : ["string", "null"]
+    },
+    "Message" : {
+      "type" : ["string", "null"]
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.UI.ProjectIDEvent"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["UIName", "ProjectID", "FileID", "Type"]
+}

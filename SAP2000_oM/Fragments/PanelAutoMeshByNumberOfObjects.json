@@ -1,0 +1,47 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/Fragments/PanelAutoMeshByNumberOfObjects.json",
+  "title" : "PanelAutoMeshByNumberOfObjects",
+  "type" : ["object", "null"],
+  "description" : "PanelAutoMeshByNumberOfObjects: Divide the panel into a given number of elements in each direction.",
+  "properties" : {
+    "N1" : {
+      "type" : "integer",
+      "description" : "This is the number of objects created along the edge of the meshed area object that runs from point 1 to point 2."
+    },
+    "N2" : {
+      "type" : "integer",
+      "description" : "This is the number of objects created along the edge of the meshed area object that runs from point 1 to point 3."
+    },
+    "LocalAxesOnEdge" : {
+      "type" : "boolean"
+    },
+    "LocalAxesOnFace" : {
+      "type" : "boolean"
+    },
+    "RestraintsOnEdge" : {
+      "type" : "boolean"
+    },
+    "RestraintsOnFace" : {
+      "type" : "boolean"
+    },
+    "Group" : {
+      "type" : ["string", "null"]
+    },
+    "SubMesh" : {
+      "type" : "boolean"
+    },
+    "SubMeshSize" : {
+      "type" : "number"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.SAP2000.Fragments.PanelAutoMeshByNumberOfObjects"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["N1", "N2", "LocalAxesOnEdge", "LocalAxesOnFace", "RestraintsOnEdge", "RestraintsOnFace", "Group", "SubMesh", "SubMeshSize"]
+}

@@ -1,0 +1,45 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/UniformLoadSet.json",
+  "title" : "UniformLoadSet",
+  "type" : ["object", "null"],
+  "description" : "UniformLoadSet: Definition of a set of uniform loads in the gravity direction (-Z).",
+  "properties" : {
+    "Name" : {
+      "type" : ["string", "null"],
+      "description" : "Description of this set of loads, as would appear on a load map"
+    },
+    "Loads" : {
+      "type" : ["array", "null"],
+      "description" : "The individual load items for the load set",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/UniformLoadSetRecord.json"
+      }
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Structure.Loads.UniformLoadSet"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Name", "Loads"]
+}

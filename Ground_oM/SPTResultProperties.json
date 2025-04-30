@@ -1,0 +1,109 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Ground_oM/SPTResultProperties.json",
+  "title" : "SPTResultProperties",
+  "type" : ["object", "null"],
+  "description" : "SPTResultProperties: Properties related to the results of the standard penetration test.",
+  "properties" : {
+    "ReportedResult" : {
+      "type" : ["string", "null"],
+      "description" : "Reported standard penetration test result (ISPT_REP."
+    },
+    "SeatingDriveBlows" : {
+      "type" : "integer",
+      "description" : "Number of blows for seating drive (ISPT_SEAT)."
+    },
+    "MainTestDriveBlows" : {
+      "type" : "integer",
+      "description" : "Number of blows for main test drive (ISPT_MAIN)."
+    },
+    "SPTN60" : {
+      "type" : "number",
+      "description" : "Number of blows for main test drive, with value corrected by energy ratio (ISPT_N60)."
+    },
+    "TotalPenetration" : {
+      "type" : "number",
+      "description" : "Total penetration for seating drive and test drive (ISPT_NPEN). Property has a quantity of type Length meassured in [m]."
+    },
+    "SelfWeightPenetration" : {
+      "type" : "number",
+      "description" : "Self weight penetration (ISPT_SWP). Property has a quantity of type Length meassured in [m]."
+    },
+    "SeatBlows1" : {
+      "type" : "integer",
+      "description" : "Number of blows for first increment seating (ISPT_INC1)."
+    },
+    "SeatBlows2" : {
+      "type" : "integer",
+      "description" : "Number of blows for second increment seating (ISPT_INC2)."
+    },
+    "TestBlows1" : {
+      "type" : "integer",
+      "description" : "Number of blows for first increment test (ISPT_INC3)."
+    },
+    "TestBlows2" : {
+      "type" : "integer",
+      "description" : "Number of blows for second increment test (ISPT_INC4)."
+    },
+    "TestBlows3" : {
+      "type" : "integer",
+      "description" : "Number of blows for third increment test (ISPT_INC5)."
+    },
+    "TestBlows4" : {
+      "type" : "integer",
+      "description" : "Number of blows for fourth increment test (ISPT_INC6)."
+    },
+    "SeatPenetration1" : {
+      "type" : "number",
+      "description" : "Penetration for 1st Increment Seating (ISPT_PEN1). Property has a quantity of type Length meassured in [m]."
+    },
+    "SeatPenetration2" : {
+      "type" : "number",
+      "description" : "Penetration for 2nd Increment Seating (ISPT_INC2). Property has a quantity of type Length meassured in [m]."
+    },
+    "PenetrationTest1" : {
+      "type" : "number",
+      "description" : "Penetration for 1st Increment Test (ISPT_PEN3). Property has a quantity of type Length meassured in [m]."
+    },
+    "PenetrationTest2" : {
+      "type" : "number",
+      "description" : "Penetration for 2nd Increment Test (ISPT_PEN4). Property has a quantity of type Length meassured in [m]."
+    },
+    "PenetrationTest3" : {
+      "type" : "number",
+      "description" : "Penetration for 3rd Increment Test (ISPT_PEN5). Property has a quantity of type Length meassured in [m]."
+    },
+    "PenetrationTest4" : {
+      "type" : "number",
+      "description" : "Penetration for 4th Increment Test (ISPT_PEN6). Property has a quantity of type Length meassured in [m]."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Ground.SPTResultProperties"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["ReportedResult", "SeatingDriveBlows", "MainTestDriveBlows", "SPTN60", "TotalPenetration", "SelfWeightPenetration", "SeatBlows1", "SeatBlows2", "TestBlows1", "TestBlows2", "TestBlows3", "TestBlows4", "SeatPenetration1", "SeatPenetration2", "PenetrationTest1", "PenetrationTest2", "PenetrationTest3", "PenetrationTest4"]
+}

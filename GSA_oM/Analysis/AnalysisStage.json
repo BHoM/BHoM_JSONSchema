@@ -1,0 +1,45 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/GSA_oM/Analysis/AnalysisStage.json",
+  "title" : "AnalysisStage",
+  "type" : ["object", "null"],
+  "properties" : {
+    "Elements" : {
+      "type" : ["array", "null"],
+      "description" : "List of objects to include in the Analysis Stage. This can be the following types: doubles, ints, strings and BHoMObjects.",
+      "items" : { }
+    },
+    "Number" : {
+      "type" : "integer",
+      "description" : "GSA Id. This is an int. Must be greater than 0."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.GSA.Analysis.AnalysisStage"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Elements", "Number"]
+}

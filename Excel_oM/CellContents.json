@@ -1,0 +1,73 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Excel_oM/CellContents.json",
+  "title" : "CellContents",
+  "type" : ["object", "null"],
+  "description" : "CellContents: Object representing the information stored within a cell: the value and metadata related to it.",
+  "properties" : {
+    "Comment" : {
+      "type" : ["string", "null"],
+      "description" : "Comment applied to the cell."
+    },
+    "Value" : { },
+    "Address" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Excel_oM/CellAddress.json"
+    },
+    "DataType" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Type"
+        },
+        "Name" : {
+          "type" : ["string", "null"]
+        }
+      }
+    },
+    "FormulaA1" : {
+      "type" : ["string", "null"],
+      "description" : "Formula stored in the cell, in standard Excel format (e.g. \"=A1\")."
+    },
+    "FormulaR1C1" : {
+      "type" : ["string", "null"],
+      "description" : "Formula stored in the cell, in R1C1 (relative) format. For more information on that format, please search for 'A1 vs R1C1 Notation'."
+    },
+    "HyperLink" : {
+      "type" : ["string", "null"],
+      "description" : "Hyperlink stored in the cell."
+    },
+    "RichText" : {
+      "type" : ["string", "null"],
+      "description" : "Information about rich formatting of the cell content."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.Excel.CellContents"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Comment", "Value", "Address", "DataType", "FormulaA1", "FormulaR1C1", "HyperLink", "RichText"]
+}

@@ -1,0 +1,65 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Climate/Time.json",
+  "title" : "Time",
+  "type" : ["object", "null"],
+  "description" : "Time: An environment object used to describe time for climate analysis",
+  "properties" : {
+    "Year" : {
+      "type" : "integer",
+      "description" : "A number that represents the year (e.g. 1970)"
+    },
+    "Month" : {
+      "type" : "integer",
+      "description" : "A number between 1 to 12, where 1 is January"
+    },
+    "Day" : {
+      "type" : "integer",
+      "description" : "A number between 1 to 31"
+    },
+    "Hour" : {
+      "type" : "integer",
+      "description" : "A number between 0 to 23"
+    },
+    "Minute" : {
+      "type" : "integer",
+      "description" : "A number between 0 to 59"
+    },
+    "Second" : {
+      "type" : "integer",
+      "description" : "A number between 0 to 59"
+    },
+    "Millisecond" : {
+      "type" : "integer",
+      "description" : "A number between 0 to 999"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.Climate.Time"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Year", "Month", "Day", "Hour", "Minute", "Second", "Millisecond"]
+}

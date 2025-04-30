@@ -1,0 +1,76 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Analytical_oM/Fragments/RoutingFragment.json",
+  "title" : "RoutingFragment",
+  "type" : ["object", "null"],
+  "description" : "RoutingFragment: Fragment used in the computation of shortest paths.",
+  "properties" : {
+    "MinCostToSource" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "number"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "Cost" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "number"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "Visited" : {
+      "type" : "boolean"
+    },
+    "NearestToSource" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "StraightLineDistanceToTarget" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "number"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Analytical.Fragments.RoutingFragment"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["MinCostToSource", "Cost", "Visited", "NearestToSource", "StraightLineDistanceToTarget"]
+}

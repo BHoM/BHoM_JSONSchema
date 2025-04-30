@@ -1,0 +1,48 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/STL_oM/GeometryGroup.json",
+  "title" : "GeometryGroup",
+  "type" : ["object", "null"],
+  "description" : "GeometryGroup: This object can be used to group geometry to push to a specific file. Useful if pushing groups of geometry related to specific representations, for example, a group of panels to one file, and a group of bars to another.",
+  "properties" : {
+    "Geometry" : {
+      "type" : ["array", "null"],
+      "description" : "The container of Geometry which is grouped to this file. This can be any BHoM Geometry and can be mixed types.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/IGeometry.json"
+      }
+    },
+    "FileName" : {
+      "type" : ["string", "null"],
+      "description" : "The name of the file which this geometry should be stored (pushed) to. Do not include a directory on this file name, the save directory should be specified on the STLSettings object for the Adapter. Do not provide a file extension either, this will be handled by the Adapter."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.STL.GeometryGroup"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Geometry", "FileName"]
+}

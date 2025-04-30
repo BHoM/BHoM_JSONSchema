@@ -1,0 +1,56 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/ThermalBridge.json",
+  "title" : "ThermalBridge",
+  "type" : ["object", "null"],
+  "properties" : {
+    "Length" : {
+      "type" : "number",
+      "description" : "Length of the thermal bridge in metres; only if thermal bridge code is: user defined (individual values)."
+    },
+    "PsiValue" : {
+      "type" : "number",
+      "description" : "Linear thermal transmittance (psi-value); only if thermal bridging is user defined individual values."
+    },
+    "PsiSource" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "Type" : {
+      "type" : ["string", "null"],
+      "description" : "Code to indicate a particular type of thermal bridge; only if thermal bridge code is: user defined (individual values)."
+    },
+    "CalculationReference" : {
+      "type" : ["string", "null"],
+      "description" : "Reference to the details of the calculation of the psi-value."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SAP.XML.ThermalBridge"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Length", "PsiValue", "PsiSource", "Type", "CalculationReference"]
+}

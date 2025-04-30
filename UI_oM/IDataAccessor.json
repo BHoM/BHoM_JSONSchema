@@ -1,0 +1,4 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/UI_oM/IDataAccessor.json",
+  "required" : ["_t"]
+}

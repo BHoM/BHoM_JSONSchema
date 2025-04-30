@@ -1,0 +1,36 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/LadybugConfig.json",
+  "title" : "LadybugConfig",
+  "type" : ["object", "null"],
+  "description" : "LadybugConfig: The action config for the LadybugTools Adapter.",
+  "properties" : {
+    "JsonFile" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/FileSettings.json"
+    },
+    "CacheFileMaximumAge" : {
+      "type" : "integer",
+      "description" : "The amount of time (in days) any files that have been created by the adapter for caching purposes should exist before being removed/recreated. \n Files are only deleted/updated . \n Set to 0 to force a recompute of a simulation that has a stored cache."
+    },
+    "WrapNonBHoMObjects" : {
+      "type" : "boolean",
+      "description" : "If true, the Push action wraps any non-BHoM type into a BH.oM.Adapter.ObjectWrapper, allowing them to make use of the full Adapter workflow."
+    },
+    "AllowHashForComparing" : {
+      "type" : "boolean",
+      "description" : "If true and if no specific EqualityComparer is found for the type, Diffing hashes are computed and used to compare the objects."
+    },
+    "DiffingConfig" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/DiffingConfig.json"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.LadybugTools.LadybugConfig"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["JsonFile", "CacheFileMaximumAge"]
+}

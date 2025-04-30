@@ -1,0 +1,165 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/CommunityHeatingSystem.json",
+  "title" : "CommunityHeatingSystem",
+  "type" : ["object", "null"],
+  "properties" : {
+    "CommunityHeatingName" : {
+      "type" : ["string", "null"],
+      "description" : "The name of the community heating system."
+    },
+    "CommunityHeatingCO2EmissionFactor" : {
+      "type" : ["string", "null"],
+      "description" : "the community heating CO2 emission factor."
+    },
+    "CommunityHeatingPrimaryEnergyFactor" : {
+      "type" : ["string", "null"],
+      "description" : "The community heating Primary Energy Factor."
+    },
+    "CommunityHeatingUse" : {
+      "type" : ["string", "null"],
+      "description" : "Specifies what kind of heating the community system is used for."
+    },
+    "IsCommunityHeatingCylinderInDwelling" : {
+      "type" : ["object", "null"],
+      "description" : "Community heating, hot water cylinder in dwelling?.",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "IsHeatInterfaceUnitInDwelling" : {
+      "type" : ["object", "null"],
+      "description" : "Heat interface unit in Dwelling?.",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "HeatInterfaceUnitIndexNumber" : {
+      "type" : ["string", "null"],
+      "description" : "Heat Interface Unit index number, if present."
+    },
+    "CommunityHeatingDistributionType" : {
+      "type" : ["string", "null"],
+      "description" : "Community heating distribution."
+    },
+    "CommunityHeatSources" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/CommunityHeatSources.json"
+    },
+    "CommunityHeatingDistributionLossFactor" : {
+      "type" : ["string", "null"],
+      "description" : "Used when Community-Heating-Distribution-Type is calculated."
+    },
+    "ChargingLinkedToHeatUse" : {
+      "type" : ["object", "null"],
+      "description" : "Used for hot-water-only systems.",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "HeatNetworkIndexNumber" : {
+      "type" : ["string", "null"],
+      "description" : "Index number of heat network, if applicable."
+    },
+    "SubNetworkName" : {
+      "type" : ["string", "null"],
+      "description" : "The name by which the sub community heat network is known."
+    },
+    "HeatNetworkExisting" : {
+      "type" : ["object", "null"],
+      "description" : "Whether the heat network is existing or new.",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "HeatNetworkAssessedNew" : {
+      "type" : ["object", "null"],
+      "description" : "Whether the heat network is existing or new.",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SAP.XML.CommunityHeatingSystem"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["CommunityHeatingName", "CommunityHeatingCO2EmissionFactor", "CommunityHeatingPrimaryEnergyFactor", "CommunityHeatingUse", "IsCommunityHeatingCylinderInDwelling", "IsHeatInterfaceUnitInDwelling", "HeatInterfaceUnitIndexNumber", "CommunityHeatingDistributionType", "CommunityHeatSources", "CommunityHeatingDistributionLossFactor", "ChargingLinkedToHeatUse", "HeatNetworkIndexNumber", "SubNetworkName", "HeatNetworkExisting", "HeatNetworkAssessedNew"]
+}

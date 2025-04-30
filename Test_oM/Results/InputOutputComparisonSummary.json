@@ -1,0 +1,66 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Test_oM/Results/InputOutputComparisonSummary.json",
+  "title" : "InputOutputComparisonSummary",
+  "type" : ["object", "null"],
+  "properties" : {
+    "ObjectId" : {
+      "type" : ["object", "integer", "string", "number", "null"]
+    },
+    "ResultCase" : {
+      "type" : ["object", "integer", "string", "number", "null"]
+    },
+    "ObjectType" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Type"
+        },
+        "Name" : {
+          "type" : ["string", "null"]
+        }
+      }
+    },
+    "TimeStep" : {
+      "type" : "number",
+      "description" : "Not in use"
+    },
+    "ResultType" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Test_oM/Results/InputOutputComparisonType.json"
+    },
+    "Occurrences" : {
+      "type" : "integer",
+      "description" : "Number of times a particular difference has been registred."
+    },
+    "PropertyId" : {
+      "type" : ["string", "null"],
+      "description" : "The name of the evaluated property. Only applicable for ResultType 'Difference'."
+    },
+    "AverageDifference" : {
+      "type" : "number",
+      "description" : "Average difference between the input and returned item. Only applicable for Results of type 'Difference' for numerical values."
+    },
+    "MaximumDifference" : {
+      "type" : "number",
+      "description" : "Maximum difference between the input and returned item. Only applicable for Results of type 'Difference' for numerical values."
+    },
+    "MaximumDifferenceInputItem" : {
+      "type" : "number",
+      "description" : "Value of the input item for the maximum difference. Only applicable for Results of type 'Difference' for numerical values."
+    },
+    "MaximumDifferenceReturnedItem" : {
+      "type" : "number",
+      "description" : "Value of the returned item for the maximum difference. Only applicable for Results of type 'Difference' for numerical values."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Test.Results.InputOutputComparisonSummary"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["ObjectId", "ResultCase", "ObjectType", "TimeStep", "ResultType", "Occurrences", "PropertyId", "AverageDifference", "MaximumDifference", "MaximumDifferenceInputItem", "MaximumDifferenceReturnedItem"]
+}

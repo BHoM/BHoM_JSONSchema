@@ -1,0 +1,32 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/HeatingControlCode.json",
+  "anyOf" : [{
+      "type" : ["string", "null"],
+      "enum" : ["Boiler_OnlyDHW", "Boiler_NoTimeOrThermostaticControl", "Boiler_ProgrammerOnly", "Boiler_ThermostatOnly", "Boiler_ProgrammerAndThermostat", "Boiler_ProgrammerAndMoreThanOneThermostat", "Boiler_ProgrammerThermostatAndTRVs", "Boiler_ProgrammerTRVsAndBypass", "Boiler_ProgrammerTRVsAndFlowSwitch", "Boiler_ProgrammerTRVsAndEnergyManager", "Boiler_TimeAndTempControlByPlumbingAndElectrical", "Boiler_TRVsAndBypass", "Boiler_TimeAndTempControlByPCDB", "Boiler_ThermostatAndTRVs", "HeatPump_NoTimeOrThermostaticControl", "HeatPump_ProgrammerOnly", "HeatPump_ThermostatOnly", "HeatPump_ProgrammerAndThermostat", "HeatPump_ProgrammerAndMoreThanOneThermostat", "HeatPump_ProgrammerTRVsAndBypass", "HeatPump_TimeAndTempControlByPlumbingAndElectrical", "HeatPump_TimeAndTempControlByPCDB", "HeatPump_ThermostatAndTRVs", "HeatPump_ProgrammerThermostatAndTRVs", "HeatNetworks_FlatRateNoThermostaticControl", "HeatNetworks_FlatRateProgrammerOnly", "HeatNetworks_FlatRateThermostatOnly", "HeatNetworks_FlatRateProgrammerAndThermostat", "HeatNetworks_FlatRateProgrammerAndTRVs", "HeatNetworks_ChargingSystemProgrammerAndTRVs", "HeatNetworks_FlatRateTRVs", "HeatNetworks_ChargingSystemThermostatOnly", "HeatNetworks_ChargingSystemProgrammerAndThermostat", "HeatNetworks_ChargingSystemTRVs", "HeatNetworks_FlatRateProgrammerAndMoreThanOneThermostat", "HeatNetworks_ChargingSystemProgrammerAndMoreThanOneThermostat", "HeatNetworks_FlatRateThermostatAndTRVs", "HeatNetworks_ChargingSystemThermostatAndTRVs", "ElectricStorage_Manual", "ElectricStorage_Automatic", "ElectricStorage_CelectType", "ElectricStorage_ControlsForHighHeatRetention", "WarmAir_NoTimeOrThermostaticControl", "WarmAir_ProgrammerOnly", "WarmAir_ThermostatOnly", "WarmAir_ProgrammerAndThermostat", "WarmAir_ProgrammerAndMoreThanOneThermostat", "WarmAir_TimeAndTemperatureZoneControl", "RooomHeater_NoThermostaticControl", "RooomHeater_ApplianceThermostats", "RooomHeater_ProgrammerAndApplianceThermostats", "RooomHeater_RoomThermostatsOnly", "RooomHeater_ProgrammerAndRoomThermostats", "None", "Other_NoTimeOrThermostaticControl", "Other_ProgrammerOnly", "Other_RoomThermostatOnly", "Other_ProgrammerAndRoomThermostat", "Other_TemperatureZoneControl", "Other_TimeAndTemperatureZoneControl"]
+    }, {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : ["string", "null"],
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.Environment.SAP.HeatingControlCode"
+            }
+          }
+        },
+        "Value" : {
+          "type" : ["string", "null"],
+          "enum" : ["Boiler_OnlyDHW", "Boiler_NoTimeOrThermostaticControl", "Boiler_ProgrammerOnly", "Boiler_ThermostatOnly", "Boiler_ProgrammerAndThermostat", "Boiler_ProgrammerAndMoreThanOneThermostat", "Boiler_ProgrammerThermostatAndTRVs", "Boiler_ProgrammerTRVsAndBypass", "Boiler_ProgrammerTRVsAndFlowSwitch", "Boiler_ProgrammerTRVsAndEnergyManager", "Boiler_TimeAndTempControlByPlumbingAndElectrical", "Boiler_TRVsAndBypass", "Boiler_TimeAndTempControlByPCDB", "Boiler_ThermostatAndTRVs", "HeatPump_NoTimeOrThermostaticControl", "HeatPump_ProgrammerOnly", "HeatPump_ThermostatOnly", "HeatPump_ProgrammerAndThermostat", "HeatPump_ProgrammerAndMoreThanOneThermostat", "HeatPump_ProgrammerTRVsAndBypass", "HeatPump_TimeAndTempControlByPlumbingAndElectrical", "HeatPump_TimeAndTempControlByPCDB", "HeatPump_ThermostatAndTRVs", "HeatPump_ProgrammerThermostatAndTRVs", "HeatNetworks_FlatRateNoThermostaticControl", "HeatNetworks_FlatRateProgrammerOnly", "HeatNetworks_FlatRateThermostatOnly", "HeatNetworks_FlatRateProgrammerAndThermostat", "HeatNetworks_FlatRateProgrammerAndTRVs", "HeatNetworks_ChargingSystemProgrammerAndTRVs", "HeatNetworks_FlatRateTRVs", "HeatNetworks_ChargingSystemThermostatOnly", "HeatNetworks_ChargingSystemProgrammerAndThermostat", "HeatNetworks_ChargingSystemTRVs", "HeatNetworks_FlatRateProgrammerAndMoreThanOneThermostat", "HeatNetworks_ChargingSystemProgrammerAndMoreThanOneThermostat", "HeatNetworks_FlatRateThermostatAndTRVs", "HeatNetworks_ChargingSystemThermostatAndTRVs", "ElectricStorage_Manual", "ElectricStorage_Automatic", "ElectricStorage_CelectType", "ElectricStorage_ControlsForHighHeatRetention", "WarmAir_NoTimeOrThermostaticControl", "WarmAir_ProgrammerOnly", "WarmAir_ThermostatOnly", "WarmAir_ProgrammerAndThermostat", "WarmAir_ProgrammerAndMoreThanOneThermostat", "WarmAir_TimeAndTemperatureZoneControl", "RooomHeater_NoThermostaticControl", "RooomHeater_ApplianceThermostats", "RooomHeater_ProgrammerAndApplianceThermostats", "RooomHeater_RoomThermostatsOnly", "RooomHeater_ProgrammerAndRoomThermostats", "None", "Other_NoTimeOrThermostaticControl", "Other_ProgrammerOnly", "Other_RoomThermostatOnly", "Other_ProgrammerAndRoomThermostat", "Other_TemperatureZoneControl", "Other_TimeAndTemperatureZoneControl"]
+        }
+      }
+    }]
+}

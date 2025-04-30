@@ -1,0 +1,20 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/Drainage.json",
+  "title" : "Drainage",
+  "type" : ["object", "null"],
+  "properties" : {
+    "Pipework" : {
+      "type" : "boolean"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.dKoP.Drainage"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Pipework"]
+}

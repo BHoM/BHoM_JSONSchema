@@ -1,0 +1,127 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/File_oM/FSDirectory.json",
+  "title" : "FSDirectory",
+  "type" : ["object", "null"],
+  "description" : "FSDirectory: A FileSystem-hosted Directory. It can include the content of the Directory.",
+  "properties" : {
+    "ParentDirectory" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/File_oM/FSDirectory.json"
+    },
+    "Name" : {
+      "type" : ["string", "null"],
+      "description" : "Name of the directory."
+    },
+    "Exists" : {
+      "type" : ["object", "null"],
+      "description" : "Gets a value indicating whether a file exists.",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "IsReadOnly" : {
+      "type" : ["object", "null"],
+      "description" : "Whether the folder is read only.",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "Size" : {
+      "type" : "integer",
+      "description" : "Size of the folder in Bytes. This is never automatically computed."
+    },
+    "Attributes" : {
+      "type" : "string",
+      "description" : "Attributes indicating if ReadOnly, Hidden, System File, etc.",
+      "enum" : ["None", "ReadOnly", "Hidden", "System", "Directory", "Archive", "Device", "Normal", "Temporary", "SparseFile", "ReparsePoint", "Compressed", "Offline", "NotContentIndexed", "Encrypted", "IntegrityStream", "NoScrubData"]
+    },
+    "CreationTime" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "$date" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "CreationTimeUtc" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "$date" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "LastWriteTime" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "$date" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "ModifiedTimeUtc" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "$date" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "Owner" : {
+      "type" : ["string", "null"],
+      "description" : "User owning the Directory, if any, or the user who created the Directory."
+    },
+    "Content" : {
+      "type" : ["array", "null"],
+      "description" : "The content of the Directory. This is populated only once Pulled.",
+      "items" : { }
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.File.FSDirectory"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["ParentDirectory", "Name", "Exists", "IsReadOnly", "Size", "Attributes", "CreationTime", "CreationTimeUtc", "LastWriteTime", "ModifiedTimeUtc", "Owner", "Content"]
+}

@@ -1,0 +1,79 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/AngleProfile.json",
+  "title" : "AngleProfile",
+  "type" : ["object", "null"],
+  "description" : "AngleProfile: L-shaped profile.",
+  "properties" : {
+    "Shape" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/ShapeType.json"
+    },
+    "Height" : {
+      "type" : "number",
+      "description" : "Full depth between the extreme fibres of the flange and web. Property has a quantity of type Length meassured in [m]."
+    },
+    "Width" : {
+      "type" : "number",
+      "description" : "Full width between the extreme fibres of the flange and web. Property has a quantity of type Length meassured in [m]."
+    },
+    "WebThickness" : {
+      "type" : "number",
+      "description" : "Property has a quantity of type Length meassured in [m]."
+    },
+    "FlangeThickness" : {
+      "type" : "number",
+      "description" : "Property has a quantity of type Length meassured in [m]."
+    },
+    "RootRadius" : {
+      "type" : "number",
+      "description" : "Fillet radius between inner face of the flange and inner face of the web. Property has a quantity of type Length meassured in [m]."
+    },
+    "ToeRadius" : {
+      "type" : "number",
+      "description" : "Fillet radius at the end of the flange and the end of the web. Value need to be smaller or equal than the flange and web thicknesses Property has a quantity of type Length meassured in [m]."
+    },
+    "MirrorAboutLocalZ" : {
+      "type" : "boolean",
+      "description" : "If true, the section is mirrored about its local z-axis, resulting in a backwards facing L-shape."
+    },
+    "MirrorAboutLocalY" : {
+      "type" : "boolean",
+      "description" : "If true, the section is mirrored about its local y-axis, resulting in and upside down L-shape."
+    },
+    "Edges" : {
+      "type" : ["array", "null"],
+      "description" : "Edge curves that matches the dimensions in the global XY-plane.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ICurve.json"
+      }
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Spatial.ShapeProfiles.AngleProfile"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Shape", "Height", "Width", "WebThickness", "FlangeThickness", "RootRadius", "ToeRadius", "MirrorAboutLocalZ", "MirrorAboutLocalY", "Edges"]
+}

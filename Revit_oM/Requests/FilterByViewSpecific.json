@@ -1,0 +1,22 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Requests/FilterByViewSpecific.json",
+  "title" : "FilterByViewSpecific",
+  "type" : ["object", "null"],
+  "description" : "FilterByViewSpecific: IRequest that filters elements specific to (owned by) a given view in Revit.",
+  "properties" : {
+    "ViewId" : {
+      "type" : "integer",
+      "description" : "ElementId of the owner view in Revit."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.Revit.Requests.FilterByViewSpecific"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["ViewId"]
+}

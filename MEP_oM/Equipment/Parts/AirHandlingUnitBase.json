@@ -1,0 +1,81 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Equipment/Parts/AirHandlingUnitBase.json",
+  "title" : "AirHandlingUnitBase",
+  "type" : ["object", "null"],
+  "description" : "AirHandlingUnitBase: Air Handling Units are devices which house fans, filter, coils, and energy wheels which produce heated and cooled fresh/partially recirculated air to a building",
+  "properties" : {
+    "TotalSupplyAirFlow" : {
+      "type" : "number",
+      "description" : "Total Supply Airflow accounts for the total amount of air supplied to the building by the Air Handling Unit"
+    },
+    "TotalSupplyAirExternalStaticPressure" : {
+      "type" : "number",
+      "description" : "Total supply external static pressure denotes the resistance within the system that the supply fan has to overcome from filters, grilles, coils, etc"
+    },
+    "TotalReturnAirFlow" : {
+      "type" : "number",
+      "description" : "Total Return Airflow accounts for the total amount of air returned from the building to the Air Handling Unit"
+    },
+    "TotalReturnAirExternalStaticPressure" : {
+      "type" : "number",
+      "description" : "Total return external static pressure denotes the resistance within the system that the return fan has to overcome from grilles, ducts, etc"
+    },
+    "TotalDesignOutdoorAirFlow" : {
+      "type" : "number",
+      "description" : "Total Design Outdoor Airflow accounts for the total amount of outdoor air introduced to the supply air that goes to the building from the Air Handling Unit"
+    },
+    "DemandControlledVentilationMinimumOutdoorAirFlow" : {
+      "type" : "number",
+      "description" : "Demand Controlled Ventilation Minimum Outdoor Airflow denotes that amount of outdoor air that is required to be supplied to the building, at a minimum"
+    },
+    "TotalOutdoorAirFlowExternalStaticPressure" : {
+      "type" : "number",
+      "description" : "Total outdoor air external static pressure denotes the resistance within the system that the outdoor air intake fan has to overcome"
+    },
+    "TotalReliefAirFlow" : {
+      "type" : "number",
+      "description" : "Total Relief Airflow accounts for the total amount of extract/exhaust air that is removed from the system and introduced to the atmosphere"
+    },
+    "TotalReliefExternalStaticPressure" : {
+      "type" : "number",
+      "description" : "Total Relief Airflow external static pressure denotes the resistance within the system that the relief/extract/exhaust fan has to overcome"
+    },
+    "SupplyAirEconomiser" : {
+      "type" : "boolean",
+      "description" : "Supply Air Economisers allow additional outdoor air to be introduced to the system when outdoor conditions are favorable (typically cool and dry)"
+    },
+    "WaterEconomiser" : {
+      "type" : "boolean",
+      "description" : "Water Economisers allow returned fluids to be introduced to the system when conditions are favorable"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.MEP.Equipment.Parts.AirHandlingUnitBase"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["TotalSupplyAirFlow", "TotalSupplyAirExternalStaticPressure", "TotalReturnAirFlow", "TotalReturnAirExternalStaticPressure", "TotalDesignOutdoorAirFlow", "DemandControlledVentilationMinimumOutdoorAirFlow", "TotalOutdoorAirFlowExternalStaticPressure", "TotalReliefAirFlow", "TotalReliefExternalStaticPressure", "SupplyAirEconomiser", "WaterEconomiser"]
+}

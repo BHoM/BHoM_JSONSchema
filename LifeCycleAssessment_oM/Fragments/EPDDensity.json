@@ -1,0 +1,22 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Fragments/EPDDensity.json",
+  "title" : "EPDDensity",
+  "type" : ["object", "null"],
+  "description" : "EPDDensity: A data fragment used to store Density values if provided from the EPD source. \nDensity is a required property for all Evaluations of EPDs with Mass-QuantityType.Density can be changed by the user by adding this fragment to an EPD. \nThe user accepts responsibility for any changes beyond the given dataset information as not all EPDs will contain Density values.",
+  "properties" : {
+    "Density" : {
+      "type" : "number",
+      "description" : "The material density in kg/m^3. Property has a quantity of type Density meassured in [kg/m³]."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.LifeCycleAssessment.Fragments.EPDDensity"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Density"]
+}

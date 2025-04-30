@@ -1,0 +1,35 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Fragments/IdentityFragment.json",
+  "title" : "IdentityFragment",
+  "type" : ["object", "null"],
+  "properties" : {
+    "Manufacturer" : {
+      "type" : ["string", "null"]
+    },
+    "ModelNumber" : {
+      "type" : ["string", "null"]
+    },
+    "Location" : {
+      "type" : ["string", "null"]
+    },
+    "Service" : {
+      "type" : ["string", "null"]
+    },
+    "Remarks" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.MEP.Fragments.IdentityFragment"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Manufacturer", "ModelNumber", "Location", "Service", "Remarks"]
+}

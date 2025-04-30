@@ -1,0 +1,54 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/Profile.json",
+  "title" : "Profile",
+  "type" : ["object", "null"],
+  "description" : "Profile: A profile object represents a gain, thermostat or humdistat as conditions vary over a 24-hour period",
+  "properties" : {
+    "ProfileType" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/ProfileType.json"
+    },
+    "ProfileDay" : {
+      "type" : ["array", "null"],
+      "description" : "Profile Day depicts the day described in the profile, whether it's a day of the week or a holiday",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/ProfileDay.json"
+      }
+    },
+    "HourlyValues" : {
+      "type" : ["array", "null"],
+      "description" : "Hourly Values denotes the hour-by-hour values for a 24-hour period. These values may be represented in temperature (degrees C) (thermostat), fraction (0.9) (lighting gain), or flow (m3/s) (ventilation)",
+      "items" : {
+        "type" : "number"
+      }
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SpaceCriteria.Profile"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["ProfileType", "ProfileDay", "HourlyValues"]
+}

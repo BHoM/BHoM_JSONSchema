@@ -1,0 +1,52 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/MechanicalSystem.json",
+  "title" : "MechanicalSystem",
+  "type" : ["object", "null"],
+  "description" : "MechanicalSystem: Mechanical systems are qualified by their ability to convey air, water, etc to a building/room/area",
+  "properties" : {
+    "FluidType" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Enums/FluidType.json"
+    },
+    "FluidTemperature" : {
+      "type" : "number",
+      "description" : "The mean temperature of the fluid within the mechanical system (degrees Celsius)."
+    },
+    "FluidViscosity" : {
+      "type" : "number",
+      "description" : "The viscosity of the fluid is the measure of its resistance to flow."
+    },
+    "FluidDensity" : {
+      "type" : "number",
+      "description" : "The mass per unit volume of the fluid within the mechanical system."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.MEP.System.MechanicalSystem"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["FluidType", "FluidTemperature", "FluidViscosity", "FluidDensity"]
+}

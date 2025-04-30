@@ -1,0 +1,35 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/TopLoadingData.json",
+  "title" : "TopLoadingData",
+  "type" : ["object", "null"],
+  "properties" : {
+    "VerticaLoadPermanentMax" : {
+      "type" : "number"
+    },
+    "VerticaLoadPermanentMin" : {
+      "type" : "number"
+    },
+    "VerticaLoadVariableMax" : {
+      "type" : "number"
+    },
+    "VerticaLoadVariableMin" : {
+      "type" : "number"
+    },
+    "HorizontalInPlaneLoadVariableMax" : {
+      "type" : "number"
+    },
+    "HorizontalInPlaneLoadVariableMin" : {
+      "type" : "number"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.dKoP.TopLoadingData"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["VerticaLoadPermanentMax", "VerticaLoadPermanentMin", "VerticaLoadVariableMax", "VerticaLoadVariableMin", "HorizontalInPlaneLoadVariableMax", "HorizontalInPlaneLoadVariableMin"]
+}

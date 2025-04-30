@@ -1,0 +1,83 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/GeneralisedFabricatedBoxProfile.json",
+  "title" : "GeneralisedFabricatedBoxProfile",
+  "type" : ["object", "null"],
+  "description" : "GeneralisedFabricatedBoxProfile: Rectangular hollow profile that allows for different thicknesses of the webs, top flange and bottom flange as well as defined outstands of the top and bottom flange",
+  "properties" : {
+    "Shape" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/ShapeType.json"
+    },
+    "Height" : {
+      "type" : "number",
+      "description" : "Full depth between the extreme fibres of the flanges. Property has a quantity of type Length meassured in [m]."
+    },
+    "Width" : {
+      "type" : "number",
+      "description" : "Width between the extreme fibres of the webs, excluding corbel widths. Property has a quantity of type Length meassured in [m]."
+    },
+    "WebThickness" : {
+      "type" : "number",
+      "description" : "Property has a quantity of type Length meassured in [m]."
+    },
+    "TopFlangeThickness" : {
+      "type" : "number",
+      "description" : "Property has a quantity of type Length meassured in [m]."
+    },
+    "BotFlangeThickness" : {
+      "type" : "number",
+      "description" : "Property has a quantity of type Length meassured in [m]."
+    },
+    "TopLeftCorbelWidth" : {
+      "type" : "number",
+      "description" : "The additional width added to the left side of the top flange, measured from the outside edge of the web. Property has a quantity of type Length meassured in [m]."
+    },
+    "TopRightCorbelWidth" : {
+      "type" : "number",
+      "description" : "The additional width added to the right side of the top flange, measured from the outside edge of the web. Property has a quantity of type Length meassured in [m]."
+    },
+    "BotLeftCorbelWidth" : {
+      "type" : "number",
+      "description" : "The additional width added to the left side of the bottom flange, measured from the outside edge of the web. Property has a quantity of type Length meassured in [m]."
+    },
+    "BotRightCorbelWidth" : {
+      "type" : "number",
+      "description" : "The additional width added to the right side of the bottom flange, measured from the outside edge of the web. Property has a quantity of type Length meassured in [m]."
+    },
+    "Edges" : {
+      "type" : ["array", "null"],
+      "description" : "Edge curves that matches the dimensions in the global XY-plane.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ICurve.json"
+      }
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Spatial.ShapeProfiles.GeneralisedFabricatedBoxProfile"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Shape", "Height", "Width", "WebThickness", "TopFlangeThickness", "BotFlangeThickness", "TopLeftCorbelWidth", "TopRightCorbelWidth", "BotLeftCorbelWidth", "BotRightCorbelWidth", "Edges"]
+}

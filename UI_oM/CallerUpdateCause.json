@@ -1,0 +1,32 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/UI_oM/CallerUpdateCause.json",
+  "anyOf" : [{
+      "type" : ["string", "null"],
+      "enum" : ["Unknown", "ItemSelected", "ReadFromSave", "InputSelection", "OutputSelection", "UpgradedVersion"]
+    }, {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : ["string", "null"],
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.UI.CallerUpdateCause"
+            }
+          }
+        },
+        "Value" : {
+          "type" : ["string", "null"],
+          "enum" : ["Unknown", "ItemSelected", "ReadFromSave", "InputSelection", "OutputSelection", "UpgradedVersion"]
+        }
+      }
+    }]
+}

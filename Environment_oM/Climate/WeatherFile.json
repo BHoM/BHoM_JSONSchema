@@ -1,0 +1,264 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Climate/WeatherFile.json",
+  "title" : "WeatherFile",
+  "type" : ["object", "null"],
+  "properties" : {
+    "CityName" : {
+      "type" : ["string", "null"]
+    },
+    "StateName" : {
+      "type" : ["string", "null"]
+    },
+    "Country" : {
+      "type" : ["string", "null"]
+    },
+    "WeatherSource" : {
+      "type" : ["string", "null"]
+    },
+    "WMOID" : {
+      "type" : ["string", "null"]
+    },
+    "SpaceTime" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Climate/SpaceTime.json"
+    },
+    "Year" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : "integer"
+      }
+    },
+    "Month" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : "integer"
+      }
+    },
+    "Day" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : "integer"
+      }
+    },
+    "Hour" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : "integer"
+      }
+    },
+    "Minute" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : "integer"
+      }
+    },
+    "UncertaintyFlag" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "DryBulbTemperature" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : "number"
+      }
+    },
+    "DewPointTemperature" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : "number"
+      }
+    },
+    "RelativeHumidity" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : "number"
+      }
+    },
+    "AtmosphericStationPressure" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : "number"
+      }
+    },
+    "ExtraterrestrialHorizontalRadiation" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : "number"
+      }
+    },
+    "ExtraterrestrialDirectNormalRadiation" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : "number"
+      }
+    },
+    "HorizontalInfraredRadiationIntensity" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : "number"
+      }
+    },
+    "GlobalHorizontalRadiation" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : "number"
+      }
+    },
+    "DirectNormalRadiation" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : "number"
+      }
+    },
+    "DiffuseHorizontalRadiation" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : "number"
+      }
+    },
+    "GlobalHorizontalIlluminance" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : "number"
+      }
+    },
+    "DirectNormalIlluminance" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : "number"
+      }
+    },
+    "DiffuseHorizontalIlluminance" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : "number"
+      }
+    },
+    "ZenithLuminance" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : "number"
+      }
+    },
+    "WindDirection" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : "number"
+      }
+    },
+    "WindSpeed" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : "number"
+      }
+    },
+    "TotalSkyCover" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : "number"
+      }
+    },
+    "OpaqueSkyCover" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : "number"
+      }
+    },
+    "Visibility" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : "number"
+      }
+    },
+    "CeilingHeight" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : "number"
+      }
+    },
+    "PresentWeatherObservation" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : "number"
+      }
+    },
+    "PresentWeatherCodes" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : "number"
+      }
+    },
+    "PrecipitableWater" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : "number"
+      }
+    },
+    "AerosolOpticalDepth" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : "number"
+      }
+    },
+    "SnowDepth" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : "number"
+      }
+    },
+    "DaysSinceLastSnowfall" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : "number"
+      }
+    },
+    "Albedo" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : "number"
+      }
+    },
+    "LiquidPrecipitationDepth" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : "number"
+      }
+    },
+    "LiquidPrecipitationQuantity" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : "number"
+      }
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.Climate.WeatherFile"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["CityName", "StateName", "Country", "WeatherSource", "WMOID", "SpaceTime", "Year", "Month", "Day", "Hour", "Minute", "UncertaintyFlag", "DryBulbTemperature", "DewPointTemperature", "RelativeHumidity", "AtmosphericStationPressure", "ExtraterrestrialHorizontalRadiation", "ExtraterrestrialDirectNormalRadiation", "HorizontalInfraredRadiationIntensity", "GlobalHorizontalRadiation", "DirectNormalRadiation", "DiffuseHorizontalRadiation", "GlobalHorizontalIlluminance", "DirectNormalIlluminance", "DiffuseHorizontalIlluminance", "ZenithLuminance", "WindDirection", "WindSpeed", "TotalSkyCover", "OpaqueSkyCover", "Visibility", "CeilingHeight", "PresentWeatherObservation", "PresentWeatherCodes", "PrecipitableWater", "AerosolOpticalDepth", "SnowDepth", "DaysSinceLastSnowfall", "Albedo", "LiquidPrecipitationDepth", "LiquidPrecipitationQuantity"]
+}

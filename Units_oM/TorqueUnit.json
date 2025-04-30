@@ -1,0 +1,32 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Units_oM/TorqueUnit.json",
+  "anyOf" : [{
+      "type" : ["string", "null"],
+      "enum" : ["Undefined", "KilogramForceCentimeter", "KilogramForceMeter", "KilogramForceMillimeter", "KilonewtonCentimeter", "KilonewtonMeter", "KilonewtonMillimeter", "KilopoundForceFoot", "KilopoundForceInch", "MeganewtonCentimeter", "MeganewtonMeter", "MeganewtonMillimeter", "MegapoundForceFoot", "MegapoundForceInch", "NewtonCentimeter", "NewtonMeter", "NewtonMillimeter", "PoundForceFoot", "PoundForceInch", "TonneForceCentimeter", "TonneForceMeter", "TonneForceMillimeter"]
+    }, {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : ["string", "null"],
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.Units.TorqueUnit"
+            }
+          }
+        },
+        "Value" : {
+          "type" : ["string", "null"],
+          "enum" : ["Undefined", "KilogramForceCentimeter", "KilogramForceMeter", "KilogramForceMillimeter", "KilonewtonCentimeter", "KilonewtonMeter", "KilonewtonMillimeter", "KilopoundForceFoot", "KilopoundForceInch", "MeganewtonCentimeter", "MeganewtonMeter", "MeganewtonMillimeter", "MegapoundForceFoot", "MegapoundForceInch", "NewtonCentimeter", "NewtonMeter", "NewtonMillimeter", "PoundForceFoot", "PoundForceInch", "TonneForceCentimeter", "TonneForceMeter", "TonneForceMillimeter"]
+        }
+      }
+    }]
+}

@@ -1,0 +1,32 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Units_oM/SpeedUnit.json",
+  "anyOf" : [{
+      "type" : ["string", "null"],
+      "enum" : ["Undefined", "CentimeterPerHour", "CentimeterPerMinute", "CentimeterPerSecond", "DecimeterPerMinute", "DecimeterPerSecond", "FootPerHour", "FootPerMinute", "FootPerSecond", "InchPerHour", "InchPerMinute", "InchPerSecond", "KilometerPerHour", "KilometerPerMinute", "KilometerPerSecond", "Knot", "MeterPerHour", "MeterPerMinute", "MeterPerSecond", "MicrometerPerMinute", "MicrometerPerSecond", "MilePerHour", "MillimeterPerHour", "MillimeterPerMinute", "MillimeterPerSecond", "NanometerPerMinute", "NanometerPerSecond", "UsSurveyFootPerHour", "UsSurveyFootPerMinute", "UsSurveyFootPerSecond", "YardPerHour", "YardPerMinute", "YardPerSecond"]
+    }, {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : ["string", "null"],
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.Units.SpeedUnit"
+            }
+          }
+        },
+        "Value" : {
+          "type" : ["string", "null"],
+          "enum" : ["Undefined", "CentimeterPerHour", "CentimeterPerMinute", "CentimeterPerSecond", "DecimeterPerMinute", "DecimeterPerSecond", "FootPerHour", "FootPerMinute", "FootPerSecond", "InchPerHour", "InchPerMinute", "InchPerSecond", "KilometerPerHour", "KilometerPerMinute", "KilometerPerSecond", "Knot", "MeterPerHour", "MeterPerMinute", "MeterPerSecond", "MicrometerPerMinute", "MicrometerPerSecond", "MilePerHour", "MillimeterPerHour", "MillimeterPerMinute", "MillimeterPerSecond", "NanometerPerMinute", "NanometerPerSecond", "UsSurveyFootPerHour", "UsSurveyFootPerMinute", "UsSurveyFootPerSecond", "YardPerHour", "YardPerMinute", "YardPerSecond"]
+        }
+      }
+    }]
+}

@@ -1,0 +1,47 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/Delta.json",
+  "title" : "Delta",
+  "type" : ["object", "null"],
+  "description" : "Delta: Contains the Diff plus context information: parent Stream, Timestamp, etc.",
+  "properties" : {
+    "StreamID" : {
+      "type" : "string",
+      "format" : "uuid",
+      "description" : "The ID of the owning Stream. It must be the same for both the Revision that this Delta targets and the Revision that it will produce."
+    },
+    "Diff" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/Diff.json"
+    },
+    "RevisionFrom" : {
+      "type" : "string",
+      "format" : "uuid",
+      "description" : "Revision ID that this Delta targets."
+    },
+    "RevisionTo" : {
+      "type" : "string",
+      "format" : "uuid",
+      "description" : "Revision ID that this Delta produces."
+    },
+    "Timestamp" : {
+      "type" : "integer",
+      "description" : "In UTC ticks."
+    },
+    "Author" : {
+      "type" : ["string", "null"],
+      "description" : "Any descriptive string identifying either the Author and/or the software used."
+    },
+    "Comment" : {
+      "type" : ["string", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Diffing.Delta"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["StreamID", "Diff", "RevisionFrom", "RevisionTo", "Timestamp", "Author", "Comment"]
+}

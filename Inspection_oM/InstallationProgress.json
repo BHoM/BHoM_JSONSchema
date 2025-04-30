@@ -1,0 +1,52 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Inspection_oM/InstallationProgress.json",
+  "title" : "InstallationProgress",
+  "type" : ["object", "null"],
+  "description" : "InstallationProgress: Installation progress in a specific area associated with an audit, including image filepaths as applicable",
+  "properties" : {
+    "Status" : {
+      "type" : ["string", "null"],
+      "description" : "The general status of installation progress at the time of the inspection."
+    },
+    "Area" : {
+      "type" : ["string", "null"],
+      "description" : "Description for the area that this installation progress refers to."
+    },
+    "Media" : {
+      "type" : ["array", "null"],
+      "description" : "Filenames of images showing the construction progress in the area specified.",
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Inspection.InstallationProgress"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Status", "Area", "Media"]
+}

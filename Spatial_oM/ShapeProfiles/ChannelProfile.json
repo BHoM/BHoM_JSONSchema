@@ -1,0 +1,75 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/ChannelProfile.json",
+  "title" : "ChannelProfile",
+  "type" : ["object", "null"],
+  "description" : "ChannelProfile: C-shaped profile with parallel flanges of the same length and thickness.",
+  "properties" : {
+    "Shape" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/ShapeType.json"
+    },
+    "Height" : {
+      "type" : "number",
+      "description" : "Full depth between the extreme fibres of the parallel flanges. Property has a quantity of type Length meassured in [m]."
+    },
+    "FlangeWidth" : {
+      "type" : "number",
+      "description" : "Full width between the extreme fibres of the web to the flange. Property has a quantity of type Length meassured in [m]."
+    },
+    "WebThickness" : {
+      "type" : "number",
+      "description" : "Property has a quantity of type Length meassured in [m]."
+    },
+    "FlangeThickness" : {
+      "type" : "number",
+      "description" : "Property has a quantity of type Length meassured in [m]."
+    },
+    "RootRadius" : {
+      "type" : "number",
+      "description" : "Fillet radius between inner face of the flanges and the inner face of web. Property has a quantity of type Length meassured in [m]."
+    },
+    "ToeRadius" : {
+      "type" : "number",
+      "description" : "Fillet radius at the end of the flanges. Value need to be smaller or equal than the flange thickness. Property has a quantity of type Length meassured in [m]."
+    },
+    "MirrorAboutLocalZ" : {
+      "type" : "boolean",
+      "description" : "If true, the section is mirrored about its local z-axis, resulting in a backwards facing C-shape."
+    },
+    "Edges" : {
+      "type" : ["array", "null"],
+      "description" : "Edge curves that matches the dimensions in the global XY-plane.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ICurve.json"
+      }
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Spatial.ShapeProfiles.ChannelProfile"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Shape", "Height", "FlangeWidth", "WebThickness", "FlangeThickness", "RootRadius", "ToeRadius", "MirrorAboutLocalZ", "Edges"]
+}

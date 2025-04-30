@@ -1,0 +1,42 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Lighting_oM/Results/Illuminance/Lux.json",
+  "title" : "Lux",
+  "type" : ["object", "null"],
+  "description" : "Lux: Lux contains results for Lux analysis. Inherits from MeshElementResult which provides properties related to which node this Lux is recorded for",
+  "properties" : {
+    "LuxLevel" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_v" : {
+          "type" : ["array", "null"],
+          "description" : "The amount of lux recorded for the given analysis node Property has a quantity of type Illuminance meassured in [lux].",
+          "items" : {
+            "type" : "number"
+          }
+        }
+      }
+    },
+    "ObjectId" : {
+      "type" : ["object", "integer", "string", "number", "null"]
+    },
+    "NodeId" : {
+      "type" : ["object", "integer", "string", "number", "null"]
+    },
+    "MeshFaceId" : {
+      "type" : ["object", "integer", "string", "number", "null"]
+    },
+    "ResultCase" : {
+      "type" : ["object", "integer", "string", "number", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Lighting.Results.Illuminance.Lux"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["LuxLevel"]
+}

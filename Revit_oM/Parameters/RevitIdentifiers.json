@@ -1,0 +1,55 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Parameters/RevitIdentifiers.json",
+  "title" : "RevitIdentifiers",
+  "type" : ["object", "null"],
+  "description" : "RevitIdentifiers: An entity containing identifiers of Revit element correspondent to the BHoM object that carries it.",
+  "properties" : {
+    "PersistentId" : { },
+    "ElementId" : {
+      "type" : "integer",
+      "description" : "ElementId of the Revit element correspondent to the BHoM object that carries this fragment."
+    },
+    "CategoryName" : {
+      "type" : ["string", "null"],
+      "description" : "Category of the Revit element correspondent to the BHoM object that carries this fragment."
+    },
+    "FamilyName" : {
+      "type" : ["string", "null"],
+      "description" : "Family of the Revit element correspondent to the BHoM object that carries this fragment."
+    },
+    "FamilyTypeName" : {
+      "type" : ["string", "null"],
+      "description" : "Family type of the Revit element correspondent to the BHoM object that carries this fragment."
+    },
+    "FamilyTypeId" : {
+      "type" : "integer",
+      "description" : "ElementId of family type of the Revit element correspondent to the BHoM object that carries this fragment."
+    },
+    "Workset" : {
+      "type" : ["string", "null"],
+      "description" : "Name of the parent workset of the Revit element correspondent to the BHoM object that carries this fragment. Empty if the Revit model is not shared."
+    },
+    "OwnerViewId" : {
+      "type" : "integer",
+      "description" : "ElementId of view that owns the Revit element correspondent to the BHoM object that carries this fragment. -1 if the Revit element is not view-dependent."
+    },
+    "ParentElementId" : {
+      "type" : "integer",
+      "description" : "ElementId of the parent element of the Revit element correspondent to the BHoM object that carries this fragment. -1 if the Revit element is not a nested element."
+    },
+    "LinkDocument" : {
+      "type" : ["string", "null"],
+      "description" : "Name of the link document containing the Revit element correspondent to the BHoM object that carries this fragment. Empty if the Revit element is not a link element."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.Revit.Parameters.RevitIdentifiers"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["PersistentId", "ElementId", "CategoryName", "FamilyName", "FamilyTypeName", "FamilyTypeId", "Workset", "OwnerViewId", "ParentElementId", "LinkDocument"]
+}

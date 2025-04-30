@@ -1,0 +1,22 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Attributes/CategoryTypeAttribute.json",
+  "title" : "CategoryTypeAttribute",
+  "type" : ["object", "null"],
+  "description" : "CategoryTypeAttribute: Attribute that defines Revit category type as defined in Visibility & Graphics window.\nAllowed values of Type property are: 'Model', 'Annotation', 'Analytical' and 'Internal'.\nEach category added to Category needs to have CategoryTypeAttribute assigned to be successfully reflected.",
+  "properties" : {
+    "Type" : {
+      "type" : ["string", "null"]
+    },
+    "TypeId" : { },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Revit.Attributes.CategoryTypeAttribute"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Type"]
+}

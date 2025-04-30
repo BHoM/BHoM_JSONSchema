@@ -1,0 +1,41 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/SolarRadiationData.json",
+  "title" : "SolarRadiationData",
+  "type" : ["object", "null"],
+  "properties" : {
+    "MaxValue" : {
+      "type" : "number",
+      "description" : "The maximum incoming solar radiation."
+    },
+    "MinValue" : {
+      "type" : "number",
+      "description" : "The minimum incoming solar radiation."
+    },
+    "MaxDirection" : {
+      "type" : "number",
+      "description" : "The direction, in degrees(°) clockwise from north that the maximum incoming solar radiation is coming from."
+    },
+    "MinDirection" : {
+      "type" : "number",
+      "description" : "The direction, in degrees(°) clockwise from north that the minimum incoming solar radiation is coming from."
+    },
+    "MaxTilt" : {
+      "type" : "number",
+      "description" : "The angle, in degrees(°) above the horizon that the maximum incoming solar radiation is coming from."
+    },
+    "MinTilt" : {
+      "type" : "number",
+      "description" : "The angle, in degrees(°) above the horizon that the minimum incoming solar radiation is coming from."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.LadybugTools.SolarRadiationData"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["MaxValue", "MinValue", "MaxDirection", "MinDirection", "MaxTilt", "MinTilt"]
+}

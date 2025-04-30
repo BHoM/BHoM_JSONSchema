@@ -1,0 +1,32 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Requests/GlobalResultType.json",
+  "anyOf" : [{
+      "type" : ["string", "null"],
+      "enum" : ["Reactions", "ModalDynamics", "ModalMassAndFrequency", "StoreyDrifts"]
+    }, {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : ["string", "null"],
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.Structure.Requests.GlobalResultType"
+            }
+          }
+        },
+        "Value" : {
+          "type" : ["string", "null"],
+          "enum" : ["Reactions", "ModalDynamics", "ModalMassAndFrequency", "StoreyDrifts"]
+        }
+      }
+    }]
+}

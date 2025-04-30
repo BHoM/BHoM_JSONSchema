@@ -1,0 +1,49 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Matter_oM/Options/DensityExtractionOptions.json",
+  "title" : "DensityExtractionOptions",
+  "type" : ["object", "null"],
+  "description" : "DensityExtractionOptions: Settings for extraction of Density from a List of IDensityProviders.",
+  "properties" : {
+    "Type" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Type"
+        },
+        "Name" : {
+          "type" : ["string", "null"]
+        }
+      }
+    },
+    "AllowFallbackIfNoType" : {
+      "type" : "boolean",
+      "description" : "If true, and material does not contain a IDensityProvider of the specified type, DensityExtraction falls back to look for other densities. If false and material does not contain the type DensityExtraction exits."
+    },
+    "ExtractionType" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Matter_oM/Options/DensityExtractionType.json"
+    },
+    "EqualTolerance" : {
+      "type" : "number",
+      "description" : "The ratio tolerance for considering the value of the densities as equal. Density values are deemed equal if (max - min / mean) is smaller than this value, where mean = (max + min)/2, i.e. a tolerance of 0.01 means an allowable difference of 1% normalised to the mean value of found densities. Property has a quantity of type Ratio meassured in [-]."
+    },
+    "IgnoreZeroValues" : {
+      "type" : "boolean",
+      "description" : "Ignores densities of 0 if true when computing average or checking for equality."
+    },
+    "ZeroTolerance" : {
+      "type" : "number",
+      "description" : "Threshold for density values to be seen as 0."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Matter.Options.DensityExtractionOptions"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Type", "AllowFallbackIfNoType", "ExtractionType", "EqualTolerance", "IgnoreZeroValues", "ZeroTolerance"]
+}

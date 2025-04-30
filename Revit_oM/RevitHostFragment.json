@@ -1,0 +1,26 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/RevitHostFragment.json",
+  "title" : "RevitHostFragment",
+  "type" : ["object", "null"],
+  "description" : "RevitHostFragment: Fragment containing the information about the Revit element that hosts the Revit element correspondent to the BHoM object that carries this.",
+  "properties" : {
+    "HostId" : {
+      "type" : "integer",
+      "description" : "ElementId of the Revit element that hosts the Revit element correspondent to the BHoM object that carries this."
+    },
+    "LinkDocument" : {
+      "type" : ["string", "null"],
+      "description" : "Name of the link document, if the host Revit element is linked."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Revit.RevitHostFragment"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["HostId", "LinkDocument"]
+}

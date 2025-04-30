@@ -1,0 +1,118 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/CSProject/PropertyGroup.json",
+  "title" : "PropertyGroup",
+  "type" : ["object", "null"],
+  "properties" : {
+    "Condition" : {
+      "type" : ["string", "null"]
+    },
+    "Configuration" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/CSProject/Configuration.json"
+    },
+    "Platform" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/CSProject/Configuration.json"
+    },
+    "ProjectGUID" : {
+      "type" : ["string", "null"]
+    },
+    "OutputType" : {
+      "type" : ["string", "null"]
+    },
+    "AppDesignerFolder" : {
+      "type" : ["string", "null"]
+    },
+    "RootNamespace" : {
+      "type" : ["string", "null"]
+    },
+    "AssemblyName" : {
+      "type" : ["string", "null"]
+    },
+    "TargetFrameworkVersion" : {
+      "type" : ["string", "null"]
+    },
+    "FileAlignment" : {
+      "type" : ["string", "null"]
+    },
+    "DebugSymbols" : {
+      "type" : ["string", "null"]
+    },
+    "DebugType" : {
+      "type" : ["string", "null"]
+    },
+    "Optimise" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "OutputPath" : {
+      "type" : ["string", "null"]
+    },
+    "DefineConstants" : {
+      "type" : ["string", "null"]
+    },
+    "ErrorReport" : {
+      "type" : ["string", "null"]
+    },
+    "WarningLevel" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "integer"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "PostBuildEvent" : {
+      "type" : ["string", "null"]
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.XML.CSProject.PropertyGroup"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Condition", "Configuration", "Platform", "ProjectGUID", "OutputType", "AppDesignerFolder", "RootNamespace", "AssemblyName", "TargetFrameworkVersion", "FileAlignment", "DebugSymbols", "DebugType", "Optimise", "OutputPath", "DefineConstants", "ErrorReport", "WarningLevel", "PostBuildEvent"]
+}

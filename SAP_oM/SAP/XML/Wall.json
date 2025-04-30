@@ -1,0 +1,61 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/Wall.json",
+  "title" : "Wall",
+  "type" : ["object", "null"],
+  "properties" : {
+    "Name" : {
+      "type" : ["string", "null"],
+      "description" : "Unique name which identifies this wall within its storey.  Can be just a number, e.g. \"1\".  However, a wall cannot have the same name as an opening or a roof."
+    },
+    "Description" : {
+      "type" : ["string", "null"],
+      "description" : "Descriptive notes about the wall."
+    },
+    "Area" : {
+      "type" : "number",
+      "description" : "Total wall area in square metres, inclusive of any openings."
+    },
+    "UValue" : {
+      "type" : ["string", "null"],
+      "description" : "Exposed wall U-value."
+    },
+    "Type" : {
+      "type" : ["string", "null"],
+      "description" : "Type of wall (exposure)."
+    },
+    "KappaValue" : {
+      "type" : ["string", "null"],
+      "description" : "Heat capacity per unit area in kJ/m�K."
+    },
+    "CurtainWall" : {
+      "type" : "boolean",
+      "description" : "Whether the wall is curtain walling."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SAP.XML.Wall"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Name", "Description", "Area", "UValue", "Type", "KappaValue", "CurtainWall"]
+}

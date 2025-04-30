@@ -1,0 +1,29 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/PullRepresentationConfig.json",
+  "title" : "PullRepresentationConfig",
+  "type" : ["object", "null"],
+  "description" : "PullRepresentationConfig: Configuration used to specify representation to be pulled and passed to RevitRepresentation fragment.",
+  "properties" : {
+    "PullRenderMesh" : {
+      "type" : "boolean",
+      "description" : "If true, representation of elements will be pulled and stored under RenderMesh in RevitRepresentation fragment."
+    },
+    "DetailLevel" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Enums/DetailLevel.json"
+    },
+    "IncludeNonVisible" : {
+      "type" : "boolean",
+      "description" : "Invisible element parts will be pulled and passed to RevitRepresentation fragment if true. PullRepresentation switched to true needed for this to activate."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.Revit.PullRepresentationConfig"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["PullRenderMesh", "DetailLevel", "IncludeNonVisible"]
+}

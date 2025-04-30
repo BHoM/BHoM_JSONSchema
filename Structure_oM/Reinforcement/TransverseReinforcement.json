@@ -1,0 +1,63 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Reinforcement/TransverseReinforcement.json",
+  "title" : "TransverseReinforcement",
+  "type" : ["object", "null"],
+  "description" : "TransverseReinforcement: Defines any transverse reinforcement along a Bar.",
+  "properties" : {
+    "CenterlineLayout" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/Layouts/ICurveLayout.json"
+    },
+    "Diameter" : {
+      "type" : "number",
+      "description" : "Diameter of a single rebar. Property has a quantity of type Length meassured in [m]."
+    },
+    "Material" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/IMaterialFragment.json"
+    },
+    "Spacing" : {
+      "type" : "number",
+      "description" : "Axial distance between consecutive rebars. If AdjustSpacingToFit is true it will become maximum spacing. Property has a quantity of type Length meassured in [m]."
+    },
+    "AdjustSpacingToFit" : {
+      "type" : "boolean",
+      "description" : "Toggles if provided spacing value should be fixed or adjusted to fit rebars from the host bar's start to end."
+    },
+    "StartLocation" : {
+      "type" : "number",
+      "description" : "Normalised length (0 means start, 1 means end) along the element where the rebars start."
+    },
+    "EndLocation" : {
+      "type" : "number",
+      "description" : "Normalised length (0 means start, 1 means end) along the element where the rebars ends."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Structure.Reinforcement.TransverseReinforcement"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["CenterlineLayout", "Diameter", "Material", "Spacing", "AdjustSpacingToFit", "StartLocation", "EndLocation"]
+}

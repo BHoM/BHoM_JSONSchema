@@ -1,0 +1,25 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/CompositeGeometry.json",
+  "title" : "CompositeGeometry",
+  "type" : ["object", "null"],
+  "description" : "CompositeGeometry: A collection of multiple sets of Geometry of any or mixed type. Integrity, continuity and closure is not guaranteed. Discontinuous and/or mixed type definitions are possible, with no restrictions placed on how geometry can be combined.",
+  "properties" : {
+    "Elements" : {
+      "type" : ["array", "null"],
+      "description" : "A list of assorted geometry, which together define the composite shape.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/IGeometry.json"
+      }
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Geometry.CompositeGeometry"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Elements"]
+}

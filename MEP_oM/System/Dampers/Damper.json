@@ -1,0 +1,51 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/Dampers/Damper.json",
+  "title" : "Damper",
+  "type" : ["object", "null"],
+  "description" : "Damper: A device used to control the flow within a duct system (fire smoke damper, volume damper, etc.)",
+  "properties" : {
+    "Location" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/Node.json"
+    },
+    "OrientationAngle" : {
+      "type" : "number",
+      "description" : "Controls the local plan orientation of the object. Property has a quantity of type Angle meassured in [rad]."
+    },
+    "DamperType" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Enums/DamperType.json"
+    },
+    "PressureDrop" : {
+      "type" : "number",
+      "description" : "The difference in total pressure between two points of a fluid carrying network. Property has a quantity of type Pressure meassured in [Pa]."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.MEP.System.Dampers.Damper"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Location", "OrientationAngle", "DamperType", "PressureDrop"]
+}

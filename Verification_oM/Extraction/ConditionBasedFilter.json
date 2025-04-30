@@ -1,0 +1,21 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Extraction/ConditionBasedFilter.json",
+  "title" : "ConditionBasedFilter",
+  "type" : ["object", "null"],
+  "description" : "ConditionBasedFilter: Basic object defining a condition-based 'filter from' workflow.",
+  "properties" : {
+    "Condition" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Conditions/ICondition.json"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Verification.Extraction.ConditionBasedFilter"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Condition"]
+}

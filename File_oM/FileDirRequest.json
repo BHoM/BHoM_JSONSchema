@@ -1,0 +1,58 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/File_oM/FileDirRequest.json",
+  "title" : "FileDirRequest",
+  "type" : ["object", "null"],
+  "description" : "FileDirRequest: Used to query Directories or Files.",
+  "properties" : {
+    "Location" : {
+      "type" : ["string", "null"],
+      "description" : "Directory and/or Files from this location will be queried."
+    },
+    "IncludeFiles" : {
+      "type" : "boolean",
+      "description" : "Whether to include Files."
+    },
+    "IncludeDirectories" : {
+      "type" : "boolean",
+      "description" : "Whether to include Directories."
+    },
+    "SearchSubdirectories" : {
+      "type" : "boolean",
+      "description" : "If enabled, look also in subdirectories."
+    },
+    "IncludeFileContents" : {
+      "type" : "boolean",
+      "description" : "Whether to include the contents of the Files."
+    },
+    "MaxNesting" : {
+      "type" : "integer",
+      "description" : "If IncludeSubdirectories is true, this sets the maximum subdirectiory nesting level to look in.\nDefaults to -1 which corresponds to no limit."
+    },
+    "SortOrder" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/File_oM/SortOrder.json"
+    },
+    "MaxFiles" : {
+      "type" : "integer",
+      "description" : "Sets the maximum number of Files to retrieve.\nDefaults to -1 which corresponds to no limit."
+    },
+    "MaxDirectories" : {
+      "type" : "integer",
+      "description" : "Sets the maximum number of Directories to retrieve.\nDefaults to -1 which corresponds to no limit."
+    },
+    "Exclusions" : {
+      "type" : ["array", "null"],
+      "description" : "These files or directories will be excluded from the results. You can also specify string Full Paths.",
+      "items" : { }
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.File.FileDirRequest"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Location", "IncludeFiles", "IncludeDirectories", "SearchSubdirectories", "IncludeFileContents", "MaxNesting", "SortOrder", "MaxFiles", "MaxDirectories", "Exclusions"]
+}

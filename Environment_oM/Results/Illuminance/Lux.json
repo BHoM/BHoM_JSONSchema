@@ -1,0 +1,35 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Results/Illuminance/Lux.json",
+  "title" : "Lux",
+  "type" : ["object", "null"],
+  "description" : "Lux: Lux contains results for Lux analysis. Inherits from MeshElementResult which provides properties related to which node this Lux is recorded for",
+  "properties" : {
+    "LuxLevel" : {
+      "type" : "number",
+      "description" : "The amount of lux recorded for the given analysis node Property has a quantity of type Illuminance meassured in [lux]."
+    },
+    "ObjectId" : {
+      "type" : ["object", "integer", "string", "number", "null"]
+    },
+    "NodeID" : {
+      "type" : ["object", "integer", "string", "number", "null"]
+    },
+    "ResultCase" : {
+      "type" : ["object", "integer", "string", "number", "null"]
+    },
+    "TimeStep" : {
+      "type" : "number",
+      "description" : "Time step for time history results. Typically this will be hour intervals for most Environment Analysis"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.Results.Illuminance.Lux"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["LuxLevel"]
+}

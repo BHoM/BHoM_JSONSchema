@@ -1,0 +1,59 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/OpenStreetMap_oM/Way.json",
+  "title" : "Way",
+  "type" : ["object", "null"],
+  "description" : "Way: A Way is an ordered list of nodes which normally also has at least one tag or is included within a Relation.",
+  "properties" : {
+    "Nodes" : {
+      "type" : ["array", "null"],
+      "description" : "The list of nodes that define this Way.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/OpenStreetMap_oM/Node.json"
+      }
+    },
+    "OsmID" : {
+      "type" : "integer",
+      "description" : "The unique OpenStreetMap id for the Way."
+    },
+    "NodeOsmIds" : {
+      "type" : ["array", "null"],
+      "description" : "The unique OpenStreetMap ids for the Nodes.",
+      "items" : {
+        "type" : "integer"
+      }
+    },
+    "KeyValues" : {
+      "type" : ["object", "null"],
+      "description" : "The KeyValue tags describing the geographic attributes of this Way."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.OpenStreetMap.Way"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Nodes", "OsmID", "NodeOsmIds", "KeyValues"]
+}

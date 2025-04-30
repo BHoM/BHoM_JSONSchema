@@ -1,0 +1,59 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MidasCivil_oM/Review.json",
+  "title" : "Review",
+  "type" : ["object", "null"],
+  "properties" : {
+    "Reviewer" : {
+      "type" : ["string", "null"],
+      "description" : "The person who has reviewed the model."
+    },
+    "ReviewDate" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "$date" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "Comments" : {
+      "type" : ["array", "null"],
+      "description" : "A list of comments made by the reviewer.",
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "Approved" : {
+      "type" : "boolean",
+      "description" : "True if the model is approved for its intended use."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.MidasCivil.Review"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Reviewer", "ReviewDate", "Comments", "Approved"]
+}

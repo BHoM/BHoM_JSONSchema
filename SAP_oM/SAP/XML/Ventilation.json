@@ -1,0 +1,263 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/Ventilation.json",
+  "title" : "Ventilation",
+  "type" : ["object", "null"],
+  "description" : "Ventilation: Details of the means by which the building is ventilated.",
+  "properties" : {
+    "ClosedFluesCount" : {
+      "type" : ["string", "null"],
+      "description" : "The number of Closed Flues or chimneys in the Property."
+    },
+    "BoilerFluesCount" : {
+      "type" : ["string", "null"],
+      "description" : "The number of Boiler Flues or chimneys in the Property."
+    },
+    "OtherFluesCount" : {
+      "type" : ["string", "null"],
+      "description" : "The number of Other Flues or chimneys in the Property."
+    },
+    "OpenChimneysCount" : {
+      "type" : ["string", "null"],
+      "description" : "The number of Open Chimneys in the Property."
+    },
+    "BlockedChimneysCount" : {
+      "type" : ["string", "null"],
+      "description" : "The number of Blocked Chimneys in the Property."
+    },
+    "OpenFluesCount" : {
+      "type" : ["string", "null"],
+      "description" : "The number of Open Flues in the Property."
+    },
+    "ExtractFansCount" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "PSVCount" : {
+      "type" : ["string", "null"],
+      "description" : "The number of passive stack vents."
+    },
+    "FansVentCount" : {
+      "type" : ["string", "null"],
+      "description" : "Do not use, for backwards compatibility only."
+    },
+    "FluelessGasFiresCount" : {
+      "type" : ["string", "null"],
+      "description" : "The number of flueless gas fires in the Property."
+    },
+    "ShelteredSidesCount" : {
+      "type" : ["string", "null"],
+      "description" : "The number of sheltered sides in the Property."
+    },
+    "PressureTest" : {
+      "type" : ["string", "null"],
+      "description" : "Whether there has been a pressure test, or whether an assumed value is used for the air permeability."
+    },
+    "PressureTestCertificateNumber" : {
+      "type" : ["string", "null"],
+      "description" : "Whether there has been a pressure test, or whether an assumed value is used for the air permeability."
+    },
+    "AirPermeability" : {
+      "type" : ["string", "null"],
+      "description" : "Air permeability; only if pressure test (yes or assumed)."
+    },
+    "HasDraughtLobby" : {
+      "type" : ["object", "null"],
+      "description" : "Is there a draft lobby?  Only if no pressure test.",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "DraughtStripping" : {
+      "type" : ["string", "null"],
+      "description" : "Draughtstripping percentage; only if no pressure test."
+    },
+    "MechanicalVentilationDataSource" : {
+      "type" : ["string", "null"],
+      "description" : "Source of mechanical ventilation data; only if mechanical ventilation."
+    },
+    "MechanicalVentSystemIndexNumber" : {
+      "type" : ["string", "null"],
+      "description" : "Mechanical vent system index number; if mechanical vent data from database (MEV c, MEV dc, MV, MVHR)."
+    },
+    "MechanicalVentComissioningCertificateNumber" : {
+      "type" : ["string", "null"],
+      "description" : "Mechanical ventilation Commissioning certificate number."
+    },
+    "MechanicalVentInstallationEngineer" : {
+      "type" : ["string", "null"],
+      "description" : "Mechanical ventilation installation engineer registration reference."
+    },
+    "MechanicalVentSystemMakeModel" : {
+      "type" : ["string", "null"],
+      "description" : "Mechanical ventilation system make and model."
+    },
+    "WetRoomsCount" : {
+      "type" : ["string", "null"],
+      "description" : "Number of wet rooms, including the kitchen; if mech vent data from manufacturer declaration or database (MEV c, MV, MVHR)."
+    },
+    "MechanicalVentSpecificFanPower" : {
+      "type" : ["string", "null"],
+      "description" : "MEV dc, specific fan power of fans in room, kitchen, in watts per (litres per second); if mechanical vent data from manufacturer declaration (MEV dc)."
+    },
+    "MechanicalVentHeatRecoveryEfficiency" : {
+      "type" : ["string", "null"],
+      "description" : "Mechanical vent heat recovery efficiency percentage; if mechanical vent (MVHR)."
+    },
+    "MechanicalVentDuctType" : {
+      "type" : ["string", "null"],
+      "description" : "Mechanical vent duct type; if MEV c, MV or MVHR."
+    },
+    "MechanicalVentDuctInsulation" : {
+      "type" : ["string", "null"],
+      "description" : "Mechanical vent duct insulation; if MVHR."
+    },
+    "MechanicalVentDuctInsulationLevel" : {
+      "type" : ["string", "null"],
+      "description" : "Mechanical vent duct insulation; if MVHR."
+    },
+    "MechanicalVentDuctPlacement" : {
+      "type" : ["string", "null"],
+      "description" : "Mechanical ventilation duct insulation; if MVHR."
+    },
+    "MechanicalVentMeasuredInstallation" : {
+      "type" : ["object", "null"],
+      "description" : "Mechanical ventilation SPF measured in situ; if MVHR or balanced.",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "KitchenRoomFansCount" : {
+      "type" : ["string", "null"],
+      "description" : "MEV dc, number of fans in room, kitchen; if mechanical vent data from database or manufacturer declaration (MEV dc)."
+    },
+    "KitchenRoomFansSpecificPower" : {
+      "type" : ["string", "null"],
+      "description" : "MEV dc, specific fan power of fans in room, kitchen, in watts per (litres per second); if mechanical vent data from manufacturer declaration (MEV dc)."
+    },
+    "NonKitchenRoomFansCount" : {
+      "type" : ["string", "null"],
+      "description" : "MEV dc, number of fans in room, rooms other than kitchen; if mechanical vent data from database or manufacturer declaration (MEV dc)."
+    },
+    "NonKitchenRoomFansSpecificPower" : {
+      "type" : ["string", "null"],
+      "description" : "MEV dc, specific fan power of fans in room, rooms other than kitchen, in watts per (litres per second); if mechanical vent data from manufacturer declaration (MEV dc)."
+    },
+    "KitchenDuctFansCount" : {
+      "type" : ["string", "null"],
+      "description" : "MEV dc, number of fans via duct, kitchen; if mechanical vent data from database or manufacturer declaration (MEV dc)."
+    },
+    "KitchenDuctFansSpecificPower" : {
+      "type" : ["string", "null"],
+      "description" : "MEV dc, specific fan power of fans via duct, kitchen, in watts per (litres per second); if mechanical vent data from manufacturer declaration (MEV dc)."
+    },
+    "NonKitchenDuctFansCount" : {
+      "type" : ["string", "null"],
+      "description" : "MEV dc, number of fans via duct, rooms other than kitchen; if mechanical vent data from database or manufacturer declaration (MEV dc)."
+    },
+    "NonKitchenDuctFansSpecificPower" : {
+      "type" : ["string", "null"],
+      "description" : "MEV dc, specific fan power of fans via duct, rooms other than kitchen, in watts per (litres per second); if mechanical vent data from manufacturer declaration (MEV dc)."
+    },
+    "KitchenWallFansCount" : {
+      "type" : ["string", "null"],
+      "description" : "MEV dc, number of fans through wall, kitchen; if mechanical vent data from database or manufacturer declaration (MEV dc)."
+    },
+    "KitchenWallFansSpecificPower" : {
+      "type" : ["string", "null"],
+      "description" : "MEV dc, specific fan power of fans through wall, kitchen, in watts per (litres per second); if mechanical vent data from manufacturer declaration (MEV dc)."
+    },
+    "NonKitchenWallFansCount" : {
+      "type" : ["string", "null"],
+      "description" : "MEV dc, number of fans through wall, rooms other than kitchen; if mechanical vent data from database or manufacturer declaration (MEV dc)."
+    },
+    "NonKitchenWallFansSpecificPower" : {
+      "type" : ["string", "null"],
+      "description" : "MEV dc, specific fan power of fans through wall, rooms other than kitchen, in watts per (litres per second); if mechanical vent data from manufacturer declaration (MEV dc)."
+    },
+    "IsMechanicalVentApprovedInstallerScheme" : {
+      "type" : ["object", "null"],
+      "description" : ".",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "MechanicalVentDuctsIndexNumber" : {
+      "type" : ["string", "null"],
+      "description" : "Mechanical vent ducts index number; if applicable."
+    },
+    "VentilationType" : {
+      "type" : ["string", "null"],
+      "description" : "The type of ventilation."
+    },
+    "GroundFloorType" : {
+      "type" : ["string", "null"],
+      "description" : "The type of ground floor; only if no pressure test."
+    },
+    "WallType" : {
+      "type" : ["string", "null"],
+      "description" : "The construction of the walls; only if no pressure test."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SAP.XML.Ventilation"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["ClosedFluesCount", "BoilerFluesCount", "OtherFluesCount", "OpenChimneysCount", "BlockedChimneysCount", "OpenFluesCount", "ExtractFansCount", "PSVCount", "FansVentCount", "FluelessGasFiresCount", "ShelteredSidesCount", "PressureTest", "PressureTestCertificateNumber", "AirPermeability", "HasDraughtLobby", "DraughtStripping", "MechanicalVentilationDataSource", "MechanicalVentSystemIndexNumber", "MechanicalVentComissioningCertificateNumber", "MechanicalVentInstallationEngineer", "MechanicalVentSystemMakeModel", "WetRoomsCount", "MechanicalVentSpecificFanPower", "MechanicalVentHeatRecoveryEfficiency", "MechanicalVentDuctType", "MechanicalVentDuctInsulation", "MechanicalVentDuctInsulationLevel", "MechanicalVentDuctPlacement", "MechanicalVentMeasuredInstallation", "KitchenRoomFansCount", "KitchenRoomFansSpecificPower", "NonKitchenRoomFansCount", "NonKitchenRoomFansSpecificPower", "KitchenDuctFansCount", "KitchenDuctFansSpecificPower", "NonKitchenDuctFansCount", "NonKitchenDuctFansSpecificPower", "KitchenWallFansCount", "KitchenWallFansSpecificPower", "NonKitchenWallFansCount", "NonKitchenWallFansSpecificPower", "IsMechanicalVentApprovedInstallerScheme", "MechanicalVentDuctsIndexNumber", "VentilationType", "GroundFloorType", "WallType"]
+}

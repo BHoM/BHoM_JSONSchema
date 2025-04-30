@@ -1,0 +1,21 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Requests/LogicalNotRequest.json",
+  "title" : "LogicalNotRequest",
+  "type" : ["object", "null"],
+  "description" : "LogicalNotRequest: IRequest that inverts the query specified by the input request, i.e. any object that fits this request will be excluded from a pull.",
+  "properties" : {
+    "Request" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Requests/IRequest.json"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Data.Requests.LogicalNotRequest"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Request"]
+}

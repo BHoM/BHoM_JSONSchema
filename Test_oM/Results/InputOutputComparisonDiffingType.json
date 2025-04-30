@@ -1,0 +1,32 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Test_oM/Results/InputOutputComparisonDiffingType.json",
+  "anyOf" : [{
+      "type" : ["string", "null"],
+      "enum" : ["Undefined", "DataOnlyAvailableInReference", "Deterioration", "Difference", "Equal", "Improvement", "InputDataChanged", "IntroducedDifference", "IntroducedException", "NoAvailableReferenceSet", "RemovedDifference", "RemovedException"]
+    }, {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : ["string", "null"],
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.Test.Results.InputOutputComparisonDiffingType"
+            }
+          }
+        },
+        "Value" : {
+          "type" : ["string", "null"],
+          "enum" : ["Undefined", "DataOnlyAvailableInReference", "Deterioration", "Difference", "Equal", "Improvement", "InputDataChanged", "IntroducedDifference", "IntroducedException", "NoAvailableReferenceSet", "RemovedDifference", "RemovedException"]
+        }
+      }
+    }]
+}

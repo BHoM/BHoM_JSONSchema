@@ -1,0 +1,61 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Programming_oM/LibraryNode.json",
+  "title" : "LibraryNode",
+  "type" : ["object", "null"],
+  "description" : "LibraryNode: A syntax node corresponding to a call to the CreateData BHoM component.",
+  "properties" : {
+    "SourceFile" : {
+      "type" : ["string", "null"]
+    },
+    "Description" : {
+      "type" : ["string", "null"]
+    },
+    "Inputs" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Programming_oM/ReceiverParam.json"
+      }
+    },
+    "Outputs" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Programming_oM/DataParam.json"
+      }
+    },
+    "IsInline" : {
+      "type" : "boolean"
+    },
+    "IsDeclaration" : {
+      "type" : "boolean"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Programming.LibraryNode"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["SourceFile", "Description", "Inputs", "Outputs", "IsInline", "IsDeclaration"]
+}

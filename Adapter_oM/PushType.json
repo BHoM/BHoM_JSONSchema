@@ -1,0 +1,32 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/PushType.json",
+  "anyOf" : [{
+      "type" : ["string", "null"],
+      "enum" : ["FullPush", "CreateOnly", "CreateNonExisting", "UpdateOnly", "UpdateOrCreateOnly", "DeleteThenCreate", "AdapterDefault"]
+    }, {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : ["string", "null"],
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.Adapter.PushType"
+            }
+          }
+        },
+        "Value" : {
+          "type" : ["string", "null"],
+          "enum" : ["FullPush", "CreateOnly", "CreateNonExisting", "UpdateOnly", "UpdateOrCreateOnly", "DeleteThenCreate", "AdapterDefault"]
+        }
+      }
+    }]
+}

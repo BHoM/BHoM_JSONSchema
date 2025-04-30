@@ -1,0 +1,32 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/LengthUnit.json",
+  "anyOf" : [{
+      "type" : ["string", "null"],
+      "enum" : ["Kilometers", "Meters", "Centimeters", "Millimeters", "Miles", "Yards", "Feet", "Inches"]
+    }, {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : ["string", "null"],
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.Adapters.XML.LengthUnit"
+            }
+          }
+        },
+        "Value" : {
+          "type" : ["string", "null"],
+          "enum" : ["Kilometers", "Meters", "Centimeters", "Millimeters", "Miles", "Yards", "Feet", "Inches"]
+        }
+      }
+    }]
+}

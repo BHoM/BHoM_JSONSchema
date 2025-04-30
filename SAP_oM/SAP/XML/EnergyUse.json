@@ -1,0 +1,118 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/EnergyUse.json",
+  "title" : "EnergyUse",
+  "type" : ["object", "null"],
+  "properties" : {
+    "EnergyRatingAverage" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "EnergyRatingCurrent" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "EnergyRatingPotential" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "EnvironmentalImpactCurrent" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "EnvironmentalImpactPotential" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "EnergyConsumptionCurrent" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "EnergyConsumptionPotential" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "CO2EmissionsCurrent" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "CO2EmissionsPotential" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "CO2EmissionsCurrentPerFloorArea" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "LightingCostCurrent" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/Money.json"
+    },
+    "LightingCostPotential" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/Money.json"
+    },
+    "HeatingCostCurrent" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/Money.json"
+    },
+    "HeatingCostPotential" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/Money.json"
+    },
+    "HotWaterCostCurrent" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/Money.json"
+    },
+    "HotWaterCostPotential" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/Money.json"
+    },
+    "DER" : {
+      "type" : ["string", "null"],
+      "description" : "The DER of the property."
+    },
+    "TER" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "DPER" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "TPER" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "DFEE" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "TFEE" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SAP.XML.EnergyUse"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["EnergyRatingAverage", "EnergyRatingCurrent", "EnergyRatingPotential", "EnvironmentalImpactCurrent", "EnvironmentalImpactPotential", "EnergyConsumptionCurrent", "EnergyConsumptionPotential", "CO2EmissionsCurrent", "CO2EmissionsPotential", "CO2EmissionsCurrentPerFloorArea", "LightingCostCurrent", "LightingCostPotential", "HeatingCostCurrent", "HeatingCostPotential", "HotWaterCostCurrent", "HotWaterCostPotential", "DER", "TER", "DPER", "TPER", "DFEE", "TFEE"]
+}

@@ -1,0 +1,150 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Collections/IDataStructure.json",
+  "required" : ["_t"],
+  "properties" : {
+    "_t" : {
+      "oneOf" : [{
+          "enum" : ["BH.oM.Data.Collections.DiscretePoint"]
+        }, {
+          "pattern" : "^BH\\.oM\\.Data\\.Collections\\.VennDiagram`1\\[\\[.*\\]\\]$"
+        }, {
+          "pattern" : "^BH\\.oM\\.Data\\.Collections\\.Tree`1\\[\\[.*\\]\\]$"
+        }, {
+          "pattern" : "^BH\\.oM\\.Data\\.Collections\\.PriorityQueue`1\\[\\[.*\\]\\]$"
+        }, {
+          "pattern" : "^BH\\.oM\\.Data\\.Collections\\.PointMatrix`1\\[\\[.*\\]\\]$"
+        }, {
+          "pattern" : "^BH\\.oM\\.Data\\.Collections\\.LocalData`1\\[\\[.*\\]\\]$"
+        }, {
+          "pattern" : "^BH\\.oM\\.Data\\.Collections\\.GraphNode`1\\[\\[.*\\]\\]$"
+        }, {
+          "pattern" : "^BH\\.oM\\.Data\\.Collections\\.GraphLink`1\\[\\[.*\\]\\]$"
+        }, {
+          "pattern" : "^BH\\.oM\\.Data\\.Collections\\.Graph`1\\[\\[.*\\]\\]$"
+        }, {
+          "pattern" : "^BH\\.oM\\.Data\\.Collections\\.DomainTree`1\\[\\[.*\\]\\]$"
+        }]
+    }
+  },
+  "allOf" : [{
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "pattern" : "^BH\\.oM\\.Data\\.Collections\\.VennDiagram`1\\[\\[.*\\]\\]$"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Collections/VennDiagram`1.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "pattern" : "^BH\\.oM\\.Data\\.Collections\\.Tree`1\\[\\[.*\\]\\]$"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Collections/Tree`1.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "pattern" : "^BH\\.oM\\.Data\\.Collections\\.PriorityQueue`1\\[\\[.*\\]\\]$"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Collections/PriorityQueue`1.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "pattern" : "^BH\\.oM\\.Data\\.Collections\\.PointMatrix`1\\[\\[.*\\]\\]$"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Collections/PointMatrix`1.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "pattern" : "^BH\\.oM\\.Data\\.Collections\\.LocalData`1\\[\\[.*\\]\\]$"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Collections/LocalData`1.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "pattern" : "^BH\\.oM\\.Data\\.Collections\\.GraphNode`1\\[\\[.*\\]\\]$"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Collections/GraphNode`1.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "pattern" : "^BH\\.oM\\.Data\\.Collections\\.GraphLink`1\\[\\[.*\\]\\]$"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Collections/GraphLink`1.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "pattern" : "^BH\\.oM\\.Data\\.Collections\\.Graph`1\\[\\[.*\\]\\]$"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Collections/Graph`1.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "pattern" : "^BH\\.oM\\.Data\\.Collections\\.DomainTree`1\\[\\[.*\\]\\]$"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Collections/DomainTree`1.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Data.Collections.DiscretePoint"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Collections/DiscretePoint.json"
+      }
+    }]
+}

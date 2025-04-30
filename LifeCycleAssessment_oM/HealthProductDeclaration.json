@@ -1,0 +1,102 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/HealthProductDeclaration.json",
+  "title" : "HealthProductDeclaration",
+  "type" : ["object", "null"],
+  "properties" : {
+    "MasterFormat" : {
+      "type" : ["string", "null"]
+    },
+    "Uniformats" : {
+      "type" : ["string", "null"]
+    },
+    "CancerOrange" : {
+      "type" : "number"
+    },
+    "DevelopmentalOrange" : {
+      "type" : "number"
+    },
+    "EndocrineOrange" : {
+      "type" : "number"
+    },
+    "EyeIrritationOrange" : {
+      "type" : "number"
+    },
+    "MammalianOrange" : {
+      "type" : "number"
+    },
+    "MutagenicityOrange" : {
+      "type" : "number"
+    },
+    "NeurotoxicityOrange" : {
+      "type" : "number"
+    },
+    "OrganToxicantOrange" : {
+      "type" : "number"
+    },
+    "ReproductiveOrange" : {
+      "type" : "number"
+    },
+    "RespiratoryOrange" : {
+      "type" : "number"
+    },
+    "RespiratoryOccupationalOnlyOrange" : {
+      "type" : "number"
+    },
+    "SkinSensitizationOrange" : {
+      "type" : "number"
+    },
+    "CancerRed" : {
+      "type" : "number"
+    },
+    "CancerOccupationalOnlyRed" : {
+      "type" : "number"
+    },
+    "DevelopmentalRed" : {
+      "type" : "number"
+    },
+    "MutagenicityRed" : {
+      "type" : "number"
+    },
+    "PersistantBioaccumulativeToxicantRed" : {
+      "type" : "number"
+    },
+    "ReproductiveRed" : {
+      "type" : "number"
+    },
+    "RespiratoryRed" : {
+      "type" : "number"
+    },
+    "PersistantBioaccumulativeToxicantPurple" : {
+      "type" : "number"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.LifeCycleAssessment.HealthProductDeclaration"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["MasterFormat", "Uniformats", "CancerOrange", "DevelopmentalOrange", "EndocrineOrange", "EyeIrritationOrange", "MammalianOrange", "MutagenicityOrange", "NeurotoxicityOrange", "OrganToxicantOrange", "ReproductiveOrange", "RespiratoryOrange", "RespiratoryOccupationalOnlyOrange", "SkinSensitizationOrange", "CancerRed", "CancerOccupationalOnlyRed", "DevelopmentalRed", "MutagenicityRed", "PersistantBioaccumulativeToxicantRed", "ReproductiveRed", "RespiratoryRed", "PersistantBioaccumulativeToxicantPurple"]
+}

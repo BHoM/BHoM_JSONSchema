@@ -1,0 +1,67 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/BuildingPart.json",
+  "title" : "BuildingPart",
+  "type" : ["object", "null"],
+  "properties" : {
+    "Identifier" : {
+      "type" : ["string", "null"],
+      "description" : "Identifier for the Building part - generally only required if there are more that one Building Parts of the same type."
+    },
+    "BuildingPartNumber" : {
+      "type" : ["string", "null"],
+      "description" : "An integer value which uniquely identifies the building part in the property.  The value \"1\" must be assigned to the main dwelling."
+    },
+    "ConstructionYear" : {
+      "type" : ["string", "null"],
+      "description" : "The year when this building part was constructed.  Not used if 'Construction-Age-Band' is used."
+    },
+    "ConstructionAgeBand" : {
+      "type" : ["string", "null"],
+      "description" : "The age band when this building part was constructed.  Not used if 'Construction-Year' is used."
+    },
+    "FloorDimensions" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/FloorDimensions.json"
+    },
+    "Openings" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/Openings.json"
+    },
+    "Roofs" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/Roofs.json"
+    },
+    "Walls" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/Walls.json"
+    },
+    "ThermalBridges" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/ThermalBridges.json"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SAP.XML.BuildingPart"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Identifier", "BuildingPartNumber", "ConstructionYear", "ConstructionAgeBand", "FloorDimensions", "Openings", "Roofs", "Walls", "ThermalBridges"]
+}

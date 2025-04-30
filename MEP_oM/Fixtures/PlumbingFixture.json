@@ -1,0 +1,53 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Fixtures/PlumbingFixture.json",
+  "title" : "PlumbingFixture",
+  "type" : ["object", "null"],
+  "description" : "PlumbingFixture: A device used to convey public health (plumbing) fluids (water, waste.)",
+  "properties" : {
+    "Location" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/Node.json"
+    },
+    "OrientationAngle" : {
+      "type" : "number",
+      "description" : "Controls the local plan orientation of the object. Property has a quantity of type Angle meassured in [rad]."
+    },
+    "PlumbingFixtureType" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Enums/PlumbingFixtureType.json"
+    },
+    "Flow" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Fragments/PlumbingFlowFragment.json"
+    },
+    "LoadingFixtureUnits" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Fragments/PlumbingLoadingFixtureUnitFragment.json"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.MEP.Fixtures.PlumbingFixture"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Location", "OrientationAngle", "PlumbingFixtureType", "Flow", "LoadingFixtureUnits"]
+}

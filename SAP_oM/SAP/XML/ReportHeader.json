@@ -1,0 +1,97 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/ReportHeader.json",
+  "title" : "ReportHeader",
+  "type" : ["object", "null"],
+  "properties" : {
+    "ReportReferenceNumber" : {
+      "type" : ["string", "null"],
+      "description" : "Report Reference Number is the unique report Identifier that the report will be publicly known by."
+    },
+    "InspectionDate" : {
+      "type" : ["string", "null"],
+      "description" : "The date that the inspection was actually carried out by the Home Inspector. In the form yyyy-mm-dd"
+    },
+    "ReportType" : {
+      "type" : ["string", "null"],
+      "description" : "The type of Home Inspection that was carried out."
+    },
+    "CompletionDate" : {
+      "type" : ["string", "null"],
+      "description" : "The date that the Home Inspector completed the report. In the form yyyy-mm-dd"
+    },
+    "RegistrationDate" : {
+      "type" : ["string", "null"],
+      "description" : "The date that the report was submitted to the HCR Registration Organisation for lodging in the HCR Register. In the form yyyy-mm-dd"
+    },
+    "Status" : {
+      "type" : ["string", "null"],
+      "description" : "The Status of the Report."
+    },
+    "LanguageCode" : {
+      "type" : ["string", "null"],
+      "description" : "The language that the report is written in."
+    },
+    "Tenure" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "TransactionType" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "SellerCommissionReport" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "PropertyType" : {
+      "type" : ["string", "null"],
+      "description" : "Describes the type of Property that is being inspected. This should be the same as the Property-Type recorded in the Property-Details section."
+    },
+    "HomeInspector" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/HomeInspector.json"
+    },
+    "Property" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/Property.json"
+    },
+    "RegionCode" : {
+      "type" : ["string", "null"],
+      "description" : "Regional code."
+    },
+    "CountryCode" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "RelatedPartyDisclosure" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/RelatedPartyDisclosure.json"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SAP.XML.ReportHeader"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["ReportReferenceNumber", "InspectionDate", "ReportType", "CompletionDate", "RegistrationDate", "Status", "LanguageCode", "Tenure", "TransactionType", "SellerCommissionReport", "PropertyType", "HomeInspector", "Property", "RegionCode", "CountryCode", "RelatedPartyDisclosure"]
+}

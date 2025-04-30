@@ -1,0 +1,27 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/RunExternalComfortCommand.json",
+  "title" : "RunExternalComfortCommand",
+  "type" : ["object", "null"],
+  "description" : "RunExternalComfortCommand: Command that when executed with the LadybugTools Adapter, runs an External Comfort simulation and returns an ExternalComfort object containing results.",
+  "properties" : {
+    "EPWFile" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/FileSettings.json"
+    },
+    "SimulationResult" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/SimulationResult.json"
+    },
+    "Typology" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/Typology.json"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.LadybugTools.RunExternalComfortCommand"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["EPWFile", "SimulationResult", "Typology"]
+}

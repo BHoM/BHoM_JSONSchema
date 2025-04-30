@@ -1,0 +1,64 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Parameters/ParameterDefinition.json",
+  "title" : "ParameterDefinition",
+  "type" : ["object", "null"],
+  "description" : "ParameterDefinition: An object representing the definition of a Revit parameter (project parameter or shared parameter as such, not its value related to certain element or type).",
+  "properties" : {
+    "ParameterGroup" : {
+      "type" : ["string", "null"],
+      "description" : "Parameter group, to which the Revit parameter represented by this object belongs. One of the dropdown values for project parameters, any value for shared parameter."
+    },
+    "ParameterType" : {
+      "type" : ["string", "null"],
+      "description" : "Parameter type of the Revit parameter represented by this object."
+    },
+    "Discipline" : {
+      "type" : ["string", "null"],
+      "description" : "Discipline, to which the Revit parameter represented by this object belongs. Only relevant in case if there is more than one types with the same name (e.g. piping, HVAC and structural Velocity).\nSix sensible values can be applied: Common, Electrical, Energy, HVAC, Piping and Structural."
+    },
+    "Instance" : {
+      "type" : "boolean",
+      "description" : "If true, the Revit parameter represented by this object is an instance parameter, otherwise it is a type parameter."
+    },
+    "Categories" : {
+      "type" : ["array", "null"],
+      "description" : "Categories, to which the Revit parameter represented by this object is bound. On Push, it will get bound to all categories if this value is null.",
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "Shared" : {
+      "type" : "boolean",
+      "description" : "If true, the Revit parameter represented by this object is a shared parameter, otherwise it is a project parameter."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.Revit.Parameters.ParameterDefinition"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["ParameterGroup", "ParameterType", "Discipline", "Instance", "Categories", "Shared"]
+}

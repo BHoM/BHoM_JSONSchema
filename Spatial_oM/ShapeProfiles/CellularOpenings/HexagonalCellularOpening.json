@@ -1,0 +1,56 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/CellularOpenings/HexagonalCellularOpening.json",
+  "title" : "HexagonalCellularOpening",
+  "type" : ["object", "null"],
+  "properties" : {
+    "Height" : {
+      "type" : "number",
+      "description" : "Height of the hexagonal opening, equal to the height of the cut being made in the section being castellated.\nFor case of non-zero SpacerHeight, the total height of the opening will be Height+SpacerHeight. Property has a quantity of type Length meassured in [m]."
+    },
+    "Width" : {
+      "type" : "number",
+      "description" : "Total width of the opening. Property has a quantity of type Length meassured in [m]."
+    },
+    "WidthWebPost" : {
+      "type" : "number",
+      "description" : "Clear distance between openings. Property has a quantity of type Length meassured in [m]."
+    },
+    "SpacerHeight" : {
+      "type" : "number",
+      "description" : "Height of any spacer plate between the two profile sides. Results in an octagonal opening for a non-zero value. Property has a quantity of type Length meassured in [m]."
+    },
+    "Spacing" : {
+      "type" : "number",
+      "description" : "Centre to centre distance between openings. Property has a quantity of type Length meassured in [m]."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Spatial.ShapeProfiles.CellularOpenings.HexagonalCellularOpening"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Height", "Width", "WidthWebPost", "SpacerHeight", "Spacing"]
+}

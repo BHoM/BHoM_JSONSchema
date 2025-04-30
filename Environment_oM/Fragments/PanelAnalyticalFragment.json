@@ -1,0 +1,90 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Fragments/PanelAnalyticalFragment.json",
+  "title" : "PanelAnalyticalFragment",
+  "type" : ["object", "null"],
+  "description" : "PanelAnalyticalFragment: Fragment containing geometric and thermal properties of a panel",
+  "properties" : {
+    "Altitude" : {
+      "type" : "number"
+    },
+    "AltitudeRange" : {
+      "type" : "number"
+    },
+    "Inclination" : {
+      "type" : "number"
+    },
+    "InclinationRange" : {
+      "type" : "number"
+    },
+    "Orientation" : {
+      "type" : "number"
+    },
+    "GValue" : {
+      "type" : "number"
+    },
+    "LTValue" : {
+      "type" : "number"
+    },
+    "UValue" : {
+      "type" : "number"
+    },
+    "ApertureFlowIn" : {
+      "type" : "number"
+    },
+    "ApertureFlowOut" : {
+      "type" : "number"
+    },
+    "ApertureOpening" : {
+      "type" : "number"
+    },
+    "ExternalCondensation" : {
+      "type" : "number"
+    },
+    "ExternalConduction" : {
+      "type" : "number"
+    },
+    "ExternalConvection" : {
+      "type" : "number"
+    },
+    "ExternalLongWave" : {
+      "type" : "number"
+    },
+    "ExternalSolar" : {
+      "type" : "number"
+    },
+    "ExternalTemperature" : {
+      "type" : "number"
+    },
+    "InternalCondensation" : {
+      "type" : "number"
+    },
+    "InternalConduction" : {
+      "type" : "number"
+    },
+    "InternalConvection" : {
+      "type" : "number"
+    },
+    "InternalLongWave" : {
+      "type" : "number"
+    },
+    "InternalSolar" : {
+      "type" : "number"
+    },
+    "InternalTemperature" : {
+      "type" : "number"
+    },
+    "InterstitialCondensation" : {
+      "type" : "number"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.Fragments.PanelAnalyticalFragment"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Altitude", "AltitudeRange", "Inclination", "InclinationRange", "Orientation", "GValue", "LTValue", "UValue", "ApertureFlowIn", "ApertureFlowOut", "ApertureOpening", "ExternalCondensation", "ExternalConduction", "ExternalConvection", "ExternalLongWave", "ExternalSolar", "ExternalTemperature", "InternalCondensation", "InternalConduction", "InternalConvection", "InternalLongWave", "InternalSolar", "InternalTemperature", "InterstitialCondensation"]
+}

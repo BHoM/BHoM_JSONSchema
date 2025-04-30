@@ -1,0 +1,60 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/RAM_oM/RAMPointGravityLoad.json",
+  "title" : "RAMPointGravityLoad",
+  "type" : ["object", "null"],
+  "properties" : {
+    "ObjectId" : {
+      "type" : "integer"
+    },
+    "dist" : {
+      "type" : "number"
+    },
+    "DL" : {
+      "type" : "number"
+    },
+    "RedLL" : {
+      "type" : "number"
+    },
+    "NonRLL" : {
+      "type" : "number"
+    },
+    "StorLL" : {
+      "type" : "number"
+    },
+    "RoofLL" : {
+      "type" : "number"
+    },
+    "type" : {
+      "type" : ["string", "null"]
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.RAM.RAMPointGravityLoad"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["ObjectId", "dist", "DL", "RedLL", "NonRLL", "StorLL", "RoofLL", "type"]
+}

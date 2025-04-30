@@ -1,0 +1,83 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Library/Source.json",
+  "title" : "Source",
+  "type" : ["object", "null"],
+  "properties" : {
+    "SourceLink" : {
+      "type" : ["string", "null"],
+      "description" : "Hyperlink or file path to where the source information used can be found."
+    },
+    "Title" : {
+      "type" : ["string", "null"],
+      "description" : "Title of the source. For example Book title, Paper title, Code title etc."
+    },
+    "Author" : {
+      "type" : ["string", "null"],
+      "description" : "Author of the source."
+    },
+    "ItemReference" : {
+      "type" : ["string", "null"],
+      "description" : "Table, figure or code reference etc."
+    },
+    "Version" : {
+      "type" : ["string", "null"],
+      "description" : "Version or edition of the source."
+    },
+    "Publisher" : {
+      "type" : ["string", "null"],
+      "description" : "Publisher of the source."
+    },
+    "Schema" : {
+      "type" : ["string", "null"],
+      "description" : "Schema of the source."
+    },
+    "Language" : {
+      "type" : ["string", "null"],
+      "description" : "Language of the source."
+    },
+    "Location" : {
+      "type" : ["string", "null"],
+      "description" : "Country/Region of the source."
+    },
+    "Copyright" : {
+      "type" : ["string", "null"],
+      "description" : "Any applicable copyright information associated with the source."
+    },
+    "Contributors" : {
+      "type" : ["string", "null"],
+      "description" : "Contributors to the source."
+    },
+    "Confidence" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Library/Confidence.json"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Data.Library.Source"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["SourceLink", "Title", "Author", "ItemReference", "Version", "Publisher", "Schema", "Language", "Location", "Copyright", "Contributors", "Confidence"]
+}

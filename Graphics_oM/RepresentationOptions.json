@@ -1,0 +1,61 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/RepresentationOptions.json",
+  "title" : "RepresentationOptions",
+  "type" : ["object", "null"],
+  "description" : "RepresentationOptions: Defines options for the Representation of BHoM Objects.",
+  "properties" : {
+    "Detailed0DElements" : {
+      "type" : "boolean",
+      "description" : "If true, 0D elements are detailed.\nIf `true`, Points are represented by Spheres.\nFor discipline-specific objects, `true` may correspond to e.g. a composite geometry computed based on their properties."
+    },
+    "Element0DScale" : {
+      "type" : "number",
+      "description" : "Scale the Element0D representation."
+    },
+    "Detailed1DElements" : {
+      "type" : "boolean",
+      "description" : "If true, 1D elements are detailed.\nIf `true`, Lines are represented by Pipes. For discipline-specific objects, `true` may correspond to e.g. an Extrusion using a cross section property; `false` to pipe using a centreline."
+    },
+    "Element1DScale" : {
+      "type" : "number",
+      "description" : "Scale the Element1D representation, if applicable.\nFor Lines, this increases the Pipe size.\nDiscipline-specific representations might not be affected by this parameter."
+    },
+    "Cap1DElements" : {
+      "type" : "boolean",
+      "description" : "Cap 1D elements, if applicable.\nE.g. for a Line, this caps the computed Pipe.\nFor discipline-specific objects, it may e.g. cap the Extrusions of their cross section."
+    },
+    "Detailed2DElements" : {
+      "type" : "boolean",
+      "description" : "If true, 2D elements are detailed.\nFor discipline-specific objects, `true` may correspond to e.g. a box-like geometry representing the 2D element with their thickness, based on its cross section; `false` to e.g. their the middle surface."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Graphics.RepresentationOptions"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Detailed0DElements", "Element0DScale", "Detailed1DElements", "Element1DScale", "Cap1DElements", "Detailed2DElements"]
+}

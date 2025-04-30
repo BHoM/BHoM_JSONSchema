@@ -1,0 +1,59 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/Door.json",
+  "title" : "Door",
+  "type" : ["object", "null"],
+  "properties" : {
+    "StructuralWidth" : {
+      "type" : "number"
+    },
+    "StructuralHeight" : {
+      "type" : "number"
+    },
+    "PositionAlongWall" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/ParameterPoint.json"
+    },
+    "ConfirmationGeometryRequirementsAreMet" : {
+      "type" : "boolean"
+    },
+    "Fire" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/DoorAndWindowFire.json"
+    },
+    "AcousticPerformance" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/DoorAndWindowAcoustics.json"
+    },
+    "ThermalPerformance" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/DoorAndWindowThermalPerformance.json"
+    },
+    "DoorFinish" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/DoorFinish.json"
+    },
+    "FrameFinish" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/OpeningPartFinish.json"
+    },
+    "DoorFurniture" : {
+      "type" : ["string", "null"]
+    },
+    "ArchitraveSpecification" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/Architrave.json"
+    },
+    "DirectionOfOpening" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/Direction.json"
+    },
+    "FinishesStyleAndOpeningDirection" : {
+      "type" : ["string", "null"]
+    },
+    "Product" : {
+      "type" : ["string", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.dKoP.Door"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["StructuralWidth", "StructuralHeight", "PositionAlongWall", "ConfirmationGeometryRequirementsAreMet", "Fire", "AcousticPerformance", "ThermalPerformance", "DoorFinish", "FrameFinish", "DoorFurniture", "ArchitraveSpecification", "DirectionOfOpening", "FinishesStyleAndOpeningDirection", "Product"]
+}

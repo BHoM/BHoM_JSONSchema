@@ -1,0 +1,51 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/Thermostat.json",
+  "title" : "Thermostat",
+  "type" : ["object", "null"],
+  "properties" : {
+    "ProportionalControl" : {
+      "type" : "boolean",
+      "description" : "Proportional control indicates that the thermostat can modulate the voltage delivered to the heating and/or cooling device"
+    },
+    "ControlRange" : {
+      "type" : "number",
+      "description" : "Control range indicates the range in temperature (in degrees of celsius)"
+    },
+    "Profiles" : {
+      "type" : ["array", "null"],
+      "description" : "Profiles depict the time period (hours per day, days per week) during which the thermostat will be active.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/Profile.json"
+      }
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SpaceCriteria.Thermostat"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["ProportionalControl", "ControlRange", "Profiles"]
+}

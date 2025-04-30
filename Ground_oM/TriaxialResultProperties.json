@@ -1,0 +1,73 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Ground_oM/TriaxialResultProperties.json",
+  "title" : "TriaxialResultProperties",
+  "type" : ["object", "null"],
+  "description" : "TriaxialResultProperties: Properties related to the results based on the triaxial tests.",
+  "properties" : {
+    "InitialWaterMoistureContent" : {
+      "type" : "number",
+      "description" : "Specimen initial water/moisture content (TRIT_IMC). Property has a quantity of type Ratio meassured in [-]."
+    },
+    "FinalWaterMoistureContent" : {
+      "type" : "number",
+      "description" : "Specimen final water/moisture content (TRIT_FMC). Property has a quantity of type Ratio meassured in [-]."
+    },
+    "TotalCellPressure" : {
+      "type" : "number",
+      "description" : "Total cell pressure (TRIT_CELL). Property has a quantity of type Pressure meassured in [Pa]."
+    },
+    "DeviatorStress" : {
+      "type" : "number",
+      "description" : "Corrected deviator stress at failure (TRIT_DEVF). Property has a quantity of type Stress meassured in [Pa]."
+    },
+    "BulkDensity" : {
+      "type" : "number",
+      "description" : "Initial bulk density (TRIT_BDEN). Property has a quantity of type Density meassured in [kg/m³]."
+    },
+    "DryDensity" : {
+      "type" : "number",
+      "description" : "Initial dry density (TRIT_DDEN). Property has a quantity of type Density meassured in [kg/m³]."
+    },
+    "AxialStrain" : {
+      "type" : "number",
+      "description" : "Axial strain at failure (TRIT_STRN). Property has a quantity of type Strain meassured in [-]."
+    },
+    "ShearRate" : {
+      "type" : ["string", "null"],
+      "description" : "Mean rate of shear (TRIT_RATE)."
+    },
+    "FailureZoneWaterContent" : {
+      "type" : "number",
+      "description" : "Failure zone water content (TRIT_FZWC). Property has a quantity of type Ratio meassured in [-]."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Ground.TriaxialResultProperties"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["InitialWaterMoistureContent", "FinalWaterMoistureContent", "TotalCellPressure", "DeviatorStress", "BulkDensity", "DryDensity", "AxialStrain", "ShearRate", "FailureZoneWaterContent"]
+}

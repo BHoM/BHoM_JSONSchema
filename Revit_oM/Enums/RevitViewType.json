@@ -1,0 +1,32 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Enums/RevitViewType.json",
+  "anyOf" : [{
+      "type" : ["string", "null"],
+      "enum" : ["Undefined", "FloorPlan", "CeilingPlan", "Elevation", "ThreeD", "Schedule", "DrawingSheet", "ProjectBrowser", "Report", "DraftingView", "Legend", "SystemBrowser", "EngineeringPlan", "AreaPlan", "Section", "Detail", "CostReport", "LoadsReport", "PresureLossReport", "ColumnSchedule", "PanelSchedule", "Walkthrough", "Rendering", "SystemsAnalysisReport", "Internal"]
+    }, {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : ["string", "null"],
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.Adapters.Revit.Enums.RevitViewType"
+            }
+          }
+        },
+        "Value" : {
+          "type" : ["string", "null"],
+          "enum" : ["Undefined", "FloorPlan", "CeilingPlan", "Elevation", "ThreeD", "Schedule", "DrawingSheet", "ProjectBrowser", "Report", "DraftingView", "Legend", "SystemBrowser", "EngineeringPlan", "AreaPlan", "Section", "Detail", "CostReport", "LoadsReport", "PresureLossReport", "ColumnSchedule", "PanelSchedule", "Walkthrough", "Rendering", "SystemsAnalysisReport", "Internal"]
+        }
+      }
+    }]
+}

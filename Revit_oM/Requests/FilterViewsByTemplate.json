@@ -1,0 +1,22 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Requests/FilterViewsByTemplate.json",
+  "title" : "FilterViewsByTemplate",
+  "type" : ["object", "null"],
+  "description" : "FilterViewsByTemplate: IRequest that filters all Revit views that implement a given view template.",
+  "properties" : {
+    "TemplateId" : {
+      "type" : "integer",
+      "description" : "ElementId of the Revit view template."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.Revit.Requests.FilterViewsByTemplate"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["TemplateId"]
+}

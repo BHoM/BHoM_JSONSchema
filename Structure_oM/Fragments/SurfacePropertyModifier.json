@@ -1,0 +1,58 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Fragments/SurfacePropertyModifier.json",
+  "title" : "SurfacePropertyModifier",
+  "type" : ["object", "null"],
+  "description" : "SurfacePropertyModifier: Sets modifiers to a SurfaceProperty. The modifiers are used to scale one or more of the property constants for analysis. Constants are multiplied with the modifiers, hence a modifier value of 1 means no change.",
+  "properties" : {
+    "FXX" : {
+      "type" : "number",
+      "description" : "Modifier of the axial stiffness along the local x-axis. Value of the SurfaceProperty is multiplied by this value, hence 1 means no scaling applied. Property has a quantity of type Ratio meassured in [-]."
+    },
+    "FYY" : {
+      "type" : "number",
+      "description" : "Modifier of the axial stiffness along the local y-axis. Value of the SurfaceProperty is multiplied by this value, hence 1 means no scaling applied. Property has a quantity of type Ratio meassured in [-]."
+    },
+    "FXY" : {
+      "type" : "number",
+      "description" : "Modifier of the the in-plane shear. Value of the SurfaceProperty is multiplied by this value, hence 1 means no scaling applied. Property has a quantity of type Ratio meassured in [-]."
+    },
+    "MXX" : {
+      "type" : "number",
+      "description" : "Modifier of the bending stiffness about the local x-axis. Value of the SurfaceProperty is multiplied by this value, hence 1 means no scaling applied. Property has a quantity of type Ratio meassured in [-]."
+    },
+    "MYY" : {
+      "type" : "number",
+      "description" : "Modifier of the bending stiffness about the local y-axis. Value of the SurfaceProperty is multiplied by this value, hence 1 means no scaling applied. Property has a quantity of type Ratio meassured in [-]."
+    },
+    "MXY" : {
+      "type" : "number",
+      "description" : "Modifier of the in-plane twist stiffness. Value of the SurfaceProperty is multiplied by this value, hence 1 means no scaling applied. Property has a quantity of type Ratio meassured in [-]."
+    },
+    "VXZ" : {
+      "type" : "number",
+      "description" : "Modifier of the xz-out of plane shear stiffness. Value of the SurfaceProperty is multiplied by this value, hence 1 means no scaling applied. Property has a quantity of type Ratio meassured in [-]."
+    },
+    "VYZ" : {
+      "type" : "number",
+      "description" : "Modifier of the yz-out of plane shear stiffness. Value of the SurfaceProperty is multiplied by this value, hence 1 means no scaling applied. Property has a quantity of type Ratio meassured in [-]."
+    },
+    "Mass" : {
+      "type" : "number",
+      "description" : "Modifier of the mass. Value of the SurfaceProperty is multiplied by this value, hence 1 means no scaling applied. Property has a quantity of type Ratio meassured in [-]."
+    },
+    "Weight" : {
+      "type" : "number",
+      "description" : "Modifier of the weight. Value of the SurfaceProperty is multiplied by this value, hence 1 means no scaling applied. Property has a quantity of type Ratio meassured in [-]."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Structure.Fragments.SurfacePropertyModifier"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["FXX", "FYY", "FXY", "MXX", "MYY", "MXY", "VXZ", "VYZ", "Mass", "Weight"]
+}

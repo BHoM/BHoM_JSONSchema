@@ -1,0 +1,77 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/Excel/OpeningSchedule.json",
+  "title" : "OpeningSchedule",
+  "type" : ["object", "null"],
+  "description" : "OpeningSchedule: The details of roofs from the users excel input.",
+  "properties" : {
+    "OpeningType" : {
+      "type" : ["string", "null"],
+      "description" : "The type of the opening."
+    },
+    "UValue" : {
+      "type" : "number",
+      "description" : "The uvalue of the opening."
+    },
+    "GValue" : {
+      "type" : "number",
+      "description" : "The gvalue of the opening."
+    },
+    "TypeOfGlazing" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/TypeOfGlazing.json"
+    },
+    "GlazingGap" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/GlazingGap.json"
+    },
+    "FrameFactor" : {
+      "type" : "number",
+      "description" : "The frame factor of the opening."
+    },
+    "FrameType" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/TypeOfFrame.json"
+    },
+    "ArgonFilled" : {
+      "type" : "boolean",
+      "description" : "If the opening is argon filled."
+    },
+    "KryptonFilled" : {
+      "type" : "boolean",
+      "description" : "If the opening is krypton filled."
+    },
+    "DataSource" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/OpeningDataSource.json"
+    },
+    "FloorIntersection" : {
+      "type" : "boolean",
+      "description" : "Does the opening intersect with the floor?"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SAP.Excel.OpeningSchedule"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["OpeningType", "UValue", "GValue", "TypeOfGlazing", "GlazingGap", "FrameFactor", "FrameType", "ArgonFilled", "KryptonFilled", "DataSource", "FloorIntersection"]
+}

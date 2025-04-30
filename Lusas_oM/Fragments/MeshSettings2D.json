@@ -1,0 +1,48 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Lusas_oM/Fragments/MeshSettings2D.json",
+  "title" : "MeshSettings2D",
+  "type" : ["object", "null"],
+  "properties" : {
+    "SplitMethod" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Lusas_oM/Split2D.json"
+    },
+    "xDivisions" : {
+      "type" : "integer"
+    },
+    "yDivisions" : {
+      "type" : "integer"
+    },
+    "ElementSize" : {
+      "type" : "number"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.Lusas.Fragments.MeshSettings2D"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["SplitMethod", "xDivisions", "yDivisions", "ElementSize"]
+}

@@ -1,0 +1,22 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Conditions/PropertyValueSource.json",
+  "title" : "PropertyValueSource",
+  "type" : ["object", "null"],
+  "description" : "PropertyValueSource: Object pointing at a property as the source of a value to extract.",
+  "properties" : {
+    "PropertyName" : {
+      "type" : ["string", "null"],
+      "description" : "Name of the property to get the value from. If the property under given name is not found, other sources are also searched:\n- CustomData for key matching PropertyName (only for IBHoMObjects)\n- Fragment with type name matching PropertyName (only for IBHoMObjects)\n- Parameterless extension method with name matching PropertyName"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Verification.Conditions.PropertyValueSource"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["PropertyName"]
+}

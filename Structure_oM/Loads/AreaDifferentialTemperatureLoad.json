@@ -1,0 +1,65 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/AreaDifferentialTemperatureLoad.json",
+  "title" : "AreaDifferentialTemperatureLoad",
+  "type" : ["object", "null"],
+  "description" : "AreaDifferentialTemperatureLoad: Vertical differential temperature load for area elements such as Panels and FEMeshes.",
+  "properties" : {
+    "TemperatureProfile" : {
+      "type" : ["array", "null"],
+      "description" : "Vertical differential temperature profile of the area element expressed as a Dictionary of the normalised position from the bottom face of the surface property and the temperature at each increment. Property has a quantity of type Temperature meassured in [K].",
+      "items" : {
+        "type" : ["object", "null"],
+        "properties" : {
+          "k" : {
+            "type" : "number"
+          },
+          "v" : {
+            "type" : "number"
+          }
+        }
+      }
+    },
+    "Loadcase" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/Loadcase.json"
+    },
+    "Objects" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/BHoMGroup`1.json"
+    },
+    "Axis" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/LoadAxis.json"
+    },
+    "Projected" : {
+      "type" : "boolean",
+      "description" : "If true the load is projected to the element. This means that the load will be reduced when its direction is at an angle to the element."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Structure.Loads.AreaDifferentialTemperatureLoad"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["TemperatureProfile", "Loadcase", "Objects", "Axis", "Projected"]
+}

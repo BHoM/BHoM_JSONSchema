@@ -1,0 +1,52 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/Infiltration.json",
+  "title" : "Infiltration",
+  "type" : ["object", "null"],
+  "description" : "Infiltration: Infiltration gains are defined as the amount of heat or heat loss contributed by cracks in the exterior envelope of the building which allow unconditioned outside air to be introduced to the space",
+  "properties" : {
+    "AirChangeRate" : {
+      "type" : "number",
+      "description" : "The AirChangeRate indicates the amount of conditioned air lost by infiltration that should be replaced each hour, based on the volume of the space (1 ACH would be 1x the volume of space each hour, if the space is 1m3, it would be 1m3 of outside air per hour)"
+    },
+    "AirflowByWallExternalArea" : {
+      "type" : "number",
+      "description" : "The AirflowByWallExternalArea indicates the amount of air (m3/s) lost by infiltration based on the exterior wall area, that should be replaced within the space."
+    },
+    "AirflowByWallExternalCrackLength" : {
+      "type" : "number",
+      "description" : "The AirflowByWallExternalCrackLength indicates the amount of air (m3/s) lost by infiltration based on the exterior wall crack length (the sum of the edge lengths), that should be replaced within the space."
+    },
+    "Profile" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/Profile.json"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SpaceCriteria.Infiltration"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["AirChangeRate", "AirflowByWallExternalArea", "AirflowByWallExternalCrackLength", "Profile"]
+}

@@ -1,0 +1,32 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Design/SpanDirection.json",
+  "anyOf" : [{
+      "type" : ["string", "null"],
+      "enum" : ["MajorAxis", "MinorAxis", "LateralTorsional", "MinorAndLateralTorsional", "All"]
+    }, {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : ["string", "null"],
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.Structure.Design.SpanDirection"
+            }
+          }
+        },
+        "Value" : {
+          "type" : ["string", "null"],
+          "enum" : ["MajorAxis", "MinorAxis", "LateralTorsional", "MinorAndLateralTorsional", "All"]
+        }
+      }
+    }]
+}

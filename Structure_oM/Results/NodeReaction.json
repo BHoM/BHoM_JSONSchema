@@ -1,0 +1,59 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/NodeReaction.json",
+  "title" : "NodeReaction",
+  "type" : ["object", "null"],
+  "description" : "NodeReaction: Resulting reaction forces and moments for a Node.",
+  "properties" : {
+    "FX" : {
+      "type" : "number",
+      "description" : "Reaction force in X-direction as defined by orientation basis. Property has a quantity of type Force meassured in [N]."
+    },
+    "FY" : {
+      "type" : "number",
+      "description" : "Reaction force in Y-direction as defined by orientation basis. Property has a quantity of type Force meassured in [N]."
+    },
+    "FZ" : {
+      "type" : "number",
+      "description" : "Reaction force in Z-direction as defined by orientation basis. Property has a quantity of type Force meassured in [N]."
+    },
+    "MX" : {
+      "type" : "number",
+      "description" : "Moment about the X-axis as defined by orientation basis. Property has a quantity of type Moment meassured in [N.m]."
+    },
+    "MY" : {
+      "type" : "number",
+      "description" : "Moment about the Y-axis as defined by orientation basis. Property has a quantity of type Moment meassured in [N.m]."
+    },
+    "MZ" : {
+      "type" : "number",
+      "description" : "Moment about the Z-axis as defined by orientation basis. Property has a quantity of type Moment meassured in [N.m]."
+    },
+    "ObjectId" : {
+      "type" : ["object", "integer", "string", "number", "null"]
+    },
+    "ResultCase" : {
+      "type" : ["object", "integer", "string", "number", "null"]
+    },
+    "ModeNumber" : {
+      "type" : "integer",
+      "description" : "Positive index, starting at one. Only set for cases with modal outputs such as dynamic cases."
+    },
+    "TimeStep" : {
+      "type" : "number",
+      "description" : "Time step for time history results."
+    },
+    "Orientation" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Basis.json"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Structure.Results.NodeReaction"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["FX", "FY", "FZ", "MX", "MY", "MZ"]
+}

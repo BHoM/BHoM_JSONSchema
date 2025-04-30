@@ -1,0 +1,36 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/WindroseCommand.json",
+  "title" : "WindroseCommand",
+  "type" : ["object", "null"],
+  "description" : "WindroseCommand: Command that, when executed with the LadybugToolsAdapter, generates a windrose from the epw file using the given parameters.\nOutputs a string file path if the OutputLocation is given, or the base64 string representation of the image if no path is given.",
+  "properties" : {
+    "EPWFile" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/FileSettings.json"
+    },
+    "AnalysisPeriod" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/AnalysisPeriod.json"
+    },
+    "NumberOfDirectionBins" : {
+      "type" : "integer",
+      "description" : "The number of directional bins to plot on the windrose."
+    },
+    "ColourMap" : {
+      "type" : ["string", "null"],
+      "description" : "A Matplotlib colour map. Corresponds to the 'cmap' parameter of plot methods. See https://matplotlib.org/stable/users/explain/colors/colormaps.html for examples of valid keys. Default of 'viridis'."
+    },
+    "OutputLocation" : {
+      "type" : ["string", "null"],
+      "description" : "Full file path (with file name) to save the plot to. Leave blank to output a base 64 string representation of the image instead."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.LadybugTools.WindroseCommand"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["EPWFile", "AnalysisPeriod", "NumberOfDirectionBins", "ColourMap", "OutputLocation"]
+}

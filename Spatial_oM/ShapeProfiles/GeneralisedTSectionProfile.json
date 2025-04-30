@@ -1,0 +1,74 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/GeneralisedTSectionProfile.json",
+  "title" : "GeneralisedTSectionProfile",
+  "type" : ["object", "null"],
+  "description" : "GeneralisedTSectionProfile: T-shaped profile that allows for different outsand widths and thicknesses. Outstands with different thicknesses are aligned by their top edge.\nThe full width of the top flange can be calculated as LeftOutstandWidth + WebThickness + RightOutstandWidth.",
+  "properties" : {
+    "Shape" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/ShapeType.json"
+    },
+    "Height" : {
+      "type" : "number",
+      "description" : "Full depth between the extreme fibre of the outstand and the web. Property has a quantity of type Length meassured in [m]."
+    },
+    "WebThickness" : {
+      "type" : "number",
+      "description" : "Property has a quantity of type Length meassured in [m]."
+    },
+    "LeftOutstandWidth" : {
+      "type" : "number",
+      "description" : "Outstand width on the left side, measured from the outside edge of the web. Property has a quantity of type Length meassured in [m]."
+    },
+    "LeftOutstandThickness" : {
+      "type" : "number",
+      "description" : "Property has a quantity of type Length meassured in [m]."
+    },
+    "RightOutstandWidth" : {
+      "type" : "number",
+      "description" : "Outstand width on the right side, measured from the outside edge of the web. Property has a quantity of type Length meassured in [m]."
+    },
+    "RightOutstandThickness" : {
+      "type" : "number"
+    },
+    "MirrorAboutLocalY" : {
+      "type" : "boolean",
+      "description" : "If true, the section is mirrored about its local y-axis, resulting in upside down T-shape."
+    },
+    "Edges" : {
+      "type" : ["array", "null"],
+      "description" : "Edge curves that matches the dimensions in the global XY-plane.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ICurve.json"
+      }
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Spatial.ShapeProfiles.GeneralisedTSectionProfile"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Shape", "Height", "WebThickness", "LeftOutstandWidth", "LeftOutstandThickness", "RightOutstandWidth", "RightOutstandThickness", "MirrorAboutLocalY", "Edges"]
+}

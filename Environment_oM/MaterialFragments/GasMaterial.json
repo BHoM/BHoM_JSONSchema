@@ -1,0 +1,64 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/MaterialFragments/GasMaterial.json",
+  "title" : "GasMaterial",
+  "type" : ["object", "null"],
+  "description" : "GasMaterial: Fragment containing gas material properties",
+  "properties" : {
+    "Density" : {
+      "type" : "number"
+    },
+    "Conductivity" : {
+      "type" : "number"
+    },
+    "SpecificHeat" : {
+      "type" : "number"
+    },
+    "VapourResistivity" : {
+      "type" : "number"
+    },
+    "Description" : {
+      "type" : ["string", "null"]
+    },
+    "Roughness" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/MaterialFragments/Roughness.json"
+    },
+    "Refraction" : {
+      "type" : "number"
+    },
+    "ConvectionCoefficient" : {
+      "type" : "number"
+    },
+    "Gas" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/MaterialFragments/Gas.json"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.MaterialFragments.GasMaterial"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Density", "Conductivity", "SpecificHeat", "VapourResistivity", "Description", "Roughness", "Refraction", "ConvectionCoefficient", "Gas"]
+}

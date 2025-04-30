@@ -1,0 +1,53 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoMAnalytics_oM/ToolkitSettings.json",
+  "title" : "ToolkitSettings",
+  "type" : ["object", "null"],
+  "description" : "ToolkitSettings: Settings for the BHoMAnalytics toolkit. This contains the reference to the database where to save the analytics data as well as the method in charge to do so.",
+  "properties" : {
+    "ServerAddress" : {
+      "type" : ["string", "null"],
+      "description" : "Connection string of the Mongo server in charge of storing teh analytics data. Be aware that this generally includes the port number."
+    },
+    "DatabaseName" : {
+      "type" : ["string", "null"],
+      "description" : "Name of the database on the Mongo server that will contain the analytics data."
+    },
+    "CollectionName" : {
+      "type" : ["string", "null"],
+      "description" : "Name of the collection inside that database that will contain the analytics data."
+    },
+    "InitialisationMethod" : {
+      "type" : ["string", "null"],
+      "description" : "Method ran when the UI is loaded. This is in charge of sending teh analytics files generated so far to the database."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.BHoMAnalytics.ToolkitSettings"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["ServerAddress", "DatabaseName", "CollectionName", "InitialisationMethod"]
+}

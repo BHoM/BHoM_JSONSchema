@@ -1,0 +1,23 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/WeatherProtection.json",
+  "title" : "WeatherProtection",
+  "type" : ["object", "null"],
+  "properties" : {
+    "Integral" : {
+      "type" : "boolean"
+    },
+    "RequiredBeforeEnclosedInBuilding" : {
+      "type" : "boolean"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.dKoP.WeatherProtection"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Integral", "RequiredBeforeEnclosedInBuilding"]
+}

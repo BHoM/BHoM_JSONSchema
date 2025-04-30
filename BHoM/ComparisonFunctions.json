@@ -1,0 +1,22 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/ComparisonFunctions.json",
+  "title" : "ComparisonFunctions",
+  "type" : ["object", "null"],
+  "description" : "ComparisonFunctions: Additional functions that can be specified as delegates and that will be executed while determining the uniqueness of an object, i.e. when comparing and when computing the object Hash.",
+  "properties" : {
+    "PropertyFullNameModifier" : { },
+    "PropertyFullNameFilter" : { },
+    "CustomDataKeyFilter" : { },
+    "PropertyDisplayNameModifier" : { },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Base.ComparisonFunctions"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["PropertyFullNameModifier", "PropertyFullNameFilter", "CustomDataKeyFilter", "PropertyDisplayNameModifier"]
+}

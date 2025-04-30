@@ -1,0 +1,44 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SQL_oM/UpsertCommand.json",
+  "title" : "UpsertCommand",
+  "type" : ["object", "null"],
+  "description" : "UpsertCommand: Specify objects to update or insert (upsert) depending on whether existing data exists. If the data does not exist based on the Primary Key given, then the data is inserted into the table. If the data did previously exist, then its columns are updated.",
+  "properties" : {
+    "PrimaryKey" : {
+      "type" : ["string", "null"],
+      "description" : "Specify the primary key of the data used to identify existing data to update, or to insert if the data does not exist."
+    },
+    "DefaultPrimaryKeyValue" : { },
+    "PrimaryKeyType" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Type"
+        },
+        "Name" : {
+          "type" : ["string", "null"]
+        }
+      }
+    },
+    "ObjectsToUpsert" : {
+      "type" : ["array", "null"],
+      "description" : "List of objects which are to be upserted into the database. Objects must all be of a single type.",
+      "items" : { }
+    },
+    "Table" : {
+      "type" : ["string", "null"],
+      "description" : "The name of the table which the data should be upserted to."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.SQL.UpsertCommand"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["PrimaryKey", "DefaultPrimaryKeyValue", "PrimaryKeyType", "ObjectsToUpsert", "Table"]
+}

@@ -1,0 +1,44 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/SectionProperties/FrameEdgeProperty.json",
+  "title" : "FrameEdgeProperty",
+  "type" : ["object", "null"],
+  "description" : "FrameEdgeProperty: Frame edge (eg mullion, window jamb, curtain wall sill, etc) property with list of Profile Section properties that make up the mullion construction.",
+  "properties" : {
+    "SectionProperties" : {
+      "type" : ["array", "null"],
+      "description" : "Collection of profiles that make up the mullion, each containing section geometry and a material.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/FramingProperties/ConstantFramingProperty.json"
+      }
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Facade.SectionProperties.FrameEdgeProperty"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["SectionProperties"]
+}

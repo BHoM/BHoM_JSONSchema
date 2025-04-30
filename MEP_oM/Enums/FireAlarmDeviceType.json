@@ -1,0 +1,32 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Enums/FireAlarmDeviceType.json",
+  "anyOf" : [{
+      "type" : ["string", "null"],
+      "enum" : ["Undefined", "BeamDetector", "CarbonMonoxideDetector", "DuctSmokeDetector", "FireAlarmControlPanel", "FireAlarmRelay", "FireSmokeDamper", "FlowSwitch", "HeatDetector", "MonitorModule", "PostSmokePurgePanel", "PullStation", "RemoteAnnunciator", "SmokeDetector", "Speaker", "SpeakerStrobe", "Strobe", "TamperSwitch", "WardenStation"]
+    }, {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : ["string", "null"],
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.MEP.Enums.FireAlarmDeviceType"
+            }
+          }
+        },
+        "Value" : {
+          "type" : ["string", "null"],
+          "enum" : ["Undefined", "BeamDetector", "CarbonMonoxideDetector", "DuctSmokeDetector", "FireAlarmControlPanel", "FireAlarmRelay", "FireSmokeDamper", "FlowSwitch", "HeatDetector", "MonitorModule", "PostSmokePurgePanel", "PullStation", "RemoteAnnunciator", "SmokeDetector", "Speaker", "SpeakerStrobe", "Strobe", "TamperSwitch", "WardenStation"]
+        }
+      }
+    }]
+}

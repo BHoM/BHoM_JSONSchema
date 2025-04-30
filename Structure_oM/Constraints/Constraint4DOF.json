@@ -1,0 +1,66 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Constraints/Constraint4DOF.json",
+  "title" : "Constraint4DOF",
+  "type" : ["object", "null"],
+  "description" : "Constraint4DOF: Constraint objects with four degrees of freedom, three translational and one rotational. Used for support or release of 1D analytical elements of 2D analytical objects. The Rotational DOF will correspond to rotation about the axis of the object.",
+  "properties" : {
+    "Name" : {
+      "type" : ["string", "null"],
+      "description" : "A unique Name is required for some structural packages to create and identify the object."
+    },
+    "TranslationX" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Constraints/DOFType.json"
+    },
+    "TranslationY" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Constraints/DOFType.json"
+    },
+    "TranslationZ" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Constraints/DOFType.json"
+    },
+    "RotationX" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Constraints/DOFType.json"
+    },
+    "TranslationalStiffnessX" : {
+      "type" : "number",
+      "description" : "Defines the stiffness in X-direction. This will only be active when corresponding degree of freedom has a DOFType with a stiffness dependency, such as Spring. Property has a quantity of type ForcePerUnitLength meassured in [N/m]."
+    },
+    "TranslationalStiffnessY" : {
+      "type" : "number",
+      "description" : "Defines the stiffness in Y-direction. This will only be active when corresponding degree of freedom has a DOFType with a stiffness dependency, such as Spring. Property has a quantity of type ForcePerUnitLength meassured in [N/m]."
+    },
+    "TranslationalStiffnessZ" : {
+      "type" : "number",
+      "description" : "Defines the stiffness in Z-direction. This will only be active when corresponding degree of freedom has a DOFType with a stiffness dependency, such as Spring. Property has a quantity of type ForcePerUnitLength meassured in [N/m]."
+    },
+    "RotationalStiffnessX" : {
+      "type" : "number",
+      "description" : "Defines the stiffness for rotation about the axis of the element. This will only be active when corresponding degree of freedom has a DOFType with a stiffness dependency, such as Spring. Property has a quantity of type MomentPerUnitAngle meassured in [N.m/rad]."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Structure.Constraints.Constraint4DOF"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Name", "TranslationX", "TranslationY", "TranslationZ", "RotationX", "TranslationalStiffnessX", "TranslationalStiffnessY", "TranslationalStiffnessZ", "RotationalStiffnessX"]
+}

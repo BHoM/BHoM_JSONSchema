@@ -1,0 +1,73 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Equipment/Parts/ElectricalConnector.json",
+  "title" : "ElectricalConnector",
+  "type" : ["object", "null"],
+  "description" : "ElectricalConnector: Electrical Connectors are the devices (motors, disconnects/isolators) that serve as a source of power for mechanical equipment",
+  "properties" : {
+    "MotorHorsePower" : {
+      "type" : "number",
+      "description" : "Motor Horsepower indicates the power required for the electrical connector without any power losses"
+    },
+    "BrakeHorsePower" : {
+      "type" : "number",
+      "description" : "Brake Horsepower indicates the power required for the electrical connector including any power losses"
+    },
+    "FullLoadAmps" : {
+      "type" : "number",
+      "description" : "Full Load Amps indicates the amount of current drawn by the motor when running, and is used for sizing the conductors"
+    },
+    "MaximumOvercurrentProtection" : {
+      "type" : "number",
+      "description" : "Maximum Overcurrent Protection indicates the maximum size of the fuse or breaker"
+    },
+    "Phase" : {
+      "type" : "number",
+      "description" : "Phase denotes the distribution of alternating current (example: single or three phase)"
+    },
+    "Frequency" : {
+      "type" : "number",
+      "description" : "Frequency is the rate of oscillation"
+    },
+    "Voltage" : {
+      "type" : "number",
+      "description" : "Voltage denotes the electrical potential difference (120/208, 277/480 (US), 240, 415 (UK)"
+    },
+    "EmergencyPower" : {
+      "type" : "boolean",
+      "description" : "Emergency Power is a boolean value (true/false) that denotes whether a device requires backup from an emergency power source"
+    },
+    "StandBy" : {
+      "type" : "boolean",
+      "description" : "Optional Standby is a boolean value (true/false) that denotes whether a device requires backup from a secondary power source, for non-critical systems"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.MEP.Equipment.Parts.ElectricalConnector"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["MotorHorsePower", "BrakeHorsePower", "FullLoadAmps", "MaximumOvercurrentProtection", "Phase", "Frequency", "Voltage", "EmergencyPower", "StandBy"]
+}

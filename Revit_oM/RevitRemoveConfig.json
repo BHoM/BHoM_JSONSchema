@@ -1,0 +1,41 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/RevitRemoveConfig.json",
+  "title" : "RevitRemoveConfig",
+  "type" : ["object", "null"],
+  "description" : "RevitRemoveConfig: Configuration used for adapter interaction with Revit on Remove action.",
+  "properties" : {
+    "SuppressFailureMessages" : {
+      "type" : "boolean",
+      "description" : "If true, Revit warnings and failure messages will be suppressed (not shown to the user). Whilst this option may speed the pushing process up in case of multiple warnings, it may lead to important issues."
+    },
+    "IncludeClosedWorksets" : {
+      "type" : "boolean",
+      "description" : "Elements from closed worksets will be processed if true."
+    },
+    "RemovePinned" : {
+      "type" : "boolean",
+      "description" : "Pinned elements will be processed if true."
+    },
+    "WrapNonBHoMObjects" : {
+      "type" : "boolean",
+      "description" : "If true, the Push action wraps any non-BHoM type into a BH.oM.Adapter.ObjectWrapper, allowing them to make use of the full Adapter workflow."
+    },
+    "AllowHashForComparing" : {
+      "type" : "boolean",
+      "description" : "If true and if no specific EqualityComparer is found for the type, Diffing hashes are computed and used to compare the objects."
+    },
+    "DiffingConfig" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/DiffingConfig.json"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.Revit.RevitRemoveConfig"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["SuppressFailureMessages", "IncludeClosedWorksets", "RemovePinned"]
+}

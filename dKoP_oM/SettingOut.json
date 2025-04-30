@@ -1,0 +1,26 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/SettingOut.json",
+  "title" : "SettingOut",
+  "type" : ["object", "null"],
+  "properties" : {
+    "BuildingLevel" : {
+      "type" : ["string", "null"]
+    },
+    "ReferencePoint" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
+    },
+    "OrientationPoint" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.dKoP.SettingOut"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["BuildingLevel", "ReferencePoint", "OrientationPoint"]
+}

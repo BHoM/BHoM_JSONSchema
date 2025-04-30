@@ -1,0 +1,32 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Units_oM/DensityUnit.json",
+  "anyOf" : [{
+      "type" : ["string", "null"],
+      "enum" : ["Undefined", "CentigramPerDeciliter", "CentigramPerLiter", "CentigramPerMilliliter", "DecigramPerDeciliter", "DecigramPerLiter", "DecigramPerMilliliter", "GramPerCubicCentimeter", "GramPerCubicMeter", "GramPerCubicMillimeter", "GramPerDeciliter", "GramPerLiter", "GramPerMilliliter", "KilogramPerCubicCentimeter", "KilogramPerCubicMeter", "KilogramPerCubicMillimeter", "KilogramPerLiter", "KilopoundPerCubicFoot", "KilopoundPerCubicInch", "MicrogramPerCubicMeter", "MicrogramPerDeciliter", "MicrogramPerLiter", "MicrogramPerMilliliter", "MilligramPerCubicMeter", "MilligramPerDeciliter", "MilligramPerLiter", "MilligramPerMilliliter", "NanogramPerDeciliter", "NanogramPerLiter", "NanogramPerMilliliter", "PicogramPerDeciliter", "PicogramPerLiter", "PicogramPerMilliliter", "PoundPerCubicFoot", "PoundPerCubicInch", "PoundPerImperialGallon", "PoundPerUSGallon", "SlugPerCubicFoot", "TonnePerCubicCentimeter", "TonnePerCubicMeter", "TonnePerCubicMillimeter"]
+    }, {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : ["string", "null"],
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.Units.DensityUnit"
+            }
+          }
+        },
+        "Value" : {
+          "type" : ["string", "null"],
+          "enum" : ["Undefined", "CentigramPerDeciliter", "CentigramPerLiter", "CentigramPerMilliliter", "DecigramPerDeciliter", "DecigramPerLiter", "DecigramPerMilliliter", "GramPerCubicCentimeter", "GramPerCubicMeter", "GramPerCubicMillimeter", "GramPerDeciliter", "GramPerLiter", "GramPerMilliliter", "KilogramPerCubicCentimeter", "KilogramPerCubicMeter", "KilogramPerCubicMillimeter", "KilogramPerLiter", "KilopoundPerCubicFoot", "KilopoundPerCubicInch", "MicrogramPerCubicMeter", "MicrogramPerDeciliter", "MicrogramPerLiter", "MicrogramPerMilliliter", "MilligramPerCubicMeter", "MilligramPerDeciliter", "MilligramPerLiter", "MilligramPerMilliliter", "NanogramPerDeciliter", "NanogramPerLiter", "NanogramPerMilliliter", "PicogramPerDeciliter", "PicogramPerLiter", "PicogramPerMilliliter", "PoundPerCubicFoot", "PoundPerCubicInch", "PoundPerImperialGallon", "PoundPerUSGallon", "SlugPerCubicFoot", "TonnePerCubicCentimeter", "TonnePerCubicMeter", "TonnePerCubicMillimeter"]
+        }
+      }
+    }]
+}

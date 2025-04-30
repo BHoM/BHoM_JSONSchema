@@ -1,0 +1,24 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/EtabsSettings.json",
+  "title" : "EtabsSettings",
+  "type" : ["object", "null"],
+  "properties" : {
+    "ReplaceLoads" : {
+      "type" : "boolean",
+      "description" : "Sets whether the loads being pushed should overwrite existing loads on the same object within the same loadcase"
+    },
+    "DatabaseSettings" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/DatabaseSettings.json"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.ETABS.EtabsSettings"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["ReplaceLoads", "DatabaseSettings"]
+}

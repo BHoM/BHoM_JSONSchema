@@ -1,0 +1,52 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/Colours/GradientOptions.json",
+  "title" : "GradientOptions",
+  "type" : ["object", "null"],
+  "description" : "GradientOptions: Defines options for range and centering for a Gradient.",
+  "properties" : {
+    "Name" : {
+      "type" : ["string", "null"],
+      "description" : "Name of the GradientOption. Will be displayed for Gradient legends."
+    },
+    "Gradient" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/IGradient.json"
+    },
+    "LowerBound" : {
+      "type" : "number",
+      "description" : "The lower bound of the Gradient. Leave empty to allow other methods to set automatically."
+    },
+    "UpperBound" : {
+      "type" : "number",
+      "description" : "The upper bound of the Gradient. Leave empty to allow other methods to set automatically."
+    },
+    "GradientCenteringOptions" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/Enums/GradientCenteringOptions.json"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Graphics.Colours.GradientOptions"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Name", "Gradient", "LowerBound", "UpperBound", "GradientCenteringOptions"]
+}

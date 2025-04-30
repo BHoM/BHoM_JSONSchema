@@ -1,0 +1,61 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Ground_oM/InSituVaneReferenceProperties.json",
+  "title" : "InSituVaneReferenceProperties",
+  "type" : ["object", "null"],
+  "description" : "InSituVaneReferenceProperties: Properties related to the references of the in Situ Hand Vane Test.",
+  "properties" : {
+    "Details" : {
+      "type" : ["string", "null"],
+      "description" : "Details of vane test and vane size (IVAN_REM)."
+    },
+    "Weather" : {
+      "type" : ["string", "null"],
+      "description" : "Details of weather and environmental conditions during test (IVAN_ENV)."
+    },
+    "Date" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "$date" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "StratumReference" : {
+      "type" : ["string", "null"],
+      "description" : "Stratum refrence shown on trial pit or traverse sketch (GEOL_STAT)."
+    },
+    "FileReference" : {
+      "type" : ["string", "null"],
+      "description" : "Associated file references (FILE_FSET)."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Ground.InSituVaneReferenceProperties"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Details", "Weather", "Date", "StratumReference", "FileReference"]
+}

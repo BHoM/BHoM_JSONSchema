@@ -1,0 +1,49 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/Acoustics.json",
+  "title" : "Acoustics",
+  "type" : ["object", "null"],
+  "description" : "Acoustics: The Acoustics object defines the noise criteria for an environments space, whether it's the prescribed ductwork velocity, the noise rating for the space or the dB level.",
+  "properties" : {
+    "DuctVelocity" : {
+      "type" : "number",
+      "description" : "The prescribed velocity of the ductwork in the space (with more strict requirements for velocity in bedrooms and theatres (~3 m/s)"
+    },
+    "NoiseRating" : {
+      "type" : "number",
+      "description" : "The noise rating (NR), also known as noise criteria (NC) in the US, is the perceived loudness of a space"
+    },
+    "DecibelA" : {
+      "type" : "number",
+      "description" : "The Decibel A (dBA) is the sound pressure sensed by the human ear without sensitivity to very low and very high frequencies prescribed for a space"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SpaceCriteria.Acoustics"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["DuctVelocity", "NoiseRating", "DecibelA"]
+}

@@ -1,0 +1,147 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/RevitComparisonConfig.json",
+  "title" : "RevitComparisonConfig",
+  "type" : ["object", "null"],
+  "description" : "RevitComparisonConfig: Settings to determine the uniqueness of an Object for comparison (e.g. when Diffing or computing an object Hash).",
+  "properties" : {
+    "ParametersExceptions" : {
+      "type" : ["array", "null"],
+      "description" : "Names of any Revit Parameter that should not be considered for the comparison.",
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "ParametersToConsider" : {
+      "type" : ["array", "null"],
+      "description" : "Names of the Revit Parameters that will be considered for the comparison.By default, this list is empty, so all parameters are considered (except possibly those included in the other property `ParametersExceptions`).If this list is populated with one or more values, it takes higher priority over `ParametersExceptions`.",
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "ParameterNumericTolerances" : {
+      "type" : ["array", "null"],
+      "description" : "Tolerance used for individual RevitParameters. When computing Hash or the property Diffing, if the analysed property name is found in this collection, the corresponding tolerance is applied.\nSupports * wildcard in the property name matching. E.g. `StartNode.Point.*, 2`.\nIf a match is found, this take precedence over the global `NumericTolerance`.\nIf conflicting values/multiple matches are found among the Configurations on numerical precision, the largest approximation among all (least precise number) is registered.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/NamedNumericTolerance.json"
+      }
+    },
+    "ParameterSignificantFigures" : {
+      "type" : ["array", "null"],
+      "description" : "Number of significant figures allowed for numerical data on a per-RevitParameter base. \nSupports * wildcard in the property name matching. E.g. `StartNode.Point.*, 2`.\nIf a match is found, this take precedence over the global `SignificantFigures`.\nIf conflicting values/multiple matches are found among the Configurations on numerical precision, the largest approximation among all (least precise number) is registered.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/NamedSignificantFigures.json"
+      }
+    },
+    "RevitParams_ConsiderAddedAssigned" : {
+      "type" : "boolean",
+      "description" : "(Defaults to `true`) If false, if an object gets a new RevitParameter with a non-null Value added to it, then the owner object is NOT considered 'Modified' and the Comparison will NOT return this difference."
+    },
+    "RevitParams_ConsiderAddedUnassigned" : {
+      "type" : "boolean",
+      "description" : "(Defaults to `true`) If false, if an object gets a new RevitParameter with a null Value added to it, then the owner object is NOT considered 'Modified' and the Comparison will NOT return this difference."
+    },
+    "RevitParams_ConsiderRemovedAssigned" : {
+      "type" : "boolean",
+      "description" : "(Defaults to `true`) If false, if an object has a RevitParameter with a non-null Value deleted from it, then the owner object is NOT considered 'Modified' and the Comparison will NOT return this difference."
+    },
+    "RevitParams_ConsiderRemovedUnassigned" : {
+      "type" : "boolean",
+      "description" : "(Defaults to `true`) If false, if an object has a RevitParameter with a null Value deleted from it, then the owner object is NOT considered 'Modified' and the Comparison will NOT return this difference."
+    },
+    "NumericTolerance" : {
+      "type" : "number",
+      "description" : "Numeric tolerance for property values, applied to all numerical properties. Defaults to 1e-6.\nApplies rounding for numbers smaller than this.\nYou can override on a per-property basis by using `PropertyNumericTolerances`.\nIf conflicting values/multiple matches are found among the Configurations on numerical precision, the largest approximation among all (least precise number) is registered."
+    },
+    "PropertyExceptions" : {
+      "type" : ["array", "null"],
+      "description" : "Names of properties you want to disregard in defining the uniqueness of an object. You can specify the property name or the Full Name. Supports * wildcard.\nExamples of valid values: `BHoM_Guid`, `StartNode`, `Bar.StartNode.Position.X`, `Bar.*.Position.Y`. See the wiki for more details.",
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "PropertiesToConsider" : {
+      "type" : ["array", "null"],
+      "description" : "If one or more entries are specified here, only objects/properties that match them will be considered in the hash.\nE.g. Given input objects BH.oM.Structure.Elements.Bar, specifying `StartNode` will only check that property of the Bar.\nLike for PropertyExceptions, you can specify the property name or the Full Name. Supports * wildcard.\nNote that using this will incur in a general slowdown because it is computationally heavy. See the wiki for more details.",
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomdataKeysExceptions" : {
+      "type" : ["array", "null"],
+      "description" : "Keys of the BHoMObjects' CustomData dictionary that should be ignored.\nBy default it includes `RenderMesh`. \nThis does not support wildcard usage. See the wiki for more details.",
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomdataKeysToConsider" : {
+      "type" : ["array", "null"],
+      "description" : "Keys of the BHoMObjects' CustomData dictionary that should be included in the comparison.\nAdding keys to this List will exclude any key that is not in this List.\nI.e. for every object, if it has CustomData keys present in this List, we then exclude any other CustomData key found in it.",
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "TypeExceptions" : {
+      "type" : ["array", "null"],
+      "description" : "Any corresponding type is ignored. E.g. `typeof(Guid)`.",
+      "items" : {
+        "type" : ["object", "null"],
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "System.Type"
+          },
+          "Name" : {
+            "type" : ["string", "null"]
+          }
+        }
+      }
+    },
+    "NamespaceExceptions" : {
+      "type" : ["array", "null"],
+      "description" : "Any corresponding namespace is ignored. E.g. `BH.oM.Structure`. Does not support wildcard. See the wiki for more details.",
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "MaxNesting" : {
+      "type" : "integer",
+      "description" : "If any property is nested into the object over that level, it is ignored. Useful to limit the runtime.\nDefaults to unlimited."
+    },
+    "MaxPropertyDifferences" : {
+      "type" : "integer",
+      "description" : "Sets the maximum number of property differences to be determined before stopping. Useful to limit the runtime.\nDefaults to unlimited."
+    },
+    "PropertyNumericTolerances" : {
+      "type" : ["array", "null"],
+      "description" : "Tolerance used for individual properties. When computing Hash or the property Diffing, if the analysed property name is found in this collection, the corresponding tolerance is applied.\nSupports * wildcard in the property name matching. E.g. `StartNode.Point.*, 2`.\nIf a match is found, this take precedence over the global `NumericTolerance`.\nIf conflicting values/multiple matches are found among the Configurations on numerical precision, the largest approximation among all (least precise number) is registered.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/NamedNumericTolerance.json"
+      }
+    },
+    "SignificantFigures" : {
+      "type" : "integer",
+      "description" : "Number of significant figures allowed for numerical data.\nDefaults to `int.MaxValue`: no approximation applied.\nYou can override on a per-property basis by using `PropertySignificantDigits`.\nIf conflicting values/multiple matches are found among the Configurations on numerical precision, the largest approximation among all (least precise number) is registered."
+    },
+    "PropertySignificantFigures" : {
+      "type" : ["array", "null"],
+      "description" : "Number of significant figures allowed for numerical data on a per-property base. \nSupports * wildcard in the property name matching. E.g. `StartNode.Point.*, 2`.\nIf a match is found, this take precedence over the global `SignificantFigures`.\nIf conflicting values/multiple matches are found among the Configurations on numerical precision, the largest approximation among all (least precise number) is registered.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/NamedSignificantFigures.json"
+      }
+    },
+    "UseGeometryHash" : {
+      "type" : "boolean",
+      "description" : "If true, geometric types will be identified based on the GeometryHash function. This function reduces the identity of geometry down to its most basic components, and it is faster than scouring for all its properties. See its implementation in the Geometry_Engine for more details."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.Revit.RevitComparisonConfig"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["ParametersExceptions", "ParametersToConsider", "ParameterNumericTolerances", "ParameterSignificantFigures", "RevitParams_ConsiderAddedAssigned", "RevitParams_ConsiderAddedUnassigned", "RevitParams_ConsiderRemovedAssigned", "RevitParams_ConsiderRemovedUnassigned", "NumericTolerance"]
+}

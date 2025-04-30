@@ -1,0 +1,57 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Materials/TakeoffItem.json",
+  "title" : "TakeoffItem",
+  "type" : ["object", "null"],
+  "description" : "TakeoffItem: Class storing takeoff values of relevant quantities corresponding to a particular material.",
+  "properties" : {
+    "Material" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Materials/Material.json"
+    },
+    "Volume" : {
+      "type" : "number",
+      "description" : "Total volume of the material. Applicable for most takeoffs. Property has a quantity of type Volume meassured in [m³]."
+    },
+    "Mass" : {
+      "type" : "number",
+      "description" : "Total mass of the material. Applicable for materials with a set density. Property has a quantity of type Mass meassured in [kg]."
+    },
+    "Area" : {
+      "type" : "number",
+      "description" : "Total area of the material. Applicable for takeoffs of 2-dimensional elements or 2-dimensional parts. Property has a quantity of type Area meassured in [m²]."
+    },
+    "Length" : {
+      "type" : "number",
+      "description" : "Total length of the material. Applicable for takeoffs of 1-dimensional elements or elements with 1-dimensional parts. Property has a quantity of type Length meassured in [m]."
+    },
+    "NumberItem" : {
+      "type" : "integer",
+      "description" : "Total number of items containing the material in the takeoff. Applicable for most takeoffs."
+    },
+    "ElectricCurrent" : {
+      "type" : "number",
+      "description" : "Total Electric current associated with the material. Applicable for takeoffs of some electrical equipment elements. Property has a quantity of type ElectricCurrent meassured in [A]."
+    },
+    "Energy" : {
+      "type" : "number",
+      "description" : "Total Electric current associated with the material. Applicable for takeoffs of some electrical equipment elements. Property has a quantity of type Energy meassured in [J]."
+    },
+    "Power" : {
+      "type" : "number",
+      "description" : "Total Power or apparent power associated with the material. Applicable for takeoffs of some electrical equipment elements. Property has a quantity of type EnergyPerUnitTime meassured in [W]."
+    },
+    "VolumetricFlowRate" : {
+      "type" : "number",
+      "description" : "Total VolumetricFlowRate associated with the material. Applicable for takeoffs of elements relating to flow of substance through the element. Property has a quantity of type VolumetricFlowRate meassured in [m³/s]."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Physical.Materials.TakeoffItem"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Material", "Volume", "Mass", "Area", "Length", "NumberItem", "ElectricCurrent", "Energy", "Power", "VolumetricFlowRate"]
+}

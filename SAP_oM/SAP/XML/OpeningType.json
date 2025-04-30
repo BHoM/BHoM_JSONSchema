@@ -1,0 +1,113 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/OpeningType.json",
+  "title" : "OpeningType",
+  "type" : ["object", "null"],
+  "properties" : {
+    "Name" : {
+      "type" : ["string", "null"],
+      "description" : "Unique name which identifies this opening type."
+    },
+    "Description" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "DataSource" : {
+      "type" : ["string", "null"],
+      "description" : "The source of the data for this type of opening."
+    },
+    "UValue" : {
+      "type" : ["string", "null"],
+      "description" : "The U-value."
+    },
+    "Type" : {
+      "type" : ["string", "null"],
+      "description" : "The (physical) type of opening that this opening type represents."
+    },
+    "GlazingType" : {
+      "type" : ["string", "null"],
+      "description" : "The type of glazing."
+    },
+    "GlazingGap" : {
+      "type" : ["string", "null"],
+      "description" : "Gap between glass panes."
+    },
+    "IsArgonFilled" : {
+      "type" : ["object", "null"],
+      "description" : "Is the opening argon-filled?.",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "IsKryptonFilled" : {
+      "type" : ["object", "null"],
+      "description" : "Is the opening krypton-filled?.",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "FrameType" : {
+      "type" : ["string", "null"],
+      "description" : "The type of frame."
+    },
+    "GValue" : {
+      "type" : ["string", "null"],
+      "description" : "The solar transmittance; not if a door."
+    },
+    "FrameFactor" : {
+      "type" : ["string", "null"],
+      "description" : "The frame factor; not if a door."
+    },
+    "IntersectsFloor" : {
+      "type" : "boolean",
+      "description" : "Determines whether or not the opening intersects with the floor (such as a glazed door)."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SAP.XML.OpeningType"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Name", "Description", "DataSource", "UValue", "Type", "GlazingType", "GlazingGap", "IsArgonFilled", "IsKryptonFilled", "FrameType", "GValue", "FrameFactor", "IntersectsFloor"]
+}

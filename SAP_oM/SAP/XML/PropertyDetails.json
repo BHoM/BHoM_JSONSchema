@@ -1,0 +1,254 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/PropertyDetails.json",
+  "title" : "PropertyDetails",
+  "type" : ["object", "null"],
+  "properties" : {
+    "EnergySource" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/EnergySource.json"
+    },
+    "Heating" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/Heating.json"
+    },
+    "BuildingParts" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/BuildingParts.json"
+    },
+    "Ventilation" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/Ventilation.json"
+    },
+    "OpeningTypes" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/OpeningTypes.json"
+    },
+    "PropertyType" : {
+      "type" : ["string", "null"],
+      "description" : "The type of Property, such as House, Flat, Mansion, Maisonette etc."
+    },
+    "BuiltForm" : {
+      "type" : ["string", "null"],
+      "description" : "The building type of the Property e.g. Detached, Semi-Detached, Terrace etc. Together with the Property Type, the Built Form provides a structured description of the property."
+    },
+    "LivingArea" : {
+      "type" : ["string", "null"],
+      "description" : "The size of the living area in square metres.  The living area is the room marked on a plan as the lounge or living room, or the largest public room (irrespective of usage by particular occupants), together with any rooms not separated from the lounge or living room by doors, and including any cupboards directly accessed from the lounge or living room. Living area does not, however, extend over more than one storey, even when stairs enter the living area directly."
+    },
+    "LowestStoreyArea" : {
+      "type" : ["string", "null"],
+      "description" : "The Area of the lowest storey in square meters including unheated or communal areas such as garages or corridors."
+    },
+    "Orientation" : {
+      "type" : ["string", "null"],
+      "description" : "The orientation of the front of the property."
+    },
+    "ColdWaterSource" : {
+      "type" : ["string", "null"],
+      "description" : "What is the cold water source?  Either mains or header tank."
+    },
+    "WindowsOvershading" : {
+      "type" : ["string", "null"],
+      "description" : "Average amount of overshading of windows."
+    },
+    "ThermalMassParameter" : {
+      "type" : ["string", "null"],
+      "description" : "Average thermal mass parameter for the dwelling in kJ/m�K. If omitted it is calculated using the kappa values of each element."
+    },
+    "IsInSmokeControlArea" : {
+      "type" : ["string", "null"],
+      "description" : "Is property in a smoke control area?  Only if a solid fuel appliance is used."
+    },
+    "Lighting" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/Lighting.json"
+    },
+    "ConservatoryType" : {
+      "type" : ["string", "null"],
+      "description" : "Type of conservatory."
+    },
+    "TerrainType" : {
+      "type" : ["string", "null"],
+      "description" : "Terrain type. Needed for wind-turbines and for applying measures."
+    },
+    "HasSpecialFeature" : {
+      "type" : ["object", "null"],
+      "description" : "For backwards compatibility only, do not use.",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "SpecialFeatureDescription" : {
+      "type" : ["string", "null"],
+      "description" : "For backwards compatibility only, do not use."
+    },
+    "EnergySavedOrGenerated" : {
+      "type" : ["string", "null"],
+      "description" : "For backwards compatibility only, do not use."
+    },
+    "SavedOrGeneratedFuel" : {
+      "type" : ["string", "null"],
+      "description" : "For backwards compatibility only, do not use."
+    },
+    "EnergyUsed" : {
+      "type" : ["string", "null"],
+      "description" : "For backwards compatibility only, do not use."
+    },
+    "EnergyUsedFuel" : {
+      "type" : ["string", "null"],
+      "description" : "For backwards compatibility only, do not use."
+    },
+    "AdditionalAllowableElectricityGeneration" : {
+      "type" : ["string", "null"],
+      "description" : "Additional allowable electricity generation applicable to this dwelling in kWh per square metre; only if Zero Carbon Home assessment."
+    },
+    "IsDwellingExportCapable" : {
+      "type" : ["object", "null"],
+      "description" : ".",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "GasSmartMeterPresent" : {
+      "type" : ["object", "null"],
+      "description" : ".",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "ElectricitySmartMeterPresent" : {
+      "type" : ["object", "null"],
+      "description" : ".",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "PVConnection" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "PVDiverter" : {
+      "type" : ["object", "null"],
+      "description" : "Diverter present.",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "BatteryCapacity" : {
+      "type" : ["string", "null"],
+      "description" : "Battery capacity capacity if diverter present"
+    },
+    "IsWindTurbineConnectedToDwellingMeter" : {
+      "type" : ["object", "null"],
+      "description" : "Whether the wind turbine is connected to the Dwelling's meter.",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "DeselectedImprovements" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/DeselectedImprovements.json"
+    },
+    "FlatDetails" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/FlatDetails.json"
+    },
+    "SpecialFeatures" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/SpecialFeatures.json"
+    },
+    "DesignWaterUse" : {
+      "type" : ["string", "null"],
+      "description" : "Design limit for total water use."
+    },
+    "Cooling" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/Cooling.json"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SAP.XML.PropertyDetails"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["EnergySource", "Heating", "BuildingParts", "Ventilation", "OpeningTypes", "PropertyType", "BuiltForm", "LivingArea", "LowestStoreyArea", "Orientation", "ColdWaterSource", "WindowsOvershading", "ThermalMassParameter", "IsInSmokeControlArea", "Lighting", "ConservatoryType", "TerrainType", "HasSpecialFeature", "SpecialFeatureDescription", "EnergySavedOrGenerated", "SavedOrGeneratedFuel", "EnergyUsed", "EnergyUsedFuel", "AdditionalAllowableElectricityGeneration", "IsDwellingExportCapable", "GasSmartMeterPresent", "ElectricitySmartMeterPresent", "PVConnection", "PVDiverter", "BatteryCapacity", "IsWindTurbineConnectedToDwellingMeter", "DeselectedImprovements", "FlatDetails", "SpecialFeatures", "DesignWaterUse", "Cooling"]
+}

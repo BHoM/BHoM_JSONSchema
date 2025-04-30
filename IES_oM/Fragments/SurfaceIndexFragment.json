@@ -1,0 +1,22 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/IES_oM/Fragments/SurfaceIndexFragment.json",
+  "title" : "SurfaceIndexFragment",
+  "type" : ["object", "null"],
+  "description" : "SurfaceIndexFragment: Fragment containing the surface index from IES",
+  "properties" : {
+    "SurfaceID" : {
+      "type" : "integer",
+      "description" : "Index of panel in the space it is connected to"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.IES.Fragments.SurfaceIndexFragment"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["SurfaceID"]
+}

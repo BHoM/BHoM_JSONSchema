@@ -1,0 +1,29 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Conditions/FormulaCondition.json",
+  "title" : "FormulaCondition",
+  "type" : ["object", "null"],
+  "description" : "FormulaCondition: Condition that verifies an object based on a given formula.",
+  "properties" : {
+    "Inputs" : {
+      "type" : ["object", "null"],
+      "description" : "Initial values to be extracted from the verified object.\nKeys are the names of variables to be used in the calculations.\nValues are value sources to extract the values from."
+    },
+    "CalculationFormulae" : {
+      "type" : ["object", "null"],
+      "description" : "Formulae to calculate the variables to be verified in the verification formula.\nFormulae can be chained, i.e. one calculated variable can be derived from the previously calculated ones.\nKeys are the names of variables to be used in the calculations.\nValues are the formulae correspondent to each given variable name."
+    },
+    "VerificationFormula" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Conditions/Formula.json"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Verification.Conditions.FormulaCondition"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Inputs", "CalculationFormulae", "VerificationFormula"]
+}

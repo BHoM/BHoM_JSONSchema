@@ -1,0 +1,59 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/Layouts/MultiLinearLayout.json",
+  "title" : "MultiLinearLayout",
+  "type" : ["object", "null"],
+  "description" : "MultiLinearLayout: Linear distribution of points along multiple linear parallel axes, defined along a vector from one side of the perimeter of the host object to the other. \nStarts by fitting in as many points as possible in the first layer, then generates a new one and repeats.",
+  "properties" : {
+    "NumberOfPoints" : {
+      "type" : "integer",
+      "description" : "Number of points along the axis."
+    },
+    "ParallelMinimumSpacing" : {
+      "type" : "number",
+      "description" : "Minimum distance between any two points in the layout along the axis layers. Property has a quantity of type Length meassured in [m]."
+    },
+    "PerpendicularMinimumSpacing" : {
+      "type" : "number",
+      "description" : "Minimum distance between any two layers. Property has a quantity of type Length meassured in [m]."
+    },
+    "Direction" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
+    },
+    "Offset" : {
+      "type" : "number",
+      "description" : "Offset of the linear layout in relation to the reference point, perpendicular to the Direction vector in the XY plane.\nA positive value will mean an offset towards the centre of the boundingbox of the host objects. Property has a quantity of type Length meassured in [m]."
+    },
+    "ReferencePoint" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/Layouts/ReferencePoint.json"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Spatial.Layouts.MultiLinearLayout"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["NumberOfPoints", "ParallelMinimumSpacing", "PerpendicularMinimumSpacing", "Direction", "Offset", "ReferencePoint"]
+}

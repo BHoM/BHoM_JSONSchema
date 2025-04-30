@@ -1,0 +1,26 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/Commands/CustomCommand.json",
+  "title" : "CustomCommand",
+  "type" : ["object", "null"],
+  "description" : "CustomCommand: Used to instruct the external software to run a certain command.",
+  "properties" : {
+    "Command" : {
+      "type" : ["string", "null"],
+      "description" : "Name of the command to be executed by the external software."
+    },
+    "Parameters" : {
+      "type" : ["object", "null"],
+      "description" : "Parameters needed by the external software to execute the command."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapter.Commands.CustomCommand"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Command", "Parameters"]
+}

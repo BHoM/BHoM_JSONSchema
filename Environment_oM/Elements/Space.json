@@ -1,0 +1,111 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Elements/Space.json",
+  "title" : "Space",
+  "type" : ["object", "null"],
+  "description" : "Space: A space object is an analytical depiction of a room defined by its environmental conditions (internal gains)",
+  "properties" : {
+    "Zones" : {
+      "type" : ["array", "null"],
+      "description" : "Zones denotes the list of zones that this particular space is associated with. Zones are collections of spaces with similar internal gains and exterior envelope conditions.",
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "LightingGain" : {
+      "type" : ["array", "null"],
+      "description" : "Lighting gains are objects that are defined as the amount of heat contributed by light fixtures within the space",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/Lighting.json"
+      }
+    },
+    "EquipmentGain" : {
+      "type" : ["array", "null"],
+      "description" : "Equipment gains are objects that are defined as the amount of heat contributed by equipment within the space",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/Equipment.json"
+      }
+    },
+    "PeopleGain" : {
+      "type" : ["array", "null"],
+      "description" : "People gains are objects that are defined as the amount of heat contributed by people based on their assumed activity level within the space (dancing, sitting, etc)",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/People.json"
+      }
+    },
+    "Infiltration" : {
+      "type" : ["array", "null"],
+      "description" : "Infiltration gains are objects that are defined as the amount of heat or heat loss contributed by cracks in the exterior envelope of the building which allow unconditioned outside air to be introduced to the space",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/Infiltration.json"
+      }
+    },
+    "Ventilation" : {
+      "type" : ["array", "null"],
+      "description" : "Ventilation are objects that define the amount of outside air that should be introduced to a space, which is typically based on the number of occupants breathing the air and the area of the space.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/Ventilation.json"
+      }
+    },
+    "Exhaust" : {
+      "type" : ["array", "null"],
+      "description" : "Exhaust are objects that define the amount of air that should be extracted from a space, which is either based on the objects within the space (toilets, showers) or the space type (kitchen, bathroom).",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/Exhaust.json"
+      }
+    },
+    "OccupantDensity" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Architecture_oM/Elements/Occupancy.json"
+    },
+    "Acoustics" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/Acoustics.json"
+    },
+    "Plumbing" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/Plumbing.json"
+    },
+    "FireProtection" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/FireProtection.json"
+    },
+    "ProjectSpaceType" : {
+      "type" : ["string", "null"],
+      "description" : "Project Space Type is a string that defines how the space is used on a given project (Museum, Corridor, etc)"
+    },
+    "SpaceType" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Elements/SpaceType.json"
+    },
+    "Location" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
+    },
+    "Perimeter" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ICurve.json"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.Elements.Space"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Zones", "LightingGain", "EquipmentGain", "PeopleGain", "Infiltration", "Ventilation", "Exhaust", "OccupantDensity", "Acoustics", "Plumbing", "FireProtection", "ProjectSpaceType", "SpaceType", "Location", "Perimeter"]
+}

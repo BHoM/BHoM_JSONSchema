@@ -1,0 +1,60 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/PowerPoint_oM/MultiLineTextUpdate.json",
+  "title" : "MultiLineTextUpdate",
+  "type" : ["object", "null"],
+  "description" : "MultiLineTextUpdate: Allows to update the text content of a shape",
+  "properties" : {
+    "SlideNumber" : {
+      "type" : "integer",
+      "description" : "Number of the slide where the update needs to happen."
+    },
+    "ElementName" : {
+      "type" : ["string", "null"],
+      "description" : "Name of the text element that needs to be updated."
+    },
+    "Text" : {
+      "type" : ["array", "null"],
+      "description" : "New text for the element. Each item in the list represents a new row.",
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "Colour" : {
+      "type" : ["string", "null"],
+      "description" : "Colour of the text element that needs to be updated."
+    },
+    "UseLastParagraphProperties" : {
+      "type" : "boolean",
+      "description" : "Whether to use the properties of the previous paragraph for subsequent paragraphs where there is no text to update. If set to false, new paragraphs will have default properties with no indentation. Default false."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.PowerPoint.MultiLineTextUpdate"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["SlideNumber", "ElementName", "Text", "Colour", "UseLastParagraphProperties"]
+}

@@ -1,0 +1,34 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/IHollowCoreOpeningProfiles.json",
+  "required" : ["_t"],
+  "properties" : {
+    "_t" : {
+      "enum" : ["BH.oM.Structure.SurfaceProperties.ElongatedCircularHollowCoreOpeningProfiles", "BH.oM.Structure.SurfaceProperties.CircularHollowCoreOpeningProfiles"]
+    }
+  },
+  "allOf" : [{
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Structure.SurfaceProperties.ElongatedCircularHollowCoreOpeningProfiles"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/ElongatedCircularHollowCoreOpeningProfiles.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Structure.SurfaceProperties.CircularHollowCoreOpeningProfiles"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/CircularHollowCoreOpeningProfiles.json"
+      }
+    }]
+}

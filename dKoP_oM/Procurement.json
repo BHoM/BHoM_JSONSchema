@@ -1,0 +1,29 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/Procurement.json",
+  "title" : "Procurement",
+  "type" : ["object", "null"],
+  "properties" : {
+    "LeadTime" : {
+      "type" : "number"
+    },
+    "Cost" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/Cost.json"
+    },
+    "MinimumOrder" : {
+      "type" : "integer"
+    },
+    "MaximumOrder" : {
+      "type" : "integer"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.dKoP.Procurement"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["LeadTime", "Cost", "MinimumOrder", "MaximumOrder"]
+}

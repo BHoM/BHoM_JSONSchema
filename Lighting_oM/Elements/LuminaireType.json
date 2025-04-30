@@ -1,0 +1,68 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Lighting_oM/Elements/LuminaireType.json",
+  "title" : "LuminaireType",
+  "type" : ["object", "null"],
+  "description" : "LuminaireType: A LuminaireType containing manufacturer, dimensional, and other property data applied to a Luminaire.",
+  "properties" : {
+    "Manufacturer" : {
+      "type" : ["string", "null"],
+      "description" : "Name of the Manufacturer of this LuminaireType"
+    },
+    "LuminaireGeometry" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/BoundaryRepresentation.json"
+    },
+    "Load" : {
+      "type" : "number",
+      "description" : "Total Load of the LuminaireType"
+    },
+    "Flux" : {
+      "type" : "number",
+      "description" : "Total Flux of the LuminaireType"
+    },
+    "NumberOfLamps" : {
+      "type" : "integer",
+      "description" : "Number of lamps included in this LuminaireType"
+    },
+    "MountingType" : {
+      "type" : ["string", "null"],
+      "description" : "Mounting type eg Wall-Mounted, Ceiling Recessed, etc)"
+    },
+    "Description" : {
+      "type" : ["string", "null"],
+      "description" : "General description"
+    },
+    "Model" : {
+      "type" : ["string", "null"],
+      "description" : "Model name of the LuminaireType as per the Manufacturer"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Lighting.Elements.LuminaireType"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Manufacturer", "LuminaireGeometry", "Load", "Flux", "NumberOfLamps", "MountingType", "Description", "Model"]
+}

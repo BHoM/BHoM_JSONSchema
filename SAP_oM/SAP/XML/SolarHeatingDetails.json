@@ -1,0 +1,158 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/SolarHeatingDetails.json",
+  "title" : "SolarHeatingDetails",
+  "type" : ["object", "null"],
+  "properties" : {
+    "SolarHeatingCollectorManufacturer" : {
+      "type" : ["string", "null"],
+      "description" : "Panel manufacturer."
+    },
+    "SolarHeatingCertificate" : {
+      "type" : ["string", "null"],
+      "description" : "Solar-Heating-Certificate."
+    },
+    "ApertureArea" : {
+      "type" : ["string", "null"],
+      "description" : "Panel aperture area in square metres."
+    },
+    "Pitch" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "SolarStoreVolume" : {
+      "type" : ["string", "null"],
+      "description" : "Dedicated solar store volume in litres."
+    },
+    "CollectorType" : {
+      "type" : ["string", "null"],
+      "description" : "Type of solar panel collector."
+    },
+    "ZeroLossEfficiency" : {
+      "type" : ["string", "null"],
+      "description" : "Collector zero-loss efficiency; only if declared values."
+    },
+    "HeatLossRate" : {
+      "type" : ["string", "null"],
+      "description" : "Collector heat loss rate; for backward compatibility only, do not use."
+    },
+    "LinearHeatLossCoefficient" : {
+      "type" : ["string", "null"],
+      "description" : "Collector linear heat loss coefficient; only if declared values."
+    },
+    "SecondOrderHeatLossCoefficient" : {
+      "type" : ["string", "null"],
+      "description" : "Collector 2nd order heat loss coefficient; only if declared values."
+    },
+    "Orientation" : {
+      "type" : ["string", "null"],
+      "description" : "Collector orientation."
+    },
+    "Overshading" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "HasSolarPoweredPump" : {
+      "type" : ["object", "null"],
+      "description" : ".",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "IsSolarStoreCombinedCylinder" : {
+      "type" : ["object", "null"],
+      "description" : ".",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "CollectorLoopEfficiency" : {
+      "type" : ["string", "null"],
+      "description" : "Collector loop efficiency; only if declared values."
+    },
+    "IncidenceAngleModifier" : {
+      "type" : ["string", "null"],
+      "description" : "Incidence angle modifier; only if declared values."
+    },
+    "IsCommunitySolar" : {
+      "type" : ["object", "null"],
+      "description" : ".",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "ServiceProvision" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "DataSource" : {
+      "type" : ["string", "null"],
+      "description" : "Source of solar panel collector data."
+    },
+    "OverallHeatLoss" : {
+      "type" : ["string", "null"],
+      "description" : "Overall heat loss coefficient of system; only if declared values."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SAP.XML.SolarHeatingDetails"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["SolarHeatingCollectorManufacturer", "SolarHeatingCertificate", "ApertureArea", "Pitch", "SolarStoreVolume", "CollectorType", "ZeroLossEfficiency", "HeatLossRate", "LinearHeatLossCoefficient", "SecondOrderHeatLossCoefficient", "Orientation", "Overshading", "HasSolarPoweredPump", "IsSolarStoreCombinedCylinder", "CollectorLoopEfficiency", "IncidenceAngleModifier", "IsCommunitySolar", "ServiceProvision", "DataSource", "OverallHeatLoss"]
+}

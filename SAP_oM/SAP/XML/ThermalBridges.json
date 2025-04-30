@@ -1,0 +1,55 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/ThermalBridges.json",
+  "title" : "ThermalBridges",
+  "type" : ["object", "null"],
+  "properties" : {
+    "ThermalBridgeCode" : {
+      "type" : ["string", "null"],
+      "description" : "Code which indicates how the thermal bridge data has been recorded."
+    },
+    "UserDefinedYValue" : {
+      "type" : ["string", "null"],
+      "description" : "Global y-value for all thermal bridges in watts per square metre per kelvin; only if thermal bridge code is: user defined (global y-value)."
+    },
+    "CalculationReference" : {
+      "type" : ["string", "null"],
+      "description" : "Reference to the details of the calculation of the global y-value; only if thermal bridging is user defined global y-value."
+    },
+    "ThermalBridge" : {
+      "type" : ["array", "null"],
+      "description" : "Various measurements for each thermal bridge that makes up a particular Building-Part.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/ThermalBridge.json"
+      }
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SAP.XML.ThermalBridges"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["ThermalBridgeCode", "UserDefinedYValue", "CalculationReference", "ThermalBridge"]
+}

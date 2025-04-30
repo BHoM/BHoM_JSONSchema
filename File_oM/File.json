@@ -1,0 +1,47 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/File_oM/File.json",
+  "title" : "File",
+  "type" : ["object", "null"],
+  "description" : "File: A File. It can include the content of the File.",
+  "properties" : {
+    "Location" : {
+      "type" : ["string", "null"],
+      "description" : "Full path of parent location of the File. You can also specify a string path."
+    },
+    "Name" : {
+      "type" : ["string", "null"],
+      "description" : "Name of the file, INCLUDING Extension."
+    },
+    "Content" : {
+      "type" : ["array", "null"],
+      "description" : "The content of the file.",
+      "items" : { }
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.File.File"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Location", "Name", "Content"]
+}

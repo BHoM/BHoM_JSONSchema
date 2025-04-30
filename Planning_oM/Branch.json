@@ -1,0 +1,57 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Planning_oM/Branch.json",
+  "title" : "Branch",
+  "type" : ["object", "null"],
+  "properties" : {
+    "LastPusher" : {
+      "type" : ["string", "null"]
+    },
+    "Title" : {
+      "type" : ["string", "null"]
+    },
+    "RepoName" : {
+      "type" : ["string", "null"]
+    },
+    "Protected" : {
+      "type" : "boolean"
+    },
+    "LastCommitDate" : {
+      "type" : ["array", "null"],
+      "prefixItems" : [{
+          "type" : "integer"
+        }, {
+          "type" : "integer"
+        }],
+      "items" : false
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Planning.Branch"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["LastPusher", "Title", "RepoName", "Protected", "LastCommitDate"]
+}

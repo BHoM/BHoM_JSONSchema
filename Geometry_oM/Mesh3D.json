@@ -1,0 +1,54 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Mesh3D.json",
+  "title" : "Mesh3D",
+  "type" : ["object", "null"],
+  "description" : "Mesh3D: A polygon mesh, defined by a list of triangular or quadrilateral Faces, Cells and their Vertices.",
+  "properties" : {
+    "Vertices" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_v" : {
+          "type" : ["array", "null"],
+          "description" : "Defines the three-dimensional Mesh geometry as  X, Y, Z coordinates.",
+          "items" : {
+            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
+          }
+        }
+      }
+    },
+    "Faces" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_v" : {
+          "type" : ["array", "null"],
+          "description" : "The list of polygons, defined as corner Point indices referencing the list of Vertices.",
+          "items" : {
+            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Face.json"
+          }
+        }
+      }
+    },
+    "CellRelation" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_v" : {
+          "type" : ["array", "null"],
+          "description" : "A parallel list to the Faces, details the index of the cells which is behind and infront of each Face.",
+          "items" : {
+            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/CellRelation.json"
+          }
+        }
+      }
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Geometry.Mesh3D"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Vertices", "Faces", "CellRelation"]
+}

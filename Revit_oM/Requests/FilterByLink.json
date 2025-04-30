@@ -1,0 +1,26 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Requests/FilterByLink.json",
+  "title" : "FilterByLink",
+  "type" : ["object", "null"],
+  "description" : "FilterByLink: IRequest that filters all elements from a Revit link with given file name/path, Name parameter value or ElementId.",
+  "properties" : {
+    "LinkName" : {
+      "type" : ["string", "null"],
+      "description" : "Name of the link file (alternatively whole file path, Name parameter value or ElementId) to pull from, case insensitive."
+    },
+    "CaseSensitive" : {
+      "type" : "boolean",
+      "description" : "If true: only perfect, case sensitive text match will be accepted. If false: capitals and small letters will be treated as equal."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.Revit.Requests.FilterByLink"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["LinkName", "CaseSensitive"]
+}

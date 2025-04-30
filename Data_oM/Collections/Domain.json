@@ -1,0 +1,26 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Collections/Domain.json",
+  "title" : "Domain",
+  "type" : ["object", "null"],
+  "description" : "Domain: A numerical domain defined by a minimum and maximum value.",
+  "properties" : {
+    "Min" : {
+      "type" : "number",
+      "description" : "The lowest bound of the domain."
+    },
+    "Max" : {
+      "type" : "number",
+      "description" : "The highest bound of the domain."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Data.Collections.Domain"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Min", "Max"]
+}

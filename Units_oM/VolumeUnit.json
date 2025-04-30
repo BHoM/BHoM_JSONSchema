@@ -1,0 +1,32 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Units_oM/VolumeUnit.json",
+  "anyOf" : [{
+      "type" : ["string", "null"],
+      "enum" : ["Undefined", "AcreFoot", "AuTablespoon", "Centiliter", "CubicCentimeter", "CubicDecimeter", "CubicFoot", "CubicHectometer", "CubicInch", "CubicKilometer", "CubicMeter", "CubicMicrometer", "CubicMile", "CubicMillimeter", "CubicYard", "DecausGallon", "Deciliter", "DeciusGallon", "HectocubicFoot", "HectocubicMeter", "Hectoliter", "HectousGallon", "ImperialBeerBarrel", "ImperialGallon", "ImperialOunce", "ImperialPint", "KilocubicFoot", "KilocubicMeter", "KiloimperialGallon", "Kiloliter", "KilousGallon", "Liter", "MegacubicFoot", "MegaimperialGallon", "Megaliter", "MegausGallon", "MetricCup", "MetricTeaspoon", "Microliter", "Milliliter", "OilBarrel", "UkTablespoon", "UsBeerBarrel", "UsCustomaryCup", "UsGallon", "UsLegalCup", "UsOunce", "UsPint", "UsQuart", "UsTablespoon", "UsTeaspoon"]
+    }, {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : ["string", "null"],
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.Units.VolumeUnit"
+            }
+          }
+        },
+        "Value" : {
+          "type" : ["string", "null"],
+          "enum" : ["Undefined", "AcreFoot", "AuTablespoon", "Centiliter", "CubicCentimeter", "CubicDecimeter", "CubicFoot", "CubicHectometer", "CubicInch", "CubicKilometer", "CubicMeter", "CubicMicrometer", "CubicMile", "CubicMillimeter", "CubicYard", "DecausGallon", "Deciliter", "DeciusGallon", "HectocubicFoot", "HectocubicMeter", "Hectoliter", "HectousGallon", "ImperialBeerBarrel", "ImperialGallon", "ImperialOunce", "ImperialPint", "KilocubicFoot", "KilocubicMeter", "KiloimperialGallon", "Kiloliter", "KilousGallon", "Liter", "MegacubicFoot", "MegaimperialGallon", "Megaliter", "MegausGallon", "MetricCup", "MetricTeaspoon", "Microliter", "Milliliter", "OilBarrel", "UkTablespoon", "UsBeerBarrel", "UsCustomaryCup", "UsGallon", "UsLegalCup", "UsOunce", "UsPint", "UsQuart", "UsTablespoon", "UsTeaspoon"]
+        }
+      }
+    }]
+}

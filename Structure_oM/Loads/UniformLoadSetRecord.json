@@ -1,0 +1,45 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/UniformLoadSetRecord.json",
+  "title" : "UniformLoadSetRecord",
+  "type" : ["object", "null"],
+  "description" : "UniformLoadSetRecord: Definition of a single uniform load in the gravity direction (-Z), to be added to a UniformLoadSet.",
+  "properties" : {
+    "Name" : {
+      "type" : ["string", "null"],
+      "description" : "Description of the source of this load, such as: 'Partitions', 'Occupancy', or 'MEP & Ceiling'"
+    },
+    "Loadcase" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/Loadcase.json"
+    },
+    "Load" : {
+      "type" : "number",
+      "description" : "The magnitude of this load, generally to be applied as an AreaUniformLoad in the gravity direction (-Z) Property has a quantity of type Pressure meassured in [Pa]."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Structure.Loads.UniformLoadSetRecord"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Name", "Loadcase", "Load"]
+}

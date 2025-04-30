@@ -1,0 +1,32 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Units_oM/EnergyUnit.json",
+  "anyOf" : [{
+      "type" : ["string", "null"],
+      "enum" : ["Undefined", "BritishThermalUnit", "Joule", "KiloBritishThermalUnit", "Kilojoule", "KilowattHour", "MegaBritishThermalUnit", "Megajoule", "MegawattHour", "WattHour"]
+    }, {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : ["string", "null"],
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.Units.EnergyUnit"
+            }
+          }
+        },
+        "Value" : {
+          "type" : ["string", "null"],
+          "enum" : ["Undefined", "BritishThermalUnit", "Joule", "KiloBritishThermalUnit", "Kilojoule", "KilowattHour", "MegaBritishThermalUnit", "Megajoule", "MegawattHour", "WattHour"]
+        }
+      }
+    }]
+}

@@ -1,0 +1,37 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/PullGeometryConfig.json",
+  "title" : "PullGeometryConfig",
+  "type" : ["object", "null"],
+  "description" : "PullGeometryConfig: Configuration used to specify which geometry should be pulled and passed to RevitGeometry fragment.",
+  "properties" : {
+    "PullEdges" : {
+      "type" : "boolean",
+      "description" : "If true, edges of elements will be pulled and stored under Revit_edges in RevitGeometry fragment."
+    },
+    "PullSurfaces" : {
+      "type" : "boolean",
+      "description" : "If true, surfaces of elements will be pulled and stored under Revit_surfaces in RevitGeometry fragment."
+    },
+    "PullMeshes" : {
+      "type" : "boolean",
+      "description" : "If true, meshed surfaces of elements will be pulled and stored under Revit_meshes in RevitGeometry fragment."
+    },
+    "MeshDetailLevel" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Enums/DetailLevel.json"
+    },
+    "IncludeNonVisible" : {
+      "type" : "boolean",
+      "description" : "Invisible element parts will be pulled and passed to RevitGeometry fragment if true. PullEdges or PullSurfaces switched to true needed for this to activate."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.Revit.PullGeometryConfig"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["PullEdges", "PullSurfaces", "PullMeshes", "MeshDetailLevel", "IncludeNonVisible"]
+}

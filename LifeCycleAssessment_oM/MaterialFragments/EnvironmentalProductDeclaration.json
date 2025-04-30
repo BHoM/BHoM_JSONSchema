@@ -1,0 +1,50 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EnvironmentalProductDeclaration.json",
+  "title" : "EnvironmentalProductDeclaration",
+  "type" : ["object", "null"],
+  "description" : "EnvironmentalProductDeclaration: An Environmental Product Declaration or EPD is an independently verified and registered document that communicates transparent and comparable information about the life-cycle environmental impact of products in a credible way. \nMore information can be found on the Environdec website (environdec.com/all-about-epds0/all-about-epds.) \nAll EPDs within the BHoM have been provided for general use and are updated as frequently as possible, but by using any supplied EPDs you assume all responsibility for the data used on any applications. \nFor additional comments, questions, or feature requests, please visit the LifeCycleAssessment_Toolkit at github.com/BHoM/LifeCycleAssessment_Toolkit.",
+  "properties" : {
+    "Type" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/EPDType.json"
+    },
+    "EnvironmentalMetrics" : {
+      "type" : ["array", "null"],
+      "description" : "An Environmental Metric to describe the type and quantity of a specified metric. These metrics are used in all LCA calculations.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EnvironmentalMetric.json"
+      }
+    },
+    "QuantityType" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/QuantityType.json"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.EnvironmentalProductDeclaration"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Type", "EnvironmentalMetrics", "QuantityType"]
+}

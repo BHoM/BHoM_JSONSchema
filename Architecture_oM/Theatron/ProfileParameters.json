@@ -1,0 +1,69 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Architecture_oM/Theatron/ProfileParameters.json",
+  "title" : "ProfileParameters",
+  "type" : ["object", "null"],
+  "properties" : {
+    "StartX" : {
+      "type" : "number"
+    },
+    "StartZ" : {
+      "type" : "number"
+    },
+    "RowWidth" : {
+      "type" : "number"
+    },
+    "TargetCValue" : {
+      "type" : "number"
+    },
+    "NumRows" : {
+      "type" : "integer"
+    },
+    "SeatWidth" : {
+      "type" : "number"
+    },
+    "BoardHeight" : {
+      "type" : "number"
+    },
+    "RiserHeightRounding" : {
+      "type" : "number"
+    },
+    "VomitoryParameters" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Architecture_oM/Theatron/VomitoryParameters.json"
+    },
+    "SuperRiserParameters" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Architecture_oM/Theatron/SuperRiserParameters.json"
+    },
+    "EyePositionParameters" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Humans_oM/ViewQuality/EyePositionParameters.json"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Architecture.Theatron.ProfileParameters"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["StartX", "StartZ", "RowWidth", "TargetCValue", "NumRows", "SeatWidth", "BoardHeight", "RiserHeightRounding", "VomitoryParameters", "SuperRiserParameters", "EyePositionParameters"]
+}

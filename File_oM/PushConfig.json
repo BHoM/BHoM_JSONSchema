@@ -1,0 +1,45 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/File_oM/PushConfig.json",
+  "title" : "PushConfig",
+  "type" : ["object", "null"],
+  "description" : "PushConfig: Configurations specific for an Adapter Action (Push, Pull, etc).\nConsider that your tookit might have a more specific implementation available. Try to look for [your toolkit name]ActionConfig.",
+  "properties" : {
+    "UseDatasetSerialization" : {
+      "type" : "boolean",
+      "description" : "When serialising to JSON, use the Dataset serialization style.\nThis serializes the individual objects, and then concatenates the strings separating with a newline.\nThe obtained format is not valid JSON. You will need to deserialize each individual line.\nThis is the current standard for Datasets."
+    },
+    "SkipUnsupportedTypes" : {
+      "type" : "boolean",
+      "description" : "By default, certain types cannot be pushed to Json as root-level objects, for example numbers.\nSet this option to `true` to allow skipping those types."
+    },
+    "BeautifyJson" : {
+      "type" : "boolean",
+      "description" : "If true, beautify Json files for web display. Works only if UseDatasetSerialization is set to false."
+    },
+    "DisableWarnings" : {
+      "type" : "boolean",
+      "description" : "Keeps the warnings about Deletion off."
+    },
+    "WrapNonBHoMObjects" : {
+      "type" : "boolean",
+      "description" : "If true, the Push action wraps any non-BHoM type into a BH.oM.Adapter.ObjectWrapper, allowing them to make use of the full Adapter workflow."
+    },
+    "AllowHashForComparing" : {
+      "type" : "boolean",
+      "description" : "If true and if no specific EqualityComparer is found for the type, Diffing hashes are computed and used to compare the objects."
+    },
+    "DiffingConfig" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/DiffingConfig.json"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.File.PushConfig"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["UseDatasetSerialization", "SkipUnsupportedTypes", "BeautifyJson", "DisableWarnings"]
+}

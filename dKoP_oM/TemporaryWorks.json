@@ -1,0 +1,29 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/TemporaryWorks.json",
+  "title" : "TemporaryWorks",
+  "type" : ["object", "null"],
+  "properties" : {
+    "PreinstalledInternally" : {
+      "type" : "boolean"
+    },
+    "PreinstalledExternally" : {
+      "type" : "boolean"
+    },
+    "Number" : {
+      "type" : "integer"
+    },
+    "Returnable" : {
+      "type" : "boolean"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.dKoP.TemporaryWorks"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["PreinstalledInternally", "PreinstalledExternally", "Number", "Returnable"]
+}

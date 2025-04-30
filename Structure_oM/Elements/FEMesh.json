@@ -1,0 +1,54 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/FEMesh.json",
+  "title" : "FEMesh",
+  "type" : ["object", "null"],
+  "description" : "FEMesh: 2D finite element mesh for structural analysis. Defined by a list of nodes and faces.",
+  "properties" : {
+    "Nodes" : {
+      "type" : ["array", "null"],
+      "description" : "The nodes of the FEMesh. Mesh faces reference these nodes by their position in this list, so it is important to maintain the order.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Node.json"
+      }
+    },
+    "Faces" : {
+      "type" : ["array", "null"],
+      "description" : "The faces of the FEMesh. Each face contains a list of indices referring to the nodes in the node list it is connecting.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/FEMeshFace.json"
+      }
+    },
+    "Property" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/ISurfaceProperty.json"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Structure.Elements.FEMesh"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Nodes", "Faces", "Property"]
+}

@@ -1,0 +1,34 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Rhinoceros_oM/ViewCapture/IViewCaptureSettings.json",
+  "required" : ["_t"],
+  "properties" : {
+    "_t" : {
+      "enum" : ["BH.oM.Adapters.Rhinoceros.ViewCapture.ScaleViewCaptureSettings", "BH.oM.Adapters.Rhinoceros.ViewCapture.DimensionViewCaptureSettings"]
+    }
+  },
+  "allOf" : [{
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Adapters.Rhinoceros.ViewCapture.ScaleViewCaptureSettings"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Rhinoceros_oM/ViewCapture/ScaleViewCaptureSettings.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Adapters.Rhinoceros.ViewCapture.DimensionViewCaptureSettings"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Rhinoceros_oM/ViewCapture/DimensionViewCaptureSettings.json"
+      }
+    }]
+}

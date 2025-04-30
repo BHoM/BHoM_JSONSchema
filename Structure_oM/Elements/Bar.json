@@ -1,0 +1,62 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Bar.json",
+  "title" : "Bar",
+  "type" : ["object", "null"],
+  "description" : "Bar: 1D finite element for structural analysis. Linear 2-noded element defined by a start and end node.For structural conventions and orientation of the bar please see the documentation.",
+  "properties" : {
+    "Start" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Node.json"
+    },
+    "End" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Node.json"
+    },
+    "SectionProperty" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SectionProperties/ISectionProperty.json"
+    },
+    "OrientationAngle" : {
+      "type" : "number",
+      "description" : "Controls the local axis orientation of the bar \nFor non-vertical members the local z is aligned with the global Z and rotated with the orientation angle about the local x. \nFor vertical members the local y is aligned with the global Y and rotated with the orientation angle about the local x. \nA bar is vertical if its projected length to the horizontal plane is less than 0.0001, i.e. a tolerance of 0.1mm on verticality. \nFor general structural conventions please see the documentation. Property has a quantity of type Angle meassured in [rad]."
+    },
+    "Release" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Constraints/BarRelease.json"
+    },
+    "FEAType" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/BarFEAType.json"
+    },
+    "Support" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Constraints/Constraint4DOF.json"
+    },
+    "Offset" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Offsets/Offset.json"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Structure.Elements.Bar"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Start", "End", "SectionProperty", "OrientationAngle", "Release", "FEAType", "Support", "Offset"]
+}

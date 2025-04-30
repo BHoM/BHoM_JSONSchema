@@ -1,0 +1,88 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/SAPReport.json",
+  "title" : "SAPReport",
+  "type" : ["object", "null"],
+  "properties" : {
+    "SchemaVersionOriginal" : {
+      "type" : ["string", "null"],
+      "description" : "The schema version that the data conformed to when it was lodged."
+    },
+    "SchemaVersionCurrent" : {
+      "type" : ["string", "null"],
+      "description" : "The schema version that the data conformed to when it was lodged."
+    },
+    "SAPVersion" : {
+      "type" : ["string", "null"],
+      "description" : "SAP version that was used for the calculation."
+    },
+    "SAPDataVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Version of SAP that was used to define the input data for the calculation."
+    },
+    "PCDFRevisionNumber" : {
+      "type" : ["string", "null"],
+      "description" : "Revision Number of the PCDF file used for the calculations."
+    },
+    "CalculationSoftwareName" : {
+      "type" : ["string", "null"],
+      "description" : "Name of the software used to perform the SAP calculation."
+    },
+    "CalculationSoftwareVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Version of the software used to perform the SAP calculation."
+    },
+    "UserInterfaceName" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "UserInterfaceVersion" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "ReportHeader" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/ReportHeader.json"
+    },
+    "EnergyAssessment" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/EnergyAssessment.json"
+    },
+    "SAP10Data" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/SAP10Data.json"
+    },
+    "InsuranceDetails" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/InsuranceDetails.json"
+    },
+    "ExternalDefinitionsRevisionNumber" : {
+      "type" : ["string", "null"],
+      "description" : "A number indicating the version of related ExternalDefinitions."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SAP.XML.SAPReport"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["SchemaVersionOriginal", "SchemaVersionCurrent", "SAPVersion", "SAPDataVersion", "PCDFRevisionNumber", "CalculationSoftwareName", "CalculationSoftwareVersion", "UserInterfaceName", "UserInterfaceVersion", "ReportHeader", "EnergyAssessment", "SAP10Data", "InsuranceDetails", "ExternalDefinitionsRevisionNumber"]
+}

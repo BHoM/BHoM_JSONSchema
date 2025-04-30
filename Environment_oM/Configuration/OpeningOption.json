@@ -1,0 +1,52 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Configuration/OpeningOption.json",
+  "title" : "OpeningOption",
+  "type" : ["object", "null"],
+  "description" : "OpeningOption: Defines the design options for Openings.",
+  "properties" : {
+    "Height" : {
+      "type" : "number",
+      "description" : "Defines the height the opening should be. Property has a quantity of type Length meassured in [m]."
+    },
+    "Width" : {
+      "type" : "number",
+      "description" : "Defines the width the opening should be. Property has a quantity of type Length meassured in [m]."
+    },
+    "SillHeight" : {
+      "type" : "number",
+      "description" : "The distance between the base of the panel and the bottom of the opening. Property has a quantity of type Length meassured in [m]."
+    },
+    "Type" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Elements/OpeningType.json"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.Configuration.OpeningOption"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Height", "Width", "SillHeight", "Type"]
+}

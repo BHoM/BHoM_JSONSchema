@@ -1,0 +1,101 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Inspection_oM/Issue.json",
+  "title" : "Issue",
+  "type" : ["object", "null"],
+  "description" : "Issue: An issue belonging to an audit",
+  "properties" : {
+    "IssueNumber" : {
+      "type" : ["string", "null"],
+      "description" : "Issue number to identify this specific issue. This is typically a combination of the audit number and the issue number within its audit."
+    },
+    "DateCreated" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "$date" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "DateClosed" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "$date" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "Priority" : {
+      "type" : ["string", "null"],
+      "description" : "Priority tag to better categorize your issue  identifying its urgency"
+    },
+    "Status" : {
+      "type" : ["string", "null"],
+      "description" : "Status description of the issue (eg open, in progress, closed)"
+    },
+    "Assign" : {
+      "type" : ["array", "null"],
+      "description" : "A list of assignees for the issue. These are the individuals / companies responsible for resolving the issue.",
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "Type" : {
+      "type" : ["string", "null"],
+      "description" : "Issue type (eg For Information)"
+    },
+    "Description" : {
+      "type" : ["string", "null"],
+      "description" : "The scope and nature of the issue"
+    },
+    "Media" : {
+      "type" : ["array", "null"],
+      "description" : "Filenames of the images associated with the issue.These must include the file extension.",
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "Position" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
+    },
+    "Comments" : {
+      "type" : ["array", "null"],
+      "description" : "List of comments made on the issue, identifying either the nature of the issue, the actions being taken to resolve the issue, or the approval / rejection of actions taken.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Inspection_oM/Comment.json"
+      }
+    },
+    "AuditID" : {
+      "type" : ["string", "null"],
+      "description" : "Unique ID of Audit the Issue was originally recorded within."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Inspection.Issue"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["IssueNumber", "DateCreated", "DateClosed", "Priority", "Status", "Assign", "Type", "Description", "Media", "Position", "Comments", "AuditID"]
+}

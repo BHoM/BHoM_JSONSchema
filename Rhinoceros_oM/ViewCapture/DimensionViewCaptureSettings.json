@@ -1,0 +1,52 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Rhinoceros_oM/ViewCapture/DimensionViewCaptureSettings.json",
+  "title" : "DimensionViewCaptureSettings",
+  "type" : ["object", "null"],
+  "description" : "DimensionViewCaptureSettings: View capture settings class with control over the final size of the image in pixels.",
+  "properties" : {
+    "Width" : {
+      "type" : "integer",
+      "description" : "Width (in pixels) of the final image."
+    },
+    "Height" : {
+      "type" : "integer",
+      "description" : "Height (in pixels) of the final image."
+    },
+    "FileFormat" : {
+      "type" : ["string", "null"],
+      "description" : "File format to be used. Defaults to png."
+    },
+    "ScaleScreenItems" : {
+      "type" : "boolean"
+    },
+    "DrawAxes" : {
+      "type" : "boolean",
+      "description" : "Controls if the world axes should be captured or not."
+    },
+    "DrawGrid" : {
+      "type" : "boolean",
+      "description" : "Controls if the grid should be captured or not."
+    },
+    "DrawGridAxes" : {
+      "type" : "boolean",
+      "description" : "Controls if the grid axes should be captured or not."
+    },
+    "TransparentBackground" : {
+      "type" : "boolean",
+      "description" : "Controls if the background should be transparent."
+    },
+    "Preview" : {
+      "type" : "boolean"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.Rhinoceros.ViewCapture.DimensionViewCaptureSettings"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Width", "Height", "FileFormat", "ScaleScreenItems", "DrawAxes", "DrawGrid", "DrawGridAxes", "TransparentBackground", "Preview"]
+}

@@ -1,0 +1,154 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/PropertySummary.json",
+  "title" : "PropertySummary",
+  "type" : ["object", "null"],
+  "properties" : {
+    "Walls" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/PropertySummaryType.json"
+    },
+    "Roof" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/PropertySummaryType.json"
+    },
+    "Floor" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/PropertySummaryType.json"
+    },
+    "Windows" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/PropertySummaryType.json"
+    },
+    "MainHeating" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/PropertySummaryType.json"
+    },
+    "MainHeatingControls" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/PropertySummaryType.json"
+    },
+    "SecondaryHeating" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/PropertySummaryType.json"
+    },
+    "HotWater" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/PropertySummaryType.json"
+    },
+    "Lighting" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/PropertySummaryType.json"
+    },
+    "AirTightness" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/PropertySummaryType.json"
+    },
+    "HasFixedAirConditioning" : {
+      "type" : ["object", "null"],
+      "description" : ".",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "HasHotWaterCylinder" : {
+      "type" : ["object", "null"],
+      "description" : ".",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "HasHeatedSeparateConservatory" : {
+      "type" : ["object", "null"],
+      "description" : ".",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "DwellingType" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "TotalFloorArea" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "MultipleGlazedPercentage" : {
+      "type" : ["string", "null"],
+      "description" : "Fraction of windows that are multiply glazed to nearest 1%."
+    },
+    "MultipleGlazedPercentageNR" : {
+      "type" : ["string", "null"],
+      "description" : "For backward compatibility only, do not use."
+    },
+    "IsZeroCarbonHome" : {
+      "type" : ["object", "null"],
+      "description" : "Is dwelling a Zero Carbon Home?.",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SAP.XML.PropertySummary"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Walls", "Roof", "Floor", "Windows", "MainHeating", "MainHeatingControls", "SecondaryHeating", "HotWater", "Lighting", "AirTightness", "HasFixedAirConditioning", "HasHotWaterCylinder", "HasHeatedSeparateConservatory", "DwellingType", "TotalFloorArea", "MultipleGlazedPercentage", "MultipleGlazedPercentageNR", "IsZeroCarbonHome"]
+}

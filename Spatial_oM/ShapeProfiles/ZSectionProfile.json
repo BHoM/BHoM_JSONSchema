@@ -1,0 +1,66 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/ZSectionProfile.json",
+  "title" : "ZSectionProfile",
+  "type" : ["object", "null"],
+  "properties" : {
+    "Shape" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/ShapeType.json"
+    },
+    "Height" : {
+      "type" : "number"
+    },
+    "FlangeWidth" : {
+      "type" : "number"
+    },
+    "WebThickness" : {
+      "type" : "number"
+    },
+    "FlangeThickness" : {
+      "type" : "number"
+    },
+    "RootRadius" : {
+      "type" : "number"
+    },
+    "ToeRadius" : {
+      "type" : "number"
+    },
+    "MirrorAboutLocalZ" : {
+      "type" : "boolean"
+    },
+    "Edges" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ICurve.json"
+      }
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Spatial.ShapeProfiles.ZSectionProfile"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Shape", "Height", "FlangeWidth", "WebThickness", "FlangeThickness", "RootRadius", "ToeRadius", "MirrorAboutLocalZ", "Edges"]
+}

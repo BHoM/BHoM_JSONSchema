@@ -1,0 +1,24 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/Elements/InsertionPoint.json",
+  "title" : "InsertionPoint",
+  "type" : ["object", "null"],
+  "properties" : {
+    "BarInsertionPoint" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/BarInsertionPoint.json"
+    },
+    "ModifyStiffness" : {
+      "type" : "boolean",
+      "description" : "Transform frame stiffness for offsets from centroid for non-P/T floors"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.ETABS.Elements.InsertionPoint"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["BarInsertionPoint", "ModifyStiffness"]
+}

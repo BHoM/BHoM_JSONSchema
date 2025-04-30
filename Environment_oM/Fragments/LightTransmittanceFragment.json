@@ -1,0 +1,27 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Fragments/LightTransmittanceFragment.json",
+  "title" : "LightTransmittanceFragment",
+  "type" : ["object", "null"],
+  "description" : "LightTransmittanceFragment: Fragment containing red, green, and blue light transmittance property",
+  "properties" : {
+    "RedTransmittance" : {
+      "type" : "number"
+    },
+    "GreenTransmittance" : {
+      "type" : "number"
+    },
+    "BlueTransmittance" : {
+      "type" : "number"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.Fragments.LightTransmittanceFragment"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["RedTransmittance", "GreenTransmittance", "BlueTransmittance"]
+}

@@ -1,0 +1,26 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/ComparisonInclusion.json",
+  "title" : "ComparisonInclusion",
+  "type" : ["object", "null"],
+  "description" : "ComparisonInclusion: Information about how an object's property should be included or not in a comparison (i.e. when computing an object's Hash or Diffing).A ComparisonInclusion object is returned by the extension method of the same name (which is invoked automatically when Hashing or Diffing).The ComparisonInclusion() method can be implemented in specific Toolkits/namespaces to customise the comparison (i.e. with Toolkit-specific information which would be otherwise unavailable to the base Hash/Diffing).See the wiki for examples of this.",
+  "properties" : {
+    "Include" : {
+      "type" : "boolean",
+      "description" : "Whether the current property should be included or not in the comparison (i.e. Hash or Diffing)."
+    },
+    "DisplayName" : {
+      "type" : ["string", "null"],
+      "description" : "A custom DisplayName can be set so changes detected will be displayed with this name instead of the default Property Name."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Base.ComparisonInclusion"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Include", "DisplayName"]
+}

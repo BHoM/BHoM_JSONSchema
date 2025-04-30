@@ -1,0 +1,32 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/HeatPlotCommand.json",
+  "title" : "HeatPlotCommand",
+  "type" : ["object", "null"],
+  "description" : "HeatPlotCommand: Command that, when executed with the LadybugToolsAdapter, produces a heatmap from data in an epw file.\nOutput is a string of either the path to the image (if OutputLocation is not set) or the base 64 string representation of it.",
+  "properties" : {
+    "EPWFile" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/FileSettings.json"
+    },
+    "EPWKey" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/EPWKey.json"
+    },
+    "ColourMap" : {
+      "type" : ["string", "null"],
+      "description" : "A Matplotlib colour map. Corresponds to the 'cmap' parameter of plot methods. See https://matplotlib.org/stable/users/explain/colors/colormaps.html for examples of valid keys. Default of 'viridis'."
+    },
+    "OutputLocation" : {
+      "type" : ["string", "null"],
+      "description" : "Full file path (with file name) to save the plot to. Leave blank to output a base 64 string representation of the image instead."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.LadybugTools.HeatPlotCommand"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["EPWFile", "EPWKey", "ColourMap", "OutputLocation"]
+}

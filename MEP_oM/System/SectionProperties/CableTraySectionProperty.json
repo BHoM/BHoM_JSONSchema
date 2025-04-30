@@ -1,0 +1,50 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/SectionProperties/CableTraySectionProperty.json",
+  "title" : "CableTraySectionProperty",
+  "type" : ["object", "null"],
+  "properties" : {
+    "Material" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Materials/Material.json"
+    },
+    "SectionProfile" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/SectionProperties/SectionProfile.json"
+    },
+    "ElementSolidArea" : {
+      "type" : "number",
+      "description" : "This area takes the element's thickness into account to determine the actual area of the 'solid' portion of the ShapeProfile."
+    },
+    "ElementVoidArea" : {
+      "type" : "number",
+      "description" : "The interior area within the element's shapeProfile. This corresponds to the actual open area less any material thickness."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.MEP.System.SectionProperties.CableTraySectionProperty"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Material", "SectionProfile", "ElementSolidArea", "ElementVoidArea"]
+}

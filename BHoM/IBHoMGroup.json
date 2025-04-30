@@ -1,0 +1,22 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/IBHoMGroup.json",
+  "required" : ["_t"],
+  "properties" : {
+    "_t" : {
+      "pattern" : "^BH\\.oM\\.Base\\.BHoMGroup`1\\[\\[.*\\]\\]$"
+    }
+  },
+  "allOf" : [{
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "pattern" : "^BH\\.oM\\.Base\\.BHoMGroup`1\\[\\[.*\\]\\]$"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/BHoMGroup`1.json"
+      }
+    }]
+}

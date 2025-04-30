@@ -1,0 +1,84 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/GBXML/RoundingSettings.json",
+  "title" : "RoundingSettings",
+  "type" : ["object", "null"],
+  "properties" : {
+    "GeometricPoints" : {
+      "type" : "integer",
+      "description" : "Define the number of decimal points to round the geometry coordinates to. Defaults is 4"
+    },
+    "BuildingLocation" : {
+      "type" : "integer",
+      "description" : "Define the number of decimal points to round the Building Location data to. Default is 5"
+    },
+    "LayerThickness" : {
+      "type" : "integer",
+      "description" : "Define the number of decimal points to round the Layer Thickness to. Default is 4"
+    },
+    "MaterialConductivity" : {
+      "type" : "integer",
+      "description" : "Define the number of decimal points to round the Material Conductivity to. Default is 3"
+    },
+    "MaterialDensity" : {
+      "type" : "integer",
+      "description" : "Define the number of decimal points to round the Material Density to. Default is 3"
+    },
+    "MaterialReflectance" : {
+      "type" : "integer",
+      "description" : "Define the number of decimal points to round the Material Reflectance to. This is both Solar and Light Reflectance. Default is 3"
+    },
+    "MaterialTransmittance" : {
+      "type" : "integer",
+      "description" : "Define the number of decimal points to round the Material Transmittance to. This is both Solar and Light Transmittance. Default is 3"
+    },
+    "MaterialEmittance" : {
+      "type" : "integer",
+      "description" : "Define the number of decimal points to round the Material Emittance to. Default is 3"
+    },
+    "GeometryWidth" : {
+      "type" : "integer",
+      "description" : "Define the number of decimal points to round the Width of geometry to. Default is 3"
+    },
+    "GeometryHeight" : {
+      "type" : "integer",
+      "description" : "Define the number of decimal points to round the Height of geometry to. Default is 3"
+    },
+    "GeometryAzimuth" : {
+      "type" : "integer",
+      "description" : "Define the number of decimal places to round the Azimuth of geometry to. Default is 3"
+    },
+    "GeometryTilt" : {
+      "type" : "integer",
+      "description" : "Define the number of decimal points to round the Tilt of geometry to. Default is 3"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.XML.GBXML.RoundingSettings"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["GeometricPoints", "BuildingLocation", "LayerThickness", "MaterialConductivity", "MaterialDensity", "MaterialReflectance", "MaterialTransmittance", "MaterialEmittance", "GeometryWidth", "GeometryHeight", "GeometryAzimuth", "GeometryTilt"]
+}

@@ -1,0 +1,34 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Reporting/NumberConditionReportingConfig.json",
+  "title" : "NumberConditionReportingConfig",
+  "type" : ["object", "null"],
+  "description" : "NumberConditionReportingConfig: Config object containing settings for reporting results of checks against numerical value conditions.",
+  "properties" : {
+    "UnitLabel" : {
+      "type" : ["string", "null"],
+      "description" : "Text to be used as a label for units expressing the extracted value."
+    },
+    "ValueMultiplier" : {
+      "type" : "number",
+      "description" : "Multiplier to be applied to the extracted value prior to reporting."
+    },
+    "RoundingAccuracy" : {
+      "type" : "number",
+      "description" : "Rounding accuracy to be used when reporting the extracted value."
+    },
+    "ValueSourceLabelOverride" : {
+      "type" : ["string", "null"],
+      "description" : "Override text to be used as a label for value source."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Verification.Reporting.NumberConditionReportingConfig"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["UnitLabel", "ValueMultiplier", "RoundingAccuracy"]
+}

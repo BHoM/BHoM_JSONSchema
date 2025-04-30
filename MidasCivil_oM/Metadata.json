@@ -1,0 +1,95 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MidasCivil_oM/Metadata.json",
+  "title" : "Metadata",
+  "type" : ["object", "null"],
+  "properties" : {
+    "ProjectNumber" : {
+      "type" : ["string", "null"],
+      "description" : "Defines the project number of the project."
+    },
+    "ProjectName" : {
+      "type" : ["string", "null"],
+      "description" : "Defines the name of the project."
+    },
+    "Location" : {
+      "type" : ["string", "null"],
+      "description" : "Defines the location of the project."
+    },
+    "Client" : {
+      "type" : ["string", "null"],
+      "description" : "Defines the client of the project."
+    },
+    "DesignStage" : {
+      "type" : ["string", "null"],
+      "description" : "Defines the design stage of the project."
+    },
+    "ProjectLead" : {
+      "type" : ["string", "null"],
+      "description" : "Defines the project lead for the project."
+    },
+    "Revision" : {
+      "type" : ["string", "null"],
+      "description" : "Defines the revision number of the model."
+    },
+    "Author" : {
+      "type" : ["string", "null"],
+      "description" : "Defines the author of the model."
+    },
+    "CreationDate" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "$date" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "Email" : {
+      "type" : ["string", "null"],
+      "description" : "Defines the project email address."
+    },
+    "Description" : {
+      "type" : ["string", "null"],
+      "description" : "A short description of the project and model."
+    },
+    "Discipline" : {
+      "type" : ["string", "null"],
+      "description" : "The discipline responsible for the model."
+    },
+    "Reviews" : {
+      "type" : ["array", "null"],
+      "description" : "A list of reviews containing reviewers, their comments and the date of review.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MidasCivil_oM/Review.json"
+      }
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.MidasCivil.Metadata"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["ProjectNumber", "ProjectName", "Location", "Client", "DesignStage", "ProjectLead", "Revision", "Author", "CreationDate", "Email", "Description", "Discipline", "Reviews"]
+}

@@ -1,0 +1,48 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Rhinoceros_oM/ViewCapture/ScaleViewCaptureSettings.json",
+  "title" : "ScaleViewCaptureSettings",
+  "type" : ["object", "null"],
+  "description" : "ScaleViewCaptureSettings: View capture settings allowing the size of the image to be controled as a scale of the current viewport size.",
+  "properties" : {
+    "Scale" : {
+      "type" : "number",
+      "description" : "Scale factor of the current preview. A factor of 2 gives a resolution twice to the current viewport resolution."
+    },
+    "FileFormat" : {
+      "type" : ["string", "null"],
+      "description" : "File format to be used. Defaults to png."
+    },
+    "ScaleScreenItems" : {
+      "type" : "boolean"
+    },
+    "DrawAxes" : {
+      "type" : "boolean",
+      "description" : "Controls if the world axes should be captured or not."
+    },
+    "DrawGrid" : {
+      "type" : "boolean",
+      "description" : "Controls if the grid should be captured or not."
+    },
+    "DrawGridAxes" : {
+      "type" : "boolean",
+      "description" : "Controls if the grid axes should be captured or not."
+    },
+    "TransparentBackground" : {
+      "type" : "boolean",
+      "description" : "Controls if the background should be transparent."
+    },
+    "Preview" : {
+      "type" : "boolean"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.Rhinoceros.ViewCapture.ScaleViewCaptureSettings"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Scale", "FileFormat", "ScaleScreenItems", "DrawAxes", "DrawGrid", "DrawGridAxes", "TransparentBackground", "Preview"]
+}

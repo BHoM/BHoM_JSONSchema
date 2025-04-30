@@ -1,0 +1,4 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Results/IEnergyResult.json",
+  "required" : ["_t"]
+}

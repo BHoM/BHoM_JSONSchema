@@ -1,0 +1,32 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/DeepLearning_oM/InterpolationMethod.json",
+  "anyOf" : [{
+      "type" : ["string", "null"],
+      "enum" : ["Nearest", "Bilinear", "Bicubic", "Area", "Lanczos"]
+    }, {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : ["string", "null"],
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.DeepLearning.InterpolationMethod"
+            }
+          }
+        },
+        "Value" : {
+          "type" : ["string", "null"],
+          "enum" : ["Nearest", "Bilinear", "Bicubic", "Area", "Lanczos"]
+        }
+      }
+    }]
+}

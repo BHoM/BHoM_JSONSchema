@@ -1,0 +1,35 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/Delivery.json",
+  "title" : "Delivery",
+  "type" : ["object", "null"],
+  "properties" : {
+    "Standalone" : {
+      "type" : "boolean"
+    },
+    "Palleted" : {
+      "type" : "boolean"
+    },
+    "NumberPerPallet" : {
+      "type" : "integer"
+    },
+    "TransportDimensions" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/TransportDimensions.json"
+    },
+    "Stackable" : {
+      "type" : "boolean"
+    },
+    "MaxNumberstacked" : {
+      "type" : "integer"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.dKoP.Delivery"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Standalone", "Palleted", "NumberPerPallet", "TransportDimensions", "Stackable", "MaxNumberstacked"]
+}

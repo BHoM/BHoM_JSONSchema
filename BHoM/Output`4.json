@@ -1,0 +1,21 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Output`4.json",
+  "title" : "Output`4",
+  "type" : ["object", "null"],
+  "properties" : {
+    "Item1" : { },
+    "Item2" : { },
+    "Item3" : { },
+    "Item4" : { },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "pattern" : "^BH\\.oM\\.Base\\.Output`4\\[\\[.*\\]\\]$"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Item1", "Item2", "Item3", "Item4"]
+}

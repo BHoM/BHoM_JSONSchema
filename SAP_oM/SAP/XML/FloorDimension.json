@@ -1,0 +1,73 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/FloorDimension.json",
+  "title" : "FloorDimension",
+  "type" : ["object", "null"],
+  "properties" : {
+    "Name" : {
+      "type" : ["string", "null"],
+      "description" : "A name describing the floor dimensioned."
+    },
+    "Description" : {
+      "type" : ["string", "null"],
+      "description" : "Descriptive notes about the floor."
+    },
+    "Type" : {
+      "type" : ["string", "null"],
+      "description" : "Type of floor (exposure)."
+    },
+    "Storey" : {
+      "type" : ["string", "null"],
+      "description" : "Building storey on which the floor is located."
+    },
+    "StoreyHeight" : {
+      "type" : ["string", "null"],
+      "description" : "Average height of the storey in metres."
+    },
+    "Area" : {
+      "type" : "number",
+      "description" : "The total floor area of the storey in square metres."
+    },
+    "UValue" : {
+      "type" : ["string", "null"],
+      "description" : "Heat loss floor U-value."
+    },
+    "HeatLossArea" : {
+      "type" : ["string", "null"],
+      "description" : "The estimated total heat loss area for the floor in square metres."
+    },
+    "KappaValue" : {
+      "type" : ["string", "null"],
+      "description" : "Heat capacity of floor per unit area in kJ/m�K."
+    },
+    "KappaValueFromBelow" : {
+      "type" : ["string", "null"],
+      "description" : "Heat capacity of ceiling below.  Applies to the non-heat-loss area of an upper floor."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SAP.XML.FloorDimension"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Name", "Description", "Type", "Storey", "StoreyHeight", "Area", "UValue", "HeatLossArea", "KappaValue", "KappaValueFromBelow"]
+}

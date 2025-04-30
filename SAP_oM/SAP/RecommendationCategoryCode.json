@@ -1,0 +1,32 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/RecommendationCategoryCode.json",
+  "anyOf" : [{
+      "type" : ["string", "null"],
+      "enum" : ["LowerCostThisIsForBackwardsCompatibilityOnlyAndShouldNotBeUsed", "HigherCostThisIsForBackwardsCompatibilityOnlyAndShouldNotBeUsed", "FurtherMeasureThisIsForBackwardsCompatibilityOnlyAndShouldNotBeUsed", "Deselected_ThisIsForBackwardsCompatibilityOnlyAndShouldNotBeUsed", "NormalMeasure", "AlternativeMeasure"]
+    }, {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : ["string", "null"],
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.Environment.SAP.RecommendationCategoryCode"
+            }
+          }
+        },
+        "Value" : {
+          "type" : ["string", "null"],
+          "enum" : ["LowerCostThisIsForBackwardsCompatibilityOnlyAndShouldNotBeUsed", "HigherCostThisIsForBackwardsCompatibilityOnlyAndShouldNotBeUsed", "FurtherMeasureThisIsForBackwardsCompatibilityOnlyAndShouldNotBeUsed", "Deselected_ThisIsForBackwardsCompatibilityOnlyAndShouldNotBeUsed", "NormalMeasure", "AlternativeMeasure"]
+        }
+      }
+    }]
+}

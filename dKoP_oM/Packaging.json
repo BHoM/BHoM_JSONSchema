@@ -1,0 +1,23 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/Packaging.json",
+  "title" : "Packaging",
+  "type" : ["object", "null"],
+  "properties" : {
+    "Waste" : {
+      "type" : ["string", "null"]
+    },
+    "ReturnablePackaging" : {
+      "type" : "boolean"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.dKoP.Packaging"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Waste", "ReturnablePackaging"]
+}

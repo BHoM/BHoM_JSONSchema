@@ -1,0 +1,92 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoMAnalytics_oM/UsageEntry.json",
+  "title" : "UsageEntry",
+  "type" : ["object", "null"],
+  "properties" : {
+    "StartTime" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "$date" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "EndTime" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "$date" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "UI" : {
+      "type" : ["string", "null"]
+    },
+    "UiVersion" : {
+      "type" : ["string", "null"]
+    },
+    "CallerName" : {
+      "type" : ["string", "null"]
+    },
+    "SelectedItem" : { },
+    "Computer" : {
+      "type" : ["string", "null"]
+    },
+    "Username" : {
+      "type" : ["string", "null"]
+    },
+    "BHoMVersion" : {
+      "type" : ["string", "null"]
+    },
+    "FileId" : {
+      "type" : ["string", "null"]
+    },
+    "FileName" : {
+      "type" : ["string", "null"]
+    },
+    "ProjectID" : {
+      "type" : ["string", "null"]
+    },
+    "NbCallingComponents" : {
+      "type" : "integer"
+    },
+    "TotalNbCalls" : {
+      "type" : "integer"
+    },
+    "Errors" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Debugging/Event.json"
+      }
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.BHoMAnalytics.UsageEntry"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["StartTime", "EndTime", "UI", "UiVersion", "CallerName", "SelectedItem", "Computer", "Username", "BHoMVersion", "FileId", "FileName", "ProjectID", "NbCallingComponents", "TotalNbCalls", "Errors"]
+}

@@ -1,0 +1,32 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/ShapeType.json",
+  "anyOf" : [{
+      "type" : ["string", "null"],
+      "enum" : ["Rectangle", "Box", "Angle", "ISection", "Tee", "Channel", "Tube", "Circle", "Zed", "FreeForm", "DoubleAngle", "DoubleISection", "DoubleChannel", "Cable"]
+    }, {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : ["string", "null"],
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.Spatial.ShapeProfiles.ShapeType"
+            }
+          }
+        },
+        "Value" : {
+          "type" : ["string", "null"],
+          "enum" : ["Rectangle", "Box", "Angle", "ISection", "Tee", "Channel", "Tube", "Circle", "Zed", "FreeForm", "DoubleAngle", "DoubleISection", "DoubleChannel", "Cable"]
+        }
+      }
+    }]
+}

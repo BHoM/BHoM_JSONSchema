@@ -1,0 +1,32 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/TypeOfGlazing.json",
+  "anyOf" : [{
+      "type" : ["string", "null"],
+      "enum" : ["NotAppicable", "Single", "Double", "DoubleLowEHard02", "DoubleLowEHard015", "DoubleLowESoft01", "DoubleLowESoft005", "Triple", "TripleLowEHard02", "TripleLowEHard015", "TripleLowESoft01", "TripleLowESoft005", "SecondaryGlazing"]
+    }, {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : ["string", "null"],
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.Environment.SAP.TypeOfGlazing"
+            }
+          }
+        },
+        "Value" : {
+          "type" : ["string", "null"],
+          "enum" : ["NotAppicable", "Single", "Double", "DoubleLowEHard02", "DoubleLowEHard015", "DoubleLowESoft01", "DoubleLowESoft005", "Triple", "TripleLowEHard02", "TripleLowEHard015", "TripleLowESoft01", "TripleLowESoft005", "SecondaryGlazing"]
+        }
+      }
+    }]
+}

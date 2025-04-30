@@ -1,0 +1,30 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json",
+  "title" : "Point",
+  "type" : ["object", "null"],
+  "description" : "Point: Defines a dimensionless location in three-dimensional space.",
+  "properties" : {
+    "X" : {
+      "type" : "number",
+      "description" : "Position along global X coordinate axis."
+    },
+    "Y" : {
+      "type" : "number",
+      "description" : "Position along global Y coordinate axis."
+    },
+    "Z" : {
+      "type" : "number",
+      "description" : "Position along global Z coordinate axis."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Geometry.Point"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["X", "Y", "Z"]
+}

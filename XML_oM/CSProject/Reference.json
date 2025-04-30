@@ -1,0 +1,48 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/CSProject/Reference.json",
+  "title" : "Reference",
+  "type" : ["object", "null"],
+  "properties" : {
+    "IncludeName" : {
+      "type" : ["string", "null"]
+    },
+    "HintPath" : {
+      "type" : ["string", "null"]
+    },
+    "IsCopyLocal" : {
+      "type" : ["string", "null"]
+    },
+    "SpecificVersion" : {
+      "type" : ["string", "null"]
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.XML.CSProject.Reference"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["IncludeName", "HintPath", "IsCopyLocal", "SpecificVersion"]
+}

@@ -1,0 +1,61 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/BluebeamConfig.json",
+  "title" : "BluebeamConfig",
+  "type" : ["object", "null"],
+  "description" : "BluebeamConfig: Set up configuration settings for pulling from Bluebeam SAP markups.",
+  "properties" : {
+    "OpeningLayerName" : {
+      "type" : ["string", "null"],
+      "description" : "What is the layer name used in the Bluebeam SAP markups to define openings."
+    },
+    "WallLayerName" : {
+      "type" : ["string", "null"],
+      "description" : "What is the layer name used in the Bluebeam SAP markups to define walls (external or internal)."
+    },
+    "RoofLayerName" : {
+      "type" : ["string", "null"],
+      "description" : "What is the layer name used in the Bluebeam SAP markups to define roofs."
+    },
+    "FloorLayerName" : {
+      "type" : ["string", "null"],
+      "description" : "What is the layer name used in the Bluebeam SAP markups to define floor areas."
+    },
+    "ThermalBridgeLayerName" : {
+      "type" : ["string", "null"],
+      "description" : "What is the layer name used in the Bluebeam SAP markups to define thermal bridging."
+    },
+    "LivingAreaLayerName" : {
+      "type" : ["string", "null"],
+      "description" : "What is the layer name used in the Bluebeam SAP markups to define living zones."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SAP.BluebeamConfig"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["OpeningLayerName", "WallLayerName", "RoofLayerName", "FloorLayerName", "ThermalBridgeLayerName", "LivingAreaLayerName"]
+}

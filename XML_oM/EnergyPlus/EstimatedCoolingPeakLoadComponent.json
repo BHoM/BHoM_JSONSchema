@@ -1,0 +1,54 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/EnergyPlus/EstimatedCoolingPeakLoadComponent.json",
+  "title" : "EstimatedCoolingPeakLoadComponent",
+  "type" : ["object", "null"],
+  "properties" : {
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "SensibleInstant" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/EnergyPlus/SensibleInstant.json"
+    },
+    "SensibleDelayed" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/EnergyPlus/SensibleDelayed.json"
+    },
+    "SensibleReturnAir" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/EnergyPlus/SensibleReturnAir.json"
+    },
+    "Latent" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/EnergyPlus/Latent.json"
+    },
+    "Total" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/EnergyPlus/Total.json"
+    },
+    "GrandTotal" : {
+      "type" : "number"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.XML.EnergyPlus.EstimatedCoolingPeakLoadComponent"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Name", "SensibleInstant", "SensibleDelayed", "SensibleReturnAir", "Latent", "Total", "GrandTotal"]
+}

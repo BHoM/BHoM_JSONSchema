@@ -1,0 +1,77 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Excel_oM/WorkbookProperties.json",
+  "title" : "WorkbookProperties",
+  "type" : ["object", "null"],
+  "description" : "WorkbookProperties: Object representing the meta information of the workbook.",
+  "properties" : {
+    "Author" : {
+      "type" : ["string", "null"],
+      "description" : "Author of the workbook."
+    },
+    "Title" : {
+      "type" : ["string", "null"],
+      "description" : "Title of the workbook."
+    },
+    "Subject" : {
+      "type" : ["string", "null"],
+      "description" : "Subject of the workbook."
+    },
+    "Category" : {
+      "type" : ["string", "null"],
+      "description" : "Category of the workbook."
+    },
+    "Keywords" : {
+      "type" : ["string", "null"],
+      "description" : "Keywords related to the workbook."
+    },
+    "Comments" : {
+      "type" : ["string", "null"],
+      "description" : "Comments applied to the workbook."
+    },
+    "Status" : {
+      "type" : ["string", "null"],
+      "description" : "Status of the workbook."
+    },
+    "LastModifiedBy" : {
+      "type" : ["string", "null"],
+      "description" : "Last user that modified the workbook."
+    },
+    "Company" : {
+      "type" : ["string", "null"],
+      "description" : "Company of the last user that modified the workbook."
+    },
+    "Manager" : {
+      "type" : ["string", "null"],
+      "description" : "Manager of the last user that modified the workbook."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.Excel.WorkbookProperties"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Author", "Title", "Subject", "Category", "Keywords", "Comments", "Status", "LastModifiedBy", "Company", "Manager"]
+}

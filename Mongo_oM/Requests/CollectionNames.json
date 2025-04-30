@@ -1,0 +1,6 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Mongo_oM/Requests/CollectionNames.json",
+  "title" : "CollectionNames",
+  "type" : ["object", "null"],
+  "description" : "CollectionNames: Request that gets the name of all collections in a Mongo database."
+}

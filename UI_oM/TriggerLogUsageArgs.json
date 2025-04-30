@@ -1,0 +1,40 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/UI_oM/TriggerLogUsageArgs.json",
+  "title" : "TriggerLogUsageArgs",
+  "type" : ["object", "null"],
+  "properties" : {
+    "SelectedItem" : { },
+    "CallerName" : {
+      "type" : ["string", "null"]
+    },
+    "UIName" : {
+      "type" : ["string", "null"]
+    },
+    "UIVersion" : {
+      "type" : ["string", "null"]
+    },
+    "ComponentID" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "FileID" : {
+      "type" : ["string", "null"]
+    },
+    "FileName" : {
+      "type" : ["string", "null"]
+    },
+    "ProjectID" : {
+      "type" : ["string", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.UI.TriggerLogUsageArgs"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["SelectedItem", "CallerName", "UIName", "UIVersion", "ComponentID", "FileID", "FileName", "ProjectID"]
+}

@@ -1,0 +1,57 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Ground_oM/DetectionProperties.json",
+  "title" : "DetectionProperties",
+  "type" : ["object", "null"],
+  "description" : "DetectionProperties: Properties related to the results based on the tests of the contaminant.",
+  "properties" : {
+    "DetectionLimit" : {
+      "type" : "number",
+      "description" : "Reporting detection limit (ERES_RDLM)."
+    },
+    "MethodDetectionLimit" : {
+      "type" : "number",
+      "description" : "Method detection limit (ERES_MDLM)."
+    },
+    "QuantificationLimit" : {
+      "type" : "number",
+      "description" : "Quanification limit (ERES_QLM)."
+    },
+    "TICProbability" : {
+      "type" : "number",
+      "description" : "Tentatively Identified Compound (TIC) probability (ERES_TICP)."
+    },
+    "TICRetention" : {
+      "type" : "number",
+      "description" : "Tentatively Identified Compound (ERES_TICT) retention time."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Ground.DetectionProperties"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["DetectionLimit", "MethodDetectionLimit", "QuantificationLimit", "TICProbability", "TICRetention"]
+}

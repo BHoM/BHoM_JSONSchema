@@ -1,0 +1,41 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/UTCIData.json",
+  "title" : "UTCIData",
+  "type" : ["object", "null"],
+  "properties" : {
+    "ComfortableRatio" : {
+      "type" : "number",
+      "description" : "The ratio of comfortable hours to total hours. Comfortable hours are hours between 9 and 26�C."
+    },
+    "HeatStressRatio" : {
+      "type" : "number",
+      "description" : "The ratio of heat stress hours to total hours. Heat stress hours are hours greater than 26�C."
+    },
+    "ColdStressRatio" : {
+      "type" : "number",
+      "description" : "The ratio of cold stress hours to total hours. Cold stress hours are hours less than 9�C."
+    },
+    "DaytimeComfortableRatio" : {
+      "type" : "number",
+      "description" : "The ratio of daytime comfortable hours to daytime hours. Daytime comfortable hours are hours between 9 and 26�C and between 07:00-22:59."
+    },
+    "DaytimeHeatStressRatio" : {
+      "type" : "number",
+      "description" : "The ratio of daytime heat stress hours to daytime hours. Daytime heat stress hours are hours greater than 26�C and between 07:00-22:59."
+    },
+    "DaytimeColdStressRatio" : {
+      "type" : "number",
+      "description" : "The ratio of daytime cold stress hours to daytime hours. Daytime cold stress hours are hours less than 9�C and between 07:00-22:59."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.LadybugTools.UTCIData"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["ComfortableRatio", "HeatStressRatio", "ColdStressRatio", "DaytimeComfortableRatio", "DaytimeHeatStressRatio", "DaytimeColdStressRatio"]
+}

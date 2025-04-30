@@ -1,0 +1,51 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Requests/MeshResultRequest.json",
+  "title" : "MeshResultRequest",
+  "type" : ["object", "null"],
+  "description" : "MeshResultRequest: Request for extracting mesh results from an adapter.",
+  "properties" : {
+    "ResultType" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/MeshResultType.json"
+    },
+    "Smoothing" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/MeshResultSmoothingType.json"
+    },
+    "Layer" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/MeshResultLayer.json"
+    },
+    "LayerPosition" : {
+      "type" : "number",
+      "description" : "Position within the element thickness that result is extracted from, normalised to 1. I.e. 0 = lower surface, 0.5 = middle, 1 = top surface."
+    },
+    "Orientation" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Basis.json"
+    },
+    "Cases" : {
+      "type" : ["array", "null"],
+      "description" : "Defines which cases and/or combinations that results should be extracted for. Can generally be set to either Loadcase or Loadcombination objects, or identifiers matching the software. If nothing is provided, results for all cases will be assumed.",
+      "items" : { }
+    },
+    "Modes" : {
+      "type" : ["array", "null"],
+      "description" : "Defines for which modes results should be extracted. Only applicable for some casetypes. If nothing is provided, results for all modes will be assumed.",
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "ObjectIds" : {
+      "type" : ["array", "null"],
+      "description" : "Defines which meshes that results should be extracted for. Can generally be set to either pulled Panel/FEMesh objects, or identifiers matching the software. If nothing is provided, results for all meshes will be assumed.",
+      "items" : { }
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Structure.Requests.MeshResultRequest"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["ResultType", "Smoothing", "Layer", "LayerPosition", "Orientation", "Cases", "Modes", "ObjectIds"]
+}

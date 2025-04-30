@@ -1,0 +1,56 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Architecture_oM/Theatron/TheatronFullProfile.json",
+  "title" : "TheatronFullProfile",
+  "type" : ["object", "null"],
+  "properties" : {
+    "BaseTierProfiles" : {
+      "type" : ["array", "null"],
+      "description" : "The set of tier profiles orientated in the world xz plane, the origin is the focal point for Cvalue calculations",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Architecture_oM/Theatron/TierProfile.json"
+      }
+    },
+    "MappedProfiles" : {
+      "type" : ["array", "null"],
+      "description" : "The set of tier profiles orientated to the plane closest to the focal curve",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Architecture_oM/Theatron/TierProfile.json"
+      }
+    },
+    "Rounding" : {
+      "type" : "number"
+    },
+    "FullProfileOrigin" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Architecture_oM/Theatron/ProfileOrigin.json"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Architecture.Theatron.TheatronFullProfile"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["BaseTierProfiles", "MappedProfiles", "Rounding", "FullProfileOrigin"]
+}

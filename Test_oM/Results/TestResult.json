@@ -1,0 +1,47 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Test_oM/Results/TestResult.json",
+  "title" : "TestResult",
+  "type" : ["object", "null"],
+  "properties" : {
+    "Description" : {
+      "type" : ["string", "null"],
+      "description" : "Describes the focus of the test that this Test Result answers. This is typically for CI processes but should be human readable for ease of use."
+    },
+    "Status" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Test_oM/TestStatus.json"
+    },
+    "Information" : {
+      "type" : ["array", "null"],
+      "description" : "Information generated during the test.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Test_oM/ITestInformation.json"
+      }
+    },
+    "Message" : {
+      "type" : ["string", "null"],
+      "description" : "A human readable message explaining why this Test Result has turned out the way it has, with potential solutions or links to associated wiki pages."
+    },
+    "UTCTime" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "$date" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "ID" : {
+      "type" : ["string", "null"],
+      "description" : "Machine readable identifier for the Test Result."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Test.Results.TestResult"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Description", "Status", "Information", "Message", "UTCTime", "ID"]
+}

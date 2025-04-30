@@ -1,0 +1,50 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/ThermalBridgeValue.json",
+  "title" : "ThermalBridgeValue",
+  "type" : ["object", "null"],
+  "description" : "ThermalBridgeValue: Describe a single PSI Value to use for thermal bridges within the SAP context.",
+  "properties" : {
+    "PsiValue" : {
+      "type" : "number",
+      "description" : "New PSI Value to use for the thermal bridges. Must be a positive number."
+    },
+    "Include" : {
+      "type" : ["string", "null"],
+      "description" : "The name of the Thermal Bridge (E3, E16, etc.) to which this PSI Value should be applied. If left blank, the value will be not be assigned to anything."
+    },
+    "Name" : {
+      "type" : ["string", "null"],
+      "description" : "Provide the name of this iteration. The name should be unique across all iterations in your model, and should match any coordination with other models (over heating, daylighting, etc.) you may be running parametrics on."
+    },
+    "Prefix" : {
+      "type" : ["string", "null"],
+      "description" : "What value should be used to prefix the name of this iteration when combining with other iterations."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SAP.ThermalBridgeValue"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["PsiValue", "Include", "Name", "Prefix"]
+}

@@ -1,0 +1,53 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/SunData.json",
+  "title" : "SunData",
+  "type" : ["object", "null"],
+  "properties" : {
+    "SunriseAzimuth" : {
+      "type" : "number",
+      "description" : "The azimuth angle at sunrise in degrees. Sunrise is defined as the time at which the sun is first visible above the horizon, ignoring atmospheric effects."
+    },
+    "SunriseTime" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "$date" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "NoonAltitude" : {
+      "type" : "number",
+      "description" : "The altitude angle at solar noon (when the sun is at its highest point) in degrees."
+    },
+    "NoonTime" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "$date" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "SunsetAzimuth" : {
+      "type" : "number",
+      "description" : "The azimuth angle at sunset in degrees. Sunset is defined as the time at which the sun has just finished passing the horizon, ignoring atmospheric effects."
+    },
+    "SunsetTime" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "$date" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.LadybugTools.SunData"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["SunriseAzimuth", "SunriseTime", "NoonAltitude", "NoonTime", "SunsetAzimuth", "SunsetTime"]
+}

@@ -1,0 +1,55 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/EnergyPerUnitTime.json",
+  "title" : "EnergyPerUnitTime",
+  "type" : ["object", "null"],
+  "description" : "EnergyPerUnitTime: Dimensional quantity as defined by the International System of Quantities",
+  "properties" : {
+    "M" : {
+      "type" : "integer",
+      "description" : "Mass dimension"
+    },
+    "L" : {
+      "type" : "integer",
+      "description" : "Length dimension"
+    },
+    "T" : {
+      "type" : "integer",
+      "description" : "Time dimension"
+    },
+    "SIUnit" : {
+      "type" : ["string", "null"],
+      "description" : "SI derived unit symbol"
+    },
+    "I" : {
+      "type" : "integer",
+      "description" : "Electric current dimension"
+    },
+    "Θ" : {
+      "type" : "integer",
+      "description" : "Temperature dimension"
+    },
+    "N" : {
+      "type" : "integer",
+      "description" : "Amount of substance dimension"
+    },
+    "J" : {
+      "type" : "integer",
+      "description" : "Luminous intensity dimension"
+    },
+    "Name" : {
+      "type" : ["string", "null"],
+      "description" : "Name of the method parameter this attribute corresponds to (not relevant in case of object properties)."
+    },
+    "TypeId" : { },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Quantities.Attributes.EnergyPerUnitTime"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["M", "L", "T", "SIUnit"]
+}

@@ -1,0 +1,84 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Acoustic_oM/Speaker.json",
+  "title" : "Speaker",
+  "type" : ["object", "null"],
+  "properties" : {
+    "Location" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
+    },
+    "Direction" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
+    },
+    "EmissiveLevel" : {
+      "type" : "number"
+    },
+    "Category" : {
+      "type" : ["string", "null"]
+    },
+    "SpeakerID" : {
+      "type" : "integer"
+    },
+    "Gains" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["object", "null"],
+        "properties" : {
+          "k" : {
+            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Acoustic_oM/Frequency.json"
+          },
+          "v" : {
+            "type" : "number"
+          }
+        }
+      }
+    },
+    "Directivity" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["object", "null"],
+        "properties" : {
+          "k" : {
+            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Acoustic_oM/Frequency.json"
+          },
+          "v" : {
+            "type" : ["array", "null"],
+            "items" : {
+              "items" : {
+                "type" : "number"
+              }
+            }
+          }
+        }
+      }
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Acoustic.Speaker"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Location", "Direction", "EmissiveLevel", "Category", "SpeakerID", "Gains", "Directivity"]
+}

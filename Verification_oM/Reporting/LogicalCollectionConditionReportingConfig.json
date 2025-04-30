@@ -1,0 +1,33 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Reporting/LogicalCollectionConditionReportingConfig.json",
+  "title" : "LogicalCollectionConditionReportingConfig",
+  "type" : ["object", "null"],
+  "description" : "LogicalCollectionConditionReportingConfig: Config object containing settings for reporting results of checks against logical conditions with a collection of nested conditions.",
+  "properties" : {
+    "NestedConfigs" : {
+      "type" : ["array", "null"],
+      "description" : "Dictionary of reporting configs (values) bound to the conditions, which results they are meant to format (keys).",
+      "items" : {
+        "type" : ["object", "null"],
+        "properties" : {
+          "k" : {
+            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Conditions/ICondition.json"
+          },
+          "v" : {
+            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Reporting/IConditionReportingConfig.json"
+          }
+        }
+      }
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Verification.Reporting.LogicalCollectionConditionReportingConfig"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["NestedConfigs"]
+}

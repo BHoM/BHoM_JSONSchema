@@ -1,0 +1,67 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/BoxProfile.json",
+  "title" : "BoxProfile",
+  "type" : ["object", "null"],
+  "description" : "BoxProfile: Rectangular hollow profile with constant thickness and optional corner radii.",
+  "properties" : {
+    "Shape" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/ShapeType.json"
+    },
+    "Height" : {
+      "type" : "number",
+      "description" : "Full depth between the extreme fibres of the flanges. Property has a quantity of type Length meassured in [m]."
+    },
+    "Width" : {
+      "type" : "number",
+      "description" : "Full width between the extreme fibres of the webs. Property has a quantity of type Length meassured in [m]."
+    },
+    "Thickness" : {
+      "type" : "number",
+      "description" : "Thickness of both webs and flanges. Property has a quantity of type Length meassured in [m]."
+    },
+    "OuterRadius" : {
+      "type" : "number",
+      "description" : "Corner radius for all four corners of the outer bounding rectangle. Property has a quantity of type Length meassured in [m]."
+    },
+    "InnerRadius" : {
+      "type" : "number",
+      "description" : "Corner radius for all four corners of the inner void rectangle. Property has a quantity of type Length meassured in [m]."
+    },
+    "Edges" : {
+      "type" : ["array", "null"],
+      "description" : "Edge curves that matches the dimensions in the global XY-plane.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ICurve.json"
+      }
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Spatial.ShapeProfiles.BoxProfile"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Shape", "Height", "Width", "Thickness", "OuterRadius", "InnerRadius", "Edges"]
+}

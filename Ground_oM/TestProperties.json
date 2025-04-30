@@ -1,0 +1,77 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Ground_oM/TestProperties.json",
+  "title" : "TestProperties",
+  "type" : ["object", "null"],
+  "description" : "TestProperties: Properties related to the tests undertaken on the contaminant.",
+  "properties" : {
+    "LabTestName" : {
+      "type" : ["string", "null"],
+      "description" : "Labratory test name for the contaminant sample (ERES_TNAM)."
+    },
+    "Reference" : {
+      "type" : ["string", "null"],
+      "description" : "Test reference (TEST_TESN)."
+    },
+    "RunType" : {
+      "type" : ["string", "null"],
+      "description" : "Run type description, i.e. initial or reanalysis (ERES_RTYP)."
+    },
+    "TestMatrix" : {
+      "type" : ["string", "null"],
+      "description" : "Labratory test matrix (ERES_MATX)."
+    },
+    "Method" : {
+      "type" : ["string", "null"],
+      "description" : "Test method (ERES_METH)."
+    },
+    "AnalysisDate" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "$date" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "Description" : {
+      "type" : ["string", "null"],
+      "description" : "Description of the specimen from the contaminant sample (SPEC_DESC)."
+    },
+    "Remarks" : {
+      "type" : ["string", "null"],
+      "description" : "Remarks about the test or specimen from the contaminant sample (ERES_REM)."
+    },
+    "TestStatus" : {
+      "type" : ["string", "null"],
+      "description" : "The status of the test (TEST_STAT)."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Ground.TestProperties"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["LabTestName", "Reference", "RunType", "TestMatrix", "Method", "AnalysisDate", "Description", "Remarks", "TestStatus"]
+}

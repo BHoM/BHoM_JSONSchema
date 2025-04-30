@@ -1,0 +1,23 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/SideLoadingData.json",
+  "title" : "SideLoadingData",
+  "type" : ["object", "null"],
+  "properties" : {
+    "HorizontalOutOfPlaneLoadVariableMax" : {
+      "type" : "number"
+    },
+    "HorizontalOutOfPlaneLoadVariableMin" : {
+      "type" : "number"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.dKoP.SideLoadingData"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["HorizontalOutOfPlaneLoadVariableMax", "HorizontalOutOfPlaneLoadVariableMin"]
+}

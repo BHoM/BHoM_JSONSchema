@@ -1,0 +1,53 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/OpeningTypeGValueIteration.json",
+  "title" : "OpeningTypeGValueIteration",
+  "type" : ["object", "null"],
+  "description" : "OpeningTypeGValueIteration: Describe a single iteration of U and G Values for opening types. If both values are provided, then both values will be updated. This will not blend the iteration (i.e. it will not be one iteration with updated UValue, one iteration with updated GValue, and one iteration with both).",
+  "properties" : {
+    "GValue" : {
+      "type" : "number",
+      "description" : "New GValue to use for the Opening Type. Must be a positive number between 0-1 as a ratio of how much of the total light is transmitted through the opening construction. If no value is provided, no changes to GValue will be made."
+    },
+    "Include" : {
+      "type" : ["array", "null"],
+      "description" : "A list of Opening Types to make changes to. If this is left blank, then all opening types will be updated within the SAP Report for the U and G Values provided.",
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "Name" : {
+      "type" : ["string", "null"],
+      "description" : "Provide the name of this iteration. The name should be unique across all iterations in your model, and should match any coordination with other models (over heating, daylighting, etc.) you may be running parametrics on."
+    },
+    "Prefix" : {
+      "type" : ["string", "null"],
+      "description" : "What value should be used to prefix the name of this iteration when combining with other iterations."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SAP.OpeningTypeGValueIteration"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["GValue", "Include", "Name", "Prefix"]
+}

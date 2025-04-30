@@ -1,0 +1,76 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/SteppedGradient.json",
+  "title" : "SteppedGradient",
+  "type" : ["object", "null"],
+  "description" : "SteppedGradient: Gradient for extracting colours in specific range bands, this is, a single colour for a specific range.",
+  "properties" : {
+    "Markers" : {
+      "type" : ["array", "null"],
+      "description" : "A SortedDictionary of 'Color's using a 'decimal' between 0 and 1 as Key. Decimal of marker indicates the lower limit for the range of that colour.",
+      "items" : {
+        "type" : ["object", "null"],
+        "properties" : {
+          "k" : {
+            "type" : ["object", "null"],
+            "properties" : {
+              "$numberDecimal" : {
+                "type" : ["string", "null"]
+              }
+            }
+          },
+          "v" : {
+            "type" : ["object", "null"],
+            "properties" : {
+              "_t" : {
+                "type" : ["string", "null"],
+                "const" : "System.Drawing.Color"
+              },
+              "A" : {
+                "type" : "integer"
+              },
+              "R" : {
+                "type" : "integer"
+              },
+              "G" : {
+                "type" : "integer"
+              },
+              "B" : {
+                "type" : "integer"
+              }
+            },
+            "required" : ["A", "R", "G", "B"]
+          }
+        }
+      }
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Graphics.SteppedGradient"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Markers"]
+}

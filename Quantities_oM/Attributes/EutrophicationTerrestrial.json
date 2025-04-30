@@ -1,0 +1,55 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/EutrophicationTerrestrial.json",
+  "title" : "EutrophicationTerrestrial",
+  "type" : ["object", "null"],
+  "description" : "EutrophicationTerrestrial: Quantity type for Eutrophication Potential Terrestrial.",
+  "properties" : {
+    "N" : {
+      "type" : "integer",
+      "description" : "Amount of substance dimension"
+    },
+    "SIUnit" : {
+      "type" : ["string", "null"],
+      "description" : "SI derived unit symbol"
+    },
+    "L" : {
+      "type" : "integer",
+      "description" : "Length dimension"
+    },
+    "M" : {
+      "type" : "integer",
+      "description" : "Mass dimension"
+    },
+    "T" : {
+      "type" : "integer",
+      "description" : "Time dimension"
+    },
+    "I" : {
+      "type" : "integer",
+      "description" : "Electric current dimension"
+    },
+    "Θ" : {
+      "type" : "integer",
+      "description" : "Temperature dimension"
+    },
+    "J" : {
+      "type" : "integer",
+      "description" : "Luminous intensity dimension"
+    },
+    "Name" : {
+      "type" : ["string", "null"],
+      "description" : "Name of the method parameter this attribute corresponds to (not relevant in case of object properties)."
+    },
+    "TypeId" : { },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Quantities.Attributes.EutrophicationTerrestrial"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["N", "SIUnit"]
+}

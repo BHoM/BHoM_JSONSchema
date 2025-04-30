@@ -1,0 +1,43 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/Fragments/PanelAutoMeshByCookieCutPoints.json",
+  "title" : "PanelAutoMeshByCookieCutPoints",
+  "type" : ["object", "null"],
+  "description" : "PanelAutoMeshByCookieCutPoints: Divide the panel based on points in the meshing group.",
+  "properties" : {
+    "Rotation" : {
+      "type" : "number",
+      "description" : "This is an angle in radians that the meshing lines are rotated from their default orientation.By default these lines align with the area object local 1 and 2 axes. Property has a quantity of type Angle meassured in [rad]."
+    },
+    "LocalAxesOnEdge" : {
+      "type" : "boolean"
+    },
+    "LocalAxesOnFace" : {
+      "type" : "boolean"
+    },
+    "RestraintsOnEdge" : {
+      "type" : "boolean"
+    },
+    "RestraintsOnFace" : {
+      "type" : "boolean"
+    },
+    "Group" : {
+      "type" : ["string", "null"]
+    },
+    "SubMesh" : {
+      "type" : "boolean"
+    },
+    "SubMeshSize" : {
+      "type" : "number"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.SAP2000.Fragments.PanelAutoMeshByCookieCutPoints"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Rotation", "LocalAxesOnEdge", "LocalAxesOnFace", "RestraintsOnEdge", "RestraintsOnFace", "Group", "SubMesh", "SubMeshSize"]
+}

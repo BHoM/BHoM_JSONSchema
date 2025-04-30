@@ -1,0 +1,28 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/PreviousInputNamesAttribute.json",
+  "title" : "PreviousInputNamesAttribute",
+  "type" : ["object", "null"],
+  "description" : "PreviousInputNamesAttribute: Provides the names that were previously used for a given input. If multiple names, use a ',' to separate them.",
+  "properties" : {
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "PreviousNames" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "TypeId" : { },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Base.Attributes.PreviousInputNamesAttribute"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Name", "PreviousNames"]
+}

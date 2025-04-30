@@ -1,0 +1,57 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Configs/IStructEEvaluationConfig.json",
+  "title" : "IStructEEvaluationConfig",
+  "type" : ["object", "null"],
+  "description" : "IStructEEvaluationConfig: Config for evaluation of climate change metrics using methodology from IStructE.",
+  "properties" : {
+    "ProjectCost" : {
+      "type" : "number",
+      "description" : "Total cost of the project."
+    },
+    "FloorArea" : {
+      "type" : "number",
+      "description" : "Total floor area for the project. Property has a quantity of type Area meassured in [m²]."
+    },
+    "TotalWeight" : {
+      "type" : "number",
+      "description" : "Total mass for the project. Property has a quantity of type Mass meassured in [kg]."
+    },
+    "A5CarbonFactor" : {
+      "type" : "number",
+      "description" : "Carbon factor for installation for the project. Gives an additional factor based on project cost and element weight. Property has a quantity of type ClimateChangePerQuantity meassured in [kg CO2 eq per unit]."
+    },
+    "C1CarbonFactor" : {
+      "type" : "number",
+      "description" : "Carbon factor for De-construction Demolition for the project. C1 for each element is computed based on this value and total floor area times elements proportional weight to the total. Property has a quantity of type ClimateChangePerQuantity meassured in [kg CO2 eq per unit]."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.LifeCycleAssessment.Configs.IStructEEvaluationConfig"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["ProjectCost", "FloorArea", "TotalWeight", "A5CarbonFactor", "C1CarbonFactor"]
+}

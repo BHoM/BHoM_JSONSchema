@@ -1,0 +1,65 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Fragments/AdditionalEPDData.json",
+  "title" : "AdditionalEPDData",
+  "type" : ["object", "null"],
+  "description" : "AdditionalEPDData: A data fragment containing other optional information regarding the production and documentation of any Environmental Product Declaration. \nUse AddFragment() to combine this information with any EPD for continuous integration.",
+  "properties" : {
+    "Description" : {
+      "type" : ["string", "null"],
+      "description" : "Brief summary of the EPD from the data source."
+    },
+    "EndOfLifeTreatment" : {
+      "type" : ["string", "null"],
+      "description" : "Description of the material's treatment after its useful life."
+    },
+    "Id" : {
+      "type" : ["string", "null"],
+      "description" : "Unique identifier of the EPD from the source of the information."
+    },
+    "IndustryStandards" : {
+      "type" : ["array", "null"],
+      "description" : "Industry Standards referenced in creating the product.",
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "Jurisdiction" : {
+      "type" : ["string", "null"],
+      "description" : "Jurisdiction within which the sector based product EPD originates."
+    },
+    "LifeSpan" : {
+      "type" : "integer",
+      "description" : "The period of useful life of the product measured in years."
+    },
+    "Manufacturer" : {
+      "type" : ["string", "null"],
+      "description" : "Manufacturer name responsible for the product being documented."
+    },
+    "PlantName" : {
+      "type" : ["string", "null"],
+      "description" : "Manufacturing facility name within which the product was created."
+    },
+    "PostalCode" : {
+      "type" : "integer",
+      "description" : "Postal Code within which the product was created."
+    },
+    "Publisher" : {
+      "type" : ["string", "null"],
+      "description" : "Publisher responsible for recording and presenting all EPD information."
+    },
+    "ReferenceYear" : {
+      "type" : "integer",
+      "description" : "Year in which the EPD was created. Default set to the current year, please override if creating an EPD from legacy information."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.LifeCycleAssessment.Fragments.AdditionalEPDData"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Description", "EndOfLifeTreatment", "Id", "IndustryStandards", "Jurisdiction", "LifeSpan", "Manufacturer", "PlantName", "PostalCode", "Publisher", "ReferenceYear"]
+}

@@ -1,0 +1,32 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Units_oM/TemperatureUnit.json",
+  "anyOf" : [{
+      "type" : ["string", "null"],
+      "enum" : ["Undefined", "DegreeCelsius", "DegreeDelisle", "DegreeFahrenheit", "DegreeNewton", "DegreeRankine", "DegreeReaumur", "DegreeRoemer", "Kelvin", "MillidegreeCelsius", "SolarTemperature"]
+    }, {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : ["string", "null"],
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.Units.TemperatureUnit"
+            }
+          }
+        },
+        "Value" : {
+          "type" : ["string", "null"],
+          "enum" : ["Undefined", "DegreeCelsius", "DegreeDelisle", "DegreeFahrenheit", "DegreeNewton", "DegreeRankine", "DegreeReaumur", "DegreeRoemer", "Kelvin", "MillidegreeCelsius", "SolarTemperature"]
+        }
+      }
+    }]
+}

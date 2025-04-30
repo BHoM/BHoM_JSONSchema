@@ -1,0 +1,25 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Requests/LogicalAndRequest.json",
+  "title" : "LogicalAndRequest",
+  "type" : ["object", "null"],
+  "description" : "LogicalAndRequest: IRequest that combines a group of requests into a logical AND statement.",
+  "properties" : {
+    "Requests" : {
+      "type" : ["array", "null"],
+      "description" : "IRequests to be combined into a logical AND statement.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Requests/IRequest.json"
+      }
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Data.Requests.LogicalAndRequest"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Requests"]
+}

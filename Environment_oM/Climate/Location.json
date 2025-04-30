@@ -1,0 +1,53 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Climate/Location.json",
+  "title" : "Location",
+  "type" : ["object", "null"],
+  "description" : "Location: Defines a uniquely identifiable point on the Earth in standard global Latitude, Longitude and Elevation, coordinate system. Particularly useful for specifying local climate conditions for environmental analysis.",
+  "properties" : {
+    "Latitude" : {
+      "type" : "number",
+      "description" : "Defines North-South position on the Earth. Between -90 to +90 degrees."
+    },
+    "Longitude" : {
+      "type" : "number",
+      "description" : "Defines the East-West position on the Earth. Between -180 to +180 degrees."
+    },
+    "Elevation" : {
+      "type" : "number",
+      "description" : "The elevation for the location, measured relative to sea level. Property has a quantity of type Length meassured in [m]."
+    },
+    "UtcOffset" : {
+      "type" : "number",
+      "description" : "The Coordinated Universal Time (UTC) for the location (in -12 to +14 hours)"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.Climate.Location"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Latitude", "Longitude", "Elevation", "UtcOffset"]
+}

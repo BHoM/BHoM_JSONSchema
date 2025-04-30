@@ -1,0 +1,27 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Search_oM/SearchResult`1.json",
+  "title" : "SearchResult`1",
+  "type" : ["object", "null"],
+  "description" : "SearchResult`1: A result class containing objects, scores and indexes.",
+  "properties" : {
+    "Result" : { },
+    "Score" : {
+      "type" : "number",
+      "description" : "A list of scores resulting from a search method."
+    },
+    "Index" : {
+      "type" : "integer",
+      "description" : "A list of indexes resulting from a search method."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "pattern" : "^BH\\.oM\\.Search\\.SearchResult`1\\[\\[.*\\]\\]$"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Result", "Score", "Index"]
+}

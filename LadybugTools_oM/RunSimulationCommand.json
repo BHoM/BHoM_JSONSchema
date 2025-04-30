@@ -1,0 +1,27 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/RunSimulationCommand.json",
+  "title" : "RunSimulationCommand",
+  "type" : ["object", "null"],
+  "description" : "RunSimulationCommand: Command that when executed with the LadybugTools Adapter, runs a simulation and return a SimulationResult containing hourly data.",
+  "properties" : {
+    "EPWFile" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/FileSettings.json"
+    },
+    "GroundMaterial" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/IEnergyMaterialOpaque.json"
+    },
+    "ShadeMaterial" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/IEnergyMaterialOpaque.json"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.LadybugTools.RunSimulationCommand"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["EPWFile", "GroundMaterial", "ShadeMaterial"]
+}

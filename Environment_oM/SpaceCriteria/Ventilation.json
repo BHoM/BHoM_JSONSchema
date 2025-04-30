@@ -1,0 +1,49 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/Ventilation.json",
+  "title" : "Ventilation",
+  "type" : ["object", "null"],
+  "description" : "Ventilation: Ventilation defines the amount of outside air that should be introduced to a space, which is typically based on the number of occupants breathing the air and the area of the space.",
+  "properties" : {
+    "PeopleRate" : {
+      "type" : "number",
+      "description" : "The ventilation rate associated with the number of occupants within a space, example: 0.00025 m3/s per person"
+    },
+    "AreaRate" : {
+      "type" : "number",
+      "description" : "The ventilation rate associated with the area of the space, example: 0.0003 m3/s*m2"
+    },
+    "AirChangeRate" : {
+      "type" : "number",
+      "description" : "The air change rate per hour (ACH) is a value that denotes the amount of air that must be replaced each hour, based on the volume of the space (1 ACH would be 1x the volume of space each hour, if the space is 1m3, it would be 1m3 of outside air per hour)"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SpaceCriteria.Ventilation"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["PeopleRate", "AreaRate", "AirChangeRate"]
+}

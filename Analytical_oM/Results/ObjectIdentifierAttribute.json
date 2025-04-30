@@ -1,0 +1,19 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Analytical_oM/Results/ObjectIdentifierAttribute.json",
+  "title" : "ObjectIdentifierAttribute",
+  "type" : ["object", "null"],
+  "description" : "ObjectIdentifierAttribute: Attribute to be assigned to properties of `IResult`-implementing classes. Tagged properties must contain the Identifier of the object (or of a subpart of the object) which the result is targeting.",
+  "properties" : {
+    "TypeId" : { },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Analytical.Results.ObjectIdentifierAttribute"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : []
+}

@@ -1,0 +1,22 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Fragments/PsiGlassEdge.json",
+  "title" : "PsiGlassEdge",
+  "type" : ["object", "null"],
+  "description" : "PsiGlassEdge: A Psi value representing the linear thermal bridging value in W/m2 at a glass to frame edge interface.",
+  "properties" : {
+    "PsiValue" : {
+      "type" : "number",
+      "description" : "The Psi value for the interface."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Facade.Fragments.PsiGlassEdge"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["PsiValue"]
+}

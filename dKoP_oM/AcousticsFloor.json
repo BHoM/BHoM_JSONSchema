@@ -1,0 +1,23 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/AcousticsFloor.json",
+  "title" : "AcousticsFloor",
+  "type" : ["object", "null"],
+  "properties" : {
+    "AirborneSoundInsulation" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/AirborneSoundInsulation.json"
+    },
+    "ImpactSoundInsulation" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/ImpactSoundInsulation.json"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.dKoP.AcousticsFloor"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["AirborneSoundInsulation", "ImpactSoundInsulation"]
+}

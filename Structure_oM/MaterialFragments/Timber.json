@@ -1,0 +1,96 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/Timber.json",
+  "title" : "Timber",
+  "type" : ["object", "null"],
+  "description" : "Timber: Structural timber material to be used on structural elements and properties or as a fragment of the physical material.",
+  "properties" : {
+    "Name" : {
+      "type" : ["string", "null"],
+      "description" : "Name. A unique name is required for some structural packages to create and identify the object."
+    },
+    "DensityCharacteristic" : {
+      "type" : "number",
+      "description" : "Characteristic Density. Used to calculate other mechanical properties (not mass). Called G (specific gravity) in American codes, p_k in Eurocode. Property has a quantity of type Density meassured in [kg/m³]."
+    },
+    "Density" : {
+      "type" : "number",
+      "description" : "Mean Density. Used to calculate mass. Called p_mean in Eurocode. Property has a quantity of type Density meassured in [kg/m³]."
+    },
+    "DampingRatio" : {
+      "type" : "number",
+      "description" : "Dynamic Damping Ratio. Ratio between actual damping and critical damping. Property has a quantity of type Ratio meassured in [-]."
+    },
+    "YoungsModulus" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
+    },
+    "YoungsModulusMean" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
+    },
+    "PoissonsRatio" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
+    },
+    "ThermalExpansionCoeff" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
+    },
+    "ShearModulus" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
+    },
+    "ShearModulusMean" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
+    },
+    "BendingStrength" : {
+      "type" : "number",
+      "description" : "Bending Strength. Tension stress parallel to the grain at failure in bending as calculated from beam equations. Called F_b in American codes, f_mk in Eurocode. Property has a quantity of type Stress meassured in [Pa]."
+    },
+    "TensionParallelStrength" : {
+      "type" : "number",
+      "description" : "Tension Parallel Strength. Tension stress parallel to the grain at failure in net tension. Called F_t∥ in American codes, f_t0k in Eurocode. Property has a quantity of type Stress meassured in [Pa]."
+    },
+    "TensionPerpendicularStrength" : {
+      "type" : "number",
+      "description" : "Tension Perpendicular Strength. Tension stress perpendicular to the grain at failure in net tension. Called F_t⟂ in American codes, f_t90k in Eurocode. Property has a quantity of type Stress meassured in [Pa]."
+    },
+    "CompressionParallelStrength" : {
+      "type" : "number",
+      "description" : "Compression Parallel Strength. Compression stress parallel to the grain at failure in net compression. Called F_c∥ in American codes, f_c0k in Eurocode. Property has a quantity of type Stress meassured in [Pa]."
+    },
+    "CompressionPerpendicularStrength" : {
+      "type" : "number",
+      "description" : "Compression Perpendicular Strength. Compression stress perpendicular to the grain at failure in net compression. Called F_c⟂ in American codes, f_c90k in Eurocode. Property has a quantity of type Stress meassured in [Pa]."
+    },
+    "ShearStrength" : {
+      "type" : "number",
+      "description" : "Shear Strength. Shear stress parallel to the grain at failure in net shear, i.e. shear relevant to beam bending. Called F_v in American codes, f_vk in Eurocode. Property has a quantity of type Stress meassured in [Pa]."
+    },
+    "RollingShearStrength" : {
+      "type" : "number",
+      "description" : "Rolling Shear Strength. Shear stress perpendicular to the grain at failure in net shear. Called F_s in American codes, F_rk in Eurocode. Property has a quantity of type Stress meassured in [Pa]."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Structure.MaterialFragments.Timber"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Name", "DensityCharacteristic", "Density", "DampingRatio", "YoungsModulus", "YoungsModulusMean", "PoissonsRatio", "ThermalExpansionCoeff", "ShearModulus", "ShearModulusMean", "BendingStrength", "TensionParallelStrength", "TensionPerpendicularStrength", "CompressionParallelStrength", "CompressionPerpendicularStrength", "ShearStrength", "RollingShearStrength"]
+}

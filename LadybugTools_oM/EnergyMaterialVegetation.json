@@ -1,0 +1,88 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/EnergyMaterialVegetation.json",
+  "title" : "EnergyMaterialVegetation",
+  "type" : ["object", "null"],
+  "properties" : {
+    "Name" : {
+      "type" : ["string", "null"],
+      "description" : "The name of this EnergyMaterialVegetation."
+    },
+    "Thickness" : {
+      "type" : "number",
+      "description" : "Thickness of material (m). Property has a quantity of type Length meassured in [m]."
+    },
+    "Conductivity" : {
+      "type" : "number",
+      "description" : "Conductivity of material (W/mK)."
+    },
+    "Density" : {
+      "type" : "number",
+      "description" : "Density of material (kg/m3). Property has a quantity of type Density meassured in [kg/m³]."
+    },
+    "SpecificHeat" : {
+      "type" : "number",
+      "description" : "Specific heat capacity of material (J/kgK)."
+    },
+    "Roughness" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/Roughness.json"
+    },
+    "SoilThermalAbsorptance" : {
+      "type" : "number",
+      "description" : "A number between 0 and 1 for the fraction of incident long wavelength radiation that is absorbed by the soil material."
+    },
+    "SoilSolarAbsorptance" : {
+      "type" : "number",
+      "description" : "A number between 0 and 1 for the fraction of incident solar radiation absorbed by the soil material."
+    },
+    "SoilVisibleAbsorptance" : {
+      "type" : "number",
+      "description" : "A number between 0 and 1 for the fraction of incident visible wavelength radiation absorbed by the soil material."
+    },
+    "PlantHeight" : {
+      "type" : "number",
+      "description" : "A number between 0.005 and 1.0 for the height of plants in the vegetation layer [m]."
+    },
+    "LeafAreaIndex" : {
+      "type" : "number",
+      "description" : "A number between 0.001 and 5.0 for the projected leaf area per unit area of soil surface (aka. Leaf Area Index or LAI). Note that the fraction of vegetation cover is calculated directly from LAI using an empirical relation."
+    },
+    "LeafReflectivity" : {
+      "type" : "number",
+      "description" : "A number between 0.05 and 0.5 for the fraction of incident solar radiation that is reflected by the leaf surfaces. Solar radiation includes the visible spectrum as well as infrared and ultraviolet wavelengths. Typical values are 0.18 to 0.25."
+    },
+    "LeafEmissivity" : {
+      "type" : "number",
+      "description" : "A number between 0.8 and 1.0 for the ratio of thermal radiation emitted from leaf surfaces to that emitted by an ideal black body at the same temperature."
+    },
+    "MinimumStomatalResistance" : {
+      "type" : "number",
+      "description" : "A number between 50 and 300 for the resistance of the plants to moisture transport [s/m]. Plants with low values of stomatal resistance will result in higher evapotranspiration rates than plants with high resistance."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.LadybugTools.EnergyMaterialVegetation"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Name", "Thickness", "Conductivity", "Density", "SpecificHeat", "Roughness", "SoilThermalAbsorptance", "SoilSolarAbsorptance", "SoilVisibleAbsorptance", "PlantHeight", "LeafAreaIndex", "LeafReflectivity", "LeafEmissivity", "MinimumStomatalResistance"]
+}

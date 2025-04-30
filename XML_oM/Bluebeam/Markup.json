@@ -1,0 +1,73 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/Bluebeam/Markup.json",
+  "title" : "Markup",
+  "type" : ["object", "null"],
+  "properties" : {
+    "PageLabel" : {
+      "type" : "integer"
+    },
+    "Subject" : {
+      "type" : ["string", "null"]
+    },
+    "Space" : {
+      "type" : ["string", "null"]
+    },
+    "Author" : {
+      "type" : ["string", "null"]
+    },
+    "Date" : {
+      "type" : ["string", "null"]
+    },
+    "Colour" : {
+      "type" : ["string", "null"]
+    },
+    "Comments" : {
+      "type" : ["string", "null"]
+    },
+    "Length" : {
+      "type" : "number"
+    },
+    "Area" : {
+      "type" : "number"
+    },
+    "Label" : {
+      "type" : ["string", "null"]
+    },
+    "Depth" : {
+      "type" : ["string", "null"],
+      "description" : "By default this is an XML String representation. Most software will automatically handle the conversion to a numerical representation but users can also use the Query.Depth(Markup) method if necessary."
+    },
+    "Layer" : {
+      "type" : ["string", "null"]
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.XML.Bluebeam.Markup"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["PageLabel", "Subject", "Space", "Author", "Date", "Colour", "Comments", "Length", "Area", "Label", "Depth", "Layer"]
+}

@@ -1,0 +1,49 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Settings/ConnectionSettings.json",
+  "title" : "ConnectionSettings",
+  "type" : ["object", "null"],
+  "description" : "ConnectionSettings: Socket connection settings for Revit Adapter.",
+  "properties" : {
+    "PushPort" : {
+      "type" : "integer",
+      "description" : "Socket push port - this value needs to be equal to push port set in Revit Listener located in Add-Ins tab of Revit ribbon."
+    },
+    "PullPort" : {
+      "type" : "integer",
+      "description" : "Socket pull port - this value needs to be equal to pull port set in Revit Listener located in Add-Ins tab of Revit ribbon."
+    },
+    "MaxMinutesToWait" : {
+      "type" : "integer",
+      "description" : "Maximum number of minutes per adapter action, after which the adapter will automatically stop exchanging data with Revit. Increase this number if push/pull action is expected to take longer."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.Revit.Settings.ConnectionSettings"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["PushPort", "PullPort", "MaxMinutesToWait"]
+}

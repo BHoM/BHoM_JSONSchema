@@ -1,0 +1,4 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/File_oM/IFSResource.json",
+  "required" : ["_t"]
+}

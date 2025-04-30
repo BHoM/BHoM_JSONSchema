@@ -1,0 +1,56 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Equipment/AirHandlingUnit.json",
+  "title" : "AirHandlingUnit",
+  "type" : ["object", "null"],
+  "description" : "AirHandlingUnit: Air Handling Units are devices which house fans, filter, coils, and energy wheels which produce heated and cooled fresh/partially recirculated air to a building",
+  "properties" : {
+    "Type" : {
+      "type" : ["string", "null"],
+      "description" : "Type denotes the kind of Air Handling Unit (eg heat and ventilation, energy recovery)"
+    },
+    "TotalAirFlow" : {
+      "type" : "number",
+      "description" : "Total Airflow accounts for the maximum amount of supply/outside air that the Air Handling Unit will be passing. This value is measured in m3/s (e.g. 2.35 m3/s (5000 CFM) of Outside Air)"
+    },
+    "AirVelocityAcrossCoil" : {
+      "type" : "number",
+      "description" : "Air velocity across coil denotes the maximum velocity of the air that should be passed along the Air Handling Unit's coil. This value is measured in m/s (maximum values around 2.5 m/s (500 ft/min) are considered best practice)"
+    },
+    "Parts" : {
+      "type" : ["array", "null"],
+      "description" : "A collection of the parts (Air Handling Unit, Fans, Coils, Energy Wheel, Filters, Electrical Connectors) that make up the Air Handling Unit",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Equipment/Parts/IPart.json"
+      }
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.MEP.Equipment.AirHandlingUnit"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Type", "TotalAirFlow", "AirVelocityAcrossCoil", "Parts"]
+}

@@ -1,0 +1,33 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Results/SpecificationResult.json",
+  "title" : "SpecificationResult",
+  "type" : ["object", "null"],
+  "description" : "SpecificationResult: Object representing result of verification of a Specification.",
+  "properties" : {
+    "Specification" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Specifications/Specification.json"
+    },
+    "ExtractedObjects" : {
+      "type" : ["array", "null"],
+      "description" : "Objects collected during the extraction stage and checked against the requirements.",
+      "items" : { }
+    },
+    "RequirementResults" : {
+      "type" : ["array", "null"],
+      "description" : "Collection of verification results of each filtered object against each Requirement contained within the Specification.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Results/RequirementResult.json"
+      }
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Verification.Results.SpecificationResult"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Specification", "ExtractedObjects", "RequirementResults"]
+}

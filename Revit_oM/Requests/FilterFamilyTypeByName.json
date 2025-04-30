@@ -1,0 +1,30 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Requests/FilterFamilyTypeByName.json",
+  "title" : "FilterFamilyTypeByName",
+  "type" : ["object", "null"],
+  "description" : "FilterFamilyTypeByName: IRequest that filters Revit family types by names of theirs and their parent family, with option to loose the search by leaving one or both of the input names blank.",
+  "properties" : {
+    "FamilyName" : {
+      "type" : ["string", "null"],
+      "description" : "Name of Revit family as shown in Revit UI. Optional: if left blank, all families will be filtered in search for specified family type name."
+    },
+    "FamilyTypeName" : {
+      "type" : ["string", "null"],
+      "description" : "Revit family type name matching one displayed in Revit UI. Optional: if left blank, all types within family will be returned. If family name is left blank too, all family types in model will be returned."
+    },
+    "CaseSensitive" : {
+      "type" : "boolean",
+      "description" : "If true: only perfect, case sensitive text match will be accepted. If false: capitals and small letters will be treated as equal."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.Revit.Requests.FilterFamilyTypeByName"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["FamilyName", "FamilyTypeName", "CaseSensitive"]
+}

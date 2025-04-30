@@ -1,0 +1,37 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Excel_oM/ObjectRequest.json",
+  "title" : "ObjectRequest",
+  "type" : ["object", "null"],
+  "description" : "ObjectRequest: IRequest that pulls cells and their metadata from the excel file.",
+  "properties" : {
+    "Worksheet" : {
+      "type" : ["string", "null"],
+      "description" : "Name of the worksheet to read from."
+    },
+    "Range" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Excel_oM/CellRange.json"
+    },
+    "ObjectType" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Type"
+        },
+        "Name" : {
+          "type" : ["string", "null"]
+        }
+      }
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.Excel.ObjectRequest"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Worksheet", "Range", "ObjectType"]
+}

@@ -1,0 +1,48 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/CarbonQueryDatabase_oM/CQDConfig.json",
+  "title" : "CQDConfig",
+  "type" : ["object", "null"],
+  "description" : "CQDConfig: This Config can be specified in the `ActionConfig` input of any Adapter Action (e.g. Push).",
+  "properties" : {
+    "Type" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/EPDType.json"
+    },
+    "Id" : {
+      "type" : ["string", "null"],
+      "description" : "Specifies ID to search and return objects for in CarbonQueryDatabase. If this is specified it supersedes other input parameters."
+    },
+    "Count" : {
+      "type" : "integer",
+      "description" : "Sets maximum amount of items to return from CarbonQueryDatabase"
+    },
+    "NameLike" : {
+      "type" : ["string", "null"],
+      "description" : "Specifies string to search and return objects for in CarbonQueryDatabase, ie RedBuilt RedLam LVL"
+    },
+    "PlantName" : {
+      "type" : ["string", "null"],
+      "description" : "Specifies plant name to search and return objects for in CarbonQueryDatabase, ie Dupont"
+    },
+    "WrapNonBHoMObjects" : {
+      "type" : "boolean",
+      "description" : "If true, the Push action wraps any non-BHoM type into a BH.oM.Adapter.ObjectWrapper, allowing them to make use of the full Adapter workflow."
+    },
+    "AllowHashForComparing" : {
+      "type" : "boolean",
+      "description" : "If true and if no specific EqualityComparer is found for the type, Diffing hashes are computed and used to compare the objects."
+    },
+    "DiffingConfig" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/DiffingConfig.json"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.CarbonQueryDatabase.CQDConfig"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Type", "Id", "Count", "NameLike", "PlantName"]
+}

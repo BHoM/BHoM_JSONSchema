@@ -1,0 +1,39 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/RevitGeometry.json",
+  "title" : "RevitGeometry",
+  "type" : ["object", "null"],
+  "description" : "RevitGeometry: Fragment containing the geometry extracted from Revit element represented by the BHoM object.",
+  "properties" : {
+    "Edges" : {
+      "type" : ["array", "null"],
+      "description" : "Edge curves of Revit element represented by the BHoM object carrying this fragment.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ICurve.json"
+      }
+    },
+    "Surfaces" : {
+      "type" : ["array", "null"],
+      "description" : "Surface geometry of Revit element represented by the BHoM object carrying this fragment.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ISurface.json"
+      }
+    },
+    "Meshes" : {
+      "type" : ["array", "null"],
+      "description" : "Meshed surfaces of Revit element represented by the BHoM object carrying this fragment.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Mesh.json"
+      }
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.Revit.RevitGeometry"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Edges", "Surfaces", "Meshes"]
+}

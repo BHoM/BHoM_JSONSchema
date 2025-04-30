@@ -1,0 +1,40 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/Diff.json",
+  "title" : "Diff",
+  "type" : ["object", "null"],
+  "description" : "Diff: Represents the differences between two sets of objects.",
+  "properties" : {
+    "AddedObjects" : {
+      "type" : ["object", "null"],
+      "description" : "Objects present in the second set that are not present in the first set."
+    },
+    "RemovedObjects" : {
+      "type" : ["object", "null"],
+      "description" : "Objects not present in the second set that were present in the first set."
+    },
+    "ModifiedObjects" : {
+      "type" : ["object", "null"],
+      "description" : "Objects that are recognised as present both in the first set and the second set, but that have some property that is different.\nThe rules that were used to recognise modification are in the `DiffingConfig.ComparisonConfig`."
+    },
+    "UnchangedObjects" : {
+      "type" : ["object", "null"],
+      "description" : "Objects that are recognised as the same in the first and second set."
+    },
+    "ModifiedObjectsDifferences" : {
+      "type" : ["object", "null"]
+    },
+    "DiffingConfig" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/DiffingConfig.json"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Diffing.Diff"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["AddedObjects", "RemovedObjects", "ModifiedObjects", "UnchangedObjects", "ModifiedObjectsDifferences", "DiffingConfig"]
+}

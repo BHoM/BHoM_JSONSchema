@@ -1,0 +1,22 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/GSA_oM/DummyTag.json",
+  "title" : "DummyTag",
+  "type" : ["object", "null"],
+  "description" : "DummyTag: Fragment controling whether the element should be a dummy element or not.",
+  "properties" : {
+    "IsDummy" : {
+      "type" : "boolean",
+      "description" : "True means the element will be treated as a dummy in GSA."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.GSA.DummyTag"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["IsDummy"]
+}

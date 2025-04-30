@@ -1,0 +1,32 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/RFEM6_oM/Fragments/Enums/GeometricalLineLoadTypesEnum.json",
+  "anyOf" : [{
+      "type" : ["string", "null"],
+      "enum" : ["FreeLineLoad", "NonFreeLineLoad"]
+    }, {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : ["string", "null"],
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.Adapters.RFEM6.Fragments.Enums.GeometricalLineLoadTypesEnum"
+            }
+          }
+        },
+        "Value" : {
+          "type" : ["string", "null"],
+          "enum" : ["FreeLineLoad", "NonFreeLineLoad"]
+        }
+      }
+    }]
+}

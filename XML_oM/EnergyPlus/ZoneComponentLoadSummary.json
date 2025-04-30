@@ -1,0 +1,51 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/EnergyPlus/ZoneComponentLoadSummary.json",
+  "title" : "ZoneComponentLoadSummary",
+  "type" : ["object", "null"],
+  "properties" : {
+    "For" : {
+      "type" : ["string", "null"]
+    },
+    "EstimatedCoolingPeakLoadComponent" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/EnergyPlus/EstimatedCoolingPeakLoadComponent.json"
+      }
+    },
+    "CoolingPeakConditions" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/EnergyPlus/CoolingPeakCondition.json"
+    },
+    "HeatingPeakConditions" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/EnergyPlus/HeatingPeakCondition.json"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.XML.EnergyPlus.ZoneComponentLoadSummary"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["For", "EstimatedCoolingPeakLoadComponent", "CoolingPeakConditions", "HeatingPeakConditions"]
+}

@@ -1,0 +1,57 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Fragments/AnalyticalConstruction.json",
+  "title" : "AnalyticalConstruction",
+  "type" : ["object", "null"],
+  "description" : "AnalyticalConstruction: This fragment is used to define physical and thermal properties for a building surface",
+  "properties" : {
+    "ConstructionThickness" : {
+      "type" : "number"
+    },
+    "ExternalEmissivity" : {
+      "type" : "number"
+    },
+    "ExternalSolarAbsorptance" : {
+      "type" : "number"
+    },
+    "ExternalVisibleReflectance" : {
+      "type" : "number"
+    },
+    "GValue" : {
+      "type" : "number"
+    },
+    "InternalEmissivity" : {
+      "type" : "number"
+    },
+    "InternalSolarAbsorptance" : {
+      "type" : "number"
+    },
+    "InternalVisibleReflectance" : {
+      "type" : "number"
+    },
+    "RefractiveIndex" : {
+      "type" : "number"
+    },
+    "RValue" : {
+      "type" : "number"
+    },
+    "ThermalMassCm" : {
+      "type" : "number"
+    },
+    "UValue" : {
+      "type" : "number"
+    },
+    "VisibleLightTransmittance" : {
+      "type" : "number"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.Fragments.AnalyticalConstruction"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["ConstructionThickness", "ExternalEmissivity", "ExternalSolarAbsorptance", "ExternalVisibleReflectance", "GValue", "InternalEmissivity", "InternalSolarAbsorptance", "InternalVisibleReflectance", "RefractiveIndex", "RValue", "ThermalMassCm", "UValue", "VisibleLightTransmittance"]
+}

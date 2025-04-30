@@ -1,0 +1,29 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/File_oM/RenameCommand.json",
+  "title" : "RenameCommand",
+  "type" : ["object", "null"],
+  "properties" : {
+    "FullPath" : {
+      "type" : ["string", "null"],
+      "description" : "Full paths of the items to be Renamed."
+    },
+    "TargetFullPath" : {
+      "type" : ["string", "null"],
+      "description" : "The new Full paths of the Files. Files will be Renamed."
+    },
+    "OverwriteTarget" : {
+      "type" : "boolean",
+      "description" : "Whether to override the target."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.File.RenameCommand"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["FullPath", "TargetFullPath", "OverwriteTarget"]
+}

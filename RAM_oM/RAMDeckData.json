@@ -1,0 +1,21 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/RAM_oM/RAMDeckData.json",
+  "title" : "RAMDeckData",
+  "type" : ["object", "null"],
+  "properties" : {
+    "DeckProfileName" : {
+      "type" : ["string", "null"],
+      "description" : "Deck profile name as per RAM"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.RAM.RAMDeckData"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["DeckProfileName"]
+}

@@ -1,0 +1,76 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Fixtures/CommercialFixtureUsage.json",
+  "title" : "CommercialFixtureUsage",
+  "type" : ["object", "null"],
+  "description" : "CommercialFixtureUsage: Fixture Usage data for commercial plumbing fixtures.",
+  "properties" : {
+    "KitchenFaucetNumberOfUsesMale" : {
+      "type" : "number"
+    },
+    "KitchenFaucetNumberOfUsesFemale" : {
+      "type" : "number"
+    },
+    "KitchenFaucetNumberOfUsesGenderNeutral" : {
+      "type" : "number"
+    },
+    "LavatoryNumberOfUsesMale" : {
+      "type" : "number"
+    },
+    "LavatoryNumberOfUsesFemale" : {
+      "type" : "number"
+    },
+    "LavatoryNumberOfUsesGenderNeutral" : {
+      "type" : "number"
+    },
+    "ShowerNumberOfUsesMale" : {
+      "type" : "number"
+    },
+    "ShowerNumberOfUsesFemale" : {
+      "type" : "number"
+    },
+    "ShowerNumberOfUsesGenderNeutral" : {
+      "type" : "number"
+    },
+    "ToiletNumberOfUsesMale" : {
+      "type" : "number"
+    },
+    "ToiletNumberOfUsesFemale" : {
+      "type" : "number"
+    },
+    "ToiletNumberOfUsesGenderNeutral" : {
+      "type" : "number"
+    },
+    "UrinalNumberOfUsesMale" : {
+      "type" : "number"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.MEP.Fixtures.CommercialFixtureUsage"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["KitchenFaucetNumberOfUsesMale", "KitchenFaucetNumberOfUsesFemale", "KitchenFaucetNumberOfUsesGenderNeutral", "LavatoryNumberOfUsesMale", "LavatoryNumberOfUsesFemale", "LavatoryNumberOfUsesGenderNeutral", "ShowerNumberOfUsesMale", "ShowerNumberOfUsesFemale", "ShowerNumberOfUsesGenderNeutral", "ToiletNumberOfUsesMale", "ToiletNumberOfUsesFemale", "ToiletNumberOfUsesGenderNeutral", "UrinalNumberOfUsesMale"]
+}

@@ -1,0 +1,45 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Ground_oM/SPTReferenceProperties.json",
+  "title" : "SPTReferenceProperties",
+  "type" : ["object", "null"],
+  "description" : "SPTReferenceProperties: Properties related references and location of the standard penetration test.",
+  "properties" : {
+    "FileReference" : {
+      "type" : ["string", "null"],
+      "description" : "Associated file reference (FILE_FSET)."
+    },
+    "Remarks" : {
+      "type" : ["string", "null"],
+      "description" : "Remarks or Comments (ISPT_REM)."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Ground.SPTReferenceProperties"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["FileReference", "Remarks"]
+}

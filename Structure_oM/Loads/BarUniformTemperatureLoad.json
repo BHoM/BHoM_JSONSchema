@@ -1,0 +1,54 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/BarUniformTemperatureLoad.json",
+  "title" : "BarUniformTemperatureLoad",
+  "type" : ["object", "null"],
+  "description" : "BarUniformTemperatureLoad: Uniform temperature load for Bars.",
+  "properties" : {
+    "TemperatureChange" : {
+      "type" : "number",
+      "description" : "Uniform temperature change of the Bar. Property has a quantity of type Temperature meassured in [K]."
+    },
+    "Loadcase" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/Loadcase.json"
+    },
+    "Objects" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/BHoMGroup`1.json"
+    },
+    "Axis" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/LoadAxis.json"
+    },
+    "Projected" : {
+      "type" : "boolean",
+      "description" : "If true the load is projected to the element. This means that the load will be reduced when its direction is at an angle to the element."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Structure.Loads.BarUniformTemperatureLoad"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["TemperatureChange", "Loadcase", "Objects", "Axis", "Projected"]
+}

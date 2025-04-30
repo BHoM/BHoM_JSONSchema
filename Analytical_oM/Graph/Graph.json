@@ -1,0 +1,60 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Analytical_oM/Graph/Graph.json",
+  "title" : "Graph",
+  "type" : ["object", "null"],
+  "description" : "Graph: A set of IBHoMObject entities and the relations between them.",
+  "properties" : {
+    "Entities" : {
+      "type" : ["array", "null"],
+      "description" : "Dictionary of IBHoMObject entities.",
+      "items" : {
+        "type" : ["object", "null"],
+        "properties" : {
+          "k" : {
+            "type" : "string",
+            "format" : "uuid"
+          },
+          "v" : {
+            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/IBHoMObject.json"
+          }
+        }
+      }
+    },
+    "Relations" : {
+      "type" : ["array", "null"],
+      "description" : "Collection of relations between IBHoMObject entities.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Analytical_oM/Graph/IRelation.json"
+      }
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Analytical.Graph.Graph"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Entities", "Relations"]
+}

@@ -1,0 +1,20 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Robot_oM/LoadCaseLabel.json",
+  "title" : "LoadCaseLabel",
+  "type" : ["object", "null"],
+  "properties" : {
+    "Label" : {
+      "type" : ["string", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Adapters.Robot.LoadCaseLabel"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Label"]
+}

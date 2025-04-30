@@ -1,0 +1,82 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/PhotovoltaicArray.json",
+  "title" : "PhotovoltaicArray",
+  "type" : ["object", "null"],
+  "properties" : {
+    "PeakPower" : {
+      "type" : ["string", "null"],
+      "description" : "Peak kW of photovoltaics (PVs) (kWp); 0.0 if none."
+    },
+    "Orientation" : {
+      "type" : ["string", "null"],
+      "description" : "PV orientation; only if peak kWp &gt; 0."
+    },
+    "Pitch" : {
+      "type" : ["string", "null"],
+      "description" : "PV pitch; only if peak kWp &gt; 0."
+    },
+    "Overshading" : {
+      "type" : ["string", "null"],
+      "description" : "PV overshading; only if peak kWp &gt; 0."
+    },
+    "MCSCertificate" : {
+      "type" : ["object", "null"],
+      "description" : ".",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional Type discirminator for BHoM type.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
+    },
+    "MCSCertificateReference" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "ManufacturerName" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "OvershadingMCS" : {
+      "type" : ["string", "null"],
+      "description" : "."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type discirminator for BHoM type.",
+      "const" : "BH.oM.Environment.SAP.XML.PhotovoltaicArray"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["PeakPower", "Orientation", "Pitch", "Overshading", "MCSCertificate", "MCSCertificateReference", "ManufacturerName", "OvershadingMCS"]
+}
