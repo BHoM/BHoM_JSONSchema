@@ -11,7 +11,7 @@ The schemas can be validated using various existing JSON schema validators. This
 
 ### https://www.jsonschemavalidator.net/
 
-To use this tool, simply put the Id of the schema you want to evalusate against as a `$ref` in the left hand pane, and the Json of the object you want to validate in the right hand pane. For example, to evaluate against a Line, put the following in the left hand side pane:
+To use this tool, simply put the Id of the schema you want to evalusate against as a `$ref` in the left hand pane, and the Json of the object you want to validate in the right hand pane. For example, to evaluate against a [Line](https://github.com/BHoM/BHoM_JSONSchema/blob/develop/Geometry_oM/Line.json), put the following in the left hand side pane:
 
 ```JSON
 {
