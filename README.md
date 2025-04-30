@@ -26,4 +26,4 @@ To find the Id of the object you want to validate, please locate the schema in t
 Has been tested and working for validation within the C# environment, building your custom evaluator.
 
 ## User notice
-This repository is in early stage of development and therby prone to potential change, as well as not as deeply validated through the test of time. If you have any issues or ideas for improvement, please do [raise an Issue here](https://github.com/BHoM/BHoM_JSONSchema/issues/new/choose)
+This repository is in early stage of development and thereby prone to potential change, as well as not as deeply validated through the test of time. If you have any issues or ideas for improvement, please do [raise an Issue here](https://github.com/BHoM/BHoM_JSONSchema/issues/new/choose)
