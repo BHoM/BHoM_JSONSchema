@@ -1,12 +1,21 @@
-# template-repository
-This repository can be used to create brand new BHoM Toolkits :rocket:
+# BHoM_JSONSchema
+Welcome to the BHoM_JSONSchema repository that hosts [Json-Schemas](https://json-schema.org/) for a majority of the objects defined in the object models across the [BHoM organisation](https://github.com/BHoM).
 
-- Just click on the green button above "Use this template" :point_up_2: . Call the new repo with the name of your software followed by `_Toolkit`, e.g. "MySoftware_Toolkit". If you want to develop outside of a repository, you can download the code by clicking "Code" and then saving it as zip.
-- Go in your repository or unzipped folder, double click the `RenameToolkitFiles.bat` file. When asked, insert the name of your software, e.g. "MySoftware". All the files and folder will be renamed accordingly.
-- Start developing! :rocket:
+The Json schemas makes in possible to validate your serialised json objects to ensure they are compatible and able to be deserialised into the BHoM ecosystem. 
 
-## Configure development environment
-Learn how to [set up your development environment for BHoM here](https://bhom.xyz/documentation/Guides-and-Tutorials/Coding-with-BHoM/). 
+If you like to get your BHoM oM included, please [raise an Issue here](https://github.com/BHoM/BHoM_JSONSchema/issues/new/choose), but please note that only object models hosted in the BHoM organisation will be accepted to be stored as JSON schemas in this repository.
 
-## Implement the Toolkits
-See the instructions for [creating a new toolkit here](https://bhom.xyz/documentation/Contributing/Implementing-a-new-Toolkit/).
+
+## Validation
+The schemas can be validated using various existing JSON schema validators. This has so far been tested and ensured to be functioning with the following validators.
+
+### https://www.jsonschemavalidator.net/
+
+To use this tool, simply put the Id of the schema you want to evalusate against in the left hand pane, and the Json of the object you want to validate in the right hand pane.
+
+### [JsonEverything](https://docs.json-everything.net/schema/basics/#schema-evaluation-2)
+
+Has been tested and working for validation within the C# environment, building your custom evaluator.
+
+## User notice
+This repository is in early stage of development and therby prone to potential change, as well as not as deeply validated through the test of time. If you have any issues or ideas for improvement, please do [raise an Issue here](https://github.com/BHoM/BHoM_JSONSchema/issues/new/choose)
