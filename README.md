@@ -3,7 +3,7 @@ Welcome to the BHoM_JSONSchema repository that hosts [Json-Schemas](https://json
 
 The Json schemas makes in possible to validate your serialised json objects to ensure they are compatible and able to be deserialised into the BHoM ecosystem. 
 
-If you like to get your BHoM oM included, please [raise an Issue here](https://github.com/BHoM/BHoM_JSONSchema/issues/new/choose), but please note that only object models hosted in the BHoM organisation will be accepted to be stored as JSON schemas in this repository.
+If you like to get your BHoM oM included, please [raise an Issue here](https://github.com/BHoM/BHoM_JSONSchema/issues/new/choose).
 
 
 ## Validation
