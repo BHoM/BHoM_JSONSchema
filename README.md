@@ -11,7 +11,15 @@ The schemas can be validated using various existing JSON schema validators. This
 
 ### https://www.jsonschemavalidator.net/
 
-To use this tool, simply put the Id of the schema you want to evalusate against in the left hand pane, and the Json of the object you want to validate in the right hand pane.
+To use this tool, simply put the Id of the schema you want to evalusate against as a `$ref` in the left hand pane, and the Json of the object you want to validate in the right hand pane. For example, to evaluate against a Line, put the following in the left hand side pane:
+
+```JSON
+{
+ "$ref":"https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Line.json"
+}
+```
+
+To find the Id of the object you want to validate, please locate the schema in the folders of this repo and look at the `$id` property. Alternatively, you can navigate to the file in the browser and hit the "raw" button, and copy the link as the `$ref`.
 
 ### [JsonEverything](https://docs.json-everything.net/schema/basics/#schema-evaluation-2)
 
