@@ -21,6 +21,9 @@ To use this tool, simply put the Id of the schema you want to evalusate against 
 
 To find the Id of the object you want to validate, please locate the schema in the folders of this repo and look at the `$id` property. Alternatively, you can navigate to the file in the browser and hit the "raw" button, and copy the link as the `$ref`.
 
+### https://nebula.packetcoders.io/json-schema-validator/
+Use a similar process as with the jsonschemavalidator outlined above.
+
 ### [JsonEverything](https://docs.json-everything.net/schema/basics/#schema-evaluation-2)
 
 Has been tested and working for validation within the C# environment, building your custom evaluator.
