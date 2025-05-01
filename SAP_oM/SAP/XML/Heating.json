@@ -70,7 +70,7 @@
         },
         "_t" : {
           "type" : ["string", "null"],
-          "description" : "Optional Type disciminator for BHoM type.",
+          "description" : "Optional type disciminator.",
           "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
         }
       },
@@ -88,7 +88,7 @@
         },
         "_t" : {
           "type" : ["string", "null"],
-          "description" : "Optional Type disciminator for BHoM type.",
+          "description" : "Optional type disciminator.",
           "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
         }
       },
@@ -126,7 +126,7 @@
         },
         "_t" : {
           "type" : ["string", "null"],
-          "description" : "Optional Type disciminator for BHoM type.",
+          "description" : "Optional type disciminator.",
           "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
         }
       },
@@ -168,7 +168,7 @@
         },
         "_t" : {
           "type" : ["string", "null"],
-          "description" : "Optional Type disciminator for BHoM type.",
+          "description" : "Optional type disciminator.",
           "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
         }
       },
@@ -186,7 +186,7 @@
         },
         "_t" : {
           "type" : ["string", "null"],
-          "description" : "Optional Type disciminator for BHoM type.",
+          "description" : "Optional type disciminator.",
           "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
         }
       },
@@ -204,7 +204,7 @@
         },
         "_t" : {
           "type" : ["string", "null"],
-          "description" : "Optional Type disciminator for BHoM type.",
+          "description" : "Optional type disciminator.",
           "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
         }
       },
@@ -222,7 +222,7 @@
         },
         "_t" : {
           "type" : ["string", "null"],
-          "description" : "Optional Type disciminator for BHoM type.",
+          "description" : "Optional type disciminator.",
           "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
         }
       },
@@ -240,7 +240,7 @@
         },
         "_t" : {
           "type" : ["string", "null"],
-          "description" : "Optional Type disciminator for BHoM type.",
+          "description" : "Optional type disciminator.",
           "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
         }
       },
@@ -258,7 +258,7 @@
         },
         "_t" : {
           "type" : ["string", "null"],
-          "description" : "Optional Type disciminator for BHoM type.",
+          "description" : "Optional type disciminator.",
           "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
         }
       },
@@ -276,7 +276,7 @@
         },
         "_t" : {
           "type" : ["string", "null"],
-          "description" : "Optional Type disciminator for BHoM type.",
+          "description" : "Optional type disciminator.",
           "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
         }
       },
@@ -322,7 +322,7 @@
         },
         "_t" : {
           "type" : ["string", "null"],
-          "description" : "Optional Type disciminator for BHoM type.",
+          "description" : "Optional type disciminator.",
           "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
         }
       },
@@ -363,12 +363,12 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type disciminator for BHoM type.",
+      "description" : "Optional type disciminator.",
       "const" : "BH.oM.Environment.SAP.XML.Heating"
     },
     "_bhomVersion" : {
       "type" : ["string", "null"],
-      "description" : "Optional Version of BHoM used when generating the object."
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
   "required" : ["MainHeatingDetails", "SecondaryHeatingCategory", "SecondaryHeatingDataSource", "SecondaryHeatingEfficiency", "SecondaryHeatingCommisioningCertificate", "SecondaryHeatingInstallationEngineer", "SecondaryHeatingCode", "SecondaryFuelType", "SecondaryHeatingPCDFFuelIndex", "SecondaryHeatingFlueType", "WaterHeatingCode", "WaterFuelType", "ThermalStore", "ImmersionHeatingType", "IsHeatPumpAssistedByImmersion", "IsImmersionForSummerUse", "HotWaterStoreManufacturer", "HotWaterStoreModel", "HotWaterStoreCommissioningCertificate", "HotWaterStoreInstallerEngineerRegistration", "HotWaterStoreSize", "HasHotWaterCylinder", "HotWaterStoreHeatTransferArea", "HotWaterStoreHeatLossSource", "HotWaterStoreHeatLoss", "HotWaterStoreInsulationType", "HotWaterInsulationThickness", "PrimaryPipeworkInsulation", "HasCylinderThermostat", "IsCylinderInHeatedSpace", "IsHotWaterSeperatlyTimed", "IsHeatPumpInstalledToMIS", "IsSecondaryHeatingHETASApproved", "IsThermalStoreNearBoiler", "IsThermalStoreOrCPSUInAiringCupboard", "HotWaterControlsManufacturer", "HotWaterControlsModel", "CommunityHeatingSystems", "HeatingDesignWaterUse", "MainHeatingSystemsInteraction", "SecondaryHeatingDeclaredValues", "SolarHeatingDetails", "StorageWHRS", "HasFixedAirConditioning", "ShowerOutlets", "NumberBaths", "NumberBathsWWHRS", "InstantaneousWHRS"]

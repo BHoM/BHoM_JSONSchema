@@ -24,12 +24,12 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type disciminator for BHoM type.",
+      "description" : "Optional type disciminator.",
       "const" : "BH.oM.XML.EnergyPlus.EnergyPlusObject"
     },
     "_bhomVersion" : {
       "type" : ["string", "null"],
-      "description" : "Optional Version of BHoM used when generating the object."
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
   "required" : ["BHoM_Guid", "CustomData", "Name"]

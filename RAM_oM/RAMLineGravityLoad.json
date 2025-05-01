@@ -54,12 +54,12 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type disciminator for BHoM type.",
+      "description" : "Optional type disciminator.",
       "const" : "BH.oM.Adapters.RAM.RAMLineGravityLoad"
     },
     "_bhomVersion" : {
       "type" : ["string", "null"],
-      "description" : "Optional Version of BHoM used when generating the object."
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
   "required" : ["ObjectId", "dist1", "dist2", "DL1", "DL2", "LL1", "LL2", "PL1", "PL2", "type"]

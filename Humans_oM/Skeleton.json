@@ -87,12 +87,12 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type disciminator for BHoM type.",
+      "description" : "Optional type disciminator.",
       "const" : "BH.oM.Humans.Skeleton"
     },
     "_bhomVersion" : {
       "type" : ["string", "null"],
-      "description" : "Optional Version of BHoM used when generating the object."
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
   "required" : ["Head", "RightHand", "LeftHand", "RightThumb", "LeftThumb", "Neck", "RightShoulder", "LeftShoulder", "Spine", "RightHip", "LeftHip", "RightUpperArm", "LeftUpperArm", "RightLowerArm", "LeftLowerArm", "RightUpperLeg", "LeftUpperLeg", "RightLowerLeg", "LeftLowerLeg", "RightFoot", "LeftFoot"]

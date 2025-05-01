@@ -15,7 +15,7 @@
         },
         "_t" : {
           "type" : ["string", "null"],
-          "description" : "Optional Type disciminator for BHoM type.",
+          "description" : "Optional type disciminator.",
           "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
         }
       },
@@ -33,7 +33,7 @@
         },
         "_t" : {
           "type" : ["string", "null"],
-          "description" : "Optional Type disciminator for BHoM type.",
+          "description" : "Optional type disciminator.",
           "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
         }
       },
@@ -51,7 +51,7 @@
         },
         "_t" : {
           "type" : ["string", "null"],
-          "description" : "Optional Type disciminator for BHoM type.",
+          "description" : "Optional type disciminator.",
           "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
         }
       },
@@ -69,7 +69,7 @@
         },
         "_t" : {
           "type" : ["string", "null"],
-          "description" : "Optional Type disciminator for BHoM type.",
+          "description" : "Optional type disciminator.",
           "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
         }
       },
@@ -87,7 +87,7 @@
         },
         "_t" : {
           "type" : ["string", "null"],
-          "description" : "Optional Type disciminator for BHoM type.",
+          "description" : "Optional type disciminator.",
           "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
         }
       },
@@ -105,7 +105,7 @@
         },
         "_t" : {
           "type" : ["string", "null"],
-          "description" : "Optional Type disciminator for BHoM type.",
+          "description" : "Optional type disciminator.",
           "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
         }
       },
@@ -132,12 +132,12 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type disciminator for BHoM type.",
+      "description" : "Optional type disciminator.",
       "const" : "BH.oM.Environment.SAP.XML.Addendum"
     },
     "_bhomVersion" : {
       "type" : ["string", "null"],
-      "description" : "Optional Version of BHoM used when generating the object."
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
   "required" : ["CavityFillRecommended", "StoneWalls", "SystemBuild", "AccessIssues", "HighExposure", "NarrowCavities"]

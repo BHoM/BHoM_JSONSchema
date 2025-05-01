@@ -85,12 +85,12 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type disciminator for BHoM type.",
+      "description" : "Optional type disciminator.",
       "const" : "BH.oM.Structure.Results.SteelUtilisation"
     },
     "_bhomVersion" : {
       "type" : ["string", "null"],
-      "description" : "Optional Version of BHoM used when generating the object."
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
   "required" : ["MajorEffectiveLength", "MinorEffectiveLength", "SteelClass", "TensionCompressionRatio", "MajorShearRatio", "MinorShearRatio", "TorsionRatio", "MajorTorsionShearRatio", "MinorTorsionShearRatio", "MajorBendingRatio", "MinorBendingRatio", "MajorBendingAxialRatio", "MinorBendingAxialRatio", "BiaxialBendingAxialRatio", "MajorUniformCompressionRatio", "MinorUniformCompressionRatio", "UniformBendingRatio", "MajorUniformBendingCompressionRatio", "MinorUniformBendingCompressionRatio"]

@@ -23,7 +23,7 @@
         },
         "_t" : {
           "type" : ["string", "null"],
-          "description" : "Optional Type disciminator for BHoM type.",
+          "description" : "Optional type disciminator.",
           "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
         }
       },
@@ -41,7 +41,7 @@
         },
         "_t" : {
           "type" : ["string", "null"],
-          "description" : "Optional Type disciminator for BHoM type.",
+          "description" : "Optional type disciminator.",
           "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
         }
       },
@@ -115,12 +115,12 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type disciminator for BHoM type.",
+      "description" : "Optional type disciminator.",
       "const" : "BH.oM.Adapters.File.FSDirectory"
     },
     "_bhomVersion" : {
       "type" : ["string", "null"],
-      "description" : "Optional Version of BHoM used when generating the object."
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
   "required" : ["ParentDirectory", "Name", "Exists", "IsReadOnly", "Size", "Attributes", "CreationTime", "CreationTimeUtc", "LastWriteTime", "ModifiedTimeUtc", "Owner", "Content"]

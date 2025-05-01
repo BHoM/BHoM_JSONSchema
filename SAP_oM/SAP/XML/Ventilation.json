@@ -72,7 +72,7 @@
         },
         "_t" : {
           "type" : ["string", "null"],
-          "description" : "Optional Type disciminator for BHoM type.",
+          "description" : "Optional type disciminator.",
           "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
         }
       },
@@ -142,7 +142,7 @@
         },
         "_t" : {
           "type" : ["string", "null"],
-          "description" : "Optional Type disciminator for BHoM type.",
+          "description" : "Optional type disciminator.",
           "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
         }
       },
@@ -208,7 +208,7 @@
         },
         "_t" : {
           "type" : ["string", "null"],
-          "description" : "Optional Type disciminator for BHoM type.",
+          "description" : "Optional type disciminator.",
           "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
         }
       },
@@ -251,12 +251,12 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type disciminator for BHoM type.",
+      "description" : "Optional type disciminator.",
       "const" : "BH.oM.Environment.SAP.XML.Ventilation"
     },
     "_bhomVersion" : {
       "type" : ["string", "null"],
-      "description" : "Optional Version of BHoM used when generating the object."
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
   "required" : ["ClosedFluesCount", "BoilerFluesCount", "OtherFluesCount", "OpenChimneysCount", "BlockedChimneysCount", "OpenFluesCount", "ExtractFansCount", "PSVCount", "FansVentCount", "FluelessGasFiresCount", "ShelteredSidesCount", "PressureTest", "PressureTestCertificateNumber", "AirPermeability", "HasDraughtLobby", "DraughtStripping", "MechanicalVentilationDataSource", "MechanicalVentSystemIndexNumber", "MechanicalVentComissioningCertificateNumber", "MechanicalVentInstallationEngineer", "MechanicalVentSystemMakeModel", "WetRoomsCount", "MechanicalVentSpecificFanPower", "MechanicalVentHeatRecoveryEfficiency", "MechanicalVentDuctType", "MechanicalVentDuctInsulation", "MechanicalVentDuctInsulationLevel", "MechanicalVentDuctPlacement", "MechanicalVentMeasuredInstallation", "KitchenRoomFansCount", "KitchenRoomFansSpecificPower", "NonKitchenRoomFansCount", "NonKitchenRoomFansSpecificPower", "KitchenDuctFansCount", "KitchenDuctFansSpecificPower", "NonKitchenDuctFansCount", "NonKitchenDuctFansSpecificPower", "KitchenWallFansCount", "KitchenWallFansSpecificPower", "NonKitchenWallFansCount", "NonKitchenWallFansSpecificPower", "IsMechanicalVentApprovedInstallerScheme", "MechanicalVentDuctsIndexNumber", "VentilationType", "GroundFloorType", "WallType"]

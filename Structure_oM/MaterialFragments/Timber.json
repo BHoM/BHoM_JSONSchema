@@ -84,12 +84,12 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type disciminator for BHoM type.",
+      "description" : "Optional type disciminator.",
       "const" : "BH.oM.Structure.MaterialFragments.Timber"
     },
     "_bhomVersion" : {
       "type" : ["string", "null"],
-      "description" : "Optional Version of BHoM used when generating the object."
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
   "required" : ["Name", "DensityCharacteristic", "Density", "DampingRatio", "YoungsModulus", "YoungsModulusMean", "PoissonsRatio", "ThermalExpansionCoeff", "ShearModulus", "ShearModulusMean", "BendingStrength", "TensionParallelStrength", "TensionPerpendicularStrength", "CompressionParallelStrength", "CompressionPerpendicularStrength", "ShearStrength", "RollingShearStrength"]
