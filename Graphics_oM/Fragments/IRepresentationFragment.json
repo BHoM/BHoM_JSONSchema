@@ -13,7 +13,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Graphics.Fragments.RelationRepresentation"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/Fragments/RelationRepresentation.json"
@@ -25,7 +26,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Graphics.Fragments.GroupRepresentation"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/Fragments/GroupRepresentation.json"
@@ -37,7 +39,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Graphics.Fragments.GraphRepresentation"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/Fragments/GraphRepresentation.json"
@@ -49,7 +52,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Graphics.Fragments.EntityRepresentation"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/Fragments/EntityRepresentation.json"

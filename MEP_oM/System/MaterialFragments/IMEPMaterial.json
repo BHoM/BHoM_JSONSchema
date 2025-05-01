@@ -13,7 +13,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.MEP.System.MaterialFragments.WireMaterial"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/MaterialFragments/WireMaterial.json"
@@ -25,7 +26,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.MEP.System.MaterialFragments.PipeMaterial"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/MaterialFragments/PipeMaterial.json"
@@ -37,7 +39,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.MEP.System.MaterialFragments.LiningMaterial"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/MaterialFragments/LiningMaterial.json"
@@ -49,7 +52,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.MEP.System.MaterialFragments.InsulationMaterial"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/MaterialFragments/InsulationMaterial.json"
@@ -61,7 +65,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.MEP.System.MaterialFragments.DuctMaterial"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/MaterialFragments/DuctMaterial.json"
@@ -73,7 +78,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.MEP.System.MaterialFragments.CableTrayMaterial"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/MaterialFragments/CableTrayMaterial.json"

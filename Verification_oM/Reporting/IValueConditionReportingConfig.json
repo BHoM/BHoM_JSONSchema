@@ -13,7 +13,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Verification.Reporting.ValueConditionReportingConfig"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Reporting/ValueConditionReportingConfig.json"
@@ -25,7 +26,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Verification.Reporting.NumberConditionReportingConfig"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Reporting/NumberConditionReportingConfig.json"

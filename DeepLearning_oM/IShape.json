@@ -13,7 +13,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.DeepLearning.Shape3d"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/DeepLearning_oM/Shape3d.json"
@@ -25,7 +26,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.DeepLearning.Shape2d"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/DeepLearning_oM/Shape2d.json"

@@ -13,7 +13,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Environment.SpaceCriteria.Pollutant"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/Pollutant.json"
@@ -25,7 +26,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Environment.SpaceCriteria.Plug"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/Plug.json"
@@ -37,7 +39,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Environment.SpaceCriteria.People"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/People.json"
@@ -49,7 +52,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Environment.SpaceCriteria.Lighting"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/Lighting.json"
@@ -61,7 +65,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Environment.SpaceCriteria.Infiltration"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/Infiltration.json"
@@ -73,7 +78,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Environment.SpaceCriteria.Equipment"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/Equipment.json"

@@ -13,7 +13,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Ground.StratumReference"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Ground_oM/StratumReference.json"

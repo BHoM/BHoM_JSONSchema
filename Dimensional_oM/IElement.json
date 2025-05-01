@@ -13,7 +13,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Elements.Stem"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Stem.json"
@@ -25,7 +26,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Elements.Pile"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Pile.json"
@@ -37,7 +39,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Elements.Panel"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Panel.json"
@@ -49,7 +52,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Elements.PadFoundation"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/PadFoundation.json"
@@ -61,7 +65,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Elements.Opening"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Opening.json"
@@ -73,7 +78,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Elements.Node"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Node.json"
@@ -85,7 +91,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Elements.Edge"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Edge.json"
@@ -97,7 +104,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Elements.Bar"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Bar.json"
@@ -109,7 +117,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Reinforcement.ReinforcementRegion"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Reinforcement/ReinforcementRegion.json"
@@ -121,7 +130,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Spatial.SettingOut.Grid"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/SettingOut/Grid.json"
@@ -133,7 +143,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Security.Elements.CameraDevice"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Security_oM/Elements/CameraDevice.json"
@@ -145,7 +156,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Elements.Window"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Elements/Window.json"
@@ -157,7 +169,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Elements.Wall"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Elements/Wall.json"
@@ -169,7 +182,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Elements.Void"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Elements/Void.json"
@@ -181,7 +195,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Elements.Roof"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Elements/Roof.json"
@@ -193,7 +208,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Elements.Pile"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Elements/Pile.json"
@@ -205,7 +221,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Elements.PadFoundation"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Elements/PadFoundation.json"
@@ -217,7 +234,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Elements.MeshElement"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Elements/MeshElement.json"
@@ -229,7 +247,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Elements.Floor"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Elements/Floor.json"
@@ -241,7 +260,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Elements.Door"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Elements/Door.json"
@@ -253,7 +273,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Elements.Column"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Elements/Column.json"
@@ -265,7 +286,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Elements.Cable"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Elements/Cable.json"
@@ -277,7 +299,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Elements.Bracing"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Elements/Bracing.json"
@@ -289,7 +312,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Elements.Beam"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Elements/Beam.json"
@@ -301,7 +325,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.MEP.Equipment.MechanicalEquipment"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Equipment/MechanicalEquipment.json"
@@ -313,7 +338,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.MEP.Equipment.ElectricalEquipment"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Equipment/ElectricalEquipment.json"
@@ -325,7 +351,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.MEP.Fixtures.PlumbingFixture"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Fixtures/PlumbingFixture.json"
@@ -337,7 +364,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.MEP.Fixtures.LightFixture"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Fixtures/LightFixture.json"
@@ -349,7 +377,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.MEP.Fixtures.FireAlarmDevice"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Fixtures/FireAlarmDevice.json"
@@ -361,7 +390,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.MEP.Fixtures.ElectricalFixture"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Fixtures/ElectricalFixture.json"
@@ -373,7 +403,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.MEP.Fixtures.AirTerminal"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Fixtures/AirTerminal.json"
@@ -385,7 +416,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.MEP.System.Dampers.Valve"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/Dampers/Valve.json"
@@ -397,7 +429,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.MEP.System.Dampers.VolumeDamper"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/Dampers/VolumeDamper.json"
@@ -409,7 +442,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.MEP.System.Dampers.Damper"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/Dampers/Damper.json"
@@ -421,7 +455,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.MEP.System.Fittings.Fitting"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/Fittings/Fitting.json"
@@ -433,7 +468,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.MEP.System.WireSegment"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/WireSegment.json"
@@ -445,7 +481,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.MEP.System.Pipe"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/Pipe.json"
@@ -457,7 +494,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.MEP.System.Node"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/Node.json"
@@ -469,7 +507,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.MEP.System.FlowSystem"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/FlowSystem.json"
@@ -481,7 +520,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.MEP.System.Duct"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/Duct.json"
@@ -493,7 +533,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.MEP.System.CableTray"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/CableTray.json"
@@ -505,7 +546,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Lighting.Analysis.Node"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Lighting_oM/Analysis/Node.json"
@@ -517,7 +559,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Lighting.Elements.Luminaire"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Lighting_oM/Elements/Luminaire.json"
@@ -529,7 +572,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Adapters.GSA.Elements.Spacer"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/GSA_oM/Elements/Spacer.json"
@@ -541,7 +585,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Graphics.RenderPoint"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/RenderPoint.json"
@@ -553,7 +598,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Geometry.Point"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
@@ -565,7 +611,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Geometry.PlanarSurface"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/PlanarSurface.json"
@@ -577,7 +624,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Geometry.Polyline"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Polyline.json"
@@ -589,7 +637,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Geometry.Polygon"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Polygon.json"
@@ -601,7 +650,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Geometry.PolyCurve"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/PolyCurve.json"
@@ -613,7 +663,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Geometry.NurbsCurve"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/NurbsCurve.json"
@@ -625,7 +676,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Geometry.Line"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Line.json"
@@ -637,7 +689,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Geometry.Ellipse"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Ellipse.json"
@@ -649,7 +702,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Geometry.Circle"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Circle.json"
@@ -661,7 +715,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Geometry.BoundaryCurve"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/BoundaryCurve.json"
@@ -673,7 +728,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Geometry.Arc"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Arc.json"
@@ -685,7 +741,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Facade.Elements.Panel"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Elements/Panel.json"
@@ -697,7 +754,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Facade.Elements.Opening"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Elements/Opening.json"
@@ -709,7 +767,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Facade.Elements.FrameEdge"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Elements/FrameEdge.json"
@@ -721,7 +780,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Facade.Elements.CurtainWall"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Elements/CurtainWall.json"
@@ -733,7 +793,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Environment.Analysis.Node"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Analysis/Node.json"
@@ -745,7 +806,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Environment.Elements.Zone"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Elements/Zone.json"
@@ -757,7 +819,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Environment.Elements.Space"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Elements/Space.json"
@@ -769,7 +832,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Environment.Elements.Panel"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Elements/Panel.json"
@@ -781,7 +845,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Environment.Elements.Opening"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Elements/Opening.json"
@@ -793,7 +858,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Environment.Elements.Edge"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Elements/Edge.json"
@@ -805,7 +871,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Architecture.BuildersWork.Opening"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Architecture_oM/BuildersWork/Opening.json"
@@ -817,7 +884,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Architecture.Elements.Room"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Architecture_oM/Elements/Room.json"
@@ -829,7 +897,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Architecture.Elements.CeilingTile"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Architecture_oM/Elements/CeilingTile.json"
@@ -841,7 +910,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Architecture.Elements.Ceiling"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Architecture_oM/Elements/Ceiling.json"

@@ -13,7 +13,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Test.CodeCompliance.Attributes.PathAttribute"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/CodeComplianceTest_oM/CodeCompliance/Attributes/PathAttribute.json"
@@ -25,7 +26,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Test.CodeCompliance.Attributes.IsPublicAttribute"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/CodeComplianceTest_oM/CodeCompliance/Attributes/IsPublicAttribute.json"

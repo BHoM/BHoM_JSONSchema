@@ -13,7 +13,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.DeepLearning.Activations.Tanh"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/DeepLearning_oM/Activations/Tanh.json"
@@ -25,7 +26,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.DeepLearning.Activations.Softmax"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/DeepLearning_oM/Activations/Softmax.json"
@@ -37,7 +39,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.DeepLearning.Activations.Sigmoid"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/DeepLearning_oM/Activations/Sigmoid.json"
@@ -49,7 +52,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.DeepLearning.Activations.ReLU"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/DeepLearning_oM/Activations/ReLU.json"
@@ -61,7 +65,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.DeepLearning.Activations.LogSoftmax"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/DeepLearning_oM/Activations/LogSoftmax.json"
@@ -73,7 +78,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.DeepLearning.Activations.LogSigmoid"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/DeepLearning_oM/Activations/LogSigmoid.json"
@@ -85,7 +91,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.DeepLearning.Activations.LeakyReLU"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/DeepLearning_oM/Activations/LeakyReLU.json"
@@ -97,7 +104,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.DeepLearning.Layers.TransposedConvolution2d"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/DeepLearning_oM/Layers/TransposedConvolution2d.json"
@@ -109,7 +117,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.DeepLearning.Layers.MaxUnPooling2d"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/DeepLearning_oM/Layers/MaxUnPooling2d.json"
@@ -121,7 +130,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.DeepLearning.Layers.MaxPooling2d"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/DeepLearning_oM/Layers/MaxPooling2d.json"
@@ -133,7 +143,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.DeepLearning.Layers.LSTM"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/DeepLearning_oM/Layers/LSTM.json"
@@ -145,7 +156,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.DeepLearning.Layers.Linear"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/DeepLearning_oM/Layers/Linear.json"
@@ -157,7 +169,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.DeepLearning.Layers.GRU"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/DeepLearning_oM/Layers/GRU.json"
@@ -169,7 +182,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.DeepLearning.Layers.Convolution2d"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/DeepLearning_oM/Layers/Convolution2d.json"
@@ -181,7 +195,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.DeepLearning.Layers.AvgPooling2d"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/DeepLearning_oM/Layers/AvgPooling2d.json"
@@ -193,7 +208,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.DeepLearning.Losses.NegativeLogLikelihood"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/DeepLearning_oM/Losses/NegativeLogLikelihood.json"
@@ -205,7 +221,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.DeepLearning.Losses.MeanSquareError"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/DeepLearning_oM/Losses/MeanSquareError.json"
@@ -217,7 +234,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.DeepLearning.Losses.L1"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/DeepLearning_oM/Losses/L1.json"
@@ -229,7 +247,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.DeepLearning.Losses.CrossEntropy"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/DeepLearning_oM/Losses/CrossEntropy.json"
@@ -241,7 +260,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.DeepLearning.Losses.BinaryCrossEntropy"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/DeepLearning_oM/Losses/BinaryCrossEntropy.json"
@@ -253,7 +273,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.DeepLearning.Losses.BCEWithSigmoid"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/DeepLearning_oM/Losses/BCEWithSigmoid.json"

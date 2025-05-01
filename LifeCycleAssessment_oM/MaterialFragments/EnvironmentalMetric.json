@@ -13,7 +13,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.WaterDeprivationMetric"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/WaterDeprivationMetric.json"
@@ -25,7 +26,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.PhotochemicalOzoneCreationTRACIMetric"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/PhotochemicalOzoneCreationTRACIMetric.json"
@@ -37,7 +39,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.PhotochemicalOzoneCreationMetric"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/PhotochemicalOzoneCreationMetric.json"
@@ -49,7 +52,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.PhotochemicalOzoneCreationCMLMetric"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/PhotochemicalOzoneCreationCMLMetric.json"
@@ -61,7 +65,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.OzoneDepletionMetric"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/OzoneDepletionMetric.json"
@@ -73,7 +78,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.EutrophicationTRACIMetric"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EutrophicationTRACIMetric.json"
@@ -85,7 +91,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.EutrophicationTerrestrialMetric"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EutrophicationTerrestrialMetric.json"
@@ -97,7 +104,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.EutrophicationCMLMetric"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EutrophicationCMLMetric.json"
@@ -109,7 +117,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.EutrophicationAquaticMarineMetric"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EutrophicationAquaticMarineMetric.json"
@@ -121,7 +130,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.EutrophicationAquaticFreshwaterMetric"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EutrophicationAquaticFreshwaterMetric.json"
@@ -133,7 +143,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.ClimateChangeTotalNoBiogenicMetric"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/ClimateChangeTotalNoBiogenicMetric.json"
@@ -145,7 +156,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.ClimateChangeTotalMetric"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/ClimateChangeTotalMetric.json"
@@ -157,7 +169,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.ClimateChangeLandUseMetric"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/ClimateChangeLandUseMetric.json"
@@ -169,7 +182,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.ClimateChangeFossilMetric"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/ClimateChangeFossilMetric.json"
@@ -181,7 +195,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.ClimateChangeBiogenicMetric"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/ClimateChangeBiogenicMetric.json"
@@ -193,7 +208,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.AcidificationMetric"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/AcidificationMetric.json"
@@ -205,7 +221,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.AbioticDepletionMineralsAndMetalsMetric"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/AbioticDepletionMineralsAndMetalsMetric.json"
@@ -217,7 +234,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.AbioticDepletionFossilResourcesMetric"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/AbioticDepletionFossilResourcesMetric.json"

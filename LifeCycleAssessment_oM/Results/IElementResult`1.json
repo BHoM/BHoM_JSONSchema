@@ -17,7 +17,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.WaterDeprivationElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/WaterDeprivationElementResult.json"
@@ -29,7 +30,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.PhotochemicalOzoneCreationTRACIElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/PhotochemicalOzoneCreationTRACIElementResult.json"
@@ -41,7 +43,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.PhotochemicalOzoneCreationElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/PhotochemicalOzoneCreationElementResult.json"
@@ -53,7 +56,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.PhotochemicalOzoneCreationCMLElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/PhotochemicalOzoneCreationCMLElementResult.json"
@@ -65,7 +69,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.OzoneDepletionElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/OzoneDepletionElementResult.json"
@@ -77,7 +82,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.EutrophicationTRACIElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/EutrophicationTRACIElementResult.json"
@@ -89,7 +95,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.EutrophicationTerrestrialElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/EutrophicationTerrestrialElementResult.json"
@@ -101,7 +108,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.EutrophicationCMLElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/EutrophicationCMLElementResult.json"
@@ -113,7 +121,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.EutrophicationAquaticMarineElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/EutrophicationAquaticMarineElementResult.json"
@@ -125,7 +134,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.EutrophicationAquaticFreshwaterElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/EutrophicationAquaticFreshwaterElementResult.json"
@@ -137,7 +147,8 @@
             "type" : ["string", "null"],
             "pattern" : "^BH\\.oM\\.LifeCycleAssessment\\.Results\\.ElementResult`1\\[\\[.*\\]\\]$"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/ElementResult`1.json"
@@ -149,7 +160,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.ClimateChangeTotalNoBiogenicElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/ClimateChangeTotalNoBiogenicElementResult.json"
@@ -161,7 +173,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.ClimateChangeTotalElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/ClimateChangeTotalElementResult.json"
@@ -173,7 +186,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.ClimateChangeLandUseElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/ClimateChangeLandUseElementResult.json"
@@ -185,7 +199,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.ClimateChangeFossilElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/ClimateChangeFossilElementResult.json"
@@ -197,7 +212,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.ClimateChangeBiogenicElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/ClimateChangeBiogenicElementResult.json"
@@ -209,7 +225,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.AcidificationElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/AcidificationElementResult.json"
@@ -221,7 +238,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.AbioticDepletionMineralsAndMetalsElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/AbioticDepletionMineralsAndMetalsElementResult.json"
@@ -233,7 +251,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.AbioticDepletionFossilResourcesElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/AbioticDepletionFossilResourcesElementResult.json"

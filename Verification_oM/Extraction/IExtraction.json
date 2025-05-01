@@ -13,7 +13,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Verification.Extraction.ConditionBasedFilter"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Extraction/ConditionBasedFilter.json"

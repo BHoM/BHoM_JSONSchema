@@ -13,7 +13,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Adapters.Revit.Mapping.ElementTypeParameterLink"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Mapping/ElementTypeParameterLink.json"
@@ -25,7 +26,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Adapters.Revit.Mapping.ElementParameterLink"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Mapping/ElementParameterLink.json"

@@ -13,7 +13,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.NodeVelocity"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/NodeVelocity.json"
@@ -25,7 +26,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.NodeResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/NodeResult.json"
@@ -37,7 +39,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.NodeReaction"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/NodeReaction.json"
@@ -49,7 +52,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.NodeModeShape"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/NodeModeShape.json"
@@ -61,7 +65,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.NodeModalResults"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/NodeModalResults.json"
@@ -73,7 +78,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.NodeModalMass"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/NodeModalMass.json"
@@ -85,7 +91,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.NodeDisplacement"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/NodeDisplacement.json"
@@ -97,7 +104,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.NodeAcceleration"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/NodeAcceleration.json"
@@ -109,7 +117,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.MeshVonMises"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/MeshVonMises.json"
@@ -121,7 +130,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.MeshStress"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/MeshStress.json"
@@ -133,7 +143,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.MeshResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/MeshResult.json"
@@ -145,7 +156,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.MeshRequiredArea"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/MeshRequiredArea.json"
@@ -157,7 +169,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.MeshModeShape"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/MeshModeShape.json"
@@ -169,7 +182,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.MeshForce"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/MeshForce.json"
@@ -181,7 +195,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.MeshElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/MeshElementResult.json"
@@ -193,7 +208,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.MeshDisplacement"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/MeshDisplacement.json"
@@ -205,7 +221,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.StructuralGlobalResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/StructuralGlobalResult.json"
@@ -217,7 +234,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.StoreyDrift"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/StoreyDrift.json"
@@ -229,7 +247,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.ModalMassAndFrequency"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/ModalMassAndFrequency.json"
@@ -241,7 +260,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.ModalDynamics"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/ModalDynamics.json"
@@ -253,7 +273,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.GlobalReactions"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/GlobalReactions.json"
@@ -265,7 +286,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.SteelUtilisation"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/SteelUtilisation.json"
@@ -277,7 +299,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.CompositeUtilisation"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/CompositeUtilisation.json"
@@ -289,7 +312,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.BarStress"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/BarStress.json"
@@ -301,7 +325,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.BarStrain"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/BarStrain.json"
@@ -313,7 +338,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.BarResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/BarResult.json"
@@ -325,7 +351,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.BarRequiredArea"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/BarRequiredArea.json"
@@ -337,7 +364,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.BarModeShape"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/BarModeShape.json"
@@ -349,7 +377,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.BarForce"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/BarForce.json"
@@ -361,7 +390,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.BarDisplacement"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/BarDisplacement.json"
@@ -373,7 +403,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.BarDeformation"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/BarDeformation.json"
@@ -385,7 +416,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Adapters.SAP2000.Results.AISCSteelUtilisation"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/Results/AISCSteelUtilisation.json"
@@ -397,7 +429,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Adapters.ETABS.Results.PierForce"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/Results/PierForce.json"
@@ -409,7 +442,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Adapters.ETABS.Results.SpandrelForce"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/Results/SpandrelForce.json"

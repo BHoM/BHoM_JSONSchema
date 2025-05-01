@@ -13,7 +13,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Spatial.ShapeProfiles.CellularOpenings.SinusoidalCellularOpening"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/CellularOpenings/SinusoidalCellularOpening.json"
@@ -25,7 +26,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Spatial.ShapeProfiles.CellularOpenings.HexagonalCellularOpening"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/CellularOpenings/HexagonalCellularOpening.json"
@@ -37,7 +39,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Spatial.ShapeProfiles.CellularOpenings.CircularCellularOpening"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/CellularOpenings/CircularCellularOpening.json"

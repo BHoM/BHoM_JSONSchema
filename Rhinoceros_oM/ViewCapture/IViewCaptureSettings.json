@@ -13,7 +13,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Adapters.Rhinoceros.ViewCapture.ScaleViewCaptureSettings"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Rhinoceros_oM/ViewCapture/ScaleViewCaptureSettings.json"
@@ -25,7 +26,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Adapters.Rhinoceros.ViewCapture.DimensionViewCaptureSettings"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Rhinoceros_oM/ViewCapture/DimensionViewCaptureSettings.json"

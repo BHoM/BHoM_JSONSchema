@@ -19,7 +19,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Verification.Results.SpecificationResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Results/SpecificationResult.json"
@@ -31,7 +32,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Verification.Results.RequirementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Results/RequirementResult.json"
@@ -43,7 +45,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Verification.Results.ValueConditionResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Results/ValueConditionResult.json"
@@ -55,7 +58,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Verification.Results.SingleLogicalConditionResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Results/SingleLogicalConditionResult.json"
@@ -67,7 +71,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Verification.Results.LogicalCollectionConditionResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Results/LogicalCollectionConditionResult.json"
@@ -79,7 +84,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Verification.Results.IsOfTypeResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Results/IsOfTypeResult.json"
@@ -91,7 +97,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Verification.Results.IsNotNullResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Results/IsNotNullResult.json"
@@ -103,7 +110,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Verification.Results.FormulaConditionResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Results/FormulaConditionResult.json"
@@ -115,7 +123,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Test.Results.InputOutputDifference"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Test_oM/Results/InputOutputDifference.json"
@@ -127,7 +136,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Test.Results.InputOutputComparisonSummary"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Test_oM/Results/InputOutputComparisonSummary.json"
@@ -139,7 +149,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Test.Results.InputOutputComparisonDiffing"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Test_oM/Results/InputOutputComparisonDiffing.json"
@@ -151,7 +162,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Test.Results.InputOutputComparison"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Test_oM/Results/InputOutputComparison.json"
@@ -163,7 +175,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Test.UnitTests.TestData"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Test_oM/UnitTests/TestData.json"
@@ -175,7 +188,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.NodeVelocity"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/NodeVelocity.json"
@@ -187,7 +201,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.NodeResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/NodeResult.json"
@@ -199,7 +214,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.NodeReaction"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/NodeReaction.json"
@@ -211,7 +227,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.NodeModeShape"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/NodeModeShape.json"
@@ -223,7 +240,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.NodeModalResults"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/NodeModalResults.json"
@@ -235,7 +253,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.NodeModalMass"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/NodeModalMass.json"
@@ -247,7 +266,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.NodeDisplacement"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/NodeDisplacement.json"
@@ -259,7 +279,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.NodeAcceleration"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/NodeAcceleration.json"
@@ -271,7 +292,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.MeshVonMises"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/MeshVonMises.json"
@@ -283,7 +305,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.MeshStress"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/MeshStress.json"
@@ -295,7 +318,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.MeshResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/MeshResult.json"
@@ -307,7 +331,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.MeshRequiredArea"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/MeshRequiredArea.json"
@@ -319,7 +344,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.MeshModeShape"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/MeshModeShape.json"
@@ -331,7 +357,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.MeshForce"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/MeshForce.json"
@@ -343,7 +370,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.MeshElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/MeshElementResult.json"
@@ -355,7 +383,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.MeshDisplacement"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/MeshDisplacement.json"
@@ -367,7 +396,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.StructuralGlobalResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/StructuralGlobalResult.json"
@@ -379,7 +409,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.StoreyDrift"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/StoreyDrift.json"
@@ -391,7 +422,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.ModalMassAndFrequency"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/ModalMassAndFrequency.json"
@@ -403,7 +435,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.ModalDynamics"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/ModalDynamics.json"
@@ -415,7 +448,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.GlobalReactions"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/GlobalReactions.json"
@@ -427,7 +461,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.SteelUtilisation"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/SteelUtilisation.json"
@@ -439,7 +474,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.CompositeUtilisation"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/CompositeUtilisation.json"
@@ -451,7 +487,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.BarStress"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/BarStress.json"
@@ -463,7 +500,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.BarStrain"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/BarStrain.json"
@@ -475,7 +513,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.BarResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/BarResult.json"
@@ -487,7 +526,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.BarRequiredArea"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/BarRequiredArea.json"
@@ -499,7 +539,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.BarModeShape"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/BarModeShape.json"
@@ -511,7 +552,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.BarForce"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/BarForce.json"
@@ -523,7 +565,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.BarDisplacement"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/BarDisplacement.json"
@@ -535,7 +578,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.Results.BarDeformation"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/BarDeformation.json"
@@ -547,7 +591,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.SectionProperties.TimberSection"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SectionProperties/TimberSection.json"
@@ -559,7 +604,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.SectionProperties.SteelSection"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SectionProperties/SteelSection.json"
@@ -571,7 +617,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.SectionProperties.GenericSection"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SectionProperties/GenericSection.json"
@@ -583,7 +630,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.SectionProperties.ConcreteSection"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SectionProperties/ConcreteSection.json"
@@ -595,7 +643,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.SectionProperties.CompositeSection"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SectionProperties/CompositeSection.json"
@@ -607,7 +656,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.SectionProperties.CellularSection"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SectionProperties/CellularSection.json"
@@ -619,7 +669,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.SectionProperties.CableSection"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SectionProperties/CableSection.json"
@@ -631,7 +682,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Structure.SectionProperties.AluminiumSection"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SectionProperties/AluminiumSection.json"
@@ -643,7 +695,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Spatial.Layouts.OffsetCurveLayout"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/Layouts/OffsetCurveLayout.json"
@@ -655,7 +708,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Spatial.Layouts.MultiLinearLayout"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/Layouts/MultiLinearLayout.json"
@@ -667,7 +721,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Spatial.Layouts.LinearLayout"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/Layouts/LinearLayout.json"
@@ -679,7 +734,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Spatial.Layouts.ExplicitLayout"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/Layouts/ExplicitLayout.json"
@@ -691,7 +747,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Spatial.Layouts.ExplicitCurveLayout"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/Layouts/ExplicitCurveLayout.json"
@@ -703,7 +760,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Spatial.ShapeProfiles.CellularOpenings.SinusoidalCellularOpening"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/CellularOpenings/SinusoidalCellularOpening.json"
@@ -715,7 +773,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Spatial.ShapeProfiles.CellularOpenings.HexagonalCellularOpening"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/CellularOpenings/HexagonalCellularOpening.json"
@@ -727,7 +786,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Spatial.ShapeProfiles.CellularOpenings.CircularCellularOpening"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/CellularOpenings/CircularCellularOpening.json"
@@ -739,7 +799,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Spatial.ShapeProfiles.ZSectionProfile"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/ZSectionProfile.json"
@@ -751,7 +812,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Spatial.ShapeProfiles.VoidedISectionProfile"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/VoidedISectionProfile.json"
@@ -763,7 +825,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Spatial.ShapeProfiles.TubeProfile"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/TubeProfile.json"
@@ -775,7 +838,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Spatial.ShapeProfiles.TSectionProfile"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/TSectionProfile.json"
@@ -787,7 +851,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Spatial.ShapeProfiles.TaperFlangeISectionProfile"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/TaperFlangeISectionProfile.json"
@@ -799,7 +864,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Spatial.ShapeProfiles.TaperFlangeChannelProfile"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/TaperFlangeChannelProfile.json"
@@ -811,7 +877,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Spatial.ShapeProfiles.TaperedProfile"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/TaperedProfile.json"
@@ -823,7 +890,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Spatial.ShapeProfiles.RectangleProfile"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/RectangleProfile.json"
@@ -835,7 +903,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Spatial.ShapeProfiles.KiteProfile"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/KiteProfile.json"
@@ -847,7 +916,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Spatial.ShapeProfiles.ISectionProfile"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/ISectionProfile.json"
@@ -859,7 +929,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Spatial.ShapeProfiles.GeneralisedTSectionProfile"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/GeneralisedTSectionProfile.json"
@@ -871,7 +942,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Spatial.ShapeProfiles.GeneralisedFabricatedBoxProfile"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/GeneralisedFabricatedBoxProfile.json"
@@ -883,7 +955,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Spatial.ShapeProfiles.FreeFormProfile"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/FreeFormProfile.json"
@@ -895,7 +968,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Spatial.ShapeProfiles.FabricatedISectionProfile"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/FabricatedISectionProfile.json"
@@ -907,7 +981,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Spatial.ShapeProfiles.FabricatedBoxProfile"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/FabricatedBoxProfile.json"
@@ -919,7 +994,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Spatial.ShapeProfiles.CircleProfile"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/CircleProfile.json"
@@ -931,7 +1007,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Spatial.ShapeProfiles.ChannelProfile"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/ChannelProfile.json"
@@ -943,7 +1020,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Spatial.ShapeProfiles.BoxProfile"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/BoxProfile.json"
@@ -955,7 +1033,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Spatial.ShapeProfiles.AngleProfile"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/AngleProfile.json"
@@ -967,7 +1046,8 @@
             "type" : ["string", "null"],
             "pattern" : "^BH\\.oM\\.Search\\.SearchResult`1\\[\\[.*\\]\\]$"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Search_oM/SearchResult`1.json"
@@ -979,7 +1059,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Adapters.SAP2000.Results.AISCSteelUtilisation"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/Results/AISCSteelUtilisation.json"
@@ -991,7 +1072,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Revit.Attributes.CategoryTypeAttribute"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Attributes/CategoryTypeAttribute.json"
@@ -1003,7 +1085,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Revit.Attributes.CategoryDisciplineAttribute"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Attributes/CategoryDisciplineAttribute.json"
@@ -1015,7 +1098,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Revit.RevitHostFragment"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/RevitHostFragment.json"
@@ -1027,7 +1111,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Adapters.Revit.Parameters.RevitPulledParameters"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Parameters/RevitPulledParameters.json"
@@ -1039,7 +1124,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Adapters.Revit.Parameters.RevitIdentifiers"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Parameters/RevitIdentifiers.json"
@@ -1051,7 +1137,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Adapters.Revit.RevitRepresentation"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/RevitRepresentation.json"
@@ -1063,7 +1150,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Adapters.Revit.RevitGeometry"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/RevitGeometry.json"
@@ -1075,7 +1163,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Adapters.Revit.RevitFilePreview"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/RevitFilePreview.json"
@@ -1087,7 +1176,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.YoungsModulus"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/YoungsModulus.json"
@@ -1099,7 +1189,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.WarpingConstant"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/WarpingConstant.json"
@@ -1111,7 +1202,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.VolumetricFlowRate"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/VolumetricFlowRate.json"
@@ -1123,7 +1215,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.VolumePerQuantity"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/VolumePerQuantity.json"
@@ -1135,7 +1228,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.Volume"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/Volume.json"
@@ -1147,7 +1241,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.Velocity"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/Velocity.json"
@@ -1159,7 +1254,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.TorsionConstant"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/TorsionConstant.json"
@@ -1171,7 +1267,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.Time"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/Time.json"
@@ -1183,7 +1280,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.ThermalExpansionCoefficient"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/ThermalExpansionCoefficient.json"
@@ -1195,7 +1293,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.Temperature"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/Temperature.json"
@@ -1207,7 +1306,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.Stress"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/Stress.json"
@@ -1219,7 +1319,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.Strain"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/Strain.json"
@@ -1231,7 +1332,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.SpecificEnergy"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/SpecificEnergy.json"
@@ -1243,7 +1345,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.ShearModulus"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/ShearModulus.json"
@@ -1255,7 +1358,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.SectionModulus"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/SectionModulus.json"
@@ -1267,7 +1371,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.SecondMomentOfArea"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/SecondMomentOfArea.json"
@@ -1279,7 +1384,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.Ratio"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/Ratio.json"
@@ -1291,7 +1397,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.Pressure"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/Pressure.json"
@@ -1303,7 +1410,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.PhotochemicalOzoneCreationTRACIPerQuantity"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/PhotochemicalOzoneCreationTRACIPerQuantity.json"
@@ -1315,7 +1423,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.PhotochemicalOzoneCreationTRACI"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/PhotochemicalOzoneCreationTRACI.json"
@@ -1327,7 +1436,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.PhotochemicalOzoneCreationPerQuantity"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/PhotochemicalOzoneCreationPerQuantity.json"
@@ -1339,7 +1449,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.PhotochemicalOzoneCreationCMLPerQuantity"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/PhotochemicalOzoneCreationCMLPerQuantity.json"
@@ -1351,7 +1462,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.PhotochemicalOzoneCreationCML"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/PhotochemicalOzoneCreationCML.json"
@@ -1363,7 +1475,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.PhotochemicalOzoneCreation"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/PhotochemicalOzoneCreation.json"
@@ -1375,7 +1488,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.OzoneDepletionPerQuantity"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/OzoneDepletionPerQuantity.json"
@@ -1387,7 +1501,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.OzoneDepletion"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/OzoneDepletion.json"
@@ -1399,7 +1514,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.MomentPerUnitLength"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/MomentPerUnitLength.json"
@@ -1411,7 +1527,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.MomentPerUnitAngle"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/MomentPerUnitAngle.json"
@@ -1423,7 +1540,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.Moment"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/Moment.json"
@@ -1435,7 +1553,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.Molarity"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/Molarity.json"
@@ -1447,7 +1566,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.Molality"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/Molality.json"
@@ -1459,7 +1579,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.MassPerUnitLength"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/MassPerUnitLength.json"
@@ -1471,7 +1592,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.MassPerUnitArea"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/MassPerUnitArea.json"
@@ -1483,7 +1605,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.MassFraction"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/MassFraction.json"
@@ -1495,7 +1618,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.Mass"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/Mass.json"
@@ -1507,7 +1631,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.LuminousIntensity"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/LuminousIntensity.json"
@@ -1519,7 +1644,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.Length"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/Length.json"
@@ -1531,7 +1657,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.Illuminance"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/Illuminance.json"
@@ -1543,7 +1670,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.Frequency"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/Frequency.json"
@@ -1555,7 +1683,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.ForcePerUnitLength"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/ForcePerUnitLength.json"
@@ -1567,7 +1696,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.Force"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/Force.json"
@@ -1579,7 +1709,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.EutrophicationTRACIPerQuantity"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/EutrophicationTRACIPerQuantity.json"
@@ -1591,7 +1722,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.EutrophicationTRACI"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/EutrophicationTRACI.json"
@@ -1603,7 +1735,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.EutrophicationTerrestrialPerQuantity"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/EutrophicationTerrestrialPerQuantity.json"
@@ -1615,7 +1748,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.EutrophicationTerrestrial"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/EutrophicationTerrestrial.json"
@@ -1627,7 +1761,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.EutrophicationCMLPerQuantity"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/EutrophicationCMLPerQuantity.json"
@@ -1639,7 +1774,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.EutrophicationCML"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/EutrophicationCML.json"
@@ -1651,7 +1787,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.EutrophicationAquaticMarinePerQuantity"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/EutrophicationAquaticMarinePerQuantity.json"
@@ -1663,7 +1800,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.EutrophicationAquaticMarine"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/EutrophicationAquaticMarine.json"
@@ -1675,7 +1813,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.EutrophicationAquaticFreshwaterPerQuantity"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/EutrophicationAquaticFreshwaterPerQuantity.json"
@@ -1687,7 +1826,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.EutrophicationAquaticFreshwater"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/EutrophicationAquaticFreshwater.json"
@@ -1699,7 +1839,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.EnergyPerUnitTime"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/EnergyPerUnitTime.json"
@@ -1711,7 +1852,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.EnergyPerUnitArea"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/EnergyPerUnitArea.json"
@@ -1723,7 +1865,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.EnergyPerQuantity"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/EnergyPerQuantity.json"
@@ -1735,7 +1878,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.Energy"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/Energy.json"
@@ -1747,7 +1891,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.ElectricCurrent"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/ElectricCurrent.json"
@@ -1759,7 +1904,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.ElectricConductivity"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/ElectricConductivity.json"
@@ -1771,7 +1917,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.ElectricConductance"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/ElectricConductance.json"
@@ -1783,7 +1930,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.Density"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/Density.json"
@@ -1795,7 +1943,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.ClimateChangePerQuantity"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/ClimateChangePerQuantity.json"
@@ -1807,7 +1956,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.ClimateChange"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/ClimateChange.json"
@@ -1819,7 +1969,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.AreaPerUnitLength"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/AreaPerUnitLength.json"
@@ -1831,7 +1982,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.Area"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/Area.json"
@@ -1843,7 +1995,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.AngularVelocity"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/AngularVelocity.json"
@@ -1855,7 +2008,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.AngularAcceleration"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/AngularAcceleration.json"
@@ -1867,7 +2021,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.Angle"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/Angle.json"
@@ -1879,7 +2034,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.AmountOfSubstance"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/AmountOfSubstance.json"
@@ -1891,7 +2047,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.AcidificationPerQuantity"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/AcidificationPerQuantity.json"
@@ -1903,7 +2060,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.Acidification"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/Acidification.json"
@@ -1915,7 +2073,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.Acceleration"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/Acceleration.json"
@@ -1927,7 +2086,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.QuantityAttribute"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/QuantityAttribute.json"
@@ -1939,7 +2099,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.AbioticDepletionMineralsAndMetalsPerQuantity"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/AbioticDepletionMineralsAndMetalsPerQuantity.json"
@@ -1951,7 +2112,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.AbioticDepletionMineralsAndMetals"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/AbioticDepletionMineralsAndMetals.json"
@@ -1963,7 +2125,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.PowerPoint.SlideCreate"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/PowerPoint_oM/SlideCreate.json"
@@ -1975,7 +2138,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Elements.PileFoundation"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Elements/PileFoundation.json"
@@ -1987,7 +2151,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Materials.VolumetricMaterialTakeoff"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Materials/VolumetricMaterialTakeoff.json"
@@ -1999,7 +2164,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Materials.MaterialComposition"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Materials/MaterialComposition.json"
@@ -2011,7 +2177,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode99"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode99.json"
@@ -2023,7 +2190,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode98"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode98.json"
@@ -2035,7 +2203,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode77"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode77.json"
@@ -2047,7 +2216,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode75"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode75.json"
@@ -2059,7 +2229,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode67"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode67.json"
@@ -2071,7 +2242,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode64"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode64.json"
@@ -2083,7 +2255,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode63"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode63.json"
@@ -2095,7 +2268,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode56"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode56.json"
@@ -2107,7 +2281,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode52"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode52.json"
@@ -2119,7 +2294,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode51"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode51.json"
@@ -2131,7 +2307,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode48"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode48.json"
@@ -2143,7 +2320,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode47"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode47.json"
@@ -2155,7 +2333,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode46"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode46.json"
@@ -2167,7 +2346,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode44"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode44.json"
@@ -2179,7 +2359,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode41"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode41.json"
@@ -2191,7 +2372,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode36"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode36.json"
@@ -2203,7 +2385,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode35"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode35.json"
@@ -2215,7 +2398,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode34"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode34.json"
@@ -2227,7 +2411,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode33"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode33.json"
@@ -2239,7 +2424,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode32"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode32.json"
@@ -2251,7 +2437,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode31"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode31.json"
@@ -2263,7 +2450,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode29"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode29.json"
@@ -2275,7 +2463,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode28"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode28.json"
@@ -2287,7 +2476,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode27"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode27.json"
@@ -2299,7 +2489,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode26"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode26.json"
@@ -2311,7 +2502,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode25"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode25.json"
@@ -2323,7 +2515,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode24"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode24.json"
@@ -2335,7 +2528,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode23"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode23.json"
@@ -2347,7 +2541,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode22"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode22.json"
@@ -2359,7 +2554,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode21"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode21.json"
@@ -2371,7 +2567,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode15"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode15.json"
@@ -2383,7 +2580,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode14"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode14.json"
@@ -2395,7 +2593,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode13"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode13.json"
@@ -2407,7 +2606,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode12"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode12.json"
@@ -2419,7 +2619,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode11"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode11.json"
@@ -2431,7 +2632,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode00"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode00.json"
@@ -2443,7 +2645,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.MEP.Fixtures.ResidentialFixtureUsage"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Fixtures/ResidentialFixtureUsage.json"
@@ -2455,7 +2658,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.MEP.Fixtures.CommercialFixtureUsage"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Fixtures/CommercialFixtureUsage.json"
@@ -2467,7 +2671,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.MEP.System.SectionProperties.WireSectionProperty"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/SectionProperties/WireSectionProperty.json"
@@ -2479,7 +2684,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.MEP.System.SectionProperties.SectionProfile"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/SectionProperties/SectionProfile.json"
@@ -2491,7 +2697,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.MEP.System.SectionProperties.PipeSectionProperty"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/SectionProperties/PipeSectionProperty.json"
@@ -2503,7 +2710,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.MEP.System.SectionProperties.DuctSectionProperty"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/SectionProperties/DuctSectionProperty.json"
@@ -2515,7 +2723,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.MEP.System.SectionProperties.CableTraySectionProperty"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/SectionProperties/CableTraySectionProperty.json"
@@ -2527,7 +2736,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Lighting.Analysis.AnalysisGrid"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Lighting_oM/Analysis/AnalysisGrid.json"
@@ -2539,7 +2749,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Lighting.Results.Illuminance.Lux"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Lighting_oM/Results/Illuminance/Lux.json"
@@ -2551,7 +2762,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Lighting.Results.Mesh.MeshResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Lighting_oM/Results/Mesh/MeshResult.json"
@@ -2563,7 +2775,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Lighting.Results.Mesh.MeshElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Lighting_oM/Results/Mesh/MeshElementResult.json"
@@ -2575,7 +2788,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.WaterDeprivationMetric"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/WaterDeprivationMetric.json"
@@ -2587,7 +2801,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.PhotochemicalOzoneCreationTRACIMetric"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/PhotochemicalOzoneCreationTRACIMetric.json"
@@ -2599,7 +2814,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.PhotochemicalOzoneCreationMetric"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/PhotochemicalOzoneCreationMetric.json"
@@ -2611,7 +2827,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.PhotochemicalOzoneCreationCMLMetric"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/PhotochemicalOzoneCreationCMLMetric.json"
@@ -2623,7 +2840,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.OzoneDepletionMetric"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/OzoneDepletionMetric.json"
@@ -2635,7 +2853,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.EutrophicationTRACIMetric"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EutrophicationTRACIMetric.json"
@@ -2647,7 +2866,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.EutrophicationTerrestrialMetric"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EutrophicationTerrestrialMetric.json"
@@ -2659,7 +2879,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.EutrophicationCMLMetric"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EutrophicationCMLMetric.json"
@@ -2671,7 +2892,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.EutrophicationAquaticMarineMetric"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EutrophicationAquaticMarineMetric.json"
@@ -2683,7 +2905,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.EutrophicationAquaticFreshwaterMetric"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EutrophicationAquaticFreshwaterMetric.json"
@@ -2695,7 +2918,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.EnvironmentalMetric"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EnvironmentalMetric.json"
@@ -2707,7 +2931,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.ClimateChangeTotalNoBiogenicMetric"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/ClimateChangeTotalNoBiogenicMetric.json"
@@ -2719,7 +2944,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.ClimateChangeTotalMetric"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/ClimateChangeTotalMetric.json"
@@ -2731,7 +2957,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.ClimateChangeLandUseMetric"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/ClimateChangeLandUseMetric.json"
@@ -2743,7 +2970,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.ClimateChangeFossilMetric"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/ClimateChangeFossilMetric.json"
@@ -2755,7 +2983,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.ClimateChangeBiogenicMetric"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/ClimateChangeBiogenicMetric.json"
@@ -2767,7 +2996,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.AcidificationMetric"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/AcidificationMetric.json"
@@ -2779,7 +3009,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.AbioticDepletionMineralsAndMetalsMetric"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/AbioticDepletionMineralsAndMetalsMetric.json"
@@ -2791,7 +3022,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.AbioticDepletionFossilResourcesMetric"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/AbioticDepletionFossilResourcesMetric.json"
@@ -2803,7 +3035,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.WaterDeprivationMaterialResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/WaterDeprivationMaterialResult.json"
@@ -2815,7 +3048,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.PhotochemicalOzoneCreationTRACIMaterialResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/PhotochemicalOzoneCreationTRACIMaterialResult.json"
@@ -2827,7 +3061,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.PhotochemicalOzoneCreationMaterialResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/PhotochemicalOzoneCreationMaterialResult.json"
@@ -2839,7 +3074,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.PhotochemicalOzoneCreationCMLMaterialResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/PhotochemicalOzoneCreationCMLMaterialResult.json"
@@ -2851,7 +3087,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.OzoneDepletionMaterialResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/OzoneDepletionMaterialResult.json"
@@ -2863,7 +3100,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.MaterialResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/MaterialResult.json"
@@ -2875,7 +3113,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.EutrophicationTRACIMaterialResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/EutrophicationTRACIMaterialResult.json"
@@ -2887,7 +3126,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.EutrophicationTerrestrialMaterialResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/EutrophicationTerrestrialMaterialResult.json"
@@ -2899,7 +3139,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.EutrophicationCMLMaterialResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/EutrophicationCMLMaterialResult.json"
@@ -2911,7 +3152,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.EutrophicationAquaticMarineMaterialResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/EutrophicationAquaticMarineMaterialResult.json"
@@ -2923,7 +3165,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.EutrophicationAquaticFreshwaterMaterialResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/EutrophicationAquaticFreshwaterMaterialResult.json"
@@ -2935,7 +3178,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.ClimateChangeTotalNoBiogenicMaterialResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/ClimateChangeTotalNoBiogenicMaterialResult.json"
@@ -2947,7 +3191,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.ClimateChangeTotalMaterialResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/ClimateChangeTotalMaterialResult.json"
@@ -2959,7 +3204,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.ClimateChangeLandUseMaterialResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/ClimateChangeLandUseMaterialResult.json"
@@ -2971,7 +3217,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.ClimateChangeFossilMaterialResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/ClimateChangeFossilMaterialResult.json"
@@ -2983,7 +3230,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.ClimateChangeBiogenicMaterialResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/ClimateChangeBiogenicMaterialResult.json"
@@ -2995,7 +3243,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.AcidificationMaterialResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/AcidificationMaterialResult.json"
@@ -3007,7 +3256,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.AbioticDepletionMineralsAndMetalsMaterialResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/AbioticDepletionMineralsAndMetalsMaterialResult.json"
@@ -3019,7 +3269,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.AbioticDepletionFossilResourcesMaterialResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/AbioticDepletionFossilResourcesMaterialResult.json"
@@ -3031,7 +3282,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.WaterDeprivationElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/WaterDeprivationElementResult.json"
@@ -3043,7 +3295,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.PhotochemicalOzoneCreationTRACIElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/PhotochemicalOzoneCreationTRACIElementResult.json"
@@ -3055,7 +3308,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.PhotochemicalOzoneCreationElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/PhotochemicalOzoneCreationElementResult.json"
@@ -3067,7 +3321,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.PhotochemicalOzoneCreationCMLElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/PhotochemicalOzoneCreationCMLElementResult.json"
@@ -3079,7 +3334,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.OzoneDepletionElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/OzoneDepletionElementResult.json"
@@ -3091,7 +3347,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.EutrophicationTRACIElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/EutrophicationTRACIElementResult.json"
@@ -3103,7 +3360,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.EutrophicationTerrestrialElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/EutrophicationTerrestrialElementResult.json"
@@ -3115,7 +3373,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.EutrophicationCMLElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/EutrophicationCMLElementResult.json"
@@ -3127,7 +3386,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.EutrophicationAquaticMarineElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/EutrophicationAquaticMarineElementResult.json"
@@ -3139,7 +3399,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.EutrophicationAquaticFreshwaterElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/EutrophicationAquaticFreshwaterElementResult.json"
@@ -3151,7 +3412,8 @@
             "type" : ["string", "null"],
             "pattern" : "^BH\\.oM\\.LifeCycleAssessment\\.Results\\.ElementResult`1\\[\\[.*\\]\\]$"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/ElementResult`1.json"
@@ -3163,7 +3425,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.ClimateChangeTotalNoBiogenicElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/ClimateChangeTotalNoBiogenicElementResult.json"
@@ -3175,7 +3438,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.ClimateChangeTotalElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/ClimateChangeTotalElementResult.json"
@@ -3187,7 +3451,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.ClimateChangeLandUseElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/ClimateChangeLandUseElementResult.json"
@@ -3199,7 +3464,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.ClimateChangeFossilElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/ClimateChangeFossilElementResult.json"
@@ -3211,7 +3477,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.ClimateChangeBiogenicElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/ClimateChangeBiogenicElementResult.json"
@@ -3223,7 +3490,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.AcidificationElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/AcidificationElementResult.json"
@@ -3235,7 +3503,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.AbioticDepletionMineralsAndMetalsElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/AbioticDepletionMineralsAndMetalsElementResult.json"
@@ -3247,7 +3516,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LifeCycleAssessment.Results.AbioticDepletionFossilResourcesElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/AbioticDepletionFossilResourcesElementResult.json"
@@ -3259,7 +3529,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LadybugTools.SimulationResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/SimulationResult.json"
@@ -3271,7 +3542,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.LadybugTools.ExternalComfort"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/ExternalComfort.json"
@@ -3283,7 +3555,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Humans.ViewQuality.ViewQualityResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Humans_oM/ViewQuality/ViewQualityResult.json"
@@ -3295,7 +3568,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Humans.ViewQuality.Evalue"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Humans_oM/ViewQuality/Evalue.json"
@@ -3307,7 +3581,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Humans.ViewQuality.Cvalue"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Humans_oM/ViewQuality/Cvalue.json"
@@ -3319,7 +3594,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Humans.ViewQuality.Avalue"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Humans_oM/ViewQuality/Avalue.json"
@@ -3331,7 +3607,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Geometry.CoordinateSystem.Cartesian"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/CoordinateSystem/Cartesian.json"
@@ -3343,7 +3620,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Geometry.Basis"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Basis.json"
@@ -3355,7 +3633,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Geometry.PlanarSurface"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/PlanarSurface.json"
@@ -3367,7 +3646,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Geometry.NurbsSurface"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/NurbsSurface.json"
@@ -3379,7 +3659,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Geometry.BoundaryRepresentation"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/BoundaryRepresentation.json"
@@ -3391,7 +3672,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Geometry.SurfaceTrim"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/SurfaceTrim.json"
@@ -3403,7 +3685,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Geometry.Mesh3D"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Mesh3D.json"
@@ -3415,7 +3698,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Geometry.Polygon"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Polygon.json"
@@ -3427,7 +3711,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Geometry.BoundaryCurve"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/BoundaryCurve.json"
@@ -3439,7 +3724,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Facade.Results.OverallUValue"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Results/OverallUValue.json"
@@ -3451,7 +3737,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Adapters.ETABS.Results.PierForce"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/Results/PierForce.json"
@@ -3463,7 +3750,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Adapters.ETABS.Results.SpandrelForce"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/Results/SpandrelForce.json"
@@ -3475,7 +3763,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Environment.Analysis.AnalysisGrid"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Analysis/AnalysisGrid.json"
@@ -3487,7 +3776,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Environment.Fragments.AnalyticalConstruction"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Fragments/AnalyticalConstruction.json"
@@ -3499,7 +3789,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Environment.Results.Illuminance.Lux"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Results/Illuminance/Lux.json"
@@ -3511,7 +3802,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Environment.Results.Mesh.MeshResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Results/Mesh/MeshResult.json"
@@ -3523,7 +3815,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Environment.Results.Mesh.MeshElementResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Results/Mesh/MeshElementResult.json"
@@ -3535,7 +3828,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.AECDeltas.DeltaPayload"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/DeltaPayload.json"
@@ -3547,7 +3841,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Diffing.StreamPointer"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/StreamPointer.json"
@@ -3559,7 +3854,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Diffing.RevisionFragment"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/RevisionFragment.json"
@@ -3571,7 +3867,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Diffing.Revision"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/Revision.json"
@@ -3583,7 +3880,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Diffing.Diff"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/Diff.json"
@@ -3595,7 +3893,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Diffing.Delta"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/Delta.json"
@@ -3607,7 +3906,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Data.Collections.Domain"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Collections/Domain.json"
@@ -3619,7 +3919,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Test.CodeCompliance.Attributes.ConditionAttribute"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/CodeComplianceTest_oM/CodeCompliance/Attributes/ConditionAttribute.json"
@@ -3631,7 +3932,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Test.CodeCompliance.Attributes.MessageAttribute"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/CodeComplianceTest_oM/CodeCompliance/Attributes/MessageAttribute.json"
@@ -3643,7 +3945,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Test.CodeCompliance.Attributes.PathAttribute"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/CodeComplianceTest_oM/CodeCompliance/Attributes/PathAttribute.json"
@@ -3655,7 +3958,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Test.CodeCompliance.Attributes.IsPublicAttribute"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/CodeComplianceTest_oM/CodeCompliance/Attributes/IsPublicAttribute.json"
@@ -3667,7 +3971,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Test.CodeCompliance.Attributes.ErrorLevelAttribute"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/CodeComplianceTest_oM/CodeCompliance/Attributes/ErrorLevelAttribute.json"
@@ -3679,7 +3984,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Test.CodeCompliance.Attributes.ComplianceTypeAttribute"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/CodeComplianceTest_oM/CodeCompliance/Attributes/ComplianceTypeAttribute.json"
@@ -3691,7 +3997,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.BHoMAnalytics.ToolkitSettings"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoMAnalytics_oM/ToolkitSettings.json"
@@ -3703,7 +4010,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Base.Attributes.ToBeRemovedAttribute"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/ToBeRemovedAttribute.json"
@@ -3715,7 +4023,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Base.Attributes.TargetsAttribute"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/TargetsAttribute.json"
@@ -3727,7 +4036,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Base.Attributes.RequiredAttribute"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/RequiredAttribute.json"
@@ -3739,7 +4049,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Base.Attributes.ReplacedAttribute"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/ReplacedAttribute.json"
@@ -3751,7 +4062,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Base.Attributes.PreviousVersionAttribute"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/PreviousVersionAttribute.json"
@@ -3763,7 +4075,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Base.Attributes.PreviousInputNamesAttribute"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/PreviousInputNamesAttribute.json"
@@ -3775,7 +4088,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Base.Attributes.OutputAttribute"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/OutputAttribute.json"
@@ -3787,7 +4101,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Base.Attributes.NotImplementedAttribute"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/NotImplementedAttribute.json"
@@ -3799,7 +4114,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Base.Attributes.NoAutoConstructorAttribute"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/NoAutoConstructorAttribute.json"
@@ -3811,7 +4127,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Base.Attributes.MultiOutputAttribute"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/MultiOutputAttribute.json"
@@ -3823,7 +4140,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Base.Attributes.InputFromProperty"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/InputFromProperty.json"
@@ -3835,7 +4153,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Base.Attributes.InputAttribute"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/InputAttribute.json"
@@ -3847,7 +4166,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Base.Attributes.FolderPathAttribute"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/FolderPathAttribute.json"
@@ -3859,7 +4179,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Base.Attributes.FilePathAttribute"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/FilePathAttribute.json"
@@ -3871,7 +4192,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Base.Attributes.DocumentationURLAttribute"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/DocumentationURLAttribute.json"
@@ -3883,7 +4205,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Base.Attributes.DisplayTextAttribute"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/DisplayTextAttribute.json"
@@ -3895,7 +4218,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Base.Attributes.DefaultValueWarningAttribute"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/DefaultValueWarningAttribute.json"
@@ -3907,7 +4231,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Base.Attributes.ClassificationAttribute"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/ClassificationAttribute.json"
@@ -3919,7 +4244,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Base.Attributes.AbbreviationAttribute"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/AbbreviationAttribute.json"
@@ -3931,7 +4257,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Base.Enumeration"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Enumeration.json"
@@ -3943,7 +4270,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Analytical.Elements.ShortestPathResult"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Analytical_oM/Elements/ShortestPathResult.json"

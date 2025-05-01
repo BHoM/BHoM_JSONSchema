@@ -13,7 +13,8 @@
             "type" : ["string", "null"],
             "const" : "BH.oM.Analytical.Fragments.ProjectionFragment"
           }
-        }
+        },
+        "required" : ["_t"]
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Analytical_oM/Fragments/ProjectionFragment.json"
