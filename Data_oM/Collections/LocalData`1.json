@@ -9,7 +9,7 @@
     "Data" : { },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "pattern" : "^BH\\.oM\\.Data\\.Collections\\.LocalData`1\\[\\[.*\\]\\]$"
     },
     "_bhomVersion" : {

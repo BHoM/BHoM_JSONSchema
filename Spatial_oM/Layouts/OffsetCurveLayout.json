@@ -6,7 +6,7 @@
   "properties" : {
     "Offset" : {
       "type" : "number",
-      "description" : "Offset value. Positive value will offset to the inside of the element. Property has a quantity of type Length meassured in [m]."
+      "description" : "Offset value. Positive value will offset to the inside of the element. Property has a quantity of type Length measured in [m]."
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -29,7 +29,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Spatial.Layouts.OffsetCurveLayout"
     },
     "_bhomVersion" : {

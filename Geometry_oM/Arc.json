@@ -9,19 +9,19 @@
     },
     "Radius" : {
       "type" : "number",
-      "description" : "Distance from the CoordinateSystem.Origin to the any point on Arc. Property has a quantity of type Length meassured in [m]."
+      "description" : "Distance from the CoordinateSystem.Origin to the any point on Arc. Property has a quantity of type Length measured in [m]."
     },
     "StartAngle" : {
       "type" : "number",
-      "description" : "Angle in radians to the start point from the local x-axis, counter clockwise around the local z-axis. Property has a quantity of type Angle meassured in [rad]."
+      "description" : "Angle in radians to the start point from the local x-axis, counter clockwise around the local z-axis. Property has a quantity of type Angle measured in [rad]."
     },
     "EndAngle" : {
       "type" : "number",
-      "description" : "Angle in radians to the end point from the local x-axis, counter clockwise around the local z-axis. Property has a quantity of type Angle meassured in [rad]."
+      "description" : "Angle in radians to the end point from the local x-axis, counter clockwise around the local z-axis. Property has a quantity of type Angle measured in [rad]."
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Geometry.Arc"
     },
     "_bhomVersion" : {

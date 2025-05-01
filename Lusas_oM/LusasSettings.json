@@ -13,7 +13,7 @@
     },
     "StandardGravity" : {
       "type" : "number",
-      "description" : "Sets the standard gravity i.e. the acceleration due to gravity. This is used when GravityLoads are pushed/pulled from Lusas as the BHoM uses a factor of g, whereas Lusas uses a specific acceleration. Property has a quantity of type Acceleration meassured in [m/s²]."
+      "description" : "Sets the standard gravity i.e. the acceleration due to gravity. This is used when GravityLoads are pushed/pulled from Lusas as the BHoM uses a factor of g, whereas Lusas uses a specific acceleration. Property has a quantity of type Acceleration measured in [m/s²]."
     },
     "WrapNonBHoMObjects" : {
       "type" : "boolean",
@@ -63,7 +63,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Adapters.Lusas.LusasSettings"
     },
     "_bhomVersion" : {

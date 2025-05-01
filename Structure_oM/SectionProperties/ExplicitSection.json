@@ -13,79 +13,79 @@
     },
     "Area" : {
       "type" : "number",
-      "description" : "Gross Area of the cross section. Property has a quantity of type Area meassured in [m²]."
+      "description" : "Gross Area of the cross section. Property has a quantity of type Area measured in [m²]."
     },
     "Rgy" : {
       "type" : "number",
-      "description" : "Radius of Gyration about the local Y-Axis. Property has a quantity of type Length meassured in [m]."
+      "description" : "Radius of Gyration about the local Y-Axis. Property has a quantity of type Length measured in [m]."
     },
     "Rgz" : {
       "type" : "number",
-      "description" : "Radius of Gyration about the local Z-Axis. Property has a quantity of type Length meassured in [m]."
+      "description" : "Radius of Gyration about the local Z-Axis. Property has a quantity of type Length measured in [m]."
     },
     "J" : {
       "type" : "number",
-      "description" : "Torsion Constant. Property has a quantity of type TorsionConstant meassured in [m⁴]."
+      "description" : "Torsion Constant. Property has a quantity of type TorsionConstant measured in [m⁴]."
     },
     "Iy" : {
       "type" : "number",
-      "description" : "Moment of Inertia about the local Y-Axis. Property has a quantity of type SecondMomentOfArea meassured in [m⁴]."
+      "description" : "Moment of Inertia about the local Y-Axis. Property has a quantity of type SecondMomentOfArea measured in [m⁴]."
     },
     "Iz" : {
       "type" : "number",
-      "description" : "Moment of Inertia about the local Z-Axis. Property has a quantity of type SecondMomentOfArea meassured in [m⁴]."
+      "description" : "Moment of Inertia about the local Z-Axis. Property has a quantity of type SecondMomentOfArea measured in [m⁴]."
     },
     "Iw" : {
       "type" : "number",
-      "description" : "Warping Constant. Property has a quantity of type WarpingConstant meassured in [m⁶]."
+      "description" : "Warping Constant. Property has a quantity of type WarpingConstant measured in [m⁶]."
     },
     "Wely" : {
       "type" : "number",
-      "description" : "Elastic Modulus of the section about the local Y-Axis. Property has a quantity of type SectionModulus meassured in [m³]."
+      "description" : "Elastic Modulus of the section about the local Y-Axis. Property has a quantity of type SectionModulus measured in [m³]."
     },
     "Welz" : {
       "type" : "number",
-      "description" : "Elastic Modulus of the section about the local Z-Axis. Property has a quantity of type SectionModulus meassured in [m³]."
+      "description" : "Elastic Modulus of the section about the local Z-Axis. Property has a quantity of type SectionModulus measured in [m³]."
     },
     "Wply" : {
       "type" : "number",
-      "description" : "Plastic Modulus of the section about the local Y-Axis. Property has a quantity of type SectionModulus meassured in [m³]."
+      "description" : "Plastic Modulus of the section about the local Y-Axis. Property has a quantity of type SectionModulus measured in [m³]."
     },
     "Wplz" : {
       "type" : "number",
-      "description" : "Plastic Modulus of the section about the local Z-Axis. Property has a quantity of type SectionModulus meassured in [m³]."
+      "description" : "Plastic Modulus of the section about the local Z-Axis. Property has a quantity of type SectionModulus measured in [m³]."
     },
     "CentreZ" : {
       "type" : "number",
-      "description" : "Geometric centre of the section in the local Z direction. Property has a quantity of type Length meassured in [m]."
+      "description" : "Geometric centre of the section in the local Z direction. Property has a quantity of type Length measured in [m]."
     },
     "CentreY" : {
       "type" : "number",
-      "description" : "Geometric centre of the section in the local Y direction. Property has a quantity of type Length meassured in [m]."
+      "description" : "Geometric centre of the section in the local Y direction. Property has a quantity of type Length measured in [m]."
     },
     "Vz" : {
       "type" : "number",
-      "description" : "Z distance from the centroid of the section to top edge of the section. Property has a quantity of type Length meassured in [m]."
+      "description" : "Z distance from the centroid of the section to top edge of the section. Property has a quantity of type Length measured in [m]."
     },
     "Vpz" : {
       "type" : "number",
-      "description" : "Z distance from the centroid of the section to bottom edge of the section. Property has a quantity of type Length meassured in [m]."
+      "description" : "Z distance from the centroid of the section to bottom edge of the section. Property has a quantity of type Length measured in [m]."
     },
     "Vy" : {
       "type" : "number",
-      "description" : "Y distance from the centroid of the section to right edge of the section. Property has a quantity of type Length meassured in [m]."
+      "description" : "Y distance from the centroid of the section to right edge of the section. Property has a quantity of type Length measured in [m]."
     },
     "Vpy" : {
       "type" : "number",
-      "description" : "Y distance from the centroid of the section to Left edge of the section. Property has a quantity of type Length meassured in [m]."
+      "description" : "Y distance from the centroid of the section to Left edge of the section. Property has a quantity of type Length measured in [m]."
     },
     "Asy" : {
       "type" : "number",
-      "description" : "Shear Area in the local Y direction. Property has a quantity of type Area meassured in [m²]."
+      "description" : "Shear Area in the local Y direction. Property has a quantity of type Area measured in [m²]."
     },
     "Asz" : {
       "type" : "number",
-      "description" : "Shear Area in the local Z direction. Property has a quantity of type Area meassured in [m²]."
+      "description" : "Shear Area in the local Z direction. Property has a quantity of type Area measured in [m²]."
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -105,7 +105,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Structure.SectionProperties.ExplicitSection"
     },
     "_bhomVersion" : {

@@ -6,31 +6,31 @@
   "properties" : {
     "Frequency" : {
       "type" : "number",
-      "description" : "Property has a quantity of type Frequency meassured in [Hz]."
+      "description" : "Property has a quantity of type Frequency measured in [Hz]."
     },
     "MassX" : {
       "type" : "number",
-      "description" : "Total modal mass in the X-direction for eigenvector normalisation. Property has a quantity of type Mass meassured in [kg]."
+      "description" : "Total modal mass in the X-direction for eigenvector normalisation. Property has a quantity of type Mass measured in [kg]."
     },
     "MassY" : {
       "type" : "number",
-      "description" : "Total modal mass in the Y-direction for eigenvector normalisation. Property has a quantity of type Mass meassured in [kg]."
+      "description" : "Total modal mass in the Y-direction for eigenvector normalisation. Property has a quantity of type Mass measured in [kg]."
     },
     "MassZ" : {
       "type" : "number",
-      "description" : "Total modal mass in the Z-direction for eigenvector normalisation. Property has a quantity of type Mass meassured in [kg]."
+      "description" : "Total modal mass in the Z-direction for eigenvector normalisation. Property has a quantity of type Mass measured in [kg]."
     },
     "RotationalMassX" : {
       "type" : "number",
-      "description" : "Total modal mass for rotation about the X-axis for eigenvector normalisation. Property has a quantity of type Mass meassured in [kg]."
+      "description" : "Total modal mass for rotation about the X-axis for eigenvector normalisation. Property has a quantity of type Mass measured in [kg]."
     },
     "RotationalMassY" : {
       "type" : "number",
-      "description" : "Total modal mass for rotation about the X-axis for eigenvector normalisation. Property has a quantity of type Mass meassured in [kg]."
+      "description" : "Total modal mass for rotation about the X-axis for eigenvector normalisation. Property has a quantity of type Mass measured in [kg]."
     },
     "RotationalMassZ" : {
       "type" : "number",
-      "description" : "Total modal mass for rotation about the X-axis for eigenvector normalisation. Property has a quantity of type Mass meassured in [kg]."
+      "description" : "Total modal mass for rotation about the X-axis for eigenvector normalisation. Property has a quantity of type Mass measured in [kg]."
     },
     "ObjectId" : {
       "type" : ["object", "integer", "string", "number", "null"]
@@ -48,7 +48,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Structure.Results.ModalMassAndFrequency"
     },
     "_bhomVersion" : {

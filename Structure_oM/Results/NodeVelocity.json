@@ -6,27 +6,27 @@
   "properties" : {
     "UX" : {
       "type" : "number",
-      "description" : "Velocity in the X-direction as defined by orientation basis. Property has a quantity of type Velocity meassured in [m/s]."
+      "description" : "Velocity in the X-direction as defined by orientation basis. Property has a quantity of type Velocity measured in [m/s]."
     },
     "UY" : {
       "type" : "number",
-      "description" : "Velocity in the Y-direction as defined by orientation basis. Property has a quantity of type Velocity meassured in [m/s]."
+      "description" : "Velocity in the Y-direction as defined by orientation basis. Property has a quantity of type Velocity measured in [m/s]."
     },
     "UZ" : {
       "type" : "number",
-      "description" : "Velocity in the Z-direction as defined by orientation basis. Property has a quantity of type Velocity meassured in [m/s]."
+      "description" : "Velocity in the Z-direction as defined by orientation basis. Property has a quantity of type Velocity measured in [m/s]."
     },
     "RX" : {
       "type" : "number",
-      "description" : "Rotational velocity about the X-axis as defined by orientation basis. Property has a quantity of type AngularVelocity meassured in [rad/s]."
+      "description" : "Rotational velocity about the X-axis as defined by orientation basis. Property has a quantity of type AngularVelocity measured in [rad/s]."
     },
     "RY" : {
       "type" : "number",
-      "description" : "Rotational velocity about the Y-axis as defined by orientation basis. Property has a quantity of type AngularVelocity meassured in [rad/s]."
+      "description" : "Rotational velocity about the Y-axis as defined by orientation basis. Property has a quantity of type AngularVelocity measured in [rad/s]."
     },
     "RZ" : {
       "type" : "number",
-      "description" : "Rotational velocity about the Z-axis as defined by orientation basis. Property has a quantity of type AngularVelocity meassured in [rad/s]."
+      "description" : "Rotational velocity about the Z-axis as defined by orientation basis. Property has a quantity of type AngularVelocity measured in [rad/s]."
     },
     "ObjectId" : {
       "type" : ["object", "integer", "string", "number", "null"]
@@ -47,7 +47,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Structure.Results.NodeVelocity"
     },
     "_bhomVersion" : {

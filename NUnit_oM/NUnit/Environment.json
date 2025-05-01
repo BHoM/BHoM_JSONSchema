@@ -1,0 +1,50 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/NUnit_oM/NUnit/Environment.json",
+  "title" : "Environment",
+  "type" : ["object", "null"],
+  "properties" : {
+    "FrameworkVersion" : {
+      "type" : ["string", "null"]
+    },
+    "ClrVersion" : {
+      "type" : ["string", "null"]
+    },
+    "OsVersion" : {
+      "type" : ["string", "null"]
+    },
+    "Platform" : {
+      "type" : ["string", "null"]
+    },
+    "Cwd" : {
+      "type" : ["string", "null"]
+    },
+    "MachineName" : {
+      "type" : ["string", "null"]
+    },
+    "User" : {
+      "type" : ["string", "null"]
+    },
+    "UserDomain" : {
+      "type" : ["string", "null"]
+    },
+    "Culture" : {
+      "type" : ["string", "null"]
+    },
+    "Uiculture" : {
+      "type" : ["string", "null"]
+    },
+    "OsArchitecture" : {
+      "type" : ["string", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type disciminator for BHoM type.",
+      "const" : "BH.oM.Test.NUnit.Environment"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["FrameworkVersion", "ClrVersion", "OsVersion", "Platform", "Cwd", "MachineName", "User", "UserDomain", "Culture", "Uiculture", "OsArchitecture"]
+}

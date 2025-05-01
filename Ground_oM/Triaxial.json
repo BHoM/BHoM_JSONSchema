@@ -10,11 +10,11 @@
     },
     "Top" : {
       "type" : "number",
-      "description" : "Depth to the top of the sample, measured from the top of the borehole (SAMP_TOP). Property has a quantity of type Length meassured in [m]."
+      "description" : "Depth to the top of the sample, measured from the top of the borehole (SAMP_TOP). Property has a quantity of type Length measured in [m]."
     },
     "SpecimenDepth" : {
       "type" : "number",
-      "description" : "Depth to the top of the specimen (SPEC_DPTH). Property has a quantity of type Length meassured in [m]."
+      "description" : "Depth to the top of the specimen (SPEC_DPTH). Property has a quantity of type Length measured in [m]."
     },
     "SampleId" : {
       "type" : ["string", "null"],
@@ -26,7 +26,7 @@
     },
     "UndrainedShearStrength" : {
       "type" : "number",
-      "description" : "Undrained shear strength at failure (TRIT_CU). Property has a quantity of type Pressure meassured in [Pa]."
+      "description" : "Undrained shear strength at failure (TRIT_CU). Property has a quantity of type Pressure measured in [Pa]."
     },
     "FailureMode" : {
       "type" : ["string", "null"],
@@ -60,7 +60,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Ground.Triaxial"
     },
     "_bhomVersion" : {

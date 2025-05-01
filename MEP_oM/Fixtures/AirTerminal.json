@@ -9,15 +9,15 @@
     },
     "OrientationAngle" : {
       "type" : "number",
-      "description" : "Controls the local plan orientation of the object. Property has a quantity of type Angle meassured in [rad]."
+      "description" : "Controls the local plan orientation of the object. Property has a quantity of type Angle measured in [rad]."
     },
     "AirFlowRate" : {
       "type" : "number",
-      "description" : "The volume of air being conveyed by the Duct per second (m3/s). Property has a quantity of type VolumetricFlowRate meassured in [m³/s]."
+      "description" : "The volume of air being conveyed by the Duct per second (m3/s). Property has a quantity of type VolumetricFlowRate measured in [m³/s]."
     },
     "PressureDrop" : {
       "type" : "number",
-      "description" : "The difference in total pressure between two points of a system measured in Pascals. Property has a quantity of type Pressure meassured in [Pa]."
+      "description" : "The difference in total pressure between two points of a system measured in Pascals. Property has a quantity of type Pressure measured in [Pa]."
     },
     "ConnectedDuctProperties" : {
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/SectionProperties/DuctSectionProperty.json"
@@ -43,7 +43,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.MEP.Fixtures.AirTerminal"
     },
     "_bhomVersion" : {

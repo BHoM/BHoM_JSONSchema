@@ -6,27 +6,27 @@
   "properties" : {
     "UXX" : {
       "type" : "number",
-      "description" : "Translation in global X-direction. Property has a quantity of type Length meassured in [m]."
+      "description" : "Translation in global X-direction. Property has a quantity of type Length measured in [m]."
     },
     "UYY" : {
       "type" : "number",
-      "description" : "Translation in global Y-direction. Property has a quantity of type Length meassured in [m]."
+      "description" : "Translation in global Y-direction. Property has a quantity of type Length measured in [m]."
     },
     "UZZ" : {
       "type" : "number",
-      "description" : "Translation in global Z-direction. Property has a quantity of type Length meassured in [m]."
+      "description" : "Translation in global Z-direction. Property has a quantity of type Length measured in [m]."
     },
     "RXX" : {
       "type" : "number",
-      "description" : "Rotation about global X-axis. Property has a quantity of type Angle meassured in [rad]."
+      "description" : "Rotation about global X-axis. Property has a quantity of type Angle measured in [rad]."
     },
     "RYY" : {
       "type" : "number",
-      "description" : "Rotation about global Y-axis. Property has a quantity of type Angle meassured in [rad]."
+      "description" : "Rotation about global Y-axis. Property has a quantity of type Angle measured in [rad]."
     },
     "RZZ" : {
       "type" : "number",
-      "description" : "Rotation about global Z-axis. Property has a quantity of type Angle meassured in [rad]."
+      "description" : "Rotation about global Z-axis. Property has a quantity of type Angle measured in [rad]."
     },
     "ObjectId" : {
       "type" : ["object", "integer", "string", "number", "null"]
@@ -63,7 +63,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Structure.Results.MeshDisplacement"
     },
     "_bhomVersion" : {

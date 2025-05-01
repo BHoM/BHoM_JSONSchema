@@ -6,7 +6,7 @@
   "properties" : {
     "Rotation" : {
       "type" : "number",
-      "description" : "This is an angle in radians that the meshing lines are rotated from their default orientation.By default these lines align with the area object local 1 and 2 axes. Property has a quantity of type Angle meassured in [rad]."
+      "description" : "This is an angle in radians that the meshing lines are rotated from their default orientation.By default these lines align with the area object local 1 and 2 axes. Property has a quantity of type Angle measured in [rad]."
     },
     "LocalAxesOnEdge" : {
       "type" : "boolean"
@@ -31,7 +31,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Adapters.SAP2000.Fragments.PanelAutoMeshByCookieCutPoints"
     },
     "_bhomVersion" : {

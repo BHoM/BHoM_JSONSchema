@@ -9,27 +9,27 @@
     },
     "Height" : {
       "type" : "number",
-      "description" : "Full depth between the extreme fibres of the flange and web. Property has a quantity of type Length meassured in [m]."
+      "description" : "Full depth between the extreme fibres of the flange and web. Property has a quantity of type Length measured in [m]."
     },
     "Width" : {
       "type" : "number",
-      "description" : "Full width between the extreme fibres of the flange and web. Property has a quantity of type Length meassured in [m]."
+      "description" : "Full width between the extreme fibres of the flange and web. Property has a quantity of type Length measured in [m]."
     },
     "WebThickness" : {
       "type" : "number",
-      "description" : "Property has a quantity of type Length meassured in [m]."
+      "description" : "Property has a quantity of type Length measured in [m]."
     },
     "FlangeThickness" : {
       "type" : "number",
-      "description" : "Property has a quantity of type Length meassured in [m]."
+      "description" : "Property has a quantity of type Length measured in [m]."
     },
     "RootRadius" : {
       "type" : "number",
-      "description" : "Fillet radius between inner face of the flange and inner face of the web. Property has a quantity of type Length meassured in [m]."
+      "description" : "Fillet radius between inner face of the flange and inner face of the web. Property has a quantity of type Length measured in [m]."
     },
     "ToeRadius" : {
       "type" : "number",
-      "description" : "Fillet radius at the end of the flange and the end of the web. Value need to be smaller or equal than the flange and web thicknesses Property has a quantity of type Length meassured in [m]."
+      "description" : "Fillet radius at the end of the flange and the end of the web. Value need to be smaller or equal than the flange and web thicknesses Property has a quantity of type Length measured in [m]."
     },
     "MirrorAboutLocalZ" : {
       "type" : "boolean",
@@ -67,7 +67,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Spatial.ShapeProfiles.AngleProfile"
     },
     "_bhomVersion" : {

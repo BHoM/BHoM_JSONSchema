@@ -10,18 +10,18 @@
     },
     "ParallelMinimumSpacing" : {
       "type" : "number",
-      "description" : "Minimum distance between any two points in the layout along the axis layers. Property has a quantity of type Length meassured in [m]."
+      "description" : "Minimum distance between any two points in the layout along the axis layers. Property has a quantity of type Length measured in [m]."
     },
     "PerpendicularMinimumSpacing" : {
       "type" : "number",
-      "description" : "Minimum distance between any two layers. Property has a quantity of type Length meassured in [m]."
+      "description" : "Minimum distance between any two layers. Property has a quantity of type Length measured in [m]."
     },
     "Direction" : {
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
     },
     "Offset" : {
       "type" : "number",
-      "description" : "Offset of the linear layout in relation to the reference point, perpendicular to the Direction vector in the XY plane.\nA positive value will mean an offset towards the centre of the boundingbox of the host objects. Property has a quantity of type Length meassured in [m]."
+      "description" : "Offset of the linear layout in relation to the reference point, perpendicular to the Direction vector in the XY plane.\nA positive value will mean an offset towards the centre of the boundingbox of the host objects. Property has a quantity of type Length measured in [m]."
     },
     "ReferencePoint" : {
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/Layouts/ReferencePoint.json"
@@ -47,7 +47,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Spatial.Layouts.MultiLinearLayout"
     },
     "_bhomVersion" : {

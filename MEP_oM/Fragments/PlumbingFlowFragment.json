@@ -5,19 +5,19 @@
   "properties" : {
     "ColdWaterFlowRate" : {
       "type" : "number",
-      "description" : "The volume of cold water being conveyed by the Plumbing Fixture per second (m3/s). Property has a quantity of type VolumetricFlowRate meassured in [m³/s]."
+      "description" : "The volume of cold water being conveyed by the Plumbing Fixture per second (m3/s). Property has a quantity of type VolumetricFlowRate measured in [m³/s]."
     },
     "HotWaterFlowRate" : {
       "type" : "number",
-      "description" : "The volume of hot water being conveyed by the Plumbing Fixture per second (m3/s). Property has a quantity of type VolumetricFlowRate meassured in [m³/s]."
+      "description" : "The volume of hot water being conveyed by the Plumbing Fixture per second (m3/s). Property has a quantity of type VolumetricFlowRate measured in [m³/s]."
     },
     "DrainageFlowRate" : {
       "type" : "number",
-      "description" : "The volume of waste/drainage being conveyed by the Plumbing Fixture per second (m3/s). Property has a quantity of type VolumetricFlowRate meassured in [m³/s]."
+      "description" : "The volume of waste/drainage being conveyed by the Plumbing Fixture per second (m3/s). Property has a quantity of type VolumetricFlowRate measured in [m³/s]."
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.MEP.Fragments.PlumbingFlowFragment"
     },
     "_bhomVersion" : {

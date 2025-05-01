@@ -14,7 +14,7 @@
     },
     "Elevation" : {
       "type" : "number",
-      "description" : "The elevation for the location, measured relative to sea level. Property has a quantity of type Length meassured in [m]."
+      "description" : "The elevation for the location, measured relative to sea level. Property has a quantity of type Length measured in [m]."
     },
     "UtcOffset" : {
       "type" : "number",
@@ -41,7 +41,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Environment.Climate.Location"
     },
     "_bhomVersion" : {

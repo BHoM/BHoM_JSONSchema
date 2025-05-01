@@ -10,15 +10,15 @@
     },
     "Density" : {
       "type" : "number",
-      "description" : "Mean Density. Used to calculate mass. Called ρmean in Eurocode. Property has a quantity of type Density meassured in [kg/m³]."
+      "description" : "Mean Density. Used to calculate mass. Called ρmean in Eurocode. Property has a quantity of type Density measured in [kg/m³]."
     },
     "DensityCharacteristic" : {
       "type" : "number",
-      "description" : "Characteristic Density. Used to calculate other mechanical properties (not mass). Called ρk in Eurocode. Property has a quantity of type Density meassured in [kg/m³]."
+      "description" : "Characteristic Density. Used to calculate other mechanical properties (not mass). Called ρk in Eurocode. Property has a quantity of type Density measured in [kg/m³]."
     },
     "DampingRatio" : {
       "type" : "number",
-      "description" : "Dynamic Damping Ratio. Ratio between actual damping and critical damping. Property has a quantity of type Ratio meassured in [-]."
+      "description" : "Dynamic Damping Ratio. Ratio between actual damping and critical damping. Property has a quantity of type Ratio measured in [-]."
     },
     "YoungsModulus" : {
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
@@ -34,43 +34,43 @@
     },
     "E_0_Mean" : {
       "type" : "number",
-      "description" : "Mean modulus of elasticity parallel bending, Em,0,mean in Eurocode. Property has a quantity of type YoungsModulus meassured in [Pa]."
+      "description" : "Mean modulus of elasticity parallel bending, Em,0,mean in Eurocode. Property has a quantity of type YoungsModulus measured in [Pa]."
     },
     "E_0_k" : {
       "type" : "number",
-      "description" : "5 percentile modulus of elasticity parallel bending, Em,0,k in Eurocode. Property has a quantity of type YoungsModulus meassured in [Pa]."
+      "description" : "5 percentile modulus of elasticity parallel bending, Em,0,k in Eurocode. Property has a quantity of type YoungsModulus measured in [Pa]."
     },
     "E_90_Mean" : {
       "type" : "number",
-      "description" : "Mean modulus of elasticity perpendicular, Em,90,mean in Eurocode. Property has a quantity of type YoungsModulus meassured in [Pa]."
+      "description" : "Mean modulus of elasticity perpendicular, Em,90,mean in Eurocode. Property has a quantity of type YoungsModulus measured in [Pa]."
     },
     "G_Mean" : {
       "type" : "number",
-      "description" : "Mean shear modulus, G,mean in Eurocode. Property has a quantity of type ShearModulus meassured in [Pa]."
+      "description" : "Mean shear modulus, G,mean in Eurocode. Property has a quantity of type ShearModulus measured in [Pa]."
     },
     "BendingStrength" : {
       "type" : "number",
-      "description" : "Characteristic Bending Strength. Normal stress parallel to the grain at failure in bending as calculated from beam equations. Called f_mk in Eurocode. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Characteristic Bending Strength. Normal stress parallel to the grain at failure in bending as calculated from beam equations. Called f_mk in Eurocode. Property has a quantity of type Stress measured in [Pa]."
     },
     "TensileStrengthParallel" : {
       "type" : "number",
-      "description" : "Characteristic Tensile parallel Strength. Tensile stress parallel to the grain at failure in net tension. Called  f_t0k in Eurocode. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Characteristic Tensile parallel Strength. Tensile stress parallel to the grain at failure in net tension. Called  f_t0k in Eurocode. Property has a quantity of type Stress measured in [Pa]."
     },
     "TensileStrengthPerpendicular" : {
       "type" : "number",
-      "description" : "Characteristic Tensile perpendicular Strength. Tensile stress perpendicular to the grain at failure in net tension. Called f_t90k in Eurocode. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Characteristic Tensile perpendicular Strength. Tensile stress perpendicular to the grain at failure in net tension. Called f_t90k in Eurocode. Property has a quantity of type Stress measured in [Pa]."
     },
     "CompressiveStrengthParallel" : {
       "type" : "number",
-      "description" : "Characteristic Compressive parallel Strength. Compressive stress parallel to the grain at failure in net compression. Called f_c0k in Eurocode. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Characteristic Compressive parallel Strength. Compressive stress parallel to the grain at failure in net compression. Called f_c0k in Eurocode. Property has a quantity of type Stress measured in [Pa]."
     },
     "CompressiveStrengthPerpendicular" : {
       "type" : "number",
-      "description" : "Characteristic Compressive perpendicular Strength. Compressive stress perpendicular to the grain at failure in net compression. Called f_c90k in Eurocode. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Characteristic Compressive perpendicular Strength. Compressive stress perpendicular to the grain at failure in net compression. Called f_c90k in Eurocode. Property has a quantity of type Stress measured in [Pa]."
     },
     "ShearStrength" : {
       "type" : "number",
-      "description" : "Characteristic Shear Strength. Shear stress parallel to the grain at failure in net shear, i.e. shear relevant to beam bending. Called f_vk in Eurocode. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Characteristic Shear Strength. Shear stress parallel to the grain at failure in net shear, i.e. shear relevant to beam bending. Called f_vk in Eurocode. Property has a quantity of type Stress measured in [Pa]."
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -90,7 +90,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Structure.MaterialFragments.SawnTimber"
     },
     "_bhomVersion" : {

@@ -10,19 +10,19 @@
     },
     "TopThickness" : {
       "type" : "number",
-      "description" : "The thickness of the slab sitting on top of the ribs. Property has a quantity of type Length meassured in [m]."
+      "description" : "The thickness of the slab sitting on top of the ribs. Property has a quantity of type Length measured in [m]."
     },
     "RibThickness" : {
       "type" : "number",
-      "description" : "Width of each rib. Property has a quantity of type Length meassured in [m]."
+      "description" : "Width of each rib. Property has a quantity of type Length measured in [m]."
     },
     "RibHeight" : {
       "type" : "number",
-      "description" : "Height of the ribs, equal to the distance between the bottom of the top slab and bottom of the ribs. Property has a quantity of type Length meassured in [m]."
+      "description" : "Height of the ribs, equal to the distance between the bottom of the top slab and bottom of the ribs. Property has a quantity of type Length measured in [m]."
     },
     "RibSpacing" : {
       "type" : "number",
-      "description" : "Centre-centre distance between the ribs. Measured perpendicular to the rib direction. Property has a quantity of type Length meassured in [m]."
+      "description" : "Centre-centre distance between the ribs. Measured perpendicular to the rib direction. Property has a quantity of type Length measured in [m]."
     },
     "Material" : {
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/IMaterialFragment.json"
@@ -54,7 +54,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Structure.SurfaceProperties.BuiltUpRibbed"
     },
     "_bhomVersion" : {

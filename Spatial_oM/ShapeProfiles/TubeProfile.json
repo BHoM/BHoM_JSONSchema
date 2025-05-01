@@ -9,11 +9,11 @@
     },
     "Diameter" : {
       "type" : "number",
-      "description" : "Outer diameter. Property has a quantity of type Length meassured in [m]."
+      "description" : "Outer diameter. Property has a quantity of type Length measured in [m]."
     },
     "Thickness" : {
       "type" : "number",
-      "description" : "Property has a quantity of type Length meassured in [m]."
+      "description" : "Property has a quantity of type Length measured in [m]."
     },
     "Edges" : {
       "type" : ["array", "null"],
@@ -43,7 +43,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Spatial.ShapeProfiles.TubeProfile"
     },
     "_bhomVersion" : {

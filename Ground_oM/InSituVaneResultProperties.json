@@ -6,7 +6,7 @@
   "properties" : {
     "VaneResidualResult" : {
       "type" : "number",
-      "description" : "Vane test Residual Result (IVAN_IVAR). Property has a quantity of type Pressure meassured in [Pa]."
+      "description" : "Vane test Residual Result (IVAN_IVAR). Property has a quantity of type Pressure measured in [Pa]."
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -29,7 +29,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Ground.InSituVaneResultProperties"
     },
     "_bhomVersion" : {

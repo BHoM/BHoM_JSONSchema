@@ -10,11 +10,11 @@
     },
     "Top" : {
       "type" : "number",
-      "description" : "Depth to the top of the strata based on the datum provided on the Borehole (GEOL_TOP). Property has a quantity of type Length meassured in [m]."
+      "description" : "Depth to the top of the strata based on the datum provided on the Borehole (GEOL_TOP). Property has a quantity of type Length measured in [m]."
     },
     "Bottom" : {
       "type" : "number",
-      "description" : "Depth to the bottom of the strata based on the datum provided on the Borehole (GEOL_BOT). Property has a quantity of type Length meassured in [m]."
+      "description" : "Depth to the bottom of the strata based on the datum provided on the Borehole (GEOL_BOT). Property has a quantity of type Length measured in [m]."
     },
     "LogDescription" : {
       "type" : ["string", "null"],
@@ -64,7 +64,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Ground.Stratum"
     },
     "_bhomVersion" : {

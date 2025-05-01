@@ -70,7 +70,7 @@
         },
         "_t" : {
           "type" : ["string", "null"],
-          "description" : "Optional Type discirminator for BHoM type.",
+          "description" : "Optional Type disciminator for BHoM type.",
           "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
         }
       },
@@ -88,7 +88,7 @@
         },
         "_t" : {
           "type" : ["string", "null"],
-          "description" : "Optional Type discirminator for BHoM type.",
+          "description" : "Optional Type disciminator for BHoM type.",
           "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
         }
       },
@@ -126,7 +126,7 @@
         },
         "_t" : {
           "type" : ["string", "null"],
-          "description" : "Optional Type discirminator for BHoM type.",
+          "description" : "Optional Type disciminator for BHoM type.",
           "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
         }
       },
@@ -168,7 +168,7 @@
         },
         "_t" : {
           "type" : ["string", "null"],
-          "description" : "Optional Type discirminator for BHoM type.",
+          "description" : "Optional Type disciminator for BHoM type.",
           "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
         }
       },
@@ -186,7 +186,7 @@
         },
         "_t" : {
           "type" : ["string", "null"],
-          "description" : "Optional Type discirminator for BHoM type.",
+          "description" : "Optional Type disciminator for BHoM type.",
           "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
         }
       },
@@ -204,7 +204,7 @@
         },
         "_t" : {
           "type" : ["string", "null"],
-          "description" : "Optional Type discirminator for BHoM type.",
+          "description" : "Optional Type disciminator for BHoM type.",
           "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
         }
       },
@@ -222,7 +222,7 @@
         },
         "_t" : {
           "type" : ["string", "null"],
-          "description" : "Optional Type discirminator for BHoM type.",
+          "description" : "Optional Type disciminator for BHoM type.",
           "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
         }
       },
@@ -240,7 +240,7 @@
         },
         "_t" : {
           "type" : ["string", "null"],
-          "description" : "Optional Type discirminator for BHoM type.",
+          "description" : "Optional Type disciminator for BHoM type.",
           "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
         }
       },
@@ -258,7 +258,7 @@
         },
         "_t" : {
           "type" : ["string", "null"],
-          "description" : "Optional Type discirminator for BHoM type.",
+          "description" : "Optional Type disciminator for BHoM type.",
           "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
         }
       },
@@ -276,7 +276,7 @@
         },
         "_t" : {
           "type" : ["string", "null"],
-          "description" : "Optional Type discirminator for BHoM type.",
+          "description" : "Optional Type disciminator for BHoM type.",
           "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
         }
       },
@@ -322,7 +322,7 @@
         },
         "_t" : {
           "type" : ["string", "null"],
-          "description" : "Optional Type discirminator for BHoM type.",
+          "description" : "Optional Type disciminator for BHoM type.",
           "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
         }
       },
@@ -363,7 +363,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Environment.SAP.XML.Heating"
     },
     "_bhomVersion" : {

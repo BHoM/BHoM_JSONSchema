@@ -6,15 +6,15 @@
   "properties" : {
     "Height" : {
       "type" : "number",
-      "description" : "Defines the height the opening should be. Property has a quantity of type Length meassured in [m]."
+      "description" : "Defines the height the opening should be. Property has a quantity of type Length measured in [m]."
     },
     "Width" : {
       "type" : "number",
-      "description" : "Defines the width the opening should be. Property has a quantity of type Length meassured in [m]."
+      "description" : "Defines the width the opening should be. Property has a quantity of type Length measured in [m]."
     },
     "SillHeight" : {
       "type" : "number",
-      "description" : "The distance between the base of the panel and the bottom of the opening. Property has a quantity of type Length meassured in [m]."
+      "description" : "The distance between the base of the panel and the bottom of the opening. Property has a quantity of type Length measured in [m]."
     },
     "Type" : {
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Elements/OpeningType.json"
@@ -40,7 +40,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Environment.Configuration.OpeningOption"
     },
     "_bhomVersion" : {

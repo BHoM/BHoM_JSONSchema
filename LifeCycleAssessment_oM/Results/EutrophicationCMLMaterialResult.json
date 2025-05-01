@@ -6,83 +6,83 @@
   "properties" : {
     "A1" : {
       "type" : "number",
-      "description" : "Resulting Eutrophication (EN 15804+A1) relating to the Raw Material Supply module in the Product stage. Property has a quantity of type EutrophicationCML meassured in [kg [PO₄]³⁻ eq]."
+      "description" : "Resulting Eutrophication (EN 15804+A1) relating to the Raw Material Supply module in the Product stage. Property has a quantity of type EutrophicationCML measured in [kg [PO₄]³⁻ eq]."
     },
     "A2" : {
       "type" : "number",
-      "description" : "Resulting Eutrophication (EN 15804+A1) relating to the Transport module in the Product stage. Property has a quantity of type EutrophicationCML meassured in [kg [PO₄]³⁻ eq]."
+      "description" : "Resulting Eutrophication (EN 15804+A1) relating to the Transport module in the Product stage. Property has a quantity of type EutrophicationCML measured in [kg [PO₄]³⁻ eq]."
     },
     "A3" : {
       "type" : "number",
-      "description" : "Resulting Eutrophication (EN 15804+A1) relating to the Manufacturing module in the Product stage. Property has a quantity of type EutrophicationCML meassured in [kg [PO₄]³⁻ eq]."
+      "description" : "Resulting Eutrophication (EN 15804+A1) relating to the Manufacturing module in the Product stage. Property has a quantity of type EutrophicationCML measured in [kg [PO₄]³⁻ eq]."
     },
     "A1toA3" : {
       "type" : "number",
-      "description" : "Resulting Eutrophication (EN 15804+A1) relating to the full Product stage. Property has a quantity of type EutrophicationCML meassured in [kg [PO₄]³⁻ eq]."
+      "description" : "Resulting Eutrophication (EN 15804+A1) relating to the full Product stage. Property has a quantity of type EutrophicationCML measured in [kg [PO₄]³⁻ eq]."
     },
     "A4" : {
       "type" : "number",
-      "description" : "Resulting Eutrophication (EN 15804+A1) relating to the Transport module in the Construction Process stage. Property has a quantity of type EutrophicationCML meassured in [kg [PO₄]³⁻ eq]."
+      "description" : "Resulting Eutrophication (EN 15804+A1) relating to the Transport module in the Construction Process stage. Property has a quantity of type EutrophicationCML measured in [kg [PO₄]³⁻ eq]."
     },
     "A5" : {
       "type" : "number",
-      "description" : "Resulting Eutrophication (EN 15804+A1) relating to the Construction Installation Process module in the Construction Process stage. Property has a quantity of type EutrophicationCML meassured in [kg [PO₄]³⁻ eq]."
+      "description" : "Resulting Eutrophication (EN 15804+A1) relating to the Construction Installation Process module in the Construction Process stage. Property has a quantity of type EutrophicationCML measured in [kg [PO₄]³⁻ eq]."
     },
     "B1" : {
       "type" : "number",
-      "description" : "Resulting Eutrophication (EN 15804+A1) relating to the Use module in the Use stage. Property has a quantity of type EutrophicationCML meassured in [kg [PO₄]³⁻ eq]."
+      "description" : "Resulting Eutrophication (EN 15804+A1) relating to the Use module in the Use stage. Property has a quantity of type EutrophicationCML measured in [kg [PO₄]³⁻ eq]."
     },
     "B2" : {
       "type" : "number",
-      "description" : "Resulting Eutrophication (EN 15804+A1) relating to the Maintenance module in the Use stage. Property has a quantity of type EutrophicationCML meassured in [kg [PO₄]³⁻ eq]."
+      "description" : "Resulting Eutrophication (EN 15804+A1) relating to the Maintenance module in the Use stage. Property has a quantity of type EutrophicationCML measured in [kg [PO₄]³⁻ eq]."
     },
     "B3" : {
       "type" : "number",
-      "description" : "Resulting Eutrophication (EN 15804+A1) relating to the Repair module in the Use stage. Property has a quantity of type EutrophicationCML meassured in [kg [PO₄]³⁻ eq]."
+      "description" : "Resulting Eutrophication (EN 15804+A1) relating to the Repair module in the Use stage. Property has a quantity of type EutrophicationCML measured in [kg [PO₄]³⁻ eq]."
     },
     "B4" : {
       "type" : "number",
-      "description" : "Resulting Eutrophication (EN 15804+A1) relating to the Replacement module in the Use stage. Property has a quantity of type EutrophicationCML meassured in [kg [PO₄]³⁻ eq]."
+      "description" : "Resulting Eutrophication (EN 15804+A1) relating to the Replacement module in the Use stage. Property has a quantity of type EutrophicationCML measured in [kg [PO₄]³⁻ eq]."
     },
     "B5" : {
       "type" : "number",
-      "description" : "Resulting Eutrophication (EN 15804+A1) relating to the Refurbishment module in the Use stage. Property has a quantity of type EutrophicationCML meassured in [kg [PO₄]³⁻ eq]."
+      "description" : "Resulting Eutrophication (EN 15804+A1) relating to the Refurbishment module in the Use stage. Property has a quantity of type EutrophicationCML measured in [kg [PO₄]³⁻ eq]."
     },
     "B6" : {
       "type" : "number",
-      "description" : "Resulting Eutrophication (EN 15804+A1) relating to the Operational Energy Use module in the Use stage. Property has a quantity of type EutrophicationCML meassured in [kg [PO₄]³⁻ eq]."
+      "description" : "Resulting Eutrophication (EN 15804+A1) relating to the Operational Energy Use module in the Use stage. Property has a quantity of type EutrophicationCML measured in [kg [PO₄]³⁻ eq]."
     },
     "B7" : {
       "type" : "number",
-      "description" : "Resulting Eutrophication (EN 15804+A1) relating to the Operational Water Use module in the Use stage. Property has a quantity of type EutrophicationCML meassured in [kg [PO₄]³⁻ eq]."
+      "description" : "Resulting Eutrophication (EN 15804+A1) relating to the Operational Water Use module in the Use stage. Property has a quantity of type EutrophicationCML measured in [kg [PO₄]³⁻ eq]."
     },
     "B1toB7" : {
       "type" : "number",
-      "description" : "Resulting Eutrophication (EN 15804+A1) relating to the full Use Stage. Property has a quantity of type EutrophicationCML meassured in [kg [PO₄]³⁻ eq]."
+      "description" : "Resulting Eutrophication (EN 15804+A1) relating to the full Use Stage. Property has a quantity of type EutrophicationCML measured in [kg [PO₄]³⁻ eq]."
     },
     "C1" : {
       "type" : "number",
-      "description" : "Resulting Eutrophication (EN 15804+A1) relating to the De-construction Demolition module in the End of Life stage. Property has a quantity of type EutrophicationCML meassured in [kg [PO₄]³⁻ eq]."
+      "description" : "Resulting Eutrophication (EN 15804+A1) relating to the De-construction Demolition module in the End of Life stage. Property has a quantity of type EutrophicationCML measured in [kg [PO₄]³⁻ eq]."
     },
     "C2" : {
       "type" : "number",
-      "description" : "Resulting Eutrophication (EN 15804+A1) relating to the Transport module in the End of Life stage. Property has a quantity of type EutrophicationCML meassured in [kg [PO₄]³⁻ eq]."
+      "description" : "Resulting Eutrophication (EN 15804+A1) relating to the Transport module in the End of Life stage. Property has a quantity of type EutrophicationCML measured in [kg [PO₄]³⁻ eq]."
     },
     "C3" : {
       "type" : "number",
-      "description" : "Resulting Eutrophication (EN 15804+A1) relating to the Waste Processing module in the End of Life stage. Property has a quantity of type EutrophicationCML meassured in [kg [PO₄]³⁻ eq]."
+      "description" : "Resulting Eutrophication (EN 15804+A1) relating to the Waste Processing module in the End of Life stage. Property has a quantity of type EutrophicationCML measured in [kg [PO₄]³⁻ eq]."
     },
     "C4" : {
       "type" : "number",
-      "description" : "Resulting Eutrophication (EN 15804+A1) relating to the Disposal module in the End of Life stage. Property has a quantity of type EutrophicationCML meassured in [kg [PO₄]³⁻ eq]."
+      "description" : "Resulting Eutrophication (EN 15804+A1) relating to the Disposal module in the End of Life stage. Property has a quantity of type EutrophicationCML measured in [kg [PO₄]³⁻ eq]."
     },
     "C1toC4" : {
       "type" : "number",
-      "description" : "Resulting Eutrophication (EN 15804+A1) relating to the full End of Life stage. Property has a quantity of type EutrophicationCML meassured in [kg [PO₄]³⁻ eq]."
+      "description" : "Resulting Eutrophication (EN 15804+A1) relating to the full End of Life stage. Property has a quantity of type EutrophicationCML measured in [kg [PO₄]³⁻ eq]."
     },
     "D" : {
       "type" : "number",
-      "description" : "Resulting Eutrophication (EN 15804+A1) relating to benefits and loads beyond the system boundary. Property has a quantity of type EutrophicationCML meassured in [kg [PO₄]³⁻ eq]."
+      "description" : "Resulting Eutrophication (EN 15804+A1) relating to benefits and loads beyond the system boundary. Property has a quantity of type EutrophicationCML measured in [kg [PO₄]³⁻ eq]."
     },
     "MaterialName" : {
       "type" : ["string", "null"],
@@ -97,7 +97,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.LifeCycleAssessment.Results.EutrophicationCMLMaterialResult"
     },
     "_bhomVersion" : {

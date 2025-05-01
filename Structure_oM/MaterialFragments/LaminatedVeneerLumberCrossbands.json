@@ -10,15 +10,15 @@
     },
     "Density" : {
       "type" : "number",
-      "description" : "Mean Density. Used to calculate mass. Called ρmean in most manufacturer documentation. Property has a quantity of type Density meassured in [kg/m³]."
+      "description" : "Mean Density. Used to calculate mass. Called ρmean in most manufacturer documentation. Property has a quantity of type Density measured in [kg/m³]."
     },
     "DensityCharacteristic" : {
       "type" : "number",
-      "description" : "Characteristic Density. Used to calculate other mechanical properties (not mass). Called ρk in most manufacturer documentation. Property has a quantity of type Density meassured in [kg/m³]."
+      "description" : "Characteristic Density. Used to calculate other mechanical properties (not mass). Called ρk in most manufacturer documentation. Property has a quantity of type Density measured in [kg/m³]."
     },
     "DampingRatio" : {
       "type" : "number",
-      "description" : "Dynamic Damping Ratio. Ratio between actual damping and critical damping. Property has a quantity of type Ratio meassured in [-]."
+      "description" : "Dynamic Damping Ratio. Ratio between actual damping and critical damping. Property has a quantity of type Ratio measured in [-]."
     },
     "YoungsModulus" : {
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
@@ -34,71 +34,71 @@
     },
     "E_0_k" : {
       "type" : "number",
-      "description" : "Characteristic modulus of elasticity parallel to grain, E0,k in most manufacturer documentation. Value same for Em,0,edge,k, Em,0,flat,k, Et,0,k, and Ec,0,k. Property has a quantity of type YoungsModulus meassured in [Pa]."
+      "description" : "Characteristic modulus of elasticity parallel to grain, E0,k in most manufacturer documentation. Value same for Em,0,edge,k, Em,0,flat,k, Et,0,k, and Ec,0,k. Property has a quantity of type YoungsModulus measured in [Pa]."
     },
     "E_90_Flat_k" : {
       "type" : "number",
-      "description" : "Characteristic modulus of elasticity for flatwise compression and tension perpendicular to the grain, Ec,90,flat,k and Et,90,flat,k in most manufacturer documentation. Property has a quantity of type YoungsModulus meassured in [Pa]."
+      "description" : "Characteristic modulus of elasticity for flatwise compression and tension perpendicular to the grain, Ec,90,flat,k and Et,90,flat,k in most manufacturer documentation. Property has a quantity of type YoungsModulus measured in [Pa]."
     },
     "E_90_m_k" : {
       "type" : "number",
-      "description" : "Characteristic modulus of elasticity for flatwise bending perpendicular to the grain, Em,90,flat,k in most manufacturer documentation.\nStiffness direction same as E_90_Edge_k. Load condition should define which of the two to be used in analysis. Property has a quantity of type YoungsModulus meassured in [Pa]."
+      "description" : "Characteristic modulus of elasticity for flatwise bending perpendicular to the grain, Em,90,flat,k in most manufacturer documentation.\nStiffness direction same as E_90_Edge_k. Load condition should define which of the two to be used in analysis. Property has a quantity of type YoungsModulus measured in [Pa]."
     },
     "E_90_Edge_k" : {
       "type" : "number",
-      "description" : "Characteristic modulus of elasticity for edgewise axialforce perpendicular to the grain, Ec,90,edge,k and Et,90,edge,k in most manufacturer documentation.\nStiffness direction same as E_90_m_k. Load condition should define which of the two to be used in analysis. Property has a quantity of type YoungsModulus meassured in [Pa]."
+      "description" : "Characteristic modulus of elasticity for edgewise axialforce perpendicular to the grain, Ec,90,edge,k and Et,90,edge,k in most manufacturer documentation.\nStiffness direction same as E_90_m_k. Load condition should define which of the two to be used in analysis. Property has a quantity of type YoungsModulus measured in [Pa]."
     },
     "E_0_Mean" : {
       "type" : "number",
-      "description" : "Mean modulus of elasticity parallel to grain, E0,mean in most manufacturer documentation. Value same for Em,0,edge,mean, Em,0,flat,mean, Et,0,mean, and Ec,0,mean. Property has a quantity of type YoungsModulus meassured in [Pa]."
+      "description" : "Mean modulus of elasticity parallel to grain, E0,mean in most manufacturer documentation. Value same for Em,0,edge,mean, Em,0,flat,mean, Et,0,mean, and Ec,0,mean. Property has a quantity of type YoungsModulus measured in [Pa]."
     },
     "E_90_Flat_Mean" : {
       "type" : "number",
-      "description" : "Mean modulus of elasticity for flatwise compression and tension perpendicular to the grain, Ec,90,flat,mean and Et,90,flat,mean in most manufacturer documentation. Property has a quantity of type YoungsModulus meassured in [Pa]."
+      "description" : "Mean modulus of elasticity for flatwise compression and tension perpendicular to the grain, Ec,90,flat,mean and Et,90,flat,mean in most manufacturer documentation. Property has a quantity of type YoungsModulus measured in [Pa]."
     },
     "E_90_m_Mean" : {
       "type" : "number",
-      "description" : "Mean modulus of elasticity for flatwise bending perpendicular to the grain, Em,90,flat,mean in most manufacturer documentation.\nStiffness direction same as E_90_Edge_Mean. Load condition should define which of the two to be used in analysis. Property has a quantity of type YoungsModulus meassured in [Pa]."
+      "description" : "Mean modulus of elasticity for flatwise bending perpendicular to the grain, Em,90,flat,mean in most manufacturer documentation.\nStiffness direction same as E_90_Edge_Mean. Load condition should define which of the two to be used in analysis. Property has a quantity of type YoungsModulus measured in [Pa]."
     },
     "E_90_Edge_Mean" : {
       "type" : "number",
-      "description" : "Mean modulus of elasticity for edgewise axialforce perpendicular to the grain, Ec,90,edge,mean and Et,90,edge,mean in most manufacturer documentation.\nStiffness direction same as E_90_m_Mean. Load condition should define which of the two to be used in analysis. Property has a quantity of type YoungsModulus meassured in [Pa]."
+      "description" : "Mean modulus of elasticity for edgewise axialforce perpendicular to the grain, Ec,90,edge,mean and Et,90,edge,mean in most manufacturer documentation.\nStiffness direction same as E_90_m_Mean. Load condition should define which of the two to be used in analysis. Property has a quantity of type YoungsModulus measured in [Pa]."
     },
     "G_0_Edge_k" : {
       "type" : "number",
-      "description" : "Characteristic shear modulus for edgewise shear parallel to the grain, G0,edge,k in most manufacturer documentation. Property has a quantity of type ShearModulus meassured in [Pa]."
+      "description" : "Characteristic shear modulus for edgewise shear parallel to the grain, G0,edge,k in most manufacturer documentation. Property has a quantity of type ShearModulus measured in [Pa]."
     },
     "G_0_Flat_k" : {
       "type" : "number",
-      "description" : "Characteristic shear modulus for flatwise shear parallel to the grain, G0,flat,k in most manufacturer documentation. Property has a quantity of type ShearModulus meassured in [Pa]."
+      "description" : "Characteristic shear modulus for flatwise shear parallel to the grain, G0,flat,k in most manufacturer documentation. Property has a quantity of type ShearModulus measured in [Pa]."
     },
     "G_90_Flat_k" : {
       "type" : "number",
-      "description" : "Characteristic shear modulus for flatwise shear perpendicular to the grain, G90,flat,k in most manufacturer documentation. Property has a quantity of type ShearModulus meassured in [Pa]."
+      "description" : "Characteristic shear modulus for flatwise shear perpendicular to the grain, G90,flat,k in most manufacturer documentation. Property has a quantity of type ShearModulus measured in [Pa]."
     },
     "G_0_Edge_Mean" : {
       "type" : "number",
-      "description" : "Mean shear modulus for edgewise shear parallel to the grain, G0,edge,mean in most manufacturer documentation. Property has a quantity of type ShearModulus meassured in [Pa]."
+      "description" : "Mean shear modulus for edgewise shear parallel to the grain, G0,edge,mean in most manufacturer documentation. Property has a quantity of type ShearModulus measured in [Pa]."
     },
     "G_0_Flat_Mean" : {
       "type" : "number",
-      "description" : "Mean shear modulus for flatwise shear parallel to the grain, G0,flat,mean in most manufacturer documentation. Property has a quantity of type ShearModulus meassured in [Pa]."
+      "description" : "Mean shear modulus for flatwise shear parallel to the grain, G0,flat,mean in most manufacturer documentation. Property has a quantity of type ShearModulus measured in [Pa]."
     },
     "G_90_Flat_Mean" : {
       "type" : "number",
-      "description" : "Mean shear modulus for flatwise shear perpendicular to the grain, G90,flat,mean in most manufacturer documentation. Property has a quantity of type ShearModulus meassured in [Pa]."
+      "description" : "Mean shear modulus for flatwise shear perpendicular to the grain, G90,flat,mean in most manufacturer documentation. Property has a quantity of type ShearModulus measured in [Pa]."
     },
     "BendingStrengthEdgeParallel" : {
       "type" : "number",
-      "description" : "Characteristic Edgewise bending Strength, parallel to the grain. Called fm,0,edge,k in most manufacturer documentation. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Characteristic Edgewise bending Strength, parallel to the grain. Called fm,0,edge,k in most manufacturer documentation. Property has a quantity of type Stress measured in [Pa]."
     },
     "BendingStrengthFlatParallel" : {
       "type" : "number",
-      "description" : "Characteristic Flatwise Bending Strength parallel to the grain. Called fm,0,flat,k in most manufacturer documentation. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Characteristic Flatwise Bending Strength parallel to the grain. Called fm,0,flat,k in most manufacturer documentation. Property has a quantity of type Stress measured in [Pa]."
     },
     "BendingStrengthFlatPerpendicular" : {
       "type" : "number",
-      "description" : "Characteristic Flatwise Bending Strength perpendicular to the grain. Called fm,90,flat,k in most manufacturer documentation. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Characteristic Flatwise Bending Strength perpendicular to the grain. Called fm,90,flat,k in most manufacturer documentation. Property has a quantity of type Stress measured in [Pa]."
     },
     "SizeEffectParameter" : {
       "type" : "number",
@@ -106,39 +106,39 @@
     },
     "TensileStrengthParallel" : {
       "type" : "number",
-      "description" : "Characteristic Tensile parallel Strength. Tension stress parallel to the grain at failure in net tension. Called ft,0,k in most manufacturer documentation. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Characteristic Tensile parallel Strength. Tension stress parallel to the grain at failure in net tension. Called ft,0,k in most manufacturer documentation. Property has a quantity of type Stress measured in [Pa]."
     },
     "TensileStrengthEdgePerpendicular" : {
       "type" : "number",
-      "description" : "Characteristic Edgewise tensile perpendicular Strength. Tension stress perpendicular to the grain at failure in net tension. Called ft,90,edge,k in most manufacturer documentation. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Characteristic Edgewise tensile perpendicular Strength. Tension stress perpendicular to the grain at failure in net tension. Called ft,90,edge,k in most manufacturer documentation. Property has a quantity of type Stress measured in [Pa]."
     },
     "TensileStrengthFlatPerpendicular" : {
       "type" : "number",
-      "description" : "Characteristic Flatwise tensile perpendicular Strength. Tension stress perpendicular to the grain at failure in net tension. Called ft,90,flat,k in most manufacturer documentation. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Characteristic Flatwise tensile perpendicular Strength. Tension stress perpendicular to the grain at failure in net tension. Called ft,90,flat,k in most manufacturer documentation. Property has a quantity of type Stress measured in [Pa]."
     },
     "CompressiveStrengthParallel" : {
       "type" : "number",
-      "description" : "Characteristic Compressive parallel Strength. Compression stress parallel to the grain at failure in net compression. Called fc,0,k in most manufacturer documentation. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Characteristic Compressive parallel Strength. Compression stress parallel to the grain at failure in net compression. Called fc,0,k in most manufacturer documentation. Property has a quantity of type Stress measured in [Pa]."
     },
     "CompressiveStrengthEdgePerpendicular" : {
       "type" : "number",
-      "description" : "Characteristic Edgewise compressive perpendicular Strength. Compression stress perpendicular to the grain at failure in net compression. Called fc,90,edge,k in most manufacturer documentation. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Characteristic Edgewise compressive perpendicular Strength. Compression stress perpendicular to the grain at failure in net compression. Called fc,90,edge,k in most manufacturer documentation. Property has a quantity of type Stress measured in [Pa]."
     },
     "CompressiveStrengthFlatPerpendicular" : {
       "type" : "number",
-      "description" : "Characteristic Flatwise compressive perpendicular Strength. Compression stress perpendicular to the grain at failure in net compression. Called fc,90,flat,k in most manufacturer documentation. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Characteristic Flatwise compressive perpendicular Strength. Compression stress perpendicular to the grain at failure in net compression. Called fc,90,flat,k in most manufacturer documentation. Property has a quantity of type Stress measured in [Pa]."
     },
     "ShearStrengthEdge" : {
       "type" : "number",
-      "description" : "Characteristic Edgewise Shear Strength parallel. Shear stress parallel to the grain at failure in net shear for edgewise shearing. Called fv,0,edge,k in most manufacturer documentation. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Characteristic Edgewise Shear Strength parallel. Shear stress parallel to the grain at failure in net shear for edgewise shearing. Called fv,0,edge,k in most manufacturer documentation. Property has a quantity of type Stress measured in [Pa]."
     },
     "ShearStrengthFlatParallel" : {
       "type" : "number",
-      "description" : "Flatwise Shear Strength parallel. Shear stress parallel to the grain at failure in net shear for flatwise shearing. Called fv,0,flat,k in most manufacturer documentation. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Flatwise Shear Strength parallel. Shear stress parallel to the grain at failure in net shear for flatwise shearing. Called fv,0,flat,k in most manufacturer documentation. Property has a quantity of type Stress measured in [Pa]."
     },
     "ShearStrengthFlatPerpendicular" : {
       "type" : "number",
-      "description" : "Characteristic Flatwise Shear Strength parallel. Shear stress parallel to the grain at failure in net shear for flatwise shearing. Called fv,0,flat,k in most manufacturer documentation. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Characteristic Flatwise Shear Strength parallel. Shear stress parallel to the grain at failure in net shear for flatwise shearing. Called fv,0,flat,k in most manufacturer documentation. Property has a quantity of type Stress measured in [Pa]."
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -158,7 +158,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Structure.MaterialFragments.LaminatedVeneerLumberCrossbands"
     },
     "_bhomVersion" : {

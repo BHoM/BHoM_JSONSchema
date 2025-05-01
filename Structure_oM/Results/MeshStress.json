@@ -6,35 +6,35 @@
   "properties" : {
     "SXX" : {
       "type" : "number",
-      "description" : "Normal stress in x-direction. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Normal stress in x-direction. Property has a quantity of type Stress measured in [Pa]."
     },
     "SYY" : {
       "type" : "number",
-      "description" : "Normal stress in y-direction. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Normal stress in y-direction. Property has a quantity of type Stress measured in [Pa]."
     },
     "SXY" : {
       "type" : "number",
-      "description" : "Normal stress in xy-direction. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Normal stress in xy-direction. Property has a quantity of type Stress measured in [Pa]."
     },
     "TXX" : {
       "type" : "number",
-      "description" : "Shear stress in x-direction. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Shear stress in x-direction. Property has a quantity of type Stress measured in [Pa]."
     },
     "TYY" : {
       "type" : "number",
-      "description" : "Shear stress in y-direction. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Shear stress in y-direction. Property has a quantity of type Stress measured in [Pa]."
     },
     "Principal_1" : {
       "type" : "number",
-      "description" : "Principal stress in first principal direction. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Principal stress in first principal direction. Property has a quantity of type Stress measured in [Pa]."
     },
     "Principal_2" : {
       "type" : "number",
-      "description" : "Principal stress in second principal direction. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Principal stress in second principal direction. Property has a quantity of type Stress measured in [Pa]."
     },
     "Principal_1_2" : {
       "type" : "number",
-      "description" : "Principal stress in middle principal direction. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Principal stress in middle principal direction. Property has a quantity of type Stress measured in [Pa]."
     },
     "ObjectId" : {
       "type" : ["object", "integer", "string", "number", "null"]
@@ -71,7 +71,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Structure.Results.MeshStress"
     },
     "_bhomVersion" : {

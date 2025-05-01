@@ -6,15 +6,15 @@
   "properties" : {
     "A" : {
       "type" : "number",
-      "description" : "Property has a quantity of type Length meassured in [m]."
+      "description" : "Property has a quantity of type Length measured in [m]."
     },
     "Diameter" : {
       "type" : "number",
-      "description" : "The diameter of the reinforcement bar. Property has a quantity of type Length meassured in [m]."
+      "description" : "The diameter of the reinforcement bar. Property has a quantity of type Length measured in [m]."
     },
     "BendRadius" : {
       "type" : "number",
-      "description" : "Bend radius used for any discontinuities in the CentreCurve. Property has a quantity of type Length meassured in [m]."
+      "description" : "Bend radius used for any discontinuities in the CentreCurve. Property has a quantity of type Length measured in [m]."
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -37,7 +37,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Physical.Reinforcement.BS8666.ShapeCode00"
     },
     "_bhomVersion" : {

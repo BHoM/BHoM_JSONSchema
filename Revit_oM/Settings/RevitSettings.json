@@ -15,11 +15,11 @@
     },
     "DistanceTolerance" : {
       "type" : "number",
-      "description" : "Distance tolerance to be used in geometry processing. Property has a quantity of type Length meassured in [m]."
+      "description" : "Distance tolerance to be used in geometry processing. Property has a quantity of type Length measured in [m]."
     },
     "AngleTolerance" : {
       "type" : "number",
-      "description" : "Angle tolerance to be used in geometry processing. Property has a quantity of type Angle meassured in [rad]."
+      "description" : "Angle tolerance to be used in geometry processing. Property has a quantity of type Angle measured in [rad]."
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -42,7 +42,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Adapters.Revit.Settings.RevitSettings"
     },
     "_bhomVersion" : {

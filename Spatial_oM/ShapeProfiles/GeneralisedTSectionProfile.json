@@ -9,23 +9,23 @@
     },
     "Height" : {
       "type" : "number",
-      "description" : "Full depth between the extreme fibre of the outstand and the web. Property has a quantity of type Length meassured in [m]."
+      "description" : "Full depth between the extreme fibre of the outstand and the web. Property has a quantity of type Length measured in [m]."
     },
     "WebThickness" : {
       "type" : "number",
-      "description" : "Property has a quantity of type Length meassured in [m]."
+      "description" : "Property has a quantity of type Length measured in [m]."
     },
     "LeftOutstandWidth" : {
       "type" : "number",
-      "description" : "Outstand width on the left side, measured from the outside edge of the web. Property has a quantity of type Length meassured in [m]."
+      "description" : "Outstand width on the left side, measured from the outside edge of the web. Property has a quantity of type Length measured in [m]."
     },
     "LeftOutstandThickness" : {
       "type" : "number",
-      "description" : "Property has a quantity of type Length meassured in [m]."
+      "description" : "Property has a quantity of type Length measured in [m]."
     },
     "RightOutstandWidth" : {
       "type" : "number",
-      "description" : "Outstand width on the right side, measured from the outside edge of the web. Property has a quantity of type Length meassured in [m]."
+      "description" : "Outstand width on the right side, measured from the outside edge of the web. Property has a quantity of type Length measured in [m]."
     },
     "RightOutstandThickness" : {
       "type" : "number"
@@ -62,7 +62,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Spatial.ShapeProfiles.GeneralisedTSectionProfile"
     },
     "_bhomVersion" : {

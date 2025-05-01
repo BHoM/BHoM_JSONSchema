@@ -9,27 +9,27 @@
     },
     "Height" : {
       "type" : "number",
-      "description" : "Full depth between the extreme fibres of the flanges. Property has a quantity of type Length meassured in [m]."
+      "description" : "Full depth between the extreme fibres of the flanges. Property has a quantity of type Length measured in [m]."
     },
     "Width" : {
       "type" : "number",
-      "description" : "Full width between the extreme fibres of the webs. Property has a quantity of type Length meassured in [m]."
+      "description" : "Full width between the extreme fibres of the webs. Property has a quantity of type Length measured in [m]."
     },
     "WebThickness" : {
       "type" : "number",
-      "description" : "Property has a quantity of type Length meassured in [m]."
+      "description" : "Property has a quantity of type Length measured in [m]."
     },
     "TopFlangeThickness" : {
       "type" : "number",
-      "description" : "Property has a quantity of type Length meassured in [m]."
+      "description" : "Property has a quantity of type Length measured in [m]."
     },
     "BotFlangeThickness" : {
       "type" : "number",
-      "description" : "Property has a quantity of type Length meassured in [m]."
+      "description" : "Property has a quantity of type Length measured in [m]."
     },
     "WeldSize" : {
       "type" : "number",
-      "description" : "Fillet weld size between inside of webs and flanges. Measured as the distance between intersection of web and flange perpendicular to the edge of the weld. Property has a quantity of type Length meassured in [m]."
+      "description" : "Fillet weld size between inside of webs and flanges. Measured as the distance between intersection of web and flange perpendicular to the edge of the weld. Property has a quantity of type Length measured in [m]."
     },
     "Edges" : {
       "type" : ["array", "null"],
@@ -59,7 +59,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Spatial.ShapeProfiles.FabricatedBoxProfile"
     },
     "_bhomVersion" : {

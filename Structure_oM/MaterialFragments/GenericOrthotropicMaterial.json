@@ -10,11 +10,11 @@
     },
     "Density" : {
       "type" : "number",
-      "description" : "Property has a quantity of type Density meassured in [kg/m³]."
+      "description" : "Property has a quantity of type Density measured in [kg/m³]."
     },
     "DampingRatio" : {
       "type" : "number",
-      "description" : "Dynamic damping ratio, expressed as a ratio between actual damping and critical damping. For structures, typically taken as 0.02 (i.e. 2%). Property has a quantity of type Ratio meassured in [-]."
+      "description" : "Dynamic damping ratio, expressed as a ratio between actual damping and critical damping. For structures, typically taken as 0.02 (i.e. 2%). Property has a quantity of type Ratio measured in [-]."
     },
     "YoungsModulus" : {
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
@@ -46,7 +46,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Structure.MaterialFragments.GenericOrthotropicMaterial"
     },
     "_bhomVersion" : {

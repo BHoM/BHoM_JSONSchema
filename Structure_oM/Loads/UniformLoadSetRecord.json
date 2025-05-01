@@ -13,7 +13,7 @@
     },
     "Load" : {
       "type" : "number",
-      "description" : "The magnitude of this load, generally to be applied as an AreaUniformLoad in the gravity direction (-Z) Property has a quantity of type Pressure meassured in [Pa]."
+      "description" : "The magnitude of this load, generally to be applied as an AreaUniformLoad in the gravity direction (-Z) Property has a quantity of type Pressure measured in [Pa]."
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -33,7 +33,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Structure.Loads.UniformLoadSetRecord"
     },
     "_bhomVersion" : {

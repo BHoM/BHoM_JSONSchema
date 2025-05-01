@@ -5,31 +5,31 @@
   "properties" : {
     "A1toA3" : {
       "type" : "number",
-      "description" : "Property has a quantity of type ClimateChange meassured in [kg CO2 eq]."
+      "description" : "Property has a quantity of type ClimateChange measured in [kg CO2 eq]."
     },
     "A4" : {
       "type" : "number",
-      "description" : "Property has a quantity of type ClimateChange meassured in [kg CO2 eq]."
+      "description" : "Property has a quantity of type ClimateChange measured in [kg CO2 eq]."
     },
     "A5" : {
       "type" : "number",
-      "description" : "Property has a quantity of type ClimateChange meassured in [kg CO2 eq]."
+      "description" : "Property has a quantity of type ClimateChange measured in [kg CO2 eq]."
     },
     "B1toB5" : {
       "type" : "number",
-      "description" : "Property has a quantity of type ClimateChange meassured in [kg CO2 eq]."
+      "description" : "Property has a quantity of type ClimateChange measured in [kg CO2 eq]."
     },
     "C1toC4" : {
       "type" : "number",
-      "description" : "Property has a quantity of type ClimateChange meassured in [kg CO2 eq]."
+      "description" : "Property has a quantity of type ClimateChange measured in [kg CO2 eq]."
     },
     "D" : {
       "type" : "number",
-      "description" : "Property has a quantity of type ClimateChange meassured in [kg CO2 eq]."
+      "description" : "Property has a quantity of type ClimateChange measured in [kg CO2 eq]."
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.dKoP.EmbodiedCarbon"
     },
     "_bhomVersion" : {

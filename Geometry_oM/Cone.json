@@ -12,15 +12,15 @@
     },
     "Radius" : {
       "type" : "number",
-      "description" : "Distance from the Centre to the edge of the circular base Property has a quantity of type Length meassured in [m]."
+      "description" : "Distance from the Centre to the edge of the circular base Property has a quantity of type Length measured in [m]."
     },
     "Height" : {
       "type" : "number",
-      "description" : "Distance from the centre of the base to the Cone's apex Property has a quantity of type Length meassured in [m]."
+      "description" : "Distance from the centre of the base to the Cone's apex Property has a quantity of type Length measured in [m]."
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Geometry.Cone"
     },
     "_bhomVersion" : {

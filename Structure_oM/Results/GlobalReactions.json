@@ -6,27 +6,27 @@
   "properties" : {
     "FX" : {
       "type" : "number",
-      "description" : "Total force in the global X-direction. Property has a quantity of type Force meassured in [N]."
+      "description" : "Total force in the global X-direction. Property has a quantity of type Force measured in [N]."
     },
     "FY" : {
       "type" : "number",
-      "description" : "Total force in the global Y-direction. Property has a quantity of type Force meassured in [N]."
+      "description" : "Total force in the global Y-direction. Property has a quantity of type Force measured in [N]."
     },
     "FZ" : {
       "type" : "number",
-      "description" : "Total force in the global Z-direction. Property has a quantity of type Force meassured in [N]."
+      "description" : "Total force in the global Z-direction. Property has a quantity of type Force measured in [N]."
     },
     "MX" : {
       "type" : "number",
-      "description" : "Total moment about the global X-axis. Property has a quantity of type Moment meassured in [N.m]."
+      "description" : "Total moment about the global X-axis. Property has a quantity of type Moment measured in [N.m]."
     },
     "MY" : {
       "type" : "number",
-      "description" : "Total moment about the global Y-axis. Property has a quantity of type Moment meassured in [N.m]."
+      "description" : "Total moment about the global Y-axis. Property has a quantity of type Moment measured in [N.m]."
     },
     "MZ" : {
       "type" : "number",
-      "description" : "Total moment about the global Z-axis. Property has a quantity of type Moment meassured in [N.m]."
+      "description" : "Total moment about the global Z-axis. Property has a quantity of type Moment measured in [N.m]."
     },
     "ObjectId" : {
       "type" : ["object", "integer", "string", "number", "null"]
@@ -44,7 +44,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Structure.Results.GlobalReactions"
     },
     "_bhomVersion" : {

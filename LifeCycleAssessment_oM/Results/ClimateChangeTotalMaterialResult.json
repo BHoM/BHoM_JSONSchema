@@ -6,83 +6,83 @@
   "properties" : {
     "A1" : {
       "type" : "number",
-      "description" : "Resulting Climate change - total relating to the Raw Material Supply module in the Product stage. Property has a quantity of type ClimateChange meassured in [kg CO2 eq]."
+      "description" : "Resulting Climate change - total relating to the Raw Material Supply module in the Product stage. Property has a quantity of type ClimateChange measured in [kg CO2 eq]."
     },
     "A2" : {
       "type" : "number",
-      "description" : "Resulting Climate change - total relating to the Transport module in the Product stage. Property has a quantity of type ClimateChange meassured in [kg CO2 eq]."
+      "description" : "Resulting Climate change - total relating to the Transport module in the Product stage. Property has a quantity of type ClimateChange measured in [kg CO2 eq]."
     },
     "A3" : {
       "type" : "number",
-      "description" : "Resulting Climate change - total relating to the Manufacturing module in the Product stage. Property has a quantity of type ClimateChange meassured in [kg CO2 eq]."
+      "description" : "Resulting Climate change - total relating to the Manufacturing module in the Product stage. Property has a quantity of type ClimateChange measured in [kg CO2 eq]."
     },
     "A1toA3" : {
       "type" : "number",
-      "description" : "Resulting Climate change - total relating to the full Product stage. Property has a quantity of type ClimateChange meassured in [kg CO2 eq]."
+      "description" : "Resulting Climate change - total relating to the full Product stage. Property has a quantity of type ClimateChange measured in [kg CO2 eq]."
     },
     "A4" : {
       "type" : "number",
-      "description" : "Resulting Climate change - total relating to the Transport module in the Construction Process stage. Property has a quantity of type ClimateChange meassured in [kg CO2 eq]."
+      "description" : "Resulting Climate change - total relating to the Transport module in the Construction Process stage. Property has a quantity of type ClimateChange measured in [kg CO2 eq]."
     },
     "A5" : {
       "type" : "number",
-      "description" : "Resulting Climate change - total relating to the Construction Installation Process module in the Construction Process stage. Property has a quantity of type ClimateChange meassured in [kg CO2 eq]."
+      "description" : "Resulting Climate change - total relating to the Construction Installation Process module in the Construction Process stage. Property has a quantity of type ClimateChange measured in [kg CO2 eq]."
     },
     "B1" : {
       "type" : "number",
-      "description" : "Resulting Climate change - total relating to the Use module in the Use stage. Property has a quantity of type ClimateChange meassured in [kg CO2 eq]."
+      "description" : "Resulting Climate change - total relating to the Use module in the Use stage. Property has a quantity of type ClimateChange measured in [kg CO2 eq]."
     },
     "B2" : {
       "type" : "number",
-      "description" : "Resulting Climate change - total relating to the Maintenance module in the Use stage. Property has a quantity of type ClimateChange meassured in [kg CO2 eq]."
+      "description" : "Resulting Climate change - total relating to the Maintenance module in the Use stage. Property has a quantity of type ClimateChange measured in [kg CO2 eq]."
     },
     "B3" : {
       "type" : "number",
-      "description" : "Resulting Climate change - total relating to the Repair module in the Use stage. Property has a quantity of type ClimateChange meassured in [kg CO2 eq]."
+      "description" : "Resulting Climate change - total relating to the Repair module in the Use stage. Property has a quantity of type ClimateChange measured in [kg CO2 eq]."
     },
     "B4" : {
       "type" : "number",
-      "description" : "Resulting Climate change - total relating to the Replacement module in the Use stage. Property has a quantity of type ClimateChange meassured in [kg CO2 eq]."
+      "description" : "Resulting Climate change - total relating to the Replacement module in the Use stage. Property has a quantity of type ClimateChange measured in [kg CO2 eq]."
     },
     "B5" : {
       "type" : "number",
-      "description" : "Resulting Climate change - total relating to the Refurbishment module in the Use stage. Property has a quantity of type ClimateChange meassured in [kg CO2 eq]."
+      "description" : "Resulting Climate change - total relating to the Refurbishment module in the Use stage. Property has a quantity of type ClimateChange measured in [kg CO2 eq]."
     },
     "B6" : {
       "type" : "number",
-      "description" : "Resulting Climate change - total relating to the Operational Energy Use module in the Use stage. Property has a quantity of type ClimateChange meassured in [kg CO2 eq]."
+      "description" : "Resulting Climate change - total relating to the Operational Energy Use module in the Use stage. Property has a quantity of type ClimateChange measured in [kg CO2 eq]."
     },
     "B7" : {
       "type" : "number",
-      "description" : "Resulting Climate change - total relating to the Operational Water Use module in the Use stage. Property has a quantity of type ClimateChange meassured in [kg CO2 eq]."
+      "description" : "Resulting Climate change - total relating to the Operational Water Use module in the Use stage. Property has a quantity of type ClimateChange measured in [kg CO2 eq]."
     },
     "B1toB7" : {
       "type" : "number",
-      "description" : "Resulting Climate change - total relating to the full Use Stage. Property has a quantity of type ClimateChange meassured in [kg CO2 eq]."
+      "description" : "Resulting Climate change - total relating to the full Use Stage. Property has a quantity of type ClimateChange measured in [kg CO2 eq]."
     },
     "C1" : {
       "type" : "number",
-      "description" : "Resulting Climate change - total relating to the De-construction Demolition module in the End of Life stage. Property has a quantity of type ClimateChange meassured in [kg CO2 eq]."
+      "description" : "Resulting Climate change - total relating to the De-construction Demolition module in the End of Life stage. Property has a quantity of type ClimateChange measured in [kg CO2 eq]."
     },
     "C2" : {
       "type" : "number",
-      "description" : "Resulting Climate change - total relating to the Transport module in the End of Life stage. Property has a quantity of type ClimateChange meassured in [kg CO2 eq]."
+      "description" : "Resulting Climate change - total relating to the Transport module in the End of Life stage. Property has a quantity of type ClimateChange measured in [kg CO2 eq]."
     },
     "C3" : {
       "type" : "number",
-      "description" : "Resulting Climate change - total relating to the Waste Processing module in the End of Life stage. Property has a quantity of type ClimateChange meassured in [kg CO2 eq]."
+      "description" : "Resulting Climate change - total relating to the Waste Processing module in the End of Life stage. Property has a quantity of type ClimateChange measured in [kg CO2 eq]."
     },
     "C4" : {
       "type" : "number",
-      "description" : "Resulting Climate change - total relating to the Disposal module in the End of Life stage. Property has a quantity of type ClimateChange meassured in [kg CO2 eq]."
+      "description" : "Resulting Climate change - total relating to the Disposal module in the End of Life stage. Property has a quantity of type ClimateChange measured in [kg CO2 eq]."
     },
     "C1toC4" : {
       "type" : "number",
-      "description" : "Resulting Climate change - total relating to the full End of Life stage. Property has a quantity of type ClimateChange meassured in [kg CO2 eq]."
+      "description" : "Resulting Climate change - total relating to the full End of Life stage. Property has a quantity of type ClimateChange measured in [kg CO2 eq]."
     },
     "D" : {
       "type" : "number",
-      "description" : "Resulting Climate change - total relating to benefits and loads beyond the system boundary. Property has a quantity of type ClimateChange meassured in [kg CO2 eq]."
+      "description" : "Resulting Climate change - total relating to benefits and loads beyond the system boundary. Property has a quantity of type ClimateChange measured in [kg CO2 eq]."
     },
     "MaterialName" : {
       "type" : ["string", "null"],
@@ -97,7 +97,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.LifeCycleAssessment.Results.ClimateChangeTotalMaterialResult"
     },
     "_bhomVersion" : {

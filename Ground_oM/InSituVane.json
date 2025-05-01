@@ -10,7 +10,7 @@
     },
     "Top" : {
       "type" : "number",
-      "description" : "Depth to the top of the sample, measured from the top of the borehole (IVAN_DEPTH). Property has a quantity of type Length meassured in [m]."
+      "description" : "Depth to the top of the sample, measured from the top of the borehole (IVAN_DEPTH). Property has a quantity of type Length measured in [m]."
     },
     "Properties" : {
       "type" : ["array", "null"],
@@ -21,7 +21,7 @@
     },
     "Result" : {
       "type" : "number",
-      "description" : "Vane Test Result (IVAN_IVAN). Property has a quantity of type Pressure meassured in [Pa]."
+      "description" : "Vane Test Result (IVAN_IVAN). Property has a quantity of type Pressure measured in [Pa]."
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -44,7 +44,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Ground.InSituVane"
     },
     "_bhomVersion" : {

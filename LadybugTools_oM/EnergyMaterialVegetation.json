@@ -9,7 +9,7 @@
     },
     "Thickness" : {
       "type" : "number",
-      "description" : "Thickness of material (m). Property has a quantity of type Length meassured in [m]."
+      "description" : "Thickness of material (m). Property has a quantity of type Length measured in [m]."
     },
     "Conductivity" : {
       "type" : "number",
@@ -17,7 +17,7 @@
     },
     "Density" : {
       "type" : "number",
-      "description" : "Density of material (kg/m3). Property has a quantity of type Density meassured in [kg/m³]."
+      "description" : "Density of material (kg/m3). Property has a quantity of type Density measured in [kg/m³]."
     },
     "SpecificHeat" : {
       "type" : "number",
@@ -76,7 +76,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.LadybugTools.EnergyMaterialVegetation"
     },
     "_bhomVersion" : {

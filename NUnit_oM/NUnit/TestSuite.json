@@ -1,0 +1,120 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/NUnit_oM/NUnit/TestSuite.json",
+  "title" : "TestSuite",
+  "type" : ["object", "null"],
+  "properties" : {
+    "Failure" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/NUnit_oM/NUnit/Failure.json"
+    },
+    "TestCases" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/NUnit_oM/NUnit/TestCase.json"
+      }
+    },
+    "Type" : {
+      "type" : ["string", "null"]
+    },
+    "ID" : {
+      "type" : ["string", "null"]
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "FullName" : {
+      "type" : ["string", "null"]
+    },
+    "Classname" : {
+      "type" : ["string", "null"]
+    },
+    "RunState" : {
+      "type" : ["string", "null"]
+    },
+    "TestCaseCount" : {
+      "type" : "integer"
+    },
+    "Result" : {
+      "type" : ["string", "null"]
+    },
+    "Site" : {
+      "type" : ["string", "null"]
+    },
+    "StartTime" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "$date" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "EndTime" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "$date" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "Duration" : {
+      "type" : "number"
+    },
+    "Total" : {
+      "type" : "integer"
+    },
+    "Passed" : {
+      "type" : "integer"
+    },
+    "Failed" : {
+      "type" : "integer"
+    },
+    "Warnings" : {
+      "type" : "integer"
+    },
+    "Inconclusive" : {
+      "type" : "integer"
+    },
+    "Skipped" : {
+      "type" : "integer"
+    },
+    "Asserts" : {
+      "type" : "integer"
+    },
+    "Text" : {
+      "type" : ["string", "null"]
+    },
+    "Children" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/NUnit_oM/NUnit/TestSuite.json"
+      }
+    },
+    "Environment" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/NUnit_oM/NUnit/Environment.json"
+    },
+    "Settings" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/NUnit_oM/NUnit/Setting.json"
+      }
+    },
+    "Properties" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/NUnit_oM/NUnit/Property.json"
+      }
+    },
+    "Reason" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/NUnit_oM/NUnit/Reason.json"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type disciminator for BHoM type.",
+      "const" : "BH.oM.Test.NUnit.TestSuite"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Failure", "TestCases", "Type", "ID", "Name", "FullName", "Classname", "RunState", "TestCaseCount", "Result", "Site", "StartTime", "EndTime", "Duration", "Total", "Passed", "Failed", "Warnings", "Inconclusive", "Skipped", "Asserts", "Text", "Children", "Environment", "Settings", "Properties", "Reason"]
+}

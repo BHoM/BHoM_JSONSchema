@@ -22,11 +22,11 @@
     },
     "TotalPenetration" : {
       "type" : "number",
-      "description" : "Total penetration for seating drive and test drive (ISPT_NPEN). Property has a quantity of type Length meassured in [m]."
+      "description" : "Total penetration for seating drive and test drive (ISPT_NPEN). Property has a quantity of type Length measured in [m]."
     },
     "SelfWeightPenetration" : {
       "type" : "number",
-      "description" : "Self weight penetration (ISPT_SWP). Property has a quantity of type Length meassured in [m]."
+      "description" : "Self weight penetration (ISPT_SWP). Property has a quantity of type Length measured in [m]."
     },
     "SeatBlows1" : {
       "type" : "integer",
@@ -54,27 +54,27 @@
     },
     "SeatPenetration1" : {
       "type" : "number",
-      "description" : "Penetration for 1st Increment Seating (ISPT_PEN1). Property has a quantity of type Length meassured in [m]."
+      "description" : "Penetration for 1st Increment Seating (ISPT_PEN1). Property has a quantity of type Length measured in [m]."
     },
     "SeatPenetration2" : {
       "type" : "number",
-      "description" : "Penetration for 2nd Increment Seating (ISPT_INC2). Property has a quantity of type Length meassured in [m]."
+      "description" : "Penetration for 2nd Increment Seating (ISPT_INC2). Property has a quantity of type Length measured in [m]."
     },
     "PenetrationTest1" : {
       "type" : "number",
-      "description" : "Penetration for 1st Increment Test (ISPT_PEN3). Property has a quantity of type Length meassured in [m]."
+      "description" : "Penetration for 1st Increment Test (ISPT_PEN3). Property has a quantity of type Length measured in [m]."
     },
     "PenetrationTest2" : {
       "type" : "number",
-      "description" : "Penetration for 2nd Increment Test (ISPT_PEN4). Property has a quantity of type Length meassured in [m]."
+      "description" : "Penetration for 2nd Increment Test (ISPT_PEN4). Property has a quantity of type Length measured in [m]."
     },
     "PenetrationTest3" : {
       "type" : "number",
-      "description" : "Penetration for 3rd Increment Test (ISPT_PEN5). Property has a quantity of type Length meassured in [m]."
+      "description" : "Penetration for 3rd Increment Test (ISPT_PEN5). Property has a quantity of type Length measured in [m]."
     },
     "PenetrationTest4" : {
       "type" : "number",
-      "description" : "Penetration for 4th Increment Test (ISPT_PEN6). Property has a quantity of type Length meassured in [m]."
+      "description" : "Penetration for 4th Increment Test (ISPT_PEN6). Property has a quantity of type Length measured in [m]."
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -97,7 +97,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Ground.SPTResultProperties"
     },
     "_bhomVersion" : {

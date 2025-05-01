@@ -6,27 +6,27 @@
   "properties" : {
     "UX" : {
       "type" : "number",
-      "description" : "Acceleration in the X-direction as defined by orientation basis. Property has a quantity of type Acceleration meassured in [m/s²]."
+      "description" : "Acceleration in the X-direction as defined by orientation basis. Property has a quantity of type Acceleration measured in [m/s²]."
     },
     "UY" : {
       "type" : "number",
-      "description" : "Acceleration in the Y-direction as defined by orientation basis. Property has a quantity of type Acceleration meassured in [m/s²]."
+      "description" : "Acceleration in the Y-direction as defined by orientation basis. Property has a quantity of type Acceleration measured in [m/s²]."
     },
     "UZ" : {
       "type" : "number",
-      "description" : "Acceleration in the Z-direction as defined by orientation basis. Property has a quantity of type Acceleration meassured in [m/s²]."
+      "description" : "Acceleration in the Z-direction as defined by orientation basis. Property has a quantity of type Acceleration measured in [m/s²]."
     },
     "RX" : {
       "type" : "number",
-      "description" : "Rotational acceleration about the X-axis as defined by orientation basis. Property has a quantity of type AngularAcceleration meassured in [rad/s²]."
+      "description" : "Rotational acceleration about the X-axis as defined by orientation basis. Property has a quantity of type AngularAcceleration measured in [rad/s²]."
     },
     "RY" : {
       "type" : "number",
-      "description" : "Rotational acceleration about the Y-axis as defined by orientation basis. Property has a quantity of type AngularAcceleration meassured in [rad/s²]."
+      "description" : "Rotational acceleration about the Y-axis as defined by orientation basis. Property has a quantity of type AngularAcceleration measured in [rad/s²]."
     },
     "RZ" : {
       "type" : "number",
-      "description" : "Rotational acceleration about the Z-axis as defined by orientation basis. Property has a quantity of type AngularAcceleration meassured in [rad/s²]."
+      "description" : "Rotational acceleration about the Z-axis as defined by orientation basis. Property has a quantity of type AngularAcceleration measured in [rad/s²]."
     },
     "ObjectId" : {
       "type" : ["object", "integer", "string", "number", "null"]
@@ -47,7 +47,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Structure.Results.NodeAcceleration"
     },
     "_bhomVersion" : {

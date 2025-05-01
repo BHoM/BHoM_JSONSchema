@@ -10,15 +10,15 @@
     },
     "DensityCharacteristic" : {
       "type" : "number",
-      "description" : "Characteristic Density. Used to calculate other mechanical properties (not mass). Called G (specific gravity) in American codes, p_k in Eurocode. Property has a quantity of type Density meassured in [kg/m³]."
+      "description" : "Characteristic Density. Used to calculate other mechanical properties (not mass). Called G (specific gravity) in American codes, p_k in Eurocode. Property has a quantity of type Density measured in [kg/m³]."
     },
     "Density" : {
       "type" : "number",
-      "description" : "Mean Density. Used to calculate mass. Called p_mean in Eurocode. Property has a quantity of type Density meassured in [kg/m³]."
+      "description" : "Mean Density. Used to calculate mass. Called p_mean in Eurocode. Property has a quantity of type Density measured in [kg/m³]."
     },
     "DampingRatio" : {
       "type" : "number",
-      "description" : "Dynamic Damping Ratio. Ratio between actual damping and critical damping. Property has a quantity of type Ratio meassured in [-]."
+      "description" : "Dynamic Damping Ratio. Ratio between actual damping and critical damping. Property has a quantity of type Ratio measured in [-]."
     },
     "YoungsModulus" : {
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
@@ -40,31 +40,31 @@
     },
     "BendingStrength" : {
       "type" : "number",
-      "description" : "Bending Strength. Tension stress parallel to the grain at failure in bending as calculated from beam equations. Called F_b in American codes, f_mk in Eurocode. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Bending Strength. Tension stress parallel to the grain at failure in bending as calculated from beam equations. Called F_b in American codes, f_mk in Eurocode. Property has a quantity of type Stress measured in [Pa]."
     },
     "TensionParallelStrength" : {
       "type" : "number",
-      "description" : "Tension Parallel Strength. Tension stress parallel to the grain at failure in net tension. Called F_t∥ in American codes, f_t0k in Eurocode. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Tension Parallel Strength. Tension stress parallel to the grain at failure in net tension. Called F_t∥ in American codes, f_t0k in Eurocode. Property has a quantity of type Stress measured in [Pa]."
     },
     "TensionPerpendicularStrength" : {
       "type" : "number",
-      "description" : "Tension Perpendicular Strength. Tension stress perpendicular to the grain at failure in net tension. Called F_t⟂ in American codes, f_t90k in Eurocode. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Tension Perpendicular Strength. Tension stress perpendicular to the grain at failure in net tension. Called F_t⟂ in American codes, f_t90k in Eurocode. Property has a quantity of type Stress measured in [Pa]."
     },
     "CompressionParallelStrength" : {
       "type" : "number",
-      "description" : "Compression Parallel Strength. Compression stress parallel to the grain at failure in net compression. Called F_c∥ in American codes, f_c0k in Eurocode. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Compression Parallel Strength. Compression stress parallel to the grain at failure in net compression. Called F_c∥ in American codes, f_c0k in Eurocode. Property has a quantity of type Stress measured in [Pa]."
     },
     "CompressionPerpendicularStrength" : {
       "type" : "number",
-      "description" : "Compression Perpendicular Strength. Compression stress perpendicular to the grain at failure in net compression. Called F_c⟂ in American codes, f_c90k in Eurocode. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Compression Perpendicular Strength. Compression stress perpendicular to the grain at failure in net compression. Called F_c⟂ in American codes, f_c90k in Eurocode. Property has a quantity of type Stress measured in [Pa]."
     },
     "ShearStrength" : {
       "type" : "number",
-      "description" : "Shear Strength. Shear stress parallel to the grain at failure in net shear, i.e. shear relevant to beam bending. Called F_v in American codes, f_vk in Eurocode. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Shear Strength. Shear stress parallel to the grain at failure in net shear, i.e. shear relevant to beam bending. Called F_v in American codes, f_vk in Eurocode. Property has a quantity of type Stress measured in [Pa]."
     },
     "RollingShearStrength" : {
       "type" : "number",
-      "description" : "Rolling Shear Strength. Shear stress perpendicular to the grain at failure in net shear. Called F_s in American codes, F_rk in Eurocode. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Rolling Shear Strength. Shear stress perpendicular to the grain at failure in net shear. Called F_s in American codes, F_rk in Eurocode. Property has a quantity of type Stress measured in [Pa]."
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -84,7 +84,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Structure.MaterialFragments.Timber"
     },
     "_bhomVersion" : {

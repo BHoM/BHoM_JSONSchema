@@ -9,14 +9,14 @@
     },
     "Diameter" : {
       "type" : "number",
-      "description" : "Diameter of a single rebar. Property has a quantity of type Length meassured in [m]."
+      "description" : "Diameter of a single rebar. Property has a quantity of type Length measured in [m]."
     },
     "Material" : {
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/IMaterialFragment.json"
     },
     "Spacing" : {
       "type" : "number",
-      "description" : "Axial distance between consecutive rebars. If AdjustSpacingToFit is true it will become maximum spacing. Property has a quantity of type Length meassured in [m]."
+      "description" : "Axial distance between consecutive rebars. If AdjustSpacingToFit is true it will become maximum spacing. Property has a quantity of type Length measured in [m]."
     },
     "AdjustSpacingToFit" : {
       "type" : "boolean",
@@ -51,7 +51,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Structure.Reinforcement.TransverseReinforcement"
     },
     "_bhomVersion" : {

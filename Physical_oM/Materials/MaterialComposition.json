@@ -21,7 +21,7 @@
       "properties" : {
         "_v" : {
           "type" : ["array", "null"],
-          "description" : "The list of Material volumetric Ratios. The sum of which must equate to one. Property has a quantity of type Ratio meassured in [-].",
+          "description" : "The list of Material volumetric Ratios. The sum of which must equate to one. Property has a quantity of type Ratio measured in [-].",
           "items" : {
             "type" : "number"
           }
@@ -49,7 +49,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Physical.Materials.MaterialComposition"
     },
     "_bhomVersion" : {

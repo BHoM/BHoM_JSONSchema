@@ -6,23 +6,23 @@
   "properties" : {
     "Top" : {
       "type" : "number",
-      "description" : "Minimum required area of reinforcement in the top layer. Property has a quantity of type Area meassured in [m²]."
+      "description" : "Minimum required area of reinforcement in the top layer. Property has a quantity of type Area measured in [m²]."
     },
     "Bottom" : {
       "type" : "number",
-      "description" : "Minimum required area of reinforcement in the bottom layer. Property has a quantity of type Area meassured in [m²]."
+      "description" : "Minimum required area of reinforcement in the bottom layer. Property has a quantity of type Area measured in [m²]."
     },
     "Perimeter" : {
       "type" : "number",
-      "description" : "Minimum required area of perimeter reinforcement. Property has a quantity of type Area meassured in [m²]."
+      "description" : "Minimum required area of perimeter reinforcement. Property has a quantity of type Area measured in [m²]."
     },
     "Shear" : {
       "type" : "number",
-      "description" : "Minimum required area of shear reinforcement expressed as an area per unit length. Property has a quantity of type AreaPerUnitLength meassured in [m²/m]."
+      "description" : "Minimum required area of shear reinforcement expressed as an area per unit length. Property has a quantity of type AreaPerUnitLength measured in [m²/m]."
     },
     "Torsion" : {
       "type" : "number",
-      "description" : "Minimum required area of torsion reinforcement. Property has a quantity of type Area meassured in [m²]."
+      "description" : "Minimum required area of torsion reinforcement. Property has a quantity of type Area measured in [m²]."
     },
     "MaterialName" : {
       "type" : ["string", "null"],
@@ -52,7 +52,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Structure.Results.BarRequiredArea"
     },
     "_bhomVersion" : {

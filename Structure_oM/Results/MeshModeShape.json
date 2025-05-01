@@ -6,27 +6,27 @@
   "properties" : {
     "UXX" : {
       "type" : "number",
-      "description" : "Translational X component of the mode shape in global coordinates. Property has a quantity of type Length meassured in [m]."
+      "description" : "Translational X component of the mode shape in global coordinates. Property has a quantity of type Length measured in [m]."
     },
     "UYY" : {
       "type" : "number",
-      "description" : "Translational Y component of the mode shape in global coordinates. Property has a quantity of type Length meassured in [m]."
+      "description" : "Translational Y component of the mode shape in global coordinates. Property has a quantity of type Length measured in [m]."
     },
     "UZZ" : {
       "type" : "number",
-      "description" : "Translational Z component of the mode shape in global coordinates. Property has a quantity of type Length meassured in [m]."
+      "description" : "Translational Z component of the mode shape in global coordinates. Property has a quantity of type Length measured in [m]."
     },
     "RXX" : {
       "type" : "number",
-      "description" : "Rotational component about the X-axis of the mode shape in global coordinates. Property has a quantity of type Angle meassured in [rad]."
+      "description" : "Rotational component about the X-axis of the mode shape in global coordinates. Property has a quantity of type Angle measured in [rad]."
     },
     "RYY" : {
       "type" : "number",
-      "description" : "Rotational component about the Y-axis of the mode shape in global coordinates. Property has a quantity of type Angle meassured in [rad]."
+      "description" : "Rotational component about the Y-axis of the mode shape in global coordinates. Property has a quantity of type Angle measured in [rad]."
     },
     "RZZ" : {
       "type" : "number",
-      "description" : "Rotational component about the Z-axis of the mode shape in global coordinates. Property has a quantity of type Angle meassured in [rad]."
+      "description" : "Rotational component about the Z-axis of the mode shape in global coordinates. Property has a quantity of type Angle measured in [rad]."
     },
     "ObjectId" : {
       "type" : ["object", "integer", "string", "number", "null"]
@@ -63,7 +63,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Structure.Results.MeshModeShape"
     },
     "_bhomVersion" : {

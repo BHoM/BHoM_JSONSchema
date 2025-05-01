@@ -9,39 +9,39 @@
     },
     "Height" : {
       "type" : "number",
-      "description" : "Full depth between the extreme fibres of the flanges. Property has a quantity of type Length meassured in [m]."
+      "description" : "Full depth between the extreme fibres of the flanges. Property has a quantity of type Length measured in [m]."
     },
     "Width" : {
       "type" : "number",
-      "description" : "Width between the extreme fibres of the webs, excluding corbel widths. Property has a quantity of type Length meassured in [m]."
+      "description" : "Width between the extreme fibres of the webs, excluding corbel widths. Property has a quantity of type Length measured in [m]."
     },
     "WebThickness" : {
       "type" : "number",
-      "description" : "Property has a quantity of type Length meassured in [m]."
+      "description" : "Property has a quantity of type Length measured in [m]."
     },
     "TopFlangeThickness" : {
       "type" : "number",
-      "description" : "Property has a quantity of type Length meassured in [m]."
+      "description" : "Property has a quantity of type Length measured in [m]."
     },
     "BotFlangeThickness" : {
       "type" : "number",
-      "description" : "Property has a quantity of type Length meassured in [m]."
+      "description" : "Property has a quantity of type Length measured in [m]."
     },
     "TopLeftCorbelWidth" : {
       "type" : "number",
-      "description" : "The additional width added to the left side of the top flange, measured from the outside edge of the web. Property has a quantity of type Length meassured in [m]."
+      "description" : "The additional width added to the left side of the top flange, measured from the outside edge of the web. Property has a quantity of type Length measured in [m]."
     },
     "TopRightCorbelWidth" : {
       "type" : "number",
-      "description" : "The additional width added to the right side of the top flange, measured from the outside edge of the web. Property has a quantity of type Length meassured in [m]."
+      "description" : "The additional width added to the right side of the top flange, measured from the outside edge of the web. Property has a quantity of type Length measured in [m]."
     },
     "BotLeftCorbelWidth" : {
       "type" : "number",
-      "description" : "The additional width added to the left side of the bottom flange, measured from the outside edge of the web. Property has a quantity of type Length meassured in [m]."
+      "description" : "The additional width added to the left side of the bottom flange, measured from the outside edge of the web. Property has a quantity of type Length measured in [m]."
     },
     "BotRightCorbelWidth" : {
       "type" : "number",
-      "description" : "The additional width added to the right side of the bottom flange, measured from the outside edge of the web. Property has a quantity of type Length meassured in [m]."
+      "description" : "The additional width added to the right side of the bottom flange, measured from the outside edge of the web. Property has a quantity of type Length measured in [m]."
     },
     "Edges" : {
       "type" : ["array", "null"],
@@ -71,7 +71,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Spatial.ShapeProfiles.GeneralisedFabricatedBoxProfile"
     },
     "_bhomVersion" : {

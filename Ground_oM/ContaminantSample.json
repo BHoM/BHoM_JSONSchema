@@ -10,7 +10,7 @@
     },
     "Top" : {
       "type" : "number",
-      "description" : "Depth to the top of the sample, measured from the top of the borehole (SAMP_TOP). Property has a quantity of type Length meassured in [m]."
+      "description" : "Depth to the top of the sample, measured from the top of the borehole (SAMP_TOP). Property has a quantity of type Length measured in [m]."
     },
     "Chemical" : {
       "type" : ["string", "null"],
@@ -18,7 +18,7 @@
     },
     "Result" : {
       "type" : "number",
-      "description" : "The amount of the chemical present (ERES_RTXT). Property has a quantity of type MassFraction meassured in [kg/kg]."
+      "description" : "The amount of the chemical present (ERES_RTXT). Property has a quantity of type MassFraction measured in [kg/kg]."
     },
     "Type" : {
       "type" : ["string", "null"],
@@ -64,7 +64,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Ground.ContaminantSample"
     },
     "_bhomVersion" : {

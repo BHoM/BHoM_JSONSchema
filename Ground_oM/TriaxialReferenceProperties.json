@@ -6,7 +6,7 @@
   "properties" : {
     "Top" : {
       "type" : "number",
-      "description" : "Top of sample (SAMP_TOP). Property has a quantity of type Length meassured in [m]."
+      "description" : "Top of sample (SAMP_TOP). Property has a quantity of type Length measured in [m]."
     },
     "Reference" : {
       "type" : ["string", "null"],
@@ -45,7 +45,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Ground.TriaxialReferenceProperties"
     },
     "_bhomVersion" : {

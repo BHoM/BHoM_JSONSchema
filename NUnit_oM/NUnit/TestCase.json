@@ -1,0 +1,65 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/NUnit_oM/NUnit/TestCase.json",
+  "title" : "TestCase",
+  "type" : ["object", "null"],
+  "properties" : {
+    "ID" : {
+      "type" : ["string", "null"]
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "FullName" : {
+      "type" : ["string", "null"]
+    },
+    "Methodname" : {
+      "type" : ["string", "null"]
+    },
+    "Classname" : {
+      "type" : ["string", "null"]
+    },
+    "Runstate" : {
+      "type" : ["string", "null"]
+    },
+    "Seed" : {
+      "type" : "integer"
+    },
+    "Result" : {
+      "type" : ["string", "null"]
+    },
+    "StartTime" : {
+      "type" : ["string", "null"]
+    },
+    "EndTime" : {
+      "type" : ["string", "null"]
+    },
+    "Duration" : {
+      "type" : "number"
+    },
+    "Asserts" : {
+      "type" : "integer"
+    },
+    "Failure" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/NUnit_oM/NUnit/Failure.json"
+    },
+    "Assertions" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/NUnit_oM/NUnit/Assertion.json"
+      }
+    },
+    "Text" : {
+      "type" : ["string", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type disciminator for BHoM type.",
+      "const" : "BH.oM.Test.NUnit.TestCase"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["ID", "Name", "FullName", "Methodname", "Classname", "Runstate", "Seed", "Result", "StartTime", "EndTime", "Duration", "Asserts", "Failure", "Assertions", "Text"]
+}

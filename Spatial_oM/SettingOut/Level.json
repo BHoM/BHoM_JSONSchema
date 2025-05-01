@@ -10,7 +10,7 @@
     },
     "Elevation" : {
       "type" : "number",
-      "description" : "The position of the Level along the global Z coordinate axis. Property has a quantity of type Length meassured in [m]."
+      "description" : "The position of the Level along the global Z coordinate axis. Property has a quantity of type Length measured in [m]."
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -30,7 +30,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Spatial.SettingOut.Level"
     },
     "_bhomVersion" : {

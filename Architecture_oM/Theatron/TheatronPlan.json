@@ -69,7 +69,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Architecture.Theatron.TheatronPlan"
     },
     "_bhomVersion" : {

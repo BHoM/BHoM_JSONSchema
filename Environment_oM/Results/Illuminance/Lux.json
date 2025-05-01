@@ -6,7 +6,7 @@
   "properties" : {
     "LuxLevel" : {
       "type" : "number",
-      "description" : "The amount of lux recorded for the given analysis node Property has a quantity of type Illuminance meassured in [lux]."
+      "description" : "The amount of lux recorded for the given analysis node Property has a quantity of type Illuminance measured in [lux]."
     },
     "ObjectId" : {
       "type" : ["object", "integer", "string", "number", "null"]
@@ -23,7 +23,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Environment.Results.Illuminance.Lux"
     },
     "_bhomVersion" : {

@@ -15,7 +15,7 @@
     },
     "OrientationAngle" : {
       "type" : "number",
-      "description" : "Controls the local axis orientation of the Pile \nFor non-vertical members the local z is aligned with the global Z and rotated with the orientation angle about the local x. \nFor vertical members the local y is aligned with the global Y and rotated with the orientation angle about the local x. \nA Pile is vertical if its projected length to the horizontal plane is less than 0.0001, i.e. a tolerance of 0.1mm on verticality. \nFor general structural conventions please see the documentation. Property has a quantity of type Angle meassured in [rad]."
+      "description" : "Controls the local axis orientation of the Pile \nFor non-vertical members the local z is aligned with the global Z and rotated with the orientation angle about the local x. \nFor vertical members the local y is aligned with the global Y and rotated with the orientation angle about the local x. \nA Pile is vertical if its projected length to the horizontal plane is less than 0.0001, i.e. a tolerance of 0.1mm on verticality. \nFor general structural conventions please see the documentation. Property has a quantity of type Angle measured in [rad]."
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -38,7 +38,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Structure.Elements.Pile"
     },
     "_bhomVersion" : {

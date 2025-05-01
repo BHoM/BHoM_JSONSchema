@@ -13,7 +13,7 @@
     },
     "MinimumCover" : {
       "type" : "number",
-      "description" : "Minimum reinforcement cover of the section. Property has a quantity of type Length meassured in [m]."
+      "description" : "Minimum reinforcement cover of the section. Property has a quantity of type Length measured in [m]."
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -36,7 +36,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Structure.Reinforcement.BarRebarIntent"
     },
     "_bhomVersion" : {

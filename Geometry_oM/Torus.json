@@ -12,15 +12,15 @@
     },
     "RadiusMajor" : {
       "type" : "number",
-      "description" : "Distance from the Torus Centre (and the axis of revolution) to the centre of the circular cross section. Property has a quantity of type Length meassured in [m]."
+      "description" : "Distance from the Torus Centre (and the axis of revolution) to the centre of the circular cross section. Property has a quantity of type Length measured in [m]."
     },
     "RadiusMinor" : {
       "type" : "number",
-      "description" : "The radius defining the size of the circular cross section. Property has a quantity of type Length meassured in [m]."
+      "description" : "The radius defining the size of the circular cross section. Property has a quantity of type Length measured in [m]."
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Geometry.Torus"
     },
     "_bhomVersion" : {

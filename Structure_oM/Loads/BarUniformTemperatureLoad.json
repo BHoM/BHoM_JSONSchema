@@ -6,7 +6,7 @@
   "properties" : {
     "TemperatureChange" : {
       "type" : "number",
-      "description" : "Uniform temperature change of the Bar. Property has a quantity of type Temperature meassured in [K]."
+      "description" : "Uniform temperature change of the Bar. Property has a quantity of type Temperature measured in [K]."
     },
     "Loadcase" : {
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/Loadcase.json"
@@ -42,7 +42,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Structure.Loads.BarUniformTemperatureLoad"
     },
     "_bhomVersion" : {

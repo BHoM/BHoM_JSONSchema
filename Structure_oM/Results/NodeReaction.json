@@ -6,27 +6,27 @@
   "properties" : {
     "FX" : {
       "type" : "number",
-      "description" : "Reaction force in X-direction as defined by orientation basis. Property has a quantity of type Force meassured in [N]."
+      "description" : "Reaction force in X-direction as defined by orientation basis. Property has a quantity of type Force measured in [N]."
     },
     "FY" : {
       "type" : "number",
-      "description" : "Reaction force in Y-direction as defined by orientation basis. Property has a quantity of type Force meassured in [N]."
+      "description" : "Reaction force in Y-direction as defined by orientation basis. Property has a quantity of type Force measured in [N]."
     },
     "FZ" : {
       "type" : "number",
-      "description" : "Reaction force in Z-direction as defined by orientation basis. Property has a quantity of type Force meassured in [N]."
+      "description" : "Reaction force in Z-direction as defined by orientation basis. Property has a quantity of type Force measured in [N]."
     },
     "MX" : {
       "type" : "number",
-      "description" : "Moment about the X-axis as defined by orientation basis. Property has a quantity of type Moment meassured in [N.m]."
+      "description" : "Moment about the X-axis as defined by orientation basis. Property has a quantity of type Moment measured in [N.m]."
     },
     "MY" : {
       "type" : "number",
-      "description" : "Moment about the Y-axis as defined by orientation basis. Property has a quantity of type Moment meassured in [N.m]."
+      "description" : "Moment about the Y-axis as defined by orientation basis. Property has a quantity of type Moment measured in [N.m]."
     },
     "MZ" : {
       "type" : "number",
-      "description" : "Moment about the Z-axis as defined by orientation basis. Property has a quantity of type Moment meassured in [N.m]."
+      "description" : "Moment about the Z-axis as defined by orientation basis. Property has a quantity of type Moment measured in [N.m]."
     },
     "ObjectId" : {
       "type" : ["object", "integer", "string", "number", "null"]
@@ -47,7 +47,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Structure.Results.NodeReaction"
     },
     "_bhomVersion" : {

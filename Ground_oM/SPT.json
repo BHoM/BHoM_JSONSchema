@@ -10,7 +10,7 @@
     },
     "Top" : {
       "type" : "number",
-      "description" : "Depth to the top of the sample, measured from the top of the borehole (ISPT_TOP). Property has a quantity of type Length meassured in [m]."
+      "description" : "Depth to the top of the sample, measured from the top of the borehole (ISPT_TOP). Property has a quantity of type Length measured in [m]."
     },
     "NumberofBlows" : {
       "type" : "integer",
@@ -18,7 +18,7 @@
     },
     "EnergyRatio" : {
       "type" : "number",
-      "description" : "Energy Ratio of Hammer (ISPT_ERAT). Property has a quantity of type Ratio meassured in [-]."
+      "description" : "Energy Ratio of Hammer (ISPT_ERAT). Property has a quantity of type Ratio measured in [-]."
     },
     "MainTestDrive" : {
       "type" : "integer",
@@ -26,7 +26,7 @@
     },
     "TotalPenetration" : {
       "type" : "number",
-      "description" : "Total Penetration for seating drive and test drive (ISPT_NPEN). Property has a quantity of type Length meassured in [m]."
+      "description" : "Total Penetration for seating drive and test drive (ISPT_NPEN). Property has a quantity of type Length measured in [m]."
     },
     "Properties" : {
       "type" : ["array", "null"],
@@ -56,7 +56,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Ground.SPT"
     },
     "_bhomVersion" : {

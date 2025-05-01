@@ -6,7 +6,7 @@
   "properties" : {
     "DistanceFromA" : {
       "type" : "number",
-      "description" : "Distance along the Bar between the StartNode and the load position. Property has a quantity of type Length meassured in [m]."
+      "description" : "Distance along the Bar between the StartNode and the load position. Property has a quantity of type Length measured in [m]."
     },
     "Force" : {
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
@@ -48,7 +48,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Structure.Loads.BarPointLoad"
     },
     "_bhomVersion" : {

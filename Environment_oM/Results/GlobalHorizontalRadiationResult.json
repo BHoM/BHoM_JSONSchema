@@ -6,7 +6,7 @@
   "properties" : {
     "Result" : {
       "type" : "number",
-      "description" : "The value associated with the results object. Property has a quantity of type EnergyPerUnitArea meassured in [W/m�]."
+      "description" : "The value associated with the results object. Property has a quantity of type EnergyPerUnitArea measured in [W/m�]."
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -29,7 +29,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Environment.Results.GlobalHorizontalRadiationResult"
     },
     "_bhomVersion" : {

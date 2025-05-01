@@ -12,7 +12,7 @@
     },
     "OrientationAngle" : {
       "type" : "number",
-      "description" : "Defines the angle that the local x and y axes are rotated around the normal (i.e. local z) of the Panel.\nThe normal of the Panel is determined by the right hand curl rule dictated by the order of the edge list.\nLocal x is found by projecting the global X to the plane of the Panel and is then rotated with the OrientationAngle, except for the case when the Normal is parallel with the global X. For this case the local y is instead found by projecting global Y to the plane of the Panel and is then rotated with the OrientationAngle.\nThe remaining local axis is determined by the right hand rule. Property has a quantity of type Angle meassured in [rad]."
+      "description" : "Defines the angle that the local x and y axes are rotated around the normal (i.e. local z) of the Panel.\nThe normal of the Panel is determined by the right hand curl rule dictated by the order of the edge list.\nLocal x is found by projecting the global X to the plane of the Panel and is then rotated with the OrientationAngle, except for the case when the Normal is parallel with the global X. For this case the local y is instead found by projecting global Y to the plane of the Panel and is then rotated with the OrientationAngle.\nThe remaining local axis is determined by the right hand rule. Property has a quantity of type Angle measured in [rad]."
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -35,7 +35,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Structure.Elements.PadFoundation"
     },
     "_bhomVersion" : {

@@ -10,19 +10,19 @@
     },
     "FloorArea" : {
       "type" : "number",
-      "description" : "Total floor area for the project. Property has a quantity of type Area meassured in [m²]."
+      "description" : "Total floor area for the project. Property has a quantity of type Area measured in [m²]."
     },
     "TotalWeight" : {
       "type" : "number",
-      "description" : "Total mass for the project. Property has a quantity of type Mass meassured in [kg]."
+      "description" : "Total mass for the project. Property has a quantity of type Mass measured in [kg]."
     },
     "A5CarbonFactor" : {
       "type" : "number",
-      "description" : "Carbon factor for installation for the project. Gives an additional factor based on project cost and element weight. Property has a quantity of type ClimateChangePerQuantity meassured in [kg CO2 eq per unit]."
+      "description" : "Carbon factor for installation for the project. Gives an additional factor based on project cost and element weight. Property has a quantity of type ClimateChangePerQuantity measured in [kg CO2 eq per unit]."
     },
     "C1CarbonFactor" : {
       "type" : "number",
-      "description" : "Carbon factor for De-construction Demolition for the project. C1 for each element is computed based on this value and total floor area times elements proportional weight to the total. Property has a quantity of type ClimateChangePerQuantity meassured in [kg CO2 eq per unit]."
+      "description" : "Carbon factor for De-construction Demolition for the project. C1 for each element is computed based on this value and total floor area times elements proportional weight to the total. Property has a quantity of type ClimateChangePerQuantity measured in [kg CO2 eq per unit]."
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -45,7 +45,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.LifeCycleAssessment.Configs.IStructEEvaluationConfig"
     },
     "_bhomVersion" : {

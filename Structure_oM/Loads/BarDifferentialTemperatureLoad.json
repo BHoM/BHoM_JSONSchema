@@ -6,7 +6,7 @@
   "properties" : {
     "TemperatureProfile" : {
       "type" : ["array", "null"],
-      "description" : "Differential temperature profile of the Bar expressed as a Dictionary of the parametric position from the bottom (local z) or left (local y) face of the profile and the temperature at each increment. Property has a quantity of type Temperature meassured in [K].",
+      "description" : "Differential temperature profile of the Bar expressed as a Dictionary of the parametric position from the bottom (local z) or left (local y) face of the profile and the temperature at each increment. Property has a quantity of type Temperature measured in [K].",
       "items" : {
         "type" : ["object", "null"],
         "properties" : {
@@ -56,7 +56,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Structure.Loads.BarDifferentialTemperatureLoad"
     },
     "_bhomVersion" : {

@@ -6,39 +6,39 @@
   "properties" : {
     "Axial" : {
       "type" : "number",
-      "description" : "Axial stress induced by an axial force along the Bar axis. Positive for tension, negative for compression. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Axial stress induced by an axial force along the Bar axis. Positive for tension, negative for compression. Property has a quantity of type Stress measured in [Pa]."
     },
     "ShearY" : {
       "type" : "number",
-      "description" : "Shear stress along the local y-axis. Generally minor axis shear stress. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Shear stress along the local y-axis. Generally minor axis shear stress. Property has a quantity of type Stress measured in [Pa]."
     },
     "ShearZ" : {
       "type" : "number",
-      "description" : "Shear stress along the local z-axis. Generally major axis shear stress. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Shear stress along the local z-axis. Generally major axis shear stress. Property has a quantity of type Stress measured in [Pa]."
     },
     "BendingY_Top" : {
       "type" : "number",
-      "description" : "Stress induced by bending about the local y-axis at the 'uppermost' extreme fiber. Generally the major axis bending stresses in one of the extreme fibers. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Stress induced by bending about the local y-axis at the 'uppermost' extreme fiber. Generally the major axis bending stresses in one of the extreme fibers. Property has a quantity of type Stress measured in [Pa]."
     },
     "BendingY_Bot" : {
       "type" : "number",
-      "description" : "Stress induced by bending about the local y-axis at the 'lowermost' extreme fiber. Generally the major axis bending stresses in one of the extreme fibers. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Stress induced by bending about the local y-axis at the 'lowermost' extreme fiber. Generally the major axis bending stresses in one of the extreme fibers. Property has a quantity of type Stress measured in [Pa]."
     },
     "BendingZ_Top" : {
       "type" : "number",
-      "description" : "Stress induced by bending about the local z-axis at the 'uppermost' extreme fiber. Generally the minor axis bending stresses in one of the extreme fibers. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Stress induced by bending about the local z-axis at the 'uppermost' extreme fiber. Generally the minor axis bending stresses in one of the extreme fibers. Property has a quantity of type Stress measured in [Pa]."
     },
     "BendingZ_Bot" : {
       "type" : "number",
-      "description" : "Stress induced by bending about the local z-axis at the 'lowermost' extreme fiber. Generally the minor axis bending stresses in one of the extreme fibers. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Stress induced by bending about the local z-axis at the 'lowermost' extreme fiber. Generally the minor axis bending stresses in one of the extreme fibers. Property has a quantity of type Stress measured in [Pa]."
     },
     "CombAxialBendingPos" : {
       "type" : "number",
-      "description" : "Worst case tensile normal stress from combined axial and bending in two directions. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Worst case tensile normal stress from combined axial and bending in two directions. Property has a quantity of type Stress measured in [Pa]."
     },
     "CombAxialBendingNeg" : {
       "type" : "number",
-      "description" : "Worst case compressive normal stress from combined axial and bending in two directions. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Worst case compressive normal stress from combined axial and bending in two directions. Property has a quantity of type Stress measured in [Pa]."
     },
     "ObjectId" : {
       "type" : ["object", "integer", "string", "number", "null"]
@@ -64,7 +64,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Structure.Results.BarStress"
     },
     "_bhomVersion" : {

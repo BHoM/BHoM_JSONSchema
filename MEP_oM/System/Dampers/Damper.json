@@ -9,14 +9,14 @@
     },
     "OrientationAngle" : {
       "type" : "number",
-      "description" : "Controls the local plan orientation of the object. Property has a quantity of type Angle meassured in [rad]."
+      "description" : "Controls the local plan orientation of the object. Property has a quantity of type Angle measured in [rad]."
     },
     "DamperType" : {
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Enums/DamperType.json"
     },
     "PressureDrop" : {
       "type" : "number",
-      "description" : "The difference in total pressure between two points of a fluid carrying network. Property has a quantity of type Pressure meassured in [Pa]."
+      "description" : "The difference in total pressure between two points of a fluid carrying network. Property has a quantity of type Pressure measured in [Pa]."
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -39,7 +39,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.MEP.System.Dampers.Damper"
     },
     "_bhomVersion" : {

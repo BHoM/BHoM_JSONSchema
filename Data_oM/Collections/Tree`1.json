@@ -12,7 +12,7 @@
     "Value" : { },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "pattern" : "^BH\\.oM\\.Data\\.Collections\\.Tree`1\\[\\[.*\\]\\]$"
     },
     "_bhomVersion" : {

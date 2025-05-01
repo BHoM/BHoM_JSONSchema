@@ -14,11 +14,11 @@
     },
     "WaterDepth" : {
       "type" : "number",
-      "description" : "Depth to water at time of test, set to NaN if dry (ISPT_WAT). Property has a quantity of type Length meassured in [m]."
+      "description" : "Depth to water at time of test, set to NaN if dry (ISPT_WAT). Property has a quantity of type Length measured in [m]."
     },
     "CasingDepth" : {
       "type" : "number",
-      "description" : "Casing depth at time of test (ISPT_CAS). Property has a quantity of type Length meassured in [m]."
+      "description" : "Casing depth at time of test (ISPT_CAS). Property has a quantity of type Length measured in [m]."
     },
     "SoftRock" : {
       "type" : "boolean",
@@ -61,7 +61,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Ground.SPTTestProperties"
     },
     "_bhomVersion" : {

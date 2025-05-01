@@ -6,27 +6,27 @@
   "properties" : {
     "UX" : {
       "type" : "number",
-      "description" : "Translational displacement in the X-direction as defined by orientation basis. Property has a quantity of type Length meassured in [m]."
+      "description" : "Translational displacement in the X-direction as defined by orientation basis. Property has a quantity of type Length measured in [m]."
     },
     "UY" : {
       "type" : "number",
-      "description" : "Translational displacement in the Y-direction as defined by orientation basis. Property has a quantity of type Length meassured in [m]."
+      "description" : "Translational displacement in the Y-direction as defined by orientation basis. Property has a quantity of type Length measured in [m]."
     },
     "UZ" : {
       "type" : "number",
-      "description" : "Translational displacement in the Z-direction as defined by orientation basis. Property has a quantity of type Length meassured in [m]."
+      "description" : "Translational displacement in the Z-direction as defined by orientation basis. Property has a quantity of type Length measured in [m]."
     },
     "RX" : {
       "type" : "number",
-      "description" : "Rotational displacement about the X-axis as defined by orientation basis. Property has a quantity of type Angle meassured in [rad]."
+      "description" : "Rotational displacement about the X-axis as defined by orientation basis. Property has a quantity of type Angle measured in [rad]."
     },
     "RY" : {
       "type" : "number",
-      "description" : "Rotational displacement about the Y-axis as defined by orientation basis. Property has a quantity of type Angle meassured in [rad]."
+      "description" : "Rotational displacement about the Y-axis as defined by orientation basis. Property has a quantity of type Angle measured in [rad]."
     },
     "RZ" : {
       "type" : "number",
-      "description" : "Rotational displacement about the Z-axis as defined by orientation basis. Property has a quantity of type Angle meassured in [rad]."
+      "description" : "Rotational displacement about the Z-axis as defined by orientation basis. Property has a quantity of type Angle measured in [rad]."
     },
     "ObjectId" : {
       "type" : ["object", "integer", "string", "number", "null"]
@@ -47,7 +47,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Structure.Results.NodeDisplacement"
     },
     "_bhomVersion" : {

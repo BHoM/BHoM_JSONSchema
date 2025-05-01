@@ -9,7 +9,7 @@
     },
     "OrientationAngle" : {
       "type" : "number",
-      "description" : "Controls the local plan orientation of the object. Property has a quantity of type Angle meassured in [rad]."
+      "description" : "Controls the local plan orientation of the object. Property has a quantity of type Angle measured in [rad]."
     },
     "PlumbingFixtureType" : {
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Enums/PlumbingFixtureType.json"
@@ -41,7 +41,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.MEP.Fixtures.PlumbingFixture"
     },
     "_bhomVersion" : {

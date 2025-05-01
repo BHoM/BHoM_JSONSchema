@@ -5,7 +5,7 @@
   "properties" : {
     "Weight" : {
       "type" : "number",
-      "description" : "Property has a quantity of type Mass meassured in [kg]."
+      "description" : "Property has a quantity of type Mass measured in [kg]."
     },
     "LiftingPoints" : {
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/LiftingPoints.json"
@@ -18,7 +18,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.dKoP.Construction"
     },
     "_bhomVersion" : {

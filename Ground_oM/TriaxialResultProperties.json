@@ -6,31 +6,31 @@
   "properties" : {
     "InitialWaterMoistureContent" : {
       "type" : "number",
-      "description" : "Specimen initial water/moisture content (TRIT_IMC). Property has a quantity of type Ratio meassured in [-]."
+      "description" : "Specimen initial water/moisture content (TRIT_IMC). Property has a quantity of type Ratio measured in [-]."
     },
     "FinalWaterMoistureContent" : {
       "type" : "number",
-      "description" : "Specimen final water/moisture content (TRIT_FMC). Property has a quantity of type Ratio meassured in [-]."
+      "description" : "Specimen final water/moisture content (TRIT_FMC). Property has a quantity of type Ratio measured in [-]."
     },
     "TotalCellPressure" : {
       "type" : "number",
-      "description" : "Total cell pressure (TRIT_CELL). Property has a quantity of type Pressure meassured in [Pa]."
+      "description" : "Total cell pressure (TRIT_CELL). Property has a quantity of type Pressure measured in [Pa]."
     },
     "DeviatorStress" : {
       "type" : "number",
-      "description" : "Corrected deviator stress at failure (TRIT_DEVF). Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Corrected deviator stress at failure (TRIT_DEVF). Property has a quantity of type Stress measured in [Pa]."
     },
     "BulkDensity" : {
       "type" : "number",
-      "description" : "Initial bulk density (TRIT_BDEN). Property has a quantity of type Density meassured in [kg/m³]."
+      "description" : "Initial bulk density (TRIT_BDEN). Property has a quantity of type Density measured in [kg/m³]."
     },
     "DryDensity" : {
       "type" : "number",
-      "description" : "Initial dry density (TRIT_DDEN). Property has a quantity of type Density meassured in [kg/m³]."
+      "description" : "Initial dry density (TRIT_DDEN). Property has a quantity of type Density measured in [kg/m³]."
     },
     "AxialStrain" : {
       "type" : "number",
-      "description" : "Axial strain at failure (TRIT_STRN). Property has a quantity of type Strain meassured in [-]."
+      "description" : "Axial strain at failure (TRIT_STRN). Property has a quantity of type Strain measured in [-]."
     },
     "ShearRate" : {
       "type" : ["string", "null"],
@@ -38,7 +38,7 @@
     },
     "FailureZoneWaterContent" : {
       "type" : "number",
-      "description" : "Failure zone water content (TRIT_FZWC). Property has a quantity of type Ratio meassured in [-]."
+      "description" : "Failure zone water content (TRIT_FZWC). Property has a quantity of type Ratio measured in [-]."
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -61,7 +61,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Ground.TriaxialResultProperties"
     },
     "_bhomVersion" : {

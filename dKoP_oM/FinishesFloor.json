@@ -12,7 +12,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.dKoP.FinishesFloor"
     },
     "_bhomVersion" : {

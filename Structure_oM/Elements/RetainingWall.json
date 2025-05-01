@@ -19,7 +19,7 @@
     },
     "RetentionAngle" : {
       "type" : "number",
-      "description" : "A property of the material being retained measured from the horizontal plane. Property has a quantity of type Angle meassured in [rad]."
+      "description" : "A property of the material being retained measured from the horizontal plane. Property has a quantity of type Angle measured in [rad]."
     },
     "GroundWaterDepth" : {
       "type" : "number",
@@ -46,7 +46,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Structure.Elements.RetainingWall"
     },
     "_bhomVersion" : {

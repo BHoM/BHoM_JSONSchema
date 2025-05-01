@@ -5,15 +5,15 @@
   "properties" : {
     "Diameter" : {
       "type" : "number",
-      "description" : "Diameter of the opening. Property has a quantity of type Length meassured in [m]."
+      "description" : "Diameter of the opening. Property has a quantity of type Length measured in [m]."
     },
     "WidthWebPost" : {
       "type" : "number",
-      "description" : "Clear distance between openings. Property has a quantity of type Length meassured in [m]."
+      "description" : "Clear distance between openings. Property has a quantity of type Length measured in [m]."
     },
     "Spacing" : {
       "type" : "number",
-      "description" : "Centre to centre distance between openings. Property has a quantity of type Length meassured in [m]."
+      "description" : "Centre to centre distance between openings. Property has a quantity of type Length measured in [m]."
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -36,7 +36,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Spatial.ShapeProfiles.CellularOpenings.CircularCellularOpening"
     },
     "_bhomVersion" : {

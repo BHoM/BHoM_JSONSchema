@@ -6,15 +6,15 @@
   "properties" : {
     "S" : {
       "type" : "number",
-      "description" : "von Mises Stress. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "von Mises Stress. Property has a quantity of type Stress measured in [Pa]."
     },
     "N" : {
       "type" : "number",
-      "description" : "von Mises normal/membrane forces. Property has a quantity of type ForcePerUnitLength meassured in [N/m]."
+      "description" : "von Mises normal/membrane forces. Property has a quantity of type ForcePerUnitLength measured in [N/m]."
     },
     "M" : {
       "type" : "number",
-      "description" : "von Mises moments. Property has a quantity of type MomentPerUnitLength meassured in [N.m/m]."
+      "description" : "von Mises moments. Property has a quantity of type MomentPerUnitLength measured in [N.m/m]."
     },
     "ObjectId" : {
       "type" : ["object", "integer", "string", "number", "null"]
@@ -51,7 +51,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Structure.Results.MeshVonMises"
     },
     "_bhomVersion" : {

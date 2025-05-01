@@ -1,0 +1,56 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/InteroperabilityTest_oM/Interoperability/Results/PushPullObjectComparison.json",
+  "title" : "PushPullObjectComparison",
+  "type" : ["object", "null"],
+  "properties" : {
+    "Message" : {
+      "type" : ["string", "null"],
+      "description" : "Message raised during the execution."
+    },
+    "Status" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Test_oM/TestStatus.json"
+    },
+    "UTCTime" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "$date" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "ObjectType" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Type"
+        },
+        "Name" : {
+          "type" : ["string", "null"]
+        }
+      }
+    },
+    "PropertyID" : {
+      "type" : ["string", "null"],
+      "description" : "The name of the evaluated property. Empty if result type is Equal or Exception."
+    },
+    "PushedItem" : {
+      "type" : ["string", "null"],
+      "description" : "The value of the property on input as a string. Empty if result type is Equal or Exception."
+    },
+    "ReturnedItem" : {
+      "type" : ["string", "null"],
+      "description" : "The returned value of the property as a string. Empty if result type is Equal or Exception."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type disciminator for BHoM type.",
+      "const" : "BH.oM.Test.Interoperability.Results.PushPullObjectComparison"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Message", "Status", "UTCTime", "ObjectType", "PropertyID", "PushedItem", "ReturnedItem"]
+}

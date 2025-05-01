@@ -6,14 +6,14 @@
   "properties" : {
     "Density" : {
       "type" : "number",
-      "description" : "The mass of reinforcement per unit volume of the element that owns this fragment. Property has a quantity of type Density meassured in [kg/m³]."
+      "description" : "The mass of reinforcement per unit volume of the element that owns this fragment. Property has a quantity of type Density measured in [kg/m³]."
     },
     "Material" : {
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/IMaterialFragment.json"
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Structure.Fragments.ReinforcementDensity"
     },
     "_bhomVersion" : {

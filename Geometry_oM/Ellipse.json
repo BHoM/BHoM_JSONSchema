@@ -15,15 +15,15 @@
     },
     "Radius1" : {
       "type" : "number",
-      "description" : "Distance from the Centre to a point on the Ellipse along Axis1. Property has a quantity of type Length meassured in [m]."
+      "description" : "Distance from the Centre to a point on the Ellipse along Axis1. Property has a quantity of type Length measured in [m]."
     },
     "Radius2" : {
       "type" : "number",
-      "description" : "Distance from the Centre to a point on the Ellipse along Axis2. Property has a quantity of type Length meassured in [m]."
+      "description" : "Distance from the Centre to a point on the Ellipse along Axis2. Property has a quantity of type Length measured in [m]."
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Geometry.Ellipse"
     },
     "_bhomVersion" : {

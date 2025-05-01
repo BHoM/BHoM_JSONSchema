@@ -6,11 +6,11 @@
   "properties" : {
     "Density" : {
       "type" : "number",
-      "description" : "The material density in kg/m^3. Property has a quantity of type Density meassured in [kg/m³]."
+      "description" : "The material density in kg/m^3. Property has a quantity of type Density measured in [kg/m³]."
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.LifeCycleAssessment.Fragments.EPDDensity"
     },
     "_bhomVersion" : {

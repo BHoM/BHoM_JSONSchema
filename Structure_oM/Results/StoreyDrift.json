@@ -13,7 +13,7 @@
     },
     "Ratio" : {
       "type" : "number",
-      "description" : "Ratio between the storey drift and the storey height. Property has a quantity of type Ratio meassured in [-]."
+      "description" : "Ratio between the storey drift and the storey height. Property has a quantity of type Ratio measured in [-]."
     },
     "ObjectId" : {
       "type" : ["object", "integer", "string", "number", "null"]
@@ -31,7 +31,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Structure.Results.StoreyDrift"
     },
     "_bhomVersion" : {

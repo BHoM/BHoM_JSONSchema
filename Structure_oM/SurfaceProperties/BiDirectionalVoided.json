@@ -10,34 +10,34 @@
     },
     "TopThickness" : {
       "type" : "number",
-      "description" : "The thickness of the slab sitting on top of the ribs. Property has a quantity of type Length meassured in [m]."
+      "description" : "The thickness of the slab sitting on top of the ribs. Property has a quantity of type Length measured in [m]."
     },
     "BottomThickness" : {
       "type" : "number",
-      "description" : "The thickness of the slab sitting beneath the ribs. Property has a quantity of type Length meassured in [m]."
+      "description" : "The thickness of the slab sitting beneath the ribs. Property has a quantity of type Length measured in [m]."
     },
     "Material" : {
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/IMaterialFragment.json"
     },
     "TotalDepth" : {
       "type" : "number",
-      "description" : "Total depth measured from the bottom of the lower slab to the top of the upper slab Property has a quantity of type Length meassured in [m]."
+      "description" : "Total depth measured from the bottom of the lower slab to the top of the upper slab Property has a quantity of type Length measured in [m]."
     },
     "StemWidthX" : {
       "type" : "number",
-      "description" : "Width of each rib in local x-direction. Property has a quantity of type Length meassured in [m]."
+      "description" : "Width of each rib in local x-direction. Property has a quantity of type Length measured in [m]."
     },
     "StemWidthY" : {
       "type" : "number",
-      "description" : "Width of each rib in local y-direction. Property has a quantity of type Length meassured in [m]."
+      "description" : "Width of each rib in local y-direction. Property has a quantity of type Length measured in [m]."
     },
     "SpacingX" : {
       "type" : "number",
-      "description" : "Centre-Centre distance between the ribs running in local x-direction. Property has a quantity of type Length meassured in [m]."
+      "description" : "Centre-Centre distance between the ribs running in local x-direction. Property has a quantity of type Length measured in [m]."
     },
     "SpacingY" : {
       "type" : "number",
-      "description" : "Centre-Centre distance between the ribs running in local y-direction. Property has a quantity of type Length meassured in [m]."
+      "description" : "Centre-Centre distance between the ribs running in local y-direction. Property has a quantity of type Length measured in [m]."
     },
     "PanelType" : {
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/PanelType.json"
@@ -60,7 +60,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Structure.SurfaceProperties.BiDirectionalVoided"
     },
     "_bhomVersion" : {

@@ -6,11 +6,11 @@
   "properties" : {
     "Width" : {
       "type" : "number",
-      "description" : "New width of all the openings. Must be a positive number. If left blank, no changes to width will be made. Property has a quantity of type Length meassured in [m]."
+      "description" : "New width of all the openings. Must be a positive number. If left blank, no changes to width will be made. Property has a quantity of type Length measured in [m]."
     },
     "Height" : {
       "type" : "number",
-      "description" : "New height of the all the openings. Must be a positive number. If left blank, no changes to height will be made. Property has a quantity of type Length meassured in [m]."
+      "description" : "New height of the all the openings. Must be a positive number. If left blank, no changes to height will be made. Property has a quantity of type Length measured in [m]."
     },
     "Pitch" : {
       "type" : ["string", "null"],
@@ -49,7 +49,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Environment.SAP.OpeningIteration"
     },
     "_bhomVersion" : {

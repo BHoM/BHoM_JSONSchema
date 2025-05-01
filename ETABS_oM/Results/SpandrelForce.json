@@ -9,27 +9,27 @@
     },
     "FX" : {
       "type" : "number",
-      "description" : "Axial force along the local x-axis. Positive for tension, negative for compression. Property has a quantity of type Force meassured in [N]."
+      "description" : "Axial force along the local x-axis. Positive for tension, negative for compression. Property has a quantity of type Force measured in [N]."
     },
     "FY" : {
       "type" : "number",
-      "description" : "Shear force along the local y-axis. Generally minor axis shear force. Property has a quantity of type Force meassured in [N]."
+      "description" : "Shear force along the local y-axis. Generally minor axis shear force. Property has a quantity of type Force measured in [N]."
     },
     "FZ" : {
       "type" : "number",
-      "description" : "Shear force along the local z-axis. Generally major axis shear force. Property has a quantity of type Force meassured in [N]."
+      "description" : "Shear force along the local z-axis. Generally major axis shear force. Property has a quantity of type Force measured in [N]."
     },
     "MX" : {
       "type" : "number",
-      "description" : "Torsional moment. Property has a quantity of type Moment meassured in [N.m]."
+      "description" : "Torsional moment. Property has a quantity of type Moment measured in [N.m]."
     },
     "MY" : {
       "type" : "number",
-      "description" : "Bending moment about the local y-axis. Generally major axis bending moment. Property has a quantity of type Moment meassured in [N.m]."
+      "description" : "Bending moment about the local y-axis. Generally major axis bending moment. Property has a quantity of type Moment measured in [N.m]."
     },
     "MZ" : {
       "type" : "number",
-      "description" : "Bending moment about the local z-axis. Generally minor axis bending moment. Property has a quantity of type Moment meassured in [N.m]."
+      "description" : "Bending moment about the local z-axis. Generally minor axis bending moment. Property has a quantity of type Moment measured in [N.m]."
     },
     "ObjectId" : {
       "type" : ["object", "integer", "string", "number", "null"]
@@ -55,7 +55,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Adapters.ETABS.Results.SpandrelForce"
     },
     "_bhomVersion" : {

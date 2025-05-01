@@ -1,0 +1,73 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/InteroperabilityTest_oM/Interoperability/Settings/InteropabilityTestSettings.json",
+  "title" : "InteropabilityTestSettings",
+  "type" : ["object", "null"],
+  "description" : "InteropabilityTestSettings: All settings needed to run a PushPullCompare for a specific adapter.",
+  "properties" : {
+    "AdapterType" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Type"
+        },
+        "Name" : {
+          "type" : ["string", "null"]
+        }
+      }
+    },
+    "AdapterConstructorArguments" : {
+      "type" : ["array", "null"],
+      "description" : "The arguments required by the constructor of the adapter with the largest set of arguments.",
+      "items" : { }
+    },
+    "TestTypes" : {
+      "type" : ["array", "null"],
+      "description" : "The types of objects to be tested",
+      "items" : {
+        "type" : ["object", "null"],
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "System.Type"
+          },
+          "Name" : {
+            "type" : ["string", "null"]
+          }
+        }
+      }
+    },
+    "PushPullConfig" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/InteroperabilityTest_oM/Interoperability/PushPullCompareConfig.json"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type disciminator for BHoM type.",
+      "const" : "BH.oM.Test.Interoperability.Settings.InteropabilityTestSettings"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["AdapterType", "AdapterConstructorArguments", "TestTypes", "PushPullConfig"]
+}

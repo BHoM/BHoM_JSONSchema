@@ -9,7 +9,7 @@
     },
     "Radius" : {
       "type" : "number",
-      "description" : "The distance from the Curve Centreline to a point on the Pipe surface. Property has a quantity of type Length meassured in [m]."
+      "description" : "The distance from the Curve Centreline to a point on the Pipe surface. Property has a quantity of type Length measured in [m]."
     },
     "Capped" : {
       "type" : "boolean",
@@ -17,7 +17,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Geometry.Pipe"
     },
     "_bhomVersion" : {

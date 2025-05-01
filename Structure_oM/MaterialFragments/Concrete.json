@@ -10,31 +10,31 @@
     },
     "Density" : {
       "type" : "number",
-      "description" : "Property has a quantity of type Density meassured in [kg/m³]."
+      "description" : "Property has a quantity of type Density measured in [kg/m³]."
     },
     "DampingRatio" : {
       "type" : "number",
-      "description" : "Dynamic damping ratio, expressed as a ratio between actual damping and critical damping. For structures, typically taken as 0.02 (i.e. 2%). Property has a quantity of type Ratio meassured in [-]."
+      "description" : "Dynamic damping ratio, expressed as a ratio between actual damping and critical damping. For structures, typically taken as 0.02 (i.e. 2%). Property has a quantity of type Ratio measured in [-]."
     },
     "PoissonsRatio" : {
       "type" : "number",
-      "description" : "Ratio between axial and transverse strain. Used together with YoungsModulus to derive the ShearModulus for isotropic materials. Property has a quantity of type Ratio meassured in [-]."
+      "description" : "Ratio between axial and transverse strain. Used together with YoungsModulus to derive the ShearModulus for isotropic materials. Property has a quantity of type Ratio measured in [-]."
     },
     "ThermalExpansionCoeff" : {
       "type" : "number",
-      "description" : "The strain induced in the material per unit change of temperature. Property has a quantity of type ThermalExpansionCoefficient meassured in [1/K]."
+      "description" : "The strain induced in the material per unit change of temperature. Property has a quantity of type ThermalExpansionCoefficient measured in [1/K]."
     },
     "YoungsModulus" : {
       "type" : "number",
-      "description" : "Modulus of elasticity of the material. Ratio between axial stress and axial strain. Property has a quantity of type YoungsModulus meassured in [Pa]."
+      "description" : "Modulus of elasticity of the material. Ratio between axial stress and axial strain. Property has a quantity of type YoungsModulus measured in [Pa]."
     },
     "CylinderStrength" : {
       "type" : "number",
-      "description" : "Compressive stress capacity of the concrete from cylinder testing. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Compressive stress capacity of the concrete from cylinder testing. Property has a quantity of type Stress measured in [Pa]."
     },
     "CubeStrength" : {
       "type" : "number",
-      "description" : "Compressive stress capacity of the concrete from cube testing. Property has a quantity of type Stress meassured in [Pa]."
+      "description" : "Compressive stress capacity of the concrete from cube testing. Property has a quantity of type Stress measured in [Pa]."
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -54,7 +54,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Structure.MaterialFragments.Concrete"
     },
     "_bhomVersion" : {

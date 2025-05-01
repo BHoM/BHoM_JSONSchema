@@ -6,7 +6,7 @@
   "properties" : {
     "MaxSizeGeneral" : {
       "type" : "number",
-      "description" : "This is the maximum size of objects created by the General Divide Tool. Property has a quantity of type Length meassured in [m]."
+      "description" : "This is the maximum size of objects created by the General Divide Tool. Property has a quantity of type Length measured in [m]."
     },
     "LocalAxesOnEdge" : {
       "type" : "boolean"
@@ -31,7 +31,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Adapters.SAP2000.Fragments.PanelAutoMeshByGeneralDivide"
     },
     "_bhomVersion" : {

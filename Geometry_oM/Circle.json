@@ -12,11 +12,11 @@
     },
     "Radius" : {
       "type" : "number",
-      "description" : "Distance from the Centre to any point on Circle. Property has a quantity of type Length meassured in [m]."
+      "description" : "Distance from the Centre to any point on Circle. Property has a quantity of type Length measured in [m]."
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Geometry.Circle"
     },
     "_bhomVersion" : {

@@ -6,15 +6,15 @@
   "properties" : {
     "MassX" : {
       "type" : "number",
-      "description" : "Nodal modal mass in the X-direction as defined by orientation basis. Property has a quantity of type Mass meassured in [kg]."
+      "description" : "Nodal modal mass in the X-direction as defined by orientation basis. Property has a quantity of type Mass measured in [kg]."
     },
     "MassY" : {
       "type" : "number",
-      "description" : "Nodal modal mass in the Y-direction as defined by orientation basis. Property has a quantity of type Mass meassured in [kg]."
+      "description" : "Nodal modal mass in the Y-direction as defined by orientation basis. Property has a quantity of type Mass measured in [kg]."
     },
     "MassZ" : {
       "type" : "number",
-      "description" : "Nodal modal mass in the Z-direction as defined by orientation basis. Property has a quantity of type Mass meassured in [kg]."
+      "description" : "Nodal modal mass in the Z-direction as defined by orientation basis. Property has a quantity of type Mass measured in [kg]."
     },
     "ObjectId" : {
       "type" : ["object", "integer", "string", "number", "null"]
@@ -35,7 +35,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Structure.Results.NodeModalMass"
     },
     "_bhomVersion" : {

@@ -1,84 +1,12 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/IdKopObject.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/IdKoPObject.json",
   "required" : ["_t"],
   "properties" : {
     "_t" : {
-      "enum" : ["BH.oM.dKoP.UpperFloor", "BH.oM.dKoP.PitchedRoof", "BH.oM.dKoP.PartyWall", "BH.oM.dKoP.InternalWall", "BH.oM.dKoP.FlatRoof", "BH.oM.dKoP.ExternalWall", "BH.oM.dKoP.QualityAndCertification", "BH.oM.dKoP.ProductInformation", "BH.oM.dKoP.Documentation", "BH.oM.dKoP.Buildup", "BH.oM.dKoP.Vibration", "BH.oM.dKoP.ThermalPerformance", "BH.oM.dKoP.Sustainability", "BH.oM.dKoP.SurfaceSpreadOfFlame", "BH.oM.dKoP.Water", "BH.oM.dKoP.Ventilation", "BH.oM.dKoP.Services", "BH.oM.dKoP.Heating", "BH.oM.dKoP.Gas", "BH.oM.dKoP.Electrical", "BH.oM.dKoP.Drainage", "BH.oM.dKoP.Data", "BH.oM.dKoP.RoofPerformance", "BH.oM.dKoP.PartyWallPerformance", "BH.oM.dKoP.WindLoad", "BH.oM.dKoP.SnowLoad", "BH.oM.dKoP.Loading", "BH.oM.dKoP.InternalWallPerformance", "BH.oM.dKoP.ImpactSoundInsulation", "BH.oM.dKoP.FloorPerformance", "BH.oM.dKoP.FireResistance", "BH.oM.dKoP.Fire", "BH.oM.dKoP.FinishesWall", "BH.oM.dKoP.FinishesRoof", "BH.oM.dKoP.FinishesFloor", "BH.oM.dKoP.ExternalWallPerformance", "BH.oM.dKoP.EmbodiedCarbon", "BH.oM.dKoP.Durability", "BH.oM.dKoP.Compartmentation", "BH.oM.dKoP.AirPermeability", "BH.oM.dKoP.AirborneSoundInsulation", "BH.oM.dKoP.AcousticsWallAndRoof", "BH.oM.dKoP.AcousticsFloor", "BH.oM.dKoP.WallTopInterface", "BH.oM.dKoP.WallSideInterface", "BH.oM.dKoP.WallInterfaces", "BH.oM.dKoP.WallBaseInterface", "BH.oM.dKoP.TopLoadingData", "BH.oM.dKoP.SideLoadingData", "BH.oM.dKoP.FloorAndRoofSideInterface", "BH.oM.dKoP.FloorAndRoofInterfaces", "BH.oM.dKoP.HealthAndSafety", "BH.oM.dKoP.WallGeometry", "BH.oM.dKoP.WallDimensions", "BH.oM.dKoP.SettingOut", "BH.oM.dKoP.PitchedRoofGeometry", "BH.oM.dKoP.PitchedRoofDimensions", "BH.oM.dKoP.ParameterPoint", "BH.oM.dKoP.Window", "BH.oM.dKoP.Staircase", "BH.oM.dKoP.OpeningPartFinish", "BH.oM.dKoP.LoftHatchOpening", "BH.oM.dKoP.DoorFinish", "BH.oM.dKoP.DoorAndWindowThermalPerformance", "BH.oM.dKoP.DoorAndWindowFire", "BH.oM.dKoP.DoorAndWindowAcoustics", "BH.oM.dKoP.Door", "BH.oM.dKoP.InternalSpandrelPanel", "BH.oM.dKoP.GableEndPanel", "BH.oM.dKoP.FloorGeometry", "BH.oM.dKoP.FloorDimensions", "BH.oM.dKoP.FlatRoofGeometry", "BH.oM.dKoP.FlatRoofDimensions", "BH.oM.dKoP.WeatherProtection", "BH.oM.dKoP.TransportDimensions", "BH.oM.dKoP.TemporaryWorks", "BH.oM.dKoP.Procurement", "BH.oM.dKoP.Packaging", "BH.oM.dKoP.LiftingPoints", "BH.oM.dKoP.Delivery", "BH.oM.dKoP.Cost", "BH.oM.dKoP.Construction", "BH.oM.dKoP.Assembly", "BH.oM.dKoP.ProjectTeam", "BH.oM.dKoP.ProjectIdentification", "BH.oM.dKoP.ProductDetails", "BH.oM.dKoP.PartIdentification", "BH.oM.dKoP.Overview", "BH.oM.dKoP.ManufacturerDetails", "BH.oM.dKoP.CrossReference", "BH.oM.dKoP.ContactDetails", "BH.oM.dKoP.AdministrativeInformation"]
+      "enum" : ["BH.oM.dKoP.QualityAndCertification", "BH.oM.dKoP.ProductInformation", "BH.oM.dKoP.Documentation", "BH.oM.dKoP.Buildup", "BH.oM.dKoP.Vibration", "BH.oM.dKoP.ThermalPerformance", "BH.oM.dKoP.Sustainability", "BH.oM.dKoP.EmbodiedCarbon", "BH.oM.dKoP.Water", "BH.oM.dKoP.Ventilation", "BH.oM.dKoP.Services", "BH.oM.dKoP.Heating", "BH.oM.dKoP.Gas", "BH.oM.dKoP.Electrical", "BH.oM.dKoP.Drainage", "BH.oM.dKoP.Data", "BH.oM.dKoP.RoofPerformance", "BH.oM.dKoP.PartyWallPerformance", "BH.oM.dKoP.WindLoad", "BH.oM.dKoP.SnowLoad", "BH.oM.dKoP.Loading", "BH.oM.dKoP.InternalWallPerformance", "BH.oM.dKoP.FloorPerformance", "BH.oM.dKoP.SurfaceSpreadOfFlame", "BH.oM.dKoP.FireResistance", "BH.oM.dKoP.Fire", "BH.oM.dKoP.FinishesWall", "BH.oM.dKoP.FinishesRoof", "BH.oM.dKoP.FinishesFloor", "BH.oM.dKoP.ExternalWallPerformance", "BH.oM.dKoP.Durability", "BH.oM.dKoP.Compartmentation", "BH.oM.dKoP.AirPermeability", "BH.oM.dKoP.ImpactSoundInsulation", "BH.oM.dKoP.AirborneSoundInsulation", "BH.oM.dKoP.AcousticsWallAndRoof", "BH.oM.dKoP.AcousticsFloor", "BH.oM.dKoP.UpperFloor", "BH.oM.dKoP.PitchedRoof", "BH.oM.dKoP.PartyWall", "BH.oM.dKoP.InternalWall", "BH.oM.dKoP.FlatRoof", "BH.oM.dKoP.ExternalWall", "BH.oM.dKoP.WallTopInterface", "BH.oM.dKoP.WallSideInterface", "BH.oM.dKoP.WallInterfaces", "BH.oM.dKoP.WallBaseInterface", "BH.oM.dKoP.TopLoadingData", "BH.oM.dKoP.SideLoadingData", "BH.oM.dKoP.FloorAndRoofSideInterface", "BH.oM.dKoP.FloorAndRoofInterfaces", "BH.oM.dKoP.HealthAndSafety", "BH.oM.dKoP.WallGeometry", "BH.oM.dKoP.WallDimensions", "BH.oM.dKoP.SettingOut", "BH.oM.dKoP.PitchedRoofGeometry", "BH.oM.dKoP.PitchedRoofDimensions", "BH.oM.dKoP.ParameterPoint", "BH.oM.dKoP.Window", "BH.oM.dKoP.Staircase", "BH.oM.dKoP.OpeningPartFinish", "BH.oM.dKoP.LoftHatchOpening", "BH.oM.dKoP.DoorFinish", "BH.oM.dKoP.DoorAndWindowThermalPerformance", "BH.oM.dKoP.DoorAndWindowFire", "BH.oM.dKoP.DoorAndWindowAcoustics", "BH.oM.dKoP.Door", "BH.oM.dKoP.InternalSpandrelPanel", "BH.oM.dKoP.GableEndPanel", "BH.oM.dKoP.FloorGeometry", "BH.oM.dKoP.FloorDimensions", "BH.oM.dKoP.FlatRoofGeometry", "BH.oM.dKoP.FlatRoofDimensions", "BH.oM.dKoP.WeatherProtection", "BH.oM.dKoP.TransportDimensions", "BH.oM.dKoP.TemporaryWorks", "BH.oM.dKoP.Procurement", "BH.oM.dKoP.Packaging", "BH.oM.dKoP.LiftingPoints", "BH.oM.dKoP.Delivery", "BH.oM.dKoP.Cost", "BH.oM.dKoP.Construction", "BH.oM.dKoP.Assembly", "BH.oM.dKoP.ProjectTeam", "BH.oM.dKoP.ProjectIdentification", "BH.oM.dKoP.ProductDetails", "BH.oM.dKoP.PartIdentification", "BH.oM.dKoP.Overview", "BH.oM.dKoP.ManufacturerDetails", "BH.oM.dKoP.CrossReference", "BH.oM.dKoP.ContactDetails", "BH.oM.dKoP.AdministrativeInformation"]
     }
   },
   "allOf" : [{
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.dKoP.UpperFloor"
-          }
-        }
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/UpperFloor.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.dKoP.PitchedRoof"
-          }
-        }
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/PitchedRoof.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.dKoP.PartyWall"
-          }
-        }
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/PartyWall.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.dKoP.InternalWall"
-          }
-        }
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/InternalWall.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.dKoP.FlatRoof"
-          }
-        }
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/FlatRoof.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.dKoP.ExternalWall"
-          }
-        }
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/ExternalWall.json"
-      }
-    }, {
       "if" : {
         "properties" : {
           "_t" : {
@@ -167,12 +95,12 @@
         "properties" : {
           "_t" : {
             "type" : ["string", "null"],
-            "const" : "BH.oM.dKoP.SurfaceSpreadOfFlame"
+            "const" : "BH.oM.dKoP.EmbodiedCarbon"
           }
         }
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/SurfaceSpreadOfFlame.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/EmbodiedCarbon.json"
       }
     }, {
       "if" : {
@@ -347,24 +275,24 @@
         "properties" : {
           "_t" : {
             "type" : ["string", "null"],
-            "const" : "BH.oM.dKoP.ImpactSoundInsulation"
-          }
-        }
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/ImpactSoundInsulation.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
             "const" : "BH.oM.dKoP.FloorPerformance"
           }
         }
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/FloorPerformance.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.dKoP.SurfaceSpreadOfFlame"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/SurfaceSpreadOfFlame.json"
       }
     }, {
       "if" : {
@@ -443,18 +371,6 @@
         "properties" : {
           "_t" : {
             "type" : ["string", "null"],
-            "const" : "BH.oM.dKoP.EmbodiedCarbon"
-          }
-        }
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/EmbodiedCarbon.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
             "const" : "BH.oM.dKoP.Durability"
           }
         }
@@ -491,6 +407,18 @@
         "properties" : {
           "_t" : {
             "type" : ["string", "null"],
+            "const" : "BH.oM.dKoP.ImpactSoundInsulation"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/ImpactSoundInsulation.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
             "const" : "BH.oM.dKoP.AirborneSoundInsulation"
           }
         }
@@ -521,6 +449,78 @@
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/AcousticsFloor.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.dKoP.UpperFloor"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/UpperFloor.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.dKoP.PitchedRoof"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/PitchedRoof.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.dKoP.PartyWall"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/PartyWall.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.dKoP.InternalWall"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/InternalWall.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.dKoP.FlatRoof"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/FlatRoof.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.dKoP.ExternalWall"
+          }
+        }
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/ExternalWall.json"
       }
     }, {
       "if" : {

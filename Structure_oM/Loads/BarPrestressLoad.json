@@ -6,7 +6,7 @@
   "properties" : {
     "Prestress" : {
       "type" : "number",
-      "description" : "Prestress force to be applied to the Bar. Positive for tension, negative for compression. Property has a quantity of type Force meassured in [N]."
+      "description" : "Prestress force to be applied to the Bar. Positive for tension, negative for compression. Property has a quantity of type Force measured in [N]."
     },
     "Loadcase" : {
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/Loadcase.json"
@@ -42,7 +42,7 @@
     },
     "_t" : {
       "type" : ["string", "null"],
-      "description" : "Optional Type discirminator for BHoM type.",
+      "description" : "Optional Type disciminator for BHoM type.",
       "const" : "BH.oM.Structure.Loads.BarPrestressLoad"
     },
     "_bhomVersion" : {

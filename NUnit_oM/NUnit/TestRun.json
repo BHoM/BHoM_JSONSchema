@@ -1,0 +1,80 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/NUnit_oM/NUnit/TestRun.json",
+  "title" : "TestRun",
+  "type" : ["object", "null"],
+  "properties" : {
+    "Commandline" : {
+      "type" : ["string", "null"]
+    },
+    "TestSuite" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/NUnit_oM/NUnit/TestSuite.json"
+    },
+    "ID" : {
+      "type" : "integer"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "FullName" : {
+      "type" : ["string", "null"]
+    },
+    "RunState" : {
+      "type" : ["string", "null"]
+    },
+    "TestCaseCount" : {
+      "type" : "integer"
+    },
+    "Result" : {
+      "type" : ["string", "null"]
+    },
+    "Total" : {
+      "type" : "integer"
+    },
+    "Passed" : {
+      "type" : "integer"
+    },
+    "Failed" : {
+      "type" : "integer"
+    },
+    "Warnings" : {
+      "type" : "integer"
+    },
+    "Inconclusive" : {
+      "type" : "integer"
+    },
+    "Skipped" : {
+      "type" : "integer"
+    },
+    "Asserts" : {
+      "type" : "integer"
+    },
+    "EngineVersion" : {
+      "type" : ["string", "null"]
+    },
+    "ClrVersion" : {
+      "type" : ["string", "null"]
+    },
+    "StartTime" : {
+      "type" : ["string", "null"]
+    },
+    "EndTime" : {
+      "type" : ["string", "null"]
+    },
+    "Duration" : {
+      "type" : "number"
+    },
+    "Text" : {
+      "type" : ["string", "null"]
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Type disciminator for BHoM type.",
+      "const" : "BH.oM.Test.NUnit.TestRun"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional Version of BHoM used when generating the object."
+    }
+  },
+  "required" : ["Commandline", "TestSuite", "ID", "Name", "FullName", "RunState", "TestCaseCount", "Result", "Total", "Passed", "Failed", "Warnings", "Inconclusive", "Skipped", "Asserts", "EngineVersion", "ClrVersion", "StartTime", "EndTime", "Duration", "Text"]
+}
