@@ -1,0 +1,55 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/AirPermeability.json",
+  "title" : "AirPermeability",
+  "type" : ["object", "null"],
+  "description" : "AirPermeability: Dimensional quantity as defined by the International System of Quantities",
+  "properties" : {
+    "L" : {
+      "type" : "integer",
+      "description" : "Length dimension"
+    },
+    "T" : {
+      "type" : "integer",
+      "description" : "Time dimension"
+    },
+    "SIUnit" : {
+      "type" : ["string", "null"],
+      "description" : "SI derived unit symbol"
+    },
+    "M" : {
+      "type" : "integer",
+      "description" : "Mass dimension"
+    },
+    "I" : {
+      "type" : "integer",
+      "description" : "Electric current dimension"
+    },
+    "Θ" : {
+      "type" : "integer",
+      "description" : "Temperature dimension"
+    },
+    "N" : {
+      "type" : "integer",
+      "description" : "Amount of substance dimension"
+    },
+    "J" : {
+      "type" : "integer",
+      "description" : "Luminous intensity dimension"
+    },
+    "Name" : {
+      "type" : ["string", "null"],
+      "description" : "Name of the method parameter this attribute corresponds to (not relevant in case of object properties)."
+    },
+    "TypeId" : { },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.Quantities.Attributes.AirPermeability"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["L", "T", "SIUnit"]
+}

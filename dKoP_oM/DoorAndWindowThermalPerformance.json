@@ -4,10 +4,12 @@
   "type" : ["object", "null"],
   "properties" : {
     "UValue" : {
-      "type" : "number"
+      "type" : "number",
+      "description" : "Property has a quantity of type ThermalTransmittance measured in [W/(m².K)]."
     },
     "GValue" : {
-      "type" : "number"
+      "type" : "number",
+      "description" : "Property has a quantity of type Ratio measured in [-]."
     },
     "_t" : {
       "type" : ["string", "null"],

@@ -4,7 +4,8 @@
   "type" : ["object", "null"],
   "properties" : {
     "PeakPressure" : {
-      "type" : "number"
+      "type" : "number",
+      "description" : "Property has a quantity of type Pressure measured in [Pa]."
     },
     "_t" : {
       "type" : ["string", "null"],

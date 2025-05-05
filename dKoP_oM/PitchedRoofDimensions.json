@@ -4,20 +4,23 @@
   "type" : ["object", "null"],
   "properties" : {
     "Width" : {
-      "type" : "number"
+      "type" : "number",
+      "description" : "Property has a quantity of type Length measured in [m]."
     },
     "Span" : {
-      "type" : "number"
+      "type" : "number",
+      "description" : "Property has a quantity of type Length measured in [m]."
     },
     "Pitch" : {
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/Pitch.json"
     },
     "Overhang" : {
-      "type" : "number"
+      "type" : "number",
+      "description" : "Property has a quantity of type Length measured in [m]."
     },
     "HeightAtFascia" : {
       "type" : "number",
-      "description" : "Overall buildup."
+      "description" : "Overall buildup. Property has a quantity of type Length measured in [m]."
     },
     "InternalSpandrelPanel" : {
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/InternalSpandrelPanel.json"

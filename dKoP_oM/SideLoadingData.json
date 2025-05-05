@@ -4,10 +4,12 @@
   "type" : ["object", "null"],
   "properties" : {
     "HorizontalOutOfPlaneLoadVariableMax" : {
-      "type" : "number"
+      "type" : "number",
+      "description" : "Property has a quantity of type ForcePerUnitLength measured in [N/m]."
     },
     "HorizontalOutOfPlaneLoadVariableMin" : {
-      "type" : "number"
+      "type" : "number",
+      "description" : "Property has a quantity of type ForcePerUnitLength measured in [N/m]."
     },
     "_t" : {
       "type" : ["string", "null"],

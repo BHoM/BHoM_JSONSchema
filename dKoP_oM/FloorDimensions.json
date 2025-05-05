@@ -4,14 +4,16 @@
   "type" : ["object", "null"],
   "properties" : {
     "Width" : {
-      "type" : "number"
+      "type" : "number",
+      "description" : "Property has a quantity of type Length measured in [m]."
     },
     "Length" : {
-      "type" : "number"
+      "type" : "number",
+      "description" : "Property has a quantity of type Length measured in [m]."
     },
     "Thickness" : {
       "type" : "number",
-      "description" : "Overall buildup."
+      "description" : "Overall buildup. Property has a quantity of type Length measured in [m]."
     },
     "ConfirmationGeometryRequirementsAreMet" : {
       "type" : "boolean"

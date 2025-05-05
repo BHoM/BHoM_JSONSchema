@@ -4,10 +4,12 @@
   "type" : ["object", "null"],
   "properties" : {
     "VibrationResponse" : {
-      "type" : "number"
+      "type" : "number",
+      "description" : "Property has a quantity of type Frequency measured in [Hz]."
     },
     "ResponseFactor" : {
-      "type" : "number"
+      "type" : "number",
+      "description" : "Property has a quantity of type Ratio measured in [-]."
     },
     "_t" : {
       "type" : ["string", "null"],

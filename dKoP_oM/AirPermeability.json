@@ -4,7 +4,8 @@
   "type" : ["object", "null"],
   "properties" : {
     "Permeability" : {
-      "type" : "number"
+      "type" : "number",
+      "description" : "Property has a quantity of type AirPermeability measured in [m³/(m².s)]."
     },
     "Documentation" : {
       "type" : ["string", "null"]

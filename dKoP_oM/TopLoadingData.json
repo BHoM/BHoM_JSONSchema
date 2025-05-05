@@ -4,22 +4,28 @@
   "type" : ["object", "null"],
   "properties" : {
     "VerticaLoadPermanentMax" : {
-      "type" : "number"
+      "type" : "number",
+      "description" : "Property has a quantity of type ForcePerUnitLength measured in [N/m]."
     },
     "VerticaLoadPermanentMin" : {
-      "type" : "number"
+      "type" : "number",
+      "description" : "Property has a quantity of type ForcePerUnitLength measured in [N/m]."
     },
     "VerticaLoadVariableMax" : {
-      "type" : "number"
+      "type" : "number",
+      "description" : "Property has a quantity of type ForcePerUnitLength measured in [N/m]."
     },
     "VerticaLoadVariableMin" : {
-      "type" : "number"
+      "type" : "number",
+      "description" : "Property has a quantity of type ForcePerUnitLength measured in [N/m]."
     },
     "HorizontalInPlaneLoadVariableMax" : {
-      "type" : "number"
+      "type" : "number",
+      "description" : "Property has a quantity of type ForcePerUnitLength measured in [N/m]."
     },
     "HorizontalInPlaneLoadVariableMin" : {
-      "type" : "number"
+      "type" : "number",
+      "description" : "Property has a quantity of type ForcePerUnitLength measured in [N/m]."
     },
     "_t" : {
       "type" : ["string", "null"],

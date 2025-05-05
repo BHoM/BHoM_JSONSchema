@@ -4,7 +4,8 @@
   "type" : ["object", "null"],
   "properties" : {
     "WeightedSoundReductionIndexWithReductionRwCtr" : {
-      "type" : "number"
+      "type" : "number",
+      "description" : "Property has a quantity of type WeightedSoundReductionIndex measured in [dB]."
     },
     "Documentation" : {
       "type" : ["string", "null"]

@@ -4,7 +4,8 @@
   "type" : ["object", "null"],
   "properties" : {
     "Thickness" : {
-      "type" : "number"
+      "type" : "number",
+      "description" : "Property has a quantity of type Length measured in [m]."
     },
     "_t" : {
       "type" : ["string", "null"],

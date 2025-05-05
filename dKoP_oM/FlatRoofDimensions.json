@@ -4,20 +4,24 @@
   "type" : ["object", "null"],
   "properties" : {
     "Width" : {
-      "type" : "number"
+      "type" : "number",
+      "description" : "Property has a quantity of type Length measured in [m]."
     },
     "Length" : {
-      "type" : "number"
+      "type" : "number",
+      "description" : "Property has a quantity of type Length measured in [m]."
     },
     "Fall" : {
-      "type" : "number"
+      "type" : "number",
+      "description" : "Property has a quantity of type Length measured in [m]."
     },
     "Overhang" : {
-      "type" : "number"
+      "type" : "number",
+      "description" : "Property has a quantity of type Length measured in [m]."
     },
     "HeightAtFascia" : {
       "type" : "number",
-      "description" : "Overall buildup."
+      "description" : "Overall buildup. Property has a quantity of type Length measured in [m]."
     },
     "ConfirmationGeometryRequirementsAreMet" : {
       "type" : "boolean"

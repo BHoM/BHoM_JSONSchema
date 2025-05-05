@@ -4,10 +4,12 @@
   "type" : ["object", "null"],
   "properties" : {
     "StructuralWidth" : {
-      "type" : "number"
+      "type" : "number",
+      "description" : "Property has a quantity of type Length measured in [m]."
     },
     "StructuralHeight" : {
-      "type" : "number"
+      "type" : "number",
+      "description" : "Property has a quantity of type Length measured in [m]."
     },
     "PositionAlongWall" : {
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/ParameterPoint.json"

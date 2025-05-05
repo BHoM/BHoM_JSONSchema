@@ -5,7 +5,7 @@
   "properties" : {
     "AirborneSoundInsulation" : {
       "type" : "number",
-      "description" : "Weighted sound reduction index, Rw."
+      "description" : "Weighted sound reduction index, Rw. Property has a quantity of type WeightedSoundReductionIndex measured in [dB]."
     },
     "_t" : {
       "type" : ["string", "null"],

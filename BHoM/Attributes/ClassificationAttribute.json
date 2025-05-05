@@ -3,7 +3,7 @@
   "required" : ["_t"],
   "properties" : {
     "_t" : {
-      "enum" : ["BH.oM.Quantities.Attributes.YoungsModulus", "BH.oM.Quantities.Attributes.WarpingConstant", "BH.oM.Quantities.Attributes.VolumetricFlowRate", "BH.oM.Quantities.Attributes.VolumePerQuantity", "BH.oM.Quantities.Attributes.Volume", "BH.oM.Quantities.Attributes.Velocity", "BH.oM.Quantities.Attributes.TorsionConstant", "BH.oM.Quantities.Attributes.Time", "BH.oM.Quantities.Attributes.ThermalExpansionCoefficient", "BH.oM.Quantities.Attributes.Temperature", "BH.oM.Quantities.Attributes.Stress", "BH.oM.Quantities.Attributes.Strain", "BH.oM.Quantities.Attributes.SpecificEnergy", "BH.oM.Quantities.Attributes.ShearModulus", "BH.oM.Quantities.Attributes.SectionModulus", "BH.oM.Quantities.Attributes.SecondMomentOfArea", "BH.oM.Quantities.Attributes.Ratio", "BH.oM.Quantities.Attributes.Pressure", "BH.oM.Quantities.Attributes.PhotochemicalOzoneCreationTRACIPerQuantity", "BH.oM.Quantities.Attributes.PhotochemicalOzoneCreationTRACI", "BH.oM.Quantities.Attributes.PhotochemicalOzoneCreationPerQuantity", "BH.oM.Quantities.Attributes.PhotochemicalOzoneCreationCMLPerQuantity", "BH.oM.Quantities.Attributes.PhotochemicalOzoneCreationCML", "BH.oM.Quantities.Attributes.PhotochemicalOzoneCreation", "BH.oM.Quantities.Attributes.OzoneDepletionPerQuantity", "BH.oM.Quantities.Attributes.OzoneDepletion", "BH.oM.Quantities.Attributes.MomentPerUnitLength", "BH.oM.Quantities.Attributes.MomentPerUnitAngle", "BH.oM.Quantities.Attributes.Moment", "BH.oM.Quantities.Attributes.Molarity", "BH.oM.Quantities.Attributes.Molality", "BH.oM.Quantities.Attributes.MassPerUnitLength", "BH.oM.Quantities.Attributes.MassPerUnitArea", "BH.oM.Quantities.Attributes.MassFraction", "BH.oM.Quantities.Attributes.Mass", "BH.oM.Quantities.Attributes.LuminousIntensity", "BH.oM.Quantities.Attributes.Length", "BH.oM.Quantities.Attributes.Illuminance", "BH.oM.Quantities.Attributes.Frequency", "BH.oM.Quantities.Attributes.ForcePerUnitLength", "BH.oM.Quantities.Attributes.Force", "BH.oM.Quantities.Attributes.EutrophicationTRACIPerQuantity", "BH.oM.Quantities.Attributes.EutrophicationTRACI", "BH.oM.Quantities.Attributes.EutrophicationTerrestrialPerQuantity", "BH.oM.Quantities.Attributes.EutrophicationTerrestrial", "BH.oM.Quantities.Attributes.EutrophicationCMLPerQuantity", "BH.oM.Quantities.Attributes.EutrophicationCML", "BH.oM.Quantities.Attributes.EutrophicationAquaticMarinePerQuantity", "BH.oM.Quantities.Attributes.EutrophicationAquaticMarine", "BH.oM.Quantities.Attributes.EutrophicationAquaticFreshwaterPerQuantity", "BH.oM.Quantities.Attributes.EutrophicationAquaticFreshwater", "BH.oM.Quantities.Attributes.EnergyPerUnitTime", "BH.oM.Quantities.Attributes.EnergyPerUnitArea", "BH.oM.Quantities.Attributes.EnergyPerQuantity", "BH.oM.Quantities.Attributes.Energy", "BH.oM.Quantities.Attributes.ElectricCurrent", "BH.oM.Quantities.Attributes.ElectricConductivity", "BH.oM.Quantities.Attributes.ElectricConductance", "BH.oM.Quantities.Attributes.Density", "BH.oM.Quantities.Attributes.ClimateChangePerQuantity", "BH.oM.Quantities.Attributes.ClimateChange", "BH.oM.Quantities.Attributes.AreaPerUnitLength", "BH.oM.Quantities.Attributes.Area", "BH.oM.Quantities.Attributes.AngularVelocity", "BH.oM.Quantities.Attributes.AngularAcceleration", "BH.oM.Quantities.Attributes.Angle", "BH.oM.Quantities.Attributes.AmountOfSubstance", "BH.oM.Quantities.Attributes.AcidificationPerQuantity", "BH.oM.Quantities.Attributes.Acidification", "BH.oM.Quantities.Attributes.Acceleration", "BH.oM.Quantities.Attributes.QuantityAttribute", "BH.oM.Quantities.Attributes.AbioticDepletionMineralsAndMetalsPerQuantity", "BH.oM.Quantities.Attributes.AbioticDepletionMineralsAndMetals", "BH.oM.Base.Attributes.FolderPathAttribute", "BH.oM.Base.Attributes.FilePathAttribute"]
+      "enum" : ["BH.oM.Quantities.Attributes.YoungsModulus", "BH.oM.Quantities.Attributes.WeightedSoundReductionIndex", "BH.oM.Quantities.Attributes.WarpingConstant", "BH.oM.Quantities.Attributes.VolumetricFlowRate", "BH.oM.Quantities.Attributes.VolumePerQuantity", "BH.oM.Quantities.Attributes.Volume", "BH.oM.Quantities.Attributes.Velocity", "BH.oM.Quantities.Attributes.TorsionConstant", "BH.oM.Quantities.Attributes.Time", "BH.oM.Quantities.Attributes.ThermalTransmittance", "BH.oM.Quantities.Attributes.ThermalExpansionCoefficient", "BH.oM.Quantities.Attributes.Temperature", "BH.oM.Quantities.Attributes.Stress", "BH.oM.Quantities.Attributes.Strain", "BH.oM.Quantities.Attributes.SpecificEnergy", "BH.oM.Quantities.Attributes.SoundPressureLevel", "BH.oM.Quantities.Attributes.ShearModulus", "BH.oM.Quantities.Attributes.SectionModulus", "BH.oM.Quantities.Attributes.SecondMomentOfArea", "BH.oM.Quantities.Attributes.Ratio", "BH.oM.Quantities.Attributes.Pressure", "BH.oM.Quantities.Attributes.PhotochemicalOzoneCreationTRACIPerQuantity", "BH.oM.Quantities.Attributes.PhotochemicalOzoneCreationTRACI", "BH.oM.Quantities.Attributes.PhotochemicalOzoneCreationPerQuantity", "BH.oM.Quantities.Attributes.PhotochemicalOzoneCreationCMLPerQuantity", "BH.oM.Quantities.Attributes.PhotochemicalOzoneCreationCML", "BH.oM.Quantities.Attributes.PhotochemicalOzoneCreation", "BH.oM.Quantities.Attributes.OzoneDepletionPerQuantity", "BH.oM.Quantities.Attributes.OzoneDepletion", "BH.oM.Quantities.Attributes.MomentPerUnitLength", "BH.oM.Quantities.Attributes.MomentPerUnitAngle", "BH.oM.Quantities.Attributes.Moment", "BH.oM.Quantities.Attributes.Molarity", "BH.oM.Quantities.Attributes.Molality", "BH.oM.Quantities.Attributes.MassPerUnitLength", "BH.oM.Quantities.Attributes.MassPerUnitArea", "BH.oM.Quantities.Attributes.MassFraction", "BH.oM.Quantities.Attributes.Mass", "BH.oM.Quantities.Attributes.LuminousIntensity", "BH.oM.Quantities.Attributes.Length", "BH.oM.Quantities.Attributes.Illuminance", "BH.oM.Quantities.Attributes.Frequency", "BH.oM.Quantities.Attributes.ForcePerUnitLength", "BH.oM.Quantities.Attributes.Force", "BH.oM.Quantities.Attributes.EutrophicationTRACIPerQuantity", "BH.oM.Quantities.Attributes.EutrophicationTRACI", "BH.oM.Quantities.Attributes.EutrophicationTerrestrialPerQuantity", "BH.oM.Quantities.Attributes.EutrophicationTerrestrial", "BH.oM.Quantities.Attributes.EutrophicationCMLPerQuantity", "BH.oM.Quantities.Attributes.EutrophicationCML", "BH.oM.Quantities.Attributes.EutrophicationAquaticMarinePerQuantity", "BH.oM.Quantities.Attributes.EutrophicationAquaticMarine", "BH.oM.Quantities.Attributes.EutrophicationAquaticFreshwaterPerQuantity", "BH.oM.Quantities.Attributes.EutrophicationAquaticFreshwater", "BH.oM.Quantities.Attributes.EnergyPerUnitTime", "BH.oM.Quantities.Attributes.EnergyPerUnitArea", "BH.oM.Quantities.Attributes.EnergyPerQuantity", "BH.oM.Quantities.Attributes.Energy", "BH.oM.Quantities.Attributes.ElectricCurrent", "BH.oM.Quantities.Attributes.ElectricConductivity", "BH.oM.Quantities.Attributes.ElectricConductance", "BH.oM.Quantities.Attributes.Density", "BH.oM.Quantities.Attributes.ClimateChangePerQuantity", "BH.oM.Quantities.Attributes.ClimateChange", "BH.oM.Quantities.Attributes.AreaPerUnitLength", "BH.oM.Quantities.Attributes.Area", "BH.oM.Quantities.Attributes.AngularVelocity", "BH.oM.Quantities.Attributes.AngularAcceleration", "BH.oM.Quantities.Attributes.Angle", "BH.oM.Quantities.Attributes.AmountOfSubstance", "BH.oM.Quantities.Attributes.AirPermeability", "BH.oM.Quantities.Attributes.AcidificationPerQuantity", "BH.oM.Quantities.Attributes.Acidification", "BH.oM.Quantities.Attributes.Acceleration", "BH.oM.Quantities.Attributes.QuantityAttribute", "BH.oM.Quantities.Attributes.AbioticDepletionMineralsAndMetalsPerQuantity", "BH.oM.Quantities.Attributes.AbioticDepletionMineralsAndMetals", "BH.oM.Base.Attributes.FolderPathAttribute", "BH.oM.Base.Attributes.FilePathAttribute"]
     }
   },
   "allOf" : [{
@@ -18,6 +18,19 @@
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/YoungsModulus.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Quantities.Attributes.WeightedSoundReductionIndex"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/WeightedSoundReductionIndex.json"
       }
     }, {
       "if" : {
@@ -115,6 +128,19 @@
         "properties" : {
           "_t" : {
             "type" : ["string", "null"],
+            "const" : "BH.oM.Quantities.Attributes.ThermalTransmittance"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/ThermalTransmittance.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
             "const" : "BH.oM.Quantities.Attributes.ThermalExpansionCoefficient"
           }
         },
@@ -174,6 +200,19 @@
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/SpecificEnergy.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Quantities.Attributes.SoundPressureLevel"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/SoundPressureLevel.json"
       }
     }, {
       "if" : {
@@ -876,6 +915,19 @@
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/AmountOfSubstance.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.Quantities.Attributes.AirPermeability"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/AirPermeability.json"
       }
     }, {
       "if" : {
