@@ -10,9 +10,9 @@
     "TargetPosition" : {
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
     },
-    "HorizontalFieldOfView" : {
+    "Angle" : {
       "type" : "number",
-      "description" : "The horizontal field of view of the Camera, known as the real-world width length of what the camera views. Property has a quantity of type Length measured in [m]."
+      "description" : "Angle of the Camera, known as the real-world angle of what the camera views. Property has a quantity of type Angle measured in [rad]."
     },
     "Mounting" : {
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Security_oM/Enums/MountingType.json"
@@ -53,5 +53,5 @@
       "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
-  "required" : ["EyePosition", "TargetPosition", "HorizontalFieldOfView", "Mounting", "Type", "Megapixels"]
+  "required" : ["EyePosition", "TargetPosition", "Angle", "Mounting", "Type", "Megapixels"]
 }

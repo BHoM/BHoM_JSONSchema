@@ -30,5 +30,5 @@
       "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
-  "required" : ["Index", "Name", "Description", "Classification"]
+  "required" : ["Index", "Name", "Description", "Classification", "TypeId"]
 }

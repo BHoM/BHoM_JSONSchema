@@ -1,0 +1,36 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/IEnvironmentalFactorsProvider.json",
+  "required" : ["_t"],
+  "properties" : {
+    "_t" : {
+      "enum" : ["BH.oM.LifeCycleAssessment.MaterialFragments.EnvironmentalProductDeclaration", "BH.oM.LifeCycleAssessment.MaterialFragments.CombinedLifeCycleAssessmentFactors"]
+    }
+  },
+  "allOf" : [{
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.EnvironmentalProductDeclaration"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EnvironmentalProductDeclaration.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.CombinedLifeCycleAssessmentFactors"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/CombinedLifeCycleAssessmentFactors.json"
+      }
+    }]
+}

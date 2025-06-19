@@ -1,0 +1,32 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Module.json",
+  "anyOf" : [{
+      "type" : ["string", "null"],
+      "enum" : ["A0", "A1", "A2", "A3", "A1toA3", "A4", "A5", "A5_1", "A5_2", "A5_3", "A5_4", "B1", "B1_1", "B1_2", "B2", "B3", "B1toB3", "B4", "B4_1", "B4_2", "B5", "B4toB5", "B1toB5", "B6", "B7", "B1toB7", "B7_1", "B7_2", "B7_3", "B8", "B8_1", "B8_2", "B8_3", "C1", "C2", "C3", "C4", "C3toC4", "C1toC4", "D", "D_1", "D_2"]
+    }, {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : ["string", "null"],
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : ["string", "null"],
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.LifeCycleAssessment.Module"
+            }
+          }
+        },
+        "Value" : {
+          "type" : ["string", "null"],
+          "enum" : ["A0", "A1", "A2", "A3", "A1toA3", "A4", "A5", "A5_1", "A5_2", "A5_3", "A5_4", "B1", "B1_1", "B1_2", "B2", "B3", "B1toB3", "B4", "B4_1", "B4_2", "B5", "B4toB5", "B1toB5", "B6", "B7", "B1toB7", "B7_1", "B7_2", "B7_3", "B8", "B8_1", "B8_2", "B8_3", "C1", "C2", "C3", "C4", "C3toC4", "C1toC4", "D", "D_1", "D_2"]
+        }
+      }
+    }]
+}

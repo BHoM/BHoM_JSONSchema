@@ -41,7 +41,7 @@
       "type" : ["array", "null"],
       "description" : "This is a list of life cycle assessment phases to be accounted for within this assessment. These values are for categorisation purposes only and will not effect the overall results.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/LifeCycleAssessmentPhases.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Module.json"
       }
     },
     "ProjectType" : {

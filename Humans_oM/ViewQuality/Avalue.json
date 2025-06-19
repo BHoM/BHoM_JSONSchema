@@ -49,5 +49,5 @@
       "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
-  "required" : ["AValue", "Occulsion", "FullActivityArea", "ClippedActivityArea", "ConeOfVision", "ReferencePoint", "OccludingHeads"]
+  "required" : ["AValue", "Occulsion", "FullActivityArea", "ClippedActivityArea", "ConeOfVision", "ReferencePoint", "OccludingHeads", "ObjectId", "ResultCase", "TimeStep"]
 }

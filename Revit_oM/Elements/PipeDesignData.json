@@ -1,0 +1,37 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Elements/PipeDesignData.json",
+  "title" : "PipeDesignData",
+  "type" : ["object", "null"],
+  "description" : "PipeDesignData: A wrapper BHoM type for Revit MEPSize, used to create or update Revit MEPSize (on Push) and represent them as BHoMObjects (on Pull).",
+  "properties" : {
+    "ScheduleType" : {
+      "type" : ["string", "null"],
+      "description" : "Revit identification of used Schedule in design dataset."
+    },
+    "Material" : {
+      "type" : ["string", "null"],
+      "description" : "Revit identification of used Material in design dataset."
+    },
+    "Description" : {
+      "type" : ["string", "null"],
+      "description" : "Revit description of Segment."
+    },
+    "SizeSet" : {
+      "type" : ["array", "null"],
+      "description" : "All sizes in a design dataset.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Elements/PipeSize.json"
+      }
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.Adapters.Revit.Elements.PipeDesignData"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["ScheduleType", "Material", "Description", "SizeSet"]
+}

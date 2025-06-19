@@ -1,0 +1,25 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Versioning_oM/DowngraderAttribute.json",
+  "title" : "DowngraderAttribute",
+  "type" : ["object", "null"],
+  "description" : "DowngraderAttribute: Attribute identifying a class as a downgrader for versioning.  The version specified should be the the version that the object is being downgraded from which generally correspond to the current version of the BHoM.",
+  "properties" : {
+    "MajorVersion" : {
+      "type" : "integer"
+    },
+    "MinorVersion" : {
+      "type" : "integer"
+    },
+    "TypeId" : { },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.Versioning.DowngraderAttribute"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["MajorVersion", "MinorVersion"]
+}

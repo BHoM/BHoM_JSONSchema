@@ -56,5 +56,5 @@
       "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
-  "required" : ["Frequency", "MassX", "MassY", "MassZ", "RotationalMassX", "RotationalMassY", "RotationalMassZ"]
+  "required" : ["Frequency", "MassX", "MassY", "MassZ", "RotationalMassX", "RotationalMassY", "RotationalMassZ", "ObjectId", "ResultCase", "ModeNumber", "TimeStep"]
 }

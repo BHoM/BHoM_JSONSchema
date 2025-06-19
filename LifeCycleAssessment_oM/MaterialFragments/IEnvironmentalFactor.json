@@ -1,0 +1,244 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/IEnvironmentalFactor.json",
+  "required" : ["_t"],
+  "properties" : {
+    "_t" : {
+      "enum" : ["BH.oM.LifeCycleAssessment.MaterialFragments.WaterDeprivationFactor", "BH.oM.LifeCycleAssessment.MaterialFragments.PhotochemicalOzoneCreationTRACIFactor", "BH.oM.LifeCycleAssessment.MaterialFragments.PhotochemicalOzoneCreationFactor", "BH.oM.LifeCycleAssessment.MaterialFragments.PhotochemicalOzoneCreationCMLFactor", "BH.oM.LifeCycleAssessment.MaterialFragments.OzoneDepletionFactor", "BH.oM.LifeCycleAssessment.MaterialFragments.EutrophicationTRACIFactor", "BH.oM.LifeCycleAssessment.MaterialFragments.EutrophicationTerrestrialFactor", "BH.oM.LifeCycleAssessment.MaterialFragments.EutrophicationCMLFactor", "BH.oM.LifeCycleAssessment.MaterialFragments.EutrophicationAquaticMarineFactor", "BH.oM.LifeCycleAssessment.MaterialFragments.EutrophicationAquaticFreshwaterFactor", "BH.oM.LifeCycleAssessment.MaterialFragments.ClimateChangeTotalNoBiogenicFactor", "BH.oM.LifeCycleAssessment.MaterialFragments.ClimateChangeTotalFactor", "BH.oM.LifeCycleAssessment.MaterialFragments.ClimateChangeLandUseFactor", "BH.oM.LifeCycleAssessment.MaterialFragments.ClimateChangeFossilFactor", "BH.oM.LifeCycleAssessment.MaterialFragments.ClimateChangeBiogenicFactor", "BH.oM.LifeCycleAssessment.MaterialFragments.AcidificationFactor", "BH.oM.LifeCycleAssessment.MaterialFragments.AbioticDepletionMineralsAndMetalsFactor", "BH.oM.LifeCycleAssessment.MaterialFragments.AbioticDepletionFossilResourcesFactor"]
+    }
+  },
+  "allOf" : [{
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.WaterDeprivationFactor"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/WaterDeprivationFactor.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.PhotochemicalOzoneCreationTRACIFactor"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/PhotochemicalOzoneCreationTRACIFactor.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.PhotochemicalOzoneCreationFactor"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/PhotochemicalOzoneCreationFactor.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.PhotochemicalOzoneCreationCMLFactor"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/PhotochemicalOzoneCreationCMLFactor.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.OzoneDepletionFactor"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/OzoneDepletionFactor.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.EutrophicationTRACIFactor"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EutrophicationTRACIFactor.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.EutrophicationTerrestrialFactor"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EutrophicationTerrestrialFactor.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.EutrophicationCMLFactor"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EutrophicationCMLFactor.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.EutrophicationAquaticMarineFactor"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EutrophicationAquaticMarineFactor.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.EutrophicationAquaticFreshwaterFactor"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EutrophicationAquaticFreshwaterFactor.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.ClimateChangeTotalNoBiogenicFactor"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/ClimateChangeTotalNoBiogenicFactor.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.ClimateChangeTotalFactor"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/ClimateChangeTotalFactor.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.ClimateChangeLandUseFactor"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/ClimateChangeLandUseFactor.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.ClimateChangeFossilFactor"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/ClimateChangeFossilFactor.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.ClimateChangeBiogenicFactor"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/ClimateChangeBiogenicFactor.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.AcidificationFactor"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/AcidificationFactor.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.AbioticDepletionMineralsAndMetalsFactor"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/AbioticDepletionMineralsAndMetalsFactor.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.AbioticDepletionFossilResourcesFactor"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/AbioticDepletionFossilResourcesFactor.json"
+      }
+    }]
+}

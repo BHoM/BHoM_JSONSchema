@@ -1,0 +1,21 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Quantity`1.json",
+  "title" : "Quantity`1",
+  "type" : ["object", "null"],
+  "description" : "Quantity`1: Represents a numerical value with a quantity type attached to it. The quantity type includes dimensionality as well as SI unit.",
+  "properties" : {
+    "Value" : {
+      "type" : "number"
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional type disciminator.",
+      "pattern" : "^BH\\.oM\\.Quantities\\.Quantity`1\\[\\[.*\\]\\]$"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["Value"]
+}

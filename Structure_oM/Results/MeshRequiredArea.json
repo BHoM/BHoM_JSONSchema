@@ -75,5 +75,5 @@
       "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
-  "required" : ["TopPrimary", "TopSecondary", "BottomPrimary", "BottomSecondary", "Shear", "Torsion", "MaterialName"]
+  "required" : ["TopPrimary", "TopSecondary", "BottomPrimary", "BottomSecondary", "Shear", "Torsion", "MaterialName", "ObjectId", "NodeId", "MeshFaceId", "ResultCase", "ModeNumber", "TimeStep", "MeshResultLayer", "LayerPosition", "Smoothing", "Orientation"]
 }

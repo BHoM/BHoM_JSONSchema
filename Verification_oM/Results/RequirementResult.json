@@ -13,6 +13,13 @@
     "VerificationResult" : {
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Results/IConditionResult.json"
     },
+    "Events" : {
+      "type" : ["array", "null"],
+      "description" : "List of events that occurred during the verification process.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Debugging/Event.json"
+      }
+    },
     "_t" : {
       "type" : ["string", "null"],
       "description" : "Optional type disciminator.",
@@ -23,5 +30,5 @@
       "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
-  "required" : ["RequirementId", "ObjectId", "VerificationResult"]
+  "required" : ["RequirementId", "ObjectId", "VerificationResult", "Events"]
 }

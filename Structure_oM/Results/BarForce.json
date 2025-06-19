@@ -60,5 +60,5 @@
       "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
-  "required" : ["FX", "FY", "FZ", "MX", "MY", "MZ"]
+  "required" : ["FX", "FY", "FZ", "MX", "MY", "MZ", "ObjectId", "ResultCase", "ModeNumber", "TimeStep", "Position", "Divisions"]
 }

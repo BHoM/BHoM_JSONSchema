@@ -1,0 +1,22 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/ClimateChangeTotalFactor.json",
+  "title" : "ClimateChangeTotalFactor",
+  "type" : ["object", "null"],
+  "description" : "ClimateChangeTotalFactor: Single value indicator for Climate Change - Total, measured in kg CO2 eq (Carbon Dioxide equivalent, also referred to as embodied carbon), refers to the total of Biogenic, Land Use and Fossil resources which contribute to global warming.",
+  "properties" : {
+    "Value" : {
+      "type" : "number",
+      "description" : "Value for this single factor indicator. Property has a quantity of type ClimateChangePerQuantity measured in [kg CO2 eq per unit]."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.ClimateChangeTotalFactor"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["Value"]
+}

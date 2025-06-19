@@ -82,5 +82,5 @@
       "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
-  "required" : ["UX", "UY", "UZ", "RX", "RY", "RZ", "NodalMassX", "NodalMassY", "NodalMassZ", "NodalRotationalMassX", "NodalRotationalMassY", "NodalRotationalMassZ", "NormalisationProcedure"]
+  "required" : ["UX", "UY", "UZ", "RX", "RY", "RZ", "NodalMassX", "NodalMassY", "NodalMassZ", "NodalRotationalMassX", "NodalRotationalMassY", "NodalRotationalMassZ", "NormalisationProcedure", "ObjectId", "ResultCase", "ModeNumber", "TimeStep", "Orientation"]
 }

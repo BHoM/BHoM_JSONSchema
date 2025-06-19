@@ -37,5 +37,5 @@
       "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
-  "required" : ["CValue", "HorizDist", "HeightAbovePitch", "AbsoluteDist", "Focalpoint"]
+  "required" : ["CValue", "HorizDist", "HeightAbovePitch", "AbsoluteDist", "Focalpoint", "ObjectId", "ResultCase", "TimeStep"]
 }

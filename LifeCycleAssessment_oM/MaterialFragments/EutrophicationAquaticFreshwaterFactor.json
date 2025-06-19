@@ -1,0 +1,22 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EutrophicationAquaticFreshwaterFactor.json",
+  "title" : "EutrophicationAquaticFreshwaterFactor",
+  "type" : ["object", "null"],
+  "description" : "EutrophicationAquaticFreshwaterFactor: Single value indicator for Eutrophication - Aquatic Freshwater, measured in kg P eq, refers to the natural process that results from accumulation of nutrients in fresh bodies of water.",
+  "properties" : {
+    "Value" : {
+      "type" : "number",
+      "description" : "Value for this single factor indicator. Property has a quantity of type EutrophicationAquaticFreshwaterPerQuantity measured in [kg P eq per unit]."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.EutrophicationAquaticFreshwaterFactor"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["Value"]
+}

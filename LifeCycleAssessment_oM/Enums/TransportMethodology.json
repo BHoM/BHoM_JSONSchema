@@ -1,8 +1,8 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/LifeCycleAssessmentPhases.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Enums/TransportMethodology.json",
   "anyOf" : [{
       "type" : ["string", "null"],
-      "enum" : ["Undefined", "A1", "A2", "A3", "A4", "A5", "B1", "B2", "B3", "B4", "B5", "B6", "B7", "C1", "C2", "C3", "C4", "D1", "D2", "D3"]
+      "enum" : ["Undefined", "DistanceTransportMode", "TypicalTransportScenario", "CustomTransportFactors"]
     }, {
       "type" : ["object", "null"],
       "properties" : {
@@ -19,13 +19,13 @@
             },
             "Name" : {
               "type" : ["string", "null"],
-              "const" : "BH.oM.LifeCycleAssessment.LifeCycleAssessmentPhases"
+              "const" : "BH.oM.LifeCycleAssessment.Enums.TransportMethodology"
             }
           }
         },
         "Value" : {
           "type" : ["string", "null"],
-          "enum" : ["Undefined", "A1", "A2", "A3", "A4", "A5", "B1", "B2", "B3", "B4", "B5", "B6", "B7", "C1", "C2", "C3", "C4", "D1", "D2", "D3"]
+          "enum" : ["Undefined", "DistanceTransportMode", "TypicalTransportScenario", "CustomTransportFactors"]
         }
       }
     }]

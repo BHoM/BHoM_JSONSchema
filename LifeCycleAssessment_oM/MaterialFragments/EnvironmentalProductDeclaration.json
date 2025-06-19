@@ -9,9 +9,9 @@
     },
     "EnvironmentalMetrics" : {
       "type" : ["array", "null"],
-      "description" : "An Environmental Metric to describe the type and quantity of a specified metric. These metrics are used in all LCA calculations.",
+      "description" : "An Environmental Module Factors contains EnvironmentalFactors of a particular quantity for one or more modules. These factors are used in all LCA calculations.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EnvironmentalMetric.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/IEnvironmentalMetric.json"
       }
     },
     "QuantityType" : {

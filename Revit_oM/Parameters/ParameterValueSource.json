@@ -9,8 +9,22 @@
       "description" : "Name of the parameter to extract the value from."
     },
     "FromType" : {
-      "type" : "boolean",
-      "description" : "If true, the value to be extracted from the underlying type, not the instance."
+      "type" : ["object", "null"],
+      "description" : "If true, the value to be extracted from the underlying type, not the instance.\nIf set to null, first instance will be checked for the parameter with given name, and if not found then same will be done with its type.",
+      "properties" : {
+        "HasValue" : {
+          "type" : "boolean"
+        },
+        "Value" : {
+          "type" : "boolean"
+        },
+        "_t" : {
+          "type" : ["string", "null"],
+          "description" : "Optional type disciminator.",
+          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
+        }
+      },
+      "required" : ["HasValue", "Value"]
     },
     "_t" : {
       "type" : ["string", "null"],

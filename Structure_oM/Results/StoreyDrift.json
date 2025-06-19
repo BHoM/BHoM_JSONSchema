@@ -39,5 +39,5 @@
       "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
-  "required" : ["Storey", "Direction", "Ratio"]
+  "required" : ["Storey", "Direction", "Ratio", "ObjectId", "ResultCase", "ModeNumber", "TimeStep"]
 }

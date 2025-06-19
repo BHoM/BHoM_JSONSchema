@@ -1,0 +1,49 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/Transport/ITransportFactors.json",
+  "required" : ["_t"],
+  "properties" : {
+    "_t" : {
+      "enum" : ["BH.oM.LifeCycleAssessment.MaterialFragments.Transport.SingleTransportModeImpact", "BH.oM.LifeCycleAssessment.MaterialFragments.Transport.FullTransportScenario", "BH.oM.LifeCycleAssessment.MaterialFragments.Transport.DistanceTransportModeScenario"]
+    }
+  },
+  "allOf" : [{
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.Transport.SingleTransportModeImpact"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/Transport/SingleTransportModeImpact.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.Transport.FullTransportScenario"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/Transport/FullTransportScenario.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : ["string", "null"],
+            "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.Transport.DistanceTransportModeScenario"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/Transport/DistanceTransportModeScenario.json"
+      }
+    }]
+}

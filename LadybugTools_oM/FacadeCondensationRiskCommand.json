@@ -1,0 +1,36 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/FacadeCondensationRiskCommand.json",
+  "title" : "FacadeCondensationRiskCommand",
+  "type" : ["object", "null"],
+  "description" : "FacadeCondensationRiskCommand: Command that, when executed with the LadybugToolsAdapter, simulates Condensation Risk and outputs a heatmap.\nOutput is a string of either the path to the image (if OutputLocation is not set) or the base 64 string representation of it.",
+  "properties" : {
+    "EPWFile" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/FileSettings.json"
+    },
+    "Thresholds" : {
+      "type" : ["array", "null"],
+      "description" : "The list of thresholds to use. If no values are provided, default values of [10,7,4,1,-2,-5] will be used.",
+      "items" : {
+        "type" : "number"
+      }
+    },
+    "Heatmap" : {
+      "type" : "boolean",
+      "description" : "Set to true to return a heatmap, or set to false to return a chart and table."
+    },
+    "OutputLocation" : {
+      "type" : ["string", "null"],
+      "description" : "Full file path (with file name) to save the plot to. Leave blank to output a base 64 string representation of the image instead."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.LadybugTools.FacadeCondensationRiskCommand"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["EPWFile", "Thresholds", "Heatmap", "OutputLocation"]
+}

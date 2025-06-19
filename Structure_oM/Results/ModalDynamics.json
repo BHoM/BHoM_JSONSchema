@@ -67,5 +67,5 @@
       "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
-  "required" : ["Frequency", "ModalMass", "ModalStiffness", "ModalDamping", "MassRatioX", "MassRatioY", "MassRatioZ", "InertiaRatioX", "InertiaRatioY", "InertiaRatioZ"]
+  "required" : ["Frequency", "ModalMass", "ModalStiffness", "ModalDamping", "MassRatioX", "MassRatioY", "MassRatioZ", "InertiaRatioX", "InertiaRatioY", "InertiaRatioZ", "ObjectId", "ResultCase", "ModeNumber", "TimeStep"]
 }

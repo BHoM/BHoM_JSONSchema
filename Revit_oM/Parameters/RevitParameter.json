@@ -9,9 +9,13 @@
       "description" : "Name of the Revit parameter as seen in the UI."
     },
     "Value" : { },
-    "UnitType" : {
+    "Quantity" : {
       "type" : ["string", "null"],
-      "description" : "Unit type of the Revit parameter."
+      "description" : "Quantity of the Revit parameter."
+    },
+    "Unit" : {
+      "type" : ["string", "null"],
+      "description" : "Unit of the Revit parameter."
     },
     "IsReadOnly" : {
       "type" : "boolean",
@@ -27,5 +31,5 @@
       "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
-  "required" : ["Name", "Value", "UnitType", "IsReadOnly"]
+  "required" : ["Name", "Value", "Quantity", "Unit", "IsReadOnly"]
 }

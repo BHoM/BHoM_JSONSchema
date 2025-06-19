@@ -1,0 +1,22 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/PhotochemicalOzoneCreationFactor.json",
+  "title" : "PhotochemicalOzoneCreationFactor",
+  "type" : ["object", "null"],
+  "description" : "PhotochemicalOzoneCreationFactor: Single value indicator for Photochemical Ozone Formation, measured in kg NMVOC eq, refers to the formation of ozone at the ground level of the troposphere caused by photochemical oxidation of volatile organic compounds (VOCs) and carbon monoxide in the presence of sunlight.",
+  "properties" : {
+    "Value" : {
+      "type" : "number",
+      "description" : "Value for this single factor indicator. Property has a quantity of type PhotochemicalOzoneCreationPerQuantity measured in [kg NMVOC eq per unit]."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.PhotochemicalOzoneCreationFactor"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["Value"]
+}

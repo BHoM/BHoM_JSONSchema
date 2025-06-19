@@ -72,5 +72,5 @@
       "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
-  "required" : ["Axial", "ShearY", "ShearZ", "BendingY_Top", "BendingY_Bot", "BendingZ_Top", "BendingZ_Bot", "CombAxialBendingPos", "CombAxialBendingNeg"]
+  "required" : ["Axial", "ShearY", "ShearZ", "BendingY_Top", "BendingY_Bot", "BendingZ_Top", "BendingZ_Bot", "CombAxialBendingPos", "CombAxialBendingNeg", "ObjectId", "ResultCase", "ModeNumber", "TimeStep", "Position", "Divisions"]
 }

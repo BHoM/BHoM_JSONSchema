@@ -71,5 +71,5 @@
       "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
-  "required" : ["UXX", "UYY", "UZZ", "RXX", "RYY", "RZZ"]
+  "required" : ["UXX", "UYY", "UZZ", "RXX", "RYY", "RZZ", "ObjectId", "NodeId", "MeshFaceId", "ResultCase", "ModeNumber", "TimeStep", "MeshResultLayer", "LayerPosition", "Smoothing", "Orientation"]
 }

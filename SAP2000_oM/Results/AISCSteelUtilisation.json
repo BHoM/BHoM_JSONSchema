@@ -69,5 +69,5 @@
       "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
-  "required" : ["DesignCodeReference", "MajorEffectiveLength", "MinorEffectiveLength", "DesignType", "TotalRatio", "TensionCompressionRatio", "MajorShearRatio", "MinorShearRatio", "TorsionRatio", "MajorBendingRatio", "MinorBendingRatio"]
+  "required" : ["DesignCodeReference", "MajorEffectiveLength", "MinorEffectiveLength", "DesignType", "TotalRatio", "TensionCompressionRatio", "MajorShearRatio", "MinorShearRatio", "TorsionRatio", "MajorBendingRatio", "MinorBendingRatio", "ObjectId", "ResultCase", "ModeNumber", "TimeStep", "Position", "Divisions"]
 }

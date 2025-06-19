@@ -1,0 +1,22 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EutrophicationCMLFactor.json",
+  "title" : "EutrophicationCMLFactor",
+  "type" : ["object", "null"],
+  "description" : "EutrophicationCMLFactor: Single value indicator for Eutrophication (refers to EN 15804+A1), measured in kg [PO₄]³⁻ eq, and refers to the natural process that results from accumulation of nutrients.",
+  "properties" : {
+    "Value" : {
+      "type" : "number",
+      "description" : "Value for this single factor indicator. Property has a quantity of type EutrophicationCMLPerQuantity measured in [kg [PO₄]³⁻ eq per unit]."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.EutrophicationCMLFactor"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["Value"]
+}

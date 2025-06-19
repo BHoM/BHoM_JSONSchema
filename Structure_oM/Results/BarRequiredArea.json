@@ -60,5 +60,5 @@
       "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
-  "required" : ["Top", "Bottom", "Perimeter", "Shear", "Torsion", "MaterialName"]
+  "required" : ["Top", "Bottom", "Perimeter", "Shear", "Torsion", "MaterialName", "ObjectId", "ResultCase", "ModeNumber", "TimeStep", "Position", "Divisions"]
 }

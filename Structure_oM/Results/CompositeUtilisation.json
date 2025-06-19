@@ -84,5 +84,5 @@
       "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
-  "required" : ["MinorEffectiveLength", "MajorEffectiveLength", "SteelClass", "TensionCompressionRatio", "MinorBendingRatio", "MajorBendingRatio", "MinorBendingAxialRatio", "MajorBendingAxialRatio", "BiaxialBendingAxialRatio", "MinorShearRatio", "MajorShearRatio", "MinorBendingShearRatio", "MajorBendingShearRatio", "CompressionBucklingRatio", "BendingBucklingRatio", "BendingCompressionBucklingRatio"]
+  "required" : ["MinorEffectiveLength", "MajorEffectiveLength", "SteelClass", "TensionCompressionRatio", "MinorBendingRatio", "MajorBendingRatio", "MinorBendingAxialRatio", "MajorBendingAxialRatio", "BiaxialBendingAxialRatio", "MinorShearRatio", "MajorShearRatio", "MinorBendingShearRatio", "MajorBendingShearRatio", "CompressionBucklingRatio", "BendingBucklingRatio", "BendingCompressionBucklingRatio", "ObjectId", "ResultCase", "ModeNumber", "TimeStep", "Position", "Divisions"]
 }

@@ -1,0 +1,22 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/AcidificationFactor.json",
+  "title" : "AcidificationFactor",
+  "type" : ["object", "null"],
+  "description" : "AcidificationFactor: Single value indicator for Acidification, measured in moles of H+ (per EN 15804+A2, this was previously measured in SO2 per EN 15804+A1), it refers to compounds that contribute to acid rain.",
+  "properties" : {
+    "Value" : {
+      "type" : "number",
+      "description" : "Value for this single factor indicator. Property has a quantity of type AcidificationPerQuantity measured in [mol H+ eq per unit]."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.AcidificationFactor"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["Value"]
+}

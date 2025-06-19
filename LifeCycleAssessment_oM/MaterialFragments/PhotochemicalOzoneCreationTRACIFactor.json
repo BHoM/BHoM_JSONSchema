@@ -1,0 +1,22 @@
+{
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/PhotochemicalOzoneCreationTRACIFactor.json",
+  "title" : "PhotochemicalOzoneCreationTRACIFactor",
+  "type" : ["object", "null"],
+  "description" : "PhotochemicalOzoneCreationTRACIFactor: Single value indicator for Photochemical Ozone Creation as defined by the TRACI standard for a particular product or material.",
+  "properties" : {
+    "Value" : {
+      "type" : "number",
+      "description" : "Value for this single factor indicator. Property has a quantity of type PhotochemicalOzoneCreationTRACIPerQuantity measured in [kg O₃ eq per unit]."
+    },
+    "_t" : {
+      "type" : ["string", "null"],
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.PhotochemicalOzoneCreationTRACIFactor"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["Value"]
+}
