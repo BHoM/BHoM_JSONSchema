@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Humans_oM/ViewQuality/Evalue.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Humans_oM/ViewQuality/Evalue.json",
   "title" : "Evalue",
   "type" : ["object", "null"],
   "properties" : {
@@ -12,13 +12,13 @@
     "HorizViewVectors" : {
       "type" : ["array", "null"],
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Geometry_oM/Vector.json"
       }
     },
     "VertViewVectors" : {
       "type" : ["array", "null"],
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Geometry_oM/Vector.json"
       }
     },
     "VertViewAng" : {

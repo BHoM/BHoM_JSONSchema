@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Requests/FilterTypesOfFamily.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Revit_oM/Requests/FilterTypesOfFamily.json",
   "title" : "FilterTypesOfFamily",
   "type" : ["object", "null"],
   "description" : "FilterTypesOfFamily: IRequest that filters Revit family types that belong to a given Revit family.",

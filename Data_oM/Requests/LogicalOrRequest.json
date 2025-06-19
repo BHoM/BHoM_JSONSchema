@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Requests/LogicalOrRequest.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Data_oM/Requests/LogicalOrRequest.json",
   "title" : "LogicalOrRequest",
   "type" : ["object", "null"],
   "description" : "LogicalOrRequest: IRequest that combines a group of requests into a logical OR statement.",
@@ -8,7 +8,7 @@
       "type" : ["array", "null"],
       "description" : "IRequests to be combined into a logical OR statement.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Requests/IRequest.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Data_oM/Requests/IRequest.json"
       }
     },
     "_t" : {

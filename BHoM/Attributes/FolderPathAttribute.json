@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/FolderPathAttribute.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/Attributes/FolderPathAttribute.json",
   "title" : "FolderPathAttribute",
   "type" : ["object", "null"],
   "description" : "FolderPathAttribute: Path to a folder in the client's file system.",

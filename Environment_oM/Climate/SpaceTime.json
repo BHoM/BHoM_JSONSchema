@@ -1,14 +1,14 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Climate/SpaceTime.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/Climate/SpaceTime.json",
   "title" : "SpaceTime",
   "type" : ["object", "null"],
   "description" : "SpaceTime: Represents a specific moment in time related to a specific location of Earth geometry. Used for obtaining solar positions for specific moments in time at specific points on Earth",
   "properties" : {
     "Location" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Climate/Location.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/Climate/Location.json"
     },
     "Time" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Climate/Time.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/Climate/Time.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -18,7 +18,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Security_oM/Enums/CameraType.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Security_oM/Enums/CameraType.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Undefined", "Bullet", "Covert", "Domed", "Fisheye", "MultiMegapixels", "PanTiltZoom"]

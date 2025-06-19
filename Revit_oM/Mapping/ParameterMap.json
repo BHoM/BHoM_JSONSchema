@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Mapping/ParameterMap.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Revit_oM/Mapping/ParameterMap.json",
   "title" : "ParameterMap",
   "type" : ["object", "null"],
   "description" : "ParameterMap: An entity defining the relationship between object's property names (or names of RevitParameters attached to it) and parameter names of correspondent Revit elements.",
@@ -20,7 +20,7 @@
       "type" : ["array", "null"],
       "description" : "A collection of type property names (or names of RevitParameters) and sets of their correspondent Revit parameter names.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Mapping/IParameterLink.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Revit_oM/Mapping/IParameterLink.json"
       }
     },
     "BHoM_Guid" : {
@@ -31,7 +31,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

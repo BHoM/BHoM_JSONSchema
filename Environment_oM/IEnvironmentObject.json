@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/IEnvironmentObject.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/IEnvironmentObject.json",
   "required" : ["_t"],
   "properties" : {
     "_t" : {
@@ -17,7 +17,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Climate/Time.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/Climate/Time.json"
       }
     }, {
       "if" : {
@@ -30,7 +30,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Climate/Sun.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/Climate/Sun.json"
       }
     }, {
       "if" : {
@@ -43,7 +43,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Climate/Location.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/Climate/Location.json"
       }
     }, {
       "if" : {
@@ -56,7 +56,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Elements/Space.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/Elements/Space.json"
       }
     }, {
       "if" : {
@@ -69,7 +69,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Elements/Panel.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/Elements/Panel.json"
       }
     }, {
       "if" : {
@@ -82,7 +82,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Elements/Opening.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/Elements/Opening.json"
       }
     }, {
       "if" : {
@@ -95,7 +95,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Elements/Mesh.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/Elements/Mesh.json"
       }
     }, {
       "if" : {
@@ -108,7 +108,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Elements/Edge.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/Elements/Edge.json"
       }
     }, {
       "if" : {
@@ -121,7 +121,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Elements/Building.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/Elements/Building.json"
       }
     }, {
       "if" : {
@@ -134,7 +134,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Elements/BoundaryZone.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/Elements/BoundaryZone.json"
       }
     }, {
       "if" : {
@@ -147,7 +147,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/Thermostat.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/SpaceCriteria/Thermostat.json"
       }
     }, {
       "if" : {
@@ -160,7 +160,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/Profile.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/SpaceCriteria/Profile.json"
       }
     }]
 }

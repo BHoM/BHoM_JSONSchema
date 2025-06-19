@@ -1,18 +1,18 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Debugging/Log.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/Debugging/Log.json",
   "title" : "Log",
   "type" : ["object", "null"],
   "properties" : {
     "AllEvents" : {
       "type" : ["array", "null"],
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Debugging/Event.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/Debugging/Event.json"
       }
     },
     "CurrentEvents" : {
       "type" : ["array", "null"],
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Debugging/Event.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/Debugging/Event.json"
       }
     },
     "BHoM_Guid" : {
@@ -23,7 +23,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

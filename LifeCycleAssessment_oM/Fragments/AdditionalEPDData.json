@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Fragments/AdditionalEPDData.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LifeCycleAssessment_oM/Fragments/AdditionalEPDData.json",
   "title" : "AdditionalEPDData",
   "type" : ["object", "null"],
   "description" : "AdditionalEPDData: A data fragment containing other optional information regarding the production and documentation of any Environmental Product Declaration. \nUse AddFragment() to combine this information with any EPD for continuous integration.",

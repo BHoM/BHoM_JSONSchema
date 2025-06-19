@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/BuildingPart.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP_oM/SAP/XML/BuildingPart.json",
   "title" : "BuildingPart",
   "type" : ["object", "null"],
   "properties" : {
@@ -20,19 +20,19 @@
       "description" : "The age band when this building part was constructed.  Not used if 'Construction-Year' is used."
     },
     "FloorDimensions" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/FloorDimensions.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP_oM/SAP/XML/FloorDimensions.json"
     },
     "Openings" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/Openings.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP_oM/SAP/XML/Openings.json"
     },
     "Roofs" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/Roofs.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP_oM/SAP/XML/Roofs.json"
     },
     "Walls" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/Walls.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP_oM/SAP/XML/Walls.json"
     },
     "ThermalBridges" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/ThermalBridges.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP_oM/SAP/XML/ThermalBridges.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -42,7 +42,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

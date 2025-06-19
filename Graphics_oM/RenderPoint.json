@@ -1,10 +1,10 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/RenderPoint.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Graphics_oM/RenderPoint.json",
   "title" : "RenderPoint",
   "type" : ["object", "null"],
   "properties" : {
     "Point" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Geometry_oM/Point.json"
     },
     "Colour" : {
       "type" : ["object", "null"],

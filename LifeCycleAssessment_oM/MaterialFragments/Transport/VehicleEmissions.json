@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/Transport/VehicleEmissions.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LifeCycleAssessment_oM/MaterialFragments/Transport/VehicleEmissions.json",
   "title" : "VehicleEmissions",
   "type" : ["object", "null"],
   "description" : "VehicleEmissions: Class for storing emssions of a particular type of vehicle per mass transported and distance traveled.",
@@ -12,7 +12,7 @@
       "type" : ["array", "null"],
       "description" : "Metrics relating to the emissions by the vehicle. All metrics assumed to be impact per mass and distance traveled.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/IEnvironmentalFactor.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LifeCycleAssessment_oM/MaterialFragments/IEnvironmentalFactor.json"
       }
     },
     "ReturnTripFactor" : {
@@ -24,7 +24,7 @@
       "format" : "uuid"
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

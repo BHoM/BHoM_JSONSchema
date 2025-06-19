@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/OffsetOptions.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Geometry_oM/OffsetOptions.json",
   "title" : "OffsetOptions",
   "type" : ["object", "null"],
   "description" : "OffsetOptions: Options for curve offset operations.",

@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/PullGeometryConfig.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Revit_oM/PullGeometryConfig.json",
   "title" : "PullGeometryConfig",
   "type" : ["object", "null"],
   "description" : "PullGeometryConfig: Configuration used to specify which geometry should be pulled and passed to RevitGeometry fragment.",
@@ -17,7 +17,7 @@
       "description" : "If true, meshed surfaces of elements will be pulled and stored under Revit_meshes in RevitGeometry fragment."
     },
     "MeshDetailLevel" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Enums/DetailLevel.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Revit_oM/Enums/DetailLevel.json"
     },
     "IncludeNonVisible" : {
       "type" : "boolean",

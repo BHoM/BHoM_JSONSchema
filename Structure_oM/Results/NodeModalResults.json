@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/NodeModalResults.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/Results/NodeModalResults.json",
   "title" : "NodeModalResults",
   "type" : ["object", "null"],
   "description" : "NodeModalResults: Base class for all Node result classes. Stores all identifier information and how to sort the results in a collection.",
@@ -53,7 +53,7 @@
       "description" : "Nodal modal mass in the Z-direction as defined by orientation basis. Proportional amount of the total modal mass that acts around the X-axis at the specific Node. Property has a quantity of type Mass measured in [kg]."
     },
     "NormalisationProcedure" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/ModalResultNormalisation.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/Results/ModalResultNormalisation.json"
     },
     "ObjectId" : {
       "type" : ["object", "integer", "string", "number", "null"]
@@ -70,7 +70,7 @@
       "description" : "Time step for time history results."
     },
     "Orientation" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Basis.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Geometry_oM/Basis.json"
     },
     "_t" : {
       "type" : ["string", "null"],

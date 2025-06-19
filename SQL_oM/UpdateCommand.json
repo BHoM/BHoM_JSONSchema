@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SQL_oM/UpdateCommand.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SQL_oM/UpdateCommand.json",
   "title" : "UpdateCommand",
   "type" : ["object", "null"],
   "properties" : {

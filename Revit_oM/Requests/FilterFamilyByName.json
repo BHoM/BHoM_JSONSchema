@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Requests/FilterFamilyByName.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Revit_oM/Requests/FilterFamilyByName.json",
   "title" : "FilterFamilyByName",
   "type" : ["object", "null"],
   "description" : "FilterFamilyByName: IRequest that filters Revit families by name. If the family name is left blank, all families will be filtered.",

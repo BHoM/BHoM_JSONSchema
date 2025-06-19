@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Rhinoceros_oM/ViewCapture/DimensionViewCaptureSettings.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Rhinoceros_oM/ViewCapture/DimensionViewCaptureSettings.json",
   "title" : "DimensionViewCaptureSettings",
   "type" : ["object", "null"],
   "description" : "DimensionViewCaptureSettings: View capture settings class with control over the final size of the image in pixels.",

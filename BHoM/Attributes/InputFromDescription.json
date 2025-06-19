@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/InputFromDescription.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/Attributes/InputFromDescription.json",
   "title" : "InputFromDescription",
   "type" : ["object", "null"],
   "description" : "InputFromDescription: Attribute to define an input parameter for a method or constructor, using the description of a member (Type, MemberInfo, ParameterInfo or Enum).",
@@ -10,7 +10,7 @@
     },
     "Member" : { },
     "Classification" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/ClassificationAttribute.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/Attributes/ClassificationAttribute.json"
     },
     "TypeId" : { },
     "_t" : {

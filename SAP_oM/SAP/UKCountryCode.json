@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/UKCountryCode.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP_oM/SAP/UKCountryCode.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["EnglandAndWales", "England", "Wales", "Scotland", "NorthernIreland"]

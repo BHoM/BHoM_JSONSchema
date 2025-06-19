@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/InputFromProperty.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/Attributes/InputFromProperty.json",
   "title" : "InputFromProperty",
   "type" : ["object", "null"],
   "properties" : {

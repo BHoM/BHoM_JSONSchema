@@ -1,14 +1,14 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/Reinforcement.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Physical_oM/Reinforcement/Reinforcement.json",
   "title" : "Reinforcement",
   "type" : ["object", "null"],
   "description" : "Reinforcement: The physical reinforcement object containing the ShapeCode(and it's parameters), the diameter and coodinate system. This can be used with a number of Engine methods suchas Centreline and Length.",
   "properties" : {
     "CoordinateSystem" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/CoordinateSystem/Cartesian.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Geometry_oM/CoordinateSystem/Cartesian.json"
     },
     "ShapeCode" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/IShapeCode.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Physical_oM/Reinforcement/IShapeCode.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -18,7 +18,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

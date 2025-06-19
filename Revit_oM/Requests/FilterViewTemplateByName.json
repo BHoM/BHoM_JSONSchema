@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Requests/FilterViewTemplateByName.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Revit_oM/Requests/FilterViewTemplateByName.json",
   "title" : "FilterViewTemplateByName",
   "type" : ["object", "null"],
   "description" : "FilterViewTemplateByName: IRequest that filters Revit view templates by name. If the template name is left blank, all view templates will be filtered.",

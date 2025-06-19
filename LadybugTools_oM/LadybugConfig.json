@@ -1,11 +1,11 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/LadybugConfig.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LadybugTools_oM/LadybugConfig.json",
   "title" : "LadybugConfig",
   "type" : ["object", "null"],
   "description" : "LadybugConfig: The action config for the LadybugTools Adapter.",
   "properties" : {
     "JsonFile" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/FileSettings.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Adapter_oM/FileSettings.json"
     },
     "CacheFileMaximumAge" : {
       "type" : "integer",
@@ -20,7 +20,7 @@
       "description" : "If true and if no specific EqualityComparer is found for the type, Diffing hashes are computed and used to compare the objects."
     },
     "DiffingConfig" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/DiffingConfig.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Diffing_oM/DiffingConfig.json"
     },
     "_t" : {
       "type" : ["string", "null"],

@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Dimensional_oM/IElement0D.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Dimensional_oM/IElement0D.json",
   "required" : ["_t"],
   "properties" : {
     "_t" : {
@@ -17,7 +17,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Node.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/Elements/Node.json"
       }
     }, {
       "if" : {
@@ -30,7 +30,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Security_oM/Elements/CameraDevice.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Security_oM/Elements/CameraDevice.json"
       }
     }, {
       "if" : {
@@ -43,7 +43,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Equipment/MechanicalEquipment.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/MEP_oM/Equipment/MechanicalEquipment.json"
       }
     }, {
       "if" : {
@@ -56,7 +56,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Equipment/ElectricalEquipment.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/MEP_oM/Equipment/ElectricalEquipment.json"
       }
     }, {
       "if" : {
@@ -69,7 +69,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Fixtures/PlumbingFixture.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/MEP_oM/Fixtures/PlumbingFixture.json"
       }
     }, {
       "if" : {
@@ -82,7 +82,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Fixtures/LightFixture.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/MEP_oM/Fixtures/LightFixture.json"
       }
     }, {
       "if" : {
@@ -95,7 +95,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Fixtures/FireAlarmDevice.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/MEP_oM/Fixtures/FireAlarmDevice.json"
       }
     }, {
       "if" : {
@@ -108,7 +108,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Fixtures/ElectricalFixture.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/MEP_oM/Fixtures/ElectricalFixture.json"
       }
     }, {
       "if" : {
@@ -121,7 +121,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Fixtures/AirTerminal.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/MEP_oM/Fixtures/AirTerminal.json"
       }
     }, {
       "if" : {
@@ -134,7 +134,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/Dampers/Valve.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/MEP_oM/System/Dampers/Valve.json"
       }
     }, {
       "if" : {
@@ -147,7 +147,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/Dampers/VolumeDamper.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/MEP_oM/System/Dampers/VolumeDamper.json"
       }
     }, {
       "if" : {
@@ -160,7 +160,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/Dampers/Damper.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/MEP_oM/System/Dampers/Damper.json"
       }
     }, {
       "if" : {
@@ -173,7 +173,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/Fittings/Fitting.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/MEP_oM/System/Fittings/Fitting.json"
       }
     }, {
       "if" : {
@@ -186,7 +186,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/Node.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/MEP_oM/System/Node.json"
       }
     }, {
       "if" : {
@@ -199,7 +199,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Lighting_oM/Analysis/Node.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Lighting_oM/Analysis/Node.json"
       }
     }, {
       "if" : {
@@ -212,7 +212,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Lighting_oM/Elements/Luminaire.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Lighting_oM/Elements/Luminaire.json"
       }
     }, {
       "if" : {
@@ -225,7 +225,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/RenderPoint.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Graphics_oM/RenderPoint.json"
       }
     }, {
       "if" : {
@@ -238,7 +238,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Geometry_oM/Point.json"
       }
     }, {
       "if" : {
@@ -251,7 +251,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Analysis/Node.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/Analysis/Node.json"
       }
     }, {
       "if" : {
@@ -264,7 +264,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Architecture_oM/BuildersWork/Opening.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Architecture_oM/BuildersWork/Opening.json"
       }
     }]
 }

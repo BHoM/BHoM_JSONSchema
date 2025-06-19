@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Fragments/LightReflectanceFragment.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/Fragments/LightReflectanceFragment.json",
   "title" : "LightReflectanceFragment",
   "type" : ["object", "null"],
   "description" : "LightReflectanceFragment: Fragment containing red, green and blue light reflectance property",

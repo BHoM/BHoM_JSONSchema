@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/Commands/Analyse.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Adapter_oM/Commands/Analyse.json",
   "title" : "Analyse",
   "type" : ["object", "null"],
   "description" : "Analyse: Used to instruct the external software to run an Analysis."

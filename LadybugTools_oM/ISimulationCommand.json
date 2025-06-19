@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/ISimulationCommand.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LadybugTools_oM/ISimulationCommand.json",
   "required" : ["_t"],
   "properties" : {
     "_t" : {
@@ -17,7 +17,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/WindroseCommand.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LadybugTools_oM/WindroseCommand.json"
       }
     }, {
       "if" : {
@@ -30,7 +30,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/WalkabilityPlotCommand.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LadybugTools_oM/WalkabilityPlotCommand.json"
       }
     }, {
       "if" : {
@@ -43,7 +43,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/UTCIHeatPlotCommand.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LadybugTools_oM/UTCIHeatPlotCommand.json"
       }
     }, {
       "if" : {
@@ -56,7 +56,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/SunPathPlotCommand.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LadybugTools_oM/SunPathPlotCommand.json"
       }
     }, {
       "if" : {
@@ -69,7 +69,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/SolarRadiationPlotCommand.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LadybugTools_oM/SolarRadiationPlotCommand.json"
       }
     }, {
       "if" : {
@@ -82,7 +82,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/RunSimulationCommand.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LadybugTools_oM/RunSimulationCommand.json"
       }
     }, {
       "if" : {
@@ -95,7 +95,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/RunExternalComfortCommand.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LadybugTools_oM/RunExternalComfortCommand.json"
       }
     }, {
       "if" : {
@@ -108,7 +108,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/HeatPlotCommand.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LadybugTools_oM/HeatPlotCommand.json"
       }
     }, {
       "if" : {
@@ -121,7 +121,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/FacadeCondensationRiskCommand.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LadybugTools_oM/FacadeCondensationRiskCommand.json"
       }
     }, {
       "if" : {
@@ -134,7 +134,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/DiurnalPlotCommand.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LadybugTools_oM/DiurnalPlotCommand.json"
       }
     }]
 }

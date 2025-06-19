@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Face.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Geometry_oM/Face.json",
   "title" : "Face",
   "type" : ["object", "null"],
   "description" : "Face: A triangular or quadrilateral shape forming the basis of a polygon Mesh. Defined by corner vertices referencing indices of a Point list. See BH.oM.Geometry.Mesh object for usage.\nA value of -1 for the fourth vertex D indicates the Face is triangular.",

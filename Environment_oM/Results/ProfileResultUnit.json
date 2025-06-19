@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Results/ProfileResultUnit.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/Results/ProfileResultUnit.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Undefined", "Daily", "Hourly", "Value", "Yearly"]

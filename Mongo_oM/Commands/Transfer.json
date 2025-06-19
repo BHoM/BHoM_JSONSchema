@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Mongo_oM/Commands/Transfer.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Mongo_oM/Commands/Transfer.json",
   "title" : "Transfer",
   "type" : ["object", "null"],
   "description" : "Transfer: Used to instruct Mongo to transfer from a database to another.",

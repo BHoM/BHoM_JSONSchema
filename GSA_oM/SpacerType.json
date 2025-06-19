@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/GSA_oM/SpacerType.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/GSA_oM/SpacerType.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Geodesic", "Free", "Bar"]

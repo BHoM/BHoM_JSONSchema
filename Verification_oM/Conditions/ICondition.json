@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Conditions/ICondition.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Verification_oM/Conditions/ICondition.json",
   "required" : ["_t"],
   "properties" : {
     "_t" : {
@@ -17,7 +17,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Conditions/ValueCondition.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Verification_oM/Conditions/ValueCondition.json"
       }
     }, {
       "if" : {
@@ -30,7 +30,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Conditions/LogicalOrCondition.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Verification_oM/Conditions/LogicalOrCondition.json"
       }
     }, {
       "if" : {
@@ -43,7 +43,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Conditions/LogicalNotCondition.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Verification_oM/Conditions/LogicalNotCondition.json"
       }
     }, {
       "if" : {
@@ -56,7 +56,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Conditions/LogicalAndCondition.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Verification_oM/Conditions/LogicalAndCondition.json"
       }
     }, {
       "if" : {
@@ -69,7 +69,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Conditions/IsOfType.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Verification_oM/Conditions/IsOfType.json"
       }
     }, {
       "if" : {
@@ -82,7 +82,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Conditions/IsNotNull.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Verification_oM/Conditions/IsNotNull.json"
       }
     }, {
       "if" : {
@@ -95,7 +95,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Conditions/IsInSet.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Verification_oM/Conditions/IsInSet.json"
       }
     }, {
       "if" : {
@@ -108,7 +108,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Conditions/IsInDomain.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Verification_oM/Conditions/IsInDomain.json"
       }
     }, {
       "if" : {
@@ -121,7 +121,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Conditions/HasValue.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Verification_oM/Conditions/HasValue.json"
       }
     }, {
       "if" : {
@@ -134,7 +134,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Conditions/HasId.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Verification_oM/Conditions/HasId.json"
       }
     }, {
       "if" : {
@@ -147,7 +147,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Conditions/FormulaCondition.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Verification_oM/Conditions/FormulaCondition.json"
       }
     }]
 }

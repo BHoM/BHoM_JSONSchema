@@ -1,11 +1,11 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Cuboid.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Geometry_oM/Cuboid.json",
   "title" : "Cuboid",
   "type" : ["object", "null"],
   "description" : "Cuboid: A polyhedron. Standard cuboid consisting of six right-angled quadrilateral faces.",
   "properties" : {
     "CoordinateSystem" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/CoordinateSystem/Cartesian.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Geometry_oM/CoordinateSystem/Cartesian.json"
     },
     "Length" : {
       "type" : "number",

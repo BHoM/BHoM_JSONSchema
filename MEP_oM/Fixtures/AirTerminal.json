@@ -1,11 +1,11 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Fixtures/AirTerminal.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/MEP_oM/Fixtures/AirTerminal.json",
   "title" : "AirTerminal",
   "type" : ["object", "null"],
   "description" : "AirTerminal: A device used to regulate the volume of air to or from an air handling unit, variable air volume device or similar, to or from the occupied space. These devices may be ducted or connect directly to a plenum, in which case no duct connection will be present.",
   "properties" : {
     "Location" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/Node.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/MEP_oM/System/Node.json"
     },
     "OrientationAngle" : {
       "type" : "number",
@@ -20,7 +20,7 @@
       "description" : "The difference in total pressure between two points of a system measured in Pascals. Property has a quantity of type Pressure measured in [Pa]."
     },
     "ConnectedDuctProperties" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/SectionProperties/DuctSectionProperty.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/MEP_oM/System/SectionProperties/DuctSectionProperty.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -30,7 +30,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

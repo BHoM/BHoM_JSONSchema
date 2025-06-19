@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/EPWKey.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LadybugTools_oM/EPWKey.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Undefined", "AerosolOpticalDepth", "AtmosphericStationPressure", "CeilingHeight", "DaysSinceLastSnowfall", "DewPointTemperature", "DiffuseHorizontalIlluminance", "DiffuseHorizontalRadiation", "DirectNormalIlluminance", "DirectNormalRadiation", "DryBulbTemperature", "ExtraterrestrialDirectNormalRadiation", "ExtraterrestrialHorizontalRadiation", "GlobalHorizontalIlluminance", "GlobalHorizontalRadiation", "HorizontalInfraredRadiationIntensity", "OpaqueSkyCover", "PrecipitableWater", "PresentWeatherCodes", "PresentWeatherObservation", "RelativeHumidity", "SnowDepth", "TotalSkyCover", "Visibility", "WetBulbTemperature", "WindDirection", "WindSpeed", "ZenithLuminance"]

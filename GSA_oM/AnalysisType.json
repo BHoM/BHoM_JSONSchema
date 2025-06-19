@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/GSA_oM/AnalysisType.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/GSA_oM/AnalysisType.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["LinearStatic", "NonLinearStatic", "FormFinding", "SoapFilm"]

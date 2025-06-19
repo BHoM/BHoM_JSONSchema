@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Requirements/Requirement.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Verification_oM/Requirements/Requirement.json",
   "title" : "Requirement",
   "type" : ["object", "null"],
   "description" : "Requirement: Object representing a single, condition-based requirement to run against each object in a set filtered based on Specification.ExtractionAlso contains the config required to represent the verification results in a human friendly form.",
@@ -9,7 +9,7 @@
       "description" : "Human readable identifier to reference the Requirement."
     },
     "Source" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Library/Source.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Data_oM/Library/Source.json"
     },
     "Comment" : {
       "type" : ["string", "null"],
@@ -20,13 +20,13 @@
       "description" : "General, human-readable message explaining what does the failure mean to the user."
     },
     "Severity" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/FailureSeverity.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Verification_oM/FailureSeverity.json"
     },
     "Condition" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Conditions/ICondition.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Verification_oM/Conditions/ICondition.json"
     },
     "ReportingConfig" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Reporting/IConditionReportingConfig.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Verification_oM/Reporting/IConditionReportingConfig.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -36,7 +36,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

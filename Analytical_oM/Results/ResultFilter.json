@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Analytical_oM/Results/ResultFilter.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Analytical_oM/Results/ResultFilter.json",
   "title" : "ResultFilter",
   "type" : ["object", "null"],
   "description" : "ResultFilter: Object to support filtering of results",

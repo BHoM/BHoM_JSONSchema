@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/ClimateChangeFossilMaterialResult.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LifeCycleAssessment_oM/Results/ClimateChangeFossilMaterialResult.json",
   "title" : "ClimateChangeFossilMaterialResult",
   "type" : ["object", "null"],
   "description" : "ClimateChangeFossilMaterialResult: Result class for resulting Climate change - fossil for a particular Material and EPD.",

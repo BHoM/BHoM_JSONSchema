@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/IES_oM/IES/PushConfigIES.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/IES_oM/IES/PushConfigIES.json",
   "title" : "PushConfigIES",
   "type" : ["object", "null"],
   "description" : "PushConfigIES: Create a push config for IES for use with the IES Adapter.",
@@ -25,7 +25,7 @@
       "description" : "Set the tolerance to be used in distance calculations or wherever a Geometry method requires an Distance Tolerance to determine a zero number."
     },
     "File" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/FileSettings.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Adapter_oM/FileSettings.json"
     },
     "WrapNonBHoMObjects" : {
       "type" : "boolean",
@@ -36,7 +36,7 @@
       "description" : "If true and if no specific EqualityComparer is found for the type, Diffing hashes are computed and used to compare the objects."
     },
     "DiffingConfig" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/DiffingConfig.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Diffing_oM/DiffingConfig.json"
     },
     "_t" : {
       "type" : ["string", "null"],

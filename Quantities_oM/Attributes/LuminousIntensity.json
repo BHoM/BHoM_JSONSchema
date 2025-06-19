@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/LuminousIntensity.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Quantities_oM/Attributes/LuminousIntensity.json",
   "title" : "LuminousIntensity",
   "type" : ["object", "null"],
   "description" : "LuminousIntensity: Dimensional quantity as defined by the International System of Quantities",

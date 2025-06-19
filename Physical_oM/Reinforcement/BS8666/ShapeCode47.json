@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode47.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Physical_oM/Reinforcement/BS8666/ShapeCode47.json",
   "title" : "ShapeCode47",
   "type" : ["object", "null"],
   "description" : "ShapeCode47: A reinforcement bar with shape code 47 to BS 8666:2020 in the XY Plane centred on the Origin with the B parameter aligned with the X axis and the A/C/D parameters aligned with the Y axis.",
@@ -36,7 +36,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Humans_oM/ViewQuality/Cvalue.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Humans_oM/ViewQuality/Cvalue.json",
   "title" : "Cvalue",
   "type" : ["object", "null"],
   "properties" : {
@@ -16,7 +16,7 @@
       "type" : "number"
     },
     "Focalpoint" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Geometry_oM/Point.json"
     },
     "ObjectId" : {
       "type" : ["object", "integer", "string", "number", "null"]

@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Fragments/AnalyticalConstruction.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/Fragments/AnalyticalConstruction.json",
   "title" : "AnalyticalConstruction",
   "type" : ["object", "null"],
   "description" : "AnalyticalConstruction: This fragment is used to define physical and thermal properties for a building surface",

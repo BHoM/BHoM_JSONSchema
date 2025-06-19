@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Requests/FilterRequest.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Data_oM/Requests/FilterRequest.json",
   "title" : "FilterRequest",
   "type" : ["object", "null"],
   "properties" : {

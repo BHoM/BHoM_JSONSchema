@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/EmitterTemperatureCode.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP_oM/SAP/EmitterTemperatureCode.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Unknown", "Over45", "Over35", "Over35LessThanOrEqual45", "LessThanOrEqual35", "NotApplicable"]

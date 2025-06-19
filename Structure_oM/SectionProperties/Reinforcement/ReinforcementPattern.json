@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SectionProperties/Reinforcement/ReinforcementPattern.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/SectionProperties/Reinforcement/ReinforcementPattern.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Equispaced", "Horizontal", "Vertical"]

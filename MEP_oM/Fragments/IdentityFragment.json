@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Fragments/IdentityFragment.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/MEP_oM/Fragments/IdentityFragment.json",
   "title" : "IdentityFragment",
   "type" : ["object", "null"],
   "properties" : {

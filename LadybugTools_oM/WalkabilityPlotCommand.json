@@ -1,13 +1,13 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/WalkabilityPlotCommand.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LadybugTools_oM/WalkabilityPlotCommand.json",
   "title" : "WalkabilityPlotCommand",
   "type" : ["object", "null"],
   "properties" : {
     "EPWFile" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/FileSettings.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Adapter_oM/FileSettings.json"
     },
     "ExternalComfort" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/ExternalComfort.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LadybugTools_oM/ExternalComfort.json"
     },
     "OutputLocation" : {
       "type" : ["string", "null"],

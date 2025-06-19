@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/EnergyAssessment.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP_oM/SAP/XML/EnergyAssessment.json",
   "title" : "EnergyAssessment",
   "type" : ["object", "null"],
   "properties" : {
@@ -8,28 +8,28 @@
       "description" : "In the form yyyy-mm-dd"
     },
     "PropertySummary" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/PropertySummary.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP_oM/SAP/XML/PropertySummary.json"
     },
     "EnergyUse" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/EnergyUse.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP_oM/SAP/XML/EnergyUse.json"
     },
     "LowZeroCarbonEnergySources" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/LowZeroCarbonEnergySources.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP_oM/SAP/XML/LowZeroCarbonEnergySources.json"
     },
     "RenewableHeatIncentive" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/RenewableHeatIncentive.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP_oM/SAP/XML/RenewableHeatIncentive.json"
     },
     "SuggestedImprovements" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/SuggestedImprovements.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP_oM/SAP/XML/SuggestedImprovements.json"
     },
     "GreenPackageDeal" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/GreenPackageDeal.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP_oM/SAP/XML/GreenPackageDeal.json"
     },
     "AlternativeImprovements" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/SuggestedImprovements.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP_oM/SAP/XML/SuggestedImprovements.json"
     },
     "Addendum" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/Addendum.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP_oM/SAP/XML/Addendum.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -39,7 +39,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

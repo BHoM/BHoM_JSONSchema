@@ -1,19 +1,19 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/FloorAndRoofInterfaces.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/dKoP_oM/FloorAndRoofInterfaces.json",
   "title" : "FloorAndRoofInterfaces",
   "type" : ["object", "null"],
   "properties" : {
     "SideA" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/FloorAndRoofSideInterface.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/dKoP_oM/FloorAndRoofSideInterface.json"
     },
     "SideB" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/FloorAndRoofSideInterface.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/dKoP_oM/FloorAndRoofSideInterface.json"
     },
     "SideC" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/FloorAndRoofSideInterface.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/dKoP_oM/FloorAndRoofSideInterface.json"
     },
     "SideD" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/FloorAndRoofSideInterface.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/dKoP_oM/FloorAndRoofSideInterface.json"
     },
     "_t" : {
       "type" : ["string", "null"],

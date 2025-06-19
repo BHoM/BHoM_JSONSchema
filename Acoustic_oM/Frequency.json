@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Acoustic_oM/Frequency.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Acoustic_oM/Frequency.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Sum", "Hz63", "Hz125", "Hz250", "Hz500", "Hz1000", "Hz2000", "Hz4000", "Hz8000", "Hz16000"]

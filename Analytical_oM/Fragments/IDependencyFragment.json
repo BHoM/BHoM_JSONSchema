@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Analytical_oM/Fragments/IDependencyFragment.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Analytical_oM/Fragments/IDependencyFragment.json",
   "required" : ["_t"],
   "properties" : {
     "_t" : {
@@ -17,7 +17,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Analytical_oM/Fragments/TargetsDependencyFragment.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Analytical_oM/Fragments/TargetsDependencyFragment.json"
       }
     }, {
       "if" : {
@@ -30,7 +30,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Analytical_oM/Fragments/SourcesDependencyFragment.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Analytical_oM/Fragments/SourcesDependencyFragment.json"
       }
     }]
 }

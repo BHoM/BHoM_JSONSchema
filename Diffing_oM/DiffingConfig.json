@@ -1,11 +1,11 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/DiffingConfig.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Diffing_oM/DiffingConfig.json",
   "title" : "DiffingConfig",
   "type" : ["object", "null"],
   "description" : "DiffingConfig: General configurations for the Diffing process, including settings for the Hash computation.",
   "properties" : {
     "ComparisonConfig" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/BaseComparisonConfig.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/BaseComparisonConfig.json"
     },
     "EnablePropertyDiffing" : {
       "type" : "boolean",

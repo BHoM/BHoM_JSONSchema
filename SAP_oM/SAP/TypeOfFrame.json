@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/TypeOfFrame.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP_oM/SAP/TypeOfFrame.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Wood", "PVC", "MetalNoBreak", "Metal4mmBreak", "Metal8mmBreak", "Metal12mmBreak", "Metal20mmBreak", "Metal32mmBreak", "Unknown"]

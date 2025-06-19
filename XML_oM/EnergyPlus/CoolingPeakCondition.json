@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/EnergyPlus/CoolingPeakCondition.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/XML_oM/EnergyPlus/CoolingPeakCondition.json",
   "title" : "CoolingPeakCondition",
   "type" : ["object", "null"],
   "properties" : {
@@ -10,31 +10,31 @@
       "type" : ["string", "null"]
     },
     "OutsideDryBulbTemperature" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/EnergyPlus/OutsideDryBulbTemperature.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/XML_oM/EnergyPlus/OutsideDryBulbTemperature.json"
     },
     "OutsideWetBulbTemperature" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/EnergyPlus/OutsideWetBulbTemperature.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/XML_oM/EnergyPlus/OutsideWetBulbTemperature.json"
     },
     "OutsideHumidityRatioAtPeak" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/EnergyPlus/OutsideHumidityRatioAtPeak.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/XML_oM/EnergyPlus/OutsideHumidityRatioAtPeak.json"
     },
     "ZoneDryBulbTemperature" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/EnergyPlus/ZoneDryBulbTemperature.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/XML_oM/EnergyPlus/ZoneDryBulbTemperature.json"
     },
     "ZoneRelativeHumdity" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/EnergyPlus/ZoneRelativeHumidity.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/XML_oM/EnergyPlus/ZoneRelativeHumidity.json"
     },
     "ZoneHumidityRatioAtPeak" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/EnergyPlus/ZoneHumidityRatioAtPeak.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/XML_oM/EnergyPlus/ZoneHumidityRatioAtPeak.json"
     },
     "PeakDesignSensibleLoad" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/EnergyPlus/PeakDesignSensibleLoad.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/XML_oM/EnergyPlus/PeakDesignSensibleLoad.json"
     },
     "EstimatedInstantDelayedSensibleLoad" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/EnergyPlus/EstimatedInstantDelayedSensibleLoad.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/XML_oM/EnergyPlus/EstimatedInstantDelayedSensibleLoad.json"
     },
     "Difference" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/EnergyPlus/Difference.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/XML_oM/EnergyPlus/Difference.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -44,7 +44,7 @@
       "type" : ["object", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

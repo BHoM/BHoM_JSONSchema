@@ -1,11 +1,11 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Settings/FamilyLoadSettings.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Revit_oM/Settings/FamilyLoadSettings.json",
   "title" : "FamilyLoadSettings",
   "type" : ["object", "null"],
   "description" : "FamilyLoadSettings: Revit family load settings for Revit Adapter. Prototype, currently with limited functionality.",
   "properties" : {
     "FamilyLibrary" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/FamilyLibrary.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Revit_oM/FamilyLibrary.json"
     },
     "OverwriteFamily" : {
       "type" : "boolean",
@@ -23,7 +23,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/ImpactSoundInsulation.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/dKoP_oM/ImpactSoundInsulation.json",
   "title" : "ImpactSoundInsulation",
   "type" : ["object", "null"],
   "properties" : {

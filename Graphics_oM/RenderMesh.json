@@ -1,18 +1,18 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/RenderMesh.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Graphics_oM/RenderMesh.json",
   "title" : "RenderMesh",
   "type" : ["object", "null"],
   "properties" : {
     "Vertices" : {
       "type" : ["array", "null"],
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/RenderPoint.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Graphics_oM/RenderPoint.json"
       }
     },
     "Faces" : {
       "type" : ["array", "null"],
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Face.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Geometry_oM/Face.json"
       }
     },
     "_t" : {

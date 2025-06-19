@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Versioning_oM/VersioningTargetAttribute.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Versioning_oM/VersioningTargetAttribute.json",
   "title" : "VersioningTargetAttribute",
   "type" : ["object", "null"],
   "description" : "VersioningTargetAttribute: Attribute defining the specific type a versioning method is targeting. The target type needs to be specified including the full namespace. This attribute can be used multiple times if a method is targeting more than one element.",

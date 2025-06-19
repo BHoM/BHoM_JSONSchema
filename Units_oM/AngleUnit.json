@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Units_oM/AngleUnit.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Units_oM/AngleUnit.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Undefined", "Arcminute", "Arcsecond", "Centiradian", "Deciradian", "Degree", "Gradian", "Microdegree", "Microradian", "Millidegree", "Milliradian", "Nanodegree", "Nanoradian", "Radian", "Revolution"]

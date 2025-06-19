@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/OpenStreetMap_oM/Relation.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/OpenStreetMap_oM/Relation.json",
   "title" : "Relation",
   "type" : ["object", "null"],
   "description" : "Relation: A relation is a group of elements (Members) used to model logical (and usually local) or geographic relationships between objects.",
@@ -16,7 +16,7 @@
       "type" : ["array", "null"],
       "description" : "The IOpenStreetMapElement that define this Relation.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/OpenStreetMap_oM/IOpenStreetMapElement.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/OpenStreetMap_oM/IOpenStreetMapElement.json"
       }
     },
     "BHoM_Guid" : {
@@ -27,7 +27,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

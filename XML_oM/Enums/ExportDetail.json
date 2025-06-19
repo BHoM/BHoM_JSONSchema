@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/Enums/ExportDetail.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/XML_oM/Enums/ExportDetail.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Undefined", "BuildingShell", "Full"]

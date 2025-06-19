@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/InteroperabilityTest_oM/Interoperability/ComparerType.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/InteroperabilityTest_oM/Interoperability/ComparerType.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["AdapterID", "Name"]

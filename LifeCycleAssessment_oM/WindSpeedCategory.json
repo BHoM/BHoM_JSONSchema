@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/WindSpeedCategory.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LifeCycleAssessment_oM/WindSpeedCategory.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Undefined", "Calm", "FreshBreeze", "Gale", "GentleBreeze", "Hurricane", "LightAir", "LightBreeze", "ModerateBreeze", "NearGale", "Storm", "StrongBreeze", "StrongGale", "ViolentStorm"]

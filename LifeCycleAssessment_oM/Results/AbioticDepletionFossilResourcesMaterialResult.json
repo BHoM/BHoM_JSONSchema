@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/AbioticDepletionFossilResourcesMaterialResult.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LifeCycleAssessment_oM/Results/AbioticDepletionFossilResourcesMaterialResult.json",
   "title" : "AbioticDepletionFossilResourcesMaterialResult",
   "type" : ["object", "null"],
   "description" : "AbioticDepletionFossilResourcesMaterialResult: Result class for resulting Abiotic depletion of fossil resources for a particular Material and EPD.",

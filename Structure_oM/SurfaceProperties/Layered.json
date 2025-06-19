@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/Layered.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/SurfaceProperties/Layered.json",
   "title" : "Layered",
   "type" : ["object", "null"],
   "description" : "Layered: Property for 2D analytical elements representing a series of layers, each with different thickness, material, and orientation.",
@@ -9,24 +9,24 @@
       "description" : "A unique name is required for some structural packages to create and identify the object."
     },
     "Material" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/IMaterialFragment.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/MaterialFragments/IMaterialFragment.json"
     },
     "Layers" : {
       "type" : ["array", "null"],
       "description" : "The material layers which compose the surface property listed from top surface to bottom.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/Layer.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/SurfaceProperties/Layer.json"
       }
     },
     "PanelType" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/PanelType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/SurfaceProperties/PanelType.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
       "format" : "uuid"
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

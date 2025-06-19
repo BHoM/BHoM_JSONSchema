@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/LoadNature.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/Loads/LoadNature.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Dead", "SuperDead", "Live", "Wind", "Seismic", "Temperature", "Snow", "Accidental", "Prestress", "Notional", "Other"]

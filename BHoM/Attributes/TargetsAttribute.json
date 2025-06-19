@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/TargetsAttribute.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/Attributes/TargetsAttribute.json",
   "title" : "TargetsAttribute",
   "type" : ["object", "null"],
   "description" : "TargetsAttribute: Defines the list of types that are a valid target for this.",

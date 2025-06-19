@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/Infiltration.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/SpaceCriteria/Infiltration.json",
   "title" : "Infiltration",
   "type" : ["object", "null"],
   "description" : "Infiltration: Infiltration gains are defined as the amount of heat or heat loss contributed by cracks in the exterior envelope of the building which allow unconditioned outside air to be introduced to the space",
@@ -17,7 +17,7 @@
       "description" : "The AirflowByWallExternalCrackLength indicates the amount of air (m3/s) lost by infiltration based on the exterior wall crack length (the sum of the edge lengths), that should be replaced within the space."
     },
     "Profile" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/Profile.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/SpaceCriteria/Profile.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -27,7 +27,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

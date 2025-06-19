@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Collections/DomainTree`1.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Data_oM/Collections/DomainTree`1.json",
   "title" : "DomainTree`1",
   "type" : ["object", "null"],
   "description" : "DomainTree`1: A data tree which is traversed through DomainBoxes. Each node's DomainBox is assumed to be enclosed by its parent's DomainBox and to enclose its own data. All the tree's data is stored in its leaves.",
@@ -8,7 +8,7 @@
       "type" : ["array", "null"],
       "description" : "The child nodes of this node. All child nodes DomainBoxes are assumed to be enclosed by this nodes DomainBox. An empty list indicates this node as a leaf node",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Collections/DomainTree`1.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Data_oM/Collections/DomainTree`1.json"
       }
     },
     "Values" : {
@@ -16,7 +16,7 @@
       "description" : "The data values stored on this node. The DomainTree assumes that only nodes with an empty list of children have values."
     },
     "DomainBox" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Collections/DomainBox.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Data_oM/Collections/DomainBox.json"
     },
     "_t" : {
       "type" : ["string", "null"],

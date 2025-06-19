@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/Enums/UIExposure.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/Attributes/Enums/UIExposure.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Display", "Hidden"]

@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/Results/AISCSteelUtilisation.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP2000_oM/Results/AISCSteelUtilisation.json",
   "title" : "AISCSteelUtilisation",
   "type" : ["object", "null"],
   "description" : "AISCSteelUtilisation: Base class for all bar result classes. Stores all identifier information and how to sort the results in a collection.",

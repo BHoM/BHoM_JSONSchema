@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/PanelType.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/SurfaceProperties/PanelType.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Undefined", "Slab", "Wall", "PileCap", "DropPanel"]

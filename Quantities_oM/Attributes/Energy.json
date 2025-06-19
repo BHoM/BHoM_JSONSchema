@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/Energy.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Quantities_oM/Attributes/Energy.json",
   "title" : "Energy",
   "type" : ["object", "null"],
   "description" : "Energy: Dimensional quantity as defined by the International System of Quantities",

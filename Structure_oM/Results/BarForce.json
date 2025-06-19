@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/BarForce.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/Results/BarForce.json",
   "title" : "BarForce",
   "type" : ["object", "null"],
   "description" : "BarForce: Resulting section forces in local coordinates along the bar.",

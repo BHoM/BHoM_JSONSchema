@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/PhotochemicalOzoneCreationTRACIPerQuantity.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Quantities_oM/Attributes/PhotochemicalOzoneCreationTRACIPerQuantity.json",
   "title" : "PhotochemicalOzoneCreationTRACIPerQuantity",
   "type" : ["object", "null"],
   "description" : "PhotochemicalOzoneCreationTRACIPerQuantity: Quantity type for Photochemical Ozone Creation Potential per quantity accordign to the TRACI standard.",

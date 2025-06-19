@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/File_oM/RemoveRequest.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/File_oM/RemoveRequest.json",
   "title" : "RemoveRequest",
   "type" : ["object", "null"],
   "properties" : {

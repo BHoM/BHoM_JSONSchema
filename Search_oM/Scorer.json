@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Search_oM/Scorer.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Search_oM/Scorer.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["DefaultRatio", "PartialRatio", "TokenSet", "PartialTokenSet", "TokenSort", "PartialTokenSort", "TokenAbbreviation", "PartialTokenAbbreviation", "TokenInitialism", "PartialTokenInitialism", "WeightedRatio"]

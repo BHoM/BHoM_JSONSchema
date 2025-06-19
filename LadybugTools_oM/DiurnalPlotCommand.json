@@ -1,14 +1,14 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/DiurnalPlotCommand.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LadybugTools_oM/DiurnalPlotCommand.json",
   "title" : "DiurnalPlotCommand",
   "type" : ["object", "null"],
   "description" : "DiurnalPlotCommand: Use in conjunction with the LadybugToolsAdapter to run a diurnal analysis on a specific key of an epw file, and output a plot.",
   "properties" : {
     "EPWFile" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/FileSettings.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Adapter_oM/FileSettings.json"
     },
     "EPWKey" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/EPWKey.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LadybugTools_oM/EPWKey.json"
     },
     "Colour" : {
       "type" : ["object", "null"],
@@ -41,7 +41,7 @@
       "description" : "Title of the plot, will appear above any information on the top of the plot."
     },
     "Period" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/DiurnalPeriod.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LadybugTools_oM/DiurnalPeriod.json"
     },
     "_t" : {
       "type" : ["string", "null"],

@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Results/Mesh/MeshResult.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/Results/Mesh/MeshResult.json",
   "title" : "MeshResult",
   "type" : ["object", "null"],
   "description" : "MeshResult: Full collection of discrete results for an AnalysisGrid for a specific Analysis.",
@@ -21,7 +21,7 @@
           "type" : ["array", "null"],
           "description" : "A collection of the discrete mesh element results per node",
           "items" : {
-            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Results/Mesh/MeshElementResult.json"
+            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/Results/Mesh/MeshElementResult.json"
           }
         }
       }

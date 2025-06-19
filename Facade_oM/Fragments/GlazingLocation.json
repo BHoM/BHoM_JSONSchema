@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Fragments/GlazingLocation.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Facade_oM/Fragments/GlazingLocation.json",
   "title" : "GlazingLocation",
   "type" : ["object", "null"],
   "description" : "GlazingLocation: Fragment containing the offset distance from the section property origin to the edge of glazing.",

@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/Fragments/PanelAutoMeshByNumberOfObjects.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP2000_oM/Fragments/PanelAutoMeshByNumberOfObjects.json",
   "title" : "PanelAutoMeshByNumberOfObjects",
   "type" : ["object", "null"],
   "description" : "PanelAutoMeshByNumberOfObjects: Divide the panel into a given number of elements in each direction.",

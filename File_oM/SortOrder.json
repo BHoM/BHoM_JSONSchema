@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/File_oM/SortOrder.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/File_oM/SortOrder.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Default", "ByName", "BySize", "ByCreationTime", "ByLastModifiedTime"]

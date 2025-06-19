@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Fragments/BuildingResultFragment.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/Fragments/BuildingResultFragment.json",
   "title" : "BuildingResultFragment",
   "type" : ["object", "null"],
   "description" : "BuildingResultFragment: Fragment containing the peak heating and peak cooling for a buildng",

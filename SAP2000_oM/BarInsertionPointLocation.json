@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/BarInsertionPointLocation.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP2000_oM/BarInsertionPointLocation.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["BottomLeft", "BottomCenter", "BottomRight", "MiddleLeft", "MiddleCenter", "MiddleRight", "TopLeft", "TopCenter", "TopRight", "Centroid", "ShearCenter"]

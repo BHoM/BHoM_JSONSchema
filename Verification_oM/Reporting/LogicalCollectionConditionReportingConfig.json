@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Reporting/LogicalCollectionConditionReportingConfig.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Verification_oM/Reporting/LogicalCollectionConditionReportingConfig.json",
   "title" : "LogicalCollectionConditionReportingConfig",
   "type" : ["object", "null"],
   "description" : "LogicalCollectionConditionReportingConfig: Config object containing settings for reporting results of checks against logical conditions with a collection of nested conditions.",
@@ -11,10 +11,10 @@
         "type" : ["object", "null"],
         "properties" : {
           "k" : {
-            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Conditions/ICondition.json"
+            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Verification_oM/Conditions/ICondition.json"
           },
           "v" : {
-            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Reporting/IConditionReportingConfig.json"
+            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Verification_oM/Reporting/IConditionReportingConfig.json"
           }
         }
       }

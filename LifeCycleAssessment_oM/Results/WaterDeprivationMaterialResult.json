@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/WaterDeprivationMaterialResult.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LifeCycleAssessment_oM/Results/WaterDeprivationMaterialResult.json",
   "title" : "WaterDeprivationMaterialResult",
   "type" : ["object", "null"],
   "description" : "WaterDeprivationMaterialResult: Result class for resulting Water Deprivation for a particular Material and EPD.",

@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/DocumentationURLAttribute.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/Attributes/DocumentationURLAttribute.json",
   "title" : "DocumentationURLAttribute",
   "type" : ["object", "null"],
   "properties" : {
@@ -7,7 +7,7 @@
       "type" : ["string", "null"]
     },
     "Type" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/Enums/DocumentationType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/Attributes/Enums/DocumentationType.json"
     },
     "Description" : {
       "type" : ["string", "null"]

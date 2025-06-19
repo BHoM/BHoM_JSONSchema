@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/WarpingConstant.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Quantities_oM/Attributes/WarpingConstant.json",
   "title" : "WarpingConstant",
   "type" : ["object", "null"],
   "description" : "WarpingConstant: Dimensional quantity as defined by the International System of Quantities",

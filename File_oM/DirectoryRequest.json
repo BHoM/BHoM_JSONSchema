@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/File_oM/DirectoryRequest.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/File_oM/DirectoryRequest.json",
   "title" : "DirectoryRequest",
   "type" : ["object", "null"],
   "description" : "DirectoryRequest: Used to query Directories or Files.",
@@ -17,7 +17,7 @@
       "description" : "If IncludeSubdirectories is true, this sets the maximum subdirectiory nesting level to look in.\nDefaults to -1 which corresponds to no limit."
     },
     "SortOrder" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/File_oM/SortOrder.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/File_oM/SortOrder.json"
     },
     "MaxDirectories" : {
       "type" : "integer",

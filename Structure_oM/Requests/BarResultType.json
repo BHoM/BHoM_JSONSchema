@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Requests/BarResultType.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/Requests/BarResultType.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["BarForce", "BarDeformation", "BarStress", "BarStrain", "BarDisplacement", "BarModeShape"]

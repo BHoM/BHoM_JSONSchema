@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/SimulationDayType.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/SpaceCriteria/SimulationDayType.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Undefined", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday", "Weekday", "Weekend", "PublicHoliday", "CoolingDesignDay", "HeatingDesignDay"]

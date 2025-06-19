@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Results/ResultType.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/Results/ResultType.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Undefined", "AtmosphericPressure", "DewPointTemperature", "DiffuseHorizontalRadiation", "DirectNormalRadiation", "DryBulbTemperature", "Enthalpy", "GlobalHorizontalRadiation", "HumidityRatio", "Illuminance", "Insolation", "MeanRadiantTemperature", "Power", "RelativeHumidity", "SkyTemperature", "SurfaceTemperature", "UniversalThermalClimateIndex", "WetBulbTemperature", "WindDirection", "WindSpeed"]

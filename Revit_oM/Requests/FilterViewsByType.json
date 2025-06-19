@@ -1,11 +1,11 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Requests/FilterViewsByType.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Revit_oM/Requests/FilterViewsByType.json",
   "title" : "FilterViewsByType",
   "type" : ["object", "null"],
   "description" : "FilterViewsByType: IRequest that filters all views of given type.",
   "properties" : {
     "RevitViewType" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Enums/RevitViewType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Revit_oM/Enums/RevitViewType.json"
     },
     "_t" : {
       "type" : ["string", "null"],

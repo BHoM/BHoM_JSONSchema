@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MetricType.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LifeCycleAssessment_oM/MetricType.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Undefined", "AbioticDepletionFossilResources", "AbioticDepletionMineralsAndMetals", "Acidification", "ClimateChangeBiogenic", "ClimateChangeFossil", "ClimateChangeLandUse", "ClimateChangeTotal", "ClimateChangeTotalNoBiogenic", "EutrophicationCML", "EutrophicationAquaticFreshwater", "EutrophicationAquaticMarine", "EutrophicationTerrestrial", "EutrophicationTRACI", "OzoneDepletion", "PhotochemicalOzoneCreation", "PhotochemicalOzoneCreationCML", "PhotochemicalOzoneCreationTRACI", "WaterDeprivation"]

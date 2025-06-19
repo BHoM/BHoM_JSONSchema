@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/DynamicPropertyAttribute.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/Attributes/DynamicPropertyAttribute.json",
   "title" : "DynamicPropertyAttribute",
   "type" : ["object", "null"],
   "description" : "DynamicPropertyAttribute: Defines a property as a container for dynamic properties. This must be a dictionary where keys are enums.",

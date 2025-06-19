@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/DiurnalPeriod.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LadybugTools_oM/DiurnalPeriod.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Undefined", "Daily", "Weekly", "Monthly"]

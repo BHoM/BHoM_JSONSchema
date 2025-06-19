@@ -1,11 +1,11 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Requests/GlobalResultRequest.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/Requests/GlobalResultRequest.json",
   "title" : "GlobalResultRequest",
   "type" : ["object", "null"],
   "description" : "GlobalResultRequest: Request for extracting global structural results from an adapter.",
   "properties" : {
     "ResultType" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Requests/GlobalResultType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/Requests/GlobalResultType.json"
     },
     "Cases" : {
       "type" : ["array", "null"],

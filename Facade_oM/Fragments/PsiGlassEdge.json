@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Fragments/PsiGlassEdge.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Facade_oM/Fragments/PsiGlassEdge.json",
   "title" : "PsiGlassEdge",
   "type" : ["object", "null"],
   "description" : "PsiGlassEdge: A Psi value representing the linear thermal bridging value in W/m2 at a glass to frame edge interface.",

@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/EutrophicationAquaticFreshwaterMaterialResult.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LifeCycleAssessment_oM/Results/EutrophicationAquaticFreshwaterMaterialResult.json",
   "title" : "EutrophicationAquaticFreshwaterMaterialResult",
   "type" : ["object", "null"],
   "description" : "EutrophicationAquaticFreshwaterMaterialResult: Result class for resulting Eutrophication - aquatic freshwater for a particular Material and EPD.",

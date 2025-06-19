@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Fragments/LoadFragment.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/Fragments/LoadFragment.json",
   "title" : "LoadFragment",
   "type" : ["object", "null"],
   "description" : "LoadFragment: Fragment containing heating and cooling load",

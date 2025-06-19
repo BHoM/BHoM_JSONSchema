@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Equipment/Parts/ElectricalConnector.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/MEP_oM/Equipment/Parts/ElectricalConnector.json",
   "title" : "ElectricalConnector",
   "type" : ["object", "null"],
   "description" : "ElectricalConnector: Electrical Connectors are the devices (motors, disconnects/isolators) that serve as a source of power for mechanical equipment",
@@ -48,7 +48,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

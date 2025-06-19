@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/GSA_oM/IsRigidConstraint.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/GSA_oM/IsRigidConstraint.json",
   "title" : "IsRigidConstraint",
   "type" : ["object", "null"],
   "description" : "IsRigidConstraint: A fragment to identify whether the RigidLink is a Constraint or Link (i.e. element) in GSA.",

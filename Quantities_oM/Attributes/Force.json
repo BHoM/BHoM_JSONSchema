@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/Force.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Quantities_oM/Attributes/Force.json",
   "title" : "Force",
   "type" : ["object", "null"],
   "description" : "Force: Dimensional quantity as defined by the International System of Quantities",

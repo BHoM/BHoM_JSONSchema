@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SectionProperties/CableSection.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/SectionProperties/CableSection.json",
   "title" : "CableSection",
   "type" : ["object", "null"],
   "description" : "CableSection: Cable section to be used on Bars. Defined by cable diameter, number of cables, and total area.",
@@ -9,7 +9,7 @@
       "description" : "A unique Name is required for some structural packages to create and identify the object."
     },
     "Material" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/IMaterialFragment.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/MaterialFragments/IMaterialFragment.json"
     },
     "NumberOfCables" : {
       "type" : "integer",
@@ -20,7 +20,7 @@
       "description" : "Diameter of each cable in the section."
     },
     "CableType" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SectionProperties/CableType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/SectionProperties/CableType.json"
     },
     "BreakingLoad" : {
       "type" : "number",
@@ -107,7 +107,7 @@
       "format" : "uuid"
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

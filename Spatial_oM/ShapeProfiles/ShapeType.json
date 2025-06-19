@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/ShapeType.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Spatial_oM/ShapeProfiles/ShapeType.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Rectangle", "Box", "Angle", "ISection", "Tee", "Channel", "Tube", "Circle", "Zed", "FreeForm", "DoubleAngle", "DoubleISection", "DoubleChannel", "Cable"]

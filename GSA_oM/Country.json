@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/GSA_oM/Country.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/GSA_oM/Country.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Undefined", "UK", "US", "Germany", "NL", "France", "Italy", "Denmark", "Singapore"]

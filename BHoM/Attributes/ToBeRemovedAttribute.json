@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/ToBeRemovedAttribute.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/Attributes/ToBeRemovedAttribute.json",
   "title" : "ToBeRemovedAttribute",
   "type" : ["object", "null"],
   "properties" : {

@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/GlobalReactions.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/Results/GlobalReactions.json",
   "title" : "GlobalReactions",
   "type" : ["object", "null"],
   "description" : "GlobalReactions: Total global reactions for a given Loadcase or LoadCombination.",

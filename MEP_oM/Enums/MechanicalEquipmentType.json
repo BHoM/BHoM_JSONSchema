@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Enums/MechanicalEquipmentType.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/MEP_oM/Enums/MechanicalEquipmentType.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Undefined", "AirHandlingUnit", "AirSeparator", "AirSourceHeatPump", "Boiler", "CabinetUnitHeater", "Chiller", "CoolingTower", "ExpansionTankVessel", "Fan", "FanCoilUnit", "HeatExchanger", "HeatingAndVentilationUnit", "Pump", "UnitHeater", "VariableAirVolumeBox", "VariableRefrigerantFlowCondenserIndoor", "VariableRefrigerantFlowEvaporatorOutdoor", "WaterSourceHeatPump", "WaterStorageTank"]

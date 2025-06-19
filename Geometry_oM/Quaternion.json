@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Quaternion.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Geometry_oM/Quaternion.json",
   "title" : "Quaternion",
   "type" : ["object", "null"],
   "description" : "Quaternion: A four-dimensional vector, useful in calculation of affine transformations in three-dimensional space. See also BH.oM.Geometry.TransformMatrix.",

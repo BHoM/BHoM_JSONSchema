@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/UnitTest_oM/Results/ComparisonDifference.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/UnitTest_oM/Results/ComparisonDifference.json",
   "title" : "ComparisonDifference",
   "type" : ["object", "null"],
   "properties" : {
@@ -8,7 +8,7 @@
       "description" : "Human readable message describing the information."
     },
     "Status" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Test_oM/TestStatus.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Test_oM/TestStatus.json"
     },
     "UTCTime" : {
       "type" : ["object", "null"],

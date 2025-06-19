@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/BiDirectionalVoided.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/SurfaceProperties/BiDirectionalVoided.json",
   "title" : "BiDirectionalVoided",
   "type" : ["object", "null"],
   "description" : "BiDirectionalVoided: Property for 2D analytical elements, made up of two slabs with parallel ribs running in two directions between them, all sharing the same material.",
@@ -17,7 +17,7 @@
       "description" : "The thickness of the slab sitting beneath the ribs. Property has a quantity of type Length measured in [m]."
     },
     "Material" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/IMaterialFragment.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/MaterialFragments/IMaterialFragment.json"
     },
     "TotalDepth" : {
       "type" : "number",
@@ -40,14 +40,14 @@
       "description" : "Centre-Centre distance between the ribs running in local y-direction. Property has a quantity of type Length measured in [m]."
     },
     "PanelType" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/PanelType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/SurfaceProperties/PanelType.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
       "format" : "uuid"
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

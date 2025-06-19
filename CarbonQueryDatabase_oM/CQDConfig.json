@@ -1,11 +1,11 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/CarbonQueryDatabase_oM/CQDConfig.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/CarbonQueryDatabase_oM/CQDConfig.json",
   "title" : "CQDConfig",
   "type" : ["object", "null"],
   "description" : "CQDConfig: This Config can be specified in the `ActionConfig` input of any Adapter Action (e.g. Push).",
   "properties" : {
     "Type" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/EPDType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LifeCycleAssessment_oM/EPDType.json"
     },
     "Id" : {
       "type" : ["string", "null"],
@@ -32,7 +32,7 @@
       "description" : "If true and if no specific EqualityComparer is found for the type, Diffing hashes are computed and used to compare the objects."
     },
     "DiffingConfig" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/DiffingConfig.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Diffing_oM/DiffingConfig.json"
     },
     "_t" : {
       "type" : ["string", "null"],

@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Units_oM/PressureUnit.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Units_oM/PressureUnit.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Undefined", "Atmosphere", "Bar", "Centibar", "Decapascal", "Decibar", "DynePerSquareCentimeter", "FootOfHead", "Gigapascal", "Hectopascal", "InchOfMercury", "InchOfWaterColumn", "Kilobar", "KilogramForcePerSquareCentimeter", "KilogramForcePerSquareMeter", "KilogramForcePerSquareMillimeter", "KilonewtonPerSquareCentimeter", "KilonewtonPerSquareMeter", "KilonewtonPerSquareMillimeter", "Kilopascal", "KilopoundForcePerSquareFoot", "KilopoundForcePerSquareInch", "Megabar", "MeganewtonPerSquareMeter", "Megapascal", "MeterOfHead", "Microbar", "Micropascal", "Millibar", "MillimeterOfMercury", "Millipascal", "NewtonPerSquareCentimeter", "NewtonPerSquareMeter", "NewtonPerSquareMillimeter", "Pascal", "PoundForcePerSquareFoot", "PoundForcePerSquareInch", "PoundPerInchSecondSquared", "TechnicalAtmosphere", "TonneForcePerSquareCentimeter", "TonneForcePerSquareMeter", "TonneForcePerSquareMillimeter", "Torr"]

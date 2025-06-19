@@ -1,10 +1,10 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/CodeComplianceTest_oM/CodeCompliance/Attributes/ErrorLevelAttribute.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/CodeComplianceTest_oM/CodeCompliance/Attributes/ErrorLevelAttribute.json",
   "title" : "ErrorLevelAttribute",
   "type" : ["object", "null"],
   "properties" : {
     "Level" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Test_oM/TestStatus.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Test_oM/TestStatus.json"
     },
     "TypeId" : { },
     "_t" : {

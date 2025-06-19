@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/UI_oM/CallerUpdateCause.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/UI_oM/CallerUpdateCause.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Unknown", "ItemSelected", "ReadFromSave", "InputSelection", "OutputSelection", "UpgradedVersion"]

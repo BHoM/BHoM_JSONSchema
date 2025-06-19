@@ -1,11 +1,11 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/GeneralisedTSectionProfile.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Spatial_oM/ShapeProfiles/GeneralisedTSectionProfile.json",
   "title" : "GeneralisedTSectionProfile",
   "type" : ["object", "null"],
   "description" : "GeneralisedTSectionProfile: T-shaped profile that allows for different outsand widths and thicknesses. Outstands with different thicknesses are aligned by their top edge.\nThe full width of the top flange can be calculated as LeftOutstandWidth + WebThickness + RightOutstandWidth.",
   "properties" : {
     "Shape" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/ShapeType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Spatial_oM/ShapeProfiles/ShapeType.json"
     },
     "Height" : {
       "type" : "number",
@@ -38,7 +38,7 @@
       "type" : ["array", "null"],
       "description" : "Edge curves that matches the dimensions in the global XY-plane.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ICurve.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Geometry_oM/ICurve.json"
       }
     },
     "BHoM_Guid" : {
@@ -49,7 +49,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

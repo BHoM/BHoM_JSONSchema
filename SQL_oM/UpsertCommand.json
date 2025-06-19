@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SQL_oM/UpsertCommand.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SQL_oM/UpsertCommand.json",
   "title" : "UpsertCommand",
   "type" : ["object", "null"],
   "description" : "UpsertCommand: Specify objects to update or insert (upsert) depending on whether existing data exists. If the data does not exist based on the Primary Key given, then the data is inserted into the table. If the data did previously exist, then its columns are updated.",

@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Results/IsNotNullResult.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Verification_oM/Results/IsNotNullResult.json",
   "title" : "IsNotNullResult",
   "type" : ["object", "null"],
   "description" : "IsNotNullResult: Object representing result of IsNotNull condition.",

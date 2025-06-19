@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Specifications/Specification.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Verification_oM/Specifications/Specification.json",
   "title" : "Specification",
   "type" : ["object", "null"],
   "description" : "Specification: A top level object in verification workflow. Contains the information about the whole workflow, from extraction, to checking, to reporting.",
@@ -13,13 +13,13 @@
       "description" : "Description of the Specification."
     },
     "Extraction" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Extraction/IExtraction.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Verification_oM/Extraction/IExtraction.json"
     },
     "Requirements" : {
       "type" : ["array", "null"],
       "description" : "A collection of objects, each containing an atomic check together with reporting config and metadata.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Requirements/IRequirement.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Verification_oM/Requirements/IRequirement.json"
       }
     },
     "BHoM_Guid" : {
@@ -30,7 +30,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

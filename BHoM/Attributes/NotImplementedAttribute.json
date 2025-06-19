@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/NotImplementedAttribute.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/Attributes/NotImplementedAttribute.json",
   "title" : "NotImplementedAttribute",
   "type" : ["object", "null"],
   "properties" : {

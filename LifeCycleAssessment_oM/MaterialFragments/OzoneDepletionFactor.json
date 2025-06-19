@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/OzoneDepletionFactor.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LifeCycleAssessment_oM/MaterialFragments/OzoneDepletionFactor.json",
   "title" : "OzoneDepletionFactor",
   "type" : ["object", "null"],
   "description" : "OzoneDepletionFactor: Single value indicator for Ozone Depletion, measured in kg CFC-11 eq, refers to the substances that destroy ozone molecules.",

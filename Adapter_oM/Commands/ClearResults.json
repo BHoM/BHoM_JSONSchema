@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/Commands/ClearResults.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Adapter_oM/Commands/ClearResults.json",
   "title" : "ClearResults",
   "type" : ["object", "null"],
   "description" : "ClearResults: Used to instruct the external software to clear/delete results from a file or model."

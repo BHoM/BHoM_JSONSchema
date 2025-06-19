@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Ground_oM/InSituVane.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Ground_oM/InSituVane.json",
   "title" : "InSituVane",
   "type" : ["object", "null"],
   "description" : "InSituVane: A representation of an in-situ vane test defined by the borehole where the test was carried out and the result.",
@@ -16,7 +16,7 @@
       "type" : ["array", "null"],
       "description" : "A list of different properties including references, tests, analysis, results and detection.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Ground_oM/ITestProperties.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Ground_oM/ITestProperties.json"
       }
     },
     "Result" : {
@@ -31,7 +31,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

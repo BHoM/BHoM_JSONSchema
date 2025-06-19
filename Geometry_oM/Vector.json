@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Geometry_oM/Vector.json",
   "title" : "Vector",
   "type" : ["object", "null"],
   "description" : "Vector: Defines a direction and magnitude in three-dimensional Euclidean space.",

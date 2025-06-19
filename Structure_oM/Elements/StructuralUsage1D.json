@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/StructuralUsage1D.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/Elements/StructuralUsage1D.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Undefined", "Beam", "Column", "Brace", "Cable", "Pile"]

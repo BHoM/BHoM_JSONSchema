@@ -1,11 +1,11 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Pipe.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Geometry_oM/Pipe.json",
   "title" : "Pipe",
   "type" : ["object", "null"],
   "description" : "Pipe: A constant circular cross section surface, following a defined curve path.",
   "properties" : {
     "Centreline" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ICurve.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Geometry_oM/ICurve.json"
     },
     "Radius" : {
       "type" : "number",

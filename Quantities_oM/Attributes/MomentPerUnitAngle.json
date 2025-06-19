@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/MomentPerUnitAngle.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Quantities_oM/Attributes/MomentPerUnitAngle.json",
   "title" : "MomentPerUnitAngle",
   "type" : ["object", "null"],
   "description" : "MomentPerUnitAngle: Dimensional quantity as defined by the International System of Quantities",

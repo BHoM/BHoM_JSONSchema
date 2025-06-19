@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/AbioticDepletionMineralsAndMetalsMetric.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LifeCycleAssessment_oM/MaterialFragments/AbioticDepletionMineralsAndMetalsMetric.json",
   "title" : "AbioticDepletionMineralsAndMetalsMetric",
   "type" : ["object", "null"],
   "description" : "AbioticDepletionMineralsAndMetalsMetric: Abiotic Depletion of Minerals and Metals, measured in Antimony (Sb), refers to the over-extraction of non-renewable materials which can lead to the exhaustion of natural (non-fossil) resources. This environmental indicator forms part of an Environmental Product Declaration and should be evaluated based on the Quantity Type stated on the Environmental Product Declaration.",
@@ -180,7 +180,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

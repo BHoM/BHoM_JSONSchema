@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Fragments/SpaceContextFragment.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/Fragments/SpaceContextFragment.json",
   "title" : "SpaceContextFragment",
   "type" : ["object", "null"],
   "description" : "SpaceContextFragment: Fragment containing space context properties (e.g. is external facing, colour, connected elements)",

@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SQL_oM/CustomRequest.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SQL_oM/CustomRequest.json",
   "title" : "CustomRequest",
   "type" : ["object", "null"],
   "properties" : {

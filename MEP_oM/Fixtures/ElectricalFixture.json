@@ -1,18 +1,18 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Fixtures/ElectricalFixture.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/MEP_oM/Fixtures/ElectricalFixture.json",
   "title" : "ElectricalFixture",
   "type" : ["object", "null"],
   "description" : "ElectricalFixture: A device used to convey electricity e.g. duplex sockets/receptacles, disconnect/isolator switches (for electrified mechanical equipment), floors boxes.",
   "properties" : {
     "Location" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/Node.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/MEP_oM/System/Node.json"
     },
     "OrientationAngle" : {
       "type" : "number",
       "description" : "Controls the local plan orientation of the object. Property has a quantity of type Angle measured in [rad]."
     },
     "ElectricalFixtureType" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Enums/ElectricalFixtureType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/MEP_oM/Enums/ElectricalFixtureType.json"
     },
     "GroundFaultCircuitInterrupter" : {
       "type" : "boolean",
@@ -34,7 +34,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

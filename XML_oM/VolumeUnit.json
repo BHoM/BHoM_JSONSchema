@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/VolumeUnit.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/XML_oM/VolumeUnit.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["CubicKilometers", "CubicMeters", "CubicCentimeters", "CubicMillimeters", "CubicMiles", "CubicYards", "CubicFeet", "CubicInches"]

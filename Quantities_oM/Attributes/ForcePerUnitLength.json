@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/ForcePerUnitLength.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Quantities_oM/Attributes/ForcePerUnitLength.json",
   "title" : "ForcePerUnitLength",
   "type" : ["object", "null"],
   "description" : "ForcePerUnitLength: Dimensional quantity as defined by the International System of Quantities",

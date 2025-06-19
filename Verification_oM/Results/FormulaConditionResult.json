@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Results/FormulaConditionResult.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Verification_oM/Results/FormulaConditionResult.json",
   "title" : "FormulaConditionResult",
   "type" : ["object", "null"],
   "description" : "FormulaConditionResult: Object representing result of FormulaCondition.",

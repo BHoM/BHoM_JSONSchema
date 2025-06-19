@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/Pollutant.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/SpaceCriteria/Pollutant.json",
   "title" : "Pollutant",
   "type" : ["object", "null"],
   "description" : "Pollutant: Pollutant gains are defined as the amount of both latent and sensible heat contributed by pollutution sources.",
@@ -13,7 +13,7 @@
       "description" : "The latent heat contributed by pollutants, which contribute to a change in phase from solid to liquid."
     },
     "Profile" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/Profile.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/SpaceCriteria/Profile.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -23,7 +23,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

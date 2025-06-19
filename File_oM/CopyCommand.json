@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/File_oM/CopyCommand.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/File_oM/CopyCommand.json",
   "title" : "CopyCommand",
   "type" : ["object", "null"],
   "properties" : {

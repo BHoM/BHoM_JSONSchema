@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Fragments/BuildingContextFragment.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/Fragments/BuildingContextFragment.json",
   "title" : "BuildingContextFragment",
   "type" : ["object", "null"],
   "description" : "BuildingContextFragment: Fragment containing the place (city) and name of the nearest weather station",

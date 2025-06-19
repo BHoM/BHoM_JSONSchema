@@ -1,11 +1,11 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Elements/MeshElement.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Physical_oM/Elements/MeshElement.json",
   "title" : "MeshElement",
   "type" : ["object", "null"],
   "description" : "MeshElement: Object representing a physical element, defined by a geometrical mesh that represents that element in 3-dimensional space.\nCan commonly store properties and parameters in fragments corresponding to the software from which the element was extracted.",
   "properties" : {
     "Mesh" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Mesh.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Geometry_oM/Mesh.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -15,7 +15,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

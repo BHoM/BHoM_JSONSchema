@@ -1,13 +1,13 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/OpeningPartFinish.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/dKoP_oM/OpeningPartFinish.json",
   "title" : "OpeningPartFinish",
   "type" : ["object", "null"],
   "properties" : {
     "FinishMaterial" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/OpeningFinishMaterial.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/dKoP_oM/OpeningFinishMaterial.json"
     },
     "Colour" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/OpeningColour.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/dKoP_oM/OpeningColour.json"
     },
     "_t" : {
       "type" : ["string", "null"],

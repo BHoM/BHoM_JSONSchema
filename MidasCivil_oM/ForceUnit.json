@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MidasCivil_oM/ForceUnit.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/MidasCivil_oM/ForceUnit.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["N", "KN", "KGF", "TONF", "LBF", "KIPS"]

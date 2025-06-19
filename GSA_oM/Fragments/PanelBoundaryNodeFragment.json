@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/GSA_oM/Fragments/PanelBoundaryNodeFragment.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/GSA_oM/Fragments/PanelBoundaryNodeFragment.json",
   "title" : "PanelBoundaryNodeFragment",
   "type" : ["object", "null"],
   "description" : "PanelBoundaryNodeFragment:",
@@ -7,7 +7,7 @@
     "ExternalNodes" : {
       "type" : ["array", "null"],
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Node.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/Elements/Node.json"
       }
     },
     "OpeningNodes" : {
@@ -15,7 +15,7 @@
       "items" : {
         "type" : ["array", "null"],
         "items" : {
-          "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Node.json"
+          "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/Elements/Node.json"
         }
       }
     },

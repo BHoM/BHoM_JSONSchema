@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Requests/FilterViewByName.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Revit_oM/Requests/FilterViewByName.json",
   "title" : "FilterViewByName",
   "type" : ["object", "null"],
   "description" : "FilterViewByName: IRequest that filters Revit views by name. If the view name is left blank, all families will be filtered.",

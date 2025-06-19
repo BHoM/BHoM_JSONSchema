@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/OpenStreetMap_oM/ElementContainer.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/OpenStreetMap_oM/ElementContainer.json",
   "title" : "ElementContainer",
   "type" : ["object", "null"],
   "description" : "ElementContainer: Container for OpenStreetMap elements returned from a query.",
@@ -8,21 +8,21 @@
       "type" : ["array", "null"],
       "description" : "The Nodes returned from the query.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/OpenStreetMap_oM/Node.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/OpenStreetMap_oM/Node.json"
       }
     },
     "Ways" : {
       "type" : ["array", "null"],
       "description" : "The Ways returned from the query.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/OpenStreetMap_oM/Way.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/OpenStreetMap_oM/Way.json"
       }
     },
     "Relations" : {
       "type" : ["array", "null"],
       "description" : "The Relations returned from the query.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/OpenStreetMap_oM/Relation.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/OpenStreetMap_oM/Relation.json"
       }
     },
     "BHoM_Guid" : {
@@ -33,7 +33,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

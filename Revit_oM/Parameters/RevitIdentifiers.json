@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Parameters/RevitIdentifiers.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Revit_oM/Parameters/RevitIdentifiers.json",
   "title" : "RevitIdentifiers",
   "type" : ["object", "null"],
   "description" : "RevitIdentifiers: An entity containing identifiers of Revit element correspondent to the BHoM object that carries it.",

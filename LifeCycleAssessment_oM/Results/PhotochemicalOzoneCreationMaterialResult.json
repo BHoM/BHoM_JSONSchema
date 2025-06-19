@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/PhotochemicalOzoneCreationMaterialResult.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LifeCycleAssessment_oM/Results/PhotochemicalOzoneCreationMaterialResult.json",
   "title" : "PhotochemicalOzoneCreationMaterialResult",
   "type" : ["object", "null"],
   "description" : "PhotochemicalOzoneCreationMaterialResult: Result class for resulting Photochemical ozone formation for a particular Material and EPD.",

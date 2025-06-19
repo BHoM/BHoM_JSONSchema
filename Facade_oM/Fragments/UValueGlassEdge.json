@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Fragments/UValueGlassEdge.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Facade_oM/Fragments/UValueGlassEdge.json",
   "title" : "UValueGlassEdge",
   "type" : ["object", "null"],
   "description" : "UValueGlassEdge: A U-Value representing the effective U-Value of the edge region of an opening.",

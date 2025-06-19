@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Units_oM/TorqueUnit.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Units_oM/TorqueUnit.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Undefined", "KilogramForceCentimeter", "KilogramForceMeter", "KilogramForceMillimeter", "KilonewtonCentimeter", "KilonewtonMeter", "KilonewtonMillimeter", "KilopoundForceFoot", "KilopoundForceInch", "MeganewtonCentimeter", "MeganewtonMeter", "MeganewtonMillimeter", "MegapoundForceFoot", "MegapoundForceInch", "NewtonCentimeter", "NewtonMeter", "NewtonMillimeter", "PoundForceFoot", "PoundForceInch", "TonneForceCentimeter", "TonneForceMeter", "TonneForceMillimeter"]

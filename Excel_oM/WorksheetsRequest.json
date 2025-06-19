@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Excel_oM/WorksheetsRequest.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Excel_oM/WorksheetsRequest.json",
   "title" : "WorksheetsRequest",
   "type" : ["object", "null"],
   "description" : "WorksheetsRequest: IRequest that pulls worksheet names from an Excel file.",

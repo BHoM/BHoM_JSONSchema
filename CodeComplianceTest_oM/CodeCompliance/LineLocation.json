@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/CodeComplianceTest_oM/CodeCompliance/LineLocation.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/CodeComplianceTest_oM/CodeCompliance/LineLocation.json",
   "title" : "LineLocation",
   "type" : ["object", "null"],
   "properties" : {

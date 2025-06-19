@@ -1,10 +1,10 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Humans_oM/BodyParts/Spine.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Humans_oM/BodyParts/Spine.json",
   "title" : "Spine",
   "type" : ["object", "null"],
   "properties" : {
     "TrackingLine" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Line.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Geometry_oM/Line.json"
     },
     "_t" : {
       "type" : ["string", "null"],

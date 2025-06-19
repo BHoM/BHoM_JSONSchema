@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SectionProperties/SteelFabrication.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/SectionProperties/SteelFabrication.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Welded", "HotRolled", "HotFormed", "ColdFormed"]

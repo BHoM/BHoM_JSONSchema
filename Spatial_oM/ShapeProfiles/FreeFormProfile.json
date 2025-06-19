@@ -1,17 +1,17 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/FreeFormProfile.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Spatial_oM/ShapeProfiles/FreeFormProfile.json",
   "title" : "FreeFormProfile",
   "type" : ["object", "null"],
   "description" : "FreeFormProfile: Freeform profile only defined by its geometry without any dimensional data. To be used as a fallback for profiles not yet explicitly defined.",
   "properties" : {
     "Shape" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/ShapeType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Spatial_oM/ShapeProfiles/ShapeType.json"
     },
     "Edges" : {
       "type" : ["array", "null"],
       "description" : "Edge curves defining the section. Should be curves defined in the global XY-plane.\nThis assumes that the outermost curve(s) are solid. Curves inside a solid region are assumed to be openings, and curves within openings are assumed to be solid, etc.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ICurve.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Geometry_oM/ICurve.json"
       }
     },
     "BHoM_Guid" : {
@@ -22,7 +22,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

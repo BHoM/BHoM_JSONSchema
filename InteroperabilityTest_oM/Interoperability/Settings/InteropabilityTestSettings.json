@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/InteroperabilityTest_oM/Interoperability/Settings/InteropabilityTestSettings.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/InteroperabilityTest_oM/Interoperability/Settings/InteropabilityTestSettings.json",
   "title" : "InteropabilityTestSettings",
   "type" : ["object", "null"],
   "description" : "InteropabilityTestSettings: All settings needed to run a PushPullCompare for a specific adapter.",
@@ -38,7 +38,7 @@
       }
     },
     "PushPullConfig" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/InteroperabilityTest_oM/Interoperability/PushPullCompareConfig.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/InteroperabilityTest_oM/Interoperability/PushPullCompareConfig.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -48,7 +48,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

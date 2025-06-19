@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode11.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Physical_oM/Reinforcement/BS8666/ShapeCode11.json",
   "title" : "ShapeCode11",
   "type" : ["object", "null"],
   "description" : "ShapeCode11: A reinforcement bar with shape code 11 to BS 8666:2020 in the XY Plane with the free end of the B segment at the Origin aligned with the X axisand the A segment aligned with the Y axis.",
@@ -28,7 +28,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/UniformLoadSetRecord.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/Loads/UniformLoadSetRecord.json",
   "title" : "UniformLoadSetRecord",
   "type" : ["object", "null"],
   "description" : "UniformLoadSetRecord: Definition of a single uniform load in the gravity direction (-Z), to be added to a UniformLoadSet.",
@@ -9,7 +9,7 @@
       "description" : "Description of the source of this load, such as: 'Partitions', 'Occupancy', or 'MEP & Ceiling'"
     },
     "Loadcase" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/Loadcase.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/Loads/Loadcase.json"
     },
     "Load" : {
       "type" : "number",
@@ -20,7 +20,7 @@
       "format" : "uuid"
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

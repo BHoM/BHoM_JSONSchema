@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EutrophicationTerrestrialFactor.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LifeCycleAssessment_oM/MaterialFragments/EutrophicationTerrestrialFactor.json",
   "title" : "EutrophicationTerrestrialFactor",
   "type" : ["object", "null"],
   "description" : "EutrophicationTerrestrialFactor: Single value indicator for Eutrophication - Terrestrial, measured in mol N eq, refers to the enrichment of ecosystem (such as grasslands) with limiting nutrients.",

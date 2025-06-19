@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/HTTP_oM/GetRequest.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/HTTP_oM/GetRequest.json",
   "title" : "GetRequest",
   "type" : ["object", "null"],
   "properties" : {

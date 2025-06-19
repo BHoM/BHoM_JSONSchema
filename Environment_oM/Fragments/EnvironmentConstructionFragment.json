@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Fragments/EnvironmentConstructionFragment.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/Fragments/EnvironmentConstructionFragment.json",
   "title" : "EnvironmentConstructionFragment",
   "type" : ["object", "null"],
   "description" : "EnvironmentConstructionFragment: Fragment containing the F-factor and additional heat transfer construction property",

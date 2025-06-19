@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/NodeModalMass.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/Results/NodeModalMass.json",
   "title" : "NodeModalMass",
   "type" : ["object", "null"],
   "description" : "NodeModalMass: Modal mass for a Node.",
@@ -31,7 +31,7 @@
       "description" : "Time step for time history results."
     },
     "Orientation" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Basis.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Geometry_oM/Basis.json"
     },
     "_t" : {
       "type" : ["string", "null"],

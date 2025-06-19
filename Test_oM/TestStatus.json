@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Test_oM/TestStatus.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Test_oM/TestStatus.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Error", "Pass", "Warning"]

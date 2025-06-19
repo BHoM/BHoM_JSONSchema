@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/LifeCycleAssessmentScope.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LifeCycleAssessment_oM/LifeCycleAssessmentScope.json",
   "title" : "LifeCycleAssessmentScope",
   "type" : ["object", "null"],
   "description" : "LifeCycleAssessmentScope: The Life Cycle Assessment Scope fragment intends to provide a method of reporting project criteria (name, area, type, location). This object may be used for studies at any stage of development and can serve as a true means of 'apples to apples' comparison when catalogued. The information provided within this object is utilised for database construction and organisation only, therefore all values will not effect the overall life cycle assessment results.",
@@ -29,23 +29,23 @@
       "description" : "The Contact Name denotes the person/people who performed the LCA study."
     },
     "GravityStructuralMaterial" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/GravityStructuralMaterial.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LifeCycleAssessment_oM/GravityStructuralMaterial.json"
     },
     "LateralStructuralMaterial" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/LateralStructuralMaterial.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LifeCycleAssessment_oM/LateralStructuralMaterial.json"
     },
     "LevelOfDevelopment" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/LevelOfDevelopment.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LifeCycleAssessment_oM/LevelOfDevelopment.json"
     },
     "LifeCycleAssessmentPhases" : {
       "type" : ["array", "null"],
       "description" : "This is a list of life cycle assessment phases to be accounted for within this assessment. These values are for categorisation purposes only and will not effect the overall results.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Module.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LifeCycleAssessment_oM/Module.json"
       }
     },
     "ProjectType" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/ProjectType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LifeCycleAssessment_oM/ProjectType.json"
     },
     "ProjectName" : {
       "type" : ["string", "null"],
@@ -56,13 +56,13 @@
       "description" : "The Project Area (m2) denotes the more precise project area which will allow assessment of kgCO2eq/m2 metrics. Property has a quantity of type Area measured in [m²]."
     },
     "SeismicDesignCategory" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/SeismicDesignCategory.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LifeCycleAssessment_oM/SeismicDesignCategory.json"
     },
     "WindSpeedCategory" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/WindSpeedCategory.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LifeCycleAssessment_oM/WindSpeedCategory.json"
     },
     "Location" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Climate/Location.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/Climate/Location.json"
     },
     "_t" : {
       "type" : ["string", "null"],

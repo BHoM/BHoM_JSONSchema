@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Fragments/UValueCavity.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Facade_oM/Fragments/UValueCavity.json",
   "title" : "UValueCavity",
   "type" : ["object", "null"],
   "description" : "UValueCavity: A U-Value representing the effective U-Value of cavity insulation. This does not include derating effects from any frame u-values but should be derated for any thermal bridges not modeled.",

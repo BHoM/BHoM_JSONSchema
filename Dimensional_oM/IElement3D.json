@@ -1,4 +1,4 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Dimensional_oM/IElement3D.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Dimensional_oM/IElement3D.json",
   "required" : ["_t"]
 }

@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/GetMaterialCommand.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LadybugTools_oM/GetMaterialCommand.json",
   "title" : "GetMaterialCommand",
   "type" : ["object", "null"],
   "description" : "GetMaterialCommand: Command that when executed with the LadybugTools Adapter, returns a list of materials from the Python Materials list.",

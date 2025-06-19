@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/OutputAttribute.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/Attributes/OutputAttribute.json",
   "title" : "OutputAttribute",
   "type" : ["object", "null"],
   "description" : "OutputAttribute: Attribute providing information about an output parameter of a method.\nTo be applied to all methods that do not return void nor BH.oM.Base.Output types.",
@@ -13,7 +13,7 @@
       "description" : "Description of the correspondent output parameter."
     },
     "Classification" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/ClassificationAttribute.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/Attributes/ClassificationAttribute.json"
     },
     "TypeId" : { },
     "_t" : {

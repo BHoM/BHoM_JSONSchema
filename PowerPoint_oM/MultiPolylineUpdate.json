@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/PowerPoint_oM/MultiPolylineUpdate.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/PowerPoint_oM/MultiPolylineUpdate.json",
   "title" : "MultiPolylineUpdate",
   "type" : ["object", "null"],
   "description" : "MultiPolylineUpdate: Allows to change the geometry of a shape element.",
@@ -16,7 +16,7 @@
       "type" : ["array", "null"],
       "description" : "Shape to be updated.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/PowerPoint_oM/PolylineData.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/PowerPoint_oM/PolylineData.json"
       }
     },
     "CentreShapes" : {
@@ -43,7 +43,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

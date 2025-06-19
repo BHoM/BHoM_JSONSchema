@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Parameters/RevitPulledParameters.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Revit_oM/Parameters/RevitPulledParameters.json",
   "title" : "RevitPulledParameters",
   "type" : ["object", "null"],
   "description" : "RevitPulledParameters: An entity containing parameters attached to the BHoM object on pull from Revit, when a Revit element was converted to that object.",
@@ -11,7 +11,7 @@
           "type" : ["array", "null"],
           "description" : "Collection of parameters pulled from Revit.",
           "items" : {
-            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Parameters/RevitParameter.json"
+            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Revit_oM/Parameters/RevitParameter.json"
           }
         }
       }
@@ -24,7 +24,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

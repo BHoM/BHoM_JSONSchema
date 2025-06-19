@@ -1,11 +1,11 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/GSA_oM/AnalysisTaskFragment.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/GSA_oM/AnalysisTaskFragment.json",
   "title" : "AnalysisTaskFragment",
   "type" : ["object", "null"],
   "description" : "AnalysisTaskFragment: Fragment to be put on a LoadCombination to help you control the analysis task type to use in GSA and for which stage the combination should be run.",
   "properties" : {
     "AnalysisType" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/GSA_oM/AnalysisType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/GSA_oM/AnalysisType.json"
     },
     "Stage" : {
       "type" : "integer",

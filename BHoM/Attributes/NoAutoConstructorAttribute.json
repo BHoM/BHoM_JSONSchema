@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/NoAutoConstructorAttribute.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/Attributes/NoAutoConstructorAttribute.json",
   "title" : "NoAutoConstructorAttribute",
   "type" : ["object", "null"],
   "description" : "NoAutoConstructorAttribute: Prevents an auto-constructor component to be available in the UI for the targeted class. This means that `Engine.Create` methods will be the only option to generate instances of that class in the UI.",

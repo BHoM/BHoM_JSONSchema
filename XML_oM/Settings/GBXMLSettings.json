@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/Settings/GBXMLSettings.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/XML_oM/Settings/GBXMLSettings.json",
   "title" : "GBXMLSettings",
   "type" : ["object", "null"],
   "properties" : {
@@ -24,10 +24,10 @@
       "description" : "Set to false if you want to append to a file when pushing XML. If set to true then a file will be created. If a file exists, it will be overwritten. Default true"
     },
     "ResultsUnitType" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/Enums/UnitType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/XML_oM/Enums/UnitType.json"
     },
     "ExportDetail" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/Enums/ExportDetail.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/XML_oM/Enums/ExportDetail.json"
     },
     "DistanceTolerance" : {
       "type" : "number",
@@ -46,10 +46,10 @@
       "description" : "Set the tolerance for angle calculations when exporting to XML. Default is set to BH.oM.Geometry.Tolerance.Angle"
     },
     "RoundingSettings" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/GBXML/RoundingSettings.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/XML_oM/GBXML/RoundingSettings.json"
     },
     "UnitSetUp" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/GBXMLUnitSetUp.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/XML_oM/GBXMLUnitSetUp.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -59,7 +59,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

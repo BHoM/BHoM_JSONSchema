@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/ProjectIdentification.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/dKoP_oM/ProjectIdentification.json",
   "title" : "ProjectIdentification",
   "type" : ["object", "null"],
   "properties" : {

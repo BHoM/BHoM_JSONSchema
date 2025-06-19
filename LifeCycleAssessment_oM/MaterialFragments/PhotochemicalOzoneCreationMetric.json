@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/PhotochemicalOzoneCreationMetric.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LifeCycleAssessment_oM/MaterialFragments/PhotochemicalOzoneCreationMetric.json",
   "title" : "PhotochemicalOzoneCreationMetric",
   "type" : ["object", "null"],
   "description" : "PhotochemicalOzoneCreationMetric: Photochemical Ozone Formation, measured in kg NMVOC eq, refers to the formation of ozone at the ground level of the troposphere caused by photochemical oxidation of volatile organic compounds (VOCs) and carbon monoxide in the presence of sunlight. This environmental indicator forms part of an Environmental Product Declaration and should be evaluated based on the Quantity Type stated on the Environmental Product Declaration.",
@@ -180,7 +180,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

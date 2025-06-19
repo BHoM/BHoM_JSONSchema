@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/WindowOpeningType.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/dKoP_oM/WindowOpeningType.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Unknown", "Inward", "TiltAndTurn", "Outward"]

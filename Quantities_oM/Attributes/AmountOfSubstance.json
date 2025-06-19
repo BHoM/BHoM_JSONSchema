@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/AmountOfSubstance.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Quantities_oM/Attributes/AmountOfSubstance.json",
   "title" : "AmountOfSubstance",
   "type" : ["object", "null"],
   "description" : "AmountOfSubstance: Dimensional quantity as defined by the International System of Quantities",

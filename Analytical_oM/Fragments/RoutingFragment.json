@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Analytical_oM/Fragments/RoutingFragment.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Analytical_oM/Fragments/RoutingFragment.json",
   "title" : "RoutingFragment",
   "type" : ["object", "null"],
   "description" : "RoutingFragment: Fragment used in the computation of shortest paths.",

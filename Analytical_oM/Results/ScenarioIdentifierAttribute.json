@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Analytical_oM/Results/ScenarioIdentifierAttribute.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Analytical_oM/Results/ScenarioIdentifierAttribute.json",
   "title" : "ScenarioIdentifierAttribute",
   "type" : ["object", "null"],
   "description" : "ScenarioIdentifierAttribute: Attribute to be assigned to properties of `IResult`-implementing classes. Tagged properties define the scenario in which the result was generated.",

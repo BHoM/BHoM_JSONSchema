@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Units_oM/MassFractionUnit.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Units_oM/MassFractionUnit.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Undefined", "NanogramPerKilogram", "MicrogramPerKilogram", "MilligramPerKilogram", "CentigramPerKilogram", "DecigramPerKilogram", "GramPerKilogram", "KilogramPerKilogram"]

@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/SAPVersionCode.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP_oM/SAP/SAPVersionCode.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["October2005", "January2008", "June2008", "June2009", "March2010", "Jan2012", "Oct2013", "Oct2020"]

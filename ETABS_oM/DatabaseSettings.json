@@ -1,10 +1,10 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/DatabaseSettings.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/ETABS_oM/DatabaseSettings.json",
   "title" : "DatabaseSettings",
   "type" : ["object", "null"],
   "properties" : {
     "SectionDatabase" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/SectionDatabase.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/ETABS_oM/SectionDatabase.json"
     },
     "_t" : {
       "type" : ["string", "null"],

@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/Fragments/PanelAutoMeshByCookieCutLines.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP2000_oM/Fragments/PanelAutoMeshByCookieCutLines.json",
   "title" : "PanelAutoMeshByCookieCutLines",
   "type" : ["object", "null"],
   "description" : "PanelAutoMeshByCookieCutLines: Divide the panel based on lines in the meshing group.",

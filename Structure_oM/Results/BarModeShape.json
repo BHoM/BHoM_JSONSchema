@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/BarModeShape.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/Results/BarModeShape.json",
   "title" : "BarModeShape",
   "type" : ["object", "null"],
   "description" : "BarModeShape: Bar mode shape in global coordinates, normalised to 1.",

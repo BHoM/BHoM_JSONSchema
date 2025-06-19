@@ -1,10 +1,10 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/Overview.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/dKoP_oM/Overview.json",
   "title" : "Overview",
   "type" : ["object", "null"],
   "properties" : {
     "PartName" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/PartName.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/dKoP_oM/PartName.json"
     },
     "PathReference" : {
       "type" : ["string", "null"]
@@ -13,7 +13,7 @@
       "type" : ["string", "null"]
     },
     "DFMACategory" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/DFMACategory.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/dKoP_oM/DFMACategory.json"
     },
     "_t" : {
       "type" : ["string", "null"],

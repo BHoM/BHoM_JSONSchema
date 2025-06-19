@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/SDShapeType.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP2000_oM/SDShapeType.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["ISection", "Channel", "Tee", "Angle", "DoubleAngle", "Box", "Pipe", "Plate", "SolidRectangle", "SolidCircle", "SolidSegment", "SolidSector", "Polygon", "ReinforcingSingle", "ReinforcingLine", "ReinforcingRectangle", "ReinforcingCircle", "ReferenceLine", "ReferenceCircle", "CaltransSquare", "CaltransCircle", "CaltransHexagon", "CaltransOctagon"]

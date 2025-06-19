@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/EmitterType.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/SpaceCriteria/EmitterType.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Undefined", "Cooling", "Heating"]

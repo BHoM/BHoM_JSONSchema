@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/Layouts/LinearLayout.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Spatial_oM/Layouts/LinearLayout.json",
   "title" : "LinearLayout",
   "type" : ["object", "null"],
   "description" : "LinearLayout: Linear distribution of points along a vector from one side of the perimeter of the host object to the other.",
@@ -9,14 +9,14 @@
       "description" : "Number of points along the axis."
     },
     "Direction" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Geometry_oM/Vector.json"
     },
     "Offset" : {
       "type" : "number",
       "description" : "Offset of the linear layout in relation to the reference point, perpendicular to the Direction vector in the XY plane.\nA positive value will mean an offset towards the centre of the boundingbox of the host objects. Property has a quantity of type Length measured in [m]."
     },
     "ReferencePoint" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/Layouts/ReferencePoint.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Spatial_oM/Layouts/ReferencePoint.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -26,7 +26,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

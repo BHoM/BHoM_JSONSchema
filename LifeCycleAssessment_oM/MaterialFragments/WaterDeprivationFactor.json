@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/WaterDeprivationFactor.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LifeCycleAssessment_oM/MaterialFragments/WaterDeprivationFactor.json",
   "title" : "WaterDeprivationFactor",
   "type" : ["object", "null"],
   "description" : "WaterDeprivationFactor: Single value indicator for Water use for a particular product or material.",

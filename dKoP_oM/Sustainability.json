@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/Sustainability.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/dKoP_oM/Sustainability.json",
   "title" : "Sustainability",
   "type" : ["object", "null"],
   "properties" : {
@@ -10,7 +10,7 @@
       "type" : ["string", "null"]
     },
     "EmbodiedCarbon" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/EmbodiedCarbon.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/dKoP_oM/EmbodiedCarbon.json"
     },
     "SustainableSourcingCertification" : {
       "type" : ["string", "null"]

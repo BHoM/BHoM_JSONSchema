@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Ground_oM/ContaminantSample.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Ground_oM/ContaminantSample.json",
   "title" : "ContaminantSample",
   "type" : ["object", "null"],
   "description" : "ContaminantSample: A representation of a contaminant sample defined by the depth of the sample, the chemical code and name based on the AGS schema.",
@@ -40,7 +40,7 @@
       "type" : ["array", "null"],
       "description" : "A list of different properties including references, tests, analysis, results and detection.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Ground_oM/IContaminantProperty.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Ground_oM/IContaminantProperty.json"
       }
     },
     "BHoM_Guid" : {
@@ -51,7 +51,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

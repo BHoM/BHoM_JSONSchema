@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Architecture_oM/Theatron/StadiaType.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Architecture_oM/Theatron/StadiaType.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["EightArc", "Orthogonal", "NoCorners", "Circular", "FourArc", "Undefined"]

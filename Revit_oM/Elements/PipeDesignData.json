@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Elements/PipeDesignData.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Revit_oM/Elements/PipeDesignData.json",
   "title" : "PipeDesignData",
   "type" : ["object", "null"],
   "description" : "PipeDesignData: A wrapper BHoM type for Revit MEPSize, used to create or update Revit MEPSize (on Push) and represent them as BHoMObjects (on Pull).",
@@ -20,7 +20,7 @@
       "type" : ["array", "null"],
       "description" : "All sizes in a design dataset.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Elements/PipeSize.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Revit_oM/Elements/PipeSize.json"
       }
     },
     "_t" : {

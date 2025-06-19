@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Reporting/ValueConditionReportingConfig.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Verification_oM/Reporting/ValueConditionReportingConfig.json",
   "title" : "ValueConditionReportingConfig",
   "type" : ["object", "null"],
   "description" : "ValueConditionReportingConfig: Config object containing settings for reporting results of checks against value conditions.",

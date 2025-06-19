@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Materials/MaterialComposition.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Physical_oM/Materials/MaterialComposition.json",
   "title" : "MaterialComposition",
   "type" : ["object", "null"],
   "description" : "MaterialComposition: Defines the make up of an object through a list of Materials as relative proportions of the total solid volume.\nThere must be the same number of items in both lists, assigning a single Ratio for each Material.",
@@ -11,7 +11,7 @@
           "type" : ["array", "null"],
           "description" : "The Materials that form an object's make up, the order of which corresponds to the order of the Ratios.",
           "items" : {
-            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Materials/Material.json"
+            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Physical_oM/Materials/Material.json"
           }
         }
       }
@@ -36,7 +36,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

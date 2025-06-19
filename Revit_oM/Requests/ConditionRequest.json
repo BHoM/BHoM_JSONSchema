@@ -1,11 +1,11 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Requests/ConditionRequest.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Revit_oM/Requests/ConditionRequest.json",
   "title" : "ConditionRequest",
   "type" : ["object", "null"],
   "description" : "ConditionRequest: IRequest that filters all elements that meet a given condition.",
   "properties" : {
     "Condition" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Conditions/ICondition.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Verification_oM/Conditions/ICondition.json"
     },
     "_t" : {
       "type" : ["string", "null"],

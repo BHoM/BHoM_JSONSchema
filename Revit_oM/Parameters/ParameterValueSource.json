@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Parameters/ParameterValueSource.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Revit_oM/Parameters/ParameterValueSource.json",
   "title" : "ParameterValueSource",
   "type" : ["object", "null"],
   "description" : "ParameterValueSource: Object pointing at a Revit parameter as the source of a value to extract.",

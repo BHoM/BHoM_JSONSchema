@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/ElectricityTariffCode.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP_oM/SAP/ElectricityTariffCode.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["StandardTariff", "OffPeak7Hour", "OffPeak10Hour", "_24Hour", "OffPeak18Hour", "NotApplicable"]

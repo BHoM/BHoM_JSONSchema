@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/Commands/Exit.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Adapter_oM/Commands/Exit.json",
   "title" : "Exit",
   "type" : ["object", "null"],
   "description" : "Exit: Used to instruct the adapter to exit the software. The adapter will generally not be useable after running this command as the link to the software will be broken.",

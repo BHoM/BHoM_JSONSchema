@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/GetTypologyCommand.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LadybugTools_oM/GetTypologyCommand.json",
   "title" : "GetTypologyCommand",
   "type" : ["object", "null"],
   "description" : "GetTypologyCommand: Command that when executed with the LadybugTools Adapter, returns a list of Typology objects from the Python predefined Typologies list.",

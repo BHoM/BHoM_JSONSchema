@@ -1,17 +1,17 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/PlanarSurface.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Geometry_oM/PlanarSurface.json",
   "title" : "PlanarSurface",
   "type" : ["object", "null"],
   "description" : "PlanarSurface: A surface defined by boundary edge curves lying in a common plane. Planarity toleraces default to the BH.oM.Geometry.Tolerace.Distance.",
   "properties" : {
     "ExternalBoundary" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ICurve.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Geometry_oM/ICurve.json"
     },
     "InternalBoundaries" : {
       "type" : ["array", "null"],
       "description" : "List of closed (co)planar curves defining any internal openings in the surface.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ICurve.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Geometry_oM/ICurve.json"
       }
     },
     "_t" : {

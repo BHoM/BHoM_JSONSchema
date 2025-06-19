@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Requests/SelectionRequest.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Data_oM/Requests/SelectionRequest.json",
   "title" : "SelectionRequest",
   "type" : ["object", "null"],
   "description" : "SelectionRequest: IRequest that filters all elements currently selected in the software."

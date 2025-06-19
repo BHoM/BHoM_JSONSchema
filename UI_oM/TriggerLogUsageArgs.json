@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/UI_oM/TriggerLogUsageArgs.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/UI_oM/TriggerLogUsageArgs.json",
   "title" : "TriggerLogUsageArgs",
   "type" : ["object", "null"],
   "properties" : {

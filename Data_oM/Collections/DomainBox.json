@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Collections/DomainBox.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Data_oM/Collections/DomainBox.json",
   "title" : "DomainBox",
   "type" : ["object", "null"],
   "description" : "DomainBox: A multidimensional domain, defined by the minimum and maximum values in each dimension, enclosing a hypercube.",
@@ -8,7 +8,7 @@
       "type" : ["array", "null"],
       "description" : "Array containing the domain for each dimension.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Collections/Domain.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Data_oM/Collections/Domain.json"
       }
     },
     "_t" : {

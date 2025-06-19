@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Python_oM/Enums/PythonVersion.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Python_oM/Enums/PythonVersion.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Undefined", "v3_7", "v3_8", "v3_9", "v3_10", "v3_11"]

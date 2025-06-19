@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/WallIteration.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP_oM/SAP/WallIteration.json",
   "title" : "WallIteration",
   "type" : ["object", "null"],
   "description" : "WallIteration: Describe a single iteration for wall changes within the SAP Context. If values for both UValue and Curtain Wall are provided, both will be applied to the walls specified, i.e. they will not be blended to produce one iteration for the UValue change, one for Curtain Wall change, and one for both.",
@@ -46,7 +46,7 @@
       "format" : "uuid"
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

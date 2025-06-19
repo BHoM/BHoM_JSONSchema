@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/DifferenceType.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Diffing_oM/DifferenceType.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Modified", "Removed", "Added"]

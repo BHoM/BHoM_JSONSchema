@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Enums/BoundCondition.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Revit_oM/Enums/BoundCondition.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Bounded", "Unplaced", "NotEnclosed", "Overlapping", "NoGeometry", "Unknown"]

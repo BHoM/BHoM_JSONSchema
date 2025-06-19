@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Humans_oM/JointName.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Humans_oM/JointName.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Head", "SpineShoulder", "RightShoulder", "LeftShoulder", "Neck", "ElbowRight", "ElbowLeft", "RightHand", "LeftHand", "HandTipRight", "HandTipLeft", "RightThumb", "LeftThumb", "WristRight", "WristLeft", "SpineMid", "SpineBase", "RightHip", "LeftHip", "KneeRight", "KneeLeft", "AnkleRight", "AnkleLeft", "RightFoot", "LeftFoot"]

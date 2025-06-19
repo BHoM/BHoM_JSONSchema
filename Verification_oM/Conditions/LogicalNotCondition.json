@@ -1,11 +1,11 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Conditions/LogicalNotCondition.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Verification_oM/Conditions/LogicalNotCondition.json",
   "title" : "LogicalNotCondition",
   "type" : ["object", "null"],
   "description" : "LogicalNotCondition: Condition that contains a nested condition that it inverses, i.e. the nested condition needs to fail for an object to be considered a pass.",
   "properties" : {
     "Condition" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Conditions/ICondition.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Verification_oM/Conditions/ICondition.json"
     },
     "_t" : {
       "type" : ["string", "null"],

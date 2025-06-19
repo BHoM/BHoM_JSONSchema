@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Reflection/Property.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/Reflection/Property.json",
   "title" : "Property",
   "type" : ["object", "null"],
   "description" : "Property: Metadata related to a C# property",

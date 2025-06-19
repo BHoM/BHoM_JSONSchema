@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Elements/Offset.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Physical_oM/Elements/Offset.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Undefined", "Centre", "InnerEdge", "OuterEdge"]

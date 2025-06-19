@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Enums/ServiceClassification.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/MEP_oM/Enums/ServiceClassification.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Undefined", "CableTrays", "Conduits", "Ductwork", "Piping"]

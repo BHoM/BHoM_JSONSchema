@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/EutrophicationTerrestrial.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Quantities_oM/Attributes/EutrophicationTerrestrial.json",
   "title" : "EutrophicationTerrestrial",
   "type" : ["object", "null"],
   "description" : "EutrophicationTerrestrial: Quantity type for Eutrophication Potential Terrestrial.",

@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Requests/FilterByVisibleInActiveView.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Revit_oM/Requests/FilterByVisibleInActiveView.json",
   "title" : "FilterByVisibleInActiveView",
   "type" : ["object", "null"],
   "description" : "FilterByVisibleInActiveView: IRequest that filters elements visible in active view of the host Revit document. Combine with FilterByLink to query linked documents for elements visible in active view of the host document."

@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Excel_oM/ObjectRequest.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Excel_oM/ObjectRequest.json",
   "title" : "ObjectRequest",
   "type" : ["object", "null"],
   "description" : "ObjectRequest: IRequest that pulls cells and their metadata from the excel file.",
@@ -9,7 +9,7 @@
       "description" : "Name of the worksheet to read from."
     },
     "Range" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Excel_oM/CellRange.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Excel_oM/CellRange.json"
     },
     "ObjectType" : {
       "type" : ["object", "null"],

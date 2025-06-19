@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Debugging/EventType.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/Debugging/EventType.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Unknown", "Error", "Warning", "Note"]

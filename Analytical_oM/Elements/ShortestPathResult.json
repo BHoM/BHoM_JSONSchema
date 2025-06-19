@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Analytical_oM/Elements/ShortestPathResult.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Analytical_oM/Elements/ShortestPathResult.json",
   "title" : "ShortestPathResult",
   "type" : ["object", "null"],
   "description" : "ShortestPathResult: Results associated with the computation of shortest paths.",
@@ -18,14 +18,14 @@
       "type" : ["array", "null"],
       "description" : "Shortest path as an ordered collection of entities.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/IBHoMObject.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/IBHoMObject.json"
       }
     },
     "Curves" : {
       "type" : ["array", "null"],
       "description" : "Shortest path as an ordered collection of ICurves.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ICurve.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Geometry_oM/ICurve.json"
       }
     },
     "Length" : {
@@ -40,14 +40,14 @@
       "type" : ["array", "null"],
       "description" : "All entities visited in searching for the path.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/IBHoMObject.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/IBHoMObject.json"
       }
     },
     "Relations" : {
       "type" : ["array", "null"],
       "description" : "Shortest path as an ordered collection of IRelations.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Analytical_oM/Graph/IRelation.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Analytical_oM/Graph/IRelation.json"
       }
     },
     "_t" : {

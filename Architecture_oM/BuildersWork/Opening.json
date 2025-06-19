@@ -1,18 +1,18 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Architecture_oM/BuildersWork/Opening.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Architecture_oM/BuildersWork/Opening.json",
   "title" : "Opening",
   "type" : ["object", "null"],
   "description" : "Opening: Object representing a builders work opening as an entity independent of its host.",
   "properties" : {
     "Profile" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/IProfile.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Spatial_oM/ShapeProfiles/IProfile.json"
     },
     "Depth" : {
       "type" : "number",
       "description" : "Total depth of the opening, distributed equally from the origin in both directions along the local z axis. Property has a quantity of type Length measured in [m]."
     },
     "CoordinateSystem" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/CoordinateSystem/Cartesian.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Geometry_oM/CoordinateSystem/Cartesian.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -22,7 +22,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/PowerPoint_oM/SlideCreate.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/PowerPoint_oM/SlideCreate.json",
   "title" : "SlideCreate",
   "type" : ["object", "null"],
   "description" : "SlideCreate: Use with a push action to create a new slide from a slide layout in the first slide master template, at the position provided.",
@@ -20,7 +20,7 @@
       "type" : ["array", "null"],
       "description" : "The slide updates to be applied to the created slide. Any set slide numbers will b",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/PowerPoint_oM/ISlideUpdate.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/PowerPoint_oM/ISlideUpdate.json"
       }
     },
     "BHoM_Guid" : {
@@ -31,7 +31,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

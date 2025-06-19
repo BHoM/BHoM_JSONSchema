@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/SectionProperties/FrameEdgeProperty.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Facade_oM/SectionProperties/FrameEdgeProperty.json",
   "title" : "FrameEdgeProperty",
   "type" : ["object", "null"],
   "description" : "FrameEdgeProperty: Frame edge (eg mullion, window jamb, curtain wall sill, etc) property with list of Profile Section properties that make up the mullion construction.",
@@ -8,7 +8,7 @@
       "type" : ["array", "null"],
       "description" : "Collection of profiles that make up the mullion, each containing section geometry and a material.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/FramingProperties/ConstantFramingProperty.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Physical_oM/FramingProperties/ConstantFramingProperty.json"
       }
     },
     "BHoM_Guid" : {
@@ -19,7 +19,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

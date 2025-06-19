@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/BarStress.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/Results/BarStress.json",
   "title" : "BarStress",
   "type" : ["object", "null"],
   "description" : "BarStress: Resulting stresses in local coordinates along the bar.",

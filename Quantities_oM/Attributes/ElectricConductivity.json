@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/ElectricConductivity.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Quantities_oM/Attributes/ElectricConductivity.json",
   "title" : "ElectricConductivity",
   "type" : ["object", "null"],
   "description" : "ElectricConductivity: Dimensional quantity as defined by the International System of Quantities",

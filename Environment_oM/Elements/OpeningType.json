@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Elements/OpeningType.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/Elements/OpeningType.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Undefined", "CurtainWall", "Door", "Frame", "Glazing", "Hole", "Rooflight", "RooflightWithFrame", "Window", "WindowWithFrame", "VehicleDoor"]

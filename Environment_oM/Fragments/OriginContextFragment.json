@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Fragments/OriginContextFragment.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/Fragments/OriginContextFragment.json",
   "title" : "OriginContextFragment",
   "type" : ["object", "null"],
   "description" : "OriginContextFragment: Fragment containing the origin context property such as Element ID or Type",

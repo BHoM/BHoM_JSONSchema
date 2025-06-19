@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/RevitHostFragment.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Revit_oM/RevitHostFragment.json",
   "title" : "RevitHostFragment",
   "type" : ["object", "null"],
   "description" : "RevitHostFragment: Fragment containing the information about the Revit element that hosts the Revit element correspondent to the BHoM object that carries this.",

@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Ground_oM/Borehole.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Ground_oM/Borehole.json",
   "title" : "Borehole",
   "type" : ["object", "null"],
   "description" : "Borehole: A representation of a borehole defined by a coordinate system, start point and end point based on the AGS schema.",
@@ -9,40 +9,40 @@
       "description" : "Location identifier for the borehole unique to the project (LOCA_ID)."
     },
     "Top" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Geometry_oM/Point.json"
     },
     "Bottom" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Geometry_oM/Point.json"
     },
     "CoordinateSystem" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/CoordinateSystem/Cartesian.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Geometry_oM/CoordinateSystem/Cartesian.json"
     },
     "Strata" : {
       "type" : ["array", "null"],
       "description" : "A list of objects containing the strata found within the borehole, based on the GEOL table.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Ground_oM/Stratum.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Ground_oM/Stratum.json"
       }
     },
     "ContaminantSamples" : {
       "type" : ["array", "null"],
       "description" : "A list of objects containing the contaminant samples found within the borehole, based on the ERES table.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Ground_oM/ContaminantSample.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Ground_oM/ContaminantSample.json"
       }
     },
     "GeotechnicalTestResults" : {
       "type" : ["array", "null"],
       "description" : "A list of objects containing the geotechnical results found within the borehole.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Ground_oM/ITest.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Ground_oM/ITest.json"
       }
     },
     "BoreholeProperties" : {
       "type" : ["array", "null"],
       "description" : "A list of properties related to the borehole.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Ground_oM/IBoreholeProperty.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Ground_oM/IBoreholeProperty.json"
       }
     },
     "BHoM_Guid" : {
@@ -53,7 +53,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

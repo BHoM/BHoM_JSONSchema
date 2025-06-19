@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MidasCivil_oM/TemperatureUnit.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/MidasCivil_oM/TemperatureUnit.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["C", "F"]

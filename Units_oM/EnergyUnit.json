@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Units_oM/EnergyUnit.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Units_oM/EnergyUnit.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Undefined", "BritishThermalUnit", "Joule", "KiloBritishThermalUnit", "Kilojoule", "KilowattHour", "MegaBritishThermalUnit", "Megajoule", "MegawattHour", "WattHour"]

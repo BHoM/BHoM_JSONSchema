@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Architecture_oM/Theatron/SeatingBlockType.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Architecture_oM/Theatron/SeatingBlockType.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Side", "End", "Corner", "Transition1", "Transition2", "CornerNoVom", "Transition1mirrored", "Transition2mirrored", "Undefined"]

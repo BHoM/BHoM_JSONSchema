@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/Fragments/PanelOffsetByJointPattern.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP2000_oM/Fragments/PanelOffsetByJointPattern.json",
   "title" : "PanelOffsetByJointPattern",
   "type" : ["object", "null"],
   "properties" : {

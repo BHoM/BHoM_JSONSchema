@@ -1,11 +1,11 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Materials/TakeoffItem.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Physical_oM/Materials/TakeoffItem.json",
   "title" : "TakeoffItem",
   "type" : ["object", "null"],
   "description" : "TakeoffItem: Class storing takeoff values of relevant quantities corresponding to a particular material.",
   "properties" : {
     "Material" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Materials/Material.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Physical_oM/Materials/Material.json"
     },
     "Volume" : {
       "type" : "number",

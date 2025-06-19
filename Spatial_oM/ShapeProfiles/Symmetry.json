@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/Symmetry.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Spatial_oM/ShapeProfiles/Symmetry.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Asymmetric", "SingleSymmetricMajor", "SinglySymmetricMinor", "DoublySymmetric"]

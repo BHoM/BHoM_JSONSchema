@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Excel_oM/ExcelPushConfig.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Excel_oM/ExcelPushConfig.json",
   "title" : "ExcelPushConfig",
   "type" : ["object", "null"],
   "description" : "ExcelPushConfig: Configuration used for adapter interaction with Excel on Push action.",
@@ -9,7 +9,7 @@
       "description" : "Name of the worksheet to write to."
     },
     "StartingCell" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Excel_oM/CellAddress.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Excel_oM/CellAddress.json"
     },
     "ObjectProperties" : {
       "type" : ["array", "null"],
@@ -38,7 +38,7 @@
       "description" : "If true, the property names will be shown as the first row (or column if transposed)"
     },
     "WorkbookProperties" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Excel_oM/WorkbookProperties.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Excel_oM/WorkbookProperties.json"
     },
     "WrapNonBHoMObjects" : {
       "type" : "boolean",
@@ -49,7 +49,7 @@
       "description" : "If true and if no specific EqualityComparer is found for the type, Diffing hashes are computed and used to compare the objects."
     },
     "DiffingConfig" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/DiffingConfig.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Diffing_oM/DiffingConfig.json"
     },
     "_t" : {
       "type" : ["string", "null"],

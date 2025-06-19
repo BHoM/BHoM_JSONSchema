@@ -1,17 +1,17 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/GSA_oM/GSAConfig.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/GSA_oM/GSAConfig.json",
   "title" : "GSAConfig",
   "type" : ["object", "null"],
   "description" : "GSAConfig: Configurations specific for an Adapter Action (Push, Pull, etc).\nConsider that your tookit might have a more specific implementation available. Try to look for [your toolkit name]ActionConfig.",
   "properties" : {
     "SteelDesign" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/GSA_oM/SteelDesignSpecification.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/GSA_oM/SteelDesignSpecification.json"
     },
     "ConcreteDesign" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/GSA_oM/ConcreteDesignSpecification.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/GSA_oM/ConcreteDesignSpecification.json"
     },
     "Country" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/GSA_oM/Country.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/GSA_oM/Country.json"
     },
     "WrapNonBHoMObjects" : {
       "type" : "boolean",
@@ -22,7 +22,7 @@
       "description" : "If true and if no specific EqualityComparer is found for the type, Diffing hashes are computed and used to compare the objects."
     },
     "DiffingConfig" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/DiffingConfig.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Diffing_oM/DiffingConfig.json"
     },
     "_t" : {
       "type" : ["string", "null"],

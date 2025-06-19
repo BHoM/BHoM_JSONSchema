@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/InputAttribute.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/Attributes/InputAttribute.json",
   "title" : "InputAttribute",
   "type" : ["object", "null"],
   "description" : "InputAttribute: Attribute providing information about an input parameter of a method.",
@@ -13,10 +13,10 @@
       "description" : "Description of the correspondent input parameter."
     },
     "Classification" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/ClassificationAttribute.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/Attributes/ClassificationAttribute.json"
     },
     "Exposure" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/Enums/UIExposure.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/Attributes/Enums/UIExposure.json"
     },
     "TypeId" : { },
     "_t" : {

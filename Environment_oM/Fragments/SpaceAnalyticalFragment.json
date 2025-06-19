@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Fragments/SpaceAnalyticalFragment.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/Fragments/SpaceAnalyticalFragment.json",
   "title" : "SpaceAnalyticalFragment",
   "type" : ["object", "null"],
   "description" : "SpaceAnalyticalFragment: Fragment containing space analytical properties (e.g. domestic hot water supply, daylight factor, heating and cooling sizing method)",
@@ -19,10 +19,10 @@
       "type" : "number"
     },
     "SizeCoolingMethod" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Fragments/SizingMethod.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/Fragments/SizingMethod.json"
     },
     "SizeHeatingMethod" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Fragments/SizingMethod.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/Fragments/SizingMethod.json"
     },
     "RadiantProportion" : {
       "type" : "number"

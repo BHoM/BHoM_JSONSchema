@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/Fragments/PanelAutoMeshByPointsOnEdges.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP2000_oM/Fragments/PanelAutoMeshByPointsOnEdges.json",
   "title" : "PanelAutoMeshByPointsOnEdges",
   "type" : ["object", "null"],
   "description" : "PanelAutoMeshByPointsOnEdges: Divide the panel based on points coincident with the panel edges.",

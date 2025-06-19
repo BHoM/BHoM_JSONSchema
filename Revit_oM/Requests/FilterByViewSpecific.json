@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Requests/FilterByViewSpecific.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Revit_oM/Requests/FilterByViewSpecific.json",
   "title" : "FilterByViewSpecific",
   "type" : ["object", "null"],
   "description" : "FilterByViewSpecific: IRequest that filters elements specific to (owned by) a given view in Revit.",

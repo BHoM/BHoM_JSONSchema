@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/PhotochemicalOzoneCreationTRACIFactor.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LifeCycleAssessment_oM/MaterialFragments/PhotochemicalOzoneCreationTRACIFactor.json",
   "title" : "PhotochemicalOzoneCreationTRACIFactor",
   "type" : ["object", "null"],
   "description" : "PhotochemicalOzoneCreationTRACIFactor: Single value indicator for Photochemical Ozone Creation as defined by the TRACI standard for a particular product or material.",

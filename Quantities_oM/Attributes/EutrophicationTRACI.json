@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/EutrophicationTRACI.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Quantities_oM/Attributes/EutrophicationTRACI.json",
   "title" : "EutrophicationTRACI",
   "type" : ["object", "null"],
   "description" : "EutrophicationTRACI: Quantity type for Eutrophication Potential for version 1 of list of indicators as defined in North American standards.",

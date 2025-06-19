@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Test_oM/Results/InputOutputComparisonDiffingType.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Test_oM/Results/InputOutputComparisonDiffingType.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Undefined", "DataOnlyAvailableInReference", "Deterioration", "Difference", "Equal", "Improvement", "InputDataChanged", "IntroducedDifference", "IntroducedException", "NoAvailableReferenceSet", "RemovedDifference", "RemovedException"]

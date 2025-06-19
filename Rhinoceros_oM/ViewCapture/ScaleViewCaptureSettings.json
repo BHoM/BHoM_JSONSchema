@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Rhinoceros_oM/ViewCapture/ScaleViewCaptureSettings.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Rhinoceros_oM/ViewCapture/ScaleViewCaptureSettings.json",
   "title" : "ScaleViewCaptureSettings",
   "type" : ["object", "null"],
   "description" : "ScaleViewCaptureSettings: View capture settings allowing the size of the image to be controled as a scale of the current viewport size.",

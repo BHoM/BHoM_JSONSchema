@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Attributes/CategoryDisciplineAttribute.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Revit_oM/Attributes/CategoryDisciplineAttribute.json",
   "title" : "CategoryDisciplineAttribute",
   "type" : ["object", "null"],
   "description" : "CategoryDisciplineAttribute: Attribute that defines disciplines, to which a category belongs as defined in Visibility & Graphics window.\nAllowed values of Disciplines property are: 'Architecture', 'Structure', 'Mechanical', 'Electrical', 'Piping' and 'Infrastructure'.\nEach category added to Category needs to have CategoryDisciplineAttribute assigned to be successfully reflected.",

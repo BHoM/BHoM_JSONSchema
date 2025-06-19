@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Serialiser_oM/JsonSchema/SchemaType.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Serialiser_oM/JsonSchema/SchemaType.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["array", "boolean", "integer", "number", "null", "object", "string"]

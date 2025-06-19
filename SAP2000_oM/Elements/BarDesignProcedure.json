@@ -1,10 +1,10 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/Elements/BarDesignProcedure.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP2000_oM/Elements/BarDesignProcedure.json",
   "title" : "BarDesignProcedure",
   "type" : ["object", "null"],
   "properties" : {
     "DesignProcedure" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/BarDesignProcedureType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP2000_oM/BarDesignProcedureType.json"
     },
     "_t" : {
       "type" : ["string", "null"],

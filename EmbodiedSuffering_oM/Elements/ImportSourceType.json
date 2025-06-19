@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/EmbodiedSuffering_oM/Elements/ImportSourceType.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/EmbodiedSuffering_oM/Elements/ImportSourceType.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Undefined", "ByCost", "ByMass"]

@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/RequiredAttribute.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/Attributes/RequiredAttribute.json",
   "title" : "RequiredAttribute",
   "type" : ["object", "null"],
   "description" : "RequiredAttribute: Marks a property as mandatory input when creating an instance of its containing class.",

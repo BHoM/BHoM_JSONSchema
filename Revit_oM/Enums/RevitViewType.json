@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Enums/RevitViewType.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Revit_oM/Enums/RevitViewType.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Undefined", "FloorPlan", "CeilingPlan", "Elevation", "ThreeD", "Schedule", "DrawingSheet", "ProjectBrowser", "Report", "DraftingView", "Legend", "SystemBrowser", "EngineeringPlan", "AreaPlan", "Section", "Detail", "CostReport", "LoadsReport", "PresureLossReport", "ColumnSchedule", "PanelSchedule", "Walkthrough", "Rendering", "SystemsAnalysisReport", "Internal"]

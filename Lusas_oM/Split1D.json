@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Lusas_oM/Split1D.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Lusas_oM/Split1D.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Divisions", "Length", "Automatic"]

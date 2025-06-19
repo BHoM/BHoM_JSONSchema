@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/DefaultValueWarningAttribute.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/Attributes/DefaultValueWarningAttribute.json",
   "title" : "DefaultValueWarningAttribute",
   "type" : ["object", "null"],
   "description" : "DefaultValueWarningAttribute: Warning to be generated when an instance of the containing class is generated with this property set to its default value.",

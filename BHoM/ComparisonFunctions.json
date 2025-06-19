@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/ComparisonFunctions.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/ComparisonFunctions.json",
   "title" : "ComparisonFunctions",
   "type" : ["object", "null"],
   "description" : "ComparisonFunctions: Additional functions that can be specified as delegates and that will be executed while determining the uniqueness of an object, i.e. when comparing and when computing the object Hash.",

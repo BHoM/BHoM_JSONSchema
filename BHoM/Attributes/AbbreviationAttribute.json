@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/AbbreviationAttribute.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/Attributes/AbbreviationAttribute.json",
   "title" : "AbbreviationAttribute",
   "type" : ["object", "null"],
   "properties" : {

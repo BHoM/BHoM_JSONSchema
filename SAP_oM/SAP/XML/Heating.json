@@ -1,10 +1,10 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/Heating.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP_oM/SAP/XML/Heating.json",
   "title" : "Heating",
   "type" : ["object", "null"],
   "properties" : {
     "MainHeatingDetails" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/MainHeatingDetails.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP_oM/SAP/XML/MainHeatingDetails.json"
     },
     "SecondaryHeatingCategory" : {
       "type" : ["string", "null"],
@@ -291,7 +291,7 @@
       "description" : "."
     },
     "CommunityHeatingSystems" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/CommunityHeatingSystems.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP_oM/SAP/XML/CommunityHeatingSystems.json"
     },
     "HeatingDesignWaterUse" : {
       "type" : ["string", "null"],
@@ -302,13 +302,13 @@
       "description" : "."
     },
     "SecondaryHeatingDeclaredValues" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/HeatingDeclaredValues.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP_oM/SAP/XML/HeatingDeclaredValues.json"
     },
     "SolarHeatingDetails" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/SolarHeatingDetails.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP_oM/SAP/XML/SolarHeatingDetails.json"
     },
     "StorageWHRS" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/StorageWWHRS.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP_oM/SAP/XML/StorageWWHRS.json"
     },
     "HasFixedAirConditioning" : {
       "type" : ["object", "null"],
@@ -329,7 +329,7 @@
       "required" : ["HasValue", "Value"]
     },
     "ShowerOutlets" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/ShowerOutlets.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP_oM/SAP/XML/ShowerOutlets.json"
     },
     "NumberBaths" : {
       "type" : ["string", "null"],
@@ -340,7 +340,7 @@
       "description" : "."
     },
     "InstantaneousWHRS" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/InstantaneousWWHRS.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP_oM/SAP/XML/InstantaneousWWHRS.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -350,7 +350,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

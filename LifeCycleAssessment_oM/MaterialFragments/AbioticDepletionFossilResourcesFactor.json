@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/AbioticDepletionFossilResourcesFactor.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LifeCycleAssessment_oM/MaterialFragments/AbioticDepletionFossilResourcesFactor.json",
   "title" : "AbioticDepletionFossilResourcesFactor",
   "type" : ["object", "null"],
   "description" : "AbioticDepletionFossilResourcesFactor: Single value indicator for Abiotic Depletion of Fossil Resources, measured in Joules (J), refers to the over-extraction of non-renewable materials which can lead to the exhaustion of natural resources.",

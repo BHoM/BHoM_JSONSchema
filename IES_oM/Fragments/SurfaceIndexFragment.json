@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/IES_oM/Fragments/SurfaceIndexFragment.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/IES_oM/Fragments/SurfaceIndexFragment.json",
   "title" : "SurfaceIndexFragment",
   "type" : ["object", "null"],
   "description" : "SurfaceIndexFragment: Fragment containing the surface index from IES",

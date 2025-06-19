@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/ProfileCategory.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/SpaceCriteria/ProfileCategory.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Undefined", "Gain", "Humidistat", "Thermostat"]

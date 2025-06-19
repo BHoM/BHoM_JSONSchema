@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/GSA_oM/ConcreteDesignSpecification.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/GSA_oM/ConcreteDesignSpecification.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Eurocode1992", "ACI"]

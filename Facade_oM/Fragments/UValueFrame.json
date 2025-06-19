@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Fragments/UValueFrame.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Facade_oM/Fragments/UValueFrame.json",
   "title" : "UValueFrame",
   "type" : ["object", "null"],
   "description" : "UValueFrame: A U-Value representing the effective U-Value of a frame.",

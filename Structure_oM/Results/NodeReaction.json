@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/NodeReaction.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/Results/NodeReaction.json",
   "title" : "NodeReaction",
   "type" : ["object", "null"],
   "description" : "NodeReaction: Resulting reaction forces and moments for a Node.",
@@ -43,7 +43,7 @@
       "description" : "Time step for time history results."
     },
     "Orientation" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Basis.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Geometry_oM/Basis.json"
     },
     "_t" : {
       "type" : ["string", "null"],

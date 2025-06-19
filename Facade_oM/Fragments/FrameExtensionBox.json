@@ -1,11 +1,11 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Fragments/FrameExtensionBox.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Facade_oM/Fragments/FrameExtensionBox.json",
   "title" : "FrameExtensionBox",
   "type" : ["object", "null"],
   "description" : "FrameExtensionBox: Fragment containing a curve enclosing the portion of a mullion cross section that will be extruded by Facade_Engine method that changes mullion profile depth.",
   "properties" : {
     "BoundingBoxCurve" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ICurve.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Geometry_oM/ICurve.json"
     },
     "_t" : {
       "type" : ["string", "null"],

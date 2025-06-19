@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Fragments/SurfacePropertyModifier.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/Fragments/SurfacePropertyModifier.json",
   "title" : "SurfacePropertyModifier",
   "type" : ["object", "null"],
   "description" : "SurfacePropertyModifier: Sets modifiers to a SurfaceProperty. The modifiers are used to scale one or more of the property constants for analysis. Constants are multiplied with the modifiers, hence a modifier value of 1 means no change.",

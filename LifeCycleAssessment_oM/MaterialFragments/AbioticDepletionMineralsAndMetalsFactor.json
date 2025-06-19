@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/AbioticDepletionMineralsAndMetalsFactor.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LifeCycleAssessment_oM/MaterialFragments/AbioticDepletionMineralsAndMetalsFactor.json",
   "title" : "AbioticDepletionMineralsAndMetalsFactor",
   "type" : ["object", "null"],
   "description" : "AbioticDepletionMineralsAndMetalsFactor: Single value indicator for Abiotic Depletion of Minerals and Metals, measured in Antimony (Sb), refers to the over-extraction of non-renewable materials which can lead to the exhaustion of natural (non-fossil) resources.",

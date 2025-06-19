@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/CHPElectricityGenerationCode.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP_oM/SAP/CHPElectricityGenerationCode.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["NewCHPExportOnly", "NewCHPFlexibleOperation", "NewCHPStandard", "ExistingCHP2015ExportOnly", "ExistingCHP2015FlexibleOperation", "ExistingCHP2015Standard", "ExistingCHPPre2015ExportOnly", "ExistingCHPPre2015FlexibleOperation", "ExistingCHPPre2015Standard"]

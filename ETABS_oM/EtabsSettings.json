@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/EtabsSettings.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/ETABS_oM/EtabsSettings.json",
   "title" : "EtabsSettings",
   "type" : ["object", "null"],
   "properties" : {
@@ -8,7 +8,7 @@
       "description" : "Sets whether the loads being pushed should overwrite existing loads on the same object within the same loadcase"
     },
     "DatabaseSettings" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/DatabaseSettings.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/ETABS_oM/DatabaseSettings.json"
     },
     "_t" : {
       "type" : ["string", "null"],

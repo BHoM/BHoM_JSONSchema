@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/ClimateChange.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Quantities_oM/Attributes/ClimateChange.json",
   "title" : "ClimateChange",
   "type" : ["object", "null"],
   "description" : "ClimateChange: Quantity type for global warming potential.",

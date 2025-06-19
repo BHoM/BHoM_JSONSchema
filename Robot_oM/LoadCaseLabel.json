@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Robot_oM/LoadCaseLabel.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Robot_oM/LoadCaseLabel.json",
   "title" : "LoadCaseLabel",
   "type" : ["object", "null"],
   "properties" : {

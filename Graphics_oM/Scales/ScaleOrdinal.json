@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/Scales/ScaleOrdinal.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Graphics_oM/Scales/ScaleOrdinal.json",
   "title" : "ScaleOrdinal",
   "type" : ["object", "null"],
   "description" : "ScaleOrdinal: Scale for mapping from a discrete input domain to a discrete output range.",

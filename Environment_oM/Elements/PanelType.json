@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Elements/PanelType.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Environment_oM/Elements/PanelType.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Undefined", "Adiabatic", "Air", "Ceiling", "CurtainWall", "Floor", "FloorExposed", "FloorInternal", "FloorRaised", "Roof", "Shade", "SlabOnGrade", "SolarPanel", "TranslucentShade", "UndergroundCeiling", "UndergroundSlab", "UndergroundWall", "Wall", "WallExternal", "WallInternal"]

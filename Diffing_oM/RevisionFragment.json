@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/RevisionFragment.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Diffing_oM/RevisionFragment.json",
   "title" : "RevisionFragment",
   "type" : ["object", "null"],
   "description" : "RevisionFragment: Stores the current and previous Hash of the parent BHoMObject, as assigned after the inclusion in a Revision.",

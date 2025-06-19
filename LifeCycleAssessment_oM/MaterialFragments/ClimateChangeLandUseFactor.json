@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/ClimateChangeLandUseFactor.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LifeCycleAssessment_oM/MaterialFragments/ClimateChangeLandUseFactor.json",
   "title" : "ClimateChangeLandUseFactor",
   "type" : ["object", "null"],
   "description" : "ClimateChangeLandUseFactor: Single value indicator for Climate Change - Land Use and Land Use Change, measured in kg CO2 eq (Carbon Dioxide equivalent, also referred to as embodied carbon), refers to the exploitation of land and its resources, which contributes to global warming.",

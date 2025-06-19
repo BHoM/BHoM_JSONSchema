@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/EutrophicationAquaticMarinePerQuantity.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Quantities_oM/Attributes/EutrophicationAquaticMarinePerQuantity.json",
   "title" : "EutrophicationAquaticMarinePerQuantity",
   "type" : ["object", "null"],
   "description" : "EutrophicationAquaticMarinePerQuantity: Quantity type for Eutrophication Potential Aquatic FreshWater per quantity.",

@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/RAM_oM/RAMDeckData.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/RAM_oM/RAMDeckData.json",
   "title" : "RAMDeckData",
   "type" : ["object", "null"],
   "properties" : {

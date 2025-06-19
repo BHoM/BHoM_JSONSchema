@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/AbioticDepletionMineralsAndMetalsPerQuantity.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Quantities_oM/Attributes/AbioticDepletionMineralsAndMetalsPerQuantity.json",
   "title" : "AbioticDepletionMineralsAndMetalsPerQuantity",
   "type" : ["object", "null"],
   "description" : "AbioticDepletionMineralsAndMetalsPerQuantity: Quantity type for Abiotic depletion potential (ADP) for minerals and metals (non-fossil resources) per quantity.",

@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/GSA_oM/SpacerLengthType.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/GSA_oM/SpacerLengthType.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Proportional", "Ratio", "Projected_ratio_xy", "Projected_ratio_xx"]

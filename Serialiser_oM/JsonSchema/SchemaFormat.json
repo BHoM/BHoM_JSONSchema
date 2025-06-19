@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Serialiser_oM/JsonSchema/SchemaFormat.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Serialiser_oM/JsonSchema/SchemaFormat.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["date", "date_time", "duration", "regex", "uuid"]

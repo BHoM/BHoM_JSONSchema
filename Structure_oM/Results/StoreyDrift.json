@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/StoreyDrift.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/Results/StoreyDrift.json",
   "title" : "StoreyDrift",
   "type" : ["object", "null"],
   "description" : "StoreyDrift: The relative lateral displacement between consecutive floors.",
@@ -9,7 +9,7 @@
       "description" : "Storey name."
     },
     "Direction" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Geometry_oM/Vector.json"
     },
     "Ratio" : {
       "type" : "number",

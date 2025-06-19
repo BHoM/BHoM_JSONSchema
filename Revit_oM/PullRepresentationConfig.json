@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/PullRepresentationConfig.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Revit_oM/PullRepresentationConfig.json",
   "title" : "PullRepresentationConfig",
   "type" : ["object", "null"],
   "description" : "PullRepresentationConfig: Configuration used to specify representation to be pulled and passed to RevitRepresentation fragment.",
@@ -9,7 +9,7 @@
       "description" : "If true, representation of elements will be pulled and stored under RenderMesh in RevitRepresentation fragment."
     },
     "DetailLevel" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Enums/DetailLevel.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Revit_oM/Enums/DetailLevel.json"
     },
     "IncludeNonVisible" : {
       "type" : "boolean",

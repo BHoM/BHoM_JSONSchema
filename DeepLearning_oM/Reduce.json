@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/DeepLearning_oM/Reduce.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/DeepLearning_oM/Reduce.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["No", "Mean", "Sum"]

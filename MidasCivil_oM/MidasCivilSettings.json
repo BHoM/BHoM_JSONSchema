@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MidasCivil_oM/MidasCivilSettings.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/MidasCivil_oM/MidasCivilSettings.json",
   "title" : "MidasCivilSettings",
   "type" : ["object", "null"],
   "description" : "MidasCivilSettings: General settings for any Adapter, to be specified when instantiating the Adapter.Implement this class to make your own Toolkit settings, e.g. SpeckleAdapterSettings.",
@@ -17,14 +17,14 @@
       "description" : "If your Toolkit needs support for non-BHoM objects, set this to true."
     },
     "DefaultPushType" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/PushType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Adapter_oM/PushType.json"
     },
     "CloneBeforePush" : {
       "type" : "boolean",
       "description" : "Deep clones the objects before Pushing them.As the objects get modified during the Push (e.g. their externalId is added to them),this avoids backpropagation in visual programming environments like Grasshopper."
     },
     "DefaultPullType" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/PullType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Adapter_oM/PullType.json"
     },
     "HandleDependencies" : {
       "type" : "boolean",

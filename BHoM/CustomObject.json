@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/CustomObject.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/CustomObject.json",
   "title" : "CustomObject",
   "type" : ["object", "null"],
   "description" : "CustomObject: Allows the user to define their own objects with a custom set of properties."

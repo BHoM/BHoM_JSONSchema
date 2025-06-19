@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/HashFragment.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/HashFragment.json",
   "title" : "HashFragment",
   "type" : ["object", "null"],
   "description" : "HashFragment: Stores the hash of the parent BHoMObject.",

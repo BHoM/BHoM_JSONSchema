@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/SectionModulus.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Quantities_oM/Attributes/SectionModulus.json",
   "title" : "SectionModulus",
   "type" : ["object", "null"],
   "description" : "SectionModulus: Dimensional quantity as defined by the International System of Quantities",

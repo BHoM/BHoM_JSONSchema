@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/UniqueAttribute.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/Attributes/UniqueAttribute.json",
   "title" : "UniqueAttribute",
   "type" : ["object", "null"],
   "description" : "UniqueAttribute: Means that there can only be one instance of that type in a collection. This is currently used specifically for the case of fragments.",

@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/UniformLoadSet.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/Loads/UniformLoadSet.json",
   "title" : "UniformLoadSet",
   "type" : ["object", "null"],
   "description" : "UniformLoadSet: Definition of a set of uniform loads in the gravity direction (-Z).",
@@ -12,7 +12,7 @@
       "type" : ["array", "null"],
       "description" : "The individual load items for the load set",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/UniformLoadSetRecord.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/Loads/UniformLoadSetRecord.json"
       }
     },
     "BHoM_Guid" : {
@@ -20,7 +20,7 @@
       "format" : "uuid"
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

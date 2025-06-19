@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/ObjectDifferences.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Diffing_oM/ObjectDifferences.json",
   "title" : "ObjectDifferences",
   "type" : ["object", "null"],
   "description" : "ObjectDifferences: Represents all the differences found between a Previous and Following version of an object.",
@@ -10,7 +10,7 @@
       "type" : ["array", "null"],
       "description" : "List of all the differences found between the `past` and `following` versions of the object (under a given ComparisonConfig).",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/IPropertyDifference.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Diffing_oM/IPropertyDifference.json"
       }
     },
     "_t" : {

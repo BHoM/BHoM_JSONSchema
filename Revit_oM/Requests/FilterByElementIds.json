@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Requests/FilterByElementIds.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Revit_oM/Requests/FilterByElementIds.json",
   "title" : "FilterByElementIds",
   "type" : ["object", "null"],
   "description" : "FilterByElementIds: IRequest that filters elements by their ElementIds.",

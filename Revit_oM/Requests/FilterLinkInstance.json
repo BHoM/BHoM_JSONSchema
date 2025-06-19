@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Requests/FilterLinkInstance.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Revit_oM/Requests/FilterLinkInstance.json",
   "title" : "FilterLinkInstance",
   "type" : ["object", "null"],
   "description" : "FilterLinkInstance: IRequest that filters all link instances with given file name/path, Name parameter value or ElementId from active Revit document. If link name field is left blank, all link instances in the document will be filtered.",

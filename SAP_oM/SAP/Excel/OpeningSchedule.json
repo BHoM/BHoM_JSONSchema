@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/Excel/OpeningSchedule.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP_oM/SAP/Excel/OpeningSchedule.json",
   "title" : "OpeningSchedule",
   "type" : ["object", "null"],
   "description" : "OpeningSchedule: The details of roofs from the users excel input.",
@@ -17,17 +17,17 @@
       "description" : "The gvalue of the opening."
     },
     "TypeOfGlazing" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/TypeOfGlazing.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP_oM/SAP/TypeOfGlazing.json"
     },
     "GlazingGap" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/GlazingGap.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP_oM/SAP/GlazingGap.json"
     },
     "FrameFactor" : {
       "type" : "number",
       "description" : "The frame factor of the opening."
     },
     "FrameType" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/TypeOfFrame.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP_oM/SAP/TypeOfFrame.json"
     },
     "ArgonFilled" : {
       "type" : "boolean",
@@ -38,7 +38,7 @@
       "description" : "If the opening is krypton filled."
     },
     "DataSource" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/OpeningDataSource.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP_oM/SAP/OpeningDataSource.json"
     },
     "FloorIntersection" : {
       "type" : "boolean",
@@ -52,7 +52,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

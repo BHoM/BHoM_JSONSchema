@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Karamba3D_oM/FemModel.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Karamba3D_oM/FemModel.json",
   "title" : "FemModel",
   "type" : ["object", "null"],
   "description" : "FemModel: Container of the BHoMObjects converted from the Karamba model.",
@@ -11,7 +11,7 @@
           "type" : ["array", "null"],
           "description" : "Nodes converted from the Karamba model.",
           "items" : {
-            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Node.json"
+            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/Elements/Node.json"
           }
         }
       }
@@ -23,7 +23,7 @@
           "type" : ["array", "null"],
           "description" : "Bars converted from the Karamba model.",
           "items" : {
-            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Bar.json"
+            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/Elements/Bar.json"
           }
         }
       }
@@ -35,7 +35,7 @@
           "type" : ["array", "null"],
           "description" : "Loads converted from the Karamba model.",
           "items" : {
-            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/ILoad.json"
+            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/Loads/ILoad.json"
           }
         }
       }
@@ -47,7 +47,7 @@
           "type" : ["array", "null"],
           "description" : "Load cases converted from the Karamba model.",
           "items" : {
-            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/Loadcase.json"
+            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/Loads/Loadcase.json"
           }
         }
       }
@@ -59,7 +59,7 @@
           "type" : ["array", "null"],
           "description" : "Cross sections converted from the Karamba model.",
           "items" : {
-            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SectionProperties/ISectionProperty.json"
+            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/SectionProperties/ISectionProperty.json"
           }
         }
       }
@@ -71,7 +71,7 @@
           "type" : ["array", "null"],
           "description" : "Materials converted from the Karamba model.",
           "items" : {
-            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/IMaterialFragment.json"
+            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/MaterialFragments/IMaterialFragment.json"
           }
         }
       }

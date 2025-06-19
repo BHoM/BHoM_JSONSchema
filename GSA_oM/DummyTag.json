@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/GSA_oM/DummyTag.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/GSA_oM/DummyTag.json",
   "title" : "DummyTag",
   "type" : ["object", "null"],
   "description" : "DummyTag: Fragment controling whether the element should be a dummy element or not.",

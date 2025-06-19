@@ -1,18 +1,18 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Fixtures/FireAlarmDevice.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/MEP_oM/Fixtures/FireAlarmDevice.json",
   "title" : "FireAlarmDevice",
   "type" : ["object", "null"],
   "description" : "FireAlarmDevice: A device used to warn building occupants of emergencies (smoke, fire, carbon monoxide) by means of audio or visual appliances (smoke detectors, speaker strobes, heat detectors.)",
   "properties" : {
     "Location" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/Node.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/MEP_oM/System/Node.json"
     },
     "OrientationAngle" : {
       "type" : "number",
       "description" : "Controls the local plan orientation of the object. Property has a quantity of type Angle measured in [rad]."
     },
     "FireAlarmDeviceType" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Enums/FireAlarmDeviceType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/MEP_oM/Enums/FireAlarmDeviceType.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -22,7 +22,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/FamilyLibrary.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Revit_oM/FamilyLibrary.json",
   "title" : "FamilyLibrary",
   "type" : ["object", "null"],
   "description" : "FamilyLibrary: Library of Revit families that can be loaded to the model.",
@@ -8,7 +8,7 @@
       "type" : ["array", "null"],
       "description" : "A list of Revit family files managed by the library.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/RevitFilePreview.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Revit_oM/RevitFilePreview.json"
       }
     },
     "BHoM_Guid" : {
@@ -19,7 +19,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

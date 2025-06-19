@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Fragments/ConstructionOffset.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Facade_oM/Fragments/ConstructionOffset.json",
   "title" : "ConstructionOffset",
   "type" : ["object", "null"],
   "description" : "ConstructionOffset: Fragment containing the offset distance of a construction type from the facade center line",

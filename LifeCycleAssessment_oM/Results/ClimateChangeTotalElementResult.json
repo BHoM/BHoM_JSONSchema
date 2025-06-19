@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/ClimateChangeTotalElementResult.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LifeCycleAssessment_oM/Results/ClimateChangeTotalElementResult.json",
   "title" : "ClimateChangeTotalElementResult",
   "type" : ["object", "null"],
   "description" : "ClimateChangeTotalElementResult: Result class for resulting Climate change - total for a particular Element.",
@@ -176,10 +176,10 @@
       "type" : ["object", "integer", "string", "number", "null"]
     },
     "Scope" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/ScopeType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LifeCycleAssessment_oM/ScopeType.json"
     },
     "Category" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/ObjectCategory.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LifeCycleAssessment_oM/ObjectCategory.json"
     },
     "MaterialResults" : {
       "type" : ["object", "null"],
@@ -188,7 +188,7 @@
           "type" : ["array", "null"],
           "description" : "Result breakdown per material type.",
           "items" : {
-            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/ClimateChangeTotalMaterialResult.json"
+            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LifeCycleAssessment_oM/Results/ClimateChangeTotalMaterialResult.json"
           }
         }
       }

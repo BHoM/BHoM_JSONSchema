@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/BarFEAType.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/Elements/BarFEAType.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Flexural", "Axial", "CompressionOnly", "TensionOnly"]

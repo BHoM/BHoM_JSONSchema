@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/PhotochemicalOzoneCreationCMLFactor.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LifeCycleAssessment_oM/MaterialFragments/PhotochemicalOzoneCreationCMLFactor.json",
   "title" : "PhotochemicalOzoneCreationCMLFactor",
   "type" : ["object", "null"],
   "description" : "PhotochemicalOzoneCreationCMLFactor: Single value indicator for Photochemical Ozone Creation as defined by the CML standard for a particular product or material.",

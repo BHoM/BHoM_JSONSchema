@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/NUnit_oM/NUnit/Failure.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/NUnit_oM/NUnit/Failure.json",
   "title" : "Failure",
   "type" : ["object", "null"],
   "properties" : {

@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/PreviousInputNamesAttribute.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/Attributes/PreviousInputNamesAttribute.json",
   "title" : "PreviousInputNamesAttribute",
   "type" : ["object", "null"],
   "description" : "PreviousInputNamesAttribute: Provides the names that were previously used for a given input. If multiple names, use a ',' to separate them.",

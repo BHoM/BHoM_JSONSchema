@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EutrophicationTRACIFactor.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LifeCycleAssessment_oM/MaterialFragments/EutrophicationTRACIFactor.json",
   "title" : "EutrophicationTRACIFactor",
   "type" : ["object", "null"],
   "description" : "EutrophicationTRACIFactor: Single value indicator for Eutrophication (Version 1 North American standard) for a particular product or material.",

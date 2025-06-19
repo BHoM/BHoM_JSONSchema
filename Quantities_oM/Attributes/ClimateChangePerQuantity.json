@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/ClimateChangePerQuantity.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Quantities_oM/Attributes/ClimateChangePerQuantity.json",
   "title" : "ClimateChangePerQuantity",
   "type" : ["object", "null"],
   "description" : "ClimateChangePerQuantity: Quantity type for climate change per quantity.",

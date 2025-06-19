@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/ModalMassAndFrequency.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/Results/ModalMassAndFrequency.json",
   "title" : "ModalMassAndFrequency",
   "type" : ["object", "null"],
   "description" : "ModalMassAndFrequency: General modal dynamics result of the structure.",

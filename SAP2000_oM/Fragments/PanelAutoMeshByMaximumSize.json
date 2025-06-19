@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/Fragments/PanelAutoMeshByMaximumSize.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/SAP2000_oM/Fragments/PanelAutoMeshByMaximumSize.json",
   "title" : "PanelAutoMeshByMaximumSize",
   "type" : ["object", "null"],
   "description" : "PanelAutoMeshByMaximumSize: Divide the panel so that elements do not exceed a maximum size.",

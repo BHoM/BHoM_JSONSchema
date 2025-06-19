@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Attributes/Acidification.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Quantities_oM/Attributes/Acidification.json",
   "title" : "Acidification",
   "type" : ["object", "null"],
   "description" : "Acidification: Quantity type for acidification potential.",

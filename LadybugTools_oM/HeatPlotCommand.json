@@ -1,14 +1,14 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/HeatPlotCommand.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LadybugTools_oM/HeatPlotCommand.json",
   "title" : "HeatPlotCommand",
   "type" : ["object", "null"],
   "description" : "HeatPlotCommand: Command that, when executed with the LadybugToolsAdapter, produces a heatmap from data in an epw file.\nOutput is a string of either the path to the image (if OutputLocation is not set) or the base 64 string representation of it.",
   "properties" : {
     "EPWFile" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/FileSettings.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Adapter_oM/FileSettings.json"
     },
     "EPWKey" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/EPWKey.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LadybugTools_oM/EPWKey.json"
     },
     "ColourMap" : {
       "type" : ["string", "null"],

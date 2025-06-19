@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Collections/PointMatrix`1.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Data_oM/Collections/PointMatrix`1.json",
   "title" : "PointMatrix`1",
   "type" : ["object", "null"],
   "properties" : {
@@ -12,12 +12,12 @@
         "type" : ["object", "null"],
         "properties" : {
           "k" : {
-            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Collections/DiscretePoint.json"
+            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Data_oM/Collections/DiscretePoint.json"
           },
           "v" : {
             "type" : ["array", "null"],
             "items" : {
-              "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Collections/LocalData`1.json"
+              "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Data_oM/Collections/LocalData`1.json"
             }
           }
         }

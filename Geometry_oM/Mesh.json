@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Mesh.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Geometry_oM/Mesh.json",
   "title" : "Mesh",
   "type" : ["object", "null"],
   "description" : "Mesh: A polygon mesh, defined by a list of triangular or quadrilateral Faces and their Vertices.",
@@ -8,14 +8,14 @@
       "type" : ["array", "null"],
       "description" : "Defines the three-dimensional Mesh geometry as  X, Y, Z coordinates.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Geometry_oM/Point.json"
       }
     },
     "Faces" : {
       "type" : ["array", "null"],
       "description" : "The list of polygons, defined as corner Point indices referencing the list of Vertices.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Face.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Geometry_oM/Face.json"
       }
     },
     "_t" : {

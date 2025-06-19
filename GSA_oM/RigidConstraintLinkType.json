@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/GSA_oM/RigidConstraintLinkType.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/GSA_oM/RigidConstraintLinkType.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["ALL", "XY_PLANE", "YZ_PLANE", "ZX_PLANE", "XY_PLATE", "YZ_PLATE", "ZX_PLATE", "PIN", "XY_PLANE_PIN", "YZ_PLANE_PIN", "ZX_PLANE_PIN", "XY_PLATE_PIN", "YZ_PLATE_PIN", "ZX_PLATE_PIN"]

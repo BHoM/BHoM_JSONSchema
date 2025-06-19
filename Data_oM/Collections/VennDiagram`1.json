@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Collections/VennDiagram`1.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Data_oM/Collections/VennDiagram`1.json",
   "title" : "VennDiagram`1",
   "type" : ["object", "null"],
   "properties" : {

@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Ground_oM/RunType.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Ground_oM/RunType.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["Initial", "Reanalysis"]

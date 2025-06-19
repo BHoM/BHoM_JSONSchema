@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/MultiOutputAttribute.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/Attributes/MultiOutputAttribute.json",
   "title" : "MultiOutputAttribute",
   "type" : ["object", "null"],
   "description" : "MultiOutputAttribute: Attribute providing information about an output parameter of a multi-output method.\nTo be applied to all methods that return BH.oM.Base.Output types.",
@@ -17,7 +17,7 @@
       "description" : "Description of the correspondent output parameter."
     },
     "Classification" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/ClassificationAttribute.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/Attributes/ClassificationAttribute.json"
     },
     "TypeId" : { },
     "_t" : {

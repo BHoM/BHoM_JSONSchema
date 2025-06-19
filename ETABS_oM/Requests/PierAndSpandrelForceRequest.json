@@ -1,10 +1,10 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/Requests/PierAndSpandrelForceRequest.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/ETABS_oM/Requests/PierAndSpandrelForceRequest.json",
   "title" : "PierAndSpandrelForceRequest",
   "type" : ["object", "null"],
   "properties" : {
     "ResultType" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/Requests/PierAndSpandrelResultType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/ETABS_oM/Requests/PierAndSpandrelResultType.json"
     },
     "Cases" : {
       "type" : ["array", "null"],

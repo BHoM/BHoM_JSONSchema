@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/Delta.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Diffing_oM/Delta.json",
   "title" : "Delta",
   "type" : ["object", "null"],
   "description" : "Delta: Contains the Diff plus context information: parent Stream, Timestamp, etc.",
@@ -10,7 +10,7 @@
       "description" : "The ID of the owning Stream. It must be the same for both the Revision that this Delta targets and the Revision that it will produce."
     },
     "Diff" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/Diff.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Diffing_oM/Diff.json"
     },
     "RevisionFrom" : {
       "type" : "string",

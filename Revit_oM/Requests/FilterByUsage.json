@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Requests/FilterByUsage.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Revit_oM/Requests/FilterByUsage.json",
   "title" : "FilterByUsage",
   "type" : ["object", "null"],
   "description" : "FilterByUsage: IRequest that filters used/unused elements in a Revit document.",

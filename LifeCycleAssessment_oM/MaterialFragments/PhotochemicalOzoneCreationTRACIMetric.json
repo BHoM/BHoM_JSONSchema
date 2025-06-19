@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/PhotochemicalOzoneCreationTRACIMetric.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/LifeCycleAssessment_oM/MaterialFragments/PhotochemicalOzoneCreationTRACIMetric.json",
   "title" : "PhotochemicalOzoneCreationTRACIMetric",
   "type" : ["object", "null"],
   "description" : "PhotochemicalOzoneCreationTRACIMetric: Photochemical Ozone Creation as defined by the TRACI standard for a particular product or material. Forms part of an EPD, and should be evaluated based on the QuantityType stated on the EPD.",
@@ -180,7 +180,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

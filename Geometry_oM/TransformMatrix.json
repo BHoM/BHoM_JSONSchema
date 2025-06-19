@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/TransformMatrix.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Geometry_oM/TransformMatrix.json",
   "title" : "TransformMatrix",
   "type" : ["object", "null"],
   "description" : "TransformMatrix: A 4x4 matrix describing linear tranformations in three-dimensional space, such as translations, rotations, reflections, scaling and shearing.",

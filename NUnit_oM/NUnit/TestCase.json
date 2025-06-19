@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/NUnit_oM/NUnit/TestCase.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/NUnit_oM/NUnit/TestCase.json",
   "title" : "TestCase",
   "type" : ["object", "null"],
   "properties" : {
@@ -40,12 +40,12 @@
       "type" : "integer"
     },
     "Failure" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/NUnit_oM/NUnit/Failure.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/NUnit_oM/NUnit/Failure.json"
     },
     "Assertions" : {
       "type" : ["array", "null"],
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/NUnit_oM/NUnit/Assertion.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/NUnit_oM/NUnit/Assertion.json"
       }
     },
     "Text" : {

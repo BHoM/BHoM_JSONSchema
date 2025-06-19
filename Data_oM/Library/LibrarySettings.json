@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Library/LibrarySettings.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Data_oM/Library/LibrarySettings.json",
   "title" : "LibrarySettings",
   "type" : ["object", "null"],
   "description" : "LibrarySettings: Settings object to be used by the Library_Engine for controling Dataset extraction.",

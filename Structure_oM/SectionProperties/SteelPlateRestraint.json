@@ -1,5 +1,5 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SectionProperties/SteelPlateRestraint.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.2/Structure_oM/SectionProperties/SteelPlateRestraint.json",
   "anyOf" : [{
       "type" : ["string", "null"],
       "enum" : ["NoRestraint", "TopFlangeRestraint", "BottomFlangeRestraint", "WebRestraint", "FullRestraint"]
