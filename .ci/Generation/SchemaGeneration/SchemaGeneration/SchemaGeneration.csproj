@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="BHoM">
+			<HintPath>$(ProgramData)\BHoM\Assemblies\BHoM.dll</HintPath>
+			<SpecificVersion>false</SpecificVersion>
+		</Reference>
+		<Reference Include="BHoM_Engine">
+			<HintPath>$(ProgramData)\BHoM\Assemblies\BHoM_Engine.dll</HintPath>
+			<SpecificVersion>false</SpecificVersion>
+		</Reference>
+		<Reference Include="BHoM">
+			<HintPath>$(ProgramData)\BHoM\Assemblies\BHoM.dll</HintPath>
+			<SpecificVersion>false</SpecificVersion>
+		</Reference>
+		<Reference Include="JsonSchema_oM">
+			<HintPath>$(ProgramData)\BHoM\Assemblies\JsonSchema_oM.dll</HintPath>
+			<SpecificVersion>false</SpecificVersion>
+		</Reference>
+		<Reference Include="JsonSchema_Engine">
+			<HintPath>$(ProgramData)\BHoM\Assemblies\JsonSchema_Engine.dll</HintPath>
+			<SpecificVersion>false</SpecificVersion>
+		</Reference>
+		<Reference Include="Reflection_Engine">
+			<HintPath>$(ProgramData)\BHoM\Assemblies\Reflection_Engine.dll</HintPath>
+			<SpecificVersion>false</SpecificVersion>
+		</Reference>
+	</ItemGroup>
+	
+</Project>
