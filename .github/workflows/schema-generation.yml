@@ -1,0 +1,399 @@
+name: Schema Generation
+
+on:
+  schedule:
+    - cron: '0 1 * * 6'  # Saturday at 1 AM UTC
+  workflow_dispatch:
+
+jobs:
+  generate-schemas:
+    runs-on: windows-latest
+    
+    steps:
+    - name: Checkout develop branch
+      uses: actions/checkout@v4
+      with:
+        ref: develop
+        token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.0.x'
+    
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v2
+   
+    - name: Setup NuGet.exe for use with actions
+      uses: NuGet/setup-nuget@v2.0.1
+
+    - name: Create .repos directory
+      run: mkdir .repos
+      shell: cmd
+    
+    - name: Read repository list
+      id: read-repos
+      run: |
+        $repos = Get-Content "Included-repositories.txt" | Where-Object { $_.Trim() -ne "" }
+        $repoList = $repos -join ","
+        echo "repos=$repoList" >> $env:GITHUB_OUTPUT
+      shell: powershell
+    
+    - name: Clone all repositories
+      run: |
+        $repos = "${{ steps.read-repos.outputs.repos }}" -split ","
+        foreach ($repo in $repos) {
+          $repo = $repo.Trim()
+          if ($repo -ne "") {
+            Write-Host "Cloning $repo..."
+            $repoName = $repo.Split('/')[1]
+            git clone https://github.com/$repo.git .repos/$repoName --branch develop --depth 1
+            if ($LASTEXITCODE -ne 0) {
+              Write-Host "Failed to clone develop branch for $repo, trying main..."
+              git clone https://github.com/$repo.git .repos/$repoName --branch main --depth 1
+              if ($LASTEXITCODE -ne 0) {
+                Write-Host "Failed to clone main branch for $repo, trying master..."
+                git clone https://github.com/$repo.git .repos/$repoName --branch master --depth 1
+              }
+            }
+          }
+        }
+      shell: powershell
+    
+    - name: Analyze dependencies and determine build order
+      id: build-order
+      run: |
+        # PowerShell script to perform topological sort based on dependencies.txt files
+        $repos = Get-ChildItem ".repos" -Directory | Select-Object -ExpandProperty Name
+        $dependencies = @{}
+        $graph = @{}
+        
+        # Initialize graph
+        foreach ($repo in $repos) {
+          $graph[$repo] = @()
+          $dependencies[$repo] = @()
+        }
+        
+        # Read dependencies from each repo's dependencies.txt
+        foreach ($repo in $repos) {
+          $depsFile = ".repos/$repo/dependencies.txt"
+          if (Test-Path $depsFile) {
+            $deps = Get-Content $depsFile | Where-Object { $_.Trim() -ne "" } | ForEach-Object {
+              $dep = $_.Trim()
+              # Extract repo name from full path (e.g., "BHoM/BHoM_Engine" -> "BHoM_Engine")
+              if ($dep.Contains('/')) {
+                $dep.Split('/')[1]
+              } else {
+                $dep
+              }
+            }
+            $dependencies[$repo] = $deps
+            
+            # Build reverse graph for topological sort
+            foreach ($dep in $deps) {
+              if ($graph.ContainsKey($dep)) {
+                $graph[$dep] += $repo
+              }
+            }
+          }
+        }
+        
+        # Topological sort using Kahn's algorithm
+        $buildOrder = @()
+        $inDegree = @{}
+        
+        # Calculate in-degrees
+        foreach ($repo in $repos) {
+          $inDegree[$repo] = $dependencies[$repo].Count
+        }
+        
+        # Find nodes with no incoming edges
+        $queue = @()
+        foreach ($repo in $repos) {
+          if ($inDegree[$repo] -eq 0) {
+            $queue += $repo
+          }
+        }
+        
+        # Process queue
+        while ($queue.Count -gt 0) {
+          $current = $queue[0]
+          $queue = $queue[1..($queue.Count-1)]
+          $buildOrder += $current
+          
+          # Remove edges from current node
+          foreach ($neighbor in $graph[$current]) {
+            $inDegree[$neighbor]--
+            if ($inDegree[$neighbor] -eq 0) {
+              $queue += $neighbor
+            }
+          }
+        }
+        
+        # Check for cycles
+        if ($buildOrder.Count -ne $repos.Count) {
+          Write-Host "Warning: Circular dependencies detected. Using fallback order."
+          $buildOrder = $repos
+        }
+        
+        $buildOrderString = $buildOrder -join ","
+        Write-Host "Build order: $buildOrderString"
+        echo "order=$buildOrderString" >> $env:GITHUB_OUTPUT
+      shell: powershell
+    
+    - name: Build repositories in dependency order
+      run: |
+        $buildOrder = "${{ steps.build-order.outputs.order }}" -split ","
+        foreach ($repo in $buildOrder) {
+          $repo = $repo.Trim()
+          if ($repo -ne "") {
+            Write-Host "Building $repo..."
+            Push-Location ".repos/$repo"
+            
+            # Find solution files
+            $solutionFiles = Get-ChildItem -Recurse -Filter "*.sln" | Where-Object { $_.Directory.Name -notmatch "(Test|Tests|Example|Examples)" }
+            
+            if ($solutionFiles.Count -gt 0) {
+              $solutionFile = $solutionFiles[0].FullName
+              Write-Host "Building solution: $solutionFile"
+              
+              # Try dotnet first
+              Write-Host "Restoring packages with dotnet..."
+              dotnet restore "$solutionFile"
+              if ($LASTEXITCODE -eq 0) {
+                Write-Host "Building with dotnet..."
+                dotnet build "$solutionFile" --configuration Release --verbosity minimal --no-restore
+                if ($LASTEXITCODE -ne 0) {
+                  Write-Host "Dotnet build failed, trying MSBuild fallback..."
+                  nuget restore "$solutionFile"
+                  msbuild "$solutionFile" /p:Configuration=Release /p:Platform="Any CPU" /verbosity:minimal
+                  if ($LASTEXITCODE -ne 0) {
+                    Write-Host "MSBuild also failed for $repo, continuing with next repository..."
+                  }
+                }
+              } else {
+                Write-Host "Dotnet restore failed, trying NuGet + MSBuild fallback..."
+                nuget restore "$solutionFile"
+                msbuild "$solutionFile" /p:Configuration=Release /p:Platform="Any CPU" /verbosity:minimal
+                if ($LASTEXITCODE -ne 0) {
+                  Write-Host "MSBuild failed for $repo, continuing with next repository..."
+                }
+              }
+            } else {
+              # Try to find project files if no solution
+              $projectFiles = Get-ChildItem -Recurse -Filter "*.csproj" | Where-Object { $_.Directory.Name -notmatch "(Test|Tests|Example|Examples)" }
+              if ($projectFiles.Count -gt 0) {
+                foreach ($projectFile in $projectFiles) {
+                  Write-Host "Building project: $($projectFile.FullName)"
+                  
+                  # Try dotnet first
+                  dotnet restore "$($projectFile.FullName)"
+                  if ($LASTEXITCODE -eq 0) {
+                    dotnet build "$($projectFile.FullName)" --configuration Release --verbosity minimal --no-restore
+                    if ($LASTEXITCODE -ne 0) {
+                      Write-Host "Dotnet build failed for project $($projectFile.Name), trying MSBuild..."
+                      nuget restore "$($projectFile.FullName)"
+                      msbuild "$($projectFile.FullName)" /p:Configuration=Release /p:Platform="Any CPU" /verbosity:minimal
+                      if ($LASTEXITCODE -ne 0) {
+                        Write-Host "MSBuild also failed for project $($projectFile.Name), continuing..."
+                        break
+                      }
+                    }
+                  } else {
+                    Write-Host "Dotnet restore failed for project $($projectFile.Name), trying NuGet + MSBuild..."
+                    nuget restore "$($projectFile.FullName)"
+                    msbuild "$($projectFile.FullName)" /p:Configuration=Release /p:Platform="Any CPU" /verbosity:minimal
+                    if ($LASTEXITCODE -ne 0) {
+                      Write-Host "MSBuild failed for project $($projectFile.Name), continuing..."
+                      break
+                    }
+                  }
+                }
+              } else {
+                Write-Host "No solution or project files found in $repo"
+              }
+            }
+            
+            Pop-Location
+          }
+        }
+      shell: powershell
+    
+    - name: Clone and build BHoM/Json_Toolkit
+      run: |
+        Write-Host "Cloning BHoM/Json_Toolkit..."
+        git clone https://github.com/BHoM/Json_Toolkit.git .repos/Json_Toolkit --branch develop --depth 1
+        if ($LASTEXITCODE -ne 0) {
+          Write-Host "Failed to clone develop branch, trying main..."
+          git clone https://github.com/BHoM/Json_Toolkit.git .repos/Json_Toolkit --branch main --depth 1
+          if ($LASTEXITCODE -ne 0) {
+            Write-Host "Failed to clone main branch, trying master..."
+            git clone https://github.com/BHoM/Json_Toolkit.git .repos/Json_Toolkit --branch master --depth 1
+          }
+        }
+        
+        Write-Host "Building Json_Toolkit..."
+        Push-Location ".repos/Json_Toolkit"
+        
+        $solutionFiles = Get-ChildItem -Recurse -Filter "*.sln"
+        if ($solutionFiles.Count -gt 0) {
+          $solutionFile = $solutionFiles[0].FullName
+          Write-Host "Building solution: $solutionFile"
+          
+          # Try dotnet first
+          Write-Host "Restoring packages with dotnet..."
+          dotnet restore "$solutionFile"
+          if ($LASTEXITCODE -eq 0) {
+            dotnet build "$solutionFile" --configuration Release --verbosity minimal --no-restore
+            if ($LASTEXITCODE -ne 0) {
+              Write-Host "Dotnet build failed, trying MSBuild fallback..."
+              nuget restore "$solutionFile"
+              msbuild "$solutionFile" /p:Configuration=Release /p:Platform="Any CPU" /verbosity:minimal
+            }
+          } else {
+            Write-Host "Dotnet restore failed, trying NuGet + MSBuild fallback..."
+            nuget restore "$solutionFile"
+            msbuild "$solutionFile" /p:Configuration=Release /p:Platform="Any CPU" /verbosity:minimal
+          }
+        } else {
+          $projectFiles = Get-ChildItem -Recurse -Filter "*.csproj"
+          foreach ($projectFile in $projectFiles) {
+            Write-Host "Building project: $($projectFile.FullName)"
+            
+            # Try dotnet first
+            dotnet restore "$($projectFile.FullName)"
+            if ($LASTEXITCODE -eq 0) {
+              dotnet build "$($projectFile.FullName)" --configuration Release --verbosity minimal --no-restore
+              if ($LASTEXITCODE -ne 0) {
+                Write-Host "Dotnet build failed, trying MSBuild fallback..."
+                nuget restore "$($projectFile.FullName)"
+                msbuild "$($projectFile.FullName)" /p:Configuration=Release /p:Platform="Any CPU" /verbosity:minimal
+              }
+            } else {
+              Write-Host "Dotnet restore failed, trying NuGet + MSBuild fallback..."
+              nuget restore "$($projectFile.FullName)"
+              msbuild "$($projectFile.FullName)" /p:Configuration=Release /p:Platform="Any CPU" /verbosity:minimal
+            }
+          }
+        }
+        
+        Pop-Location
+      shell: powershell
+    
+    - name: Build Generation solution
+      run: |
+        if (Test-Path ".cs/Generation") {
+          Write-Host "Building Generation solution..."
+          Push-Location ".cs/Generation"
+          
+          $solutionFiles = Get-ChildItem -Filter "*.sln"
+          if ($solutionFiles.Count -gt 0) {
+            $solutionFile = $solutionFiles[0].FullName
+            Write-Host "Building solution: $solutionFile"
+            dotnet build "$solutionFile" --configuration Release --verbosity minimal
+          } else {
+            $projectFiles = Get-ChildItem -Filter "*.csproj"
+            foreach ($projectFile in $projectFiles) {
+              Write-Host "Building project: $($projectFile.FullName)"
+              dotnet build "$($projectFile.FullName)" --configuration Release --verbosity minimal
+            }
+          }
+          
+          Pop-Location
+        } else {
+          Write-Host "Generation folder not found at .cs/Generation"
+          exit 1
+        }
+      shell: powershell
+    
+    - name: Run Generation executable
+      run: |
+        Write-Host "Looking for executable in .cs/Generation..."
+        $exeFiles = Get-ChildItem ".cs/Generation" -Recurse -Filter "*.exe" | Where-Object { $_.Directory.Name -match "(bin|Release)" }
+        
+        if ($exeFiles.Count -eq 0) {
+          Write-Host "No executable found, looking for DLL to run with dotnet..."
+          $dllFiles = Get-ChildItem ".cs/Generation" -Recurse -Filter "*.dll" | Where-Object { $_.Directory.Name -match "(bin|Release)" -and $_.Name -notmatch "(System\.|Microsoft\.)" }
+          
+          if ($dllFiles.Count -gt 0) {
+            $dllFile = $dllFiles[0].FullName
+            Write-Host "Running: dotnet $dllFile"
+            dotnet "$dllFile"
+          } else {
+            Write-Host "No executable or suitable DLL found"
+            exit 1
+          }
+        } else {
+          $exeFile = $exeFiles[0].FullName
+          Write-Host "Running: $exeFile"
+          & "$exeFile"
+        }
+      shell: powershell
+    
+    - name: Check for changes
+      id: check-changes
+      run: |
+        git add -A
+        $changes = git diff --cached --name-only
+        if ($changes) {
+          echo "has_changes=true" >> $env:GITHUB_OUTPUT
+          Write-Host "Changes detected:"
+          $changes | ForEach-Object { Write-Host "  $_" }
+        } else {
+          echo "has_changes=false" >> $env:GITHUB_OUTPUT
+          Write-Host "No changes detected"
+        }
+      shell: powershell
+    
+    - name: Create Pull Request
+      if: steps.check-changes.outputs.has_changes == 'true'
+      run: |
+        # Configure git
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        
+        # Create and switch to new branch
+        $branchName = "schema-updates"
+        git checkout -b $branchName
+        
+        # Commit changes
+        git add -A
+        git commit -m "Automated schema generation update
+        
+        Generated on $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss UTC')
+        
+        This PR contains automatically generated JSON schema updates based on the latest BHoM repositories."
+        
+        # Push branch
+        git push origin $branchName --force
+        
+        # Create pull request using GitHub CLI
+        $prTitle = "Automated Schema Updates - $(Get-Date -Format 'yyyy-MM-dd')"
+        $prBody = @"
+        ## Automated Schema Generation
+        
+        This pull request contains automatically generated JSON schema updates.
+        
+        **Generation Details:**
+        - Generated on: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss UTC')
+        - Workflow run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        
+        **Changes:**
+        The schemas have been regenerated based on the latest versions of all BHoM repositories listed in ``Included-repositories.txt``.
+        
+        Please review the changes before merging.
+        "@
+        
+        # Install GitHub CLI if not available
+        if (-not (Get-Command gh -ErrorAction SilentlyContinue)) {
+          Write-Host "Installing GitHub CLI..."
+          winget install --id GitHub.cli
+        }
+        
+        # Create PR
+        $env:GH_TOKEN = "${{ secrets.GITHUB_TOKEN }}"
+        gh pr create --title "$prTitle" --body "$prBody" --base develop --head $branchName
+        
+      shell: powershell
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
