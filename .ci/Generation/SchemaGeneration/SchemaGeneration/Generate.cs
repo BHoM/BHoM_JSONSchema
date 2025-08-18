@@ -7,12 +7,13 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using BH.oM.JsonSchema;
 
 namespace SchemaGeneration
 {
     public static class Generate
     {
-        public static void GenerateAssembly(Assembly assembly)
+        public static void GenerateAssembly(Assembly assembly, ConvertConfig config)
         {
             var types = assembly.GetTypes();
 
@@ -28,7 +29,7 @@ namespace SchemaGeneration
                     continue;
                 string fullName = type.FullName;
                 Console.WriteLine(fullName);
-                BH.oM.JsonSchema.JsonSchema schema = type.ToJsonSchema(true);
+                BH.oM.JsonSchema.JsonSchema schema = type.ToJsonSchema(config);
                 if (schema == null)
                 {
                     Console.WriteLine($"Schema for {fullName} is null, skipping.");
