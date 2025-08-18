@@ -15,13 +15,9 @@ List<Assembly> assemblies = AssemblyLoader.LoadAlloMAssemblies(new List<string> 
 //Set branch for config to be used for schema IDs
 string branch;
 if(args.Length > 0)
-{
     branch = args[0];
-}
 else
-{
     branch = "develop"; // Default branch if none is provided
-}
 
 Console.WriteLine($"Using branch: {branch} for schema IDs.");
 
