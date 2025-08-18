@@ -1,5 +1,6 @@
 ﻿using BH.Engine.Base;
 using BH.Engine.JsonSchema;
+using BH.Engine.Serialiser;
 using BH.oM.Base;
 using BH.oM.JsonSchema;
 using System;
@@ -7,7 +8,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
@@ -19,18 +19,22 @@ namespace BH.Test.JsonSchema
         /**** Test Methods                              ****/
         /***************************************************/
 
-        [TestCaseSource(nameof(OmTypes))]
+        [Description("Validates that all schemas are valid against the dummy objects created by the Compute.DummyObject method.")]
+        [TestCaseSource(nameof(OmTypes), new object[] {false,true})]
         public void ValidateSchema(Type type)
         {
             string fullName = type.FullName;
             Console.WriteLine($"---{fullName}---");
 
             var dummy = BH.Engine.Test.Compute.DummyObject(type);
+            string json = BH.Engine.Serialiser.Convert.ToJson(dummy);
+            System.Text.Json.Nodes.JsonNode node = System.Text.Json.Nodes.JsonNode.Parse(json);
+
             Uri id = type.SchemaId();
             Assert.Multiple(() =>
             {
                 Console.WriteLine($"As {type.Name}");
-                bool success = CheckAgainstSchema(dummy, id);
+                bool success = CheckAgainstSchema(node, id);
                 Assert.That(success, Is.True, $"{type.Name} failed schema validation");
 
 
@@ -44,7 +48,7 @@ namespace BH.Test.JsonSchema
                         if (typeof(IObject).IsAssignableFrom(subType))
                         {
                             Console.WriteLine($"As {subType.Name}");
-                            success = CheckAgainstSchema(dummy, subType.SchemaId());
+                            success = CheckAgainstSchema(node, subType.SchemaId());
                             Assert.That(success, Is.True, $"{type.Name} failed schema validation");
                         }
                     }
@@ -54,11 +58,142 @@ namespace BH.Test.JsonSchema
 
         /***************************************************/
 
+        [TestCaseSource(nameof(OmTypes), new object[] { false, true })]
+        [Description("Checks that all schemas evaluates as invalid if an invalid property type has been set. For enum types it instead sets an invalid enum value.")]
+        public void TestInvalidPropertyTypeEvaluatesAsInvalid(Type type)
+        {
+            Assume.That(type != typeof(CustomObject), "CustomObject is a special case, it always evaluates as true as it is used as the fallback case for deserialisation");
+            Assume.That(type != typeof(FragmentSet), "FragmentSet is a special case that cant be validated by the simplified approach in this method.");
+
+            string fullName = type.FullName;
+            Console.WriteLine($"---{fullName}---");
+
+            var dummy = BH.Engine.Test.Compute.DummyObject(type);
+            string json = BH.Engine.Serialiser.Convert.ToJson(dummy);
+            System.Text.Json.Nodes.JsonNode node = System.Text.Json.Nodes.JsonNode.Parse(json);
+
+            if (type.IsEnum)
+            {
+                node["Value"] = System.Text.Json.Nodes.JsonValue.Create("InvalidEnumValue"); // Set an invalid enum value
+            }
+            else
+            {
+                var propsToUpdate = type.GetProperties(BindingFlags.Public | BindingFlags.Instance)
+                                        .Where(p => (p.PropertyType != typeof(object)) && !p.PropertyType.IsGenericParameter && !typeof(Delegate).IsAssignableFrom(p.PropertyType)).ToList();
+
+                Assume.That(propsToUpdate.Count > 0, $"{type.Name} has no properties to update for invalid data test");
+
+                foreach (var property in propsToUpdate)
+                {
+                    if (property.PropertyType == typeof(bool))
+                    {
+                        node[property.Name] = System.Text.Json.Nodes.JsonValue.Create(1.0); ; // Set a double value to all properties
+                    }
+                    else
+                        node[property.Name] = System.Text.Json.Nodes.JsonValue.Create(true); // Set a bool value to all properties
+
+                }
+            }
+
+            bool success = CheckAgainstSchema(node, type.SchemaId());
+            Assert.That(success, Is.False, $"{type.Name} should have failed schema validation with invalid data");
+        }
+
+        /***************************************************/
+
+        [TestCaseSource(nameof(OmTypes), new object[] { false, false })]
+        [Description("Checks that all schemas evaluates as invalid if an invalid property type has been set to a subtype. Types that do not have subtypes are skipped.")]
+        public void TestInvalidPropertyTypeOnSubObjectsEvaluatesAsInvalid(Type type)
+        {
+            Assume.That(type != typeof(CustomObject), "CustomObject is a special case, it always evaluates as true as it is used as the fallback case for deserialisation");
+            Assume.That(type != typeof(FragmentSet), "FragmentSet is a special case that cant be validated by the simplified approach in this method.");
+            Assume.That(!type.IsEnum, "This test is not applicable to enum types as they do not have sub objects properties.");
+
+
+            string fullName = type.FullName;
+            Console.WriteLine($"---{fullName}---");
+
+            var dummy = BH.Engine.Test.Compute.DummyObject(type);
+            string json = BH.Engine.Serialiser.Convert.ToJson(dummy);
+            System.Text.Json.Nodes.JsonNode node = System.Text.Json.Nodes.JsonNode.Parse(json);
+
+
+            var propsToUpdate = type.GetProperties(BindingFlags.Public | BindingFlags.Instance)
+                                    .Where(p => typeof(IObject).IsAssignableFrom(p.PropertyType) && !p.PropertyType.IsAbstract)
+                                    .Where(p => p.PropertyType.GetProperties(BindingFlags.Public | BindingFlags.Instance)
+                                    .Where(pi => (pi.PropertyType != typeof(object)) && !pi.PropertyType.IsGenericParameter && !typeof(Delegate).IsAssignableFrom(pi.PropertyType)).Count() > 0).ToList();
+
+            bool wasUpdated = false;
+
+            foreach (var property in propsToUpdate)
+            {
+                System.Text.Json.Nodes.JsonObject innerObject = node[property.Name] as System.Text.Json.Nodes.JsonObject;
+                if (innerObject != null)
+                {
+                    foreach (var innerProp in property.PropertyType.GetProperties(BindingFlags.Public | BindingFlags.Instance)
+                                        .Where(p => (p.PropertyType != typeof(object)) && !p.PropertyType.IsGenericParameter && !typeof(Delegate).IsAssignableFrom(p.PropertyType)))
+                    {
+                        if (innerProp.PropertyType == typeof(bool))
+                        {
+                            innerObject[innerProp.Name] = System.Text.Json.Nodes.JsonValue.Create(1.0); ; // Set a double value to all properties
+                        }
+                        else
+                            innerObject[innerProp.Name] = System.Text.Json.Nodes.JsonValue.Create(true); // Set a bool value to all properties
+
+                        wasUpdated = true;
+                    }
+
+                }
+            }
+
+            Assume.That(wasUpdated, $"{type.Name} has no inner properties to update for invalid data test");
+
+            bool success = CheckAgainstSchema(node, type.SchemaId());
+            Assert.That(success, Is.False, $"{type.Name} should have failed schema validation with invalid data");
+        }
+
+        /***************************************************/
+
+        [TestCaseSource(nameof(OmTypes), new object[] { false, false })]
+        [Description("CChecks that all schemas evaluates as invalid if an invalid if required properties are missing. Skipped for enum types")]
+        public void TestMissingRequiredPropertiesEvaluatesAsInvalid(Type type)
+        {
+            Assume.That(type != typeof(BHoMObject), "BHoMObject is a special case which does not have any required properties");
+            Assume.That(type != typeof(CustomObject), "CustomObject is a special case, it always evaluates as true as it is used as the fallback case for deserialisation");
+            Assume.That(type != typeof(FragmentSet), "FragmentSet is a special case that cant be validated by the simplified approach in this method.");
+            Assume.That(!type.IsEnum, "This test is not applicable to enum types as they do not have properties.");
+            Assume.That(!typeof(IDynamicObject).IsAssignableFrom(type), "This test is not applicable to dynamic objects as all of their properties are optional.");
+
+            string fullName = type.FullName;
+            Console.WriteLine($"---{fullName}---");
+
+            var dummy = BH.Engine.Test.Compute.DummyObject(type);
+            string json = BH.Engine.Serialiser.Convert.ToJson(dummy);
+            System.Text.Json.Nodes.JsonNode node = System.Text.Json.Nodes.JsonNode.Parse(json);
+
+
+            var propsToUpdate = type.GetProperties(BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly)
+                                    .Where(p => (p.PropertyType != typeof(object)) && !p.PropertyType.IsGenericParameter && !typeof(Delegate).IsAssignableFrom(p.PropertyType)).ToList();
+
+            Assume.That(propsToUpdate.Count > 0, $"{type.Name} has no properties to update for invalid data test");
+
+            foreach (var property in propsToUpdate)
+            {
+                node.AsObject().Remove(property.Name); // Remove all properties to simulate missing required properties
+            }
+
+
+            bool success = CheckAgainstSchema(node, type.SchemaId());
+            Assert.That(success, Is.False, $"{type.Name} should have failed schema validation with invalid data");
+        }
+
+        /***************************************************/
+
         [Test]
         [Description("Checks that all assemblies are available in the BHoM folder to ensure the schema valiadtion actually checks all schemas.")]
         public void TestAllTypesAvailable()
         { 
-            List<Type> types = OmTypesIncludingAbstractAndInterfaces().ToList();
+            List<Type> types = OmTypes(true, true).ToList();
             Dictionary<Uri, Json.Schema.JsonSchema> schemas = Schemas.ToDictionary(x => x.Key, x => x.Value);
 
             List<Type> typesWithMissingSchemas = new List<Type>();
@@ -81,14 +216,11 @@ namespace BH.Test.JsonSchema
 
         /***************************************************/
 
-        private static bool CheckAgainstSchema(object obj, Uri id)
+        private static bool CheckAgainstSchema(System.Text.Json.Nodes.JsonNode node, Uri id)
         {
             bool success = false;
             if (Schemas.TryGetValue(id, out Json.Schema.JsonSchema schema))
             {
-                string json = BH.Engine.Serialiser.Convert.ToJson(obj);
-                System.Text.Json.Nodes.JsonNode node = System.Text.Json.Nodes.JsonNode.Parse(json);
-
                 var res = schema.Evaluate(node, Options);
                 success = res.IsValid;
                 if (res.IsValid)
@@ -133,14 +265,8 @@ namespace BH.Test.JsonSchema
         /**** Test Data methods                         ****/
         /***************************************************/
 
-        public static IEnumerable<Type> OmTypes()
-        {
-            return OmTypesIncludingAbstractAndInterfaces().Where(x => !x.IsAbstract);
-        }
-
-        /***************************************************/
-
-        public static IEnumerable<Type> OmTypesIncludingAbstractAndInterfaces()
+        [Description("Returns all types in the BHoM assemblies that are either enums or implement IObject.")]
+        public static IEnumerable<Type> OmTypes(bool includeAbstract, bool includeEnums)
         {
             foreach (var assembly in LoadAlloMAssemblies(new List<string> { "BHoM" }))
             {
@@ -152,10 +278,17 @@ namespace BH.Test.JsonSchema
                     if (!(type.IsEnum || typeof(IObject).IsAssignableFrom(type)))
                         continue;
 
+                    if (!includeEnums && type.IsEnum)
+                        continue;
+
+                    if (!includeAbstract && type.IsAbstract)
+                        continue;
+
                     yield return type;
                 }
             }
         }
+
 
         /***************************************************/
         /**** Properties                                ****/
@@ -163,7 +296,7 @@ namespace BH.Test.JsonSchema
 
         public static Dictionary<Uri, Json.Schema.JsonSchema> Schemas { get; set; } = null;
         public static Json.Schema.EvaluationOptions Options { get; set; } = new Json.Schema.EvaluationOptions { OutputFormat = Json.Schema.OutputFormat.Hierarchical };
-
+        
         /***************************************************/
         /**** Setup methods                             ****/
         /***************************************************/
@@ -211,8 +344,11 @@ namespace BH.Test.JsonSchema
         [Description("Loads all assemblies that end with oM from the BHoM folder.")]
         public static List<Assembly> LoadAlloMAssemblies(List<string> organisations)
         {
+            if(m_LoadedoMAssemblies != null && m_LoadedoMAssemblies.Count > 0)
+                return m_LoadedoMAssemblies; // Already loaded
+
             string regexFilter = @"oM$";
-            List<Assembly> result = new List<Assembly>();
+            m_LoadedoMAssemblies = new List<Assembly>();
 
             string folder = BH.Engine.Base.Query.BHoMFolder();
 
@@ -230,11 +366,11 @@ namespace BH.Test.JsonSchema
                 {
                     Assembly loaded = Assembly.LoadFrom(file);
                     if (loaded != null && loaded.IsOmAssembly() && IsInOrg(loaded, organisations))
-                        result.Add(loaded);
+                        m_LoadedoMAssemblies.Add(loaded);
                 }
             }
 
-            return result;
+            return m_LoadedoMAssemblies;
         }
 
         /***************************************************/
@@ -249,6 +385,12 @@ namespace BH.Test.JsonSchema
             }
             return false;
         }
+
+        /***************************************************/
+        /**** Assembly Loader Fields                    ****/
+        /***************************************************/
+
+        private static List<Assembly> m_LoadedoMAssemblies = null;
 
         /***************************************************/
 
