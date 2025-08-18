@@ -17,6 +17,12 @@ namespace SchemaGeneration
         {
             var types = assembly.GetTypes();
 
+            //Clean the folder before generating new schemas        
+            if (Directory.Exists(System.IO.Path.Combine(Path, assembly.GetName().Name)))
+            {
+                Directory.Delete(System.IO.Path.Combine(Path, assembly.GetName().Name), true);
+            }
+
             foreach (var type in types)
             {
                 if (!type.Namespace.IsOmNamespace())
