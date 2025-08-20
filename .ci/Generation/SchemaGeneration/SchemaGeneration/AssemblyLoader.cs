@@ -33,9 +33,17 @@ namespace SchemaGeneration
                 string name = Path.GetFileNameWithoutExtension(file);
                 if (regex.IsMatch(name))
                 {
-                    Assembly loaded = Assembly.LoadFrom(file);
-                    if (loaded != null && loaded.IsOmAssembly() && loaded.IsInOrg(organisations))
-                        result.Add(loaded);
+                    try
+                    {
+                        Assembly loaded = Assembly.LoadFrom(file);
+                        if (loaded != null && loaded.IsOmAssembly() && loaded.IsInOrg(organisations))
+                            result.Add(loaded);
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine($"Error loading assembly {name}: {e.Message}");
+                    }
+
                 }
             }
 
