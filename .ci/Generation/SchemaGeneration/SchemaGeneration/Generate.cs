@@ -17,10 +17,11 @@ namespace SchemaGeneration
         {
             var types = assembly.GetTypes();
 
-            //Clean the folder before generating new schemas        
-            if (Directory.Exists(System.IO.Path.Combine(Path, assembly.GetName().Name)))
+            //Clean the folder before generating new schemas
+            string assemblyPath = System.IO.Path.Combine(Path, assembly.RelativeAssemblySchemaId());
+            if (Directory.Exists(assemblyPath))
             {
-                Directory.Delete(System.IO.Path.Combine(Path, assembly.GetName().Name), true);
+                Directory.Delete(assemblyPath, true);
             }
 
             foreach (var type in types)
