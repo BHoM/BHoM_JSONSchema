@@ -50,7 +50,7 @@ namespace SchemaGeneration
             AssemblyDescriptionAttribute atr = assembly.GetCustomAttribute<AssemblyDescriptionAttribute>();
             if (atr != null)
             {
-                return orgs.Any(x => atr.Description.Contains($"github.com/{x}"));
+                return orgs.Any(x => atr.Description.Contains($"github.com/{x}/"));
             }
             return false;
         }
