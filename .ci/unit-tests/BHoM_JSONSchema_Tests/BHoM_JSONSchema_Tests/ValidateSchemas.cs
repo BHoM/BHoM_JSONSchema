@@ -30,7 +30,7 @@ namespace BH.Test.JsonSchema
             string json = BH.Engine.Serialiser.Convert.ToJson(dummy);
             System.Text.Json.Nodes.JsonNode node = System.Text.Json.Nodes.JsonNode.Parse(json);
 
-            Uri id = type.SchemaId();
+            Uri id = type.SchemaId(BranchName);
             Assert.Multiple(() =>
             {
                 Console.WriteLine($"As {type.Name}");
@@ -48,7 +48,7 @@ namespace BH.Test.JsonSchema
                         if (typeof(IObject).IsAssignableFrom(subType))
                         {
                             Console.WriteLine($"As {subType.Name}");
-                            success = CheckAgainstSchema(node, subType.SchemaId());
+                            success = CheckAgainstSchema(node, subType.SchemaId(BranchName));
                             Assert.That(success, Is.True, $"{type.Name} failed schema validation");
                         }
                     }
@@ -95,7 +95,7 @@ namespace BH.Test.JsonSchema
                 }
             }
 
-            bool success = CheckAgainstSchema(node, type.SchemaId());
+            bool success = CheckAgainstSchema(node, type.SchemaId(BranchName));
             Assert.That(success, Is.False, $"{type.Name} should have failed schema validation with invalid data");
         }
 
@@ -148,7 +148,7 @@ namespace BH.Test.JsonSchema
 
             Assume.That(wasUpdated, $"{type.Name} has no inner properties to update for invalid data test");
 
-            bool success = CheckAgainstSchema(node, type.SchemaId());
+            bool success = CheckAgainstSchema(node, type.SchemaId(BranchName));
             Assert.That(success, Is.False, $"{type.Name} should have failed schema validation with invalid data");
         }
 
@@ -183,7 +183,7 @@ namespace BH.Test.JsonSchema
             }
 
 
-            bool success = CheckAgainstSchema(node, type.SchemaId());
+            bool success = CheckAgainstSchema(node, type.SchemaId(BranchName));
             Assert.That(success, Is.False, $"{type.Name} should have failed schema validation with invalid data");
         }
 
@@ -200,7 +200,7 @@ namespace BH.Test.JsonSchema
 
             foreach (var type in types)
             {
-                Uri id = type.SchemaId();
+                Uri id = type.SchemaId(BranchName);
                 if (schemas.TryGetValue(id, out Json.Schema.JsonSchema schema))
                     schemas.Remove(id);
                 else
@@ -296,7 +296,7 @@ namespace BH.Test.JsonSchema
 
         public static Dictionary<Uri, Json.Schema.JsonSchema> Schemas { get; set; } = null;
         public static Json.Schema.EvaluationOptions Options { get; set; } = new Json.Schema.EvaluationOptions { OutputFormat = Json.Schema.OutputFormat.Hierarchical };
-        
+        public static string BranchName { get; set; } = null;
         /***************************************************/
         /**** Setup methods                             ****/
         /***************************************************/
@@ -325,7 +325,23 @@ namespace BH.Test.JsonSchema
                 Json.Schema.SchemaRegistry.Global.Register(schema);
                 Options.SchemaRegistry.Register(schema);
                 Json.Schema.IdKeyword id = schema.Keywords.OfType<Json.Schema.IdKeyword>().First();
+                if (BranchName == null) //Extract branch name from the schema file path
+                {
+                    string[] idPaths = id.Id.AbsolutePath.Split("/");
+                    int branchIndex = Array.IndexOf(idPaths, "BHoM_JSONSchema") + 1; // Assumes the branch name is the next folder after the repository name
+                    if (branchIndex < idPaths.Length && !string.IsNullOrWhiteSpace(idPaths[branchIndex]))
+                    {
+                        BranchName = idPaths[branchIndex];
+                        Console.WriteLine($"Branch name set to: {BranchName}");
+                    }
+                }
                 Schemas[id.Id] = schema;
+            }
+
+            if (BranchName == null) //Should not happen, but setting to develop as a fallback
+            {
+                BranchName = "develop"; // Default branch name if not found
+                Console.WriteLine($"Branch name not found, defaulting to: {BranchName}");
             }
         }
 
