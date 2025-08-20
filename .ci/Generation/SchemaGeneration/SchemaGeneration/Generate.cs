@@ -53,11 +53,8 @@ namespace SchemaGeneration
         {
             string dir = System.IO.Path.GetDirectoryName(path);
             if (!Directory.Exists(dir))
-            {
-                CreatePathDirectory(dir);
-
                 Directory.CreateDirectory(dir);
-            }
+            
         }
 
         private static string TypePath(this Type type)
