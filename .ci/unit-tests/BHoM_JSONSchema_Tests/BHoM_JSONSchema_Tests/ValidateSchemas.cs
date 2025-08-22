@@ -37,10 +37,9 @@ namespace BH.Test.JsonSchema
                 bool success = CheckAgainstSchema(node, id);
                 Assert.That(success, Is.True, $"{type.Name} failed schema validation");
 
-
                 bool isCustomObject = type == typeof(CustomObject);
                 if (isCustomObject)
-                    Warn.If(isCustomObject, "CustomObject is a special case, it does not work with interface schema inheritance as it is missing \"_t\"");
+                    Warn.If(type, Is.EqualTo(typeof(CustomObject)), "CustomObject is a special case, it does not work with interface schema inheritance as it is missing \"_t\"");
                 else
                 {
                     foreach (Type subType in type.GetInterfaces())
@@ -85,9 +84,10 @@ namespace BH.Test.JsonSchema
 
                 foreach (var property in propsToUpdate)
                 {
-                    if (property.PropertyType == typeof(bool))
+                    Type propType = Nullable.GetUnderlyingType(property.PropertyType) ?? property.PropertyType; // Get the underlying type if nullable
+                    if (propType == typeof(bool))
                     {
-                        node[property.Name] = System.Text.Json.Nodes.JsonValue.Create(1.0); ; // Set a double value to all properties
+                        node[property.Name] = System.Text.Json.Nodes.JsonValue.Create(45.2); ; // Set a double value to all properties
                     }
                     else
                         node[property.Name] = System.Text.Json.Nodes.JsonValue.Create(true); // Set a bool value to all properties
@@ -133,7 +133,9 @@ namespace BH.Test.JsonSchema
                     foreach (var innerProp in property.PropertyType.GetProperties(BindingFlags.Public | BindingFlags.Instance)
                                         .Where(p => (p.PropertyType != typeof(object)) && !p.PropertyType.IsGenericParameter && !typeof(Delegate).IsAssignableFrom(p.PropertyType)))
                     {
-                        if (innerProp.PropertyType == typeof(bool))
+                        Type propType = Nullable.GetUnderlyingType(innerProp.PropertyType) ?? innerProp.PropertyType; // Get the underlying type if nullable
+
+                        if (propType == typeof(bool))
                         {
                             innerObject[innerProp.Name] = System.Text.Json.Nodes.JsonValue.Create(1.0); ; // Set a double value to all properties
                         }
@@ -142,7 +144,6 @@ namespace BH.Test.JsonSchema
 
                         wasUpdated = true;
                     }
-
                 }
             }
 
