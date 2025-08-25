@@ -1,5 +1,5 @@
 {
-  "type" : ["object", "null"],
+  "type" : "object",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Versioning_oM/NoUpdateException.json",
   "properties" : {
     "Message" : {

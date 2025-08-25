@@ -1,4 +1,6 @@
 ﻿using BH.Engine.Base;
+using BH.Engine.JsonSchema;
+using BH.oM.JsonSchema;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,7 +16,7 @@ namespace SchemaGeneration
     {
         /***************************************************/
 
-        public static List<Assembly> LoadAlloMAssemblies(List<string> organisations)
+        public static List<Assembly> LoadAlloMAssemblies(ConvertConfig config)
         {
             string regexFilter = @"oM$";
             List<Assembly> result = new List<Assembly>();
@@ -36,7 +38,7 @@ namespace SchemaGeneration
                     try
                     {
                         Assembly loaded = Assembly.LoadFrom(file);
-                        if (loaded != null && loaded.IsOmAssembly() && loaded.IsInOrg(organisations))
+                        if (loaded != null && loaded.IsOmAssembly() && loaded.IsInOrg(config))
                             result.Add(loaded);
                     }
                     catch (Exception e)
@@ -52,17 +54,5 @@ namespace SchemaGeneration
 
         /***************************************************/
 
-        [Description("Checks whether a given assembly is tagged as part of the BHoM organisation.")]
-        public static bool IsInOrg(this Assembly assembly, List<string> orgs)
-        {
-            AssemblyDescriptionAttribute atr = assembly.GetCustomAttribute<AssemblyDescriptionAttribute>();
-            if (atr != null)
-            {
-                return orgs.Any(x => atr.Description.Contains($"github.com/{x}/"));
-            }
-            return false;
-        }
-
-        /***************************************************/
     }
 }
