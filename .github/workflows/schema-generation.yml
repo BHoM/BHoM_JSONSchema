@@ -270,9 +270,9 @@ jobs:
     
     - name: Build Generation solution
       run: |
-        if (Test-Path ".cs/Generation") {
+        if (Test-Path ".ci/Generation") {
           Write-Host "Building Generation solution..."
-          Push-Location ".cs/Generation"
+          Push-Location ".ci/Generation"
           
           $solutionFiles = Get-ChildItem -Filter "*.sln"
           if ($solutionFiles.Count -gt 0) {
@@ -289,19 +289,19 @@ jobs:
           
           Pop-Location
         } else {
-          Write-Host "Generation folder not found at .cs/Generation"
+          Write-Host "Generation folder not found at .ci/Generation"
           exit 1
         }
       shell: powershell
     
     - name: Run Generation executable
       run: |
-        Write-Host "Looking for executable in .cs/Generation..."
-        $exeFiles = Get-ChildItem ".cs/Generation" -Recurse -Filter "*.exe" | Where-Object { $_.Directory.Name -match "(bin|Release)" }
+        Write-Host "Looking for executable in .ci/Generation..."
+        $exeFiles = Get-ChildItem ".ci/Generation" -Recurse -Filter "*.exe" | Where-Object { $_.Directory.Name -match "(bin|Release)" }
         
         if ($exeFiles.Count -eq 0) {
           Write-Host "No executable found, looking for DLL to run with dotnet..."
-          $dllFiles = Get-ChildItem ".cs/Generation" -Recurse -Filter "*.dll" | Where-Object { $_.Directory.Name -match "(bin|Release)" -and $_.Name -notmatch "(System\.|Microsoft\.)" }
+          $dllFiles = Get-ChildItem ".ci/Generation" -Recurse -Filter "*.dll" | Where-Object { $_.Directory.Name -match "(bin|Release)" -and $_.Name -notmatch "(System\.|Microsoft\.)" }
           
           if ($dllFiles.Count -gt 0) {
             $dllFile = $dllFiles[0].FullName
