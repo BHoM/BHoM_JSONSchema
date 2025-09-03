@@ -62,84 +62,133 @@ jobs:
     
     - name: Analyze dependencies and determine build order
       id: build-order
+      timeout-minutes: 5
       run: |
-        # PowerShell script to perform topological sort based on dependencies.txt files
-        $repos = Get-ChildItem ".repos" -Directory | Select-Object -ExpandProperty Name
-        $dependencies = @{}
-        $graph = @{}
-        
-        # Initialize graph
-        foreach ($repo in $repos) {
-          $graph[$repo] = @()
-          $dependencies[$repo] = @()
+        # Get list of cloned repositories
+        $validRepos = @()
+        if (Test-Path ".repos") {
+          Get-ChildItem ".repos" -Directory | ForEach-Object { $validRepos += $_.Name }
         }
         
-        # Read dependencies from each repo's dependencies.txt
-        foreach ($repo in $repos) {
-          $depsFile = ".repos/$repo/dependencies.txt"
-          if (Test-Path $depsFile) {
-            $deps = Get-Content $depsFile | Where-Object { $_.Trim() -ne "" } | ForEach-Object {
-              $dep = $_.Trim()
-              # Extract repo name from full path (e.g., "BHoM/BHoM_Engine" -> "BHoM_Engine")
-              if ($dep.Contains('/')) {
-                $dep.Split('/')[1]
-              } else {
-                $dep
-              }
-            }
-            $dependencies[$repo] = $deps
-            
-            # Build reverse graph for topological sort
-            foreach ($dep in $deps) {
-              if ($graph.ContainsKey($dep)) {
-                $graph[$dep] += $repo
-              }
-            }
-          }
+        if ($validRepos.Count -eq 0) {
+          Write-Host "No valid repositories to analyze"
+          echo "order=" >> $env:GITHUB_OUTPUT
+          exit 0
         }
         
-        # Topological sort using Kahn's algorithm
-        $buildOrder = @()
-        $inDegree = @{}
+        Write-Host "Analyzing dependency order for $($validRepos.Count) repositories..."
         
-        # Calculate in-degrees
-        foreach ($repo in $repos) {
-          $inDegree[$repo] = $dependencies[$repo].Count
-        }
+        # Create dependency map
+        $dependencyMap = @{}
         
-        # Find nodes with no incoming edges
-        $queue = @()
-        foreach ($repo in $repos) {
-          if ($inDegree[$repo] -eq 0) {
-            $queue += $repo
-          }
-        }
-        
-        # Process queue
-        while ($queue.Count -gt 0) {
-          $current = $queue[0]
-          $queue = $queue[1..($queue.Count-1)]
-          $buildOrder += $current
+        foreach ($repo in $validRepos) {
+          $dependencyMap[$repo] = @()
+          $depsFile = ".repos\$repo\dependencies.txt"
           
-          # Remove edges from current node
-          foreach ($neighbor in $graph[$current]) {
-            $inDegree[$neighbor]--
-            if ($inDegree[$neighbor] -eq 0) {
-              $queue += $neighbor
+          if (Test-Path $depsFile) {
+            Write-Host "Found dependencies.txt in $repo"
+            $repoDeps = Get-Content $depsFile | ForEach-Object { 
+              $line = $_.Trim()
+              if (![string]::IsNullOrWhiteSpace($line) -and !$line.StartsWith("#")) {
+                # Extract just the repo name from ORG/REPO format
+                $repoName = $line.Split('/')[-1]
+                return $repoName
+              }
+            } | Where-Object { $_ -ne $null }
+            
+            # Only include dependencies that are in our valid repos list
+            $validDeps = $repoDeps | Where-Object { $validRepos -contains $_ }
+            $dependencyMap[$repo] = $validDeps
+            
+            if ($validDeps.Count -gt 0) {
+              Write-Host "$repo depends on: $($validDeps -join ', ')"
+            } else {
+              Write-Host "$repo has no dependencies in current build set"
+            }
+          } else {
+            Write-Host "$repo has no dependencies.txt file"
+          }
+        }
+        
+        # Topological sort to determine build order
+        $script:buildOrder = @()
+        $script:visited = @{}
+        $script:visiting = @{}
+        
+        function Get-BuildOrder {
+          param([string]$repo)
+          
+          Write-Host "Processing $repo for build order..."
+          
+          if ($script:visiting.ContainsKey($repo)) {
+            Write-Host "⚠ Circular dependency detected involving $repo"
+            return $false
+          }
+          
+          if ($script:visited.ContainsKey($repo)) {
+            Write-Host "$repo already processed"
+            return $true
+          }
+          
+          $script:visiting[$repo] = $true
+          Write-Host "Visiting dependencies of $repo..."
+          
+          # Visit all dependencies first
+          if ($dependencyMap.ContainsKey($repo) -and $dependencyMap[$repo].Count -gt 0) {
+            Write-Host "$repo has dependencies: $($dependencyMap[$repo] -join ', ')"
+            foreach ($dep in $dependencyMap[$repo]) {
+              if ($validRepos -contains $dep) {
+                Write-Host "Processing dependency: $dep"
+                $result = Get-BuildOrder -repo $dep
+                if (-not $result) {
+                  Write-Host "Failed to process dependency $dep"
+                  return $false
+                }
+              } else {
+                Write-Host "Skipping dependency $dep (not in current build set)"
+              }
+            }
+          } else {
+            Write-Host "$repo has no dependencies"
+          }
+          
+          $script:visiting.Remove($repo)
+          $script:visited[$repo] = $true
+          $script:buildOrder += $repo
+          Write-Host "Added $repo to build order (position $($script:buildOrder.Count))"
+          return $true
+        }
+        
+        # Process all repositories
+        Write-Host "Starting topological sort for $($validRepos.Count) repositories..."
+        $sortSuccess = $true
+        foreach ($repo in $validRepos) {
+          if (-not $script:visited.ContainsKey($repo)) {
+            Write-Host "Processing root repository: $repo"
+            $result = Get-BuildOrder -repo $repo
+            if (-not $result) {
+              $sortSuccess = $false
+              break
             }
           }
         }
         
-        # Check for cycles
-        if ($buildOrder.Count -ne $repos.Count) {
-          Write-Host "Warning: Circular dependencies detected. Using fallback order."
-          $buildOrder = $repos
+        if (-not $sortSuccess) {
+          Write-Host "⚠ Topological sort failed due to circular dependencies. Using original order."
+          $script:buildOrder = $validRepos
         }
         
-        $buildOrderString = $buildOrder -join ","
-        Write-Host "Build order: $buildOrderString"
-        echo "order=$buildOrderString" >> $env:GITHUB_OUTPUT
-      shell: powershell
+        $buildOrder = $script:buildOrder
+        
+        Write-Host "Determined build order:"
+        for ($i = 0; $i -lt $buildOrder.Count; $i++) {
+          Write-Host "  $($i + 1). $($buildOrder[$i])"
+        }
+        
+        $orderString = $buildOrder -join ","
+        Write-Host "Final build order: $orderString"
+        echo "order=$orderString" >> $env:GITHUB_OUTPUT
+      shell: pwsh
     
     - name: Build repositories in dependency order
       run: |

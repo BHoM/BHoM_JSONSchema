@@ -38,7 +38,6 @@ BHoM/Robot_Toolkit
 BHoM/SAP2000_Toolkit
 BHoM/SAP_Toolkit
 BHoM/SQL_Toolkit
-BHoM/SQL_Toolkit/ZeroCodeTool
 BHoM/STL_Toolkit
 BHoM/Socket_Toolkit
 BHoM/TriangleNet_Toolkit
