@@ -44,3 +44,4 @@ BHoM/TriangleNet_Toolkit
 BHoM/Versioning_Toolkit
 BHoM/XML_Toolkit
 BHoM/iAuditor_Toolkit
+BHoM/JSONSchema_Toolkit
