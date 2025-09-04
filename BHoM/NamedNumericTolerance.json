@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/NamedNumericTolerance.json",
   "title" : "NamedNumericTolerance",
   "type" : ["object", "null"],
@@ -13,7 +14,7 @@
       "description" : "Numeric tolerance. Applies rounding for numbers smaller than this. Defaults to 1E-12."
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Base.NamedNumericTolerance"
     },

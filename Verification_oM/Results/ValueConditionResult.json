@@ -1,30 +1,17 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Results/ValueConditionResult.json",
   "title" : "ValueConditionResult",
   "type" : ["object", "null"],
   "description" : "ValueConditionResult: Object representing result of IValueCondition.",
   "properties" : {
     "Passed" : {
-      "type" : ["object", "null"],
-      "description" : "Information whether the object passed or failed the condition. Null means inconclusive result.",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : "Information whether the object passed or failed the condition. Null means inconclusive result."
     },
     "ExtractedValue" : { },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Verification.Results.ValueConditionResult"
     },

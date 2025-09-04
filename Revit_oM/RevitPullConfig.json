@@ -1,10 +1,12 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/RevitPullConfig.json",
   "title" : "RevitPullConfig",
   "type" : ["object", "null"],
   "description" : "RevitPullConfig: Configuration used for adapter interaction with Revit on Pull action.",
   "properties" : {
     "Discipline" : {
+      "description" : "Discipline used on pull action. Default is Physical. Discipline: Enumerator allowing choosing to which discipline (and corresponding namespace) should Revit elements be converted on pull.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Enums/Discipline.json"
     },
     "IncludeClosedWorksets" : {
@@ -16,9 +18,11 @@
       "description" : "Elements nested within families will be processed if true."
     },
     "GeometryConfig" : {
+      "description" : "Configuration specifying which geometry should be pulled and passed to RevitGeometry fragment. PullGeometryConfig: Configuration used to specify which geometry should be pulled and passed to RevitGeometry fragment.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/PullGeometryConfig.json"
     },
     "RepresentationConfig" : {
+      "description" : "Configuration specifying representation to be pulled and passed to RevitRepresentation fragment. PullRepresentationConfig: Configuration used to specify representation to be pulled and passed to RevitRepresentation fragment.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/PullRepresentationConfig.json"
     },
     "PullMaterialTakeOff" : {
@@ -34,10 +38,11 @@
       "description" : "If true and if no specific EqualityComparer is found for the type, Diffing hashes are computed and used to compare the objects."
     },
     "DiffingConfig" : {
+      "description" : "Configurations for the Diffing hashing. Requires `AllowHashForComparing` to be set to true. DiffingConfig: General configurations for the Diffing process, including settings for the Hash computation.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/DiffingConfig.json"
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Adapters.Revit.RevitPullConfig"
     },

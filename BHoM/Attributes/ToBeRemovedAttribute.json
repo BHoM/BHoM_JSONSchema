@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/ToBeRemovedAttribute.json",
   "title" : "ToBeRemovedAttribute",
   "type" : ["object", "null"],
@@ -11,7 +12,7 @@
     },
     "TypeId" : { },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Base.Attributes.ToBeRemovedAttribute"
     },

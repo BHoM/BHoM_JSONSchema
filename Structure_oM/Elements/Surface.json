@@ -1,16 +1,20 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Surface.json",
   "title" : "Surface",
   "type" : ["object", "null"],
   "description" : "Surface: 2D element for structural analysis. \nThe Surface is a freeform surface object defined by a geometrical surface. For planar elements, the Panel is recommended, as it is generally better supported in analysis packages.",
   "properties" : {
     "Extents" : {
+      "description" : "A geometrical surface defining the 'centre plane` of the surface. ISurface: The interface for two-dimensional geometrical objects.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ISurface.json"
     },
     "Property" : {
+      "description" : "Defines the thickness property and material of the Element. ISurfaceProperty: Base interface for properties for 2D finite element structural objects such as Panels and FEMeshes.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/ISurfaceProperty.json"
     },
     "PlanarSpring" : {
+      "description" : "A planar support for the Surface, constraining the movement in the translational degrees of freedom. Constraint3DOF: Constraint objects with three translational degrees of freedom, used for support of 2D analytical objects.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Constraints/Constraint3DOF.json"
     },
     "BHoM_Guid" : {
@@ -27,13 +31,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Structure.Elements.Surface"
     },

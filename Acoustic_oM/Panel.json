@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Acoustic_oM/Panel.json",
   "title" : "Panel",
   "type" : ["object", "null"],
@@ -12,7 +13,7 @@
     "R" : {
       "type" : ["array", "null"],
       "items" : {
-        "type" : ["object", "null"],
+        "type" : "object",
         "properties" : {
           "k" : {
             "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Acoustic_oM/Frequency.json"
@@ -37,13 +38,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Acoustic.Panel"
     },

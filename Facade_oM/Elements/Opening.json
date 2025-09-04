@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Elements/Opening.json",
   "title" : "Opening",
   "type" : ["object", "null"],
@@ -12,12 +13,15 @@
       }
     },
     "OpeningConstruction" : {
+      "description" : "A construction object providing construction information about the opening - typically glazing construction",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Constructions/IConstruction.json"
     },
     "FrameCornerType" : {
+      "description" : "Frame edge treatment at corners (ie Mitred, Vertical Extends, or Horizontal Extends) FrameCornerType: The type of join at frame corners",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Elements/FrameCornerType.json"
     },
     "Type" : {
+      "description" : "The type of opening on a panel (e.g. Window, Door). Use OpeningType enum OpeningType: The type of cutout or hole in a building surface/panel (e.g. Window, Door, Rooflight)",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Elements/OpeningType.json"
     },
     "BHoM_Guid" : {
@@ -34,13 +38,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Facade.Elements.Opening"
     },

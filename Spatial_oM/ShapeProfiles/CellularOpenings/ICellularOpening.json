@@ -1,29 +1,30 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/CellularOpenings/ICellularOpening.json",
   "required" : ["_t"],
   "properties" : {
     "_t" : {
-      "enum" : ["BH.oM.Spatial.ShapeProfiles.CellularOpenings.SinusoidalCellularOpening", "BH.oM.Spatial.ShapeProfiles.CellularOpenings.HexagonalCellularOpening", "BH.oM.Spatial.ShapeProfiles.CellularOpenings.CircularCellularOpening"]
+      "enum" : ["BH.oM.Spatial.ShapeProfiles.CellularOpenings.CircularCellularOpening", "BH.oM.Spatial.ShapeProfiles.CellularOpenings.HexagonalCellularOpening", "BH.oM.Spatial.ShapeProfiles.CellularOpenings.SinusoidalCellularOpening"]
     }
   },
   "allOf" : [{
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Spatial.ShapeProfiles.CellularOpenings.SinusoidalCellularOpening"
+            "type" : "string",
+            "const" : "BH.oM.Spatial.ShapeProfiles.CellularOpenings.CircularCellularOpening"
           }
         },
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/CellularOpenings/SinusoidalCellularOpening.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/CellularOpenings/CircularCellularOpening.json"
       }
     }, {
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
+            "type" : "string",
             "const" : "BH.oM.Spatial.ShapeProfiles.CellularOpenings.HexagonalCellularOpening"
           }
         },
@@ -36,14 +37,14 @@
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Spatial.ShapeProfiles.CellularOpenings.CircularCellularOpening"
+            "type" : "string",
+            "const" : "BH.oM.Spatial.ShapeProfiles.CellularOpenings.SinusoidalCellularOpening"
           }
         },
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/CellularOpenings/CircularCellularOpening.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/CellularOpenings/SinusoidalCellularOpening.json"
       }
     }]
 }

@@ -1,9 +1,11 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/Requests/PierAndSpandrelForceRequest.json",
   "title" : "PierAndSpandrelForceRequest",
   "type" : ["object", "null"],
   "properties" : {
     "ResultType" : {
+      "description" : "Defines which type of results that should be extracted. PierAndSpandrelResultType: Defines the type of results that should be extracted for PierAndSpandrelForceRequest.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/Requests/PierAndSpandrelResultType.json"
     },
     "Cases" : {
@@ -24,7 +26,7 @@
       "items" : { }
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Adapters.ETABS.Requests.PierAndSpandrelForceRequest"
     },

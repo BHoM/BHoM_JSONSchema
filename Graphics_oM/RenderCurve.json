@@ -1,10 +1,12 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/RenderCurve.json",
   "title" : "RenderCurve",
   "type" : ["object", "null"],
   "description" : "RenderCurve: Render a curve with specified colour and thickness.",
   "properties" : {
     "Curve" : {
+      "description" : "The curve to render. ICurve: The interface for all one-dimensional geometrical objects.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ICurve.json"
     },
     "Thickness" : {
@@ -12,10 +14,10 @@
       "description" : "The thickness of the curve. Should be a value greater or equal to 1."
     },
     "Colour" : {
-      "type" : ["object", "null"],
+      "type" : "object",
       "properties" : {
         "_t" : {
-          "type" : ["string", "null"],
+          "type" : "string",
           "const" : "System.Drawing.Color"
         },
         "A" : {
@@ -34,7 +36,7 @@
       "required" : ["A", "R", "G", "B"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Graphics.RenderCurve"
     },

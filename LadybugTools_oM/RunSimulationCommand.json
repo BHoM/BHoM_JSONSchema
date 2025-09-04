@@ -1,20 +1,24 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/RunSimulationCommand.json",
   "title" : "RunSimulationCommand",
   "type" : ["object", "null"],
   "description" : "RunSimulationCommand: Command that when executed with the LadybugTools Adapter, runs a simulation and return a SimulationResult containing hourly data.",
   "properties" : {
     "EPWFile" : {
+      "description" : "FileSettings for an EPW file to run the simulation with. FileSettings: The fileSettings, file name and directory, to use with an adapter for push and pull",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/FileSettings.json"
     },
     "GroundMaterial" : {
+      "description" : "The ground material for the simulation to use. IEnergyMaterialOpaque: An interface for opaque energy materials.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/IEnergyMaterialOpaque.json"
     },
     "ShadeMaterial" : {
+      "description" : "The shade material for the simulation to use. IEnergyMaterialOpaque: An interface for opaque energy materials.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/IEnergyMaterialOpaque.json"
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.LadybugTools.RunSimulationCommand"
     },

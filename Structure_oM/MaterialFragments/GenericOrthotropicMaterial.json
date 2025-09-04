@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/GenericOrthotropicMaterial.json",
   "title" : "GenericOrthotropicMaterial",
   "type" : ["object", "null"],
@@ -17,15 +18,19 @@
       "description" : "Dynamic damping ratio, expressed as a ratio between actual damping and critical damping. For structures, typically taken as 0.02 (i.e. 2%). Property has a quantity of type Ratio measured in [-]."
     },
     "YoungsModulus" : {
+      "description" : "Modulus of elasticity of the material. Ratio between axial stress and axial strain. Property has a quantity of type YoungsModulus measured in [Pa]. Vector: Defines a direction and magnitude in three-dimensional Euclidean space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
     },
     "PoissonsRatio" : {
+      "description" : "Ratio between axial and transverse strain. Property has a quantity of type Ratio measured in [-]. Vector: Defines a direction and magnitude in three-dimensional Euclidean space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
     },
     "ThermalExpansionCoeff" : {
+      "description" : "The strain induced in the material per unit change of temperature. Property has a quantity of type ThermalExpansionCoefficient measured in [1/K]. Vector: Defines a direction and magnitude in three-dimensional Euclidean space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
     },
     "ShearModulus" : {
+      "description" : "The shear modulus or modulus of rigidity. Defined as the ratio between shear stress and shear strain. Property has a quantity of type ShearModulus measured in [Pa]. Vector: Defines a direction and magnitude in three-dimensional Euclidean space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
     },
     "BHoM_Guid" : {
@@ -39,13 +44,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Structure.MaterialFragments.GenericOrthotropicMaterial"
     },

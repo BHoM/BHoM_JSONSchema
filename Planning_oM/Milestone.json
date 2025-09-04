@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Planning_oM/Milestone.json",
   "title" : "Milestone",
   "type" : ["object", "null"],
@@ -6,25 +7,21 @@
     "DueOn" : {
       "type" : ["object", "null"],
       "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
+        "_t" : {
+          "type" : "string",
+          "const" : "System.DateTimeOffset"
         },
-        "Value" : {
-          "type" : ["array", "null"],
+        "_v" : {
+          "type" : "array",
           "prefixItems" : [{
               "type" : "integer"
             }, {
               "type" : "integer"
             }],
           "items" : false
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
         }
       },
-      "required" : ["HasValue", "Value"]
+      "required" : ["_v"]
     },
     "State" : {
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Planning_oM/ItemState.json"
@@ -46,13 +43,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Planning.Milestone"
     },

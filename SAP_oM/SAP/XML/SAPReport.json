@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/SAPReport.json",
   "title" : "SAPReport",
   "type" : ["object", "null"],
@@ -40,15 +41,19 @@
       "description" : "."
     },
     "ReportHeader" : {
+      "description" : ".",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/ReportHeader.json"
     },
     "EnergyAssessment" : {
+      "description" : ".",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/EnergyAssessment.json"
     },
     "SAP10Data" : {
+      "description" : ".",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/SAP10Data.json"
     },
     "InsuranceDetails" : {
+      "description" : "Details of the Professional Indemnity Insurance policy used to provide cover against a compensation claim against any particular Home Condition Report.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/InsuranceDetails.json"
     },
     "ExternalDefinitionsRevisionNumber" : {
@@ -69,13 +74,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Environment.SAP.XML.SAPReport"
     },

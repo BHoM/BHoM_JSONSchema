@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/PlotInformation.json",
   "title" : "PlotInformation",
   "type" : ["object", "null"],
@@ -8,6 +9,7 @@
       "description" : "The image produced, either as a filepath to the file created, or as a base64 string representation of the image."
     },
     "OtherData" : {
+      "description" : "Metadata about the data used to produce the image.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/ISimulationData.json"
     },
     "BHoM_Guid" : {
@@ -24,13 +26,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.LadybugTools.PlotInformation"
     },

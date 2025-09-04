@@ -1,13 +1,15 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Conditions/HasValue.json",
   "title" : "HasValue",
   "type" : ["object", "null"],
   "properties" : {
     "ValueSource" : {
+      "description" : "Object defining the source of a value to evaluate. IValueSource: Interface for objects defining how to extract a value from an object.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Conditions/IValueSource.json"
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Verification.Conditions.HasValue"
     },

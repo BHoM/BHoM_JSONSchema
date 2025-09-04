@@ -1,13 +1,16 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/ContourLoadSet.json",
   "title" : "ContourLoadSet",
   "type" : ["object", "null"],
   "description" : "ContourLoadSet: A set of uniform loads to be applied in the gravity direction over a region defined by a closed planar Polyline.",
   "properties" : {
     "UniformLoadSet" : {
+      "description" : "A UniformLoadSet containing a list of uniform loads to be applied in the gravity direction UniformLoadSet: Definition of a set of uniform loads in the gravity direction (-Z).",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/UniformLoadSet.json"
     },
     "Contour" : {
+      "description" : "Closed planar polyline enclosing the region to be loaded. Polyline: A curve consisting of a continuous chain of straight line segments. The Polyline is considered closed if the first and last ControlPoints are coincident.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Polyline.json"
     },
     "BHoM_Guid" : {
@@ -24,13 +27,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Structure.Loads.ContourLoadSet"
     },

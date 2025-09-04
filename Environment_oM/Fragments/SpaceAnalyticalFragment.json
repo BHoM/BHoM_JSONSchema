@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Fragments/SpaceAnalyticalFragment.json",
   "title" : "SpaceAnalyticalFragment",
   "type" : ["object", "null"],
@@ -19,16 +20,18 @@
       "type" : "number"
     },
     "SizeCoolingMethod" : {
+      "description" : "The cooling size method of the space. Use SizingMethod enum",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Fragments/SizingMethod.json"
     },
     "SizeHeatingMethod" : {
+      "description" : "The heating size method of the space. Use SizingMethod enum",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Fragments/SizingMethod.json"
     },
     "RadiantProportion" : {
       "type" : "number"
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Environment.Fragments.SpaceAnalyticalFragment"
     },

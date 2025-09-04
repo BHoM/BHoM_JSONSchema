@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Humans_oM/ViewQuality/Avalue.json",
   "title" : "Avalue",
   "type" : ["object", "null"],
@@ -12,15 +13,19 @@
       "description" : "Percentage of the cone of vision occupied by heads occluding the activity area."
     },
     "FullActivityArea" : {
+      "description" : "Activity area projected to the spectator's viewing plane. Polyline: A curve consisting of a continuous chain of straight line segments. The Polyline is considered closed if the first and last ControlPoints are coincident.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Polyline.json"
     },
     "ClippedActivityArea" : {
+      "description" : "Resulting Polyline after clipping the full activity area with the cone of vision. Polyline: A curve consisting of a continuous chain of straight line segments. The Polyline is considered closed if the first and last ControlPoints are coincident.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Polyline.json"
     },
     "ConeOfVision" : {
+      "description" : "Effective cone of vision orientated to the spectator. Polyline: A curve consisting of a continuous chain of straight line segments. The Polyline is considered closed if the first and last ControlPoints are coincident.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Polyline.json"
     },
     "ReferencePoint" : {
+      "description" : "Point representing the spectator's singular eye reference. Point: Defines a dimensionless location in three-dimensional space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
     },
     "OccludingHeads" : {
@@ -40,7 +45,7 @@
       "type" : "number"
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Humans.ViewQuality.Avalue"
     },

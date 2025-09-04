@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/Excel/OpeningSchedule.json",
   "title" : "OpeningSchedule",
   "type" : ["object", "null"],
@@ -17,9 +18,11 @@
       "description" : "The gvalue of the opening."
     },
     "TypeOfGlazing" : {
+      "description" : "The type of glazing. TypeOfGlazing: Code which indicates the type of glazing; if U-value is from BFRC or manufacturer declaration, give as one of: single, double, triple.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/TypeOfGlazing.json"
     },
     "GlazingGap" : {
+      "description" : "The glazing gap. GlazingGap: Code which indicates the type of glazing; if U-value is from BFRC or manufacturer declaration, give as one of: single, double, triple.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/GlazingGap.json"
     },
     "FrameFactor" : {
@@ -27,6 +30,7 @@
       "description" : "The frame factor of the opening."
     },
     "FrameType" : {
+      "description" : "The type of frame. TypeOfFrame: The opening type defines the thermal properties of a series of openings.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/TypeOfFrame.json"
     },
     "ArgonFilled" : {
@@ -38,6 +42,7 @@
       "description" : "If the opening is krypton filled."
     },
     "DataSource" : {
+      "description" : "The data source for the opening. OpeningDataSource: Code which indicates the source of opening data.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/OpeningDataSource.json"
     },
     "FloorIntersection" : {
@@ -58,13 +63,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Environment.SAP.Excel.OpeningSchedule"
     },

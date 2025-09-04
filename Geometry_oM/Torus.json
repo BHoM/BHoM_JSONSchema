@@ -1,13 +1,16 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Torus.json",
   "title" : "Torus",
   "type" : ["object", "null"],
   "description" : "Torus: A standard solid circular ring torus, formed as a surface of revolution of a circle about an axis.",
   "properties" : {
     "Centre" : {
+      "description" : "Origin point defining location of the Torus in three-dimensional space. Point: Defines a dimensionless location in three-dimensional space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
     },
     "Axis" : {
+      "description" : "Vector defining the axis of revolution and the orientation of the Torus in three-dimensional space. Vector: Defines a direction and magnitude in three-dimensional Euclidean space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
     },
     "RadiusMajor" : {
@@ -19,7 +22,7 @@
       "description" : "The radius defining the size of the circular cross section. Property has a quantity of type Length measured in [m]."
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Geometry.Torus"
     },

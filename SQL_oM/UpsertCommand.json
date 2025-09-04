@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SQL_oM/UpsertCommand.json",
   "title" : "UpsertCommand",
   "type" : ["object", "null"],
@@ -13,7 +14,7 @@
       "type" : ["object", "null"],
       "properties" : {
         "_t" : {
-          "type" : ["string", "null"],
+          "type" : "string",
           "const" : "System.Type"
         },
         "Name" : {
@@ -31,7 +32,7 @@
       "description" : "The name of the table which the data should be upserted to."
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Adapters.SQL.UpsertCommand"
     },

@@ -1,28 +1,29 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/IOutput.json",
   "required" : ["_t"],
   "properties" : {
     "_t" : {
       "oneOf" : [{
+          "pattern" : "^BH\\.oM\\.Base\\.Output`1\\[\\[.*\\]\\]$"
+        }, {
           "pattern" : "^BH\\.oM\\.Base\\.Output`10\\[\\[.*\\]\\]$"
-        }, {
-          "pattern" : "^BH\\.oM\\.Base\\.Output`9\\[\\[.*\\]\\]$"
-        }, {
-          "pattern" : "^BH\\.oM\\.Base\\.Output`8\\[\\[.*\\]\\]$"
-        }, {
-          "pattern" : "^BH\\.oM\\.Base\\.Output`7\\[\\[.*\\]\\]$"
-        }, {
-          "pattern" : "^BH\\.oM\\.Base\\.Output`6\\[\\[.*\\]\\]$"
-        }, {
-          "pattern" : "^BH\\.oM\\.Base\\.Output`5\\[\\[.*\\]\\]$"
-        }, {
-          "pattern" : "^BH\\.oM\\.Base\\.Output`4\\[\\[.*\\]\\]$"
-        }, {
-          "pattern" : "^BH\\.oM\\.Base\\.Output`3\\[\\[.*\\]\\]$"
         }, {
           "pattern" : "^BH\\.oM\\.Base\\.Output`2\\[\\[.*\\]\\]$"
         }, {
-          "pattern" : "^BH\\.oM\\.Base\\.Output`1\\[\\[.*\\]\\]$"
+          "pattern" : "^BH\\.oM\\.Base\\.Output`3\\[\\[.*\\]\\]$"
+        }, {
+          "pattern" : "^BH\\.oM\\.Base\\.Output`4\\[\\[.*\\]\\]$"
+        }, {
+          "pattern" : "^BH\\.oM\\.Base\\.Output`5\\[\\[.*\\]\\]$"
+        }, {
+          "pattern" : "^BH\\.oM\\.Base\\.Output`6\\[\\[.*\\]\\]$"
+        }, {
+          "pattern" : "^BH\\.oM\\.Base\\.Output`7\\[\\[.*\\]\\]$"
+        }, {
+          "pattern" : "^BH\\.oM\\.Base\\.Output`8\\[\\[.*\\]\\]$"
+        }, {
+          "pattern" : "^BH\\.oM\\.Base\\.Output`9\\[\\[.*\\]\\]$"
         }]
     }
   },
@@ -30,7 +31,20 @@
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
+            "type" : "string",
+            "pattern" : "^BH\\.oM\\.Base\\.Output`1\\[\\[.*\\]\\]$"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Output`1.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
             "pattern" : "^BH\\.oM\\.Base\\.Output`10\\[\\[.*\\]\\]$"
           }
         },
@@ -43,98 +57,7 @@
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "pattern" : "^BH\\.oM\\.Base\\.Output`9\\[\\[.*\\]\\]$"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Output`9.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "pattern" : "^BH\\.oM\\.Base\\.Output`8\\[\\[.*\\]\\]$"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Output`8.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "pattern" : "^BH\\.oM\\.Base\\.Output`7\\[\\[.*\\]\\]$"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Output`7.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "pattern" : "^BH\\.oM\\.Base\\.Output`6\\[\\[.*\\]\\]$"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Output`6.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "pattern" : "^BH\\.oM\\.Base\\.Output`5\\[\\[.*\\]\\]$"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Output`5.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "pattern" : "^BH\\.oM\\.Base\\.Output`4\\[\\[.*\\]\\]$"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Output`4.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "pattern" : "^BH\\.oM\\.Base\\.Output`3\\[\\[.*\\]\\]$"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Output`3.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
+            "type" : "string",
             "pattern" : "^BH\\.oM\\.Base\\.Output`2\\[\\[.*\\]\\]$"
           }
         },
@@ -147,14 +70,92 @@
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "pattern" : "^BH\\.oM\\.Base\\.Output`1\\[\\[.*\\]\\]$"
+            "type" : "string",
+            "pattern" : "^BH\\.oM\\.Base\\.Output`3\\[\\[.*\\]\\]$"
           }
         },
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Output`1.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Output`3.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "pattern" : "^BH\\.oM\\.Base\\.Output`4\\[\\[.*\\]\\]$"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Output`4.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "pattern" : "^BH\\.oM\\.Base\\.Output`5\\[\\[.*\\]\\]$"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Output`5.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "pattern" : "^BH\\.oM\\.Base\\.Output`6\\[\\[.*\\]\\]$"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Output`6.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "pattern" : "^BH\\.oM\\.Base\\.Output`7\\[\\[.*\\]\\]$"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Output`7.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "pattern" : "^BH\\.oM\\.Base\\.Output`8\\[\\[.*\\]\\]$"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Output`8.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "pattern" : "^BH\\.oM\\.Base\\.Output`9\\[\\[.*\\]\\]$"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Output`9.json"
       }
     }]
 }

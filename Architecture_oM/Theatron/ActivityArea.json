@@ -1,12 +1,15 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Architecture_oM/Theatron/ActivityArea.json",
   "title" : "ActivityArea",
   "type" : ["object", "null"],
   "properties" : {
     "PlayingArea" : {
+      "description" : "Closed Polyline representing a pitch, screen or any area that an audience are looking at 2d or 3d Polyline: A curve consisting of a continuous chain of straight line segments. The Polyline is considered closed if the first and last ControlPoints are coincident.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Polyline.json"
     },
     "ActivityFocalPoint" : {
+      "description" : "This is used for Avalue and Evalue calculations, typically the centre of the playing area Point: Defines a dimensionless location in three-dimensional space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
     },
     "BHoM_Guid" : {
@@ -23,13 +26,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Architecture.Theatron.ActivityArea"
     },

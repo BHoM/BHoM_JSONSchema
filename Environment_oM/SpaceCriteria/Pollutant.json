@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/Pollutant.json",
   "title" : "Pollutant",
   "type" : ["object", "null"],
@@ -13,6 +14,7 @@
       "description" : "The latent heat contributed by pollutants, which contribute to a change in phase from solid to liquid."
     },
     "Profile" : {
+      "description" : "Profiles depict the time period (hours per day, days per week) during which pollutants are contributing heat to the space. Profile: A profile object represents a gain, thermostat or humdistat as conditions vary over a 24-hour period",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/Profile.json"
     },
     "BHoM_Guid" : {
@@ -29,13 +31,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Environment.SpaceCriteria.Pollutant"
     },

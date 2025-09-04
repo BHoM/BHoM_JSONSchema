@@ -1,10 +1,12 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Elements/MeshElement.json",
   "title" : "MeshElement",
   "type" : ["object", "null"],
   "description" : "MeshElement: Object representing a physical element, defined by a geometrical mesh that represents that element in 3-dimensional space.\nCan commonly store properties and parameters in fragments corresponding to the software from which the element was extracted.",
   "properties" : {
     "Mesh" : {
+      "description" : "Mesh defining the full 3-dimensional geometry of the element. Mesh: A polygon mesh, defined by a list of triangular or quadrilateral Faces and their Vertices.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Mesh.json"
     },
     "BHoM_Guid" : {
@@ -21,13 +23,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Physical.Elements.MeshElement"
     },

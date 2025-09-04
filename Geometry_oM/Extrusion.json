@@ -1,13 +1,16 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Extrusion.json",
   "title" : "Extrusion",
   "type" : ["object", "null"],
   "description" : "Extrusion: A constant cross section surface, defined by a single profile curve and a linear axis.",
   "properties" : {
     "Curve" : {
+      "description" : "The Extrusion profile curve defining the constant cross sectional shape. Idential curves can be recreated at any point along the Extrusion axis through intersection with the Surface. ICurve: The interface for all one-dimensional geometrical objects.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ICurve.json"
     },
     "Direction" : {
+      "description" : "The axis along which to translate the profile curve. The Vector magnitude determining the Extrusion length. Property has a quantity of type Length measured in [m]. Vector: Defines a direction and magnitude in three-dimensional Euclidean space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
     },
     "Capped" : {
@@ -15,7 +18,7 @@
       "description" : "Defines the Extrusion as closed and therfore a solid volume."
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Geometry.Extrusion"
     },

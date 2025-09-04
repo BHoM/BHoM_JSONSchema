@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Reporting/NumberConditionReportingConfig.json",
   "title" : "NumberConditionReportingConfig",
   "type" : ["object", "null"],
@@ -21,7 +22,7 @@
       "description" : "Override text to be used as a label for value source."
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Verification.Reporting.NumberConditionReportingConfig"
     },

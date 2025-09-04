@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/RevitParameterDifference.json",
   "title" : "RevitParameterDifference",
   "type" : ["object", "null"],
@@ -23,10 +24,11 @@
       "description" : "Full Name of the object's property that owns the RevitParameter that was different."
     },
     "DifferenceType" : {
+      "description" : "Whether the RevitParameter that is Different was Modified, Removed or Added with respect to the old version of the owner object. Useful for filtering. RevitParameterDifferenceType: Specifies various kinds of Differences found between a pair of RevitParameters.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Enums/RevitParameterDifferenceType.json"
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Adapters.Revit.RevitParameterDifference"
     },

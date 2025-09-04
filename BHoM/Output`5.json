@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Output`5.json",
   "title" : "Output`5",
   "type" : ["object", "null"],
@@ -9,7 +10,7 @@
     "Item4" : { },
     "Item5" : { },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "pattern" : "^BH\\.oM\\.Base\\.Output`5\\[\\[.*\\]\\]$"
     },

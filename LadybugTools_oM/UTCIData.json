@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/UTCIData.json",
   "title" : "UTCIData",
   "type" : ["object", "null"],
@@ -28,7 +29,7 @@
       "description" : "The ratio of daytime cold stress hours to daytime hours. Daytime cold stress hours are hours less than 9�C and between 07:00-22:59."
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.LadybugTools.UTCIData"
     },

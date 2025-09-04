@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Library/Source.json",
   "title" : "Source",
   "type" : ["object", "null"],
@@ -48,6 +49,7 @@
       "description" : "Contributors to the source."
     },
     "Confidence" : {
+      "description" : "Level of confidence of the data related to the source. Confidence: Level of confidence for the serialized DataSet, outlining both the reliability of the source and the fidelity of the dataset to that source.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Library/Confidence.json"
     },
     "BHoM_Guid" : {
@@ -64,13 +66,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Data.Library.Source"
     },

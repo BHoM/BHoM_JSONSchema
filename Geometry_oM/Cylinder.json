@@ -1,13 +1,16 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Cylinder.json",
   "title" : "Cylinder",
   "type" : ["object", "null"],
   "description" : "Cylinder: A solid circular right angled cylinder.",
   "properties" : {
     "Centre" : {
+      "description" : "Point defining the centre of the circular base. Point: Defines a dimensionless location in three-dimensional space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
     },
     "Axis" : {
+      "description" : "Vector perperdicular to the base. Defines the orientation in three-dimensional space. Vector: Defines a direction and magnitude in three-dimensional Euclidean space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
     },
     "Radius" : {
@@ -19,7 +22,7 @@
       "description" : "Distance between the base and top surface, measured along the Axis. Property has a quantity of type Length measured in [m]."
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Geometry.Cylinder"
     },

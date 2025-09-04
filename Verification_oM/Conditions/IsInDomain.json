@@ -1,13 +1,16 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Conditions/IsInDomain.json",
   "title" : "IsInDomain",
   "type" : ["object", "null"],
   "description" : "IsInDomain: Condition that verifies if a value extracted from an object is within a certain domain (range).",
   "properties" : {
     "ValueSource" : {
+      "description" : "Object defining the source of a value to evaluate. IValueSource: Interface for objects defining how to extract a value from an object.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Conditions/IValueSource.json"
     },
     "Domain" : {
+      "description" : "Reference value that the extracted value is compared to. Domain: A numerical domain defined by a minimum and maximum value.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Collections/Domain.json"
     },
     "Tolerance" : {
@@ -15,7 +18,7 @@
       "description" : "If applicable, tolerance to be applied in the comparison."
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Verification.Conditions.IsInDomain"
     },

@@ -1,17 +1,20 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/SurfaceTrim.json",
   "title" : "SurfaceTrim",
   "type" : ["object", "null"],
   "description" : "SurfaceTrim: A pair of curves representing the boundary of a trimmed surface in both global X, Y, Z coordinates (Curve3d) as well as local surface U, V parameter space (Curve2d).\nA Surface Trim is immutable to ensure compatiblity of both curves.",
   "properties" : {
     "Curve3d" : {
+      "description" : "Trim Curve in global X, Y, Z coordinates. ICurve: The interface for all one-dimensional geometrical objects.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ICurve.json"
     },
     "Curve2d" : {
+      "description" : "Trim Curve in local surface U, V coordinates. ICurve: The interface for all one-dimensional geometrical objects.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ICurve.json"
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Geometry.SurfaceTrim"
     },

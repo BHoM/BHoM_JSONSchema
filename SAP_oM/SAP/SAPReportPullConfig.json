@@ -1,10 +1,12 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/SAPReportPullConfig.json",
   "title" : "SAPReportPullConfig",
   "type" : ["object", "null"],
   "description" : "SAPReportPullConfig: Configurations specific for an Adapter Action (Push, Pull, etc).\nConsider that your tookit might have a more specific implementation available. Try to look for [your toolkit name]ActionConfig.",
   "properties" : {
     "SAPReportFile" : {
+      "description" : "Set the location of the SAP XML Report file. FileSettings: The fileSettings, file name and directory, to use with an adapter for push and pull",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/FileSettings.json"
     },
     "WrapNonBHoMObjects" : {
@@ -16,10 +18,11 @@
       "description" : "If true and if no specific EqualityComparer is found for the type, Diffing hashes are computed and used to compare the objects."
     },
     "DiffingConfig" : {
+      "description" : "Configurations for the Diffing hashing. Requires `AllowHashForComparing` to be set to true. DiffingConfig: General configurations for the Diffing process, including settings for the Hash computation.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/DiffingConfig.json"
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Environment.SAP.SAPReportPullConfig"
     },

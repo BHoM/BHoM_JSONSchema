@@ -1,10 +1,12 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/File_oM/FSDirectory.json",
   "title" : "FSDirectory",
   "type" : ["object", "null"],
   "description" : "FSDirectory: A FileSystem-hosted Directory. It can include the content of the Directory.",
   "properties" : {
     "ParentDirectory" : {
+      "description" : "Full path of parent Directory. You can also specify a string path. FSDirectory: A FileSystem-hosted Directory. It can include the content of the Directory.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/File_oM/FSDirectory.json"
     },
     "Name" : {
@@ -12,40 +14,12 @@
       "description" : "Name of the directory."
     },
     "Exists" : {
-      "type" : ["object", "null"],
-      "description" : "Gets a value indicating whether a file exists.",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : "Gets a value indicating whether a file exists."
     },
     "IsReadOnly" : {
-      "type" : ["object", "null"],
-      "description" : "Whether the folder is read only.",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : "Whether the folder is read only."
     },
     "Size" : {
       "type" : "integer",
@@ -57,7 +31,7 @@
       "enum" : ["None", "ReadOnly", "Hidden", "System", "Directory", "Archive", "Device", "Normal", "Temporary", "SparseFile", "ReparsePoint", "Compressed", "Offline", "NotContentIndexed", "Encrypted", "IntegrityStream", "NoScrubData"]
     },
     "CreationTime" : {
-      "type" : ["object", "null"],
+      "type" : "object",
       "properties" : {
         "$date" : {
           "type" : "integer"
@@ -65,7 +39,7 @@
       }
     },
     "CreationTimeUtc" : {
-      "type" : ["object", "null"],
+      "type" : "object",
       "properties" : {
         "$date" : {
           "type" : "integer"
@@ -73,7 +47,7 @@
       }
     },
     "LastWriteTime" : {
-      "type" : ["object", "null"],
+      "type" : "object",
       "properties" : {
         "$date" : {
           "type" : "integer"
@@ -81,7 +55,7 @@
       }
     },
     "ModifiedTimeUtc" : {
-      "type" : ["object", "null"],
+      "type" : "object",
       "properties" : {
         "$date" : {
           "type" : "integer"
@@ -108,13 +82,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Adapters.File.FSDirectory"
     },

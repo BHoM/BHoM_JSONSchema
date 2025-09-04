@@ -1,10 +1,12 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/Dampers/Damper.json",
   "title" : "Damper",
   "type" : ["object", "null"],
   "description" : "Damper: A device used to control the flow within a duct system (fire smoke damper, volume damper, etc.)",
   "properties" : {
     "Location" : {
+      "description" : "The point in space for the location of the object. Node: 0D finite element for structural analysis. Node class contains positional information as well as orientation and support.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/Node.json"
     },
     "OrientationAngle" : {
@@ -12,6 +14,7 @@
       "description" : "Controls the local plan orientation of the object. Property has a quantity of type Angle measured in [rad]."
     },
     "DamperType" : {
+      "description" : "A type which describes the damper more specifically whether it's a fire smoke damper, volume damper or balancing damper. DamperType: A type of damper used in ductwork (volume damper, fire smoke damper, etc.)",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Enums/DamperType.json"
     },
     "PressureDrop" : {
@@ -32,13 +35,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.MEP.System.Dampers.Damper"
     },

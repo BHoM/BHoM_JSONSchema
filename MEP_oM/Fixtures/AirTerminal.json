@@ -1,10 +1,12 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Fixtures/AirTerminal.json",
   "title" : "AirTerminal",
   "type" : ["object", "null"],
   "description" : "AirTerminal: A device used to regulate the volume of air to or from an air handling unit, variable air volume device or similar, to or from the occupied space. These devices may be ducted or connect directly to a plenum, in which case no duct connection will be present.",
   "properties" : {
     "Location" : {
+      "description" : "The point in space for the location of the object. Node: 0D finite element for structural analysis. Node class contains positional information as well as orientation and support.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/Node.json"
     },
     "OrientationAngle" : {
@@ -20,6 +22,7 @@
       "description" : "The difference in total pressure between two points of a system measured in Pascals. Property has a quantity of type Pressure measured in [Pa]."
     },
     "ConnectedDuctProperties" : {
+      "description" : "The DuctSectionProperties for the duct connected to the air terminal.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/SectionProperties/DuctSectionProperty.json"
     },
     "BHoM_Guid" : {
@@ -36,13 +39,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.MEP.Fixtures.AirTerminal"
     },

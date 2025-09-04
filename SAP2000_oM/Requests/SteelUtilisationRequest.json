@@ -1,9 +1,11 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/Requests/SteelUtilisationRequest.json",
   "title" : "SteelUtilisationRequest",
   "type" : ["object", "null"],
   "properties" : {
     "Code" : {
+      "description" : "Defines which code to get steel utilization design results for. SteelDesignCode: Defines the Design Code used for result extraction.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/SteelDesignCode.json"
     },
     "Cases" : {
@@ -24,7 +26,7 @@
       "items" : { }
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Adapters.SAP2000.Requests.SteelUtilisationRequest"
     },

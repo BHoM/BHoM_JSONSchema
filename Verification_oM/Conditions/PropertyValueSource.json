@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Conditions/PropertyValueSource.json",
   "title" : "PropertyValueSource",
   "type" : ["object", "null"],
@@ -9,7 +10,7 @@
       "description" : "Name of the property to get the value from. If the property under given name is not found, other sources are also searched:\n- CustomData for key matching PropertyName (only for IBHoMObjects)\n- Fragment with type name matching PropertyName (only for IBHoMObjects)\n- Parameterless extension method with name matching PropertyName"
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Verification.Conditions.PropertyValueSource"
     },

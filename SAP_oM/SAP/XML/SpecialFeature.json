@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/SpecialFeature.json",
   "title" : "SpecialFeature",
   "type" : ["object", "null"],
@@ -8,9 +9,11 @@
       "description" : "."
     },
     "EnergyFeature" : {
+      "description" : ".",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/EnergyFeature.json"
     },
     "EmissionsFeature" : {
+      "description" : ".",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/EmissionFeature.json"
     },
     "BHoM_Guid" : {
@@ -27,13 +30,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Environment.SAP.XML.SpecialFeature"
     },

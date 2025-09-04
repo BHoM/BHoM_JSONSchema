@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Requests/FilterViewTemplateByName.json",
   "title" : "FilterViewTemplateByName",
   "type" : ["object", "null"],
@@ -13,7 +14,7 @@
       "description" : "If true: only perfect, case sensitive text match will be accepted. If false: capitals and small letters will be treated as equal."
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Adapters.Revit.Requests.FilterViewTemplateByName"
     },

@@ -1,29 +1,30 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/IPersistentAdapterId.json",
   "required" : ["_t"],
   "properties" : {
     "_t" : {
-      "enum" : ["BH.oM.Adapters.SAP2000.SAP2000Id", "BH.oM.Adapters.Revit.Parameters.RevitIdentifiers", "BH.oM.Adapters.ETABS.ETABSId"]
+      "enum" : ["BH.oM.Adapters.ETABS.ETABSId", "BH.oM.Adapters.Revit.Parameters.RevitIdentifiers", "BH.oM.Adapters.SAP2000.SAP2000Id"]
     }
   },
   "allOf" : [{
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Adapters.SAP2000.SAP2000Id"
+            "type" : "string",
+            "const" : "BH.oM.Adapters.ETABS.ETABSId"
           }
         },
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/SAP2000Id.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/ETABSId.json"
       }
     }, {
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
+            "type" : "string",
             "const" : "BH.oM.Adapters.Revit.Parameters.RevitIdentifiers"
           }
         },
@@ -36,14 +37,14 @@
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Adapters.ETABS.ETABSId"
+            "type" : "string",
+            "const" : "BH.oM.Adapters.SAP2000.SAP2000Id"
           }
         },
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/ETABSId.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/SAP2000Id.json"
       }
     }]
 }

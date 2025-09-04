@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Inspection_oM/Issue.json",
   "title" : "Issue",
   "type" : ["object", "null"],
@@ -9,7 +10,7 @@
       "description" : "Issue number to identify this specific issue. This is typically a combination of the audit number and the issue number within its audit."
     },
     "DateCreated" : {
-      "type" : ["object", "null"],
+      "type" : "object",
       "properties" : {
         "$date" : {
           "type" : "integer"
@@ -17,7 +18,7 @@
       }
     },
     "DateClosed" : {
-      "type" : ["object", "null"],
+      "type" : "object",
       "properties" : {
         "$date" : {
           "type" : "integer"
@@ -55,6 +56,7 @@
       }
     },
     "Position" : {
+      "description" : "Location of the issue in 3D space in terms of the project's coordinate system Point: Defines a dimensionless location in three-dimensional space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
     },
     "Comments" : {
@@ -82,13 +84,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Inspection.Issue"
     },
