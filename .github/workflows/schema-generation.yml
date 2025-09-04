@@ -270,51 +270,75 @@ jobs:
     
     - name: Build Generation solution
       run: |
-        if (Test-Path ".ci/Generation") {
-          Write-Host "Building Generation solution..."
-          Push-Location ".ci/Generation"
+        if (Test-Path ".ci/Generation/SchemaGeneration") {
+          Write-Host "Building SchemaGeneration solution..."
+          Push-Location ".ci/Generation/SchemaGeneration"
           
-          $solutionFiles = Get-ChildItem -Filter "*.sln"
-          if ($solutionFiles.Count -gt 0) {
-            $solutionFile = $solutionFiles[0].FullName
+          # Build the solution file
+          $solutionFile = "SchemaGeneration.sln"
+          if (Test-Path $solutionFile) {
             Write-Host "Building solution: $solutionFile"
             dotnet build "$solutionFile" --configuration Release --verbosity minimal
-          } else {
-            $projectFiles = Get-ChildItem -Filter "*.csproj"
-            foreach ($projectFile in $projectFiles) {
-              Write-Host "Building project: $($projectFile.FullName)"
-              dotnet build "$($projectFile.FullName)" --configuration Release --verbosity minimal
+            if ($LASTEXITCODE -ne 0) {
+              Write-Host "Dotnet build failed, trying MSBuild fallback..."
+              nuget restore "$solutionFile"
+              msbuild "$solutionFile" /p:Configuration=Release /p:Platform="Any CPU" /verbosity:minimal
+              if ($LASTEXITCODE -ne 0) {
+                Write-Host "Build failed"
+                exit 1
+              }
             }
+          } else {
+            Write-Host "SchemaGeneration.sln not found"
+            exit 1
           }
           
           Pop-Location
         } else {
-          Write-Host "Generation folder not found at .ci/Generation"
+          Write-Host "SchemaGeneration folder not found at .ci/Generation/SchemaGeneration"
           exit 1
         }
       shell: powershell
     
     - name: Run Generation executable
       run: |
-        Write-Host "Looking for executable in .ci/Generation..."
-        $exeFiles = Get-ChildItem ".ci/Generation" -Recurse -Filter "*.exe" | Where-Object { $_.Directory.Name -match "(bin|Release)" }
+        Write-Host "Looking for SchemaGeneration executable..."
         
-        if ($exeFiles.Count -eq 0) {
-          Write-Host "No executable found, looking for DLL to run with dotnet..."
-          $dllFiles = Get-ChildItem ".ci/Generation" -Recurse -Filter "*.dll" | Where-Object { $_.Directory.Name -match "(bin|Release)" -and $_.Name -notmatch "(System\.|Microsoft\.)" }
-          
-          if ($dllFiles.Count -gt 0) {
-            $dllFile = $dllFiles[0].FullName
-            Write-Host "Running: dotnet $dllFile"
-            dotnet "$dllFile"
-          } else {
-            Write-Host "No executable or suitable DLL found"
+        # Look for the executable in the Release build output first, then Debug
+        $exePath = ".ci/Generation/SchemaGeneration/SchemaGeneration/bin/Release/net8.0/SchemaGeneration.exe"
+        if (-not (Test-Path $exePath)) {
+          $exePath = ".ci/Generation/SchemaGeneration/SchemaGeneration/bin/Debug/net8.0/SchemaGeneration.exe"
+        }
+        
+        if (Test-Path $exePath) {
+          $branchName = "${{ github.head_ref || github.ref_name }}"
+          Write-Host "Running SchemaGeneration with branch: $branchName"
+          Write-Host "Executable path: $exePath"
+          & "$exePath" "$branchName"
+          if ($LASTEXITCODE -ne 0) {
+            Write-Host "SchemaGeneration failed with exit code: $LASTEXITCODE"
             exit 1
           }
         } else {
-          $exeFile = $exeFiles[0].FullName
-          Write-Host "Running: $exeFile"
-          & "$exeFile"
+          # Fallback: try to run with dotnet
+          $dllPath = ".ci/Generation/SchemaGeneration/SchemaGeneration/bin/Release/net8.0/SchemaGeneration.dll"
+          if (-not (Test-Path $dllPath)) {
+            $dllPath = ".ci/Generation/SchemaGeneration/SchemaGeneration/bin/Debug/net8.0/SchemaGeneration.dll"
+          }
+          
+          if (Test-Path $dllPath) {
+            $branchName = "${{ github.head_ref || github.ref_name }}"
+            Write-Host "Running SchemaGeneration DLL with branch: $branchName"
+            Write-Host "DLL path: $dllPath"
+            dotnet "$dllPath" "$branchName"
+            if ($LASTEXITCODE -ne 0) {
+              Write-Host "SchemaGeneration failed with exit code: $LASTEXITCODE"
+              exit 1
+            }
+          } else {
+            Write-Host "SchemaGeneration executable or DLL not found"
+            exit 1
+          }
         }
       shell: powershell
     
