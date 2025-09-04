@@ -190,83 +190,30 @@ jobs:
         echo "order=$orderString" >> $env:GITHUB_OUTPUT
       shell: pwsh
     
-    - name: Build repositories in dependency order
+    - name: Build repositories in dependency order (clean detection)
+      shell: pwsh
       run: |
         $buildOrder = "${{ steps.build-order.outputs.order }}" -split ","
         foreach ($repo in $buildOrder) {
           $repo = $repo.Trim()
-          if ($repo -ne "") {
-            Write-Host "Building $repo..."
-            Push-Location ".repos/$repo"
-            
-            # Find solution files
-            $solutionFiles = Get-ChildItem -Recurse -Filter "*.sln" | Where-Object { $_.Directory.Name -notmatch "(Test|Tests|Example|Examples)" }
-            
-            if ($solutionFiles.Count -gt 0) {
-              $solutionFile = $solutionFiles[0].FullName
-              Write-Host "Building solution: $solutionFile"
-              
-              # Try dotnet first
-              Write-Host "Restoring packages with dotnet..."
-              dotnet restore "$solutionFile"
-              if ($LASTEXITCODE -eq 0) {
-                Write-Host "Building with dotnet..."
-                dotnet build "$solutionFile" --configuration Release --verbosity minimal --no-restore
-                if ($LASTEXITCODE -ne 0) {
-                  Write-Host "Dotnet build failed, trying MSBuild fallback..."
-                  nuget restore "$solutionFile"
-                  msbuild "$solutionFile" /p:Configuration=Release /p:Platform="Any CPU" /verbosity:minimal
-                  if ($LASTEXITCODE -ne 0) {
-                    Write-Host "MSBuild also failed for $repo, continuing with next repository..."
-                  }
-                }
-              } else {
-                Write-Host "Dotnet restore failed, trying NuGet + MSBuild fallback..."
-                nuget restore "$solutionFile"
-                msbuild "$solutionFile" /p:Configuration=Release /p:Platform="Any CPU" /verbosity:minimal
-                if ($LASTEXITCODE -ne 0) {
-                  Write-Host "MSBuild failed for $repo, continuing with next repository..."
-                }
-              }
-            } else {
-              # Try to find project files if no solution
-              $projectFiles = Get-ChildItem -Recurse -Filter "*.csproj" | Where-Object { $_.Directory.Name -notmatch "(Test|Tests|Example|Examples)" }
-              if ($projectFiles.Count -gt 0) {
-                foreach ($projectFile in $projectFiles) {
-                  Write-Host "Building project: $($projectFile.FullName)"
-                  
-                  # Try dotnet first
-                  dotnet restore "$($projectFile.FullName)"
-                  if ($LASTEXITCODE -eq 0) {
-                    dotnet build "$($projectFile.FullName)" --configuration Release --verbosity minimal --no-restore
-                    if ($LASTEXITCODE -ne 0) {
-                      Write-Host "Dotnet build failed for project $($projectFile.Name), trying MSBuild..."
-                      nuget restore "$($projectFile.FullName)"
-                      msbuild "$($projectFile.FullName)" /p:Configuration=Release /p:Platform="Any CPU" /verbosity:minimal
-                      if ($LASTEXITCODE -ne 0) {
-                        Write-Host "MSBuild also failed for project $($projectFile.Name), continuing..."
-                        break
-                      }
-                    }
-                  } else {
-                    Write-Host "Dotnet restore failed for project $($projectFile.Name), trying NuGet + MSBuild..."
-                    nuget restore "$($projectFile.FullName)"
-                    msbuild "$($projectFile.FullName)" /p:Configuration=Release /p:Platform="Any CPU" /verbosity:minimal
-                    if ($LASTEXITCODE -ne 0) {
-                      Write-Host "MSBuild failed for project $($projectFile.Name), continuing..."
-                      break
-                    }
-                  }
-                }
-              } else {
-                Write-Host "No solution or project files found in $repo"
-              }
+          if (-not $repo) { continue }
+          Push-Location ".repos/$repo"
+          Write-Host "Building $repo..."
+
+          # Prefer a solution if present; otherwise build each csproj
+          $solutions = Get-ChildItem -Recurse -Filter *.sln | Where-Object { $_.Directory.Name -notmatch '(Test|Tests|Example|Examples)' }
+          if ($solutions) {
+            # Build the first solution (or loop them if you have multiple)
+            $sln = $solutions[0].FullName
+            ../../.github/workflows/build.ps1 -SolutionOrProjectPath $sln
+          } else {
+            $projects = Get-ChildItem -Recurse -Filter *.csproj | Where-Object { $_.Directory.Name -notmatch '(Test|Tests|Example|Examples)' }
+            foreach ($proj in $projects) {
+              ../../.github/workflows/build.ps1 -SolutionOrProjectPath $proj.FullName
             }
-            
-            Pop-Location
           }
+          Pop-Location
         }
-      shell: powershell
     
     - name: Build Generation solution
       run: |
