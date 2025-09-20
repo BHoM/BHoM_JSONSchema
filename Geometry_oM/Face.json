@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Face.json",
   "title" : "Face",
   "type" : ["object", "null"],
@@ -21,7 +22,7 @@
       "description" : "Index of fourth corner in Point list. Set to -1 for three-sided Face."
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Geometry.Face"
     },

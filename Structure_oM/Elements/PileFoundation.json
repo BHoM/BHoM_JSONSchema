@@ -1,10 +1,12 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/PileFoundation.json",
   "title" : "PileFoundation",
   "type" : ["object", "null"],
   "description" : "PileFoundation: A composite object representing a pile foundation. This object contains a pile cap and list of piles which can be used for structural analysis.",
   "properties" : {
     "PileCap" : {
+      "description" : "The pile cap with an outline containing all of the Piles. PadFoundation: 2D element representing a pad foundation for structural analysis. The PadFoundation is a planar surface object defined by edges and an ISurfaceProperty.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/PadFoundation.json"
     },
     "Piles" : {
@@ -28,13 +30,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Structure.Elements.PileFoundation"
     },

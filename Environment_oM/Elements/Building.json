@@ -1,10 +1,12 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Elements/Building.json",
   "title" : "Building",
   "type" : ["object", "null"],
   "description" : "Building: This building object is used for setting the location and building type, which is required for some environmental workflows",
   "properties" : {
     "Location" : {
+      "description" : "The real-world Earth location for the building Location: Defines a uniquely identifiable point on the Earth in standard global Latitude, Longitude and Elevation, coordinate system. Particularly useful for specifying local climate conditions for environmental analysis.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Climate/Location.json"
     },
     "Elevation" : {
@@ -12,6 +14,7 @@
       "description" : "The elevation for the location above sea level Property has a quantity of type Length measured in [m]."
     },
     "Type" : {
+      "description" : "The main classification for the building (e.g. Office, Residential). Use BuildingType enum) BuildingType: The main classification for a building (e.g. Office, Residential)",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Elements/BuildingType.json"
     },
     "BHoM_Guid" : {
@@ -28,13 +31,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Environment.Elements.Building"
     },

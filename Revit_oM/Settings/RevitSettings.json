@@ -1,16 +1,20 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Settings/RevitSettings.json",
   "title" : "RevitSettings",
   "type" : ["object", "null"],
   "description" : "RevitSettings: General settings that are applicable to all actions performed by the instance of Revit adapter.",
   "properties" : {
     "ConnectionSettings" : {
+      "description" : "Socket connection settings (ports, timeout) for the adapter. ConnectionSettings: Socket connection settings for Revit Adapter.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Settings/ConnectionSettings.json"
     },
     "FamilyLoadSettings" : {
+      "description" : "Revit family load settings for the adapter. FamilyLoadSettings: Revit family load settings for Revit Adapter. Prototype, currently with limited functionality.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Settings/FamilyLoadSettings.json"
     },
     "MappingSettings" : {
+      "description" : "An entity holding information about the enforced convert relationships between Revit families and BHoM types on Pull as well as mapping between Revit parameters and BHoM object properties on Push/Pull. MappingSettings: An entity holding information about the enforced convert relationships between Revit families and BHoM types on Pull as well as mapping between Revit parameters and BHoM object properties on Push/Pull.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Settings/MappingSettings.json"
     },
     "DistanceTolerance" : {
@@ -35,13 +39,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Adapters.Revit.Settings.RevitSettings"
     },

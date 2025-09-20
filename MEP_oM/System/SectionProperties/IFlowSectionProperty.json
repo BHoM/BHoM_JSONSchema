@@ -1,29 +1,30 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/SectionProperties/IFlowSectionProperty.json",
   "required" : ["_t"],
   "properties" : {
     "_t" : {
-      "enum" : ["BH.oM.MEP.System.SectionProperties.WireSectionProperty", "BH.oM.MEP.System.SectionProperties.PipeSectionProperty", "BH.oM.MEP.System.SectionProperties.DuctSectionProperty"]
+      "enum" : ["BH.oM.MEP.System.SectionProperties.DuctSectionProperty", "BH.oM.MEP.System.SectionProperties.PipeSectionProperty", "BH.oM.MEP.System.SectionProperties.WireSectionProperty"]
     }
   },
   "allOf" : [{
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.MEP.System.SectionProperties.WireSectionProperty"
+            "type" : "string",
+            "const" : "BH.oM.MEP.System.SectionProperties.DuctSectionProperty"
           }
         },
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/SectionProperties/WireSectionProperty.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/SectionProperties/DuctSectionProperty.json"
       }
     }, {
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
+            "type" : "string",
             "const" : "BH.oM.MEP.System.SectionProperties.PipeSectionProperty"
           }
         },
@@ -36,14 +37,14 @@
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.MEP.System.SectionProperties.DuctSectionProperty"
+            "type" : "string",
+            "const" : "BH.oM.MEP.System.SectionProperties.WireSectionProperty"
           }
         },
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/SectionProperties/DuctSectionProperty.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/SectionProperties/WireSectionProperty.json"
       }
     }]
 }

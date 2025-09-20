@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Parameters/ParameterValueSource.json",
   "title" : "ParameterValueSource",
   "type" : ["object", "null"],
@@ -9,25 +10,11 @@
       "description" : "Name of the parameter to extract the value from."
     },
     "FromType" : {
-      "type" : ["object", "null"],
-      "description" : "If true, the value to be extracted from the underlying type, not the instance.\nIf set to null, first instance will be checked for the parameter with given name, and if not found then same will be done with its type.",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : "If true, the value to be extracted from the underlying type, not the instance.\nIf set to null, first instance will be checked for the parameter with given name, and if not found then same will be done with its type."
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Adapters.Revit.Parameters.ParameterValueSource"
     },

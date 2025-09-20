@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/CommunityHeatingSystem.json",
   "title" : "CommunityHeatingSystem",
   "type" : ["object", "null"],
@@ -20,40 +21,12 @@
       "description" : "Specifies what kind of heating the community system is used for."
     },
     "IsCommunityHeatingCylinderInDwelling" : {
-      "type" : ["object", "null"],
-      "description" : "Community heating, hot water cylinder in dwelling?.",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : "Community heating, hot water cylinder in dwelling?."
     },
     "IsHeatInterfaceUnitInDwelling" : {
-      "type" : ["object", "null"],
-      "description" : "Heat interface unit in Dwelling?.",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : "Heat interface unit in Dwelling?."
     },
     "HeatInterfaceUnitIndexNumber" : {
       "type" : ["string", "null"],
@@ -64,6 +37,7 @@
       "description" : "Community heating distribution."
     },
     "CommunityHeatSources" : {
+      "description" : ".",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/CommunityHeatSources.json"
     },
     "CommunityHeatingDistributionLossFactor" : {
@@ -71,22 +45,8 @@
       "description" : "Used when Community-Heating-Distribution-Type is calculated."
     },
     "ChargingLinkedToHeatUse" : {
-      "type" : ["object", "null"],
-      "description" : "Used for hot-water-only systems.",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : "Used for hot-water-only systems."
     },
     "HeatNetworkIndexNumber" : {
       "type" : ["string", "null"],
@@ -97,40 +57,12 @@
       "description" : "The name by which the sub community heat network is known."
     },
     "HeatNetworkExisting" : {
-      "type" : ["object", "null"],
-      "description" : "Whether the heat network is existing or new.",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : "Whether the heat network is existing or new."
     },
     "HeatNetworkAssessedNew" : {
-      "type" : ["object", "null"],
-      "description" : "Whether the heat network is existing or new.",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : "Whether the heat network is existing or new."
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -146,13 +78,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Environment.SAP.XML.CommunityHeatingSystem"
     },

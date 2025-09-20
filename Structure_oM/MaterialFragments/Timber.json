@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/Timber.json",
   "title" : "Timber",
   "type" : ["object", "null"],
@@ -21,21 +22,27 @@
       "description" : "Dynamic Damping Ratio. Ratio between actual damping and critical damping. Property has a quantity of type Ratio measured in [-]."
     },
     "YoungsModulus" : {
+      "description" : "Characteristic Modulus Of Elasticity of the material. Ratio between stress and strain in all directions. Vector components made up of: X - Parallel, E_0,k in Eurocode; Y - Perpendicular, E_90,k in Eurocode; Z - Perpendicular, E_90,k in Eurocode. Property has a quantity of type YoungsModulus measured in [Pa]. Vector: Defines a direction and magnitude in three-dimensional Euclidean space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
     },
     "YoungsModulusMean" : {
+      "description" : "Mean Modulus Of Elasticity of the material. Ratio between stress and strain in all directions. Vector components made up of: X - Parallel, E_0,mean in Eurocode; Y - Perpendicular, E_90,mean in Eurocode; Z - Perpendicular, E_90,mean in Eurocode. Property has a quantity of type YoungsModulus measured in [Pa]. Vector: Defines a direction and magnitude in three-dimensional Euclidean space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
     },
     "PoissonsRatio" : {
+      "description" : "Poisson's Ratio. Ratio between axial and transverse strain. Typically take as 0.4 in all directions, though value varies depending on timber species. Vector components made up of: X - Parallel; Y - Perpendicular; Z - Perpendicular. Property has a quantity of type Ratio measured in [-]. Vector: Defines a direction and magnitude in three-dimensional Euclidean space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
     },
     "ThermalExpansionCoeff" : {
+      "description" : "Thermal Expansion Coefficeint. Strain induced in the material per unit change of temperature. Typically take as 5x10^-6 in all directions, though value varies depending on timber species. Vector components made up of: X - Parallel; Y - Perpendicular; Z - Perpendicular. Property has a quantity of type ThermalExpansionCoefficient measured in [1/K]. Vector: Defines a direction and magnitude in three-dimensional Euclidean space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
     },
     "ShearModulus" : {
+      "description" : "Characterstic Shear Modulus or Modulus of Rigidity. Ratio between shear stress and shear strain. Vector components made up of: X - Parallel, G_k in Eurocode; Y - Parallel, G_k in Eurocode; Z - Perpendicular, G_r,05 in Eurocode. Property has a quantity of type ShearModulus measured in [Pa]. Vector: Defines a direction and magnitude in three-dimensional Euclidean space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
     },
     "ShearModulusMean" : {
+      "description" : "Mean Shear Modulus or Modulus of Rigidity. Ratio between shear stress and shear strain. Vector components made up of: X - Parallel, G_mean in Eurocode; Y - Parallel, G_mean in Eurocode; Z - Perpendicular, G_r,mean in Eurocode. Property has a quantity of type ShearModulus measured in [Pa]. Vector: Defines a direction and magnitude in three-dimensional Euclidean space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
     },
     "BendingStrength" : {
@@ -77,13 +84,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Structure.MaterialFragments.Timber"
     },

@@ -1,13 +1,16 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/FireProtection.json",
   "title" : "FireProtection",
   "type" : ["object", "null"],
   "description" : "FireProtection: The fire protection attributes of a space are indicative of the hazard level of the space (which influences the sprinkler count), the sprinkler system type required, and the presence of combustible materials or sloped ceilings.",
   "properties" : {
     "HazardType" : {
+      "description" : "Hazard Type indicates the combustibility of the materials within the space (Light, Ordinary or Extra). The indication of hazard type also determines the density of sprinklers required within the space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/HazardType.json"
     },
     "SprinklerSystemType" : {
+      "description" : "Sprinkler System Type indicates whether the system will need to accommodate spaces that are subject to freezing (dry system type, commonly used in loading docks and parking garages), spaces that contain materials that when on fire would be spread further by water (foam system type, commonly used in a diesel generator room), spaces that contain precious materials that would be ruined by a false trip of the sprinkler system (preaction, commonly used in art galleries.)",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/SprinklerSystemType.json"
     },
     "CombustibleMaterials" : {
@@ -36,13 +39,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Environment.SpaceCriteria.FireProtection"
     },

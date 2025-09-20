@@ -1,81 +1,30 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Results/ITemperatureResult.json",
   "required" : ["_t"],
   "properties" : {
     "_t" : {
-      "enum" : ["BH.oM.Environment.Results.WetBulbTemperatureResult", "BH.oM.Environment.Results.UniversalThermalClimateIndexResult", "BH.oM.Environment.Results.SurfaceTemperatureResult", "BH.oM.Environment.Results.SkyTemperatureResult", "BH.oM.Environment.Results.MeanRadiantTemperatureResult", "BH.oM.Environment.Results.DryBulbTemperatureResult", "BH.oM.Environment.Results.DewPointTemperatureResult"]
+      "enum" : ["BH.oM.Environment.Results.DewPointTemperatureResult", "BH.oM.Environment.Results.DryBulbTemperatureResult", "BH.oM.Environment.Results.MeanRadiantTemperatureResult", "BH.oM.Environment.Results.SkyTemperatureResult", "BH.oM.Environment.Results.SurfaceTemperatureResult", "BH.oM.Environment.Results.UniversalThermalClimateIndexResult", "BH.oM.Environment.Results.WetBulbTemperatureResult"]
     }
   },
   "allOf" : [{
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Environment.Results.WetBulbTemperatureResult"
+            "type" : "string",
+            "const" : "BH.oM.Environment.Results.DewPointTemperatureResult"
           }
         },
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Results/WetBulbTemperatureResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Results/DewPointTemperatureResult.json"
       }
     }, {
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Environment.Results.UniversalThermalClimateIndexResult"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Results/UniversalThermalClimateIndexResult.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Environment.Results.SurfaceTemperatureResult"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Results/SurfaceTemperatureResult.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Environment.Results.SkyTemperatureResult"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Results/SkyTemperatureResult.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Environment.Results.MeanRadiantTemperatureResult"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Results/MeanRadiantTemperatureResult.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
+            "type" : "string",
             "const" : "BH.oM.Environment.Results.DryBulbTemperatureResult"
           }
         },
@@ -88,14 +37,66 @@
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Environment.Results.DewPointTemperatureResult"
+            "type" : "string",
+            "const" : "BH.oM.Environment.Results.MeanRadiantTemperatureResult"
           }
         },
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Results/DewPointTemperatureResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Results/MeanRadiantTemperatureResult.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Environment.Results.SkyTemperatureResult"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Results/SkyTemperatureResult.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Environment.Results.SurfaceTemperatureResult"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Results/SurfaceTemperatureResult.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Environment.Results.UniversalThermalClimateIndexResult"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Results/UniversalThermalClimateIndexResult.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Environment.Results.WetBulbTemperatureResult"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Results/WetBulbTemperatureResult.json"
       }
     }]
 }

@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/Elements/InsertionPoint.json",
   "title" : "InsertionPoint",
   "type" : ["object", "null"],
@@ -11,7 +12,7 @@
       "description" : "Transform frame stiffness for offsets from centroid for non-P/T floors"
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Adapters.ETABS.Elements.InsertionPoint"
     },

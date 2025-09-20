@@ -1,10 +1,12 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Constructions/Layer.json",
   "title" : "Layer",
   "type" : ["object", "null"],
   "description" : "Layer: A layer object with given material and thickness",
   "properties" : {
     "Material" : {
+      "description" : "The material this layer is made up of Material: Physical material to be used for Takeoffs and asigned to Physical elements. Material is capable of storing discipline specific data in Properties.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Materials/Material.json"
     },
     "Thickness" : {
@@ -25,13 +27,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Physical.Constructions.Layer"
     },

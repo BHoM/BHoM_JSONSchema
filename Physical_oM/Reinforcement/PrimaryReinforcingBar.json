@@ -1,10 +1,12 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/PrimaryReinforcingBar.json",
   "title" : "PrimaryReinforcingBar",
   "type" : ["object", "null"],
   "description" : "PrimaryReinforcingBar: Defining reinforcement running along the element.",
   "properties" : {
     "CentreCurve" : {
+      "description" : "Centreline of the Reinforcing bar in three-dimensional space. When the BendRadius is sufficient for any kinks in the rebar, this can be defined as a polyline, ommiting any arcs in corners. ICurve: The interface for all one-dimensional geometrical objects.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ICurve.json"
     },
     "Diameter" : {
@@ -32,13 +34,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Physical.Reinforcement.PrimaryReinforcingBar"
     },

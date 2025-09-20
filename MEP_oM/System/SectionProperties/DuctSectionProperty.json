@@ -1,15 +1,19 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/SectionProperties/DuctSectionProperty.json",
   "title" : "DuctSectionProperty",
   "type" : ["object", "null"],
   "properties" : {
     "DuctMaterial" : {
+      "description" : "The duct material is the primary material that the duct is composed of (galvanized sheet metal, aluminium) Material: Physical material to be used for Takeoffs and asigned to Physical elements. Material is capable of storing discipline specific data in Properties.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Materials/Material.json"
     },
     "InsulationMaterial" : {
+      "description" : "The insulation is the layer of material outside of the duct material, meant to insulate the internal conditions of the material being conveyed. Material: Physical material to be used for Takeoffs and asigned to Physical elements. Material is capable of storing discipline specific data in Properties.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Materials/Material.json"
     },
     "LiningMaterial" : {
+      "description" : "The lining is the layer of material inside of the duct material, meant to insulate the internal conditions of the material being conveyed. Material: Physical material to be used for Takeoffs and asigned to Physical elements. Material is capable of storing discipline specific data in Properties.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Materials/Material.json"
     },
     "HydraulicDiameter" : {
@@ -21,6 +25,7 @@
       "description" : "CircularEquivalentDiameter is the equivalent size for a duct if it were to be round (for size/capacity comparison)."
     },
     "SectionProfile" : {
+      "description" : "The section profile of the object that will determine its use within a System.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/SectionProperties/SectionProfile.json"
     },
     "ElementSolidArea" : {
@@ -61,13 +66,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.MEP.System.SectionProperties.DuctSectionProperty"
     },

@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Test_oM/Results/EventMessage.json",
   "title" : "EventMessage",
   "type" : ["object", "null"],
@@ -9,10 +10,11 @@
       "description" : "Message raised during the execution."
     },
     "Status" : {
+      "description" : "Severity of the message. TestStatus: Defines the status of the Test Information. Designed to be very clear, concrete statuses, with minimal ambiguity.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Test_oM/TestStatus.json"
     },
     "UTCTime" : {
-      "type" : ["object", "null"],
+      "type" : "object",
       "properties" : {
         "$date" : {
           "type" : "integer"
@@ -24,7 +26,7 @@
       "description" : "Original location where the event was generated."
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Test.Results.EventMessage"
     },

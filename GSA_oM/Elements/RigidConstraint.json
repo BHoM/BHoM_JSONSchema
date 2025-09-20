@@ -1,10 +1,12 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/GSA_oM/Elements/RigidConstraint.json",
   "title" : "RigidConstraint",
   "type" : ["object", "null"],
   "description" : "RigidConstraint: A rigid constraint defining linkage between nodes.",
   "properties" : {
     "PrimaryNode" : {
+      "description" : "Defines the primary node of the rigid constraint. Node: 0D finite element for structural analysis. Node class contains positional information as well as orientation and support.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Node.json"
     },
     "ConstrainedNodes" : {
@@ -15,6 +17,7 @@
       }
     },
     "Type" : {
+      "description" : "Type of rigid constraint. RigidConstraintLinkType: Defines type rigid constraint link.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/GSA_oM/RigidConstraintLinkType.json"
     },
     "BHoM_Guid" : {
@@ -31,13 +34,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Adapters.GSA.Elements.RigidConstraint"
     },

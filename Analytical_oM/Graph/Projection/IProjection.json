@@ -1,29 +1,30 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Analytical_oM/Graph/Projection/IProjection.json",
   "required" : ["_t"],
   "properties" : {
     "_t" : {
-      "enum" : ["BH.oM.Analytical.Graph.Projection.SpatialProjection", "BH.oM.Analytical.Graph.Projection.GraphicalProjection", "BH.oM.Analytical.Graph.Projection.GeometricProjection"]
+      "enum" : ["BH.oM.Analytical.Graph.Projection.GeometricProjection", "BH.oM.Analytical.Graph.Projection.GraphicalProjection", "BH.oM.Analytical.Graph.Projection.SpatialProjection"]
     }
   },
   "allOf" : [{
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Analytical.Graph.Projection.SpatialProjection"
+            "type" : "string",
+            "const" : "BH.oM.Analytical.Graph.Projection.GeometricProjection"
           }
         },
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Analytical_oM/Graph/Projection/SpatialProjection.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Analytical_oM/Graph/Projection/GeometricProjection.json"
       }
     }, {
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
+            "type" : "string",
             "const" : "BH.oM.Analytical.Graph.Projection.GraphicalProjection"
           }
         },
@@ -36,14 +37,14 @@
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Analytical.Graph.Projection.GeometricProjection"
+            "type" : "string",
+            "const" : "BH.oM.Analytical.Graph.Projection.SpatialProjection"
           }
         },
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Analytical_oM/Graph/Projection/GeometricProjection.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Analytical_oM/Graph/Projection/SpatialProjection.json"
       }
     }]
 }

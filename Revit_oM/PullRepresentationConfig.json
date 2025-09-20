@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/PullRepresentationConfig.json",
   "title" : "PullRepresentationConfig",
   "type" : ["object", "null"],
@@ -9,6 +10,7 @@
       "description" : "If true, representation of elements will be pulled and stored under RenderMesh in RevitRepresentation fragment."
     },
     "DetailLevel" : {
+      "description" : "Detail level of representation, correspondent to level of detail in Revit. DetailLevel: Enum specifying detail level of representation, correspondent to level of detail in Revit.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Enums/DetailLevel.json"
     },
     "IncludeNonVisible" : {
@@ -16,7 +18,7 @@
       "description" : "Invisible element parts will be pulled and passed to RevitRepresentation fragment if true. PullRepresentation switched to true needed for this to activate."
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Adapters.Revit.PullRepresentationConfig"
     },

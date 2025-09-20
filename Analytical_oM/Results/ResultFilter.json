@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Analytical_oM/Results/ResultFilter.json",
   "title" : "ResultFilter",
   "type" : ["object", "null"],
@@ -9,42 +10,47 @@
       "description" : "If ResultCaseFilters contains items, only results of type ICasedResult will be returned that has a ResultCase matching any items in the ResultCaseFilters.",
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "ObjectIDFilters" : {
       "type" : ["array", "null"],
       "description" : "If ObjectIDFilters contains items, only results of type IObjectIdResult will be returned that has a ObjectId matching any items in the ObjectIDFilters.",
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "NodeIDFilters" : {
       "type" : ["array", "null"],
       "description" : "If NodeIDFilters contains items, only results of type IMeshElementResult will be returned that has a NodeId matching any items in the NodeIDFilters.",
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "MeshFaceIDFilters" : {
       "type" : ["array", "null"],
       "description" : "If MeshFaceIDFilters contains items, only results of type IMeshElementResult will be returned that has a MeshFaceId matching any items in the MeshFaceIDFilters.",
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "TimeStepFilters" : {
       "type" : ["array", "null"],
       "description" : "If TimeStepFilters contains items, only results of type ITimeStepResult will be returned that has a TimeStep matching any items in the TimeStepFilters.",
       "items" : {
         "type" : "number"
-      }
+      },
+      "uniqueItems" : true
     },
     "ResultSeriesIndex" : {
       "type" : "integer",
       "description" : "Index to be used for results of type IResultSeries."
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Analytical.Results.ResultFilter"
     },

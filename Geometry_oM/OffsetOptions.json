@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/OffsetOptions.json",
   "title" : "OffsetOptions",
   "type" : ["object", "null"],
@@ -21,7 +22,7 @@
       "description" : "If true handles adjecent parallel segemnts, that is, segments that have an angle below tolerance. This is handled by removal of the vertex connection the two segments for a concave offset and introductions of one additional vertex for a convex offset. Recomended for the general case to be set to true. To be noted that when this option is true, the topology of the polyline might change due to segments being added and/or removed. Only applicable for Polyline offsets. Defaults to true."
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Geometry.OffsetOptions"
     },

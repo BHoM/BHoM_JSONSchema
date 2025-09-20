@@ -1,13 +1,16 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Requests/NodeResultRequest.json",
   "title" : "NodeResultRequest",
   "type" : ["object", "null"],
   "description" : "NodeResultRequest: Request for extracting Node results from an adapter.",
   "properties" : {
     "ResultType" : {
+      "description" : "Defines which type of results that should be extracted.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Requests/NodeResultType.json"
     },
     "Axis" : {
+      "description" : "Defines whether results should be extracted in global coordinates or local node coordinates.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/LoadAxis.json"
     },
     "Cases" : {
@@ -28,7 +31,7 @@
       "items" : { }
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Structure.Requests.NodeResultRequest"
     },

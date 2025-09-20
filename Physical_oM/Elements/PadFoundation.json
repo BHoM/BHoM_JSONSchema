@@ -1,13 +1,16 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Elements/PadFoundation.json",
   "title" : "PadFoundation",
   "type" : ["object", "null"],
   "description" : "PadFoundation: Physical representation of a flat pad foundation (parallel top and bottom faces).",
   "properties" : {
     "Location" : {
+      "description" : "PlanarSurface defining the top face of a pad foundation. PlanarSurface: A surface defined by boundary edge curves lying in a common plane. Planarity toleraces default to the BH.oM.Geometry.Tolerace.Distance.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/PlanarSurface.json"
     },
     "Construction" : {
+      "description" : "Construction of the pad foundation defining its thickness and Material.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Constructions/IConstruction.json"
     },
     "BHoM_Guid" : {
@@ -24,13 +27,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Physical.Elements.PadFoundation"
     },

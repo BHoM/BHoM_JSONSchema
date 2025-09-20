@@ -1,9 +1,11 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Humans_oM/ViewQuality/AvalueSettings.json",
   "title" : "AvalueSettings",
   "type" : ["object", "null"],
   "properties" : {
     "EffectiveConeOfVision" : {
+      "description" : "Reference Cone of Vision used for all Spectators. This is equivalent to the curve generated from the intersection of the near clipping plane and the viewing frustum.It should be planar and closed and in a plane parallel to the global XY Plane.Default value is a square based frustum with 30 degree field of view and near clipping plane 0.1 from the eye reference location. Giving a a 0.115 * 0.115 square EffectiveConeOfVision. Polyline: A curve consisting of a continuous chain of straight line segments. The Polyline is considered closed if the first and last ControlPoints are coincident.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Polyline.json"
     },
     "FarClippingPlaneDistance" : {
@@ -27,6 +29,7 @@
       "description" : "The distance from a spectator to the near clipping plane of their view frustum. Default value is 0.1. Used only when no EffectiveConeOfVision is provided."
     },
     "FocalPoint" : {
+      "description" : "Optional focal point to set the view direction of the spectators. If none provided the Avalue is calculated using the neutral viewing direction of each spectator. Point: Defines a dimensionless location in three-dimensional space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
     },
     "BHoM_Guid" : {
@@ -43,13 +46,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Humans.ViewQuality.AvalueSettings"
     },

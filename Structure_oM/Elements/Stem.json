@@ -1,9 +1,11 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Stem.json",
   "title" : "Stem",
   "type" : ["object", "null"],
   "properties" : {
     "Perimeter" : {
+      "description" : "Planar curve defining the edges at center of the Stem. ICurve: The interface for all one-dimensional geometrical objects.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ICurve.json"
     },
     "ThicknessTop" : {
@@ -15,9 +17,11 @@
       "description" : "Thickness at the bottom of the Stem."
     },
     "Normal" : {
+      "description" : "Normal to the surface of the Stem denoting the direction of the retained face. Vector: Defines a direction and magnitude in three-dimensional Euclidean space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
     },
     "Material" : {
+      "description" : "Structural material of the property. IMaterialFragment: Base interface for structural materials used by structural properties or as a fragment of the physical material.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/IMaterialFragment.json"
     },
     "BHoM_Guid" : {
@@ -34,13 +38,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Structure.Elements.Stem"
     },

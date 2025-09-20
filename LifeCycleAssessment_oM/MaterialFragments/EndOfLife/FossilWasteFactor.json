@@ -1,0 +1,44 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EndOfLife/FossilWasteFactor.json",
+  "title" : "FossilWasteFactor",
+  "type" : ["object", "null"],
+  "description" : "FossilWasteFactor: Factor on the C3 to C4 module for climate change impacts.",
+  "properties" : {
+    "C3toC4" : {
+      "type" : "number",
+      "description" : "Waste processing and disposal Climate change Fossil (embodied carbon) factor. Applied to the fossil factors, and also used to compute the totals. Value assumed per mass. Property has a quantity of type ClimateChangePerQuantity measured in [kg CO2 eq per unit]."
+    },
+    "Name" : {
+      "type" : ["string", "null"],
+      "description" : "Name of the scenario or material wo which this corresponds."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      },
+      "uniqueItems" : true
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : "string",
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.EndOfLife.FossilWasteFactor"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["C3toC4", "Name"]
+}

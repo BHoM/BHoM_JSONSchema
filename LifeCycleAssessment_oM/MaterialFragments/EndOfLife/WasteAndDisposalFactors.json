@@ -1,0 +1,51 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EndOfLife/WasteAndDisposalFactors.json",
+  "title" : "WasteAndDisposalFactors",
+  "type" : ["object", "null"],
+  "description" : "WasteAndDisposalFactors: WasteAndDisposalFactors defines the end of life waste processing and disposal factors to be applied to the material fragment. These factors are applied in addition to any end of life factors provided by an Environmental Product Declaration, and can be used to fill gaps where no EPD data is available. If applied this will help populate all CLimate change metrics available, with LandUseFactor being set to 0.",
+  "properties" : {
+    "FossilWasteFactor" : {
+      "description" : "Factor used to compute the Fossil climate change impacts. FossilWasteFactor: Factor on the C3 to C4 module for climate change impacts.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EndOfLife/FossilWasteFactor.json"
+    },
+    "OverrideEpdValue" : {
+      "type" : "boolean",
+      "description" : "Controls whether the value should override a potentially pre-existing value on the Environmental Product Declaration. If true, the factor above takes president, if false, the value above is only added if no C3 or C4 factors already have been computed."
+    },
+    "CancelOutBiogenicCarbon" : {
+      "type" : "boolean",
+      "description" : "If true, the C3toC4 value for ClimateChangeBiogenic will be set to the negative value of A1 (if present) or A1toA3 to cancel out any benefits given in those phases. If false, this value will be assumed to be 0, and all emissions for the disposal modules related to Fossil. Works under the same premise as the OverrideEpdValue toggle."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      },
+      "uniqueItems" : true
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : "string",
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.EndOfLife.WasteAndDisposalFactors"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["FossilWasteFactor", "OverrideEpdValue", "CancelOutBiogenicCarbon"]
+}

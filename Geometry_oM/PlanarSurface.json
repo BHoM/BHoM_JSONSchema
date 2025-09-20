@@ -1,10 +1,12 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/PlanarSurface.json",
   "title" : "PlanarSurface",
   "type" : ["object", "null"],
   "description" : "PlanarSurface: A surface defined by boundary edge curves lying in a common plane. Planarity toleraces default to the BH.oM.Geometry.Tolerace.Distance.",
   "properties" : {
     "ExternalBoundary" : {
+      "description" : "Closed planar curve defining the outer boundary of the surface. ICurve: The interface for all one-dimensional geometrical objects.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ICurve.json"
     },
     "InternalBoundaries" : {
@@ -15,7 +17,7 @@
       }
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Geometry.PlanarSurface"
     },

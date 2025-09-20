@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/HollowCore.json",
   "title" : "HollowCore",
   "type" : ["object", "null"],
@@ -13,15 +14,19 @@
       "description" : "Defines the distance the element should be extruded along its normal. By default the element will be extruded half the thickness 'upwards' and half the thickness 'downwards' meaning the element base geoemtry will be in the centre of the extrusion. Property has a quantity of type Length measured in [m]."
     },
     "Material" : {
+      "description" : "Homogenous structural material throughout the full thickness of the element. IMaterialFragment: Base interface for structural materials used by structural properties or as a fragment of the physical material.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/IMaterialFragment.json"
     },
     "PanelType" : {
+      "description" : "Defines what type of element this property will be used. Used by some analysis packages.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/PanelType.json"
     },
     "Openings" : {
+      "description" : "Openings of the hollow core.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/IHollowCoreOpeningProfiles.json"
     },
     "Direction" : {
+      "description" : "Specifies if the hollow cores are running in local x or y direction.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/PanelDirection.json"
     },
     "BHoM_Guid" : {
@@ -35,13 +40,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Structure.SurfaceProperties.HollowCore"
     },

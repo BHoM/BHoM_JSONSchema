@@ -1,10 +1,12 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Materials/TakeoffItem.json",
   "title" : "TakeoffItem",
   "type" : ["object", "null"],
   "description" : "TakeoffItem: Class storing takeoff values of relevant quantities corresponding to a particular material.",
   "properties" : {
     "Material" : {
+      "description" : "Material to which the takeoff values correspond. Material: Physical material to be used for Takeoffs and asigned to Physical elements. Material is capable of storing discipline specific data in Properties.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Materials/Material.json"
     },
     "Volume" : {
@@ -44,7 +46,7 @@
       "description" : "Total VolumetricFlowRate associated with the material. Applicable for takeoffs of elements relating to flow of substance through the element. Property has a quantity of type VolumetricFlowRate measured in [m³/s]."
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Physical.Materials.TakeoffItem"
     },

@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/GetTypologyCommand.json",
   "title" : "GetTypologyCommand",
   "type" : ["object", "null"],
@@ -9,7 +10,7 @@
       "description" : "Text to filter the resultant list by. Filter applies to the Typology Name. Leave blank to return all Typologies."
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.LadybugTools.GetTypologyCommand"
     },

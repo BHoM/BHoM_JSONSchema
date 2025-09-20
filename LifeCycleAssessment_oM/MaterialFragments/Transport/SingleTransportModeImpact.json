@@ -1,15 +1,21 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/Transport/SingleTransportModeImpact.json",
   "title" : "SingleTransportModeImpact",
   "type" : ["object", "null"],
   "description" : "SingleTransportModeImpact: Class for computing Transport emissions for a particular part of journey to site.",
   "properties" : {
     "VehicleEmissions" : {
+      "description" : "Emissions for the vechicle for the particular part of the journey. VehicleEmissions: Class for storing emssions of a particular type of vehicle per mass transported and distance traveled.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/Transport/VehicleEmissions.json"
     },
     "DistanceTraveled" : {
       "type" : "number",
       "description" : "Total distance transported with the particular vehicle. Property has a quantity of type Length measured in [m]."
+    },
+    "Factor" : {
+      "type" : "number",
+      "description" : "Factor applied to the resulting emission for this single mode transport. Resulting value will be multiplied by this factor. Mainly used for creating end of life routes where parts of the material will be going to different facilities."
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -25,13 +31,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.Transport.SingleTransportModeImpact"
     },
@@ -40,5 +47,5 @@
       "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
-  "required" : ["VehicleEmissions", "DistanceTraveled"]
+  "required" : ["VehicleEmissions", "DistanceTraveled", "Factor"]
 }

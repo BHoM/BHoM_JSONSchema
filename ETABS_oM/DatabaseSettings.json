@@ -1,13 +1,15 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/DatabaseSettings.json",
   "title" : "DatabaseSettings",
   "type" : ["object", "null"],
   "properties" : {
     "SectionDatabase" : {
+      "description" : "The ETABS defined section database to read sections from if the name of the sections you push share a name with one avalible in the database SectionDatabase: The ETABS defined section databases to read sections from if the name of the sections you push share a name with one avalible in the database",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/SectionDatabase.json"
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Adapters.ETABS.DatabaseSettings"
     },

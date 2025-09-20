@@ -1,68 +1,30 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/MaterialFragments/IMEPMaterial.json",
   "required" : ["_t"],
   "properties" : {
     "_t" : {
-      "enum" : ["BH.oM.MEP.System.MaterialFragments.WireMaterial", "BH.oM.MEP.System.MaterialFragments.PipeMaterial", "BH.oM.MEP.System.MaterialFragments.LiningMaterial", "BH.oM.MEP.System.MaterialFragments.InsulationMaterial", "BH.oM.MEP.System.MaterialFragments.DuctMaterial", "BH.oM.MEP.System.MaterialFragments.CableTrayMaterial"]
+      "enum" : ["BH.oM.MEP.System.MaterialFragments.CableTrayMaterial", "BH.oM.MEP.System.MaterialFragments.DuctMaterial", "BH.oM.MEP.System.MaterialFragments.InsulationMaterial", "BH.oM.MEP.System.MaterialFragments.LiningMaterial", "BH.oM.MEP.System.MaterialFragments.PipeMaterial", "BH.oM.MEP.System.MaterialFragments.WireMaterial"]
     }
   },
   "allOf" : [{
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.MEP.System.MaterialFragments.WireMaterial"
+            "type" : "string",
+            "const" : "BH.oM.MEP.System.MaterialFragments.CableTrayMaterial"
           }
         },
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/MaterialFragments/WireMaterial.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/MaterialFragments/CableTrayMaterial.json"
       }
     }, {
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.MEP.System.MaterialFragments.PipeMaterial"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/MaterialFragments/PipeMaterial.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.MEP.System.MaterialFragments.LiningMaterial"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/MaterialFragments/LiningMaterial.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.MEP.System.MaterialFragments.InsulationMaterial"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/MaterialFragments/InsulationMaterial.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
+            "type" : "string",
             "const" : "BH.oM.MEP.System.MaterialFragments.DuctMaterial"
           }
         },
@@ -75,14 +37,53 @@
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.MEP.System.MaterialFragments.CableTrayMaterial"
+            "type" : "string",
+            "const" : "BH.oM.MEP.System.MaterialFragments.InsulationMaterial"
           }
         },
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/MaterialFragments/CableTrayMaterial.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/MaterialFragments/InsulationMaterial.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.MEP.System.MaterialFragments.LiningMaterial"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/MaterialFragments/LiningMaterial.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.MEP.System.MaterialFragments.PipeMaterial"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/MaterialFragments/PipeMaterial.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.MEP.System.MaterialFragments.WireMaterial"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/MaterialFragments/WireMaterial.json"
       }
     }]
 }

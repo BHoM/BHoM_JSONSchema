@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/Ventilation.json",
   "title" : "Ventilation",
   "type" : ["object", "null"],
@@ -61,22 +62,8 @@
       "description" : "Air permeability; only if pressure test (yes or assumed)."
     },
     "HasDraughtLobby" : {
-      "type" : ["object", "null"],
-      "description" : "Is there a draft lobby?  Only if no pressure test.",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : "Is there a draft lobby?  Only if no pressure test."
     },
     "DraughtStripping" : {
       "type" : ["string", "null"],
@@ -131,22 +118,8 @@
       "description" : "Mechanical ventilation duct insulation; if MVHR."
     },
     "MechanicalVentMeasuredInstallation" : {
-      "type" : ["object", "null"],
-      "description" : "Mechanical ventilation SPF measured in situ; if MVHR or balanced.",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : "Mechanical ventilation SPF measured in situ; if MVHR or balanced."
     },
     "KitchenRoomFansCount" : {
       "type" : ["string", "null"],
@@ -197,22 +170,8 @@
       "description" : "MEV dc, specific fan power of fans through wall, rooms other than kitchen, in watts per (litres per second); if mechanical vent data from manufacturer declaration (MEV dc)."
     },
     "IsMechanicalVentApprovedInstallerScheme" : {
-      "type" : ["object", "null"],
-      "description" : ".",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : "."
     },
     "MechanicalVentDuctsIndexNumber" : {
       "type" : ["string", "null"],
@@ -244,13 +203,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Environment.SAP.XML.Ventilation"
     },

@@ -1,0 +1,54 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Configs/GlobalEmissionFactors.json",
+  "title" : "GlobalEmissionFactors",
+  "type" : ["object", "null"],
+  "properties" : {
+    "PreConstructionDemolition" : {
+      "description" : "The demolition activities associated with the pre-construction process, which will increase the emissions associated with the construction phase of the building lifecycle. The impact on the final element will be scaled according to its part of the total mass of the building. PreConstructionDemolition: A class defining the environmental impacts associated with the demolition of existing buildings prior to construction of a new building.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/Construction/PreConstructionDemolition.json"
+    },
+    "ConstructionActivities" : {
+      "description" : "The construction activities associated with the construction process, which will increase the emissions associated with the construction phase of the building lifecycle. The impact on the final element will be scaled according to its part of the total mass of the building. ConstructionActivities: A class defining the environmental impacts associated with the construction activities of a building.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/Construction/ConstructionActivities.json"
+    },
+    "TotalBuildingMass" : {
+      "type" : "number",
+      "description" : "The total mass of the building. When evaluating an element, its part impact for pre-construction demolition as well as site activities will be scaled by this factor. Property has a quantity of type Mass measured in [kg]."
+    },
+    "StructuresOnlyMass" : {
+      "type" : "boolean",
+      "description" : "Boolean that indicates if the provided mass is only the mass of the structure (true) or the total mass of the building including non-structural elements (false). This is relevant for scaling the pre-construction demolition and construction activities emissions which are provided per unit area."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      },
+      "uniqueItems" : true
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : "string",
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.LifeCycleAssessment.Configs.GlobalEmissionFactors"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["PreConstructionDemolition", "ConstructionActivities", "TotalBuildingMass", "StructuresOnlyMass"]
+}

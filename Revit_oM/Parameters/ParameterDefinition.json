@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Parameters/ParameterDefinition.json",
   "title" : "ParameterDefinition",
   "type" : ["object", "null"],
@@ -31,6 +32,10 @@
       "type" : "boolean",
       "description" : "If true, the Revit parameter represented by this object is a shared parameter, otherwise it is a project parameter."
     },
+    "Guid" : {
+      "type" : ["string", "null"],
+      "description" : "Unique identifier of the Revit parameter for a shared parameter. Only relevant on pull, can't be set on Push."
+    },
     "BHoM_Guid" : {
       "type" : "string",
       "format" : "uuid"
@@ -45,13 +50,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Adapters.Revit.Parameters.ParameterDefinition"
     },
@@ -60,5 +66,5 @@
       "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
-  "required" : ["ParameterGroup", "ParameterType", "Discipline", "Instance", "Categories", "Shared"]
+  "required" : ["ParameterGroup", "ParameterType", "Discipline", "Instance", "Categories", "Shared", "Guid"]
 }

@@ -1,107 +1,17 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Interfaces/IDeprecatedStandard.json",
   "required" : ["_t"],
   "properties" : {
     "_t" : {
-      "enum" : ["BH.oM.LifeCycleAssessment.MaterialFragments.PhotochemicalOzoneCreationTRACIMetric", "BH.oM.LifeCycleAssessment.MaterialFragments.PhotochemicalOzoneCreationCMLMetric", "BH.oM.LifeCycleAssessment.MaterialFragments.EutrophicationTRACIMetric", "BH.oM.LifeCycleAssessment.MaterialFragments.EutrophicationCMLMetric", "BH.oM.LifeCycleAssessment.MaterialFragments.PhotochemicalOzoneCreationTRACIFactor", "BH.oM.LifeCycleAssessment.MaterialFragments.PhotochemicalOzoneCreationCMLFactor", "BH.oM.LifeCycleAssessment.MaterialFragments.EutrophicationTRACIFactor", "BH.oM.LifeCycleAssessment.MaterialFragments.EutrophicationCMLFactor", "BH.oM.LifeCycleAssessment.Results.PhotochemicalOzoneCreationTRACIMaterialResult", "BH.oM.LifeCycleAssessment.Results.PhotochemicalOzoneCreationCMLMaterialResult", "BH.oM.LifeCycleAssessment.Results.EutrophicationCMLMaterialResult", "BH.oM.LifeCycleAssessment.Results.PhotochemicalOzoneCreationCMLElementResult", "BH.oM.LifeCycleAssessment.Results.EutrophicationTRACIElementResult", "BH.oM.LifeCycleAssessment.Results.EutrophicationCMLElementResult"]
+      "enum" : ["BH.oM.LifeCycleAssessment.MaterialFragments.EutrophicationCMLFactor", "BH.oM.LifeCycleAssessment.MaterialFragments.EutrophicationCMLMetric", "BH.oM.LifeCycleAssessment.MaterialFragments.EutrophicationTRACIFactor", "BH.oM.LifeCycleAssessment.MaterialFragments.EutrophicationTRACIMetric", "BH.oM.LifeCycleAssessment.MaterialFragments.PhotochemicalOzoneCreationCMLFactor", "BH.oM.LifeCycleAssessment.MaterialFragments.PhotochemicalOzoneCreationCMLMetric", "BH.oM.LifeCycleAssessment.MaterialFragments.PhotochemicalOzoneCreationTRACIFactor", "BH.oM.LifeCycleAssessment.MaterialFragments.PhotochemicalOzoneCreationTRACIMetric", "BH.oM.LifeCycleAssessment.Results.EutrophicationCMLElementResult", "BH.oM.LifeCycleAssessment.Results.EutrophicationCMLMaterialResult", "BH.oM.LifeCycleAssessment.Results.EutrophicationTRACIElementResult", "BH.oM.LifeCycleAssessment.Results.PhotochemicalOzoneCreationCMLElementResult", "BH.oM.LifeCycleAssessment.Results.PhotochemicalOzoneCreationCMLMaterialResult", "BH.oM.LifeCycleAssessment.Results.PhotochemicalOzoneCreationTRACIMaterialResult"]
     }
   },
   "allOf" : [{
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.PhotochemicalOzoneCreationTRACIMetric"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/PhotochemicalOzoneCreationTRACIMetric.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.PhotochemicalOzoneCreationCMLMetric"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/PhotochemicalOzoneCreationCMLMetric.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.EutrophicationTRACIMetric"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EutrophicationTRACIMetric.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.EutrophicationCMLMetric"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EutrophicationCMLMetric.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.PhotochemicalOzoneCreationTRACIFactor"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/PhotochemicalOzoneCreationTRACIFactor.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.PhotochemicalOzoneCreationCMLFactor"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/PhotochemicalOzoneCreationCMLFactor.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.EutrophicationTRACIFactor"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EutrophicationTRACIFactor.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
+            "type" : "string",
             "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.EutrophicationCMLFactor"
           }
         },
@@ -114,33 +24,111 @@
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.LifeCycleAssessment.Results.PhotochemicalOzoneCreationTRACIMaterialResult"
+            "type" : "string",
+            "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.EutrophicationCMLMetric"
           }
         },
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/PhotochemicalOzoneCreationTRACIMaterialResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EutrophicationCMLMetric.json"
       }
     }, {
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.LifeCycleAssessment.Results.PhotochemicalOzoneCreationCMLMaterialResult"
+            "type" : "string",
+            "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.EutrophicationTRACIFactor"
           }
         },
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/PhotochemicalOzoneCreationCMLMaterialResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EutrophicationTRACIFactor.json"
       }
     }, {
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
+            "type" : "string",
+            "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.EutrophicationTRACIMetric"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EutrophicationTRACIMetric.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.PhotochemicalOzoneCreationCMLFactor"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/PhotochemicalOzoneCreationCMLFactor.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.PhotochemicalOzoneCreationCMLMetric"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/PhotochemicalOzoneCreationCMLMetric.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.PhotochemicalOzoneCreationTRACIFactor"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/PhotochemicalOzoneCreationTRACIFactor.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.PhotochemicalOzoneCreationTRACIMetric"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/PhotochemicalOzoneCreationTRACIMetric.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.LifeCycleAssessment.Results.EutrophicationCMLElementResult"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/EutrophicationCMLElementResult.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
             "const" : "BH.oM.LifeCycleAssessment.Results.EutrophicationCMLMaterialResult"
           }
         },
@@ -153,20 +141,7 @@
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.LifeCycleAssessment.Results.PhotochemicalOzoneCreationCMLElementResult"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/PhotochemicalOzoneCreationCMLElementResult.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
+            "type" : "string",
             "const" : "BH.oM.LifeCycleAssessment.Results.EutrophicationTRACIElementResult"
           }
         },
@@ -179,14 +154,40 @@
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.LifeCycleAssessment.Results.EutrophicationCMLElementResult"
+            "type" : "string",
+            "const" : "BH.oM.LifeCycleAssessment.Results.PhotochemicalOzoneCreationCMLElementResult"
           }
         },
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/EutrophicationCMLElementResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/PhotochemicalOzoneCreationCMLElementResult.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.LifeCycleAssessment.Results.PhotochemicalOzoneCreationCMLMaterialResult"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/PhotochemicalOzoneCreationCMLMaterialResult.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.LifeCycleAssessment.Results.PhotochemicalOzoneCreationTRACIMaterialResult"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/PhotochemicalOzoneCreationTRACIMaterialResult.json"
       }
     }]
 }

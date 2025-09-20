@@ -1,91 +1,60 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/PropertySummary.json",
   "title" : "PropertySummary",
   "type" : ["object", "null"],
   "properties" : {
     "Walls" : {
+      "description" : ".",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/PropertySummaryType.json"
     },
     "Roof" : {
+      "description" : ".",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/PropertySummaryType.json"
     },
     "Floor" : {
+      "description" : ".",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/PropertySummaryType.json"
     },
     "Windows" : {
+      "description" : ".",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/PropertySummaryType.json"
     },
     "MainHeating" : {
+      "description" : ".",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/PropertySummaryType.json"
     },
     "MainHeatingControls" : {
+      "description" : ".",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/PropertySummaryType.json"
     },
     "SecondaryHeating" : {
+      "description" : ".",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/PropertySummaryType.json"
     },
     "HotWater" : {
+      "description" : ".",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/PropertySummaryType.json"
     },
     "Lighting" : {
+      "description" : ".",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/PropertySummaryType.json"
     },
     "AirTightness" : {
+      "description" : ".",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/PropertySummaryType.json"
     },
     "HasFixedAirConditioning" : {
-      "type" : ["object", "null"],
-      "description" : ".",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : "."
     },
     "HasHotWaterCylinder" : {
-      "type" : ["object", "null"],
-      "description" : ".",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : "."
     },
     "HasHeatedSeparateConservatory" : {
-      "type" : ["object", "null"],
-      "description" : ".",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : "."
     },
     "DwellingType" : {
       "type" : ["string", "null"],
@@ -104,22 +73,8 @@
       "description" : "For backward compatibility only, do not use."
     },
     "IsZeroCarbonHome" : {
-      "type" : ["object", "null"],
-      "description" : "Is dwelling a Zero Carbon Home?.",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : "Is dwelling a Zero Carbon Home?."
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -135,13 +90,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Environment.SAP.XML.PropertySummary"
     },

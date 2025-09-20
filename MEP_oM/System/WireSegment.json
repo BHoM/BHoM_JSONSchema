@@ -1,13 +1,16 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/WireSegment.json",
   "title" : "WireSegment",
   "type" : ["object", "null"],
   "description" : "WireSegment: An object containing a collection of Wires to work within an MEP systems.",
   "properties" : {
     "StartPoint" : {
+      "description" : "The point at which the Wire object begins. Point: Defines a dimensionless location in three-dimensional space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
     },
     "EndPoint" : {
+      "description" : "The point at which the Wire object ends. Point: Defines a dimensionless location in three-dimensional space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
     },
     "FlowRate" : {
@@ -15,6 +18,7 @@
       "description" : "The amount of current being carried by the wire, the ampacity of the wire."
     },
     "SectionProperty" : {
+      "description" : "Section property of the Wire, containing all material as well as profile geometry and dimensions, where applicable.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/SectionProperties/WireSectionProperty.json"
     },
     "BHoM_Guid" : {
@@ -31,13 +35,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.MEP.System.WireSegment"
     },

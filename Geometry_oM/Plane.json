@@ -1,17 +1,20 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Plane.json",
   "title" : "Plane",
   "type" : ["object", "null"],
   "description" : "Plane: Defines a flat infinite two-dimensional surface",
   "properties" : {
     "Origin" : {
+      "description" : "A point through which the plane passes Point: Defines a dimensionless location in three-dimensional space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
     },
     "Normal" : {
+      "description" : "Vector perpendicualar to the plane, defining the orientation in three-dimensional space Vector: Defines a direction and magnitude in three-dimensional Euclidean space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Geometry.Plane"
     },

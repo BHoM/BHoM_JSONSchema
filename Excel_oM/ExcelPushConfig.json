@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Excel_oM/ExcelPushConfig.json",
   "title" : "ExcelPushConfig",
   "type" : ["object", "null"],
@@ -9,6 +10,7 @@
       "description" : "Name of the worksheet to write to."
     },
     "StartingCell" : {
+      "description" : "The first cell that will be filled with the pushed objects, i.e. top-left cell of the populated space in the spreadsheet. CellAddress: Object representing a cell address: its column index as string and row index as integer.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Excel_oM/CellAddress.json"
     },
     "ObjectProperties" : {
@@ -38,6 +40,7 @@
       "description" : "If true, the property names will be shown as the first row (or column if transposed)"
     },
     "WorkbookProperties" : {
+      "description" : "Properties to apply to workbook and contents. If not null, the meta information of the workbook will be updated on push. WorkbookProperties: Object representing the meta information of the workbook.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Excel_oM/WorkbookProperties.json"
     },
     "WrapNonBHoMObjects" : {
@@ -49,10 +52,11 @@
       "description" : "If true and if no specific EqualityComparer is found for the type, Diffing hashes are computed and used to compare the objects."
     },
     "DiffingConfig" : {
+      "description" : "Configurations for the Diffing hashing. Requires `AllowHashForComparing` to be set to true. DiffingConfig: General configurations for the Diffing process, including settings for the Hash computation.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/DiffingConfig.json"
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Adapters.Excel.ExcelPushConfig"
     },

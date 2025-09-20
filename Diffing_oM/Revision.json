@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/Revision.json",
   "title" : "Revision",
   "type" : ["object", "null"],
@@ -34,6 +35,7 @@
       "description" : "Objects to be included in this Revision."
     },
     "RevisionDiffConfing" : {
+      "description" : "Diffing settings for this Revision. Hashes of objects contained in this stream will be computed based on these configs. DiffingConfig: General configurations for the Diffing process, including settings for the Hash computation.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/DiffingConfig.json"
     },
     "BHoM_Guid" : {
@@ -50,13 +52,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Diffing.Revision"
     },

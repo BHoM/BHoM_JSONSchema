@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/DoorAndWindowFire.json",
   "title" : "DoorAndWindowFire",
   "type" : ["object", "null"],
@@ -11,7 +12,7 @@
       "description" : "Reaction to fire, smoke propagation, flaming droplets and particles."
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.dKoP.DoorAndWindowFire"
     },

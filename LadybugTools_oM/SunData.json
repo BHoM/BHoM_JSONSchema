@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/SunData.json",
   "title" : "SunData",
   "type" : ["object", "null"],
@@ -8,7 +9,7 @@
       "description" : "The azimuth angle at sunrise in degrees. Sunrise is defined as the time at which the sun is first visible above the horizon, ignoring atmospheric effects."
     },
     "SunriseTime" : {
-      "type" : ["object", "null"],
+      "type" : "object",
       "properties" : {
         "$date" : {
           "type" : "integer"
@@ -20,7 +21,7 @@
       "description" : "The altitude angle at solar noon (when the sun is at its highest point) in degrees."
     },
     "NoonTime" : {
-      "type" : ["object", "null"],
+      "type" : "object",
       "properties" : {
         "$date" : {
           "type" : "integer"
@@ -32,7 +33,7 @@
       "description" : "The azimuth angle at sunset in degrees. Sunset is defined as the time at which the sun has just finished passing the horizon, ignoring atmospheric effects."
     },
     "SunsetTime" : {
-      "type" : ["object", "null"],
+      "type" : "object",
       "properties" : {
         "$date" : {
           "type" : "integer"
@@ -40,7 +41,7 @@
       }
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.LadybugTools.SunData"
     },

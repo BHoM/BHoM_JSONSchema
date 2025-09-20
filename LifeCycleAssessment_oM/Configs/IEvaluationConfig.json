@@ -1,16 +1,30 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Configs/IEvaluationConfig.json",
   "required" : ["_t"],
   "properties" : {
     "_t" : {
-      "const" : "BH.oM.LifeCycleAssessment.Configs.IStructEEvaluationConfig"
+      "enum" : ["BH.oM.LifeCycleAssessment.Configs.GlobalEmissionFactors", "BH.oM.LifeCycleAssessment.Configs.IStructEEvaluationConfig"]
     }
   },
   "allOf" : [{
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
+            "type" : "string",
+            "const" : "BH.oM.LifeCycleAssessment.Configs.GlobalEmissionFactors"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Configs/GlobalEmissionFactors.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
             "const" : "BH.oM.LifeCycleAssessment.Configs.IStructEEvaluationConfig"
           }
         },

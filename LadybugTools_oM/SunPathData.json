@@ -1,22 +1,27 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/SunPathData.json",
   "title" : "SunPathData",
   "type" : ["object", "null"],
   "properties" : {
     "DecemberSolstice" : {
+      "description" : "Data describing the December (winter) solstice.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/SunData.json"
     },
     "MarchEquinox" : {
+      "description" : "Data describing the March (spring) equinox.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/SunData.json"
     },
     "JuneSolstice" : {
+      "description" : "Data describing the June (summer) solstice.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/SunData.json"
     },
     "SeptemberEquinox" : {
+      "description" : "Data describing the September (autumn) equinox.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/SunData.json"
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.LadybugTools.SunPathData"
     },

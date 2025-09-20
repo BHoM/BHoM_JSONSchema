@@ -1,10 +1,12 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Analysis/Node.json",
   "title" : "Node",
   "type" : ["object", "null"],
   "description" : "Node: 0D finite element for environmental analysis. Node class contains positional information and is used to build AnalysisGrids and provide links between model geometry and analytical results.",
   "properties" : {
     "Position" : {
+      "description" : "Position of the node in global Cartesian 3D space. Point: Defines a dimensionless location in three-dimensional space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
     },
     "ID" : {
@@ -32,13 +34,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Environment.Analysis.Node"
     },

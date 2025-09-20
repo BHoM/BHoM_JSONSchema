@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/ComparisonConfig.json",
   "title" : "ComparisonConfig",
   "type" : ["object", "null"],
@@ -39,7 +40,7 @@
         "type" : ["object", "null"],
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
+            "type" : "string",
             "const" : "System.Type"
           },
           "Name" : {
@@ -72,7 +73,8 @@
       "description" : "Tolerance used for individual properties. When computing Hash or the property Diffing, if the analysed property name is found in this collection, the corresponding tolerance is applied.\nSupports * wildcard in the property name matching. E.g. `StartNode.Point.*, 2`.\nIf a match is found, this take precedence over the global `NumericTolerance`.\nIf conflicting values/multiple matches are found among the Configurations on numerical precision, the largest approximation among all (least precise number) is registered.",
       "items" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/NamedNumericTolerance.json"
-      }
+      },
+      "uniqueItems" : true
     },
     "SignificantFigures" : {
       "type" : "integer",
@@ -83,14 +85,15 @@
       "description" : "Number of significant figures allowed for numerical data on a per-property base. \nSupports * wildcard in the property name matching. E.g. `StartNode.Point.*, 2`.\nIf a match is found, this take precedence over the global `SignificantFigures`.\nIf conflicting values/multiple matches are found among the Configurations on numerical precision, the largest approximation among all (least precise number) is registered.",
       "items" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/NamedSignificantFigures.json"
-      }
+      },
+      "uniqueItems" : true
     },
     "UseGeometryHash" : {
       "type" : "boolean",
       "description" : "If true, geometric types will be identified based on the GeometryHash function. This function reduces the identity of geometry down to its most basic components, and it is faster than scouring for all its properties. See its implementation in the Geometry_Engine for more details."
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Base.ComparisonConfig"
     },
