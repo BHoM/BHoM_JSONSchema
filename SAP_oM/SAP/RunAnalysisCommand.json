@@ -1,12 +1,15 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/RunAnalysisCommand.json",
   "title" : "RunAnalysisCommand",
   "type" : ["object", "null"],
   "properties" : {
     "FileSettingsInput" : {
+      "description" : "Path to XML file that will be calculated. FileSettings: The fileSettings, file name and directory, to use with an adapter for push and pull",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/FileSettings.json"
     },
     "FileSettingsOutput" : {
+      "description" : "Path to new file, if using txt endpoint. FileSettings: The fileSettings, file name and directory, to use with an adapter for push and pull",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/FileSettings.json"
     },
     "APIKey" : {
@@ -18,7 +21,7 @@
       "description" : "Endpoint."
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Environment.SAP.RunAnalysisCommand"
     },

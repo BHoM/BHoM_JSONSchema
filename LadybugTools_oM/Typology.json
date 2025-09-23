@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/Typology.json",
   "title" : "Typology",
   "type" : ["object", "null"],
@@ -25,21 +26,7 @@
       "type" : ["array", "null"],
       "description" : "Override for the wind speed that will ignore any shelter effects for each time step. Leave timesteps null to use the shelter affected wind speeds (default null).",
       "items" : {
-        "type" : ["object", "null"],
-        "properties" : {
-          "HasValue" : {
-            "type" : "boolean"
-          },
-          "Value" : {
-            "type" : "number"
-          },
-          "_t" : {
-            "type" : ["string", "null"],
-            "description" : "Optional type disciminator.",
-            "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-          }
-        },
-        "required" : ["HasValue", "Value"]
+        "type" : ["number", "null"]
       }
     },
     "WindSpeedMultiplier" : {
@@ -64,13 +51,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.LadybugTools.Typology"
     },

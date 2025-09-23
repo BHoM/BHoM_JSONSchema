@@ -1,9 +1,11 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/Heating.json",
   "title" : "Heating",
   "type" : ["object", "null"],
   "properties" : {
     "MainHeatingDetails" : {
+      "description" : ".",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/MainHeatingDetails.json"
     },
     "SecondaryHeatingCategory" : {
@@ -59,40 +61,12 @@
       "description" : "The type of immersion heating; only if immersion."
     },
     "IsHeatPumpAssistedByImmersion" : {
-      "type" : ["object", "null"],
-      "description" : "Heat pump assisted by immersion?  Only if main heating is heat pump and water heating from heat pump.",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : "Heat pump assisted by immersion?  Only if main heating is heat pump and water heating from heat pump."
     },
     "IsImmersionForSummerUse" : {
-      "type" : ["object", "null"],
-      "description" : "Immersion for summer use?  Only if main heating is solid fuel fire or room heater with boiler.",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : "Immersion for summer use?  Only if main heating is solid fuel fire or room heater with boiler."
     },
     "HotWaterStoreManufacturer" : {
       "type" : ["string", "null"],
@@ -115,22 +89,8 @@
       "description" : "Hot water store size in litres; if there is a hot water store.  Store refers to hot water store type which can be cylinder (if thermal store is 'none'), hot-water only thermal store or integrated thermal store.  Not applicable if (a) combi boiler whose data source database or (b) instantaneous combi boiler or (c) combi boiler from SAP table or (d) instantaneous water heater."
     },
     "HasHotWaterCylinder" : {
-      "type" : ["object", "null"],
-      "description" : "Hot water cylinder?.",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : "Hot water cylinder?."
     },
     "HotWaterStoreHeatTransferArea" : {
       "type" : ["string", "null"],
@@ -157,130 +117,32 @@
       "description" : "Not applicable to combi boiler or instantaneous water heater."
     },
     "HasCylinderThermostat" : {
-      "type" : ["object", "null"],
-      "description" : "Hot water cylinder thermostat?  Not applicable if combi boiler or instantaneous water heater.",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : "Hot water cylinder thermostat?  Not applicable if combi boiler or instantaneous water heater."
     },
     "IsCylinderInHeatedSpace" : {
-      "type" : ["object", "null"],
-      "description" : "Hot water cylinder in heated space?  Not applicable if combi boiler or instantaneous water heater.",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : "Hot water cylinder in heated space?  Not applicable if combi boiler or instantaneous water heater."
     },
     "IsHotWaterSeperatlyTimed" : {
-      "type" : ["object", "null"],
-      "description" : ">Hot water separately timed?  Not applicable if combi boiler or instantaneous water heater.",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : ">Hot water separately timed?  Not applicable if combi boiler or instantaneous water heater."
     },
     "IsHeatPumpInstalledToMIS" : {
-      "type" : ["object", "null"],
-      "description" : "Is heat pump installed to MIS standard?  Only if water heating from hot water only heat pump.",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : "Is heat pump installed to MIS standard?  Only if water heating from hot water only heat pump."
     },
     "IsSecondaryHeatingHETASApproved" : {
-      "type" : ["object", "null"],
-      "description" : "Secondary heating appliance is HETAS approved?  Only if solid fuel.",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : "Secondary heating appliance is HETAS approved?  Only if solid fuel."
     },
     "IsThermalStoreNearBoiler" : {
-      "type" : ["object", "null"],
-      "description" : "Thermal store connected to boiler by no more than 1.5 m of insulated pipework?  Only if thermal store.  Not applicable if combi boiler or instantaneous water heater.",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : "Thermal store connected to boiler by no more than 1.5 m of insulated pipework?  Only if thermal store.  Not applicable if combi boiler or instantaneous water heater."
     },
     "IsThermalStoreOrCPSUInAiringCupboard" : {
-      "type" : ["object", "null"],
-      "description" : "Thermal store or CPSU in airing cupboard?  Only if (a) boiler with integrated or hot-water-only thermal store, or (b) main heating is CPSU.",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : "Thermal store or CPSU in airing cupboard?  Only if (a) boiler with integrated or hot-water-only thermal store, or (b) main heating is CPSU."
     },
     "HotWaterControlsManufacturer" : {
       "type" : ["string", "null"],
@@ -291,6 +153,7 @@
       "description" : "."
     },
     "CommunityHeatingSystems" : {
+      "description" : "Community heating systems used by the property.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/CommunityHeatingSystems.json"
     },
     "HeatingDesignWaterUse" : {
@@ -302,33 +165,23 @@
       "description" : "."
     },
     "SecondaryHeatingDeclaredValues" : {
+      "description" : "Use when manufacturer’s declared values.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/HeatingDeclaredValues.json"
     },
     "SolarHeatingDetails" : {
+      "description" : ".",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/SolarHeatingDetails.json"
     },
     "StorageWHRS" : {
+      "description" : ".",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/StorageWWHRS.json"
     },
     "HasFixedAirConditioning" : {
-      "type" : ["object", "null"],
-      "description" : "Fixed air conditioning?.",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : "Fixed air conditioning?."
     },
     "ShowerOutlets" : {
+      "description" : ".",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/ShowerOutlets.json"
     },
     "NumberBaths" : {
@@ -340,6 +193,7 @@
       "description" : "."
     },
     "InstantaneousWHRS" : {
+      "description" : "Waste Water Heat Recovery System.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/InstantaneousWWHRS.json"
     },
     "BHoM_Guid" : {
@@ -356,13 +210,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Environment.SAP.XML.Heating"
     },

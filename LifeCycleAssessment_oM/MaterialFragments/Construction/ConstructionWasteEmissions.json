@@ -1,0 +1,47 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/Construction/ConstructionWasteEmissions.json",
+  "title" : "ConstructionWasteEmissions",
+  "type" : ["object", "null"],
+  "description" : "ConstructionWasteEmissions: Production, transportation, storage and end-of-life treatment and disposal of any material/waste on-site: transport, waste management and disposal of packaging materials.",
+  "properties" : {
+    "WasteRate" : {
+      "description" : "The waste rate associated with the construction process. This factor is used to compute A5.3 emissions based on outputs for A1 to A4 and C2 to C4 available from either EPD and/or transport as well as disposal factors.\nThis value should be the percentage of material brought to site that goes to waste. This is turned into a waste factor to allow for evaluating based on quantities of the built asset. WasteRate: A class defining the waste rate associated with a construction material.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/Construction/WasteRate.json"
+    },
+    "ResuedOnSite" : {
+      "type" : "boolean",
+      "description" : "Whether the material is reused on site, which would reduce the emissions associated with transport and processing. Controls whether the C2 factor for the material should be included or not when computing the emissions based on the A5.3 (waste) factor. Defaults to false, meaning the C2 factor is included."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      },
+      "uniqueItems" : true
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : "string",
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.Construction.ConstructionWasteEmissions"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["WasteRate", "ResuedOnSite"]
+}

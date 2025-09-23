@@ -1,10 +1,12 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/ProjectLifeCycleAssessment.json",
   "title" : "ProjectLifeCycleAssessment",
   "type" : ["object", "null"],
   "description" : "ProjectLifeCycleAssessment: Project LCA can be used to collect all objects used in an evaluation along with the project's specific metatdata for tracking within a user-specified database.",
   "properties" : {
     "LCAScope" : {
+      "description" : "LCA Scope metadata designed to help differentiate between project specifications. LifeCycleAssessmentScope: The Life Cycle Assessment Scope fragment intends to provide a method of reporting project criteria (name, area, type, location). This object may be used for studies at any stage of development and can serve as a true means of 'apples to apples' comparison when catalogued. The information provided within this object is utilised for database construction and organisation only, therefore all values will not effect the overall life cycle assessment results.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/LifeCycleAssessmentScope.json"
     },
     "Elements" : {
@@ -28,13 +30,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.LifeCycleAssessment.ProjectLifeCycleAssessment"
     },

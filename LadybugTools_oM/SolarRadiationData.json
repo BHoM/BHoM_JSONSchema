@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/SolarRadiationData.json",
   "title" : "SolarRadiationData",
   "type" : ["object", "null"],
@@ -28,7 +29,7 @@
       "description" : "The angle, in degrees(°) above the horizon that the minimum incoming solar radiation is coming from."
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.LadybugTools.SolarRadiationData"
     },

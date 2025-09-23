@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/Settings/GBXMLSettings.json",
   "title" : "GBXMLSettings",
   "type" : ["object", "null"],
@@ -24,9 +25,11 @@
       "description" : "Set to false if you want to append to a file when pushing XML. If set to true then a file will be created. If a file exists, it will be overwritten. Default true"
     },
     "ResultsUnitType" : {
+      "description" : "Set the unit type for the results to be either SI or Imperial. Default SI",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/Enums/UnitType.json"
     },
     "ExportDetail" : {
+      "description" : "Set the detail of your export to be either full (whole building), shell (exterior walls only), or spaces (each individual space as its own XML file). Default full",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/Enums/ExportDetail.json"
     },
     "DistanceTolerance" : {
@@ -46,9 +49,11 @@
       "description" : "Set the tolerance for angle calculations when exporting to XML. Default is set to BH.oM.Geometry.Tolerance.Angle"
     },
     "RoundingSettings" : {
+      "description" : "Set the rounding options for numerical outputs to be used within gbXML creation. Default is per the Rounding Settings defaults",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/GBXML/RoundingSettings.json"
     },
     "UnitSetUp" : {
+      "description" : "Set the units to be used for the export of a gbXML file. Default units will be in SI using the defaults of the GBXMLSetUp object if none are provided",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/GBXMLUnitSetUp.json"
     },
     "BHoM_Guid" : {
@@ -65,13 +70,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Adapters.XML.Settings.GBXMLSettings"
     },

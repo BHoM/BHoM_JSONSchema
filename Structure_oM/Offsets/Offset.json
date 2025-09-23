@@ -1,13 +1,16 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Offsets/Offset.json",
   "title" : "Offset",
   "type" : ["object", "null"],
   "description" : "Offset: Class defining offsets for bar objects from its end Nodes to be applied in analysis packages.",
   "properties" : {
     "Start" : {
+      "description" : "Defines offset of the StartNode in local coordinates. This is x - tangential, z- along normal (generally major axis), y - perpendicular to the first two (generally minor axis). Property has a quantity of type Length measured in [m]. Vector: Defines a direction and magnitude in three-dimensional Euclidean space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
     },
     "End" : {
+      "description" : "Defines offset of the EndNode in local coordinates. This is x - tangential, z- along normal (generally major axis), y - perpendicular to the first two (generally minor axis). Property has a quantity of type Length measured in [m]. Vector: Defines a direction and magnitude in three-dimensional Euclidean space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
     },
     "BHoM_Guid" : {
@@ -24,13 +27,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Structure.Offsets.Offset"
     },

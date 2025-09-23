@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/RevitHostFragment.json",
   "title" : "RevitHostFragment",
   "type" : ["object", "null"],
@@ -13,7 +14,7 @@
       "description" : "Name of the link document, if the host Revit element is linked."
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Revit.RevitHostFragment"
     },

@@ -1,0 +1,56 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EndOfLife/EndOfLifeRouteDistribution.json",
+  "title" : "EndOfLifeRouteDistribution",
+  "type" : ["object", "null"],
+  "description" : "EndOfLifeRouteDistribution: Class outlining the distribution between different end of life routes and scenarios for a particular material. All ratios should be between 0 and 1, and in total sum up to 1.",
+  "properties" : {
+    "Name" : {
+      "type" : ["string", "null"],
+      "description" : "Name of the scenario or material wo which this corresponds."
+    },
+    "Reuse" : {
+      "type" : "number",
+      "description" : "Proportion of the material that is resued. Should be a number betwen 0 and 1 where 0 means no reuse, and 1 means all is reused. Property has a quantity of type Ratio measured in [-]."
+    },
+    "Recycling" : {
+      "type" : "number",
+      "description" : "Proportion of the material that is recycled. Should be a number betwen 0 and 1 where 0 means nothing is recyled, and 1 means all is recyled. Property has a quantity of type Ratio measured in [-]."
+    },
+    "Incineration" : {
+      "type" : "number",
+      "description" : "Proportion of the material that is incinerated. Should be a number betwen 0 and 1 where 0 means nothing is incinerated, and 1 means all is incinerated. Property has a quantity of type Ratio measured in [-]."
+    },
+    "Waste" : {
+      "type" : "number",
+      "description" : "Proportion of the material that is incinerated. Should be a number betwen 0 and 1 where 0 means nothing is incinerated, and 1 means all is incinerated. Property has a quantity of type Ratio measured in [-]."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      },
+      "uniqueItems" : true
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : "string",
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.EndOfLife.EndOfLifeRouteDistribution"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["Name", "Reuse", "Recycling", "Incineration", "Waste"]
+}

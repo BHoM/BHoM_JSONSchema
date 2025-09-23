@@ -1,0 +1,50 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/Construction/PreConstructionDemolition.json",
+  "title" : "PreConstructionDemolition",
+  "type" : ["object", "null"],
+  "description" : "PreConstructionDemolition: A class defining the environmental impacts associated with the demolition of existing buildings prior to construction of a new building.",
+  "properties" : {
+    "EnvironmentalFactors" : {
+      "type" : ["array", "null"],
+      "description" : "List of environmental factors associated with the demolition process. The default values are indicative only and should be replaced with project specific data where available. All factors stated per unit area.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/IEnvironmentalFactor.json"
+      }
+    },
+    "DemolishedFloorArea" : {
+      "type" : "number",
+      "description" : "The area of floor that is demolished prior to construction of the new building. This is used to scale the environmental factors above. Property has a quantity of type Area measured in [m²]."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      },
+      "uniqueItems" : true
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : "string",
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.Construction.PreConstructionDemolition"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["EnvironmentalFactors", "DemolishedFloorArea"]
+}

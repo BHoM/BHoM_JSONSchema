@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/BarVaryingDistributedLoad.json",
   "title" : "BarVaryingDistributedLoad",
   "type" : ["object", "null"],
@@ -9,9 +10,11 @@
       "description" : "Distance along the bar between the start node and the start of the loaded region.\nIf RelativePositions is true, this value will be a normalised length where 0 means start and 1 means end, which means this value needs to be within this range.\nIf RelativePositions is false, this value will be in absolute distances."
     },
     "ForceAtStart" : {
+      "description" : "Direction and magnitude of the force at the start of the loaded region. Property has a quantity of type ForcePerUnitLength measured in [N/m]. Vector: Defines a direction and magnitude in three-dimensional Euclidean space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
     },
     "MomentAtStart" : {
+      "description" : "Direction and magnitude of the moment at the start of the loaded region. Property has a quantity of type MomentPerUnitLength measured in [N.m/m]. Vector: Defines a direction and magnitude in three-dimensional Euclidean space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
     },
     "EndPosition" : {
@@ -19,18 +22,23 @@
       "description" : "Distance along the bar between the start node and the end of the loaded region.\nIf RelativePositions is true, this value will be a normalised length where 0 means start and 1 means end, which means this value needs to be within this range.\nIf RelativePositions is false, this value will be in absolute distances."
     },
     "ForceAtEnd" : {
+      "description" : "Direction and magnitude of the force at the end of the loaded region. Property has a quantity of type ForcePerUnitLength measured in [N/m]. Vector: Defines a direction and magnitude in three-dimensional Euclidean space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
     },
     "MomentAtEnd" : {
+      "description" : "Direction and magnitude of the moment at the end of the loaded region. Property has a quantity of type MomentPerUnitLength measured in [N.m/m]. Vector: Defines a direction and magnitude in three-dimensional Euclidean space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
     },
     "Loadcase" : {
+      "description" : "The Loadcase in which the load is applied. Loadcase: Basic load case class. All load classes need to point to one Loadcase.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/Loadcase.json"
     },
     "Objects" : {
+      "description" : "The group of Bars that the load should be applied to. For most analysis packages the objects added here need to be pulled from the analysis package before being assigned to the load.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/BHoMGroup`1.json"
     },
     "Axis" : {
+      "description" : "Defines whether the load is applied in local or global coordinates.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/LoadAxis.json"
     },
     "Projected" : {
@@ -55,13 +63,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Structure.Loads.BarVaryingDistributedLoad"
     },

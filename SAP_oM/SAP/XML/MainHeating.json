@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/MainHeating.json",
   "title" : "MainHeating",
   "type" : ["object", "null"],
@@ -48,22 +49,8 @@
       "description" : "Type of Main Control for the Heating System."
     },
     "IsCondensingBoiler" : {
-      "type" : ["object", "null"],
-      "description" : "Is the boiler a condensing boiler?  If boiler efficiency is manufacturer declaration.",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : "Is the boiler a condensing boiler?  If boiler efficiency is manufacturer declaration."
     },
     "CondensingBoilerHeatDistribution" : {
       "type" : ["string", "null"],
@@ -82,112 +69,28 @@
       "description" : "The type of main heating flue; only if flued appliance."
     },
     "IsFlueFanPresent" : {
-      "type" : ["object", "null"],
-      "description" : "Indicates whether the heating system contains a fan flue; only if boiler.",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : "Indicates whether the heating system contains a fan flue; only if boiler."
     },
     "IsCentralHeatingPumpInHeatedSpace" : {
-      "type" : ["object", "null"],
-      "description" : "Central heating pump in heated space?  Only when wet system (radiators or underfloor).",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : "Central heating pump in heated space?  Only when wet system (radiators or underfloor)."
     },
     "IsOilPumpInHeatedSpace" : {
-      "type" : ["object", "null"],
-      "description" : "Oil pump in heated space?  Only if oil boiler.",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : "Oil pump in heated space?  Only if oil boiler."
     },
     "IsInterLockedSystem" : {
-      "type" : ["object", "null"],
-      "description" : "Interlocked system?  Only when wet system (radiators or underfloor).",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : "Interlocked system?  Only when wet system (radiators or underfloor)."
     },
     "HasSeparateDelayedStart" : {
-      "type" : ["object", "null"],
-      "description" : "True if there is a delayed start control separate from a controller in the database.",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : "True if there is a delayed start control separate from a controller in the database."
     },
     "IsMainHeatingHETASApproved" : {
-      "type" : ["object", "null"],
-      "description" : "Main heating appliance is HETAS approved?  Only if solid fuel.",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : "Main heating appliance is HETAS approved?  Only if solid fuel."
     },
     "HeatPumpHeatDistribution" : {
       "type" : ["string", "null"],
@@ -250,22 +153,8 @@
       "description" : "."
     },
     "HasFGHRS" : {
-      "type" : ["object", "null"],
-      "description" : "Flue Gas Heat Recovery System.",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : "Flue Gas Heat Recovery System."
     },
     "CentralHeatingPumpAge" : {
       "type" : ["string", "null"],
@@ -280,12 +169,15 @@
       "description" : "FGHRS index number; only if FGHRS."
     },
     "FGHRSEnergySource" : {
+      "description" : ".",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/EnergySource.json"
     },
     "MainHeatingDeclaredValues" : {
+      "description" : ".",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/HeatingDeclaredValues.json"
     },
     "StorageHeaters" : {
+      "description" : ".",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/StorageHeaters.json"
     },
     "EmitterTemperature" : {
@@ -293,22 +185,8 @@
       "description" : "Gas and oil boilers and heat pump from database: 0, 1, 3 or 4. Other heat pump 0, 2 or 4. Other systems NA."
     },
     "MCSInstalledHeatPump" : {
-      "type" : ["object", "null"],
-      "description" : "Whether heat pump was installed under the Microgeneration Certification Scheme.",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : "Whether heat pump was installed under the Microgeneration Certification Scheme."
     },
     "ControlIndexNumber" : {
       "type" : ["string", "null"],
@@ -344,13 +222,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Environment.SAP.XML.MainHeating"
     },

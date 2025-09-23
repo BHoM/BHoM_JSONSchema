@@ -1,13 +1,16 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Results/ProfileResult.json",
   "title" : "ProfileResult",
   "type" : ["object", "null"],
   "description" : "ProfileResult: A Environment Profile Result object that can be added to a Simulation Result",
   "properties" : {
     "Unit" : {
+      "description" : "The unit measurement of the profile result from the Profile Result enum",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Results/ProfileResultUnit.json"
     },
     "Type" : {
+      "description" : "The type of the profile result from the Profile Result enum",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Results/ProfileResultType.json"
     },
     "Results" : {
@@ -31,13 +34,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Environment.Results.ProfileResult"
     },

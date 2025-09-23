@@ -1,13 +1,16 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Security_oM/Elements/CameraDevice.json",
   "title" : "CameraDevice",
   "type" : ["object", "null"],
   "description" : "CameraDevice: A camera object is a electronic security device typically used in closed-circuit television (CCTV) systems.",
   "properties" : {
     "EyePosition" : {
+      "description" : "The point at which the Camera is installed, known as the eye position. Point: Defines a dimensionless location in three-dimensional space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
     },
     "TargetPosition" : {
+      "description" : "The point at which the Camera is looking at, known as the target position. Point: Defines a dimensionless location in three-dimensional space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
     },
     "Angle" : {
@@ -15,9 +18,11 @@
       "description" : "Angle of the Camera, known as the real-world angle of what the camera views. Property has a quantity of type Angle measured in [rad]."
     },
     "Mounting" : {
+      "description" : "The Camera mounting type that describes how it's installed. MountingType: A mounting type that describes how a fitting is installed.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Security_oM/Enums/MountingType.json"
     },
     "Type" : {
+      "description" : "The Camera type that describes its characteristics. CameraType: A camera type that describes its basic characteristcs.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Security_oM/Enums/CameraType.json"
     },
     "Megapixels" : {
@@ -38,13 +43,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Security.Elements.CameraDevice"
     },

@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/FEMesh.json",
   "title" : "FEMesh",
   "type" : ["object", "null"],
@@ -19,6 +20,7 @@
       }
     },
     "Property" : {
+      "description" : "Defines the thickness property and material of the FEMesh. ISurfaceProperty: Base interface for properties for 2D finite element structural objects such as Panels and FEMeshes.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/ISurfaceProperty.json"
     },
     "BHoM_Guid" : {
@@ -35,13 +37,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Structure.Elements.FEMesh"
     },

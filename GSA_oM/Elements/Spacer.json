@@ -1,16 +1,20 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/GSA_oM/Elements/Spacer.json",
   "title" : "Spacer",
   "type" : ["object", "null"],
   "description" : "Spacer: A spacer defining an edge of a fabric panel in GSA.",
   "properties" : {
     "Start" : {
+      "description" : "Defines the start position of the element. Note that Nodes can contain Supports which should not be confused with Releases. Node: 0D finite element for structural analysis. Node class contains positional information as well as orientation and support.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Node.json"
     },
     "End" : {
+      "description" : "Defines the end position of the element. Note that Nodes can contain Supports which should not be confused with Releases. Node: 0D finite element for structural analysis. Node class contains positional information as well as orientation and support.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Node.json"
     },
     "SpacerProperty" : {
+      "description" : "Spacer property of the spacer, defining the spacer type. SpacerProperty: Property for spacer elements.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/GSA_oM/SpacerProperties/SpacerProperty.json"
     },
     "BHoM_Guid" : {
@@ -27,13 +31,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Adapters.GSA.Elements.Spacer"
     },

@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/ProcessResultsCommand.json",
   "title" : "ProcessResultsCommand",
   "type" : ["object", "null"],
@@ -34,7 +35,7 @@
       "description" : "Provide the target DFEE/TFEE improvement as a % between 0 and 100."
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Environment.SAP.ProcessResultsCommand"
     },

@@ -1,17 +1,29 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/CombinedLifeCycleAssessmentFactors.json",
   "title" : "CombinedLifeCycleAssessmentFactors",
   "type" : ["object", "null"],
   "description" : "CombinedLifeCycleAssessmentFactors: An Combined Life Cycle Assessment Factors is aggregate class to compute final impact factors.\nThis object is commonly created based on a EPD for cradle to gate metrics (A1 - A3) with addional project and site specific data added for relevant stages beyond the product stage.",
   "properties" : {
     "EnvironmentalProductDeclaration" : {
+      "description" : "THe Environmental Product Declaration as the basis for the life cycle assessment. Commnly outlines the metrics for A1-A3 modules, but might contain metrics beyond those modules. EnvironmentalProductDeclaration: An Environmental Product Declaration or EPD is an independently verified and registered document that communicates transparent and comparable information about the life-cycle environmental impact of products in a credible way. \nMore information can be found on the Environdec website (environdec.com/all-about-epds0/all-about-epds.) \nAll EPDs within the BHoM have been provided for general use and are updated as frequently as possible, but by using any supplied EPDs you assume all responsibility for the data used on any applications. \nFor additional comments, questions, or feature requests, please visit the LifeCycleAssessment_Toolkit at github.com/BHoM/LifeCycleAssessment_Toolkit.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EnvironmentalProductDeclaration.json"
     },
     "A4TransportFactors" : {
+      "description" : "Factors for computing the emissions relating to Module A4 which captures the impacts associated with the transportation of the materials and components from the factory gate to and from the project site. ITransportFactors: Base interface for transport factor calculations.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/Transport/ITransportFactors.json"
     },
+    "A5_3ConstructionWasteEmissions" : {
+      "description" : "Factors for computing the emissions relating to the Construction and instalation process (A5). ConstructionWasteEmissions: Production, transportation, storage and end-of-life treatment and disposal of any material/waste on-site: transport, waste management and disposal of packaging materials.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/Construction/ConstructionWasteEmissions.json"
+    },
     "C2TransportFactors" : {
+      "description" : "Factors for computing the emissions relating to Module C2. Module C2 Transport impacts consists of any carbon impacts associated with the transportation of material from deconstruction and demolition to the appropriate final location, including any interim stations. ITransportFactors: Base interface for transport factor calculations.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/Transport/ITransportFactors.json"
+    },
+    "C3C4WasteAndDisposalFactors" : {
+      "description" : "Factors for computing the emissions relating to Module C3 (waste processing) and C4 (disposal). WasteAndDisposalFactors defines the end of life waste processing and disposal factors to be applied to the material fragment. These factors are applied in addition to any end of life factors provided by an Environmental Product Declaration, and can be used to fill gaps where no EPD data is available. If applied this will help populate all Climate change metrics available, with LandUseFactor being set to 0. WasteAndDisposalFactors: WasteAndDisposalFactors defines the end of life waste processing and disposal factors to be applied to the material fragment. These factors are applied in addition to any end of life factors provided by an Environmental Product Declaration, and can be used to fill gaps where no EPD data is available. If applied this will help populate all CLimate change metrics available, with LandUseFactor being set to 0.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EndOfLife/WasteAndDisposalFactors.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -27,13 +39,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.CombinedLifeCycleAssessmentFactors"
     },
@@ -42,5 +55,5 @@
       "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
-  "required" : ["EnvironmentalProductDeclaration", "A4TransportFactors", "C2TransportFactors"]
+  "required" : ["EnvironmentalProductDeclaration", "A4TransportFactors", "A5_3ConstructionWasteEmissions", "C2TransportFactors", "C3C4WasteAndDisposalFactors"]
 }

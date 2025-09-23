@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Test_oM/Results/InputOutputComparisonDiffing.json",
   "title" : "InputOutputComparisonDiffing",
   "type" : ["object", "null"],
@@ -17,7 +18,7 @@
       "type" : ["object", "null"],
       "properties" : {
         "_t" : {
-          "type" : ["string", "null"],
+          "type" : "string",
           "const" : "System.Type"
         },
         "Name" : {
@@ -35,7 +36,7 @@
     "NewValue" : { },
     "ReferenceValue" : { },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Test.Results.InputOutputComparisonDiffing"
     },

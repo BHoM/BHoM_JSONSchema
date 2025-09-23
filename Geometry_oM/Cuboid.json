@@ -1,10 +1,12 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Cuboid.json",
   "title" : "Cuboid",
   "type" : ["object", "null"],
   "description" : "Cuboid: A polyhedron. Standard cuboid consisting of six right-angled quadrilateral faces.",
   "properties" : {
     "CoordinateSystem" : {
+      "description" : "Defines both the Cuboid centre as the CoordinateSystem Origin, as well as the orientation in three-dimensional space. Cartesian: A three-dimensional Cartesian coordinate system, as defined by a set of mutually orthogonal unit vectors and a common origin point",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/CoordinateSystem/Cartesian.json"
     },
     "Length" : {
@@ -20,7 +22,7 @@
       "description" : "Dimension in the local z-axis. The Cuboid will have one face at a distance of Height/2 from the centre along the positive local z-axis and, one face at a distance of Height/2 from the centre along the negative local z-axis. Property has a quantity of type Length measured in [m]."
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Geometry.Cuboid"
     },

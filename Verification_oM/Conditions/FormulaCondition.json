@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Conditions/FormulaCondition.json",
   "title" : "FormulaCondition",
   "type" : ["object", "null"],
@@ -13,10 +14,11 @@
       "description" : "Formulae to calculate the variables to be verified in the verification formula.\nFormulae can be chained, i.e. one calculated variable can be derived from the previously calculated ones.\nKeys are the names of variables to be used in the calculations.\nValues are the formulae correspondent to each given variable name."
     },
     "VerificationFormula" : {
+      "description" : "Final formula to verify, needs to return a Boolean value, e.g. 'a > b'. Formula: Formula in a form of a string in a specific convention, used to calculate values in verification workflows.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Conditions/Formula.json"
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Verification.Conditions.FormulaCondition"
     },

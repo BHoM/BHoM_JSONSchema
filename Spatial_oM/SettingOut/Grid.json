@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/SettingOut/Grid.json",
   "title" : "Grid",
   "type" : ["object", "null"],
@@ -9,6 +10,7 @@
       "description" : "The Grid Reference, ID or text based identifier."
     },
     "Curve" : {
+      "description" : "The centreline defining the Grid's path. Can be curved or linear. ICurve: The interface for all one-dimensional geometrical objects.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ICurve.json"
     },
     "BHoM_Guid" : {
@@ -22,13 +24,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Spatial.SettingOut.Grid"
     },

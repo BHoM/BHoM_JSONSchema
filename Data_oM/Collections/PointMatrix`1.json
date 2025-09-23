@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Collections/PointMatrix`1.json",
   "title" : "PointMatrix`1",
   "type" : ["object", "null"],
@@ -9,7 +10,7 @@
     "Data" : {
       "type" : ["array", "null"],
       "items" : {
-        "type" : ["object", "null"],
+        "type" : "object",
         "properties" : {
           "k" : {
             "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Collections/DiscretePoint.json"
@@ -24,7 +25,7 @@
       }
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "pattern" : "^BH\\.oM\\.Data\\.Collections\\.PointMatrix`1\\[\\[.*\\]\\]$"
     },

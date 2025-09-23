@@ -1,55 +1,30 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Reporting/IConditionReportingConfig.json",
   "required" : ["_t"],
   "properties" : {
     "_t" : {
-      "enum" : ["BH.oM.Verification.Reporting.ValueConditionReportingConfig", "BH.oM.Verification.Reporting.SingleLogicalConditionReportingConfig", "BH.oM.Verification.Reporting.NumberConditionReportingConfig", "BH.oM.Verification.Reporting.LogicalCollectionConditionReportingConfig", "BH.oM.Verification.Reporting.FormulaConditionReportingConfig"]
+      "enum" : ["BH.oM.Verification.Reporting.FormulaConditionReportingConfig", "BH.oM.Verification.Reporting.LogicalCollectionConditionReportingConfig", "BH.oM.Verification.Reporting.NumberConditionReportingConfig", "BH.oM.Verification.Reporting.SingleLogicalConditionReportingConfig", "BH.oM.Verification.Reporting.ValueConditionReportingConfig"]
     }
   },
   "allOf" : [{
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Verification.Reporting.ValueConditionReportingConfig"
+            "type" : "string",
+            "const" : "BH.oM.Verification.Reporting.FormulaConditionReportingConfig"
           }
         },
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Reporting/ValueConditionReportingConfig.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Reporting/FormulaConditionReportingConfig.json"
       }
     }, {
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Verification.Reporting.SingleLogicalConditionReportingConfig"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Reporting/SingleLogicalConditionReportingConfig.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Verification.Reporting.NumberConditionReportingConfig"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Reporting/NumberConditionReportingConfig.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
+            "type" : "string",
             "const" : "BH.oM.Verification.Reporting.LogicalCollectionConditionReportingConfig"
           }
         },
@@ -62,14 +37,40 @@
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Verification.Reporting.FormulaConditionReportingConfig"
+            "type" : "string",
+            "const" : "BH.oM.Verification.Reporting.NumberConditionReportingConfig"
           }
         },
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Reporting/FormulaConditionReportingConfig.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Reporting/NumberConditionReportingConfig.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Verification.Reporting.SingleLogicalConditionReportingConfig"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Reporting/SingleLogicalConditionReportingConfig.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Verification.Reporting.ValueConditionReportingConfig"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Reporting/ValueConditionReportingConfig.json"
       }
     }]
 }

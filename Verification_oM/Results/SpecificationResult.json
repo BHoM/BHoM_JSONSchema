@@ -1,10 +1,12 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Results/SpecificationResult.json",
   "title" : "SpecificationResult",
   "type" : ["object", "null"],
   "description" : "SpecificationResult: Object representing result of verification of a Specification.",
   "properties" : {
     "Specification" : {
+      "description" : "Specification that was verified. Specification: A top level object in verification workflow. Contains the information about the whole workflow, from extraction, to checking, to reporting.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Specifications/Specification.json"
     },
     "ExtractedObjects" : {
@@ -20,7 +22,7 @@
       }
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Verification.Results.SpecificationResult"
     },

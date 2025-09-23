@@ -1,10 +1,12 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EnvironmentalProductDeclaration.json",
   "title" : "EnvironmentalProductDeclaration",
   "type" : ["object", "null"],
   "description" : "EnvironmentalProductDeclaration: An Environmental Product Declaration or EPD is an independently verified and registered document that communicates transparent and comparable information about the life-cycle environmental impact of products in a credible way. \nMore information can be found on the Environdec website (environdec.com/all-about-epds0/all-about-epds.) \nAll EPDs within the BHoM have been provided for general use and are updated as frequently as possible, but by using any supplied EPDs you assume all responsibility for the data used on any applications. \nFor additional comments, questions, or feature requests, please visit the LifeCycleAssessment_Toolkit at github.com/BHoM/LifeCycleAssessment_Toolkit.",
   "properties" : {
     "Type" : {
+      "description" : "The Type of Environmental Product Declaration. EPDType: The Type of Environmental Product Declaration.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/EPDType.json"
     },
     "EnvironmentalMetrics" : {
@@ -15,6 +17,7 @@
       }
     },
     "QuantityType" : {
+      "description" : "Note that any EPD that does not contain this parameter will not be evaluated. \nThis metric is based on the declared unit of the reference EPD, i.e. a declared unit of kg refers to QuantityType of mass, a declared unit of m3 refers to a QuantityType of volume, etc. \nAll data should be normalized to metric declared units before integration in the BHoM. \nThe quantity type is a key metric for evaluation methods to function. \nThis property determines how the material is to be evaluated, based on Mass, Volume, Area, Item, or Length.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/QuantityType.json"
     },
     "BHoM_Guid" : {
@@ -31,13 +34,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.LifeCycleAssessment.MaterialFragments.EnvironmentalProductDeclaration"
     },

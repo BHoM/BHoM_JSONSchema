@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/Colours/GradientOptions.json",
   "title" : "GradientOptions",
   "type" : ["object", "null"],
@@ -9,6 +10,7 @@
       "description" : "Name of the GradientOption. Will be displayed for Gradient legends."
     },
     "Gradient" : {
+      "description" : "The Gradient to colour by.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/IGradient.json"
     },
     "LowerBound" : {
@@ -20,6 +22,7 @@
       "description" : "The upper bound of the Gradient. Leave empty to allow other methods to set automatically."
     },
     "GradientCenteringOptions" : {
+      "description" : "A GradientCenteringOptions enum to set centering options. Defaults to no centering. GradientCenteringOptions: Either do not centre the range of the gradient, extend the range to be centred around 0, or make 0 the midpoint of the gradient while keeping UpperBound and LowerBound as the ends.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/Enums/GradientCenteringOptions.json"
     },
     "BHoM_Guid" : {
@@ -33,13 +36,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Graphics.Colours.GradientOptions"
     },

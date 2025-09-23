@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/Texture.json",
   "title" : "Texture",
   "type" : ["object", "null"],
@@ -9,10 +10,10 @@
       "description" : "Name of the Texture"
     },
     "Diffuse" : {
-      "type" : ["object", "null"],
+      "type" : "object",
       "properties" : {
         "_t" : {
-          "type" : ["string", "null"],
+          "type" : "string",
           "const" : "System.Drawing.Color"
         },
         "A" : {
@@ -31,10 +32,10 @@
       "required" : ["A", "R", "G", "B"]
     },
     "Ambient" : {
-      "type" : ["object", "null"],
+      "type" : "object",
       "properties" : {
         "_t" : {
-          "type" : ["string", "null"],
+          "type" : "string",
           "const" : "System.Drawing.Color"
         },
         "A" : {
@@ -53,10 +54,10 @@
       "required" : ["A", "R", "G", "B"]
     },
     "Specular" : {
-      "type" : ["object", "null"],
+      "type" : "object",
       "properties" : {
         "_t" : {
-          "type" : ["string", "null"],
+          "type" : "string",
           "const" : "System.Drawing.Color"
         },
         "A" : {
@@ -75,10 +76,10 @@
       "required" : ["A", "R", "G", "B"]
     },
     "Emission" : {
-      "type" : ["object", "null"],
+      "type" : "object",
       "properties" : {
         "_t" : {
-          "type" : ["string", "null"],
+          "type" : "string",
           "const" : "System.Drawing.Color"
         },
         "A" : {
@@ -119,13 +120,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Graphics.Texture"
     },

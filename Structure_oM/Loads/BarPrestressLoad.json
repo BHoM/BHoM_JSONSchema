@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/BarPrestressLoad.json",
   "title" : "BarPrestressLoad",
   "type" : ["object", "null"],
@@ -9,12 +10,15 @@
       "description" : "Prestress force to be applied to the Bar. Positive for tension, negative for compression. Property has a quantity of type Force measured in [N]."
     },
     "Loadcase" : {
+      "description" : "The Loadcase in which the load is applied. Loadcase: Basic load case class. All load classes need to point to one Loadcase.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/Loadcase.json"
     },
     "Objects" : {
+      "description" : "The group of Bars that the load should be applied to. For most analysis packages the objects added here need to be pulled from the analysis package before being assigned to the load.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/BHoMGroup`1.json"
     },
     "Axis" : {
+      "description" : "Defines whether the load is applied in local or global coordinates.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/LoadAxis.json"
     },
     "Projected" : {
@@ -35,13 +39,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Structure.Loads.BarPrestressLoad"
     },

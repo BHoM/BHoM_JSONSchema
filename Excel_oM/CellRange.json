@@ -1,17 +1,20 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Excel_oM/CellRange.json",
   "title" : "CellRange",
   "type" : ["object", "null"],
   "description" : "CellRange: Object representing an orthogonal range between two cell in the spreadsheet.",
   "properties" : {
     "From" : {
+      "description" : "Starting (upper left) cell of the range. CellAddress: Object representing a cell address: its column index as string and row index as integer.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Excel_oM/CellAddress.json"
     },
     "To" : {
+      "description" : "Ending (bottom right) cell of the range. CellAddress: Object representing a cell address: its column index as string and row index as integer.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Excel_oM/CellAddress.json"
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Adapters.Excel.CellRange"
     },

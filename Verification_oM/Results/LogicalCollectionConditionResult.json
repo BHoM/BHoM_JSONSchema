@@ -1,26 +1,13 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Results/LogicalCollectionConditionResult.json",
   "title" : "LogicalCollectionConditionResult",
   "type" : ["object", "null"],
   "description" : "LogicalCollectionConditionResult: Object representing result of ILogicalCollectionCondition.",
   "properties" : {
     "Passed" : {
-      "type" : ["object", "null"],
-      "description" : "Information whether the object passed or failed the condition. Null means inconclusive result.",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : "Information whether the object passed or failed the condition. Null means inconclusive result."
     },
     "Results" : {
       "type" : ["array", "null"],
@@ -30,7 +17,7 @@
       }
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Verification.Results.LogicalCollectionConditionResult"
     },

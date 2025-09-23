@@ -1,10 +1,12 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Reinforcement/LongitudinalReinforcement.json",
   "title" : "LongitudinalReinforcement",
   "type" : ["object", "null"],
   "description" : "LongitudinalReinforcement: Defines any longitudinal reinforcement along a Bar.",
   "properties" : {
     "RebarLayout" : {
+      "description" : "Layout controlling the distribution of the rebars across the SectionProperty. ILayout2D: Base interface for all 2D layouts",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/Layouts/ILayout2D.json"
     },
     "Diameter" : {
@@ -36,13 +38,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Structure.Reinforcement.LongitudinalReinforcement"
     },

@@ -1,0 +1,41 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/JsonSchema_oM/ConvertConfig.json",
+  "title" : "ConvertConfig",
+  "type" : ["object", "null"],
+  "properties" : {
+    "IncludeId" : {
+      "type" : "boolean",
+      "description" : "Bool indicating if id should be included in top level schema or not."
+    },
+    "TypesAsRef" : {
+      "type" : "boolean",
+      "description" : "Bool indicating if types used by the parent type should be linked to as ref, or fully expanded.\nGenerally strongly recomended to set this boolean to true for the general case, as setting this to false will expand content of all inner types, as well as their subtype, into the main schema file.\nFor types with abstract or interface properties, this will get even more extreme as all option will be populated. Generally only consider setting this to false for types with few levels of nested property types, and no interface types as properties."
+    },
+    "IncludeInnerIds" : {
+      "type" : "boolean",
+      "description" : "Bool indicating if ids of inner obejcts should be set or not. Only applicable of TypeAsRef is false."
+    },
+    "Branch" : {
+      "type" : ["string", "null"],
+      "description" : "Name of the branch to use when generating schema IDs. For regular updates, this should generally be develop. For releases, this should be set to the name of the release branch."
+    },
+    "OrganisationsToInclude" : {
+      "type" : ["array", "null"],
+      "description" : "List of organisations to include when generating schema. Only types in these organisations will be included. This is checked by inspection of the AssemblyDescriptionAttribute, which requires the assembly to link the the github organisation matching one of the organisations in this list.",
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "_t" : {
+      "type" : "string",
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.JsonSchema.ConvertConfig"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["IncludeId", "TypesAsRef", "IncludeInnerIds", "Branch", "OrganisationsToInclude"]
+}

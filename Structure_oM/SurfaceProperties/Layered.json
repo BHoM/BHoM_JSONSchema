@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/Layered.json",
   "title" : "Layered",
   "type" : ["object", "null"],
@@ -9,6 +10,7 @@
       "description" : "A unique name is required for some structural packages to create and identify the object."
     },
     "Material" : {
+      "description" : "The primary material of the Surface Property. This may represent an 'effective' material model accounting for the composite behavior of the layers, or could be a single material for filtering and take-off. IMaterialFragment: Base interface for structural materials used by structural properties or as a fragment of the physical material.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/IMaterialFragment.json"
     },
     "Layers" : {
@@ -19,6 +21,7 @@
       }
     },
     "PanelType" : {
+      "description" : "Defines what type of element this property will be used. Used by some analysis packages.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/PanelType.json"
     },
     "BHoM_Guid" : {
@@ -32,13 +35,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Structure.SurfaceProperties.Layered"
     },

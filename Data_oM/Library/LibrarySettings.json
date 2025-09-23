@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Library/LibrarySettings.json",
   "title" : "LibrarySettings",
   "type" : ["object", "null"],
@@ -9,10 +10,11 @@
       "description" : "List of folder paths to user-specified folder paths to be used by the Library_Engine when extracting Datasets.",
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Data.Library.LibrarySettings"
     },

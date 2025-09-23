@@ -1,13 +1,16 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/WindroseCommand.json",
   "title" : "WindroseCommand",
   "type" : ["object", "null"],
   "description" : "WindroseCommand: Command that, when executed with the LadybugToolsAdapter, generates a windrose from the epw file using the given parameters.\nOutputs a string file path if the OutputLocation is given, or the base64 string representation of the image if no path is given.",
   "properties" : {
     "EPWFile" : {
+      "description" : "The path to an EPW file. FileSettings: The fileSettings, file name and directory, to use with an adapter for push and pull",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/FileSettings.json"
     },
     "AnalysisPeriod" : {
+      "description" : "The analysis period to use for plotting, default to whole non-leap year.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/AnalysisPeriod.json"
     },
     "NumberOfDirectionBins" : {
@@ -23,7 +26,7 @@
       "description" : "Full file path (with file name) to save the plot to. Leave blank to output a base 64 string representation of the image instead."
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.LadybugTools.WindroseCommand"
     },

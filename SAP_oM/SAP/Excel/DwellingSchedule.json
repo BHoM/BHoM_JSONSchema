@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/Excel/DwellingSchedule.json",
   "title" : "DwellingSchedule",
   "type" : ["object", "null"],
@@ -13,6 +14,7 @@
       "description" : "The type of roof"
     },
     "DwellingOrientation" : {
+      "description" : "The storey the roof is located on. OrientationCode: Code which indicates the compass direction.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/OrientationCode.json"
     },
     "FileName" : {
@@ -32,9 +34,11 @@
       "description" : "The year the dwelling was constructed."
     },
     "PropertyType" : {
+      "description" : "The type of property for this dwelling. TypeOfProperty: Code which indicates the type of property.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/TypeOfProperty.json"
     },
     "ConstructionType" : {
+      "description" : "The type of construction for this dwelling (new build, refurb, etc.). DataTypeCode: Code which indicates the type of SAP data.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/DataTypeCode.json"
     },
     "WetRooms" : {
@@ -59,13 +63,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Environment.SAP.Excel.DwellingSchedule"
     },

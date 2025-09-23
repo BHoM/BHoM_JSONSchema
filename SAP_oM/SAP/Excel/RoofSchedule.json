@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/Excel/RoofSchedule.json",
   "title" : "RoofSchedule",
   "type" : ["object", "null"],
@@ -9,6 +10,7 @@
       "description" : "The name of the dwelling the roof is located in."
     },
     "Type" : {
+      "description" : "The type of roof TypeOfRoof: Code which indicates the type of roof.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/TypeOfRoof.json"
     },
     "Storey" : {
@@ -33,13 +35,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Environment.SAP.Excel.RoofSchedule"
     },

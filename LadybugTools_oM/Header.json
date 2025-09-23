@@ -1,9 +1,11 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/Header.json",
   "title" : "Header",
   "type" : ["object", "null"],
   "properties" : {
     "DataType" : {
+      "description" : "The data type the data associated with this header object represents.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/DataType.json"
     },
     "Unit" : {
@@ -11,6 +13,7 @@
       "description" : "The unit for this header object."
     },
     "AnalysisPeriod" : {
+      "description" : "The analysis period associated with this header object.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/AnalysisPeriod.json"
     },
     "Metadata" : {
@@ -31,13 +34,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.LadybugTools.Header"
     },

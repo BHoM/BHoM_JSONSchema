@@ -1,42 +1,30 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/Layouts/ILayout2D.json",
   "required" : ["_t"],
   "properties" : {
     "_t" : {
-      "enum" : ["BH.oM.Spatial.Layouts.PerimeterLayout", "BH.oM.Spatial.Layouts.MultiLinearLayout", "BH.oM.Spatial.Layouts.LinearLayout", "BH.oM.Spatial.Layouts.ExplicitLayout"]
+      "enum" : ["BH.oM.Spatial.Layouts.ExplicitLayout", "BH.oM.Spatial.Layouts.LinearLayout", "BH.oM.Spatial.Layouts.MultiLinearLayout", "BH.oM.Spatial.Layouts.PerimeterLayout"]
     }
   },
   "allOf" : [{
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Spatial.Layouts.PerimeterLayout"
+            "type" : "string",
+            "const" : "BH.oM.Spatial.Layouts.ExplicitLayout"
           }
         },
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/Layouts/PerimeterLayout.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/Layouts/ExplicitLayout.json"
       }
     }, {
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Spatial.Layouts.MultiLinearLayout"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/Layouts/MultiLinearLayout.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
+            "type" : "string",
             "const" : "BH.oM.Spatial.Layouts.LinearLayout"
           }
         },
@@ -49,14 +37,27 @@
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Spatial.Layouts.ExplicitLayout"
+            "type" : "string",
+            "const" : "BH.oM.Spatial.Layouts.MultiLinearLayout"
           }
         },
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/Layouts/ExplicitLayout.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/Layouts/MultiLinearLayout.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Spatial.Layouts.PerimeterLayout"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/Layouts/PerimeterLayout.json"
       }
     }]
 }
