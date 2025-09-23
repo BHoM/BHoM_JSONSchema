@@ -1,10 +1,12 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Elements/Sheet.json",
   "title" : "Sheet",
   "type" : ["object", "null"],
   "description" : "Sheet: A wrapper BHoM type for Revit sheet, used to create or update Revit sheets (on Push) and represent them as BHoMObjects (on Pull).",
   "properties" : {
     "InstanceProperties" : {
+      "description" : "An entity storing the information about Revit sheet type. InstanceProperties: A generic wrapper BHoM type corresponding to any Revit family type. Name of InstanceProperties corresponds to family type name, type parameter values are stored in RevitParametersToPush.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Properties/InstanceProperties.json"
     },
     "SheetName" : {
@@ -29,13 +31,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Adapters.Revit.Elements.Sheet"
     },

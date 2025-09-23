@@ -1,10 +1,12 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Requests/MeshResultRequest.json",
   "title" : "MeshResultRequest",
   "type" : ["object", "null"],
   "description" : "MeshResultRequest: Request for extracting mesh results from an adapter.",
   "properties" : {
     "ResultType" : {
+      "description" : "Request for extracting bar results from an adapter. MeshResultType: Specifies which layer the results are extracted from or if it is a maxima/minima of the layers.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/MeshResultType.json"
     },
     "Smoothing" : {
@@ -38,7 +40,7 @@
       "items" : { }
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Structure.Requests.MeshResultRequest"
     },

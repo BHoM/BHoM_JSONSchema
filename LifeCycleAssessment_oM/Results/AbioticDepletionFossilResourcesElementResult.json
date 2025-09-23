@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/AbioticDepletionFossilResourcesElementResult.json",
   "title" : "AbioticDepletionFossilResourcesElementResult",
   "type" : ["object", "null"],
@@ -176,9 +177,11 @@
       "type" : ["object", "integer", "string", "number", "null"]
     },
     "Scope" : {
+      "description" : "Scope the object this result was generated from belongs to, e.g. Foundation or Facade ScopeType: The scope of the collection of object you would like to evaluate.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/ScopeType.json"
     },
     "Category" : {
+      "description" : "Category of the object this result was generated from, e.g. Beam or Wall",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/ObjectCategory.json"
     },
     "MaterialResults" : {
@@ -194,7 +197,7 @@
       }
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.LifeCycleAssessment.Results.AbioticDepletionFossilResourcesElementResult"
     },

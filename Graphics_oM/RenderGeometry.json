@@ -1,17 +1,19 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/RenderGeometry.json",
   "title" : "RenderGeometry",
   "type" : ["object", "null"],
   "description" : "RenderGeometry: Render geometry with a specific colour.",
   "properties" : {
     "Geometry" : {
+      "description" : "A geometry (or many geometry objects collected into a single `CompositeGeometry` object). IGeometry: The parent interface for all primative geometrical objects.\nIGeometry implements IObject - and not IBHoMObject. Equally primative geometrical objects do not inherit from the base BHoMObject class either. As primatives, the additional base BHoM properties are omitted for both efficency and performace.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/IGeometry.json"
     },
     "Colour" : {
-      "type" : ["object", "null"],
+      "type" : "object",
       "properties" : {
         "_t" : {
-          "type" : ["string", "null"],
+          "type" : "string",
           "const" : "System.Drawing.Color"
         },
         "A" : {
@@ -30,6 +32,7 @@
       "required" : ["A", "R", "G", "B"]
     },
     "SurfaceColour" : {
+      "description" : "Optional texture or colour to be used for mesh and surface geometry. If null, the colour will be used for mesh and surface rendering instead. Texture: Texture material for rendering of geometry.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/Texture.json"
     },
     "EdgeThickness" : {
@@ -37,7 +40,7 @@
       "description" : "The thickness of the curve. Should be a value greater or equal to 1."
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Graphics.RenderGeometry"
     },

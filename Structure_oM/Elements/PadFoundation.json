@@ -1,13 +1,16 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/PadFoundation.json",
   "title" : "PadFoundation",
   "type" : ["object", "null"],
   "description" : "PadFoundation: 2D element representing a pad foundation for structural analysis. The PadFoundation is a planar surface object defined by edges and an ISurfaceProperty.",
   "properties" : {
     "Perimeter" : {
+      "description" : "The edges used to define the outline of the pad at the top of the foundation. ICurve: The interface for all one-dimensional geometrical objects.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ICurve.json"
     },
     "Property" : {
+      "description" : "Defines the thickness property and material of the PadFoundation. ISurfaceProperty: Base interface for properties for 2D finite element structural objects such as Panels and FEMeshes.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/ISurfaceProperty.json"
     },
     "OrientationAngle" : {
@@ -28,13 +31,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Structure.Elements.PadFoundation"
     },

@@ -1,16 +1,20 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/CableTray.json",
   "title" : "CableTray",
   "type" : ["object", "null"],
   "description" : "CableTray: A Cable Tray object is a passageway which conveys material (typically cables)",
   "properties" : {
     "StartPoint" : {
+      "description" : "The point at which the Cable Tray object begins. Point: Defines a dimensionless location in three-dimensional space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
     },
     "EndPoint" : {
+      "description" : "The point at which the Cable Tray object ends. Point: Defines a dimensionless location in three-dimensional space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
     },
     "SectionProperty" : {
+      "description" : "The Cable Tray section property defines the shape (rectangular) and its associated properties (height, width, material, thickness/gauge).",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/SectionProperties/CableTraySectionProperty.json"
     },
     "OrientationAngle" : {
@@ -31,13 +35,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.MEP.System.CableTray"
     },

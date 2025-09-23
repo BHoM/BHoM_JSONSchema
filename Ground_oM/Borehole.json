@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Ground_oM/Borehole.json",
   "title" : "Borehole",
   "type" : ["object", "null"],
@@ -9,12 +10,15 @@
       "description" : "Location identifier for the borehole unique to the project (LOCA_ID)."
     },
     "Top" : {
+      "description" : "The top of the borehole within the coordinate system provided (LOCA_NATE, LOCA_NATEN, LOCA_GL). Point: Defines a dimensionless location in three-dimensional space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
     },
     "Bottom" : {
+      "description" : "The bottom of the borehole within the coordinate system provided (LOCA_ETRV, LOCA_NTRV, LOCA_FDEP). Point: Defines a dimensionless location in three-dimensional space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
     },
     "CoordinateSystem" : {
+      "description" : "The coordinate system referenced by the top and bottom point. (LOCA_GREF, LOCA_NATD). Cartesian: A three-dimensional Cartesian coordinate system, as defined by a set of mutually orthogonal unit vectors and a common origin point",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/CoordinateSystem/Cartesian.json"
     },
     "Strata" : {
@@ -59,13 +63,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Ground.Borehole"
     },

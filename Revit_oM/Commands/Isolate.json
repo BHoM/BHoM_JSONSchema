@@ -1,0 +1,24 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Commands/Isolate.json",
+  "title" : "Isolate",
+  "type" : ["object", "null"],
+  "description" : "Isolate: Isolate action allows quick isolation of chosen Elements in External Application.",
+  "properties" : {
+    "Targets" : {
+      "type" : ["array", "null"],
+      "description" : "Elements to be isolated, specified as either IBHoMObjects or integers representing ElementIds.",
+      "items" : { }
+    },
+    "_t" : {
+      "type" : "string",
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.Adapters.Revit.Commands.Isolate"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["Targets"]
+}

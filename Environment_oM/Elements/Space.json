@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Elements/Space.json",
   "title" : "Space",
   "type" : ["object", "null"],
@@ -54,15 +55,19 @@
       }
     },
     "OccupantDensity" : {
+      "description" : "Occupant Density is an object that defines the area occupied by each individual in a space (2 m2 per person).",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Architecture_oM/Elements/Occupancy.json"
     },
     "Acoustics" : {
+      "description" : "Acoustics for an Environments Space define the noise within the space, by noise created by the velocity of the air within the ducts in the space, the Noise Rating, and decibel. Acoustics: The Acoustics object defines the noise criteria for an environments space, whether it's the prescribed ductwork velocity, the noise rating for the space or the dB level.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/Acoustics.json"
     },
     "Plumbing" : {
+      "description" : "The plumbing attributes of a space are indicative of the amount of cold water, hot water and waste required by a space, as well as requirements for vent, floor drains, hose bibs or natural gas. Plumbing: The plumbing attributes of a space are indicative of the amount of cold water, hot water and waste required by a space, as well as requirements for vent, floor drains, hose bibs or natural gas",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/Plumbing.json"
     },
     "FireProtection" : {
+      "description" : "The fire protection attributes of a space are indicative of the hazard level of the space (which influences the sprinkler count), the sprinkler system type required, and the presence of combustible materials or sloped ceilings. FireProtection: The fire protection attributes of a space are indicative of the hazard level of the space (which influences the sprinkler count), the sprinkler system type required, and the presence of combustible materials or sloped ceilings.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/FireProtection.json"
     },
     "ProjectSpaceType" : {
@@ -70,12 +75,15 @@
       "description" : "Project Space Type is a string that defines how the space is used on a given project (Museum, Corridor, etc)"
     },
     "SpaceType" : {
+      "description" : "Space Type is an enum that defines how the space is used (Museum, Corridor, etc) SpaceType: The main use of a space (e.g. Classroom, Lobby, Open Office)",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Elements/SpaceType.json"
     },
     "Location" : {
+      "description" : "A point in 3D space providing a location point of the space Point: Defines a dimensionless location in three-dimensional space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
     },
     "Perimeter" : {
+      "description" : "A 2D curve defining the external boundaries of the floor of the space ICurve: The interface for all one-dimensional geometrical objects.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ICurve.json"
     },
     "BHoM_Guid" : {
@@ -92,13 +100,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Environment.Elements.Space"
     },

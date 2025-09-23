@@ -1,29 +1,30 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Analytical_oM/Elements/IOpening`1.json",
   "required" : ["_t"],
   "properties" : {
     "_t" : {
-      "enum" : ["BH.oM.Structure.Elements.Opening", "BH.oM.Facade.Elements.Opening", "BH.oM.Environment.Elements.Opening"]
+      "enum" : ["BH.oM.Environment.Elements.Opening", "BH.oM.Facade.Elements.Opening", "BH.oM.Structure.Elements.Opening"]
     }
   },
   "allOf" : [{
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Structure.Elements.Opening"
+            "type" : "string",
+            "const" : "BH.oM.Environment.Elements.Opening"
           }
         },
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Opening.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Elements/Opening.json"
       }
     }, {
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
+            "type" : "string",
             "const" : "BH.oM.Facade.Elements.Opening"
           }
         },
@@ -36,14 +37,14 @@
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Environment.Elements.Opening"
+            "type" : "string",
+            "const" : "BH.oM.Structure.Elements.Opening"
           }
         },
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Elements/Opening.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Opening.json"
       }
     }]
 }

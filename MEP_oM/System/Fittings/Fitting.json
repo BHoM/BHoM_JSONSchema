@@ -1,10 +1,12 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/Fittings/Fitting.json",
   "title" : "Fitting",
   "type" : ["object", "null"],
   "description" : "Fitting: A fitting object used to describe interfaces between or along linear MEP elements.",
   "properties" : {
     "Location" : {
+      "description" : "The point at which the Fitting occurs. Point: Defines a dimensionless location in three-dimensional space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
     },
     "ConnectionsLocation" : {
@@ -15,6 +17,7 @@
       }
     },
     "Type" : {
+      "description" : "The type of fitting connected to an element. FittingType: A type of fitting used to transition from one segment of linear MEP object to another.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Enums/FittingType.json"
     },
     "BHoM_Guid" : {
@@ -31,13 +34,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.MEP.System.Fittings.Fitting"
     },

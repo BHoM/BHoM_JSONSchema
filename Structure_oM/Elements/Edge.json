@@ -1,16 +1,20 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Edge.json",
   "title" : "Edge",
   "type" : ["object", "null"],
   "description" : "Edge: Edge class to describe the edges of panels (or other objects) by a curve and properties.",
   "properties" : {
     "Curve" : {
+      "description" : "Curve of the edge. Should be a planar curve if used on panels. ICurve: The interface for all one-dimensional geometrical objects.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ICurve.json"
     },
     "Release" : {
+      "description" : "Release of the edge, defining the connectivity between the host panel and the edge. \n\nThree translational and one rotational degree of freedom, where the rotational refers to the rotation about the axis of the edge. Constraint4DOF: Constraint objects with four degrees of freedom, three translational and one rotational. Used for support or release of 1D analytical elements of 2D analytical objects. The Rotational DOF will correspond to rotation about the axis of the object.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Constraints/Constraint4DOF.json"
     },
     "Support" : {
+      "description" : "Support of the edge, used to constrain the edge in space. Constraint6DOF: Constraint objects with six degrees of freedom, three translational and three rotational, used for supports and bar end releases.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Constraints/Constraint6DOF.json"
     },
     "BHoM_Guid" : {
@@ -27,13 +31,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Structure.Elements.Edge"
     },

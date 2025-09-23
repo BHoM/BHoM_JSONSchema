@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Lighting_oM/Elements/LuminaireType.json",
   "title" : "LuminaireType",
   "type" : ["object", "null"],
@@ -9,6 +10,7 @@
       "description" : "Name of the Manufacturer of this LuminaireType"
     },
     "LuminaireGeometry" : {
+      "description" : "Boundary Representation of the LuminaireType's Geometry BoundaryRepresentation: Solid representation defined by a collection of connected surfaces forming a closed volume",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/BoundaryRepresentation.json"
     },
     "Load" : {
@@ -49,13 +51,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Lighting.Elements.LuminaireType"
     },

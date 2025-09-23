@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Fragments/ReinforcementDensity.json",
   "title" : "ReinforcementDensity",
   "type" : ["object", "null"],
@@ -9,10 +10,11 @@
       "description" : "The mass of reinforcement per unit volume of the element that owns this fragment. Property has a quantity of type Density measured in [kg/m³]."
     },
     "Material" : {
+      "description" : "Homogeneous material of the reinforcement. IMaterialFragment: Base interface for structural materials used by structural properties or as a fragment of the physical material.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/IMaterialFragment.json"
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Structure.Fragments.ReinforcementDensity"
     },

@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Fragments/ConstructionOffset.json",
   "title" : "ConstructionOffset",
   "type" : ["object", "null"],
@@ -9,7 +10,7 @@
       "description" : "Offset distance from centerline of wall or glazing section from centerline of facade section"
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Facade.Fragments.ConstructionOffset"
     },

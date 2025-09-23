@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Elements/Panel.json",
   "title" : "Panel",
   "type" : ["object", "null"],
@@ -19,9 +20,11 @@
       }
     },
     "Construction" : {
+      "description" : "A construction object providing layer and material information for the panel",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Constructions/IConstruction.json"
     },
     "Type" : {
+      "description" : "The type of surface (e.g. Exterior wall, interior wall, air gap). Use PanelType enum PanelType: The type of surface (e.g. AirGap, Internal Wall, External Wall, etc.)",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Elements/PanelType.json"
     },
     "BHoM_Guid" : {
@@ -38,13 +41,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Facade.Elements.Panel"
     },

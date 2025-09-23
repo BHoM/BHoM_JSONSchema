@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/ReportHeader.json",
   "title" : "ReportHeader",
   "type" : ["object", "null"],
@@ -48,9 +49,11 @@
       "description" : "Describes the type of Property that is being inspected. This should be the same as the Property-Type recorded in the Property-Details section."
     },
     "HomeInspector" : {
+      "description" : ".",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/HomeInspector.json"
     },
     "Property" : {
+      "description" : ".",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/Property.json"
     },
     "RegionCode" : {
@@ -62,6 +65,7 @@
       "description" : "."
     },
     "RelatedPartyDisclosure" : {
+      "description" : ".",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/RelatedPartyDisclosure.json"
     },
     "BHoM_Guid" : {
@@ -78,13 +82,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Environment.SAP.XML.ReportHeader"
     },

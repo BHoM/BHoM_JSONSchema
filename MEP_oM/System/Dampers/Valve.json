@@ -1,10 +1,12 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/Dampers/Valve.json",
   "title" : "Valve",
   "type" : ["object", "null"],
   "description" : "Valve: A device used to control the flow within a piping system (ball valve, check valve, etc.)",
   "properties" : {
     "Location" : {
+      "description" : "The point in space for the location of the object. Node: 0D finite element for structural analysis. Node class contains positional information as well as orientation and support.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/Node.json"
     },
     "OrientationAngle" : {
@@ -12,6 +14,7 @@
       "description" : "Controls the local plan orientation of the object. Property has a quantity of type Angle measured in [rad]."
     },
     "ValveType" : {
+      "description" : "A type which describes the valve, more specifically whether it's a check valve, gate valve, etc. ValveType: A type of piping valve (gate valve, globe valve, check valve, etc.)",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Enums/ValveType.json"
     },
     "PressureDrop" : {
@@ -32,13 +35,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.MEP.System.Dampers.Valve"
     },

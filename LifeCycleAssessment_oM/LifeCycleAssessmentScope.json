@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/LifeCycleAssessmentScope.json",
   "title" : "LifeCycleAssessmentScope",
   "type" : ["object", "null"],
@@ -29,12 +30,15 @@
       "description" : "The Contact Name denotes the person/people who performed the LCA study."
     },
     "GravityStructuralMaterial" : {
+      "description" : "The primary structural system providing gravity support for the building.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/GravityStructuralMaterial.json"
     },
     "LateralStructuralMaterial" : {
+      "description" : "The primary structural system providing lateral support for the building.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/LateralStructuralMaterial.json"
     },
     "LevelOfDevelopment" : {
+      "description" : "Typically a term utilised in BIM practices to clearly identify the scope of work being account for. Equivalents for LOD classifications can offen times be linked to design and construction phases common to the projects locale.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/LevelOfDevelopment.json"
     },
     "LifeCycleAssessmentPhases" : {
@@ -45,6 +49,7 @@
       }
     },
     "ProjectType" : {
+      "description" : "A general classification of the buildings primary function. This value is for categorisation purposes only and will not effect the overall results.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/ProjectType.json"
     },
     "ProjectName" : {
@@ -56,16 +61,19 @@
       "description" : "The Project Area (m2) denotes the more precise project area which will allow assessment of kgCO2eq/m2 metrics. Property has a quantity of type Area measured in [m²]."
     },
     "SeismicDesignCategory" : {
+      "description" : "Seismic Design Category is a classification assigned to a structure based on it's occupancy category, and the severity of the design earthquake ground motion. These categories are currently in reference to ASCE 7-05. SeismicDesignCategory: Seismic Design Category is a classification assigned to a structure based on it's occupancy category, and the severity of the design earthquake ground motion. These categories are in reference to ASCE 7-05.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/SeismicDesignCategory.json"
     },
     "WindSpeedCategory" : {
+      "description" : "Wind speed category is in reference to the Beaufort Scale of wind speeds. Values are arranged from 0-12 equivalent, 0 being Calm and 12 being Hurricane, and are used only to represent an average site-based, wind condition. Specific informaion on categorisation can be found at https://www.spc.noaa.gov/faq/tornado/beaufort.html WindSpeedCategory: Wind speed category is in reference to the Beaufort Scale of wind speeds, and are used only to represent an average site-based, wind condition. Specific information on categorisation can be found at https://www.spc.noaa.gov/faq/tornado/beaufort.html",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/WindSpeedCategory.json"
     },
     "Location" : {
+      "description" : "Provide the projects geographic location for database organisation purposes. This value is for categorisation purposes only and will not effect the overall results. Location: Defines a uniquely identifiable point on the Earth in standard global Latitude, Longitude and Elevation, coordinate system. Particularly useful for specifying local climate conditions for environmental analysis.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Climate/Location.json"
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.LifeCycleAssessment.LifeCycleAssessmentScope"
     },

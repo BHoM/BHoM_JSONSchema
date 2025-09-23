@@ -1,289 +1,30 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Dimensional_oM/IElement2D.json",
   "required" : ["_t"],
   "properties" : {
     "_t" : {
-      "enum" : ["BH.oM.Structure.Elements.Stem", "BH.oM.Structure.Elements.Panel", "BH.oM.Structure.Elements.PadFoundation", "BH.oM.Structure.Elements.Opening", "BH.oM.Structure.Reinforcement.ReinforcementRegion", "BH.oM.Physical.Elements.Window", "BH.oM.Physical.Elements.Wall", "BH.oM.Physical.Elements.Void", "BH.oM.Physical.Elements.Roof", "BH.oM.Physical.Elements.PadFoundation", "BH.oM.Physical.Elements.Floor", "BH.oM.Physical.Elements.Door", "BH.oM.Geometry.PlanarSurface", "BH.oM.Facade.Elements.Panel", "BH.oM.Facade.Elements.Opening", "BH.oM.Facade.Elements.CurtainWall", "BH.oM.Environment.Elements.Zone", "BH.oM.Environment.Elements.Space", "BH.oM.Environment.Elements.Panel", "BH.oM.Environment.Elements.Opening", "BH.oM.Architecture.Elements.Room", "BH.oM.Architecture.Elements.CeilingTile", "BH.oM.Architecture.Elements.Ceiling"]
+      "enum" : ["BH.oM.Architecture.Elements.Ceiling", "BH.oM.Architecture.Elements.CeilingTile", "BH.oM.Architecture.Elements.Room", "BH.oM.Environment.Elements.Opening", "BH.oM.Environment.Elements.Panel", "BH.oM.Environment.Elements.Space", "BH.oM.Environment.Elements.Zone", "BH.oM.Facade.Elements.CurtainWall", "BH.oM.Facade.Elements.Opening", "BH.oM.Facade.Elements.Panel", "BH.oM.Geometry.PlanarSurface", "BH.oM.Physical.Elements.Door", "BH.oM.Physical.Elements.Floor", "BH.oM.Physical.Elements.PadFoundation", "BH.oM.Physical.Elements.Roof", "BH.oM.Physical.Elements.Void", "BH.oM.Physical.Elements.Wall", "BH.oM.Physical.Elements.Window", "BH.oM.Structure.Elements.Opening", "BH.oM.Structure.Elements.PadFoundation", "BH.oM.Structure.Elements.Panel", "BH.oM.Structure.Elements.Stem", "BH.oM.Structure.Reinforcement.ReinforcementRegion"]
     }
   },
   "allOf" : [{
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Structure.Elements.Stem"
+            "type" : "string",
+            "const" : "BH.oM.Architecture.Elements.Ceiling"
           }
         },
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Stem.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Architecture_oM/Elements/Ceiling.json"
       }
     }, {
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Structure.Elements.Panel"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Panel.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Structure.Elements.PadFoundation"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/PadFoundation.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Structure.Elements.Opening"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Opening.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Structure.Reinforcement.ReinforcementRegion"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Reinforcement/ReinforcementRegion.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Physical.Elements.Window"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Elements/Window.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Physical.Elements.Wall"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Elements/Wall.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Physical.Elements.Void"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Elements/Void.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Physical.Elements.Roof"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Elements/Roof.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Physical.Elements.PadFoundation"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Elements/PadFoundation.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Physical.Elements.Floor"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Elements/Floor.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Physical.Elements.Door"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Elements/Door.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Geometry.PlanarSurface"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/PlanarSurface.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Facade.Elements.Panel"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Elements/Panel.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Facade.Elements.Opening"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Elements/Opening.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Facade.Elements.CurtainWall"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Elements/CurtainWall.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Environment.Elements.Zone"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Elements/Zone.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Environment.Elements.Space"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Elements/Space.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Environment.Elements.Panel"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Elements/Panel.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Environment.Elements.Opening"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Elements/Opening.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Architecture.Elements.Room"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Architecture_oM/Elements/Room.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
+            "type" : "string",
             "const" : "BH.oM.Architecture.Elements.CeilingTile"
           }
         },
@@ -296,14 +37,274 @@
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Architecture.Elements.Ceiling"
+            "type" : "string",
+            "const" : "BH.oM.Architecture.Elements.Room"
           }
         },
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Architecture_oM/Elements/Ceiling.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Architecture_oM/Elements/Room.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Environment.Elements.Opening"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Elements/Opening.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Environment.Elements.Panel"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Elements/Panel.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Environment.Elements.Space"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Elements/Space.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Environment.Elements.Zone"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Elements/Zone.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Facade.Elements.CurtainWall"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Elements/CurtainWall.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Facade.Elements.Opening"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Elements/Opening.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Facade.Elements.Panel"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Elements/Panel.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Geometry.PlanarSurface"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/PlanarSurface.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Physical.Elements.Door"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Elements/Door.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Physical.Elements.Floor"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Elements/Floor.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Physical.Elements.PadFoundation"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Elements/PadFoundation.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Physical.Elements.Roof"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Elements/Roof.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Physical.Elements.Void"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Elements/Void.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Physical.Elements.Wall"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Elements/Wall.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Physical.Elements.Window"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Elements/Window.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Structure.Elements.Opening"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Opening.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Structure.Elements.PadFoundation"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/PadFoundation.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Structure.Elements.Panel"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Panel.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Structure.Elements.Stem"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Stem.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Structure.Reinforcement.ReinforcementRegion"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Reinforcement/ReinforcementRegion.json"
       }
     }]
 }

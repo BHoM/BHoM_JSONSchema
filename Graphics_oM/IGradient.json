@@ -1,29 +1,17 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/IGradient.json",
   "required" : ["_t"],
   "properties" : {
     "_t" : {
-      "enum" : ["BH.oM.Graphics.SteppedGradient", "BH.oM.Graphics.Gradient"]
+      "enum" : ["BH.oM.Graphics.Gradient", "BH.oM.Graphics.SteppedGradient"]
     }
   },
   "allOf" : [{
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Graphics.SteppedGradient"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/SteppedGradient.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
+            "type" : "string",
             "const" : "BH.oM.Graphics.Gradient"
           }
         },
@@ -31,6 +19,19 @@
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/Gradient.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Graphics.SteppedGradient"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/SteppedGradient.json"
       }
     }]
 }

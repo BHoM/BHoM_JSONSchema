@@ -1,120 +1,30 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/IAdapterId.json",
   "required" : ["_t"],
   "properties" : {
     "_t" : {
-      "enum" : ["BH.oM.Test.Adapter.TestAdapterId", "BH.oM.Adapters.SAP2000.SAP2000Id", "BH.oM.Adapters.Robot.RobotId", "BH.oM.Adapters.RFEM6.RFEM6ID", "BH.oM.Adapters.RFEM5.RFEM5Id", "BH.oM.Adapters.RAM.RAMId", "BH.oM.Adapters.MidasCivil.MidasCivilId", "BH.oM.Adapters.Lusas.LusasId", "BH.oM.Adapters.GSA.GSAId", "BH.oM.Adapters.ETABS.ETABSId"]
+      "enum" : ["BH.oM.Adapters.ETABS.ETABSId", "BH.oM.Adapters.GSA.GSAId", "BH.oM.Adapters.Lusas.LusasId", "BH.oM.Adapters.MidasCivil.MidasCivilId", "BH.oM.Adapters.RAM.RAMId", "BH.oM.Adapters.RFEM5.RFEM5Id", "BH.oM.Adapters.RFEM6.RFEM6ID", "BH.oM.Adapters.Robot.RobotId", "BH.oM.Adapters.SAP2000.SAP2000Id", "BH.oM.Test.Adapter.TestAdapterId"]
     }
   },
   "allOf" : [{
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Test.Adapter.TestAdapterId"
+            "type" : "string",
+            "const" : "BH.oM.Adapters.ETABS.ETABSId"
           }
         },
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Test_oM/Adapter/TestAdapterId.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/ETABSId.json"
       }
     }, {
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Adapters.SAP2000.SAP2000Id"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/SAP2000Id.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Adapters.Robot.RobotId"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Robot_oM/RobotId.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Adapters.RFEM6.RFEM6ID"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/RFEM6_oM/RFEM6ID.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Adapters.RFEM5.RFEM5Id"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/RFEM5_oM/RFEM5Id.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Adapters.RAM.RAMId"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/RAM_oM/RAMId.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Adapters.MidasCivil.MidasCivilId"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MidasCivil_oM/MidasCivilId.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Adapters.Lusas.LusasId"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Lusas_oM/LusasId.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
+            "type" : "string",
             "const" : "BH.oM.Adapters.GSA.GSAId"
           }
         },
@@ -127,14 +37,105 @@
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Adapters.ETABS.ETABSId"
+            "type" : "string",
+            "const" : "BH.oM.Adapters.Lusas.LusasId"
           }
         },
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/ETABSId.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Lusas_oM/LusasId.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Adapters.MidasCivil.MidasCivilId"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MidasCivil_oM/MidasCivilId.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Adapters.RAM.RAMId"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/RAM_oM/RAMId.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Adapters.RFEM5.RFEM5Id"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/RFEM5_oM/RFEM5Id.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Adapters.RFEM6.RFEM6ID"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/RFEM6_oM/RFEM6ID.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Adapters.Robot.RobotId"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Robot_oM/RobotId.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Adapters.SAP2000.SAP2000Id"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/SAP2000Id.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Test.Adapter.TestAdapterId"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Test_oM/Adapter/TestAdapterId.json"
       }
     }]
 }

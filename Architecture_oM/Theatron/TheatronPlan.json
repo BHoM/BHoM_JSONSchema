@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Architecture_oM/Theatron/TheatronPlan.json",
   "title" : "TheatronPlan",
   "type" : ["object", "null"],
@@ -10,9 +11,11 @@
       }
     },
     "ActivityArea" : {
+      "description" : "Activity area is used for evaluating Avalue and Evalues",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Architecture_oM/Theatron/ActivityArea.json"
     },
     "FocalCurve" : {
+      "description" : "Focal curve is used for defining Cvalue focal points Polyline: A curve consisting of a continuous chain of straight line segments. The Polyline is considered closed if the first and last ControlPoints are coincident.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Polyline.json"
     },
     "VomitoryOrigins" : {
@@ -62,13 +65,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Architecture.Theatron.TheatronPlan"
     },

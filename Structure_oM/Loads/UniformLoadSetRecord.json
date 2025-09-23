@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/UniformLoadSetRecord.json",
   "title" : "UniformLoadSetRecord",
   "type" : ["object", "null"],
@@ -9,6 +10,7 @@
       "description" : "Description of the source of this load, such as: 'Partitions', 'Occupancy', or 'MEP & Ceiling'"
     },
     "Loadcase" : {
+      "description" : "The Loadcase in which to apply this load. Loadcase: Basic load case class. All load classes need to point to one Loadcase.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/Loadcase.json"
     },
     "Load" : {
@@ -26,13 +28,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Structure.Loads.UniformLoadSetRecord"
     },

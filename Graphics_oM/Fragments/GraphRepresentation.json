@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/Fragments/GraphRepresentation.json",
   "title" : "GraphRepresentation",
   "type" : ["object", "null"],
@@ -20,10 +21,10 @@
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
     },
     "Colour" : {
-      "type" : ["object", "null"],
+      "type" : "object",
       "properties" : {
         "_t" : {
-          "type" : ["string", "null"],
+          "type" : "string",
           "const" : "System.Drawing.Color"
         },
         "A" : {
@@ -42,7 +43,7 @@
       "required" : ["A", "R", "G", "B"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Graphics.Fragments.GraphRepresentation"
     },

@@ -1,42 +1,30 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/Fragments/IRepresentationFragment.json",
   "required" : ["_t"],
   "properties" : {
     "_t" : {
-      "enum" : ["BH.oM.Graphics.Fragments.RelationRepresentation", "BH.oM.Graphics.Fragments.GroupRepresentation", "BH.oM.Graphics.Fragments.GraphRepresentation", "BH.oM.Graphics.Fragments.EntityRepresentation"]
+      "enum" : ["BH.oM.Graphics.Fragments.EntityRepresentation", "BH.oM.Graphics.Fragments.GraphRepresentation", "BH.oM.Graphics.Fragments.GroupRepresentation", "BH.oM.Graphics.Fragments.RelationRepresentation"]
     }
   },
   "allOf" : [{
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Graphics.Fragments.RelationRepresentation"
+            "type" : "string",
+            "const" : "BH.oM.Graphics.Fragments.EntityRepresentation"
           }
         },
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/Fragments/RelationRepresentation.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/Fragments/EntityRepresentation.json"
       }
     }, {
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Graphics.Fragments.GroupRepresentation"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/Fragments/GroupRepresentation.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
+            "type" : "string",
             "const" : "BH.oM.Graphics.Fragments.GraphRepresentation"
           }
         },
@@ -49,14 +37,27 @@
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Graphics.Fragments.EntityRepresentation"
+            "type" : "string",
+            "const" : "BH.oM.Graphics.Fragments.GroupRepresentation"
           }
         },
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/Fragments/EntityRepresentation.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/Fragments/GroupRepresentation.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Graphics.Fragments.RelationRepresentation"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/Fragments/RelationRepresentation.json"
       }
     }]
 }

@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Results/RequirementResult.json",
   "title" : "RequirementResult",
   "type" : ["object", "null"],
@@ -11,6 +12,7 @@
       "type" : ["object", "integer", "string", "number", "null"]
     },
     "VerificationResult" : {
+      "description" : "Result of object verification against the condition specified in the Requirement. IConditionResult: Top interface for all condition results.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Results/IConditionResult.json"
     },
     "Events" : {
@@ -21,7 +23,7 @@
       }
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Verification.Results.RequirementResult"
     },

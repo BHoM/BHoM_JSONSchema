@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Results/Illuminance/Lux.json",
   "title" : "Lux",
   "type" : ["object", "null"],
@@ -22,7 +23,7 @@
       "description" : "Time step for time history results. Typically this will be hour intervals for most Environment Analysis"
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Environment.Results.Illuminance.Lux"
     },

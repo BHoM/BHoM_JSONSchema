@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/StoreyDrift.json",
   "title" : "StoreyDrift",
   "type" : ["object", "null"],
@@ -9,6 +10,7 @@
       "description" : "Storey name."
     },
     "Direction" : {
+      "description" : "Direction of the storey lateral displacement. Vector: Defines a direction and magnitude in three-dimensional Euclidean space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
     },
     "Ratio" : {
@@ -30,7 +32,7 @@
       "description" : "Time step for time history results."
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Structure.Results.StoreyDrift"
     },

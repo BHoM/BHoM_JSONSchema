@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/BuildingPart.json",
   "title" : "BuildingPart",
   "type" : ["object", "null"],
@@ -20,18 +21,23 @@
       "description" : "The age band when this building part was constructed.  Not used if 'Construction-Year' is used."
     },
     "FloorDimensions" : {
+      "description" : "Storeys that make up a particular Building-Part.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/FloorDimensions.json"
     },
     "Openings" : {
+      "description" : "Exposed openings that make up a particular Building-Part.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/Openings.json"
     },
     "Roofs" : {
+      "description" : "Exposed roofs that make up a particular Building - Part.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/Roofs.json"
     },
     "Walls" : {
+      "description" : "Exposed walls that make up a particular Storey.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/Walls.json"
     },
     "ThermalBridges" : {
+      "description" : "Thermal bridges that make up a particular Building-Part.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/ThermalBridges.json"
     },
     "BHoM_Guid" : {
@@ -48,13 +54,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Environment.SAP.XML.BuildingPart"
     },

@@ -1,10 +1,12 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Results/SimulationResult.json",
   "title" : "SimulationResult",
   "type" : ["object", "null"],
   "description" : "SimulationResult: An Environment Simulation Result object",
   "properties" : {
     "SimulationResultType" : {
+      "description" : "The type of simulation result from the Simulation Result enum",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Results/SimulationResultType.json"
     },
     "SimulationResults" : {
@@ -28,13 +30,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Environment.Results.SimulationResult"
     },

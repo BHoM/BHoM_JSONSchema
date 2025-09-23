@@ -1,10 +1,12 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Fixtures/FireAlarmDevice.json",
   "title" : "FireAlarmDevice",
   "type" : ["object", "null"],
   "description" : "FireAlarmDevice: A device used to warn building occupants of emergencies (smoke, fire, carbon monoxide) by means of audio or visual appliances (smoke detectors, speaker strobes, heat detectors.)",
   "properties" : {
     "Location" : {
+      "description" : "The point in space for the location of the object. Node: 0D finite element for structural analysis. Node class contains positional information as well as orientation and support.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/Node.json"
     },
     "OrientationAngle" : {
@@ -12,6 +14,7 @@
       "description" : "Controls the local plan orientation of the object. Property has a quantity of type Angle measured in [rad]."
     },
     "FireAlarmDeviceType" : {
+      "description" : "A type which describes the fire alarm device more specifically whether it's a smoke detector, carbon monoxide detector or speaker strobe. FireAlarmDeviceType: A type of fire alarm device (smoke detector, heat detector, speaker strobe.)",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Enums/FireAlarmDeviceType.json"
     },
     "BHoM_Guid" : {
@@ -28,13 +31,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.MEP.Fixtures.FireAlarmDevice"
     },

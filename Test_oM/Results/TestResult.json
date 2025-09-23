@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Test_oM/Results/TestResult.json",
   "title" : "TestResult",
   "type" : ["object", "null"],
@@ -8,6 +9,7 @@
       "description" : "Describes the focus of the test that this Test Result answers. This is typically for CI processes but should be human readable for ease of use."
     },
     "Status" : {
+      "description" : "States whether the test was a success or not. Defaults to Error to ensure any defaults are investigated appropriately. TestStatus: Defines the status of the Test Information. Designed to be very clear, concrete statuses, with minimal ambiguity.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Test_oM/TestStatus.json"
     },
     "Information" : {
@@ -22,7 +24,7 @@
       "description" : "A human readable message explaining why this Test Result has turned out the way it has, with potential solutions or links to associated wiki pages."
     },
     "UTCTime" : {
-      "type" : ["object", "null"],
+      "type" : "object",
       "properties" : {
         "$date" : {
           "type" : "integer"
@@ -34,7 +36,7 @@
       "description" : "Machine readable identifier for the Test Result."
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Test.Results.TestResult"
     },

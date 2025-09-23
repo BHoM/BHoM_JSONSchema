@@ -1,42 +1,30 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/IRender.json",
   "required" : ["_t"],
   "properties" : {
     "_t" : {
-      "enum" : ["BH.oM.Graphics.RenderText", "BH.oM.Graphics.RenderPoint", "BH.oM.Graphics.RenderGeometry", "BH.oM.Graphics.RenderCurve"]
+      "enum" : ["BH.oM.Graphics.RenderCurve", "BH.oM.Graphics.RenderGeometry", "BH.oM.Graphics.RenderPoint", "BH.oM.Graphics.RenderText"]
     }
   },
   "allOf" : [{
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Graphics.RenderText"
+            "type" : "string",
+            "const" : "BH.oM.Graphics.RenderCurve"
           }
         },
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/RenderText.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/RenderCurve.json"
       }
     }, {
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Graphics.RenderPoint"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/RenderPoint.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
+            "type" : "string",
             "const" : "BH.oM.Graphics.RenderGeometry"
           }
         },
@@ -49,14 +37,27 @@
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Graphics.RenderCurve"
+            "type" : "string",
+            "const" : "BH.oM.Graphics.RenderPoint"
           }
         },
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/RenderCurve.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/RenderPoint.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Graphics.RenderText"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/RenderText.json"
       }
     }]
 }

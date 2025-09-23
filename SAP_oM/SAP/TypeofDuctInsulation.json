@@ -1,20 +1,21 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/TypeofDuctInsulation.json",
   "anyOf" : [{
-      "type" : ["string", "null"],
+      "type" : "string",
       "enum" : ["NotInsulated", "Insulated"]
     }, {
-      "type" : ["object", "null"],
+      "type" : "object",
       "properties" : {
         "_t" : {
-          "type" : ["string", "null"],
+          "type" : "string",
           "const" : "System.Enum"
         },
         "TypeName" : {
           "type" : ["object", "null"],
           "properties" : {
             "_t" : {
-              "type" : ["string", "null"],
+              "type" : "string",
               "const" : "System.Type"
             },
             "Name" : {
@@ -24,7 +25,7 @@
           }
         },
         "Value" : {
-          "type" : ["string", "null"],
+          "type" : "string",
           "enum" : ["NotInsulated", "Insulated"]
         }
       }

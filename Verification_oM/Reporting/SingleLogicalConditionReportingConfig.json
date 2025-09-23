@@ -1,14 +1,16 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Reporting/SingleLogicalConditionReportingConfig.json",
   "title" : "SingleLogicalConditionReportingConfig",
   "type" : ["object", "null"],
   "description" : "SingleLogicalConditionReportingConfig: Config object containing settings for reporting results of checks against logical conditions with a single nested condition.",
   "properties" : {
     "NestedConfig" : {
+      "description" : "Reporting config to be applied to format the check report of nested condition. IConditionReportingConfig: Top interface for all condition reporting config objects.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Reporting/IConditionReportingConfig.json"
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Verification.Reporting.SingleLogicalConditionReportingConfig"
     },

@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/RenderText.json",
   "title" : "RenderText",
   "type" : ["object", "null"],
@@ -9,6 +10,7 @@
       "description" : "The text to render."
     },
     "Cartesian" : {
+      "description" : "Cartesian to locate and orientate the text. Cartesian: A three-dimensional Cartesian coordinate system, as defined by a set of mutually orthogonal unit vectors and a common origin point",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/CoordinateSystem/Cartesian.json"
     },
     "Height" : {
@@ -20,10 +22,10 @@
       "description" : "Font used to render the text. Default is Arial."
     },
     "Colour" : {
-      "type" : ["object", "null"],
+      "type" : "object",
       "properties" : {
         "_t" : {
-          "type" : ["string", "null"],
+          "type" : "string",
           "const" : "System.Drawing.Color"
         },
         "A" : {
@@ -42,7 +44,7 @@
       "required" : ["A", "R", "G", "B"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Graphics.RenderText"
     },

@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/Infiltration.json",
   "title" : "Infiltration",
   "type" : ["object", "null"],
@@ -17,6 +18,7 @@
       "description" : "The AirflowByWallExternalCrackLength indicates the amount of air (m3/s) lost by infiltration based on the exterior wall crack length (the sum of the edge lengths), that should be replaced within the space."
     },
     "Profile" : {
+      "description" : "Profiles depict the time period (hours per day, days per week) during which infiltration is contributing to or causing a loss of heat to the space. Profile: A profile object represents a gain, thermostat or humdistat as conditions vary over a 24-hour period",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/Profile.json"
     },
     "BHoM_Guid" : {
@@ -33,13 +35,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Environment.SpaceCriteria.Infiltration"
     },

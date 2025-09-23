@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/MeshModeShape.json",
   "title" : "MeshModeShape",
   "type" : ["object", "null"],
@@ -59,10 +60,11 @@
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/MeshResultSmoothingType.json"
     },
     "Orientation" : {
+      "description" : "Vector basis required in order to report results in a particular direction, for example, for anisotropic materials. Basis: An ordered set of mutually orthogonal unit vectors defining three-dimensional orientation in space",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Basis.json"
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Structure.Results.MeshModeShape"
     },

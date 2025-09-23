@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/CellRelation.json",
   "title" : "CellRelation",
   "type" : ["object", "null"],
@@ -13,7 +14,7 @@
       "description" : "Index of the cell the Face is connected to which its normal is pointing towards."
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Geometry.CellRelation"
     },

@@ -1,13 +1,16 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Elements/Viewport.json",
   "title" : "Viewport",
   "type" : ["object", "null"],
   "description" : "Viewport: A wrapper BHoM type for Revit viewport, used to create or update Revit viewports (on Push) and represent them as BHoMObjects (on Pull).",
   "properties" : {
     "InstanceProperties" : {
+      "description" : "An entity storing the information about Revit viewport type. InstanceProperties: A generic wrapper BHoM type corresponding to any Revit family type. Name of InstanceProperties corresponds to family type name, type parameter values are stored in RevitParametersToPush.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Properties/InstanceProperties.json"
     },
     "Location" : {
+      "description" : "Location of the viewport in Revit sheet space. Point: Defines a dimensionless location in three-dimensional space.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
     },
     "SheetNumber" : {
@@ -32,13 +35,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Adapters.Revit.Elements.Viewport"
     },

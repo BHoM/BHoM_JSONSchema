@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/SteppedGradient.json",
   "title" : "SteppedGradient",
   "type" : ["object", "null"],
@@ -8,10 +9,10 @@
       "type" : ["array", "null"],
       "description" : "A SortedDictionary of 'Color's using a 'decimal' between 0 and 1 as Key. Decimal of marker indicates the lower limit for the range of that colour.",
       "items" : {
-        "type" : ["object", "null"],
+        "type" : "object",
         "properties" : {
           "k" : {
-            "type" : ["object", "null"],
+            "type" : "object",
             "properties" : {
               "$numberDecimal" : {
                 "type" : ["string", "null"]
@@ -19,10 +20,10 @@
             }
           },
           "v" : {
-            "type" : ["object", "null"],
+            "type" : "object",
             "properties" : {
               "_t" : {
-                "type" : ["string", "null"],
+                "type" : "string",
                 "const" : "System.Drawing.Color"
               },
               "A" : {
@@ -57,13 +58,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Graphics.SteppedGradient"
     },

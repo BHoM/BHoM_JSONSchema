@@ -1,10 +1,12 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/File_oM/FileContentRequest.json",
   "title" : "FileContentRequest",
   "type" : ["object", "null"],
   "description" : "FileContentRequest: Used to read contents of one or more files.",
   "properties" : {
     "File" : {
+      "description" : "The content from this File will be queried.\nYou can also specify the file with a string Path.  FSFile: A FileSystem-hosted File. It can include the content of the File.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/File_oM/FSFile.json"
     },
     "Types" : {
@@ -14,7 +16,7 @@
         "type" : ["object", "null"],
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
+            "type" : "string",
             "const" : "System.Type"
           },
           "Name" : {
@@ -37,7 +39,7 @@
         "type" : ["object", "null"],
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
+            "type" : "string",
             "const" : "System.Type"
           },
           "Name" : {
@@ -47,7 +49,7 @@
       }
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Adapters.File.FileContentRequest"
     },

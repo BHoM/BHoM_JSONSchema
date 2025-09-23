@@ -1,10 +1,12 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Fixtures/PlumbingFixture.json",
   "title" : "PlumbingFixture",
   "type" : ["object", "null"],
   "description" : "PlumbingFixture: A device used to convey public health (plumbing) fluids (water, waste.)",
   "properties" : {
     "Location" : {
+      "description" : "The point in space for the location of the object. Node: 0D finite element for structural analysis. Node class contains positional information as well as orientation and support.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/Node.json"
     },
     "OrientationAngle" : {
@@ -12,12 +14,15 @@
       "description" : "Controls the local plan orientation of the object. Property has a quantity of type Angle measured in [rad]."
     },
     "PlumbingFixtureType" : {
+      "description" : "A type which describes the plumbing fixture more specifically whether it's a water closet (toilet), urinal or lavatory. PlumbingFixtureType: A type of plumbing fixture (water closet (toilet), lavatory, urinal.)",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Enums/PlumbingFixtureType.json"
     },
     "Flow" : {
+      "description" : "Depiction of the plumbing flow associated with the plumbing fixture (cold water, hot water and drainage.)",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Fragments/PlumbingFlowFragment.json"
     },
     "LoadingFixtureUnits" : {
+      "description" : "Depiction of the plumbing loading/fixture units associated with the plumbing fixture (cold water, hot water and drainage.)",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Fragments/PlumbingLoadingFixtureUnitFragment.json"
     },
     "BHoM_Guid" : {
@@ -34,13 +39,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.MEP.Fixtures.PlumbingFixture"
     },

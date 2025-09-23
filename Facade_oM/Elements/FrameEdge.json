@@ -1,13 +1,16 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Elements/FrameEdge.json",
   "title" : "FrameEdge",
   "type" : ["object", "null"],
   "description" : "FrameEdge: A frame edge (eg mullion, window jamb, curtain wall sill, etc)",
   "properties" : {
     "Curve" : {
+      "description" : "The curve representing the frame edge location ICurve: The interface for all one-dimensional geometrical objects.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ICurve.json"
     },
     "FrameEdgeProperty" : {
+      "description" : "The property assigned to this frame edge FrameEdgeProperty: Frame edge (eg mullion, window jamb, curtain wall sill, etc) property with list of Profile Section properties that make up the mullion construction.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/SectionProperties/FrameEdgeProperty.json"
     },
     "BHoM_Guid" : {
@@ -24,13 +27,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Facade.Elements.FrameEdge"
     },

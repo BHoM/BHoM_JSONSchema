@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/ISpecification.json",
   "required" : ["_t"],
   "properties" : {
@@ -10,7 +11,7 @@
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
+            "type" : "string",
             "const" : "BH.oM.Verification.Specifications.Specification"
           }
         },

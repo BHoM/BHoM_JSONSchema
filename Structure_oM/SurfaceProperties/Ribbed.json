@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/Ribbed.json",
   "title" : "Ribbed",
   "type" : ["object", "null"],
@@ -13,9 +14,11 @@
       "description" : "The thickness of the slab sitting on top of the ribs. Property has a quantity of type Length measured in [m]."
     },
     "Material" : {
+      "description" : "Homogenous structural material throughout the full thickness of the element. IMaterialFragment: Base interface for structural materials used by structural properties or as a fragment of the physical material.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/IMaterialFragment.json"
     },
     "Direction" : {
+      "description" : "Specifies if the ribs are running in local x or y direction.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/PanelDirection.json"
     },
     "TotalDepth" : {
@@ -31,6 +34,7 @@
       "description" : "Centre-centre distance between the ribs. Measured perpendicular to the rib direction. Property has a quantity of type Length measured in [m]."
     },
     "PanelType" : {
+      "description" : "Defines what type of element this property will be used. Used by some analysis packages.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/PanelType.json"
     },
     "BHoM_Guid" : {
@@ -44,13 +48,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Structure.SurfaceProperties.Ribbed"
     },

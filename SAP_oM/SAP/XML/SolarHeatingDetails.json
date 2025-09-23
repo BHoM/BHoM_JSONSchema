@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/SolarHeatingDetails.json",
   "title" : "SolarHeatingDetails",
   "type" : ["object", "null"],
@@ -52,40 +53,12 @@
       "description" : "."
     },
     "HasSolarPoweredPump" : {
-      "type" : ["object", "null"],
-      "description" : ".",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : "."
     },
     "IsSolarStoreCombinedCylinder" : {
-      "type" : ["object", "null"],
-      "description" : ".",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : "."
     },
     "CollectorLoopEfficiency" : {
       "type" : ["string", "null"],
@@ -96,22 +69,8 @@
       "description" : "Incidence angle modifier; only if declared values."
     },
     "IsCommunitySolar" : {
-      "type" : ["object", "null"],
-      "description" : ".",
-      "properties" : {
-        "HasValue" : {
-          "type" : "boolean"
-        },
-        "Value" : {
-          "type" : "boolean"
-        },
-        "_t" : {
-          "type" : ["string", "null"],
-          "description" : "Optional type disciminator.",
-          "pattern" : "^System\\.Nullable`1\\[\\[.*\\]\\]$"
-        }
-      },
-      "required" : ["HasValue", "Value"]
+      "type" : ["boolean", "null"],
+      "description" : "."
     },
     "ServiceProvision" : {
       "type" : ["string", "null"],
@@ -139,13 +98,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Environment.SAP.XML.SolarHeatingDetails"
     },

@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/GSA_oM/SpacerProperties/SpacerProperty.json",
   "title" : "SpacerProperty",
   "type" : ["object", "null"],
@@ -9,9 +10,11 @@
       "description" : "A unique Name is required for some structural packages to create and identify the object."
     },
     "Type" : {
+      "description" : "The type of spacer. SpacerType: Defines type of spacer for a fabric spacer.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/GSA_oM/SpacerType.json"
     },
     "LengthType" : {
+      "description" : "The spacer leg length type. SpacerLengthType: Defines type of spacer for a fabric spacer.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/GSA_oM/SpacerLengthType.json"
     },
     "Stiffness" : {
@@ -33,13 +36,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Adapters.GSA.SpacerProperties.SpacerProperty"
     },

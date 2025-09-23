@@ -1,14 +1,16 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Requests/ConditionRequest.json",
   "title" : "ConditionRequest",
   "type" : ["object", "null"],
   "description" : "ConditionRequest: IRequest that filters all elements that meet a given condition.",
   "properties" : {
     "Condition" : {
+      "description" : "Condition for the elements to be met in order not to be filtered out. ICondition: Top level interface for conditions: lightweight objects describing a yes/no question to be asked against another object.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Conditions/ICondition.json"
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Adapters.Revit.Requests.ConditionRequest"
     },

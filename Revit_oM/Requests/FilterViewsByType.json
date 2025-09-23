@@ -1,14 +1,16 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Requests/FilterViewsByType.json",
   "title" : "FilterViewsByType",
   "type" : ["object", "null"],
   "description" : "FilterViewsByType: IRequest that filters all views of given type.",
   "properties" : {
     "RevitViewType" : {
+      "description" : "RevitViewType enum correspondent to Revit view type. RevitViewType: Enumerator defining view type of Revit view. A clone of Autodesk.Revit.DB.ViewType enum.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Enums/RevitViewType.json"
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Adapters.Revit.Requests.FilterViewsByType"
     },

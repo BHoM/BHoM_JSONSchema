@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Constraints/Constraint6DOF.json",
   "title" : "Constraint6DOF",
   "type" : ["object", "null"],
@@ -33,21 +34,27 @@
       "description" : "Defines the stiffness for rotation about the Z-axis. This will only be active when corresponding degree of freedom has a DOFType with a stiffness dependency, such as Spring. Property has a quantity of type MomentPerUnitAngle measured in [N.m/rad]."
     },
     "TranslationX" : {
+      "description" : "Defines the translational fixity in the X-direction. DOFType: Enumerator outlining the fixity of a particular degree of freedom. Controls if the DOF should be free, fixed or stiffness based.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Constraints/DOFType.json"
     },
     "TranslationY" : {
+      "description" : "Defines the translational fixity in the Y-direction. DOFType: Enumerator outlining the fixity of a particular degree of freedom. Controls if the DOF should be free, fixed or stiffness based.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Constraints/DOFType.json"
     },
     "TranslationZ" : {
+      "description" : "Defines the translational fixity in the Z-direction. DOFType: Enumerator outlining the fixity of a particular degree of freedom. Controls if the DOF should be free, fixed or stiffness based.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Constraints/DOFType.json"
     },
     "RotationX" : {
+      "description" : "Defines the rotational fixity about the X-axis. DOFType: Enumerator outlining the fixity of a particular degree of freedom. Controls if the DOF should be free, fixed or stiffness based.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Constraints/DOFType.json"
     },
     "RotationY" : {
+      "description" : "Defines the rotational fixity about the Y-axis. DOFType: Enumerator outlining the fixity of a particular degree of freedom. Controls if the DOF should be free, fixed or stiffness based.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Constraints/DOFType.json"
     },
     "RotationZ" : {
+      "description" : "Defines the rotational fixity about the Z-axis. DOFType: Enumerator outlining the fixity of a particular degree of freedom. Controls if the DOF should be free, fixed or stiffness based.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Constraints/DOFType.json"
     },
     "BHoM_Guid" : {
@@ -61,13 +68,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Structure.Constraints.Constraint6DOF"
     },

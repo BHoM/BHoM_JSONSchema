@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Excel_oM/CellContentsRequest.json",
   "title" : "CellContentsRequest",
   "type" : ["object", "null"],
@@ -9,10 +10,11 @@
       "description" : "Name of the worksheet to read from."
     },
     "Range" : {
+      "description" : "Cell range to read. If left empty, entire extent of the spreadsheet starting from A1 is used. CellRange: Object representing an orthogonal range between two cell in the spreadsheet.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Excel_oM/CellRange.json"
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Adapters.Excel.CellContentsRequest"
     },

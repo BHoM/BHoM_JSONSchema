@@ -1,29 +1,30 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/File_oM/IResourceRequest.json",
   "required" : ["_t"],
   "properties" : {
     "_t" : {
-      "enum" : ["BH.oM.Adapters.File.FileRequest", "BH.oM.Adapters.File.FileDirRequest", "BH.oM.Adapters.File.DirectoryRequest"]
+      "enum" : ["BH.oM.Adapters.File.DirectoryRequest", "BH.oM.Adapters.File.FileDirRequest", "BH.oM.Adapters.File.FileRequest"]
     }
   },
   "allOf" : [{
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Adapters.File.FileRequest"
+            "type" : "string",
+            "const" : "BH.oM.Adapters.File.DirectoryRequest"
           }
         },
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/File_oM/FileRequest.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/File_oM/DirectoryRequest.json"
       }
     }, {
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
+            "type" : "string",
             "const" : "BH.oM.Adapters.File.FileDirRequest"
           }
         },
@@ -36,14 +37,14 @@
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Adapters.File.DirectoryRequest"
+            "type" : "string",
+            "const" : "BH.oM.Adapters.File.FileRequest"
           }
         },
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/File_oM/DirectoryRequest.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/File_oM/FileRequest.json"
       }
     }]
 }

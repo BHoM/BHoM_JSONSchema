@@ -1,10 +1,12 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/MechanicalSystem.json",
   "title" : "MechanicalSystem",
   "type" : ["object", "null"],
   "description" : "MechanicalSystem: Mechanical systems are qualified by their ability to convey air, water, etc to a building/room/area",
   "properties" : {
     "FluidType" : {
+      "description" : "Fluid type that flows throughout the specified flow objects. FluidType: A fluid type that flows within any system's flow objects.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Enums/FluidType.json"
     },
     "FluidTemperature" : {
@@ -33,13 +35,14 @@
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.MEP.System.MechanicalSystem"
     },

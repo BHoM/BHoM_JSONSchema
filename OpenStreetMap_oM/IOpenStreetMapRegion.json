@@ -1,55 +1,30 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/OpenStreetMap_oM/IOpenStreetMapRegion.json",
   "required" : ["_t"],
   "properties" : {
     "_t" : {
-      "enum" : ["BH.oM.Adapters.OpenStreetMap.TaggedArea", "BH.oM.Adapters.OpenStreetMap.Polygon", "BH.oM.Adapters.OpenStreetMap.LineStringRadius", "BH.oM.Adapters.OpenStreetMap.CentreRadius", "BH.oM.Adapters.OpenStreetMap.BoundingBox"]
+      "enum" : ["BH.oM.Adapters.OpenStreetMap.BoundingBox", "BH.oM.Adapters.OpenStreetMap.CentreRadius", "BH.oM.Adapters.OpenStreetMap.LineStringRadius", "BH.oM.Adapters.OpenStreetMap.Polygon", "BH.oM.Adapters.OpenStreetMap.TaggedArea"]
     }
   },
   "allOf" : [{
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Adapters.OpenStreetMap.TaggedArea"
+            "type" : "string",
+            "const" : "BH.oM.Adapters.OpenStreetMap.BoundingBox"
           }
         },
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/OpenStreetMap_oM/TaggedArea.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/OpenStreetMap_oM/BoundingBox.json"
       }
     }, {
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Adapters.OpenStreetMap.Polygon"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/OpenStreetMap_oM/Polygon.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Adapters.OpenStreetMap.LineStringRadius"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/OpenStreetMap_oM/LineStringRadius.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : ["string", "null"],
+            "type" : "string",
             "const" : "BH.oM.Adapters.OpenStreetMap.CentreRadius"
           }
         },
@@ -62,14 +37,40 @@
       "if" : {
         "properties" : {
           "_t" : {
-            "type" : ["string", "null"],
-            "const" : "BH.oM.Adapters.OpenStreetMap.BoundingBox"
+            "type" : "string",
+            "const" : "BH.oM.Adapters.OpenStreetMap.LineStringRadius"
           }
         },
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/OpenStreetMap_oM/BoundingBox.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/OpenStreetMap_oM/LineStringRadius.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Adapters.OpenStreetMap.Polygon"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/OpenStreetMap_oM/Polygon.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Adapters.OpenStreetMap.TaggedArea"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/OpenStreetMap_oM/TaggedArea.json"
       }
     }]
 }

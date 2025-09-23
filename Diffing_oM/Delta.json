@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/Delta.json",
   "title" : "Delta",
   "type" : ["object", "null"],
@@ -10,6 +11,7 @@
       "description" : "The ID of the owning Stream. It must be the same for both the Revision that this Delta targets and the Revision that it will produce."
     },
     "Diff" : {
+      "description" : "Represent the differences between two sets of objects. Diff: Represents the differences between two sets of objects.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/Diff.json"
     },
     "RevisionFrom" : {
@@ -34,7 +36,7 @@
       "type" : ["string", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Diffing.Delta"
     },

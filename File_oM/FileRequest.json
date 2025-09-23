@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/File_oM/FileRequest.json",
   "title" : "FileRequest",
   "type" : ["object", "null"],
@@ -17,6 +18,7 @@
       "description" : "If SearchSubdirectories is true, this sets the maximum subdirectiory nesting level to look in.\nDefaults to -1 which corresponds to no limit."
     },
     "SortOrder" : {
+      "description" : "Sorting order of the extracted Files.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/File_oM/SortOrder.json"
     },
     "MaxFiles" : {
@@ -33,7 +35,7 @@
       "items" : { }
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Adapters.File.FileRequest"
     },
