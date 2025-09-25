@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/TypeOfHeatingFuel.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/SAP_oM/SAP/TypeOfHeatingFuel.json",
   "anyOf" : [{
       "type" : "string",
       "enum" : ["MainsGas", "BulkLPG", "BottledLPG", "HeatingOil", "Biogas", "LNG", "LPGSpecialCondition", "SolidFuelMineralAndWood", "HouseCoal", "ManufacturedSmokelessFuel", "Anthracite", "WoodLogs", "WoodChips", "WoodPelletsSecondaryHeating", "WoodPelletsMainHeating", "ElectricitySoldToGrid", "ElectricityDisplacedFromGrid", "ElectricityUnspecTariff", "CommunityHeatPump", "CommunityBoilersWaste", "CommunityBoilersBiomass", "CommunityBoilersBiogas", "CommunityWastePowerStations", "CommunityGeothermal", "CommunityCHP", "CommunityElectricityCHP", "CommunityElectricityNetwork", "CommunityMainsGas", "CommunityLPG", "CommunityOil", "CommunityCoal", "CommunityB30D", "CommunityBoilersMineralOilBiodiesel", "CommunityBoilersBiodiesel", "CommunityBiodieselVegetableOil", "Biodiesel", "BiodieselUsedCookingOil", "BiodieselVegetableOil", "MineralOilLiquidBiofuel", "B30K", "Bioethanol", "FuelDataFromPcdb"]

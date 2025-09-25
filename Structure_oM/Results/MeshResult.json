@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/MeshResult.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/Results/MeshResult.json",
   "title" : "MeshResult",
   "type" : ["object", "null"],
   "description" : "MeshResult: Full collection of discrete results for a Panel/FEMesh for a specific Loadcase or LoadCombination.",
@@ -20,14 +20,14 @@
       "description" : "Time step for time history results."
     },
     "Layer" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/MeshResultLayer.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/Results/MeshResultLayer.json"
     },
     "LayerPosition" : {
       "type" : "number",
       "description" : "Position within the element thickness that result is extracted from, normalised to 1. I.e. 0 = lower surface, 0.5 = middle, 1 = top surface."
     },
     "Smoothing" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/MeshResultSmoothingType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/Results/MeshResultSmoothingType.json"
     },
     "Results" : {
       "type" : ["object", "null"],
@@ -36,7 +36,7 @@
           "type" : ["array", "null"],
           "description" : "A collection of the discrete mesh element results per node and/or face.",
           "items" : {
-            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/MeshElementResult.json"
+            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/Results/MeshElementResult.json"
           }
         }
       }

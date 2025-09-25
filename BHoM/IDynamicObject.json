@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/IDynamicObject.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/IDynamicObject.json",
   "required" : ["_t"],
   "properties" : {
     "_t" : {
@@ -18,7 +18,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/CustomObject.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/CustomObject.json"
       }
     }, {
       "if" : {
@@ -31,7 +31,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/AbioticDepletionFossilResourcesMetric.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/MaterialFragments/AbioticDepletionFossilResourcesMetric.json"
       }
     }, {
       "if" : {
@@ -44,7 +44,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/AbioticDepletionMineralsAndMetalsMetric.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/MaterialFragments/AbioticDepletionMineralsAndMetalsMetric.json"
       }
     }, {
       "if" : {
@@ -57,7 +57,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/AcidificationMetric.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/MaterialFragments/AcidificationMetric.json"
       }
     }, {
       "if" : {
@@ -70,7 +70,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/ClimateChangeBiogenicMetric.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/MaterialFragments/ClimateChangeBiogenicMetric.json"
       }
     }, {
       "if" : {
@@ -83,7 +83,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/ClimateChangeFossilMetric.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/MaterialFragments/ClimateChangeFossilMetric.json"
       }
     }, {
       "if" : {
@@ -96,7 +96,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/ClimateChangeLandUseMetric.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/MaterialFragments/ClimateChangeLandUseMetric.json"
       }
     }, {
       "if" : {
@@ -109,7 +109,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/ClimateChangeTotalMetric.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/MaterialFragments/ClimateChangeTotalMetric.json"
       }
     }, {
       "if" : {
@@ -122,7 +122,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/ClimateChangeTotalNoBiogenicMetric.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/MaterialFragments/ClimateChangeTotalNoBiogenicMetric.json"
       }
     }, {
       "if" : {
@@ -135,7 +135,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EutrophicationAquaticFreshwaterMetric.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/MaterialFragments/EutrophicationAquaticFreshwaterMetric.json"
       }
     }, {
       "if" : {
@@ -148,7 +148,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EutrophicationAquaticMarineMetric.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/MaterialFragments/EutrophicationAquaticMarineMetric.json"
       }
     }, {
       "if" : {
@@ -161,7 +161,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EutrophicationCMLMetric.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/MaterialFragments/EutrophicationCMLMetric.json"
       }
     }, {
       "if" : {
@@ -174,7 +174,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EutrophicationTerrestrialMetric.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/MaterialFragments/EutrophicationTerrestrialMetric.json"
       }
     }, {
       "if" : {
@@ -187,7 +187,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EutrophicationTRACIMetric.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/MaterialFragments/EutrophicationTRACIMetric.json"
       }
     }, {
       "if" : {
@@ -200,7 +200,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/OzoneDepletionMetric.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/MaterialFragments/OzoneDepletionMetric.json"
       }
     }, {
       "if" : {
@@ -213,7 +213,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/PhotochemicalOzoneCreationCMLMetric.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/MaterialFragments/PhotochemicalOzoneCreationCMLMetric.json"
       }
     }, {
       "if" : {
@@ -226,7 +226,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/PhotochemicalOzoneCreationMetric.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/MaterialFragments/PhotochemicalOzoneCreationMetric.json"
       }
     }, {
       "if" : {
@@ -239,7 +239,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/PhotochemicalOzoneCreationTRACIMetric.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/MaterialFragments/PhotochemicalOzoneCreationTRACIMetric.json"
       }
     }, {
       "if" : {
@@ -252,7 +252,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/WaterDeprivationMetric.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/MaterialFragments/WaterDeprivationMetric.json"
       }
     }, {
       "if" : {
@@ -265,7 +265,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/AbioticDepletionFossilResourcesElementResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/AbioticDepletionFossilResourcesElementResult.json"
       }
     }, {
       "if" : {
@@ -278,7 +278,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/AbioticDepletionFossilResourcesMaterialResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/AbioticDepletionFossilResourcesMaterialResult.json"
       }
     }, {
       "if" : {
@@ -291,7 +291,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/AbioticDepletionMineralsAndMetalsElementResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/AbioticDepletionMineralsAndMetalsElementResult.json"
       }
     }, {
       "if" : {
@@ -304,7 +304,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/AbioticDepletionMineralsAndMetalsMaterialResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/AbioticDepletionMineralsAndMetalsMaterialResult.json"
       }
     }, {
       "if" : {
@@ -317,7 +317,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/AcidificationElementResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/AcidificationElementResult.json"
       }
     }, {
       "if" : {
@@ -330,7 +330,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/AcidificationMaterialResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/AcidificationMaterialResult.json"
       }
     }, {
       "if" : {
@@ -343,7 +343,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/ClimateChangeBiogenicElementResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/ClimateChangeBiogenicElementResult.json"
       }
     }, {
       "if" : {
@@ -356,7 +356,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/ClimateChangeBiogenicMaterialResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/ClimateChangeBiogenicMaterialResult.json"
       }
     }, {
       "if" : {
@@ -369,7 +369,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/ClimateChangeFossilElementResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/ClimateChangeFossilElementResult.json"
       }
     }, {
       "if" : {
@@ -382,7 +382,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/ClimateChangeFossilMaterialResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/ClimateChangeFossilMaterialResult.json"
       }
     }, {
       "if" : {
@@ -395,7 +395,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/ClimateChangeLandUseElementResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/ClimateChangeLandUseElementResult.json"
       }
     }, {
       "if" : {
@@ -408,7 +408,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/ClimateChangeLandUseMaterialResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/ClimateChangeLandUseMaterialResult.json"
       }
     }, {
       "if" : {
@@ -421,7 +421,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/ClimateChangeTotalElementResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/ClimateChangeTotalElementResult.json"
       }
     }, {
       "if" : {
@@ -434,7 +434,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/ClimateChangeTotalMaterialResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/ClimateChangeTotalMaterialResult.json"
       }
     }, {
       "if" : {
@@ -447,7 +447,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/ClimateChangeTotalNoBiogenicElementResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/ClimateChangeTotalNoBiogenicElementResult.json"
       }
     }, {
       "if" : {
@@ -460,7 +460,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/ClimateChangeTotalNoBiogenicMaterialResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/ClimateChangeTotalNoBiogenicMaterialResult.json"
       }
     }, {
       "if" : {
@@ -473,7 +473,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/EutrophicationAquaticFreshwaterElementResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/EutrophicationAquaticFreshwaterElementResult.json"
       }
     }, {
       "if" : {
@@ -486,7 +486,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/EutrophicationAquaticFreshwaterMaterialResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/EutrophicationAquaticFreshwaterMaterialResult.json"
       }
     }, {
       "if" : {
@@ -499,7 +499,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/EutrophicationAquaticMarineElementResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/EutrophicationAquaticMarineElementResult.json"
       }
     }, {
       "if" : {
@@ -512,7 +512,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/EutrophicationAquaticMarineMaterialResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/EutrophicationAquaticMarineMaterialResult.json"
       }
     }, {
       "if" : {
@@ -525,7 +525,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/EutrophicationCMLElementResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/EutrophicationCMLElementResult.json"
       }
     }, {
       "if" : {
@@ -538,7 +538,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/EutrophicationCMLMaterialResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/EutrophicationCMLMaterialResult.json"
       }
     }, {
       "if" : {
@@ -551,7 +551,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/EutrophicationTerrestrialElementResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/EutrophicationTerrestrialElementResult.json"
       }
     }, {
       "if" : {
@@ -564,7 +564,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/EutrophicationTerrestrialMaterialResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/EutrophicationTerrestrialMaterialResult.json"
       }
     }, {
       "if" : {
@@ -577,7 +577,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/EutrophicationTRACIElementResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/EutrophicationTRACIElementResult.json"
       }
     }, {
       "if" : {
@@ -590,7 +590,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/EutrophicationTRACIMaterialResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/EutrophicationTRACIMaterialResult.json"
       }
     }, {
       "if" : {
@@ -603,7 +603,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/OzoneDepletionElementResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/OzoneDepletionElementResult.json"
       }
     }, {
       "if" : {
@@ -616,7 +616,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/OzoneDepletionMaterialResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/OzoneDepletionMaterialResult.json"
       }
     }, {
       "if" : {
@@ -629,7 +629,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/PhotochemicalOzoneCreationCMLElementResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/PhotochemicalOzoneCreationCMLElementResult.json"
       }
     }, {
       "if" : {
@@ -642,7 +642,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/PhotochemicalOzoneCreationCMLMaterialResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/PhotochemicalOzoneCreationCMLMaterialResult.json"
       }
     }, {
       "if" : {
@@ -655,7 +655,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/PhotochemicalOzoneCreationElementResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/PhotochemicalOzoneCreationElementResult.json"
       }
     }, {
       "if" : {
@@ -668,7 +668,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/PhotochemicalOzoneCreationMaterialResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/PhotochemicalOzoneCreationMaterialResult.json"
       }
     }, {
       "if" : {
@@ -681,7 +681,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/PhotochemicalOzoneCreationTRACIElementResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/PhotochemicalOzoneCreationTRACIElementResult.json"
       }
     }, {
       "if" : {
@@ -694,7 +694,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/PhotochemicalOzoneCreationTRACIMaterialResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/PhotochemicalOzoneCreationTRACIMaterialResult.json"
       }
     }, {
       "if" : {
@@ -707,7 +707,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/WaterDeprivationElementResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/WaterDeprivationElementResult.json"
       }
     }, {
       "if" : {
@@ -720,7 +720,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/WaterDeprivationMaterialResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/WaterDeprivationMaterialResult.json"
       }
     }]
 }

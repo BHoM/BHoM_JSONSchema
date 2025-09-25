@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Elements/Zone.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Environment_oM/Elements/Zone.json",
   "title" : "Zone",
   "type" : ["object", "null"],
   "description" : "Zone: A self-contained unit of accommodation, that could contain smaller spaces",
@@ -11,7 +11,7 @@
     },
     "Perimeter" : {
       "description" : "A 2D curve defining the external boundaries of the floor of the region. ICurve: The interface for all one-dimensional geometrical objects.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ICurve.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/ICurve.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -21,7 +21,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

@@ -1,12 +1,12 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Lighting_oM/Elements/Luminaire.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Lighting_oM/Elements/Luminaire.json",
   "title" : "Luminaire",
   "type" : ["object", "null"],
   "properties" : {
     "Position" : {
       "description" : "Position of the Luminaire in global Cartesian 3D space. Point: Defines a dimensionless location in three-dimensional space.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/Point.json"
     },
     "Type" : {
       "type" : ["string", "null"],
@@ -14,11 +14,11 @@
     },
     "Orientation" : {
       "description" : "The direction that the Luminaire is oriented towards. Basis: An ordered set of mutually orthogonal unit vectors defining three-dimensional orientation in space",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Basis.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/Basis.json"
     },
     "LuminaireType" : {
       "description" : "The Luminaire Type applied to the Luminaire. LuminaireType: A LuminaireType containing manufacturer, dimensional, and other property data applied to a Luminaire.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Lighting_oM/Elements/LuminaireType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Lighting_oM/Elements/LuminaireType.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -28,7 +28,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

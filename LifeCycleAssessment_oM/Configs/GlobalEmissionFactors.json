@@ -1,16 +1,16 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Configs/GlobalEmissionFactors.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Configs/GlobalEmissionFactors.json",
   "title" : "GlobalEmissionFactors",
   "type" : ["object", "null"],
   "properties" : {
     "PreConstructionDemolition" : {
       "description" : "The demolition activities associated with the pre-construction process, which will increase the emissions associated with the construction phase of the building lifecycle. The impact on the final element will be scaled according to its part of the total mass of the building. PreConstructionDemolition: A class defining the environmental impacts associated with the demolition of existing buildings prior to construction of a new building.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/Construction/PreConstructionDemolition.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/MaterialFragments/Construction/PreConstructionDemolition.json"
     },
     "ConstructionActivities" : {
       "description" : "The construction activities associated with the construction process, which will increase the emissions associated with the construction phase of the building lifecycle. The impact on the final element will be scaled according to its part of the total mass of the building. ConstructionActivities: A class defining the environmental impacts associated with the construction activities of a building.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/Construction/ConstructionActivities.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/MaterialFragments/Construction/ConstructionActivities.json"
     },
     "TotalBuildingMass" : {
       "type" : "number",
@@ -28,7 +28,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

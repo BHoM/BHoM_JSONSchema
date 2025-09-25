@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/IFragment.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/IFragment.json",
   "required" : ["_t"],
   "properties" : {
     "_t" : {
@@ -18,7 +18,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/Elements/AutoLengthOffset.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/ETABS_oM/Elements/AutoLengthOffset.json"
       }
     }, {
       "if" : {
@@ -31,7 +31,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/Elements/Diaphragm.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/ETABS_oM/Elements/Diaphragm.json"
       }
     }, {
       "if" : {
@@ -44,7 +44,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/Elements/InsertionPoint.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/ETABS_oM/Elements/InsertionPoint.json"
       }
     }, {
       "if" : {
@@ -57,7 +57,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/Elements/Pier.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/ETABS_oM/Elements/Pier.json"
       }
     }, {
       "if" : {
@@ -70,7 +70,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/Elements/Spandrel.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/ETABS_oM/Elements/Spandrel.json"
       }
     }, {
       "if" : {
@@ -83,7 +83,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/ETABSId.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/ETABS_oM/ETABSId.json"
       }
     }, {
       "if" : {
@@ -96,7 +96,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/Fragments/ShellTypeFragment.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/ETABS_oM/Fragments/ShellTypeFragment.json"
       }
     }, {
       "if" : {
@@ -109,7 +109,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/GSA_oM/AnalysisTaskFragment.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/GSA_oM/AnalysisTaskFragment.json"
       }
     }, {
       "if" : {
@@ -122,7 +122,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/GSA_oM/DummyTag.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/GSA_oM/DummyTag.json"
       }
     }, {
       "if" : {
@@ -135,7 +135,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/GSA_oM/Fragments/PanelBoundaryNodeFragment.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/GSA_oM/Fragments/PanelBoundaryNodeFragment.json"
       }
     }, {
       "if" : {
@@ -148,7 +148,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/GSA_oM/GSAId.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/GSA_oM/GSAId.json"
       }
     }, {
       "if" : {
@@ -161,7 +161,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/GSA_oM/IsRigidConstraint.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/GSA_oM/IsRigidConstraint.json"
       }
     }, {
       "if" : {
@@ -174,7 +174,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/GSA_oM/MaterialFragments/Fabric.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/GSA_oM/MaterialFragments/Fabric.json"
       }
     }, {
       "if" : {
@@ -187,7 +187,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Lusas_oM/Fragments/MeshSettings1D.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Lusas_oM/Fragments/MeshSettings1D.json"
       }
     }, {
       "if" : {
@@ -200,7 +200,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Lusas_oM/Fragments/MeshSettings2D.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Lusas_oM/Fragments/MeshSettings2D.json"
       }
     }, {
       "if" : {
@@ -213,7 +213,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Lusas_oM/LusasId.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Lusas_oM/LusasId.json"
       }
     }, {
       "if" : {
@@ -226,7 +226,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MidasCivil_oM/MidasCivilId.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/MidasCivil_oM/MidasCivilId.json"
       }
     }, {
       "if" : {
@@ -239,7 +239,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/RAM_oM/RAMDeckData.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/RAM_oM/RAMDeckData.json"
       }
     }, {
       "if" : {
@@ -252,7 +252,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/RAM_oM/RAMFrameData.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/RAM_oM/RAMFrameData.json"
       }
     }, {
       "if" : {
@@ -265,7 +265,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/RAM_oM/RAMGridData.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/RAM_oM/RAMGridData.json"
       }
     }, {
       "if" : {
@@ -278,7 +278,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/RAM_oM/RAMId.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/RAM_oM/RAMId.json"
       }
     }, {
       "if" : {
@@ -291,7 +291,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/RAM_oM/RAMNodeForceData.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/RAM_oM/RAMNodeForceData.json"
       }
     }, {
       "if" : {
@@ -304,7 +304,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Elements/PipeDesignData.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Revit_oM/Elements/PipeDesignData.json"
       }
     }, {
       "if" : {
@@ -317,7 +317,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Parameters/RevitIdentifiers.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Revit_oM/Parameters/RevitIdentifiers.json"
       }
     }, {
       "if" : {
@@ -330,7 +330,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Parameters/RevitParametersToPush.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Revit_oM/Parameters/RevitParametersToPush.json"
       }
     }, {
       "if" : {
@@ -343,7 +343,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Parameters/RevitPulledParameters.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Revit_oM/Parameters/RevitPulledParameters.json"
       }
     }, {
       "if" : {
@@ -356,7 +356,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/RevitGeometry.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Revit_oM/RevitGeometry.json"
       }
     }, {
       "if" : {
@@ -369,7 +369,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/RevitRepresentation.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Revit_oM/RevitRepresentation.json"
       }
     }, {
       "if" : {
@@ -382,7 +382,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/RevitTypeFragment.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Revit_oM/RevitTypeFragment.json"
       }
     }, {
       "if" : {
@@ -395,7 +395,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/RFEM5_oM/RFEM5Id.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/RFEM5_oM/RFEM5Id.json"
       }
     }, {
       "if" : {
@@ -408,7 +408,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/RFEM6_oM/BHoMDataStructure/SupportDatastrures/RFEM6GeometricalLineLoadTypes.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/RFEM6_oM/BHoMDataStructure/SupportDatastrures/RFEM6GeometricalLineLoadTypes.json"
       }
     }, {
       "if" : {
@@ -421,7 +421,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/RFEM6_oM/IntermediateDatastructure/Geometry/RFEMLine.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/RFEM6_oM/IntermediateDatastructure/Geometry/RFEMLine.json"
       }
     }, {
       "if" : {
@@ -434,7 +434,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/RFEM6_oM/IntermediateDatastructure/Geometry/RFEMOpening.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/RFEM6_oM/IntermediateDatastructure/Geometry/RFEMOpening.json"
       }
     }, {
       "if" : {
@@ -447,7 +447,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/RFEM6_oM/RFEM6ID.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/RFEM6_oM/RFEM6ID.json"
       }
     }, {
       "if" : {
@@ -460,7 +460,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/RFEM6_oM/RFEMHinge.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/RFEM6_oM/RFEMHinge.json"
       }
     }, {
       "if" : {
@@ -473,7 +473,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/RFEM6_oM/RFEMLineSupport.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/RFEM6_oM/RFEMLineSupport.json"
       }
     }, {
       "if" : {
@@ -486,7 +486,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/RFEM6_oM/RFEMNodalSupport.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/RFEM6_oM/RFEMNodalSupport.json"
       }
     }, {
       "if" : {
@@ -499,7 +499,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Robot_oM/FramingElementDesignProperties.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Robot_oM/FramingElementDesignProperties.json"
       }
     }, {
       "if" : {
@@ -512,7 +512,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Robot_oM/LoadCaseLabel.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Robot_oM/LoadCaseLabel.json"
       }
     }, {
       "if" : {
@@ -525,7 +525,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Robot_oM/PanelFiniteElementIds.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Robot_oM/PanelFiniteElementIds.json"
       }
     }, {
       "if" : {
@@ -538,7 +538,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Robot_oM/RobotId.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Robot_oM/RobotId.json"
       }
     }, {
       "if" : {
@@ -551,7 +551,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/Elements/BarAutoMesh.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/SAP2000_oM/Elements/BarAutoMesh.json"
       }
     }, {
       "if" : {
@@ -564,7 +564,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/Elements/BarDesignProcedure.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/SAP2000_oM/Elements/BarDesignProcedure.json"
       }
     }, {
       "if" : {
@@ -577,7 +577,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/Elements/BarInsertionPoint.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/SAP2000_oM/Elements/BarInsertionPoint.json"
       }
     }, {
       "if" : {
@@ -590,7 +590,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/Fragments/PanelAutoMeshByCookieCutLines.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/SAP2000_oM/Fragments/PanelAutoMeshByCookieCutLines.json"
       }
     }, {
       "if" : {
@@ -603,7 +603,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/Fragments/PanelAutoMeshByCookieCutPoints.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/SAP2000_oM/Fragments/PanelAutoMeshByCookieCutPoints.json"
       }
     }, {
       "if" : {
@@ -616,7 +616,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/Fragments/PanelAutoMeshByGeneralDivide.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/SAP2000_oM/Fragments/PanelAutoMeshByGeneralDivide.json"
       }
     }, {
       "if" : {
@@ -629,7 +629,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/Fragments/PanelAutoMeshByMaximumSize.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/SAP2000_oM/Fragments/PanelAutoMeshByMaximumSize.json"
       }
     }, {
       "if" : {
@@ -642,7 +642,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/Fragments/PanelAutoMeshByNumberOfObjects.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/SAP2000_oM/Fragments/PanelAutoMeshByNumberOfObjects.json"
       }
     }, {
       "if" : {
@@ -655,7 +655,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/Fragments/PanelAutoMeshByPointsOnEdges.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/SAP2000_oM/Fragments/PanelAutoMeshByPointsOnEdges.json"
       }
     }, {
       "if" : {
@@ -668,7 +668,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/Fragments/PanelEdgeConstraint.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/SAP2000_oM/Fragments/PanelEdgeConstraint.json"
       }
     }, {
       "if" : {
@@ -681,7 +681,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/Fragments/PanelOffsetByJointPattern.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/SAP2000_oM/Fragments/PanelOffsetByJointPattern.json"
       }
     }, {
       "if" : {
@@ -694,7 +694,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/Fragments/PanelOffsetByPoint.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/SAP2000_oM/Fragments/PanelOffsetByPoint.json"
       }
     }, {
       "if" : {
@@ -707,7 +707,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP2000_oM/SAP2000Id.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/SAP2000_oM/SAP2000Id.json"
       }
     }, {
       "if" : {
@@ -720,7 +720,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Analytical_oM/Fragments/ProjectionFragment.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Analytical_oM/Fragments/ProjectionFragment.json"
       }
     }, {
       "if" : {
@@ -733,7 +733,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Analytical_oM/Fragments/RoutingFragment.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Analytical_oM/Fragments/RoutingFragment.json"
       }
     }, {
       "if" : {
@@ -746,7 +746,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Analytical_oM/Fragments/SourcesDependencyFragment.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Analytical_oM/Fragments/SourcesDependencyFragment.json"
       }
     }, {
       "if" : {
@@ -759,7 +759,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Analytical_oM/Fragments/TargetsDependencyFragment.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Analytical_oM/Fragments/TargetsDependencyFragment.json"
       }
     }, {
       "if" : {
@@ -772,7 +772,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/HashFragment.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/HashFragment.json"
       }
     }, {
       "if" : {
@@ -785,7 +785,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/RevisionFragment.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Diffing_oM/RevisionFragment.json"
       }
     }, {
       "if" : {
@@ -798,7 +798,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Fragments/AnalyticalConstruction.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Environment_oM/Fragments/AnalyticalConstruction.json"
       }
     }, {
       "if" : {
@@ -811,7 +811,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Fragments/BuildingAnalyticalFragment.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Environment_oM/Fragments/BuildingAnalyticalFragment.json"
       }
     }, {
       "if" : {
@@ -824,7 +824,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Fragments/BuildingContextFragment.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Environment_oM/Fragments/BuildingContextFragment.json"
       }
     }, {
       "if" : {
@@ -837,7 +837,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Fragments/BuildingResultFragment.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Environment_oM/Fragments/BuildingResultFragment.json"
       }
     }, {
       "if" : {
@@ -850,7 +850,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Fragments/CoefficientFragment.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Environment_oM/Fragments/CoefficientFragment.json"
       }
     }, {
       "if" : {
@@ -863,7 +863,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Fragments/EnvironmentConstructionFragment.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Environment_oM/Fragments/EnvironmentConstructionFragment.json"
       }
     }, {
       "if" : {
@@ -876,7 +876,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Fragments/LightReflectanceFragment.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Environment_oM/Fragments/LightReflectanceFragment.json"
       }
     }, {
       "if" : {
@@ -889,7 +889,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Fragments/LightTransmittanceFragment.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Environment_oM/Fragments/LightTransmittanceFragment.json"
       }
     }, {
       "if" : {
@@ -902,7 +902,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Fragments/LoadFragment.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Environment_oM/Fragments/LoadFragment.json"
       }
     }, {
       "if" : {
@@ -915,7 +915,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Fragments/OriginContextFragment.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Environment_oM/Fragments/OriginContextFragment.json"
       }
     }, {
       "if" : {
@@ -928,7 +928,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Fragments/PanelAnalyticalFragment.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Environment_oM/Fragments/PanelAnalyticalFragment.json"
       }
     }, {
       "if" : {
@@ -941,7 +941,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Fragments/PanelContextFragment.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Environment_oM/Fragments/PanelContextFragment.json"
       }
     }, {
       "if" : {
@@ -954,7 +954,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Fragments/RadiationFragment.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Environment_oM/Fragments/RadiationFragment.json"
       }
     }, {
       "if" : {
@@ -967,7 +967,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Fragments/SpaceAnalyticalFragment.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Environment_oM/Fragments/SpaceAnalyticalFragment.json"
       }
     }, {
       "if" : {
@@ -980,7 +980,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Fragments/SpaceContextFragment.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Environment_oM/Fragments/SpaceContextFragment.json"
       }
     }, {
       "if" : {
@@ -993,7 +993,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/MaterialFragments/GasMaterial.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Environment_oM/MaterialFragments/GasMaterial.json"
       }
     }, {
       "if" : {
@@ -1006,7 +1006,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/MaterialFragments/SolidMaterial.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Environment_oM/MaterialFragments/SolidMaterial.json"
       }
     }, {
       "if" : {
@@ -1019,7 +1019,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Fragments/ConstructionOffset.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Facade_oM/Fragments/ConstructionOffset.json"
       }
     }, {
       "if" : {
@@ -1032,7 +1032,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Fragments/FrameExtensionBox.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Facade_oM/Fragments/FrameExtensionBox.json"
       }
     }, {
       "if" : {
@@ -1045,7 +1045,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Fragments/GlazingLocation.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Facade_oM/Fragments/GlazingLocation.json"
       }
     }, {
       "if" : {
@@ -1058,7 +1058,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Fragments/PsiGlassEdge.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Facade_oM/Fragments/PsiGlassEdge.json"
       }
     }, {
       "if" : {
@@ -1071,7 +1071,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Fragments/PsiJoint.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Facade_oM/Fragments/PsiJoint.json"
       }
     }, {
       "if" : {
@@ -1084,7 +1084,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Fragments/UValueCavity.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Facade_oM/Fragments/UValueCavity.json"
       }
     }, {
       "if" : {
@@ -1097,7 +1097,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Fragments/UValueContinuous.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Facade_oM/Fragments/UValueContinuous.json"
       }
     }, {
       "if" : {
@@ -1110,7 +1110,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Fragments/UValueFrame.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Facade_oM/Fragments/UValueFrame.json"
       }
     }, {
       "if" : {
@@ -1123,7 +1123,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Fragments/UValueGlassCentre.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Facade_oM/Fragments/UValueGlassCentre.json"
       }
     }, {
       "if" : {
@@ -1136,7 +1136,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Fragments/UValueGlassEdge.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Facade_oM/Fragments/UValueGlassEdge.json"
       }
     }, {
       "if" : {
@@ -1149,7 +1149,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/ColourFragment.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Graphics_oM/ColourFragment.json"
       }
     }, {
       "if" : {
@@ -1162,7 +1162,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/Fragments/EntityRepresentation.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Graphics_oM/Fragments/EntityRepresentation.json"
       }
     }, {
       "if" : {
@@ -1175,7 +1175,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/Fragments/GraphRepresentation.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Graphics_oM/Fragments/GraphRepresentation.json"
       }
     }, {
       "if" : {
@@ -1188,7 +1188,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/Fragments/GroupRepresentation.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Graphics_oM/Fragments/GroupRepresentation.json"
       }
     }, {
       "if" : {
@@ -1201,7 +1201,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/Fragments/RelationRepresentation.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Graphics_oM/Fragments/RelationRepresentation.json"
       }
     }, {
       "if" : {
@@ -1214,7 +1214,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/RenderMesh.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Graphics_oM/RenderMesh.json"
       }
     }, {
       "if" : {
@@ -1227,7 +1227,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/IES_oM/Fragments/SurfaceIndexFragment.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/IES_oM/Fragments/SurfaceIndexFragment.json"
       }
     }, {
       "if" : {
@@ -1240,7 +1240,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Fragments/AdditionalEPDData.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Fragments/AdditionalEPDData.json"
       }
     }, {
       "if" : {
@@ -1253,7 +1253,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Fragments/EPDDensity.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Fragments/EPDDensity.json"
       }
     }, {
       "if" : {
@@ -1266,7 +1266,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/LifeCycleAssessmentScope.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/LifeCycleAssessmentScope.json"
       }
     }, {
       "if" : {
@@ -1279,7 +1279,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Scope.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Scope.json"
       }
     }, {
       "if" : {
@@ -1292,7 +1292,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Fragments/GeometryFragment.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/MEP_oM/Fragments/GeometryFragment.json"
       }
     }, {
       "if" : {
@@ -1305,7 +1305,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Fragments/IdentityFragment.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/MEP_oM/Fragments/IdentityFragment.json"
       }
     }, {
       "if" : {
@@ -1318,7 +1318,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Fragments/PlumbingFlowFragment.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/MEP_oM/Fragments/PlumbingFlowFragment.json"
       }
     }, {
       "if" : {
@@ -1331,7 +1331,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Fragments/PlumbingLoadingFixtureUnitFragment.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/MEP_oM/Fragments/PlumbingLoadingFixtureUnitFragment.json"
       }
     }, {
       "if" : {
@@ -1344,7 +1344,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/MaterialFragments/InsulationMaterial.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/MEP_oM/System/MaterialFragments/InsulationMaterial.json"
       }
     }, {
       "if" : {
@@ -1357,7 +1357,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/MaterialFragments/LiningMaterial.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/MEP_oM/System/MaterialFragments/LiningMaterial.json"
       }
     }, {
       "if" : {
@@ -1370,7 +1370,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Materials/VolumetricMaterialTakeoff.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Physical_oM/Materials/VolumetricMaterialTakeoff.json"
       }
     }, {
       "if" : {
@@ -1383,7 +1383,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/ReinforcementFragment.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Physical_oM/Reinforcement/ReinforcementFragment.json"
       }
     }, {
       "if" : {
@@ -1396,7 +1396,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/RevitHostFragment.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Revit_oM/RevitHostFragment.json"
       }
     }, {
       "if" : {
@@ -1409,7 +1409,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Fragments/ReinforcementDensity.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/Fragments/ReinforcementDensity.json"
       }
     }, {
       "if" : {
@@ -1422,7 +1422,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Fragments/SectionModifier.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/Fragments/SectionModifier.json"
       }
     }, {
       "if" : {
@@ -1435,7 +1435,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Fragments/SurfacePropertyModifier.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/Fragments/SurfacePropertyModifier.json"
       }
     }, {
       "if" : {
@@ -1448,7 +1448,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/Aluminium.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/MaterialFragments/Aluminium.json"
       }
     }, {
       "if" : {
@@ -1461,7 +1461,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/Concrete.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/MaterialFragments/Concrete.json"
       }
     }, {
       "if" : {
@@ -1474,7 +1474,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/GenericIsotropicMaterial.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/MaterialFragments/GenericIsotropicMaterial.json"
       }
     }, {
       "if" : {
@@ -1487,7 +1487,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/GenericOrthotropicMaterial.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/MaterialFragments/GenericOrthotropicMaterial.json"
       }
     }, {
       "if" : {
@@ -1500,7 +1500,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/Glulam.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/MaterialFragments/Glulam.json"
       }
     }, {
       "if" : {
@@ -1513,7 +1513,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/LaminatedVeneerLumberCrossbands.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/MaterialFragments/LaminatedVeneerLumberCrossbands.json"
       }
     }, {
       "if" : {
@@ -1526,7 +1526,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/LaminatedVeneerLumberParallel.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/MaterialFragments/LaminatedVeneerLumberParallel.json"
       }
     }, {
       "if" : {
@@ -1539,7 +1539,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/SawnTimber.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/MaterialFragments/SawnTimber.json"
       }
     }, {
       "if" : {
@@ -1552,7 +1552,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/Steel.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/MaterialFragments/Steel.json"
       }
     }, {
       "if" : {
@@ -1565,7 +1565,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/Timber.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/MaterialFragments/Timber.json"
       }
     }, {
       "if" : {
@@ -1578,7 +1578,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Reinforcement/PanelRebarIntent.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/Reinforcement/PanelRebarIntent.json"
       }
     }, {
       "if" : {
@@ -1591,7 +1591,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Test_oM/Adapter/TestAdapterId.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Test_oM/Adapter/TestAdapterId.json"
       }
     }, {
       "if" : {
@@ -1604,7 +1604,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/UI_oM/ParamOldIndexFragment.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/UI_oM/ParamOldIndexFragment.json"
       }
     }, {
       "if" : {
@@ -1617,7 +1617,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/UI_oM/PreviousNamesFragment.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/UI_oM/PreviousNamesFragment.json"
       }
     }, {
       "if" : {
@@ -1630,7 +1630,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/Fragments/XMLBuildingType.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/XML_oM/Fragments/XMLBuildingType.json"
       }
     }]
 }

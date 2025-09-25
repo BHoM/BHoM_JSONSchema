@@ -1,13 +1,13 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/Construction/ConstructionWasteEmissions.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/MaterialFragments/Construction/ConstructionWasteEmissions.json",
   "title" : "ConstructionWasteEmissions",
   "type" : ["object", "null"],
   "description" : "ConstructionWasteEmissions: Production, transportation, storage and end-of-life treatment and disposal of any material/waste on-site: transport, waste management and disposal of packaging materials.",
   "properties" : {
     "WasteRate" : {
       "description" : "The waste rate associated with the construction process. This factor is used to compute A5.3 emissions based on outputs for A1 to A4 and C2 to C4 available from either EPD and/or transport as well as disposal factors.\nThis value should be the percentage of material brought to site that goes to waste. This is turned into a waste factor to allow for evaluating based on quantities of the built asset. WasteRate: A class defining the waste rate associated with a construction material.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/Construction/WasteRate.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/MaterialFragments/Construction/WasteRate.json"
     },
     "ResuedOnSite" : {
       "type" : "boolean",
@@ -21,7 +21,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

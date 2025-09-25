@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Analytical_oM/Fragments/SourcesDependencyFragment.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Analytical_oM/Fragments/SourcesDependencyFragment.json",
   "title" : "SourcesDependencyFragment",
   "type" : ["object", "null"],
   "description" : "SourcesDependencyFragment: Dependency fragment used to define one or more Relations that originate at the specified sources and use the IBHoMObject owning this fragment as the target.",
@@ -17,7 +17,7 @@
       "type" : ["array", "null"],
       "description" : "Collection of ICurves used to represent the Relations.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ICurve.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/ICurve.json"
       }
     },
     "_t" : {

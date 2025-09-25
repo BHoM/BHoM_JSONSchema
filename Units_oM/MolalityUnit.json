@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Units_oM/MolalityUnit.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Units_oM/MolalityUnit.json",
   "anyOf" : [{
       "type" : "string",
       "enum" : ["Undefined", "MolePerKilogram", "MolePerGram", "MillimolePerKilogram"]

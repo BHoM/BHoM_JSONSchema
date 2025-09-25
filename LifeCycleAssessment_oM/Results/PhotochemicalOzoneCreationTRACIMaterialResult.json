@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/PhotochemicalOzoneCreationTRACIMaterialResult.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/PhotochemicalOzoneCreationTRACIMaterialResult.json",
   "title" : "PhotochemicalOzoneCreationTRACIMaterialResult",
   "type" : ["object", "null"],
   "description" : "PhotochemicalOzoneCreationTRACIMaterialResult: Result class for resulting Photochemical Ozone Creation as defined by the TRACI standard for a particular Material and EPD.",

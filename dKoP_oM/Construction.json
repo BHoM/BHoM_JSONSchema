@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/Construction.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/dKoP_oM/Construction.json",
   "title" : "Construction",
   "type" : ["object", "null"],
   "properties" : {
@@ -9,13 +9,13 @@
       "description" : "Property has a quantity of type Mass measured in [kg]."
     },
     "LiftingPoints" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/LiftingPoints.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/dKoP_oM/LiftingPoints.json"
     },
     "TemporaryWorks" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/TemporaryWorks.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/dKoP_oM/TemporaryWorks.json"
     },
     "WeatherProtection" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/WeatherProtection.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/dKoP_oM/WeatherProtection.json"
     },
     "_t" : {
       "type" : "string",

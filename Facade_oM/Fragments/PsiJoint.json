@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Fragments/PsiJoint.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Facade_oM/Fragments/PsiJoint.json",
   "title" : "PsiJoint",
   "type" : ["object", "null"],
   "description" : "PsiJoint: A Psi value representing the linear joint thermal transmittance in W/m2 along the centerline of a frame edge.",

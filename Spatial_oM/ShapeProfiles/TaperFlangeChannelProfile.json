@@ -1,12 +1,12 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/TaperFlangeChannelProfile.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Spatial_oM/ShapeProfiles/TaperFlangeChannelProfile.json",
   "title" : "TaperFlangeChannelProfile",
   "type" : ["object", "null"],
   "description" : "TaperFlangeChannelProfile: C-shaped profile with tapered flanges of the same length and thickness.",
   "properties" : {
     "Shape" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/ShapeType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Spatial_oM/ShapeProfiles/ShapeType.json"
     },
     "Height" : {
       "type" : "number",
@@ -44,7 +44,7 @@
       "type" : ["array", "null"],
       "description" : "Edge curves that match the dimensions in the global XY-plane.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ICurve.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/ICurve.json"
       }
     },
     "BHoM_Guid" : {
@@ -55,7 +55,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

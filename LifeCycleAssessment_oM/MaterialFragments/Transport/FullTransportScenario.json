@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/Transport/FullTransportScenario.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/MaterialFragments/Transport/FullTransportScenario.json",
   "title" : "FullTransportScenario",
   "type" : ["object", "null"],
   "description" : "FullTransportScenario: Class outlining the transport emmisions relating to a full transport scenario giving total emissions per mass of material transported.",
@@ -13,7 +13,7 @@
       "type" : ["array", "null"],
       "description" : "Metrics relating to the transport scenario. All metrics assumed to be impact per mass.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/IEnvironmentalFactor.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/MaterialFragments/IEnvironmentalFactor.json"
       }
     },
     "BHoM_Guid" : {
@@ -21,7 +21,7 @@
       "format" : "uuid"
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

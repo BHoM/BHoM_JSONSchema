@@ -1,26 +1,26 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Analysis/AnalysisGrid.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Environment_oM/Analysis/AnalysisGrid.json",
   "title" : "AnalysisGrid",
   "type" : ["object", "null"],
   "description" : "AnalysisGrid: An AnalysisGrid is used to define an area in 3D space that should be analysed for a given set of results, e.g. daylighting levels, wind levels, heat indexes, etc. - an AnalysisGrid can be used to represent a measurable bit of the environment, including a void in a space, or it can be used to represent a mesh on a panel for analysis",
   "properties" : {
     "BoundaryCurve" : {
       "description" : "The BoundaryCurve is the outer-most edges of the AnalysisGrid. Nodes should not fall outside of this curve Polyline: A curve consisting of a continuous chain of straight line segments. The Polyline is considered closed if the first and last ControlPoints are coincident.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Polyline.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/Polyline.json"
     },
     "InnerCurves" : {
       "type" : ["array", "null"],
       "description" : "The InnerCurves define any openings within the AnalysisGrid which should not be analysed or included in results, such as windows, doors, or atriums",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Polyline.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/Polyline.json"
       }
     },
     "Nodes" : {
       "type" : ["array", "null"],
       "description" : "The Nodes define the geometric points in 3D space that form the analysis points of this grid. Each node in the Nodes property will be analysed in the analysis package",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Analysis/Node.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Environment_oM/Analysis/Node.json"
       }
     },
     "ID" : {
@@ -36,7 +36,7 @@
       "format" : "uuid"
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

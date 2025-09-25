@@ -1,20 +1,20 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Reinforcement/LongitudinalReinforcement.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/Reinforcement/LongitudinalReinforcement.json",
   "title" : "LongitudinalReinforcement",
   "type" : ["object", "null"],
   "description" : "LongitudinalReinforcement: Defines any longitudinal reinforcement along a Bar.",
   "properties" : {
     "RebarLayout" : {
       "description" : "Layout controlling the distribution of the rebars across the SectionProperty. ILayout2D: Base interface for all 2D layouts",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/Layouts/ILayout2D.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Spatial_oM/Layouts/ILayout2D.json"
     },
     "Diameter" : {
       "type" : "number",
       "description" : "Diameter of a single rebar. Property has a quantity of type Length measured in [m]."
     },
     "Material" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/IMaterialFragment.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/MaterialFragments/IMaterialFragment.json"
     },
     "StartLocation" : {
       "type" : "number",
@@ -32,7 +32,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

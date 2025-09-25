@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Quantities_oM/Quantity`1.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Quantities_oM/Quantity`1.json",
   "title" : "Quantity`1",
   "type" : ["object", "null"],
   "description" : "Quantity`1: Represents a numerical value with a quantity type attached to it. The quantity type includes dimensionality as well as SI unit.",

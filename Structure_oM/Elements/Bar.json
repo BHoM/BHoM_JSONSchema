@@ -1,21 +1,21 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Bar.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/Elements/Bar.json",
   "title" : "Bar",
   "type" : ["object", "null"],
   "description" : "Bar: 1D finite element for structural analysis. Linear 2-noded element defined by a start and end node.For structural conventions and orientation of the bar please see the documentation.",
   "properties" : {
     "Start" : {
       "description" : "Defines the start position of the element. Note that Nodes can contain Supports which should not be confused with Releases. Node: 0D finite element for structural analysis. Node class contains positional information as well as orientation and support.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Node.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/Elements/Node.json"
     },
     "End" : {
       "description" : "Defines the end position of the element. Note that Nodes can contain Supports which should not be confused with Releases. Node: 0D finite element for structural analysis. Node class contains positional information as well as orientation and support.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Node.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/Elements/Node.json"
     },
     "SectionProperty" : {
       "description" : "Section property of the bar, containing all sectional constants and material as well as profile geometry and dimensions, where applicable. ISectionProperty: Base interface for all bar section properties. Contains the material and all section constants.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SectionProperties/ISectionProperty.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/SectionProperties/ISectionProperty.json"
     },
     "OrientationAngle" : {
       "type" : "number",
@@ -23,18 +23,18 @@
     },
     "Release" : {
       "description" : "Defines the start and end release of the Bar. The releases defines how the bar is attached to its end nodes. If not set, full fixity will be assumed. BarRelease: Defines the releases at the start and end node of a Bar.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Constraints/BarRelease.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/Constraints/BarRelease.json"
     },
     "FEAType" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/BarFEAType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/Elements/BarFEAType.json"
     },
     "Support" : {
       "description" : "Linear support for the bar. Three translational degrees of freedom and one rotational. The rotational DOF defines constraint about the axis of the bar. Constraint4DOF: Constraint objects with four degrees of freedom, three translational and one rotational. Used for support or release of 1D analytical elements of 2D analytical objects. The Rotational DOF will correspond to rotation about the axis of the object.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Constraints/Constraint4DOF.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/Constraints/Constraint4DOF.json"
     },
     "Offset" : {
       "description" : "Offset of the bar as two vectors, one per end node, in bar local coordinates. Defines offsets from centreline to be applied in analysis packages. Offset: Class defining offsets for bar objects from its end Nodes to be applied in analysis packages.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Offsets/Offset.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/Offsets/Offset.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -44,7 +44,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

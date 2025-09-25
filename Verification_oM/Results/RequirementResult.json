@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Results/RequirementResult.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Verification_oM/Results/RequirementResult.json",
   "title" : "RequirementResult",
   "type" : ["object", "null"],
   "description" : "RequirementResult: Object representing result of verification of an object against a Requirement.",
@@ -13,13 +13,13 @@
     },
     "VerificationResult" : {
       "description" : "Result of object verification against the condition specified in the Requirement. IConditionResult: Top interface for all condition results.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Results/IConditionResult.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Verification_oM/Results/IConditionResult.json"
     },
     "Events" : {
       "type" : ["array", "null"],
       "description" : "List of events that occurred during the verification process.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Debugging/Event.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/Debugging/Event.json"
       }
     },
     "_t" : {

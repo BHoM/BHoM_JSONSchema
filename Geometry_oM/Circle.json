@@ -1,17 +1,17 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Circle.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/Circle.json",
   "title" : "Circle",
   "type" : ["object", "null"],
   "description" : "Circle: A plane curve. Standard circle defining a curve of constant distance from a point, its Centre.",
   "properties" : {
     "Centre" : {
       "description" : "Origin point defining location of the Circle in three-dimensional space. Point: Defines a dimensionless location in three-dimensional space.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/Point.json"
     },
     "Normal" : {
       "description" : "Vector perpendicular to the plane in which the Circle lies. Vector: Defines a direction and magnitude in three-dimensional Euclidean space.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/Vector.json"
     },
     "Radius" : {
       "type" : "number",

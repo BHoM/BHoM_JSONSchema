@@ -1,17 +1,17 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Climate/SpaceTime.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Environment_oM/Climate/SpaceTime.json",
   "title" : "SpaceTime",
   "type" : ["object", "null"],
   "description" : "SpaceTime: Represents a specific moment in time related to a specific location of Earth geometry. Used for obtaining solar positions for specific moments in time at specific points on Earth",
   "properties" : {
     "Location" : {
       "description" : "Describes the location of Earth geometry using the Location object which provides longitudal and latitudal data Location: Defines a uniquely identifiable point on the Earth in standard global Latitude, Longitude and Elevation, coordinate system. Particularly useful for specifying local climate conditions for environmental analysis.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Climate/Location.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Environment_oM/Climate/Location.json"
     },
     "Time" : {
       "description" : "Describes a specific moment in time Time: An environment object used to describe time for climate analysis",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Climate/Time.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Environment_oM/Climate/Time.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -21,7 +21,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

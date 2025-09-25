@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Loft.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/Loft.json",
   "title" : "Loft",
   "type" : ["object", "null"],
   "description" : "Loft: A free-form surface defined by a series of cross sectional Curves. The surface provides a continuous interpolation passing through each Curve in order.",
@@ -9,7 +9,7 @@
       "type" : ["array", "null"],
       "description" : "An ordered list of Curves defining the varying cross sectional surface profile.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ICurve.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/ICurve.json"
       }
     },
     "_t" : {

@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode77.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Physical_oM/Reinforcement/BS8666/ShapeCode77.json",
   "title" : "ShapeCode77",
   "type" : ["object", "null"],
   "description" : "ShapeCode77: A reinforcement bar with shape code 77 to BS 8666:2020 in the XY Plane centred on the Origin. The spiral starts at the lowest point of the circle (Y axis) once laps have been accounted for and continues anticlockwise parallel to the Z axis.",
@@ -33,7 +33,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

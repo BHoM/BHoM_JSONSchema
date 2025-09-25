@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/NodeModalMass.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/Results/NodeModalMass.json",
   "title" : "NodeModalMass",
   "type" : ["object", "null"],
   "description" : "NodeModalMass: Modal mass for a Node.",
@@ -33,7 +33,7 @@
     },
     "Orientation" : {
       "description" : "Defines the directionality of the results. Defaults to global XYZ. Basis: An ordered set of mutually orthogonal unit vectors defining three-dimensional orientation in space",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Basis.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/Basis.json"
     },
     "_t" : {
       "type" : "string",

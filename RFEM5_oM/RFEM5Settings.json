@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/RFEM5_oM/RFEM5Settings.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/RFEM5_oM/RFEM5Settings.json",
   "title" : "RFEM5Settings",
   "type" : ["object", "null"],
   "description" : "RFEM5Settings: This Config can be specified in the `ActionConfig` input of any Adapter Action (e.g. Push).",

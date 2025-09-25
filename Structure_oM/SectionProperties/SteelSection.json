@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SectionProperties/SteelSection.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/SectionProperties/SteelSection.json",
   "title" : "SteelSection",
   "type" : ["object", "null"],
   "description" : "SteelSection: Steel section to be used on Bars. Defined by a section profile.",
@@ -11,19 +11,19 @@
     },
     "Fabrication" : {
       "description" : "The fabrication method used for the section.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SectionProperties/SteelFabrication.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/SectionProperties/SteelFabrication.json"
     },
     "PlateRestraint" : {
       "description" : "Defines whether any of the plates of the section have any external restraint, from for example a connecting slab.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SectionProperties/SteelPlateRestraint.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/SectionProperties/SteelPlateRestraint.json"
     },
     "Material" : {
       "description" : "Homogeneous material used throughout the full section. IMaterialFragment: Base interface for structural materials used by structural properties or as a fragment of the physical material.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/IMaterialFragment.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/MaterialFragments/IMaterialFragment.json"
     },
     "SectionProfile" : {
       "description" : "Profile of the section, containing dimensions and section geometry. IProfile: Base interface for all shape profiles.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/IProfile.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Spatial_oM/ShapeProfiles/IProfile.json"
     },
     "Area" : {
       "type" : "number",
@@ -106,7 +106,7 @@
       "format" : "uuid"
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

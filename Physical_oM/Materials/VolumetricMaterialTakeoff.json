@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Materials/VolumetricMaterialTakeoff.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Physical_oM/Materials/VolumetricMaterialTakeoff.json",
   "title" : "VolumetricMaterialTakeoff",
   "type" : ["object", "null"],
   "description" : "VolumetricMaterialTakeoff: Defines the make up of an object through a list of Materials and their corresponding volumes.\nThere must be the same number of items in both lists, assigning a single Volume for each Material.",
@@ -12,7 +12,7 @@
           "type" : ["array", "null"],
           "description" : "The Materials that form an object's make up, the order of which corresponds to the order of the Volumes.",
           "items" : {
-            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Materials/Material.json"
+            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Physical_oM/Materials/Material.json"
           }
         }
       }
@@ -37,7 +37,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode29.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Physical_oM/Reinforcement/BS8666/ShapeCode29.json",
   "title" : "ShapeCode29",
   "type" : ["object", "null"],
   "description" : "ShapeCode29: A reinforcement bar with shape code 29 to BS 8666:2020 in the XY Plane with the free end of the A segment starting at the Origin aligned with the X axis, the C/E parameters aligned with the X axis and the D parameter aligned with the Y axis.",
@@ -41,7 +41,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

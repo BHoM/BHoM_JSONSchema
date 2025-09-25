@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Library/Source.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Data_oM/Library/Source.json",
   "title" : "Source",
   "type" : ["object", "null"],
   "properties" : {
@@ -50,7 +50,7 @@
     },
     "Confidence" : {
       "description" : "Level of confidence of the data related to the source. Confidence: Level of confidence for the serialized DataSet, outlining both the reliability of the source and the fidelity of the dataset to that source.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Data_oM/Library/Confidence.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Data_oM/Library/Confidence.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -60,7 +60,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

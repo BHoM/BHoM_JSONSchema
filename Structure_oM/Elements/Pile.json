@@ -1,21 +1,21 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Pile.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/Elements/Pile.json",
   "title" : "Pile",
   "type" : ["object", "null"],
   "description" : "Pile: A pile object defined by it's location and section.",
   "properties" : {
     "TopNode" : {
       "description" : "Defines the top Node. Note that Nodes can contain Supports. Node: 0D finite element for structural analysis. Node class contains positional information as well as orientation and support.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Node.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/Elements/Node.json"
     },
     "BottomNode" : {
       "description" : "Defines the end position of the Pile. Note that Nodes can contain Supports. Node: 0D finite element for structural analysis. Node class contains positional information as well as orientation and support.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Node.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/Elements/Node.json"
     },
     "Section" : {
       "description" : "Section property of the Pile, containing all sectional constants and material as well as profile geometry and dimensions, where applicable. ISectionProperty: Base interface for all bar section properties. Contains the material and all section constants.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SectionProperties/ISectionProperty.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/SectionProperties/ISectionProperty.json"
     },
     "OrientationAngle" : {
       "type" : "number",
@@ -29,7 +29,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

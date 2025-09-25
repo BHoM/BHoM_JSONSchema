@@ -1,19 +1,19 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/Profile.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Environment_oM/SpaceCriteria/Profile.json",
   "title" : "Profile",
   "type" : ["object", "null"],
   "description" : "Profile: A profile object represents a gain, thermostat or humdistat as conditions vary over a 24-hour period",
   "properties" : {
     "ProfileType" : {
       "description" : "Profile Type depicts the type of profile (OnOff (0 or 1), ModulatingPercentage (0.0-1.0), or Absolute (-10000 to +10000))",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/ProfileType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Environment_oM/SpaceCriteria/ProfileType.json"
     },
     "ProfileDay" : {
       "type" : ["array", "null"],
       "description" : "Profile Day depicts the day described in the profile, whether it's a day of the week or a holiday",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/SpaceCriteria/ProfileDay.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Environment_oM/SpaceCriteria/ProfileDay.json"
       }
     },
     "HourlyValues" : {
@@ -31,7 +31,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

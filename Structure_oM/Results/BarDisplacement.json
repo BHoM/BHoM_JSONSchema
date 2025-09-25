@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/BarDisplacement.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/Results/BarDisplacement.json",
   "title" : "BarDisplacement",
   "type" : ["object", "null"],
   "description" : "BarDisplacement: Resulting total displacements in global coordinates along the bar.",

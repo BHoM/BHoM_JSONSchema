@@ -1,20 +1,20 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/SimulationResult.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LadybugTools_oM/SimulationResult.json",
   "title" : "SimulationResult",
   "type" : ["object", "null"],
   "properties" : {
     "EpwFile" : {
       "description" : "The EPW file associated with this object. FileSettings: The fileSettings, file name and directory, to use with an adapter for push and pull",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/FileSettings.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Adapter_oM/FileSettings.json"
     },
     "GroundMaterial" : {
       "description" : "The ground material used in the processing of this object. IEnergyMaterialOpaque: An interface for opaque energy materials.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/IEnergyMaterialOpaque.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LadybugTools_oM/IEnergyMaterialOpaque.json"
     },
     "ShadeMaterial" : {
       "description" : "The shade material used in the processing of this object. IEnergyMaterialOpaque: An interface for opaque energy materials.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/IEnergyMaterialOpaque.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LadybugTools_oM/IEnergyMaterialOpaque.json"
     },
     "Name" : {
       "type" : ["string", "null"],
@@ -22,58 +22,58 @@
     },
     "ShadedDownTemperature" : {
       "description" : "The Shaded Down Temperature used in the processing of this object",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/HourlyContinuousCollection.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LadybugTools_oM/HourlyContinuousCollection.json"
     },
     "ShadedUpTemperature" : {
       "description" : "The Shaded Up Temperature used in the processing of this object",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/HourlyContinuousCollection.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LadybugTools_oM/HourlyContinuousCollection.json"
     },
     "ShadedRadiantTemperature" : {
       "description" : "The Shaded Radiant Temperature used in the processing of this object",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/HourlyContinuousCollection.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LadybugTools_oM/HourlyContinuousCollection.json"
     },
     "ShadedLongwaveMeanRadiantTemperatureDelta" : {
       "description" : "The Shaded Longwave Mean Radiant Temperature Delta used in the processing of this object",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/HourlyContinuousCollection.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LadybugTools_oM/HourlyContinuousCollection.json"
     },
     "ShadedShortwaveMeanRadiantTemperatureDelta" : {
       "description" : "The Shaded Shortwave Mean Radiant Temperature Delta used in the processing of this object",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/HourlyContinuousCollection.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LadybugTools_oM/HourlyContinuousCollection.json"
     },
     "ShadedMeanRadiantTemperature" : {
       "description" : "The Shaded Mean Radiant Temperature used in the processing of this object",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/HourlyContinuousCollection.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LadybugTools_oM/HourlyContinuousCollection.json"
     },
     "UnshadedDownTemperature" : {
       "description" : "The Unshaded Down Temperature used in the processing of this object",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/HourlyContinuousCollection.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LadybugTools_oM/HourlyContinuousCollection.json"
     },
     "UnshadedUpTemperature" : {
       "description" : "The Unshaded Up Temperature used in the processing of this object",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/HourlyContinuousCollection.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LadybugTools_oM/HourlyContinuousCollection.json"
     },
     "UnshadedRadiantTemperature" : {
       "description" : "The Unshaded Radiant Temperature used in the processing of this object",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/HourlyContinuousCollection.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LadybugTools_oM/HourlyContinuousCollection.json"
     },
     "UnshadedLongwaveMeanRadiantTemperatureDelta" : {
       "description" : "The Unshaded Longwave Mean Radiant Temperature Delta used in the processing of this object",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/HourlyContinuousCollection.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LadybugTools_oM/HourlyContinuousCollection.json"
     },
     "UnshadedShortwaveMeanRadiantTemperatureDelta" : {
       "description" : "The Unshaded Shortwave Mean Radiant Temperature Delta used in the processing of this object",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/HourlyContinuousCollection.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LadybugTools_oM/HourlyContinuousCollection.json"
     },
     "UnshadedMeanRadiantTemperature" : {
       "description" : "The Unshaded Mean Radiant Temperature used in the processing of this object",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/HourlyContinuousCollection.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LadybugTools_oM/HourlyContinuousCollection.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
       "format" : "uuid"
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

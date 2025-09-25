@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MetricType.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/MetricType.json",
   "anyOf" : [{
       "type" : "string",
       "enum" : ["Undefined", "AbioticDepletionFossilResources", "AbioticDepletionMineralsAndMetals", "Acidification", "ClimateChangeBiogenic", "ClimateChangeFossil", "ClimateChangeLandUse", "ClimateChangeTotal", "ClimateChangeTotalNoBiogenic", "EutrophicationCML", "EutrophicationAquaticFreshwater", "EutrophicationAquaticMarine", "EutrophicationTerrestrial", "EutrophicationTRACI", "OzoneDepletion", "PhotochemicalOzoneCreation", "PhotochemicalOzoneCreationCML", "PhotochemicalOzoneCreationTRACI", "WaterDeprivation"]

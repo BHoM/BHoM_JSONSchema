@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/PullGeometryConfig.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Revit_oM/PullGeometryConfig.json",
   "title" : "PullGeometryConfig",
   "type" : ["object", "null"],
   "description" : "PullGeometryConfig: Configuration used to specify which geometry should be pulled and passed to RevitGeometry fragment.",
@@ -19,7 +19,7 @@
     },
     "MeshDetailLevel" : {
       "description" : "Detail level of mesh to be pulled, correspondent to level of detail in Revit. DetailLevel: Enum specifying detail level of representation, correspondent to level of detail in Revit.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Enums/DetailLevel.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Revit_oM/Enums/DetailLevel.json"
     },
     "IncludeNonVisible" : {
       "type" : "boolean",

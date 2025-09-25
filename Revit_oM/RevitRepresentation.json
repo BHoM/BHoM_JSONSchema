@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/RevitRepresentation.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Revit_oM/RevitRepresentation.json",
   "title" : "RevitRepresentation",
   "type" : ["object", "null"],
   "description" : "RevitRepresentation: Fragment containing the representation extracted from Revit element represented by the BHoM object.",
@@ -9,7 +9,7 @@
       "type" : ["array", "null"],
       "description" : "Mesh representation of Revit element represented by the BHoM object carrying this fragment.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/RenderMesh.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Graphics_oM/RenderMesh.json"
       }
     },
     "_t" : {

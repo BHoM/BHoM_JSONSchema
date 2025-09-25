@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/MultiOutputAttribute.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/Attributes/MultiOutputAttribute.json",
   "title" : "MultiOutputAttribute",
   "type" : ["object", "null"],
   "description" : "MultiOutputAttribute: Attribute providing information about an output parameter of a multi-output method.\nTo be applied to all methods that return BH.oM.Base.Output types.",
@@ -19,7 +19,7 @@
     },
     "Classification" : {
       "description" : "Classification of the correspondent output parameter, e.g. folder path, quantity etc. ClassificationAttribute: Attribute representing classification of method parameters and object properties, i.e. it tells that a given member is a folder path, quantity etc.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/Attributes/ClassificationAttribute.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/Attributes/ClassificationAttribute.json"
     },
     "TypeId" : { },
     "_t" : {

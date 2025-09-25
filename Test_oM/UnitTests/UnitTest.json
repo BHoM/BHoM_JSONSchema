@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Test_oM/UnitTests/UnitTest.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Test_oM/UnitTests/UnitTest.json",
   "title" : "UnitTest",
   "type" : ["object", "null"],
   "description" : "UnitTest: Defines a data-driven unit test for a specific method. Class defines inputs, method to be run and expected output.",
@@ -10,7 +10,7 @@
       "type" : ["array", "null"],
       "description" : "List of input/output pairs to test the method for. Each TestData item corresponds to one run of the method.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Test_oM/UnitTests/TestData.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Test_oM/UnitTests/TestData.json"
       }
     },
     "BHoM_Guid" : {
@@ -21,7 +21,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

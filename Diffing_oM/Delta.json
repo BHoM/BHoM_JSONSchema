@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/Delta.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Diffing_oM/Delta.json",
   "title" : "Delta",
   "type" : ["object", "null"],
   "description" : "Delta: Contains the Diff plus context information: parent Stream, Timestamp, etc.",
@@ -12,7 +12,7 @@
     },
     "Diff" : {
       "description" : "Represent the differences between two sets of objects. Diff: Represents the differences between two sets of objects.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/Diff.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Diffing_oM/Diff.json"
     },
     "RevisionFrom" : {
       "type" : "string",

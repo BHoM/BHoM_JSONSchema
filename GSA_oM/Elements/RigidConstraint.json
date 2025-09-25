@@ -1,24 +1,24 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/GSA_oM/Elements/RigidConstraint.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/GSA_oM/Elements/RigidConstraint.json",
   "title" : "RigidConstraint",
   "type" : ["object", "null"],
   "description" : "RigidConstraint: A rigid constraint defining linkage between nodes.",
   "properties" : {
     "PrimaryNode" : {
       "description" : "Defines the primary node of the rigid constraint. Node: 0D finite element for structural analysis. Node class contains positional information as well as orientation and support.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Node.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/Elements/Node.json"
     },
     "ConstrainedNodes" : {
       "type" : ["array", "null"],
       "description" : "Defines the constrained nodes of the rigid constraint. Can be a list of nodes.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Node.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/Elements/Node.json"
       }
     },
     "Type" : {
       "description" : "Type of rigid constraint. RigidConstraintLinkType: Defines type rigid constraint link.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/GSA_oM/RigidConstraintLinkType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/GSA_oM/RigidConstraintLinkType.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -28,7 +28,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

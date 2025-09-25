@@ -1,17 +1,17 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/HeatPlotCommand.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LadybugTools_oM/HeatPlotCommand.json",
   "title" : "HeatPlotCommand",
   "type" : ["object", "null"],
   "description" : "HeatPlotCommand: Command that, when executed with the LadybugToolsAdapter, produces a heatmap from data in an epw file.\nOutput is a string of either the path to the image (if OutputLocation is not set) or the base 64 string representation of it.",
   "properties" : {
     "EPWFile" : {
       "description" : "The path to an EPW file. FileSettings: The fileSettings, file name and directory, to use with an adapter for push and pull",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/FileSettings.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Adapter_oM/FileSettings.json"
     },
     "EPWKey" : {
       "description" : "Key representing an hourly continuous collection in the EPW file to plot. EPWKey: An enum for keys that frequently appear in epw files.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/EPWKey.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LadybugTools_oM/EPWKey.json"
     },
     "ColourMap" : {
       "type" : ["string", "null"],

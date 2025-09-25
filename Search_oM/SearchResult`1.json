@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Search_oM/SearchResult`1.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Search_oM/SearchResult`1.json",
   "title" : "SearchResult`1",
   "type" : ["object", "null"],
   "description" : "SearchResult`1: A result class containing objects, scores and indexes.",

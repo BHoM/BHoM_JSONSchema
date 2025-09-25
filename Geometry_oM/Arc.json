@@ -1,13 +1,13 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Arc.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/Arc.json",
   "title" : "Arc",
   "type" : ["object", "null"],
   "description" : "Arc: A plane curve. A circular Arc, a curve, with a constant distance from a point, its centre, defined it the local angular domain between start and end angle.",
   "properties" : {
     "CoordinateSystem" : {
       "description" : "Defines Arc centre equal to Origin of the CoordinateSystem, as well as the orientation of the Arc in three-dimensional space, equal to local xy-Plane of the CoordinateSystem. Cartesian: A three-dimensional Cartesian coordinate system, as defined by a set of mutually orthogonal unit vectors and a common origin point",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/CoordinateSystem/Cartesian.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/CoordinateSystem/Cartesian.json"
     },
     "Radius" : {
       "type" : "number",

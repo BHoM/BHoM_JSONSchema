@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/Colours/GradientOptions.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Graphics_oM/Colours/GradientOptions.json",
   "title" : "GradientOptions",
   "type" : ["object", "null"],
   "description" : "GradientOptions: Defines options for range and centering for a Gradient.",
@@ -11,7 +11,7 @@
     },
     "Gradient" : {
       "description" : "The Gradient to colour by.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/IGradient.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Graphics_oM/IGradient.json"
     },
     "LowerBound" : {
       "type" : "number",
@@ -23,14 +23,14 @@
     },
     "GradientCenteringOptions" : {
       "description" : "A GradientCenteringOptions enum to set centering options. Defaults to no centering. GradientCenteringOptions: Either do not centre the range of the gradient, extend the range to be centred around 0, or make 0 the midpoint of the gradient while keeping UpperBound and LowerBound as the ends.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/Enums/GradientCenteringOptions.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Graphics_oM/Enums/GradientCenteringOptions.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
       "format" : "uuid"
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

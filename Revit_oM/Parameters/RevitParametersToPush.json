@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Parameters/RevitParametersToPush.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Revit_oM/Parameters/RevitParametersToPush.json",
   "title" : "RevitParametersToPush",
   "type" : ["object", "null"],
   "description" : "RevitParametersToPush: An entity containing parameters attached to the BHoM object that will be set to a correspondent Revit element on push.",
@@ -12,7 +12,7 @@
           "type" : ["array", "null"],
           "description" : "Collection of parameters to be pushed to a Revit element.",
           "items" : {
-            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Parameters/RevitParameter.json"
+            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Revit_oM/Parameters/RevitParameter.json"
           }
         }
       }
@@ -25,7 +25,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

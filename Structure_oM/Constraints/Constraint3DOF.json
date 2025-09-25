@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Constraints/Constraint3DOF.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/Constraints/Constraint3DOF.json",
   "title" : "Constraint3DOF",
   "type" : ["object", "null"],
   "description" : "Constraint3DOF: Constraint objects with three translational degrees of freedom, used for support of 2D analytical objects.",
@@ -11,15 +11,15 @@
     },
     "UX" : {
       "description" : "Defines the translational fixity in the X-direction. DOFType: Enumerator outlining the fixity of a particular degree of freedom. Controls if the DOF should be free, fixed or stiffness based.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Constraints/DOFType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/Constraints/DOFType.json"
     },
     "UY" : {
       "description" : "Defines the translational fixity in the Y-direction. DOFType: Enumerator outlining the fixity of a particular degree of freedom. Controls if the DOF should be free, fixed or stiffness based.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Constraints/DOFType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/Constraints/DOFType.json"
     },
     "Normal" : {
       "description" : "Defines the translational fixity in the Z- or Normal-direction. DOFType: Enumerator outlining the fixity of a particular degree of freedom. Controls if the DOF should be free, fixed or stiffness based.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Constraints/DOFType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/Constraints/DOFType.json"
     },
     "KX" : {
       "type" : "number",
@@ -38,7 +38,7 @@
       "format" : "uuid"
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

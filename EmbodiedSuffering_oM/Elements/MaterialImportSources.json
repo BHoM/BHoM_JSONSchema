@@ -1,19 +1,19 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/EmbodiedSuffering_oM/Elements/MaterialImportSources.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/EmbodiedSuffering_oM/Elements/MaterialImportSources.json",
   "title" : "MaterialImportSources",
   "type" : ["object", "null"],
   "description" : "MaterialImportSources: An Embodied Suffering object used for defining the import ratios per country for a particular material, utilised in a specific country (e.g. the United States gets all of its timber from Brazil, or that it is 50% from Brazil and 50% from Vietnam.)",
   "properties" : {
     "Material" : {
       "description" : "The name of the material that is imported to a particular country from other countries. Material: A list of raw materials from which building materials are created.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/EmbodiedSuffering_oM/Elements/Material.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/EmbodiedSuffering_oM/Elements/Material.json"
     },
     "ExportCountries" : {
       "type" : ["array", "null"],
       "description" : "List of countries from which the material was imported. Count should match the import ratios.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/EmbodiedSuffering_oM/Elements/Country.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/EmbodiedSuffering_oM/Elements/Country.json"
       }
     },
     "ImportRatios" : {
@@ -25,7 +25,7 @@
     },
     "ImportCountry" : {
       "description" : "The name of the country in which the imported materials are utilised. Country: A list of countries around the globe derived from: https://www.worldometers.info/geography/alphabetical-list-of-countries/",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/EmbodiedSuffering_oM/Elements/Country.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/EmbodiedSuffering_oM/Elements/Country.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -35,7 +35,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

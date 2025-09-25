@@ -1,13 +1,13 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/Transport/SingleTransportModeImpact.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/MaterialFragments/Transport/SingleTransportModeImpact.json",
   "title" : "SingleTransportModeImpact",
   "type" : ["object", "null"],
   "description" : "SingleTransportModeImpact: Class for computing Transport emissions for a particular part of journey to site.",
   "properties" : {
     "VehicleEmissions" : {
       "description" : "Emissions for the vechicle for the particular part of the journey. VehicleEmissions: Class for storing emssions of a particular type of vehicle per mass transported and distance traveled.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/Transport/VehicleEmissions.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/MaterialFragments/Transport/VehicleEmissions.json"
     },
     "DistanceTraveled" : {
       "type" : "number",
@@ -25,7 +25,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

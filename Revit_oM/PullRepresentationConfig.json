@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/PullRepresentationConfig.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Revit_oM/PullRepresentationConfig.json",
   "title" : "PullRepresentationConfig",
   "type" : ["object", "null"],
   "description" : "PullRepresentationConfig: Configuration used to specify representation to be pulled and passed to RevitRepresentation fragment.",
@@ -11,7 +11,7 @@
     },
     "DetailLevel" : {
       "description" : "Detail level of representation, correspondent to level of detail in Revit. DetailLevel: Enum specifying detail level of representation, correspondent to level of detail in Revit.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Enums/DetailLevel.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Revit_oM/Enums/DetailLevel.json"
     },
     "IncludeNonVisible" : {
       "type" : "boolean",

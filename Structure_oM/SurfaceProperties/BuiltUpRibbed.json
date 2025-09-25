@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/BuiltUpRibbed.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/SurfaceProperties/BuiltUpRibbed.json",
   "title" : "BuiltUpRibbed",
   "type" : ["object", "null"],
   "description" : "BuiltUpRibbed: Property for 2D analytical elements, made up of one slab supported by parallel ribs running in one direction beneath them. Ribs and slab can all be made up of different materials.",
@@ -27,26 +27,26 @@
     },
     "Material" : {
       "description" : "Structural material of the top slab. If no material is provided for the ribs then this material is used for them as well. IMaterialFragment: Base interface for structural materials used by structural properties or as a fragment of the physical material.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/IMaterialFragment.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/MaterialFragments/IMaterialFragment.json"
     },
     "RibMaterial" : {
       "description" : "Structural material of the ribs. If nothing is provided, the Material will be used instead. IMaterialFragment: Base interface for structural materials used by structural properties or as a fragment of the physical material.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/IMaterialFragment.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/MaterialFragments/IMaterialFragment.json"
     },
     "Direction" : {
       "description" : "Specifies if the ribs are running in local x or y direction.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/PanelDirection.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/SurfaceProperties/PanelDirection.json"
     },
     "PanelType" : {
       "description" : "Defines what type of element this property will be used. Used by some analysis packages.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/PanelType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/SurfaceProperties/PanelType.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
       "format" : "uuid"
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

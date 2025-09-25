@@ -1,11 +1,11 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/Fragments/ShellTypeFragment.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/ETABS_oM/Fragments/ShellTypeFragment.json",
   "title" : "ShellTypeFragment",
   "type" : ["object", "null"],
   "properties" : {
     "ShellType" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/ShellType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/ETABS_oM/ShellType.json"
     },
     "_t" : {
       "type" : "string",

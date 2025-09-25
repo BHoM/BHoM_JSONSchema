@@ -1,16 +1,16 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/SectionProperties/CableTraySectionProperty.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/MEP_oM/System/SectionProperties/CableTraySectionProperty.json",
   "title" : "CableTraySectionProperty",
   "type" : ["object", "null"],
   "properties" : {
     "Material" : {
       "description" : "The cable tray material is the primary material that the it is composed of. Material: Physical material to be used for Takeoffs and asigned to Physical elements. Material is capable of storing discipline specific data in Properties.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Materials/Material.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Physical_oM/Materials/Material.json"
     },
     "SectionProfile" : {
       "description" : "The section profile of the object that will determine its use within a System.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/SectionProperties/SectionProfile.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/MEP_oM/System/SectionProperties/SectionProfile.json"
     },
     "ElementSolidArea" : {
       "type" : "number",
@@ -28,7 +28,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

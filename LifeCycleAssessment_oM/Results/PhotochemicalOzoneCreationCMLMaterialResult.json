@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/PhotochemicalOzoneCreationCMLMaterialResult.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/PhotochemicalOzoneCreationCMLMaterialResult.json",
   "title" : "PhotochemicalOzoneCreationCMLMaterialResult",
   "type" : ["object", "null"],
   "description" : "PhotochemicalOzoneCreationCMLMaterialResult: Result class for resulting Photochemical Ozone Creation as defined by the CML standard for a particular Material and EPD.",

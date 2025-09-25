@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Mesh3D.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/Mesh3D.json",
   "title" : "Mesh3D",
   "type" : ["object", "null"],
   "description" : "Mesh3D: A polygon mesh, defined by a list of triangular or quadrilateral Faces, Cells and their Vertices.",
@@ -12,7 +12,7 @@
           "type" : ["array", "null"],
           "description" : "Defines the three-dimensional Mesh geometry as  X, Y, Z coordinates.",
           "items" : {
-            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
+            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/Point.json"
           }
         }
       }
@@ -24,7 +24,7 @@
           "type" : ["array", "null"],
           "description" : "The list of polygons, defined as corner Point indices referencing the list of Vertices.",
           "items" : {
-            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Face.json"
+            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/Face.json"
           }
         }
       }
@@ -36,7 +36,7 @@
           "type" : ["array", "null"],
           "description" : "A parallel list to the Faces, details the index of the cells which is behind and infront of each Face.",
           "items" : {
-            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/CellRelation.json"
+            "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/CellRelation.json"
           }
         }
       }

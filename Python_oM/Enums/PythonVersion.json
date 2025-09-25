@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Python_oM/Enums/PythonVersion.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Python_oM/Enums/PythonVersion.json",
   "anyOf" : [{
       "type" : "string",
       "enum" : ["Undefined", "v3_7", "v3_8", "v3_9", "v3_10", "v3_11"]

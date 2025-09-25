@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/ClimateChangeLandUseMaterialResult.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/ClimateChangeLandUseMaterialResult.json",
   "title" : "ClimateChangeLandUseMaterialResult",
   "type" : ["object", "null"],
   "description" : "ClimateChangeLandUseMaterialResult: Result class for resulting Climate change - Land Use and Land Use Change for a particular Material and EPD.",

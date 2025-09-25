@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/Construction/PreConstructionDemolition.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/MaterialFragments/Construction/PreConstructionDemolition.json",
   "title" : "PreConstructionDemolition",
   "type" : ["object", "null"],
   "description" : "PreConstructionDemolition: A class defining the environmental impacts associated with the demolition of existing buildings prior to construction of a new building.",
@@ -9,7 +9,7 @@
       "type" : ["array", "null"],
       "description" : "List of environmental factors associated with the demolition process. The default values are indicative only and should be replaced with project specific data where available. All factors stated per unit area.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/IEnvironmentalFactor.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/MaterialFragments/IEnvironmentalFactor.json"
       }
     },
     "DemolishedFloorArea" : {
@@ -24,7 +24,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

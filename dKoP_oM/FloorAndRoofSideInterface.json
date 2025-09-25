@@ -1,14 +1,14 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/FloorAndRoofSideInterface.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/dKoP_oM/FloorAndRoofSideInterface.json",
   "title" : "FloorAndRoofSideInterface",
   "type" : ["object", "null"],
   "properties" : {
     "InterfaceType" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/SideInterfaceType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/dKoP_oM/SideInterfaceType.json"
     },
     "LoadingData" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/SideLoadingData.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/dKoP_oM/SideLoadingData.json"
     },
     "_t" : {
       "type" : "string",

@@ -1,13 +1,13 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Results/SpecificationResult.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Verification_oM/Results/SpecificationResult.json",
   "title" : "SpecificationResult",
   "type" : ["object", "null"],
   "description" : "SpecificationResult: Object representing result of verification of a Specification.",
   "properties" : {
     "Specification" : {
       "description" : "Specification that was verified. Specification: A top level object in verification workflow. Contains the information about the whole workflow, from extraction, to checking, to reporting.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Specifications/Specification.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Verification_oM/Specifications/Specification.json"
     },
     "ExtractedObjects" : {
       "type" : ["array", "null"],
@@ -18,7 +18,7 @@
       "type" : ["array", "null"],
       "description" : "Collection of verification results of each filtered object against each Requirement contained within the Specification.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Results/RequirementResult.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Verification_oM/Results/RequirementResult.json"
       }
     },
     "_t" : {

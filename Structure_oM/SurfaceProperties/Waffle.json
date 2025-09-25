@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/Waffle.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/SurfaceProperties/Waffle.json",
   "title" : "Waffle",
   "type" : ["object", "null"],
   "description" : "Waffle: Property for 2D analytical elements, made up of a slab on top of parallel ribs running in two directions, all sharing the same material.",
@@ -15,7 +15,7 @@
     },
     "Material" : {
       "description" : "Homogenous structural material throughout the full thickness of the element. IMaterialFragment: Base interface for structural materials used by structural properties or as a fragment of the physical material.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/IMaterialFragment.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/MaterialFragments/IMaterialFragment.json"
     },
     "TotalDepthX" : {
       "type" : "number",
@@ -43,14 +43,14 @@
     },
     "PanelType" : {
       "description" : "Defines what type of element this property will be used. Used by some analysis packages.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/PanelType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/SurfaceProperties/PanelType.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
       "format" : "uuid"
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

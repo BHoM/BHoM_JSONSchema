@@ -1,0 +1,22 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/OpenAI_oM/AdapterConfig.json",
+  "title" : "AdapterConfig",
+  "type" : ["object", "null"],
+  "description" : "AdapterConfig: Configuration object for the OpenAI adapter, containing information about authorization.",
+  "properties" : {
+    "Authorization" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/OpenAI_oM/Authorization/IAuthorizationSource.json"
+    },
+    "_t" : {
+      "type" : "string",
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.Adapters.OpenAI.AdapterConfig"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["Authorization"]
+}

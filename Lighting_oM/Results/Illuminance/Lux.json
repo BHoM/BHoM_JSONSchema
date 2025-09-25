@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Lighting_oM/Results/Illuminance/Lux.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Lighting_oM/Results/Illuminance/Lux.json",
   "title" : "Lux",
   "type" : ["object", "null"],
   "description" : "Lux: Lux contains results for Lux analysis. Inherits from MeshElementResult which provides properties related to which node this Lux is recorded for",

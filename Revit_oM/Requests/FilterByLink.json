@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Requests/FilterByLink.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Revit_oM/Requests/FilterByLink.json",
   "title" : "FilterByLink",
   "type" : ["object", "null"],
   "description" : "FilterByLink: IRequest that filters all elements from a Revit link with given file name/path, Name parameter value or ElementId.",

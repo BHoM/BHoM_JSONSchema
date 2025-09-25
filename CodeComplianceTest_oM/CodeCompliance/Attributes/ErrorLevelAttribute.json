@@ -1,14 +1,15 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/CodeComplianceTest_oM/CodeCompliance/Attributes/ErrorLevelAttribute.json",
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/CodeComplianceTest_oM/CodeCompliance/Attributes/ErrorLevelAttribute.json",
   "title" : "ErrorLevelAttribute",
   "type" : ["object", "null"],
   "properties" : {
     "Level" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Test_oM/TestStatus.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Test_oM/TestStatus.json"
     },
     "TypeId" : { },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Test.CodeCompliance.Attributes.ErrorLevelAttribute"
     },

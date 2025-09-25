@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Humans_oM/HandStateName.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Humans_oM/HandStateName.json",
   "anyOf" : [{
       "type" : "string",
       "enum" : ["Closed", "Lasso", "NotTracked", "Open", "Unknown"]

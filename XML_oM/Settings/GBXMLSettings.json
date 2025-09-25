@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/Settings/GBXMLSettings.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/XML_oM/Settings/GBXMLSettings.json",
   "title" : "GBXMLSettings",
   "type" : ["object", "null"],
   "properties" : {
@@ -26,11 +26,11 @@
     },
     "ResultsUnitType" : {
       "description" : "Set the unit type for the results to be either SI or Imperial. Default SI",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/Enums/UnitType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/XML_oM/Enums/UnitType.json"
     },
     "ExportDetail" : {
       "description" : "Set the detail of your export to be either full (whole building), shell (exterior walls only), or spaces (each individual space as its own XML file). Default full",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/Enums/ExportDetail.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/XML_oM/Enums/ExportDetail.json"
     },
     "DistanceTolerance" : {
       "type" : "number",
@@ -50,11 +50,11 @@
     },
     "RoundingSettings" : {
       "description" : "Set the rounding options for numerical outputs to be used within gbXML creation. Default is per the Rounding Settings defaults",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/GBXML/RoundingSettings.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/XML_oM/GBXML/RoundingSettings.json"
     },
     "UnitSetUp" : {
       "description" : "Set the units to be used for the export of a gbXML file. Default units will be in SI using the defaults of the GBXMLSetUp object if none are provided",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/XML_oM/GBXMLUnitSetUp.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/XML_oM/GBXMLUnitSetUp.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -64,7 +64,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

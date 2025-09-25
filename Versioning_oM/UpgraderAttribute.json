@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Versioning_oM/UpgraderAttribute.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Versioning_oM/UpgraderAttribute.json",
   "title" : "UpgraderAttribute",
   "type" : ["object", "null"],
   "description" : "UpgraderAttribute: Attribute identifying a class as an upgrader for versioning. The version specified should be the the version that the object is being upgraded to which generally correspond to the current version of the BHoM.",

@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/ModalDynamics.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/Results/ModalDynamics.json",
   "title" : "ModalDynamics",
   "type" : ["object", "null"],
   "description" : "ModalDynamics: General modal dynamics result of the structure.",

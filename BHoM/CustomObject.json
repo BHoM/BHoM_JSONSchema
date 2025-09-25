@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/CustomObject.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/CustomObject.json",
   "title" : "CustomObject",
   "type" : ["object", "null"],
   "description" : "CustomObject: Allows the user to define their own objects with a custom set of properties."

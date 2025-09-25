@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Analytical_oM/Fragments/ProjectionFragment.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Analytical_oM/Fragments/ProjectionFragment.json",
   "title" : "ProjectionFragment",
   "type" : ["object", "null"],
   "description" : "ProjectionFragment: Fragment used to define entity projection metadata.",

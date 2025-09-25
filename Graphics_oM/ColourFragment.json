@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Graphics_oM/ColourFragment.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Graphics_oM/ColourFragment.json",
   "title" : "ColourFragment",
   "type" : ["object", "null"],
   "description" : "ColourFragment: Indicates a colour associable with a BHoMObject.",

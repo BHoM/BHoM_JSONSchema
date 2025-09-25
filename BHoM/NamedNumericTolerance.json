@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/NamedNumericTolerance.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/NamedNumericTolerance.json",
   "title" : "NamedNumericTolerance",
   "type" : ["object", "null"],
   "description" : "NamedNumericTolerance: Tolerance used for specific numerical objects or properties with a specific name.When computing Hash or the property Diffing, if the analysed object or property name is found in this collection, the corresponding tolerance is considered.",

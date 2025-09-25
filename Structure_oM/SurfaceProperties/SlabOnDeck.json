@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/SlabOnDeck.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/SurfaceProperties/SlabOnDeck.json",
   "title" : "SlabOnDeck",
   "type" : ["object", "null"],
   "description" : "SlabOnDeck: Property for 2D analytical elements representing a slab on a corrugated deck. Generally used to represent concrete on metal deck.",
@@ -11,11 +11,11 @@
     },
     "Material" : {
       "description" : "The primary material for the SurfaceProperty, representing the material above the corrugated deck, generally concrete. IMaterialFragment: Base interface for structural materials used by structural properties or as a fragment of the physical material.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/IMaterialFragment.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/MaterialFragments/IMaterialFragment.json"
     },
     "DeckMaterial" : {
       "description" : "The secondary material for the SurfaceProperty, representing the corrugated deck, generally steel. IMaterialFragment: Base interface for structural materials used by structural properties or as a fragment of the physical material.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/IMaterialFragment.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/MaterialFragments/IMaterialFragment.json"
     },
     "SlabThickness" : {
       "type" : "number",
@@ -23,7 +23,7 @@
     },
     "Direction" : {
       "description" : "Specifies if the ribs are running in local x or y direction.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/PanelDirection.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/SurfaceProperties/PanelDirection.json"
     },
     "DeckName" : {
       "type" : ["string", "null"],
@@ -55,14 +55,14 @@
     },
     "PanelType" : {
       "description" : "Defines what type of element this property will be used. Used by some analysis packages.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/PanelType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/SurfaceProperties/PanelType.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
       "format" : "uuid"
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

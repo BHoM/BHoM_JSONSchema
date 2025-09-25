@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Reinforcement/BS8666/ShapeCode13.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Physical_oM/Reinforcement/BS8666/ShapeCode13.json",
   "title" : "ShapeCode13",
   "type" : ["object", "null"],
   "description" : "ShapeCode13: A reinforcement bar with shape code 13 to BS 8666:2020 in the XY Plane with the free end of the A segment at the Origin aligned with the X axis, the C parameter aligned with the X axisand the B parameter aligned with the Y axis.",
@@ -33,7 +33,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

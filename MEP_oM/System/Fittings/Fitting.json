@@ -1,24 +1,24 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/Fittings/Fitting.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/MEP_oM/System/Fittings/Fitting.json",
   "title" : "Fitting",
   "type" : ["object", "null"],
   "description" : "Fitting: A fitting object used to describe interfaces between or along linear MEP elements.",
   "properties" : {
     "Location" : {
       "description" : "The point at which the Fitting occurs. Point: Defines a dimensionless location in three-dimensional space.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/Point.json"
     },
     "ConnectionsLocation" : {
       "type" : ["array", "null"],
       "description" : "The points at which the Fitting physically connects to other MEP segments.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/Point.json"
       }
     },
     "Type" : {
       "description" : "The type of fitting connected to an element. FittingType: A type of fitting used to transition from one segment of linear MEP object to another.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Enums/FittingType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/MEP_oM/Enums/FittingType.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -28,7 +28,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

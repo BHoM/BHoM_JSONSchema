@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/EtabsSettings.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/ETABS_oM/EtabsSettings.json",
   "title" : "EtabsSettings",
   "type" : ["object", "null"],
   "properties" : {
@@ -9,7 +9,11 @@
       "description" : "Sets whether the loads being pushed should overwrite existing loads on the same object within the same loadcase"
     },
     "DatabaseSettings" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/DatabaseSettings.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/ETABS_oM/DatabaseSettings.json"
+    },
+    "EtabsVersion" : {
+      "description" : "Sets the version of ETABS to launch when running the adapter. EtabsVersion: The ETABS version number used in the adapter to select the path of the corresponding executable.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/ETABS_oM/EtabsVersion.json"
     },
     "_t" : {
       "type" : "string",
@@ -21,5 +25,5 @@
       "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
-  "required" : ["ReplaceLoads", "DatabaseSettings"]
+  "required" : ["ReplaceLoads", "DatabaseSettings", "EtabsVersion"]
 }

@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Conditions/LogicalOrCondition.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Verification_oM/Conditions/LogicalOrCondition.json",
   "title" : "LogicalOrCondition",
   "type" : ["object", "null"],
   "description" : "LogicalOrCondition: Condition that contains a collection of nested conditions, of which at least one needs to be met for an object to be considered a pass.",
@@ -9,7 +9,7 @@
       "type" : ["array", "null"],
       "description" : "A collection of conditions to be evaluated in combination.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Conditions/ICondition.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Verification_oM/Conditions/ICondition.json"
       }
     },
     "_t" : {

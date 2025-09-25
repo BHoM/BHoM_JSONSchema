@@ -1,25 +1,25 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/AreaUniformlyDistributedLoad.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/Loads/AreaUniformlyDistributedLoad.json",
   "title" : "AreaUniformlyDistributedLoad",
   "type" : ["object", "null"],
   "description" : "AreaUniformlyDistributedLoad: Uniform area load for area elements such as Panels and FEMeshes.",
   "properties" : {
     "Pressure" : {
       "description" : "The force per area to be applied to the elements. Property has a quantity of type Pressure measured in [Pa]. Vector: Defines a direction and magnitude in three-dimensional Euclidean space.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/Vector.json"
     },
     "Loadcase" : {
       "description" : "The Loadcase in which the load is applied. Loadcase: Basic load case class. All load classes need to point to one Loadcase.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/Loadcase.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/Loads/Loadcase.json"
     },
     "Objects" : {
       "description" : "The group of IAreaElements that the load should be applied to. For most analysis packages the objects added here need to be pulled from the analysis package before being assigned to the load.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/BHoMGroup`1.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/BHoMGroup`1.json"
     },
     "Axis" : {
       "description" : "Defines whether the load is applied in local or global coordinates.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/LoadAxis.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/Loads/LoadAxis.json"
     },
     "Projected" : {
       "type" : "boolean",
@@ -33,7 +33,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

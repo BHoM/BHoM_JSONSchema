@@ -1,13 +1,13 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Architecture_oM/BuildersWork/Opening.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Architecture_oM/BuildersWork/Opening.json",
   "title" : "Opening",
   "type" : ["object", "null"],
   "description" : "Opening: Object representing a builders work opening as an entity independent of its host.",
   "properties" : {
     "Profile" : {
       "description" : "Profile of the opening. IProfile: Base interface for all shape profiles.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/IProfile.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Spatial_oM/ShapeProfiles/IProfile.json"
     },
     "Depth" : {
       "type" : "number",
@@ -15,7 +15,7 @@
     },
     "CoordinateSystem" : {
       "description" : "Local coordinate system of the opening with local z being the direction along the opening, local x representing direction along width in plane and y along height respectively. Cartesian: A three-dimensional Cartesian coordinate system, as defined by a set of mutually orthogonal unit vectors and a common origin point",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/CoordinateSystem/Cartesian.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/CoordinateSystem/Cartesian.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -25,7 +25,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

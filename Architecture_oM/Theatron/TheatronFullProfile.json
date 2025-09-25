@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Architecture_oM/Theatron/TheatronFullProfile.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Architecture_oM/Theatron/TheatronFullProfile.json",
   "title" : "TheatronFullProfile",
   "type" : ["object", "null"],
   "properties" : {
@@ -8,14 +8,14 @@
       "type" : ["array", "null"],
       "description" : "The set of tier profiles orientated in the world xz plane, the origin is the focal point for Cvalue calculations",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Architecture_oM/Theatron/TierProfile.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Architecture_oM/Theatron/TierProfile.json"
       }
     },
     "MappedProfiles" : {
       "type" : ["array", "null"],
       "description" : "The set of tier profiles orientated to the plane closest to the focal curve",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Architecture_oM/Theatron/TierProfile.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Architecture_oM/Theatron/TierProfile.json"
       }
     },
     "Rounding" : {
@@ -23,7 +23,7 @@
     },
     "FullProfileOrigin" : {
       "description" : "The plane at the first surface point, x axis is horizontal and points away from the playing area, y axis points up ProfileOrigin: Used for orientation and setting out of tier profiles",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Architecture_oM/Theatron/ProfileOrigin.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Architecture_oM/Theatron/ProfileOrigin.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -33,7 +33,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

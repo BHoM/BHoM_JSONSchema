@@ -1,15 +1,16 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/NUnit_oM/NUnit/TestSuite.json",
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/NUnit_oM/NUnit/TestSuite.json",
   "title" : "TestSuite",
   "type" : ["object", "null"],
   "properties" : {
     "Failure" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/NUnit_oM/NUnit/Failure.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/NUnit_oM/NUnit/Failure.json"
     },
     "TestCases" : {
       "type" : ["array", "null"],
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/NUnit_oM/NUnit/TestCase.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/NUnit_oM/NUnit/TestCase.json"
       }
     },
     "Type" : {
@@ -40,7 +41,7 @@
       "type" : ["string", "null"]
     },
     "StartTime" : {
-      "type" : ["object", "null"],
+      "type" : "object",
       "properties" : {
         "$date" : {
           "type" : "integer"
@@ -48,7 +49,7 @@
       }
     },
     "EndTime" : {
-      "type" : ["object", "null"],
+      "type" : "object",
       "properties" : {
         "$date" : {
           "type" : "integer"
@@ -85,29 +86,29 @@
     "Children" : {
       "type" : ["array", "null"],
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/NUnit_oM/NUnit/TestSuite.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/NUnit_oM/NUnit/TestSuite.json"
       }
     },
     "Environment" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/NUnit_oM/NUnit/Environment.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/NUnit_oM/NUnit/Environment.json"
     },
     "Settings" : {
       "type" : ["array", "null"],
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/NUnit_oM/NUnit/Setting.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/NUnit_oM/NUnit/Setting.json"
       }
     },
     "Properties" : {
       "type" : ["array", "null"],
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/NUnit_oM/NUnit/Property.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/NUnit_oM/NUnit/Property.json"
       }
     },
     "Reason" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/NUnit_oM/NUnit/Reason.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/NUnit_oM/NUnit/Reason.json"
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Test.NUnit.TestSuite"
     },

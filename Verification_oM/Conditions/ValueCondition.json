@@ -1,17 +1,17 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Conditions/ValueCondition.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Verification_oM/Conditions/ValueCondition.json",
   "title" : "ValueCondition",
   "type" : ["object", "null"],
   "properties" : {
     "ValueSource" : {
       "description" : "Object defining the source of a value to evaluate. IValueSource: Interface for objects defining how to extract a value from an object.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Conditions/IValueSource.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Verification_oM/Conditions/IValueSource.json"
     },
     "ReferenceValue" : { },
     "ComparisonType" : {
       "description" : "Specifies whether the extracted value should be smaller, greater, etc. than the reference value. ValueComparisonType: Specifies the requirement to be met by a value in relation to a reference value to consider the check as passed.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/ValueComparisonType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Verification_oM/ValueComparisonType.json"
     },
     "Tolerance" : { },
     "_t" : {

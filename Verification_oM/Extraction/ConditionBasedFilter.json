@@ -1,13 +1,13 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Extraction/ConditionBasedFilter.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Verification_oM/Extraction/ConditionBasedFilter.json",
   "title" : "ConditionBasedFilter",
   "type" : ["object", "null"],
   "description" : "ConditionBasedFilter: Basic object defining a condition-based 'filter from' workflow.",
   "properties" : {
     "Condition" : {
       "description" : "Filtering condition to be met for objects to be returned. ICondition: Top level interface for conditions: lightweight objects describing a yes/no question to be asked against another object.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Verification_oM/Conditions/ICondition.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Verification_oM/Conditions/ICondition.json"
     },
     "_t" : {
       "type" : "string",

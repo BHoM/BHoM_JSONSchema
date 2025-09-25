@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/EutrophicationCMLMaterialResult.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/EutrophicationCMLMaterialResult.json",
   "title" : "EutrophicationCMLMaterialResult",
   "type" : ["object", "null"],
   "description" : "EutrophicationCMLMaterialResult: Result class for resulting Eutrophication (EN 15804+A1) for a particular Material and EPD.",

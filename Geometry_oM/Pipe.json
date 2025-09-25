@@ -1,13 +1,13 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Pipe.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/Pipe.json",
   "title" : "Pipe",
   "type" : ["object", "null"],
   "description" : "Pipe: A constant circular cross section surface, following a defined curve path.",
   "properties" : {
     "Centreline" : {
       "description" : "Defines the central axis perpendicular to the circular cross sections, and thus the path along which the tubular surface follows. ICurve: The interface for all one-dimensional geometrical objects.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/ICurve.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/ICurve.json"
     },
     "Radius" : {
       "type" : "number",

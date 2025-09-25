@@ -1,13 +1,13 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Fixtures/FireAlarmDevice.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/MEP_oM/Fixtures/FireAlarmDevice.json",
   "title" : "FireAlarmDevice",
   "type" : ["object", "null"],
   "description" : "FireAlarmDevice: A device used to warn building occupants of emergencies (smoke, fire, carbon monoxide) by means of audio or visual appliances (smoke detectors, speaker strobes, heat detectors.)",
   "properties" : {
     "Location" : {
       "description" : "The point in space for the location of the object. Node: 0D finite element for structural analysis. Node class contains positional information as well as orientation and support.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/Node.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/MEP_oM/System/Node.json"
     },
     "OrientationAngle" : {
       "type" : "number",
@@ -15,7 +15,7 @@
     },
     "FireAlarmDeviceType" : {
       "description" : "A type which describes the fire alarm device more specifically whether it's a smoke detector, carbon monoxide detector or speaker strobe. FireAlarmDeviceType: A type of fire alarm device (smoke detector, heat detector, speaker strobe.)",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Enums/FireAlarmDeviceType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/MEP_oM/Enums/FireAlarmDeviceType.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -25,7 +25,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

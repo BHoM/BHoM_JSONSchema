@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/Results/EutrophicationTerrestrialMaterialResult.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/Results/EutrophicationTerrestrialMaterialResult.json",
   "title" : "EutrophicationTerrestrialMaterialResult",
   "type" : ["object", "null"],
   "description" : "EutrophicationTerrestrialMaterialResult: Result class for resulting Eutrophication - terrestrial for a particular Material and EPD.",

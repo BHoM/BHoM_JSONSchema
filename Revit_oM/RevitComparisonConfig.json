@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/RevitComparisonConfig.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Revit_oM/RevitComparisonConfig.json",
   "title" : "RevitComparisonConfig",
   "type" : ["object", "null"],
   "description" : "RevitComparisonConfig: Settings to determine the uniqueness of an Object for comparison (e.g. when Diffing or computing an object Hash).",
@@ -23,7 +23,7 @@
       "type" : ["array", "null"],
       "description" : "Tolerance used for individual RevitParameters. When computing Hash or the property Diffing, if the analysed property name is found in this collection, the corresponding tolerance is applied.\nSupports * wildcard in the property name matching. E.g. `StartNode.Point.*, 2`.\nIf a match is found, this take precedence over the global `NumericTolerance`.\nIf conflicting values/multiple matches are found among the Configurations on numerical precision, the largest approximation among all (least precise number) is registered.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/NamedNumericTolerance.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/NamedNumericTolerance.json"
       },
       "uniqueItems" : true
     },
@@ -31,7 +31,7 @@
       "type" : ["array", "null"],
       "description" : "Number of significant figures allowed for numerical data on a per-RevitParameter base. \nSupports * wildcard in the property name matching. E.g. `StartNode.Point.*, 2`.\nIf a match is found, this take precedence over the global `SignificantFigures`.\nIf conflicting values/multiple matches are found among the Configurations on numerical precision, the largest approximation among all (least precise number) is registered.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/NamedSignificantFigures.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/NamedSignificantFigures.json"
       },
       "uniqueItems" : true
     },
@@ -118,7 +118,7 @@
       "type" : ["array", "null"],
       "description" : "Tolerance used for individual properties. When computing Hash or the property Diffing, if the analysed property name is found in this collection, the corresponding tolerance is applied.\nSupports * wildcard in the property name matching. E.g. `StartNode.Point.*, 2`.\nIf a match is found, this take precedence over the global `NumericTolerance`.\nIf conflicting values/multiple matches are found among the Configurations on numerical precision, the largest approximation among all (least precise number) is registered.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/NamedNumericTolerance.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/NamedNumericTolerance.json"
       },
       "uniqueItems" : true
     },
@@ -130,7 +130,7 @@
       "type" : ["array", "null"],
       "description" : "Number of significant figures allowed for numerical data on a per-property base. \nSupports * wildcard in the property name matching. E.g. `StartNode.Point.*, 2`.\nIf a match is found, this take precedence over the global `SignificantFigures`.\nIf conflicting values/multiple matches are found among the Configurations on numerical precision, the largest approximation among all (least precise number) is registered.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/NamedSignificantFigures.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/NamedSignificantFigures.json"
       },
       "uniqueItems" : true
     },

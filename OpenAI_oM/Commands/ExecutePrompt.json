@@ -1,0 +1,37 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/OpenAI_oM/Commands/ExecutePrompt.json",
+  "title" : "ExecutePrompt",
+  "type" : ["object", "null"],
+  "description" : "ExecutePrompt: Command to execute a prompt with a system and user message. Allows for continuous chats by providing previous messages and responses to User and Assistant, respectively.",
+  "properties" : {
+    "System" : {
+      "type" : ["string", "null"],
+      "description" : "System message to be used in the prompt execution."
+    },
+    "User" : {
+      "type" : ["array", "null"],
+      "description" : "User messages within chat thread, from oldest to the latest, should always be one more than Assistant.",
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "Assistant" : {
+      "type" : ["array", "null"],
+      "description" : "LLM responses within chat thread, from oldest to the latest, should always be one less than User.",
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "_t" : {
+      "type" : "string",
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.Adapters.OpenAI.Commands.ExecutePrompt"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["System", "User", "Assistant"]
+}

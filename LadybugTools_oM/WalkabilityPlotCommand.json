@@ -1,16 +1,16 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/WalkabilityPlotCommand.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LadybugTools_oM/WalkabilityPlotCommand.json",
   "title" : "WalkabilityPlotCommand",
   "type" : ["object", "null"],
   "properties" : {
     "EPWFile" : {
       "description" : "The EPW file to use for analysis. FileSettings: The fileSettings, file name and directory, to use with an adapter for push and pull",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/FileSettings.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Adapter_oM/FileSettings.json"
     },
     "ExternalComfort" : {
       "description" : "The external comfort object containing the UTCI data to plot. If the UTCI collection is null or empty, then a simulation will be run before plotting to get these values.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/ExternalComfort.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LadybugTools_oM/ExternalComfort.json"
     },
     "OutputLocation" : {
       "type" : ["string", "null"],

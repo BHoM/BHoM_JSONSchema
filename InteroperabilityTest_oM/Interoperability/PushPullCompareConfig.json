@@ -1,10 +1,11 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/InteroperabilityTest_oM/Interoperability/PushPullCompareConfig.json",
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/InteroperabilityTest_oM/Interoperability/PushPullCompareConfig.json",
   "title" : "PushPullCompareConfig",
   "type" : ["object", "null"],
   "properties" : {
     "ComparerType" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/InteroperabilityTest_oM/Interoperability/ComparerType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/InteroperabilityTest_oM/Interoperability/ComparerType.json"
     },
     "ResetModelBetweenPushes" : {
       "type" : "boolean"
@@ -17,19 +18,20 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],
       "items" : {
         "type" : ["string", "null"]
-      }
+      },
+      "uniqueItems" : true
     },
     "CustomData" : {
       "type" : ["object", "null"]
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Test.Interoperability.PushPullCompareConfig"
     },

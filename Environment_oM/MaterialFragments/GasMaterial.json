@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/MaterialFragments/GasMaterial.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Environment_oM/MaterialFragments/GasMaterial.json",
   "title" : "GasMaterial",
   "type" : ["object", "null"],
   "description" : "GasMaterial: Fragment containing gas material properties",
@@ -22,7 +22,7 @@
     },
     "Roughness" : {
       "description" : "Required for some calculations, such as determining the convective heat transfer coefficient. Use Roughness enum Roughness: Required for some calculations, such as determining the convective heat transfer coefficient",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/MaterialFragments/Roughness.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Environment_oM/MaterialFragments/Roughness.json"
     },
     "Refraction" : {
       "type" : "number"
@@ -32,7 +32,7 @@
     },
     "Gas" : {
       "description" : "The type of gas (e.g Air, Argon). Use GasType enum",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/MaterialFragments/Gas.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Environment_oM/MaterialFragments/Gas.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -42,7 +42,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

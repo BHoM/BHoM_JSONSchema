@@ -1,17 +1,17 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/Pipe.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/MEP_oM/System/Pipe.json",
   "title" : "Pipe",
   "type" : ["object", "null"],
   "description" : "Pipe: A pipe object is a passageway which conveys material (water, waste, glycol)",
   "properties" : {
     "StartPoint" : {
       "description" : "The point at which the Pipe object begins. Point: Defines a dimensionless location in three-dimensional space.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/Point.json"
     },
     "EndPoint" : {
       "description" : "The point at which the Pipe object ends. Point: Defines a dimensionless location in three-dimensional space.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/Point.json"
     },
     "FlowRate" : {
       "type" : "number",
@@ -19,7 +19,7 @@
     },
     "SectionProperty" : {
       "description" : "The pipe section property defines the shape and its associated properties (radius, material, thickness).",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/SectionProperties/PipeSectionProperty.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/MEP_oM/System/SectionProperties/PipeSectionProperty.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -29,7 +29,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

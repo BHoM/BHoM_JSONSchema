@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/File_oM/SortOrder.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/File_oM/SortOrder.json",
   "anyOf" : [{
       "type" : "string",
       "enum" : ["Default", "ByName", "BySize", "ByCreationTime", "ByLastModifiedTime"]

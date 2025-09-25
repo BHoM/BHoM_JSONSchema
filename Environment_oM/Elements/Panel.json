@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Elements/Panel.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Environment_oM/Elements/Panel.json",
   "title" : "Panel",
   "type" : ["object", "null"],
   "description" : "Panel: An environmental object used to define planar surfaces of a space (e.g. Wall, Floor, Roof)",
@@ -9,23 +9,23 @@
       "type" : ["array", "null"],
       "description" : "A collection of Environment Edge objects which defines the external boundary of the panel",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Elements/Edge.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Environment_oM/Elements/Edge.json"
       }
     },
     "Openings" : {
       "type" : ["array", "null"],
       "description" : "A collection of cutouts or holes in a building surface/panel (e.g. Window, Door, Rooflight)",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Elements/Opening.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Environment_oM/Elements/Opening.json"
       }
     },
     "Construction" : {
       "description" : "A construction object providing layer and material information for the panel",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Constructions/IConstruction.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Physical_oM/Constructions/IConstruction.json"
     },
     "Type" : {
       "description" : "The type of environmental surface (e.g. Wall, Floor, Roof). Use PanelType enum) PanelType: The type of environmental surface (e.g. Wall, Floor, Roof)",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Elements/PanelType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Environment_oM/Elements/PanelType.json"
     },
     "ConnectedSpaces" : {
       "type" : ["array", "null"],
@@ -42,7 +42,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

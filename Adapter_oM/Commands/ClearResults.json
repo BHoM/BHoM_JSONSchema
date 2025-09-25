@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/Commands/ClearResults.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Adapter_oM/Commands/ClearResults.json",
   "title" : "ClearResults",
   "type" : ["object", "null"],
   "description" : "ClearResults: Used to instruct the external software to clear/delete results from a file or model."

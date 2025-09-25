@@ -1,20 +1,20 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/SectionProperties/SectionProfile.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/MEP_oM/System/SectionProperties/SectionProfile.json",
   "title" : "SectionProfile",
   "type" : ["object", "null"],
   "properties" : {
     "ElementProfile" : {
       "description" : "ShapeProfile of the element itself. This is the base ShapeProfile that determines the overall shape of the IFlow object. IProfile: Base interface for all shape profiles.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/IProfile.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Spatial_oM/ShapeProfiles/IProfile.json"
     },
     "LiningProfile" : {
       "description" : "ShapeProfile of the element's interior lining. IProfile: Base interface for all shape profiles.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/IProfile.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Spatial_oM/ShapeProfiles/IProfile.json"
     },
     "InsulationProfile" : {
       "description" : "ShapeProfile of the element's exterior insulation. IProfile: Base interface for all shape profiles.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/IProfile.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Spatial_oM/ShapeProfiles/IProfile.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -24,7 +24,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

@@ -1,11 +1,11 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/AcousticsWallAndRoof.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/dKoP_oM/AcousticsWallAndRoof.json",
   "title" : "AcousticsWallAndRoof",
   "type" : ["object", "null"],
   "properties" : {
     "AirborneSoundInsulation" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/dKoP_oM/AirborneSoundInsulation.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/dKoP_oM/AirborneSoundInsulation.json"
     },
     "_t" : {
       "type" : "string",

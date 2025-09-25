@@ -1,17 +1,17 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/GeometricalLineLoad.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/Loads/GeometricalLineLoad.json",
   "title" : "GeometricalLineLoad",
   "type" : ["object", "null"],
   "description" : "GeometricalLineLoad: Distributed load to be applied over a line.",
   "properties" : {
     "Loadcase" : {
       "description" : "The Loadcase in which the load is applied. Loadcase: Basic load case class. All load classes need to point to one Loadcase.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/Loadcase.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/Loads/Loadcase.json"
     },
     "Axis" : {
       "description" : "Defines whether the load is applied in local or global coordinates.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Loads/LoadAxis.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/Loads/LoadAxis.json"
     },
     "Projected" : {
       "type" : "boolean",
@@ -19,27 +19,27 @@
     },
     "ForceA" : {
       "description" : "Force per unit length at the start of the line. Property has a quantity of type ForcePerUnitLength measured in [N/m]. Vector: Defines a direction and magnitude in three-dimensional Euclidean space.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/Vector.json"
     },
     "ForceB" : {
       "description" : "Force per unit length at the end of the line. Property has a quantity of type ForcePerUnitLength measured in [N/m]. Vector: Defines a direction and magnitude in three-dimensional Euclidean space.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/Vector.json"
     },
     "MomentA" : {
       "description" : "Moment per unit length at the start of the line. Property has a quantity of type MomentPerUnitLength measured in [N.m/m]. Vector: Defines a direction and magnitude in three-dimensional Euclidean space.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/Vector.json"
     },
     "MomentB" : {
       "description" : "Moment per unit length at the end of the line. Property has a quantity of type MomentPerUnitLength measured in [N.m/m]. Vector: Defines a direction and magnitude in three-dimensional Euclidean space.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/Vector.json"
     },
     "Location" : {
       "description" : "Line defining the location of the load. Line: A straight segment in space defining the shortest distance between two points in three-dimensional Euclidean geometry.\nThe Vector from Start to End defines the Line direction, which can be important for some applications.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Line.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/Line.json"
     },
     "Objects" : {
       "description" : "A collection of IAreaElements (e.g. Panels) to apply the line load to. These are not required for all adapters.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/BHoMGroup`1.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/BHoMGroup`1.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -49,7 +49,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

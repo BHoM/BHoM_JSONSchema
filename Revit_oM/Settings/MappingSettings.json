@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Settings/MappingSettings.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Revit_oM/Settings/MappingSettings.json",
   "title" : "MappingSettings",
   "type" : ["object", "null"],
   "description" : "MappingSettings: An entity holding information about the enforced convert relationships between Revit families and BHoM types on Pull as well as mapping between Revit parameters and BHoM object properties on Push/Pull.",
@@ -9,14 +9,14 @@
       "type" : ["array", "null"],
       "description" : "A collection of entities defining relationships between property names of BHoM types (or RevitParameters attached to objects of these types) and parameter names of correspondent Revit elements.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Mapping/ParameterMap.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Revit_oM/Mapping/ParameterMap.json"
       }
     },
     "FamilyMaps" : {
       "type" : ["array", "null"],
       "description" : "A collection of entities defining relationships between Revit families and BHoM types, to which these families are meant to be converted on Pull.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Mapping/FamilyMap.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Revit_oM/Mapping/FamilyMap.json"
       }
     },
     "TagsParameter" : {
@@ -35,7 +35,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Analytical_oM/Fragments/RoutingFragment.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Analytical_oM/Fragments/RoutingFragment.json",
   "title" : "RoutingFragment",
   "type" : ["object", "null"],
   "description" : "RoutingFragment: Fragment used in the computation of shortest paths.",

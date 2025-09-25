@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/EndOfLife/EndOfLifeRouteDistribution.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/MaterialFragments/EndOfLife/EndOfLifeRouteDistribution.json",
   "title" : "EndOfLifeRouteDistribution",
   "type" : ["object", "null"],
   "description" : "EndOfLifeRouteDistribution: Class outlining the distribution between different end of life routes and scenarios for a particular material. All ratios should be between 0 and 1, and in total sum up to 1.",
@@ -30,7 +30,7 @@
       "format" : "uuid"
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

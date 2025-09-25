@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Requests/FilterByScopeBox.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Revit_oM/Requests/FilterByScopeBox.json",
   "title" : "FilterByScopeBox",
   "type" : ["object", "null"],
   "description" : "FilterByScopeBox: IRequest that filters all Revit elements that intersect or are contained in a Scope Box with the given name.\nIn case of combining this request with FilterByLink, the Scope Box will be sought for in both link document as well as the host document.",

@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Requests/FilterByDBTypeName.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Revit_oM/Requests/FilterByDBTypeName.json",
   "title" : "FilterByDBTypeName",
   "type" : ["object", "null"],
   "description" : "FilterByDBTypeName: IRequest that filters all elements of given Autodesk.Revit.DB type. Information about types can be found in the Revit API documentation.",

@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/WaterHeatingCode.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/SAP_oM/SAP/WaterHeatingCode.json",
   "anyOf" : [{
       "type" : "string",
       "enum" : ["MainSystem", "SecondarySystem", "ElectricImmersion", "SinglePointGas", "MultiPointGas", "ElectricInstantaneous", "GasBoilerOnlyForWater", "LiquidFuelOnlyForWater", "SolidFuelOnlyForWater", "SecondMainSystem", "RangeCookerGasSinglePermanent", "RangeCookerGasSingleAutomatic", "RangeCookerGasTwinPermanentPre1998", "RangeCookerGasTwinAutoPre1998", "RangeCookerGasTwinPermanentPost1998", "RangeCookerGasTwinAutoPost1998", "RangeCookerLiquidSingle", "RangeCookerLiquidTwinPre1998", "RangeCookerLiquidTwinPost1998", "RangeCookerSolidIntegralOvenBoiler", "RangeCookerSolidIndependentOvenBoiler", "ElectricPumpOnlyWater", "Boilers_RdSAP", "CHP_RdSAP", "HeatPumpRdSAP", "NoHotWaterSystem"]

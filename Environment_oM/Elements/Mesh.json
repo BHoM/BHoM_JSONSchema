@@ -1,19 +1,19 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Elements/Mesh.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Environment_oM/Elements/Mesh.json",
   "title" : "Mesh",
   "type" : ["object", "null"],
   "description" : "Mesh: An environment object used to define a volumetric mesh.",
   "properties" : {
     "Mesh3D" : {
       "description" : "Defines the three-dimensional Mesh geometry. Mesh3D: A polygon mesh, defined by a list of triangular or quadrilateral Faces, Cells and their Vertices.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Mesh3D.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/Mesh3D.json"
     },
     "BoundaryZones" : {
       "type" : ["array", "null"],
       "description" : "Defines the partition of the meshes external faces.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Environment_oM/Elements/BoundaryZone.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Environment_oM/Elements/BoundaryZone.json"
       }
     },
     "BHoM_Guid" : {
@@ -24,7 +24,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

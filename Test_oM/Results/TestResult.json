@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Test_oM/Results/TestResult.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Test_oM/Results/TestResult.json",
   "title" : "TestResult",
   "type" : ["object", "null"],
   "properties" : {
@@ -10,13 +10,13 @@
     },
     "Status" : {
       "description" : "States whether the test was a success or not. Defaults to Error to ensure any defaults are investigated appropriately. TestStatus: Defines the status of the Test Information. Designed to be very clear, concrete statuses, with minimal ambiguity.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Test_oM/TestStatus.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Test_oM/TestStatus.json"
     },
     "Information" : {
       "type" : ["array", "null"],
       "description" : "Information generated during the test.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Test_oM/ITestInformation.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Test_oM/ITestInformation.json"
       }
     },
     "Message" : {

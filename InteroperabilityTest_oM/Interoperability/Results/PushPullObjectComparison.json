@@ -1,5 +1,6 @@
 {
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/InteroperabilityTest_oM/Interoperability/Results/PushPullObjectComparison.json",
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/InteroperabilityTest_oM/Interoperability/Results/PushPullObjectComparison.json",
   "title" : "PushPullObjectComparison",
   "type" : ["object", "null"],
   "properties" : {
@@ -8,10 +9,11 @@
       "description" : "Message raised during the execution."
     },
     "Status" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Test_oM/TestStatus.json"
+      "description" : "Severity of the message. TestStatus: Defines the status of the Test Information. Designed to be very clear, concrete statuses, with minimal ambiguity.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Test_oM/TestStatus.json"
     },
     "UTCTime" : {
-      "type" : ["object", "null"],
+      "type" : "object",
       "properties" : {
         "$date" : {
           "type" : "integer"
@@ -22,7 +24,7 @@
       "type" : ["object", "null"],
       "properties" : {
         "_t" : {
-          "type" : ["string", "null"],
+          "type" : "string",
           "const" : "System.Type"
         },
         "Name" : {
@@ -43,7 +45,7 @@
       "description" : "The returned value of the property as a string. Empty if result type is Equal or Exception."
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Test.Interoperability.Results.PushPullObjectComparison"
     },

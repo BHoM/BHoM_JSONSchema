@@ -1,21 +1,21 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Elements/DraftingInstance.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Revit_oM/Elements/DraftingInstance.json",
   "title" : "DraftingInstance",
   "type" : ["object", "null"],
   "description" : "DraftingInstance: A generic wrapper BHoM type corresponding to any view-specific Revit element (drafting elements e.g. lines and hatches, tags, text notes etc.).",
   "properties" : {
     "Properties" : {
       "description" : "Information about Revit family type or graphic type of the instance. InstanceProperties: A generic wrapper BHoM type corresponding to any Revit family type. Name of InstanceProperties corresponds to family type name, type parameter values are stored in RevitParametersToPush.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Properties/InstanceProperties.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Revit_oM/Properties/InstanceProperties.json"
     },
     "Location" : {
       "description" : "Location of the instance in three dimensional space. IGeometry: The parent interface for all primative geometrical objects.\nIGeometry implements IObject - and not IBHoMObject. Equally primative geometrical objects do not inherit from the base BHoMObject class either. As primatives, the additional base BHoM properties are omitted for both efficency and performace.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/IGeometry.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/IGeometry.json"
     },
     "Orientation" : {
       "description" : "Orientation of the instance in 2 dimensional space (only X and Y vectors are relevant). Applicable only to point-based DraftingInstances. If null, a default orientation will be applied. Basis: An ordered set of mutually orthogonal unit vectors defining three-dimensional orientation in space",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Basis.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/Basis.json"
     },
     "ViewName" : {
       "type" : ["string", "null"],
@@ -29,7 +29,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

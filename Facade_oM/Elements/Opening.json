@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Elements/Opening.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Facade_oM/Elements/Opening.json",
   "title" : "Opening",
   "type" : ["object", "null"],
   "description" : "Opening: A cutout or hole in a building surface/panel (e.g. Window, Rooflight)",
@@ -9,20 +9,20 @@
       "type" : ["array", "null"],
       "description" : "A collection of FrameEdges which define the external boundary of the opening.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Elements/FrameEdge.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Facade_oM/Elements/FrameEdge.json"
       }
     },
     "OpeningConstruction" : {
       "description" : "A construction object providing construction information about the opening - typically glazing construction",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Constructions/IConstruction.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Physical_oM/Constructions/IConstruction.json"
     },
     "FrameCornerType" : {
       "description" : "Frame edge treatment at corners (ie Mitred, Vertical Extends, or Horizontal Extends) FrameCornerType: The type of join at frame corners",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Elements/FrameCornerType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Facade_oM/Elements/FrameCornerType.json"
     },
     "Type" : {
       "description" : "The type of opening on a panel (e.g. Window, Door). Use OpeningType enum OpeningType: The type of cutout or hole in a building surface/panel (e.g. Window, Door, Rooflight)",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Facade_oM/Elements/OpeningType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Facade_oM/Elements/OpeningType.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -32,7 +32,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

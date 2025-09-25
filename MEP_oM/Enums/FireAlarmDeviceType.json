@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/Enums/FireAlarmDeviceType.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/MEP_oM/Enums/FireAlarmDeviceType.json",
   "anyOf" : [{
       "type" : "string",
       "enum" : ["Undefined", "BeamDetector", "CarbonMonoxideDetector", "DuctSmokeDetector", "FireAlarmControlPanel", "FireAlarmRelay", "FireSmokeDamper", "FlowSwitch", "HeatDetector", "MonitorModule", "PostSmokePurgePanel", "PullStation", "RemoteAnnunciator", "SmokeDetector", "Speaker", "SpeakerStrobe", "Strobe", "TamperSwitch", "WardenStation"]

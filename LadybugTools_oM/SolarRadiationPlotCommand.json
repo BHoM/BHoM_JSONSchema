@@ -1,13 +1,13 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/SolarRadiationPlotCommand.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LadybugTools_oM/SolarRadiationPlotCommand.json",
   "title" : "SolarRadiationPlotCommand",
   "type" : ["object", "null"],
   "description" : "SolarRadiationPlotCommand: Command to use in conjunction with the LadybugToolsAdapter, that simulates a range of angles that a PV panel could rest at, and measures the amount of radiation (and by extension the energy that the panels create) at that angle.",
   "properties" : {
     "EPWFile" : {
       "description" : "The EPW file to use for simulation. FileSettings: The fileSettings, file name and directory, to use with an adapter for push and pull",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/FileSettings.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Adapter_oM/FileSettings.json"
     },
     "Directions" : {
       "type" : "integer",
@@ -19,11 +19,11 @@
     },
     "IrradianceType" : {
       "description" : "The irradiance type to plot. Total for all.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/IrradianceType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LadybugTools_oM/IrradianceType.json"
     },
     "AnalysisPeriod" : {
       "description" : "The analysis period to simulate/plot.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/AnalysisPeriod.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LadybugTools_oM/AnalysisPeriod.json"
     },
     "ColourMap" : {
       "type" : ["string", "null"],

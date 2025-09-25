@@ -1,21 +1,21 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/SAPMarkUpPullConfig.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/SAP_oM/SAP/SAPMarkUpPullConfig.json",
   "title" : "SAPMarkUpPullConfig",
   "type" : ["object", "null"],
   "description" : "SAPMarkUpPullConfig: Configurations specific for an Adapter Action (Push, Pull, etc).\nConsider that your tookit might have a more specific implementation available. Try to look for [your toolkit name]ActionConfig.",
   "properties" : {
     "SAPMarkupFile" : {
       "description" : "Set the location of the Bluebeam SAP XML markup file. FileSettings: The fileSettings, file name and directory, to use with an adapter for push and pull",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/FileSettings.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Adapter_oM/FileSettings.json"
     },
     "ExcelFile" : {
       "description" : "Set the location of the Excel schedules definitions file. FileSettings: The fileSettings, file name and directory, to use with an adapter for push and pull",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/FileSettings.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Adapter_oM/FileSettings.json"
     },
     "BluebeamConfig" : {
       "description" : "Set the Bluebeam configuration options to define how information should be pulled from the Bluebeam SAP XML markups. BluebeamConfig: Set up configuration settings for pulling from Bluebeam SAP markups.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/BluebeamConfig.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/SAP_oM/SAP/BluebeamConfig.json"
     },
     "HeatingFileDirectory" : {
       "type" : ["string", "null"],
@@ -23,31 +23,31 @@
     },
     "FloorDefinitionsRequest" : {
       "description" : "Provide the location within the Excel schedules definitions files for pulling Floor Schedule information. CellContentsRequest: IRequest that pulls cells and their metadata from the excel file.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Excel_oM/CellContentsRequest.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Excel_oM/CellContentsRequest.json"
     },
     "RoofDefinitionsRequest" : {
       "description" : "Provide the location within the Excel schedules definitions files for pulling Roof Schedule information. CellContentsRequest: IRequest that pulls cells and their metadata from the excel file.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Excel_oM/CellContentsRequest.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Excel_oM/CellContentsRequest.json"
     },
     "WallDefinitionsRequest" : {
       "description" : "Provide the location within the Excel schedules definitions files for pulling Wall Schedule information. CellContentsRequest: IRequest that pulls cells and their metadata from the excel file.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Excel_oM/CellContentsRequest.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Excel_oM/CellContentsRequest.json"
     },
     "PsiValuesRequest" : {
       "description" : "Provide the location within the Excel schedules definitions files for pulling PSI Value information. CellContentsRequest: IRequest that pulls cells and their metadata from the excel file.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Excel_oM/CellContentsRequest.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Excel_oM/CellContentsRequest.json"
     },
     "OpeningDefinitionsRequest" : {
       "description" : "Provide the location within the Excel schedules definitions files for pulling Opening Schedule information. CellContentsRequest: IRequest that pulls cells and their metadata from the excel file.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Excel_oM/CellContentsRequest.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Excel_oM/CellContentsRequest.json"
     },
     "OpeningPsiValuesRequest" : {
       "description" : "Provide the location within the Excel schedules definitions files for pulling Opening PSI Value information. CellContentsRequest: IRequest that pulls cells and their metadata from the excel file.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Excel_oM/CellContentsRequest.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Excel_oM/CellContentsRequest.json"
     },
     "DwellingSchedulesRequest" : {
       "description" : "Provide the location within the Excel schedules definitions files for pulling Dwelling Schedule information. CellContentsRequest: IRequest that pulls cells and their metadata from the excel file.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Excel_oM/CellContentsRequest.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Excel_oM/CellContentsRequest.json"
     },
     "WrapNonBHoMObjects" : {
       "type" : "boolean",
@@ -59,7 +59,7 @@
     },
     "DiffingConfig" : {
       "description" : "Configurations for the Diffing hashing. Requires `AllowHashForComparing` to be set to true. DiffingConfig: General configurations for the Diffing process, including settings for the Hash computation.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Diffing_oM/DiffingConfig.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Diffing_oM/DiffingConfig.json"
     },
     "_t" : {
       "type" : "string",

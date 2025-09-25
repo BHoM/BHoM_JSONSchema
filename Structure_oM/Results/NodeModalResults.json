@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/NodeModalResults.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/Results/NodeModalResults.json",
   "title" : "NodeModalResults",
   "type" : ["object", "null"],
   "description" : "NodeModalResults: Base class for all Node result classes. Stores all identifier information and how to sort the results in a collection.",
@@ -55,7 +55,7 @@
     },
     "NormalisationProcedure" : {
       "description" : "States if the result has been normalised based on the Eigenvector or on the Mass.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/ModalResultNormalisation.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/Results/ModalResultNormalisation.json"
     },
     "ObjectId" : {
       "type" : ["object", "integer", "string", "number", "null"]
@@ -73,7 +73,7 @@
     },
     "Orientation" : {
       "description" : "Defines the directionality of the results. Defaults to global XYZ. Basis: An ordered set of mutually orthogonal unit vectors defining three-dimensional orientation in space",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Basis.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/Basis.json"
     },
     "_t" : {
       "type" : "string",

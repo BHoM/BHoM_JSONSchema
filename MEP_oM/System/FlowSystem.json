@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/FlowSystem.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/MEP_oM/System/FlowSystem.json",
   "title" : "FlowSystem",
   "type" : ["object", "null"],
   "description" : "FlowSystem: A collection of IFlow Objects to be utilised throughout a defined system.",
@@ -9,12 +9,12 @@
       "type" : ["array", "null"],
       "description" : "A collection of FlowObjects to compile within a specified systemType.",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/IFlow.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/MEP_oM/System/IFlow.json"
       }
     },
     "SystemType" : {
       "description" : "A specific system type to be applied to the flow objects. The system type describes the material conveyed by the system (supply air, cold water), therefore determining the behaviours of the system ISystemType: An MEP system to determine flow types.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MEP_oM/System/ISystemType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/MEP_oM/System/ISystemType.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -24,7 +24,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

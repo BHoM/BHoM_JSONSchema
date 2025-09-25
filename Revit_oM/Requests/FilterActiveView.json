@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Requests/FilterActiveView.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Revit_oM/Requests/FilterActiveView.json",
   "title" : "FilterActiveView",
   "type" : ["object", "null"],
   "description" : "FilterActiveView: IRequest that filters the active view in Revit."

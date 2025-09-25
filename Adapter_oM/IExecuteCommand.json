@@ -1,10 +1,10 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/IExecuteCommand.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Adapter_oM/IExecuteCommand.json",
   "required" : ["_t"],
   "properties" : {
     "_t" : {
-      "enum" : ["BH.oM.Adapter.Commands.Analyse", "BH.oM.Adapter.Commands.AnalyseLoadCases", "BH.oM.Adapter.Commands.ClearResults", "BH.oM.Adapter.Commands.Close", "BH.oM.Adapter.Commands.CustomCommand", "BH.oM.Adapter.Commands.Exit", "BH.oM.Adapter.Commands.ImportFile", "BH.oM.Adapter.Commands.NewModel", "BH.oM.Adapter.Commands.Open", "BH.oM.Adapter.Commands.Save", "BH.oM.Adapter.Commands.SaveAs", "BH.oM.Adapters.File.CopyCommand", "BH.oM.Adapters.File.MoveCommand", "BH.oM.Adapters.File.RenameCommand", "BH.oM.Adapters.Mongo.Commands.Transfer", "BH.oM.Adapters.Revit.Commands.DirectPush", "BH.oM.Adapters.Revit.Commands.Isolate", "BH.oM.Adapters.Revit.Commands.PullSelection", "BH.oM.Adapters.Revit.Commands.Select", "BH.oM.Adapters.SQL.UpdateCommand", "BH.oM.Adapters.SQL.UpsertCommand", "BH.oM.Environment.SAP.ProcessResultsCommand", "BH.oM.Environment.SAP.RunAnalysisCommand", "BH.oM.LadybugTools.DiurnalPlotCommand", "BH.oM.LadybugTools.FacadeCondensationRiskCommand", "BH.oM.LadybugTools.GetMaterialCommand", "BH.oM.LadybugTools.GetTypologyCommand", "BH.oM.LadybugTools.HeatPlotCommand", "BH.oM.LadybugTools.RunExternalComfortCommand", "BH.oM.LadybugTools.RunSimulationCommand", "BH.oM.LadybugTools.SolarRadiationPlotCommand", "BH.oM.LadybugTools.SunPathPlotCommand", "BH.oM.LadybugTools.UTCIHeatPlotCommand", "BH.oM.LadybugTools.WalkabilityPlotCommand", "BH.oM.LadybugTools.WindroseCommand"]
+      "enum" : ["BH.oM.Adapter.Commands.Analyse", "BH.oM.Adapter.Commands.AnalyseLoadCases", "BH.oM.Adapter.Commands.ClearResults", "BH.oM.Adapter.Commands.Close", "BH.oM.Adapter.Commands.CustomCommand", "BH.oM.Adapter.Commands.Exit", "BH.oM.Adapter.Commands.ImportFile", "BH.oM.Adapter.Commands.NewModel", "BH.oM.Adapter.Commands.Open", "BH.oM.Adapter.Commands.Save", "BH.oM.Adapter.Commands.SaveAs", "BH.oM.Adapters.File.CopyCommand", "BH.oM.Adapters.File.MoveCommand", "BH.oM.Adapters.File.RenameCommand", "BH.oM.Adapters.Mongo.Commands.Transfer", "BH.oM.Adapters.OpenAI.Commands.ExecutePrompt", "BH.oM.Adapters.Revit.Commands.DirectPush", "BH.oM.Adapters.Revit.Commands.Isolate", "BH.oM.Adapters.Revit.Commands.PullSelection", "BH.oM.Adapters.Revit.Commands.Select", "BH.oM.Adapters.SQL.UpdateCommand", "BH.oM.Adapters.SQL.UpsertCommand", "BH.oM.Environment.SAP.ProcessResultsCommand", "BH.oM.Environment.SAP.RunAnalysisCommand", "BH.oM.LadybugTools.DiurnalPlotCommand", "BH.oM.LadybugTools.FacadeCondensationRiskCommand", "BH.oM.LadybugTools.GetMaterialCommand", "BH.oM.LadybugTools.GetTypologyCommand", "BH.oM.LadybugTools.HeatPlotCommand", "BH.oM.LadybugTools.RunExternalComfortCommand", "BH.oM.LadybugTools.RunSimulationCommand", "BH.oM.LadybugTools.SolarRadiationPlotCommand", "BH.oM.LadybugTools.SunPathPlotCommand", "BH.oM.LadybugTools.UTCIHeatPlotCommand", "BH.oM.LadybugTools.WalkabilityPlotCommand", "BH.oM.LadybugTools.WindroseCommand"]
     }
   },
   "allOf" : [{
@@ -18,7 +18,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/Commands/Analyse.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Adapter_oM/Commands/Analyse.json"
       }
     }, {
       "if" : {
@@ -31,7 +31,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/Commands/AnalyseLoadCases.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Adapter_oM/Commands/AnalyseLoadCases.json"
       }
     }, {
       "if" : {
@@ -44,7 +44,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/Commands/ClearResults.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Adapter_oM/Commands/ClearResults.json"
       }
     }, {
       "if" : {
@@ -57,7 +57,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/Commands/Close.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Adapter_oM/Commands/Close.json"
       }
     }, {
       "if" : {
@@ -70,7 +70,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/Commands/CustomCommand.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Adapter_oM/Commands/CustomCommand.json"
       }
     }, {
       "if" : {
@@ -83,7 +83,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/Commands/Exit.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Adapter_oM/Commands/Exit.json"
       }
     }, {
       "if" : {
@@ -96,7 +96,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/Commands/ImportFile.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Adapter_oM/Commands/ImportFile.json"
       }
     }, {
       "if" : {
@@ -109,7 +109,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/Commands/NewModel.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Adapter_oM/Commands/NewModel.json"
       }
     }, {
       "if" : {
@@ -122,7 +122,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/Commands/Open.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Adapter_oM/Commands/Open.json"
       }
     }, {
       "if" : {
@@ -135,7 +135,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/Commands/Save.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Adapter_oM/Commands/Save.json"
       }
     }, {
       "if" : {
@@ -148,7 +148,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/Commands/SaveAs.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Adapter_oM/Commands/SaveAs.json"
       }
     }, {
       "if" : {
@@ -161,7 +161,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/File_oM/CopyCommand.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/File_oM/CopyCommand.json"
       }
     }, {
       "if" : {
@@ -174,7 +174,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/File_oM/MoveCommand.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/File_oM/MoveCommand.json"
       }
     }, {
       "if" : {
@@ -187,7 +187,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/File_oM/RenameCommand.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/File_oM/RenameCommand.json"
       }
     }, {
       "if" : {
@@ -200,7 +200,20 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Mongo_oM/Commands/Transfer.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Mongo_oM/Commands/Transfer.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Adapters.OpenAI.Commands.ExecutePrompt"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/OpenAI_oM/Commands/ExecutePrompt.json"
       }
     }, {
       "if" : {
@@ -213,7 +226,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Commands/DirectPush.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Revit_oM/Commands/DirectPush.json"
       }
     }, {
       "if" : {
@@ -226,7 +239,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Commands/Isolate.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Revit_oM/Commands/Isolate.json"
       }
     }, {
       "if" : {
@@ -239,7 +252,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Commands/PullSelection.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Revit_oM/Commands/PullSelection.json"
       }
     }, {
       "if" : {
@@ -252,7 +265,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Revit_oM/Commands/Select.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Revit_oM/Commands/Select.json"
       }
     }, {
       "if" : {
@@ -265,7 +278,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SQL_oM/UpdateCommand.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/SQL_oM/UpdateCommand.json"
       }
     }, {
       "if" : {
@@ -278,7 +291,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SQL_oM/UpsertCommand.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/SQL_oM/UpsertCommand.json"
       }
     }, {
       "if" : {
@@ -291,7 +304,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/ProcessResultsCommand.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/SAP_oM/SAP/ProcessResultsCommand.json"
       }
     }, {
       "if" : {
@@ -304,7 +317,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/RunAnalysisCommand.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/SAP_oM/SAP/RunAnalysisCommand.json"
       }
     }, {
       "if" : {
@@ -317,7 +330,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/DiurnalPlotCommand.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LadybugTools_oM/DiurnalPlotCommand.json"
       }
     }, {
       "if" : {
@@ -330,7 +343,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/FacadeCondensationRiskCommand.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LadybugTools_oM/FacadeCondensationRiskCommand.json"
       }
     }, {
       "if" : {
@@ -343,7 +356,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/GetMaterialCommand.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LadybugTools_oM/GetMaterialCommand.json"
       }
     }, {
       "if" : {
@@ -356,7 +369,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/GetTypologyCommand.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LadybugTools_oM/GetTypologyCommand.json"
       }
     }, {
       "if" : {
@@ -369,7 +382,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/HeatPlotCommand.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LadybugTools_oM/HeatPlotCommand.json"
       }
     }, {
       "if" : {
@@ -382,7 +395,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/RunExternalComfortCommand.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LadybugTools_oM/RunExternalComfortCommand.json"
       }
     }, {
       "if" : {
@@ -395,7 +408,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/RunSimulationCommand.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LadybugTools_oM/RunSimulationCommand.json"
       }
     }, {
       "if" : {
@@ -408,7 +421,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/SolarRadiationPlotCommand.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LadybugTools_oM/SolarRadiationPlotCommand.json"
       }
     }, {
       "if" : {
@@ -421,7 +434,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/SunPathPlotCommand.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LadybugTools_oM/SunPathPlotCommand.json"
       }
     }, {
       "if" : {
@@ -434,7 +447,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/UTCIHeatPlotCommand.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LadybugTools_oM/UTCIHeatPlotCommand.json"
       }
     }, {
       "if" : {
@@ -447,7 +460,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/WalkabilityPlotCommand.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LadybugTools_oM/WalkabilityPlotCommand.json"
       }
     }, {
       "if" : {
@@ -460,7 +473,7 @@
         "required" : ["_t"]
       },
       "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/WindroseCommand.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LadybugTools_oM/WindroseCommand.json"
       }
     }]
 }

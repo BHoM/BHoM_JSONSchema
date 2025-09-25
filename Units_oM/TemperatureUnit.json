@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Units_oM/TemperatureUnit.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Units_oM/TemperatureUnit.json",
   "anyOf" : [{
       "type" : "string",
       "enum" : ["Undefined", "DegreeCelsius", "DegreeDelisle", "DegreeFahrenheit", "DegreeNewton", "DegreeRankine", "DegreeReaumur", "DegreeRoemer", "Kelvin", "MillidegreeCelsius", "SolarTemperature"]

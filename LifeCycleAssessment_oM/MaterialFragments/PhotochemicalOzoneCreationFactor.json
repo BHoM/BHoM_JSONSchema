@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LifeCycleAssessment_oM/MaterialFragments/PhotochemicalOzoneCreationFactor.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/LifeCycleAssessment_oM/MaterialFragments/PhotochemicalOzoneCreationFactor.json",
   "title" : "PhotochemicalOzoneCreationFactor",
   "type" : ["object", "null"],
   "description" : "PhotochemicalOzoneCreationFactor: Single value indicator for Photochemical Ozone Formation, measured in kg NMVOC eq, refers to the formation of ozone at the ground level of the troposphere caused by photochemical oxidation of volatile organic compounds (VOCs) and carbon monoxide in the presence of sunlight.",

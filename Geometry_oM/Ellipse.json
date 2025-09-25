@@ -1,21 +1,21 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Ellipse.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/Ellipse.json",
   "title" : "Ellipse",
   "type" : ["object", "null"],
   "description" : "Ellipse: A plane curve. A standard ellipse defining a curve of constant combined distance around two foci.\nThe larger of the two radii defines the major axis of the Ellipse, and the line along which the two foci lie.",
   "properties" : {
     "Centre" : {
       "description" : "Origin point defining location of the Ellipse in three-dimensional space. Point: Defines a dimensionless location in three-dimensional space.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Point.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/Point.json"
     },
     "Axis1" : {
       "description" : "Together with Axis2 defines orientation in three-dimensional space. Direction only, and not magnitude, matters. Vector: Defines a direction and magnitude in three-dimensional Euclidean space.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/Vector.json"
     },
     "Axis2" : {
       "description" : "Together with Axis1 defines orientation in three-dimensional space. Direction only, and not magnitude, matters. Vector: Defines a direction and magnitude in three-dimensional Euclidean space.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Geometry_oM/Vector.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Geometry_oM/Vector.json"
     },
     "Radius1" : {
       "type" : "number",

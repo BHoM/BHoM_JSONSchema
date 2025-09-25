@@ -1,28 +1,28 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/PropertyDetails.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/SAP_oM/SAP/XML/PropertyDetails.json",
   "title" : "PropertyDetails",
   "type" : ["object", "null"],
   "properties" : {
     "EnergySource" : {
       "description" : ".",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/EnergySource.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/SAP_oM/SAP/XML/EnergySource.json"
     },
     "Heating" : {
       "description" : ".",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/Heating.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/SAP_oM/SAP/XML/Heating.json"
     },
     "BuildingParts" : {
       "description" : "Details of the significant building parts that comprise the main habitable building in the property.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/BuildingParts.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/SAP_oM/SAP/XML/BuildingParts.json"
     },
     "Ventilation" : {
       "description" : "Details of the means by which the building is ventilated Ventilation: Details of the means by which the building is ventilated.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/Ventilation.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/SAP_oM/SAP/XML/Ventilation.json"
     },
     "OpeningTypes" : {
       "description" : "Types of exposed openings that make up a particular property.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/OpeningTypes.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/SAP_oM/SAP/XML/OpeningTypes.json"
     },
     "PropertyType" : {
       "type" : ["string", "null"],
@@ -62,7 +62,7 @@
     },
     "Lighting" : {
       "description" : "Details of the main lighting for the property",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/Lighting.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/SAP_oM/SAP/XML/Lighting.json"
     },
     "ConservatoryType" : {
       "type" : ["string", "null"],
@@ -130,15 +130,15 @@
     },
     "DeselectedImprovements" : {
       "description" : ".",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/DeselectedImprovements.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/SAP_oM/SAP/XML/DeselectedImprovements.json"
     },
     "FlatDetails" : {
       "description" : "Detials of location of flat in building",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/FlatDetails.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/SAP_oM/SAP/XML/FlatDetails.json"
     },
     "SpecialFeatures" : {
       "description" : ".",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/SpecialFeatures.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/SAP_oM/SAP/XML/SpecialFeatures.json"
     },
     "DesignWaterUse" : {
       "type" : ["string", "null"],
@@ -146,7 +146,7 @@
     },
     "Cooling" : {
       "description" : ".",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/XML/Cooling.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/SAP_oM/SAP/XML/Cooling.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -156,7 +156,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SectionProperties/ConcreteSection.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/SectionProperties/ConcreteSection.json",
   "title" : "ConcreteSection",
   "type" : ["object", "null"],
   "description" : "ConcreteSection: Concrete section to be used on Bars. Defined by a section profile. Note that all section constants are assuming an uncracked section and are disregarding reinforcement.",
@@ -11,15 +11,15 @@
     },
     "RebarIntent" : {
       "description" : "RebarIntent for the Bar containing a list of BarReinforcement. BarRebarIntent: A collection of reinforcement for a Bar and minimum cover.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Reinforcement/BarRebarIntent.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/Reinforcement/BarRebarIntent.json"
     },
     "Material" : {
       "description" : "Concrete material used throughout the full section. IMaterialFragment: Base interface for structural materials used by structural properties or as a fragment of the physical material.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/IMaterialFragment.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Structure_oM/MaterialFragments/IMaterialFragment.json"
     },
     "SectionProfile" : {
       "description" : "Profile of the section, containing dimensions and section geometry. IProfile: Base interface for all shape profiles.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Spatial_oM/ShapeProfiles/IProfile.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/Spatial_oM/ShapeProfiles/IProfile.json"
     },
     "Area" : {
       "type" : "number",
@@ -102,7 +102,7 @@
       "format" : "uuid"
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v8.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],
