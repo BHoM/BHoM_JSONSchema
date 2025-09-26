@@ -41,6 +41,7 @@ BHoM/SQL_Toolkit
 BHoM/STL_Toolkit
 BHoM/Socket_Toolkit
 BHoM/TriangleNet_Toolkit
+BHoM/Test_Toolkit
 BHoM/Versioning_Toolkit
 BHoM/XML_Toolkit
 BHoM/iAuditor_Toolkit
