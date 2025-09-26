@@ -11,6 +11,10 @@
     "DatabaseSettings" : {
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/DatabaseSettings.json"
     },
+    "EtabsVersion" : {
+      "description" : "Sets the version of ETABS to launch when running the adapter. EtabsVersion: The ETABS version number used in the adapter to select the path of the corresponding executable.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/EtabsVersion.json"
+    },
     "_t" : {
       "type" : "string",
       "description" : "Optional type disciminator.",
@@ -21,5 +25,5 @@
       "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
-  "required" : ["ReplaceLoads", "DatabaseSettings"]
+  "required" : ["ReplaceLoads", "DatabaseSettings", "EtabsVersion"]
 }
