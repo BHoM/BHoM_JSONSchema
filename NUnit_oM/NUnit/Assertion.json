@@ -5,7 +5,7 @@
   "type" : ["object", "null"],
   "properties" : {
     "Message" : {
-      "type" : ["string", "null"]  
+      "type" : ["string", "null"]
     },
     "Stacktrace" : {
       "type" : ["string", "null"]
