@@ -232,13 +232,13 @@ jobs:
           Write-Host "Building $repo..."
 
           # Prefer a solution if present; otherwise build each csproj
-          $solutions = Get-ChildItem -Recurse -Filter *.sln | Where-Object { $_.Directory.Name -notmatch '(Test|Tests|Example|Examples)' }
+          $solutions = Get-ChildItem -Filter *.sln
           if ($solutions) {
             # Build the first solution (or loop them if you have multiple)
             $sln = $solutions[0].FullName
             ../../.github/workflows/build.ps1 -SolutionOrProjectPath $sln
           } else {
-            $projects = Get-ChildItem -Recurse -Filter *.csproj | Where-Object { $_.Directory.Name -notmatch '(Test|Tests|Example|Examples)' }
+            $projects = Get-ChildItem -Recurse -Filter *.csproj | Where-Object { $_.Directory.Name -notmatch '\.ci' }
             foreach ($proj in $projects) {
               ../../.github/workflows/build.ps1 -SolutionOrProjectPath $proj.FullName
             }
