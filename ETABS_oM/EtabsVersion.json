@@ -1,0 +1,33 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/ETABS_oM/EtabsVersion.json",
+  "anyOf" : [{
+      "type" : "string",
+      "enum" : ["v18", "v20", "v21", "v22"]
+    }, {
+      "type" : "object",
+      "properties" : {
+        "_t" : {
+          "type" : "string",
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : "string",
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.Adapters.ETABS.EtabsVersion"
+            }
+          }
+        },
+        "Value" : {
+          "type" : "string",
+          "enum" : ["v18", "v20", "v21", "v22"]
+        }
+      }
+    }]
+}

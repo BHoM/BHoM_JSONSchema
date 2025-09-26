@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/NUnit_oM/NUnit/TestSuite.json",
   "title" : "TestSuite",
   "type" : ["object", "null"],
@@ -40,7 +41,7 @@
       "type" : ["string", "null"]
     },
     "StartTime" : {
-      "type" : ["object", "null"],
+      "type" : "object",
       "properties" : {
         "$date" : {
           "type" : "integer"
@@ -48,7 +49,7 @@
       }
     },
     "EndTime" : {
-      "type" : ["object", "null"],
+      "type" : "object",
       "properties" : {
         "$date" : {
           "type" : "integer"
@@ -107,7 +108,7 @@
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/NUnit_oM/NUnit/Reason.json"
     },
     "_t" : {
-      "type" : ["string", "null"],
+      "type" : "string",
       "description" : "Optional type disciminator.",
       "const" : "BH.oM.Test.NUnit.TestSuite"
     },
