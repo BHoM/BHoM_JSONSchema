@@ -4,10 +4,49 @@
   "required" : ["_t"],
   "properties" : {
     "_t" : {
-      "enum" : ["BH.oM.Test.Results.EventMessage", "BH.oM.Test.Results.TestResult"]
+      "enum" : ["BH.oM.Test.CodeCompliance.DatasetSource", "BH.oM.Test.CodeCompliance.Error", "BH.oM.Test.Interoperability.Results.PushPullObjectComparison", "BH.oM.Test.Results.EventMessage", "BH.oM.Test.Results.TestResult", "BH.oM.UnitTest.Results.ComparisonDifference"]
     }
   },
   "allOf" : [{
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Test.CodeCompliance.DatasetSource"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/CodeComplianceTest_oM/CodeCompliance/DatasetSource.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Test.CodeCompliance.Error"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/CodeComplianceTest_oM/CodeCompliance/Error.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Test.Interoperability.Results.PushPullObjectComparison"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/InteroperabilityTest_oM/Interoperability/Results/PushPullObjectComparison.json"
+      }
+    }, {
       "if" : {
         "properties" : {
           "_t" : {
@@ -32,6 +71,19 @@
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Test_oM/Results/TestResult.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.UnitTest.Results.ComparisonDifference"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/UnitTest_oM/Results/ComparisonDifference.json"
       }
     }]
 }
