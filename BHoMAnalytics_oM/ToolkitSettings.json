@@ -21,6 +21,10 @@
       "type" : ["string", "null"],
       "description" : "Method ran when the UI is loaded. This is in charge of sending teh analytics files generated so far to the database."
     },
+    "InitialisationAssembly" : {
+      "type" : ["string", "null"],
+      "description" : "Assmbly where the initialisation method can be found."
+    },
     "BHoM_Guid" : {
       "type" : "string",
       "format" : "uuid"
@@ -51,5 +55,5 @@
       "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
-  "required" : ["ServerAddress", "DatabaseName", "CollectionName", "InitialisationMethod"]
+  "required" : ["ServerAddress", "DatabaseName", "CollectionName", "InitialisationMethod", "InitialisationAssembly"]
 }
