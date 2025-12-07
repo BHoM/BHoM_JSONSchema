@@ -4,7 +4,7 @@
   "required" : ["_t"],
   "properties" : {
     "_t" : {
-      "enum" : ["BH.oM.Adapter.Commands.Analyse", "BH.oM.Adapter.Commands.AnalyseLoadCases", "BH.oM.Adapter.Commands.ClearResults", "BH.oM.Adapter.Commands.Close", "BH.oM.Adapter.Commands.CustomCommand", "BH.oM.Adapter.Commands.Exit", "BH.oM.Adapter.Commands.ImportFile", "BH.oM.Adapter.Commands.NewModel", "BH.oM.Adapter.Commands.Open", "BH.oM.Adapter.Commands.Save", "BH.oM.Adapter.Commands.SaveAs", "BH.oM.Adapters.File.CopyCommand", "BH.oM.Adapters.File.MoveCommand", "BH.oM.Adapters.File.RenameCommand", "BH.oM.Adapters.Mongo.Commands.Transfer", "BH.oM.Adapters.Revit.Commands.DirectPush", "BH.oM.Adapters.Revit.Commands.Isolate", "BH.oM.Adapters.Revit.Commands.PullSelection", "BH.oM.Adapters.Revit.Commands.Select", "BH.oM.Adapters.SQL.UpdateCommand", "BH.oM.Adapters.SQL.UpsertCommand", "BH.oM.Environment.SAP.ProcessResultsCommand", "BH.oM.Environment.SAP.RunAnalysisCommand", "BH.oM.LadybugTools.DiurnalPlotCommand", "BH.oM.LadybugTools.FacadeCondensationRiskCommand", "BH.oM.LadybugTools.GetMaterialCommand", "BH.oM.LadybugTools.GetTypologyCommand", "BH.oM.LadybugTools.HeatPlotCommand", "BH.oM.LadybugTools.RunExternalComfortCommand", "BH.oM.LadybugTools.RunSimulationCommand", "BH.oM.LadybugTools.SolarRadiationPlotCommand", "BH.oM.LadybugTools.SunPathPlotCommand", "BH.oM.LadybugTools.UTCIHeatPlotCommand", "BH.oM.LadybugTools.WalkabilityPlotCommand", "BH.oM.LadybugTools.WindroseCommand"]
+      "enum" : ["BH.oM.Adapter.Commands.Analyse", "BH.oM.Adapter.Commands.AnalyseLoadCases", "BH.oM.Adapter.Commands.ClearResults", "BH.oM.Adapter.Commands.Close", "BH.oM.Adapter.Commands.CustomCommand", "BH.oM.Adapter.Commands.Exit", "BH.oM.Adapter.Commands.ImportFile", "BH.oM.Adapter.Commands.NewModel", "BH.oM.Adapter.Commands.Open", "BH.oM.Adapter.Commands.Save", "BH.oM.Adapter.Commands.SaveAs", "BH.oM.Adapters.File.CopyCommand", "BH.oM.Adapters.File.MoveCommand", "BH.oM.Adapters.File.RenameCommand", "BH.oM.Adapters.Mongo.Commands.Transfer", "BH.oM.Adapters.Revit.Commands.DirectPush", "BH.oM.Adapters.Revit.Commands.Isolate", "BH.oM.Adapters.Revit.Commands.PullSelection", "BH.oM.Adapters.Revit.Commands.Select", "BH.oM.Adapters.SQL.UpdateCommand", "BH.oM.Adapters.SQL.UpsertCommand", "BH.oM.Environment.SAP.ProcessResultsCommand", "BH.oM.Environment.SAP.RunAnalysisCommand", "BH.oM.LadybugTools.DiurnalPlotCommand", "BH.oM.LadybugTools.EPWToCSVCommand", "BH.oM.LadybugTools.FacadeCondensationRiskCommand", "BH.oM.LadybugTools.GEMToHBJSONCommand", "BH.oM.LadybugTools.GetMaterialCommand", "BH.oM.LadybugTools.GetTypologyCommand", "BH.oM.LadybugTools.HBJSONToGEMCommand", "BH.oM.LadybugTools.HeatPlotCommand", "BH.oM.LadybugTools.RunExternalComfortCommand", "BH.oM.LadybugTools.RunSimulationCommand", "BH.oM.LadybugTools.SolarRadiationPlotCommand", "BH.oM.LadybugTools.SunPathPlotCommand", "BH.oM.LadybugTools.UTCIHeatPlotCommand", "BH.oM.LadybugTools.WalkabilityPlotCommand", "BH.oM.LadybugTools.WindroseCommand"]
     }
   },
   "allOf" : [{
@@ -324,6 +324,19 @@
         "properties" : {
           "_t" : {
             "type" : "string",
+            "const" : "BH.oM.LadybugTools.EPWToCSVCommand"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/EPWToCSVCommand.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
             "const" : "BH.oM.LadybugTools.FacadeCondensationRiskCommand"
           }
         },
@@ -331,6 +344,19 @@
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/FacadeCondensationRiskCommand.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.LadybugTools.GEMToHBJSONCommand"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/GEMToHBJSONCommand.json"
       }
     }, {
       "if" : {
@@ -357,6 +383,19 @@
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/GetTypologyCommand.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.LadybugTools.HBJSONToGEMCommand"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/HBJSONToGEMCommand.json"
       }
     }, {
       "if" : {

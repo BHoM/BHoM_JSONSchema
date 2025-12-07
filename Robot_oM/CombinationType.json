@@ -1,0 +1,33 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Robot_oM/CombinationType.json",
+  "anyOf" : [{
+      "type" : "string",
+      "enum" : ["Undefined", "EC_ULS", "EC_SLS"]
+    }, {
+      "type" : "object",
+      "properties" : {
+        "_t" : {
+          "type" : "string",
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : "string",
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.Adapters.Robot.CombinationType"
+            }
+          }
+        },
+        "Value" : {
+          "type" : "string",
+          "enum" : ["Undefined", "EC_ULS", "EC_SLS"]
+        }
+      }
+    }]
+}

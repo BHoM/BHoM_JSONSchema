@@ -13,6 +13,10 @@
       "type" : "integer",
       "description" : "The amount of time (in days) any files that have been created by the adapter for caching purposes should exist before being removed/recreated. \n Files are only deleted/updated . \n Set to 0 to force a recompute of a simulation that has a stored cache."
     },
+    "SkipEPWCheck" : {
+      "type" : "boolean",
+      "description" : "Skips EPW file checks to allow epw files that are not on a drive accessible to the adapter. In general this should be set to false."
+    },
     "WrapNonBHoMObjects" : {
       "type" : "boolean",
       "description" : "If true, the Push action wraps any non-BHoM type into a BH.oM.Adapter.ObjectWrapper, allowing them to make use of the full Adapter workflow."
@@ -35,5 +39,5 @@
       "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
-  "required" : ["JsonFile", "CacheFileMaximumAge"]
+  "required" : ["JsonFile", "CacheFileMaximumAge", "SkipEPWCheck"]
 }
