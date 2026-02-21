@@ -24,6 +24,9 @@
     "Weight" : {
       "type" : "number"
     },
+    "Json" : {
+      "type" : ["string", "null"]
+    },
     "BHoM_Guid" : {
       "type" : "string",
       "format" : "uuid"
@@ -54,5 +57,5 @@
       "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
-  "required" : ["CallerType", "Item", "Icon", "Text", "Weight"]
+  "required" : ["CallerType", "Item", "Icon", "Text", "Weight", "Json"]
 }
