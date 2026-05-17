@@ -24,6 +24,18 @@
     "Json" : {
       "type" : ["string", "null"]
     },
+    "InputKeys" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "OutputKeys" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
     "_t" : {
       "type" : "string",
       "description" : "Optional type disciminator.",
@@ -34,5 +46,5 @@
       "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
-  "required" : ["AssemblyName", "AssemblyModifiedTime", "Type", "DisplayText", "Json"]
+  "required" : ["AssemblyName", "AssemblyModifiedTime", "Type", "DisplayText", "Json", "InputKeys", "OutputKeys"]
 }
