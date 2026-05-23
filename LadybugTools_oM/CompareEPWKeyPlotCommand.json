@@ -1,0 +1,41 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/CompareEPWKeyPlotCommand.json",
+  "title" : "CompareEPWKeyPlotCommand",
+  "type" : ["object", "null"],
+  "properties" : {
+    "EPWFile" : {
+      "description" : "The EPW file that acts as the base for comparisons. FileSettings: The fileSettings, file name and directory, to use with an adapter for push and pull",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/FileSettings.json"
+    },
+    "EPWKey" : {
+      "description" : "Key (e.g. Dry Bulb Temperature) to compare. EPWKey: An enum for keys that frequently appear in epw files.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/EPWKey.json"
+    },
+    "EPWCompareFiles" : {
+      "type" : ["array", "null"],
+      "description" : "The list of EPW files to be compared with the base file (or each other).",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/FileSettings.json"
+      }
+    },
+    "PlotTimeseries" : {
+      "type" : "boolean",
+      "description" : "Whether to plot a time series chart. If set to false, plots data as a histogram instead."
+    },
+    "OutputLocation" : {
+      "type" : ["string", "null"],
+      "description" : "The location to place the image file once complete."
+    },
+    "_t" : {
+      "type" : "string",
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.LadybugTools.CompareEPWKeyPlotCommand"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["EPWFile", "EPWKey", "EPWCompareFiles", "PlotTimeseries", "OutputLocation"]
+}
