@@ -4,10 +4,23 @@
   "required" : ["_t"],
   "properties" : {
     "_t" : {
-      "enum" : ["BH.oM.LadybugTools.DiurnalPlotCommand", "BH.oM.LadybugTools.FacadeCondensationRiskCommand", "BH.oM.LadybugTools.HeatPlotCommand", "BH.oM.LadybugTools.RunExternalComfortCommand", "BH.oM.LadybugTools.RunSimulationCommand", "BH.oM.LadybugTools.SolarRadiationPlotCommand", "BH.oM.LadybugTools.SunPathPlotCommand", "BH.oM.LadybugTools.UTCIHeatPlotCommand", "BH.oM.LadybugTools.WalkabilityPlotCommand", "BH.oM.LadybugTools.WindroseCommand"]
+      "enum" : ["BH.oM.LadybugTools.CompareEPWKeyPlotCommand", "BH.oM.LadybugTools.DiurnalPlotCommand", "BH.oM.LadybugTools.FacadeCondensationRiskCommand", "BH.oM.LadybugTools.HeatPlotCommand", "BH.oM.LadybugTools.RunExternalComfortCommand", "BH.oM.LadybugTools.RunSimulationCommand", "BH.oM.LadybugTools.SolarRadiationPlotCommand", "BH.oM.LadybugTools.SunPathPlotCommand", "BH.oM.LadybugTools.UTCIHeatPlotCommand", "BH.oM.LadybugTools.WalkabilityPlotCommand", "BH.oM.LadybugTools.WindroseCommand"]
     }
   },
   "allOf" : [{
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.LadybugTools.CompareEPWKeyPlotCommand"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/CompareEPWKeyPlotCommand.json"
+      }
+    }, {
       "if" : {
         "properties" : {
           "_t" : {

@@ -4,7 +4,7 @@
   "required" : ["_t"],
   "properties" : {
     "_t" : {
-      "enum" : ["BH.oM.LadybugTools.CollectionData", "BH.oM.LadybugTools.SolarRadiationData", "BH.oM.LadybugTools.SunPathData", "BH.oM.LadybugTools.UTCIData", "BH.oM.LadybugTools.WindroseData"]
+      "enum" : ["BH.oM.LadybugTools.CollectionData", "BH.oM.LadybugTools.NoData", "BH.oM.LadybugTools.SolarRadiationData", "BH.oM.LadybugTools.SunPathData", "BH.oM.LadybugTools.UTCIData", "BH.oM.LadybugTools.WindroseData"]
     }
   },
   "allOf" : [{
@@ -19,6 +19,19 @@
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/CollectionData.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.LadybugTools.NoData"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/NoData.json"
       }
     }, {
       "if" : {
