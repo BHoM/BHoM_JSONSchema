@@ -4,10 +4,23 @@
   "required" : ["_t"],
   "properties" : {
     "_t" : {
-      "enum" : ["BH.oM.BHoMAnalytics.ToolkitSettings", "BH.oM.Data.Library.LibrarySettings", "BH.oM.Grasshopper.UISettings", "BH.oM.UI.SearchSettings"]
+      "enum" : ["BH.oM.Adapters.SQL.SqlClientAssemblyFixSettings", "BH.oM.BHoMAnalytics.ToolkitSettings", "BH.oM.Data.Library.LibrarySettings", "BH.oM.Grasshopper.UISettings", "BH.oM.UI.SearchSettings"]
     }
   },
   "allOf" : [{
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Adapters.SQL.SqlClientAssemblyFixSettings"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SQL_oM/SqlClientAssemblyFixSettings.json"
+      }
+    }, {
       "if" : {
         "properties" : {
           "_t" : {
