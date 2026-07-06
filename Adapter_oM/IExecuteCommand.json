@@ -4,7 +4,7 @@
   "required" : ["_t"],
   "properties" : {
     "_t" : {
-      "enum" : ["BH.oM.Adapter.Commands.Analyse", "BH.oM.Adapter.Commands.AnalyseLoadCases", "BH.oM.Adapter.Commands.ClearResults", "BH.oM.Adapter.Commands.Close", "BH.oM.Adapter.Commands.CustomCommand", "BH.oM.Adapter.Commands.Exit", "BH.oM.Adapter.Commands.ImportFile", "BH.oM.Adapter.Commands.NewModel", "BH.oM.Adapter.Commands.Open", "BH.oM.Adapter.Commands.Save", "BH.oM.Adapter.Commands.SaveAs", "BH.oM.Adapters.File.CopyCommand", "BH.oM.Adapters.File.MoveCommand", "BH.oM.Adapters.File.RenameCommand", "BH.oM.Adapters.Mongo.Commands.Transfer", "BH.oM.Adapters.Revit.Commands.DirectPush", "BH.oM.Adapters.Revit.Commands.Isolate", "BH.oM.Adapters.Revit.Commands.PullSelection", "BH.oM.Adapters.Revit.Commands.Select", "BH.oM.Adapters.SQL.UpdateCommand", "BH.oM.Adapters.SQL.UpsertCommand", "BH.oM.Environment.SAP.ProcessResultsCommand", "BH.oM.Environment.SAP.RunAnalysisCommand", "BH.oM.LadybugTools.CompareEPWKeyPlotCommand", "BH.oM.LadybugTools.DiurnalPlotCommand", "BH.oM.LadybugTools.EPWToCSVCommand", "BH.oM.LadybugTools.FacadeCondensationRiskCommand", "BH.oM.LadybugTools.GEMToHBJSONCommand", "BH.oM.LadybugTools.GetMaterialCommand", "BH.oM.LadybugTools.GetTypologyCommand", "BH.oM.LadybugTools.HBJSONToGEMCommand", "BH.oM.LadybugTools.HeatPlotCommand", "BH.oM.LadybugTools.RunExternalComfortCommand", "BH.oM.LadybugTools.RunSimulationCommand", "BH.oM.LadybugTools.SolarRadiationPlotCommand", "BH.oM.LadybugTools.SunPathPlotCommand", "BH.oM.LadybugTools.UTCIHeatPlotCommand", "BH.oM.LadybugTools.WalkabilityPlotCommand", "BH.oM.LadybugTools.WindroseCommand"]
+      "enum" : ["BH.oM.Adapter.Commands.Analyse", "BH.oM.Adapter.Commands.AnalyseLoadCases", "BH.oM.Adapter.Commands.ClearResults", "BH.oM.Adapter.Commands.Close", "BH.oM.Adapter.Commands.CustomCommand", "BH.oM.Adapter.Commands.Exit", "BH.oM.Adapter.Commands.ImportFile", "BH.oM.Adapter.Commands.NewModel", "BH.oM.Adapter.Commands.Open", "BH.oM.Adapter.Commands.Save", "BH.oM.Adapter.Commands.SaveAs", "BH.oM.Adapters.File.CopyCommand", "BH.oM.Adapters.File.MoveCommand", "BH.oM.Adapters.File.RenameCommand", "BH.oM.Adapters.Mongo.Commands.Transfer", "BH.oM.Adapters.OpenAI.Commands.ExecutePrompt", "BH.oM.Adapters.Revit.Commands.DirectPush", "BH.oM.Adapters.Revit.Commands.Isolate", "BH.oM.Adapters.Revit.Commands.PullSelection", "BH.oM.Adapters.Revit.Commands.Select", "BH.oM.Adapters.SQL.UpdateCommand", "BH.oM.Adapters.SQL.UpsertCommand", "BH.oM.LadybugTools.CompareEPWKeyPlotCommand", "BH.oM.LadybugTools.DiurnalPlotCommand", "BH.oM.LadybugTools.EPWToCSVCommand", "BH.oM.LadybugTools.FacadeCondensationRiskCommand", "BH.oM.LadybugTools.GEMToHBJSONCommand", "BH.oM.LadybugTools.GetMaterialCommand", "BH.oM.LadybugTools.GetTypologyCommand", "BH.oM.LadybugTools.HBJSONToGEMCommand", "BH.oM.LadybugTools.HeatPlotCommand", "BH.oM.LadybugTools.RunExternalComfortCommand", "BH.oM.LadybugTools.RunSimulationCommand", "BH.oM.LadybugTools.SolarRadiationPlotCommand", "BH.oM.LadybugTools.SunPathPlotCommand", "BH.oM.LadybugTools.UTCIHeatPlotCommand", "BH.oM.LadybugTools.WalkabilityPlotCommand", "BH.oM.LadybugTools.WindroseCommand"]
     }
   },
   "allOf" : [{
@@ -207,6 +207,19 @@
         "properties" : {
           "_t" : {
             "type" : "string",
+            "const" : "BH.oM.Adapters.OpenAI.Commands.ExecutePrompt"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/OpenAI_oM/Commands/ExecutePrompt.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
             "const" : "BH.oM.Adapters.Revit.Commands.DirectPush"
           }
         },
@@ -279,32 +292,6 @@
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SQL_oM/UpsertCommand.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : "string",
-            "const" : "BH.oM.Environment.SAP.ProcessResultsCommand"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/ProcessResultsCommand.json"
-      }
-    }, {
-      "if" : {
-        "properties" : {
-          "_t" : {
-            "type" : "string",
-            "const" : "BH.oM.Environment.SAP.RunAnalysisCommand"
-          }
-        },
-        "required" : ["_t"]
-      },
-      "then" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SAP_oM/SAP/RunAnalysisCommand.json"
       }
     }, {
       "if" : {
