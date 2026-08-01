@@ -1,0 +1,40 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Requests/LinkResultRequest.json",
+  "title" : "LinkResultRequest",
+  "type" : ["object", "null"],
+  "description" : "LinkResultRequest: Request for extracting Bar results from an adapter.",
+  "properties" : {
+    "ResultType" : {
+      "description" : "Defines which type of results that should be extracted. LinkResultType: Defines the type of results that should be extracted for LinkResultRequests.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Requests/LinkResultType.json"
+    },
+    "Cases" : {
+      "type" : ["array", "null"],
+      "description" : "Defines which cases and/or combinations that results should be extracted for. Can generally be set to either Loadcase or Loadcombination objects, or identifiers matching the software. If nothing is provided, results for all cases will be assumed.",
+      "items" : { }
+    },
+    "Modes" : {
+      "type" : ["array", "null"],
+      "description" : "Defines for which modes results should be extracted. Only applicable for some casetypes. If nothing is provided, results for all modes will be assumed.",
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "ObjectIds" : {
+      "type" : ["array", "null"],
+      "description" : "Defines which Nodes that results should be extracted for. Can generally be set to either pulled Node objects, or identifiers matching the software. If nothing is provided, results for all Nodes will be assumed.",
+      "items" : { }
+    },
+    "_t" : {
+      "type" : "string",
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.Structure.Requests.LinkResultRequest"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["ResultType", "Cases", "Modes", "ObjectIds"]
+}

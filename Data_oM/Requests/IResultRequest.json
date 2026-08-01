@@ -4,7 +4,7 @@
   "required" : ["_t"],
   "properties" : {
     "_t" : {
-      "enum" : ["BH.oM.Adapters.ETABS.Requests.PierAndSpandrelForceRequest", "BH.oM.Adapters.SAP2000.Requests.SteelUtilisationRequest", "BH.oM.Structure.Requests.BarResultRequest", "BH.oM.Structure.Requests.GlobalResultRequest", "BH.oM.Structure.Requests.MeshResultRequest", "BH.oM.Structure.Requests.NodeResultRequest"]
+      "enum" : ["BH.oM.Adapters.ETABS.Requests.PierAndSpandrelForceRequest", "BH.oM.Adapters.SAP2000.Requests.SteelUtilisationRequest", "BH.oM.Structure.Requests.BarResultRequest", "BH.oM.Structure.Requests.GlobalResultRequest", "BH.oM.Structure.Requests.LinkResultRequest", "BH.oM.Structure.Requests.MeshResultRequest", "BH.oM.Structure.Requests.NodeResultRequest"]
     }
   },
   "allOf" : [{
@@ -58,6 +58,19 @@
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Requests/GlobalResultRequest.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Structure.Requests.LinkResultRequest"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Requests/LinkResultRequest.json"
       }
     }, {
       "if" : {

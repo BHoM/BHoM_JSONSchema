@@ -1,0 +1,57 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/LinkForce.json",
+  "title" : "LinkForce",
+  "type" : ["object", "null"],
+  "description" : "LinkForce: Resulting forces in local coordinates along the general link.",
+  "properties" : {
+    "FX" : {
+      "type" : "number",
+      "description" : "Axial force along the local x-axis. Property has a quantity of type Force measured in [N]."
+    },
+    "FY" : {
+      "type" : "number",
+      "description" : "Shear force along the local y-axis. Generally minor axis shear force. Property has a quantity of type Force measured in [N]."
+    },
+    "FZ" : {
+      "type" : "number",
+      "description" : "Shear force along the local z-axis. Generally major axis shear force. Property has a quantity of type Force measured in [N]."
+    },
+    "MX" : {
+      "type" : "number",
+      "description" : "Torsional moment. Property has a quantity of type Moment measured in [N.m]."
+    },
+    "MY" : {
+      "type" : "number",
+      "description" : "Bending moment about the local y-axis. Generally major axis bending moment. Property has a quantity of type Moment measured in [N.m]."
+    },
+    "MZ" : {
+      "type" : "number",
+      "description" : "Bending moment about the local z-axis. Generally minor axis bending moment. Property has a quantity of type Moment measured in [N.m]."
+    },
+    "ObjectId" : {
+      "type" : ["object", "integer", "string", "number", "null"]
+    },
+    "ResultCase" : {
+      "type" : ["object", "integer", "string", "number", "null"]
+    },
+    "ModeNumber" : {
+      "type" : "integer",
+      "description" : "Positive index, starting at one. Only set for cases with modal outputs such as dynamic cases."
+    },
+    "TimeStep" : {
+      "type" : "number",
+      "description" : "Time step for time history results."
+    },
+    "_t" : {
+      "type" : "string",
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.Structure.Results.LinkForce"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["FX", "FY", "FZ", "MX", "MY", "MZ", "ObjectId", "ResultCase", "ModeNumber", "TimeStep"]
+}
