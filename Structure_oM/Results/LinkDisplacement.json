@@ -1,0 +1,57 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Results/LinkDisplacement.json",
+  "title" : "LinkDisplacement",
+  "type" : ["object", "null"],
+  "description" : "LinkDisplacement: Resulting total displacements in global coordinates.",
+  "properties" : {
+    "UX" : {
+      "type" : "number",
+      "description" : "Total displacement along the global X-axis. Property has a quantity of type Length measured in [m]."
+    },
+    "UY" : {
+      "type" : "number",
+      "description" : "Total displacement along the global Y-axis. Property has a quantity of type Length measured in [m]."
+    },
+    "UZ" : {
+      "type" : "number",
+      "description" : "Total displacement along the global Z-axis. Property has a quantity of type Length measured in [m]."
+    },
+    "RX" : {
+      "type" : "number",
+      "description" : "Total rotation about the global X-axis. Property has a quantity of type Angle measured in [rad]."
+    },
+    "RY" : {
+      "type" : "number",
+      "description" : "Total rotation about the global Y-axis. Property has a quantity of type Angle measured in [rad]."
+    },
+    "RZ" : {
+      "type" : "number",
+      "description" : "Total rotation about the global Z-axis. Property has a quantity of type Angle measured in [rad]."
+    },
+    "ObjectId" : {
+      "type" : ["object", "integer", "string", "number", "null"]
+    },
+    "ResultCase" : {
+      "type" : ["object", "integer", "string", "number", "null"]
+    },
+    "ModeNumber" : {
+      "type" : "integer",
+      "description" : "Positive index, starting at one. Only set for cases with modal outputs such as dynamic cases."
+    },
+    "TimeStep" : {
+      "type" : "number",
+      "description" : "Time step for time history results."
+    },
+    "_t" : {
+      "type" : "string",
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.Structure.Results.LinkDisplacement"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["UX", "UY", "UZ", "RX", "RY", "RZ", "ObjectId", "ResultCase", "ModeNumber", "TimeStep"]
+}
