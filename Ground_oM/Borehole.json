@@ -42,6 +42,13 @@
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Ground_oM/ITest.json"
       }
     },
+    "WaterStrikeResults" : {
+      "type" : ["array", "null"],
+      "description" : "A list of objects containing the water strike results found within the borehole.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Ground_oM/WaterStrike.json"
+      }
+    },
     "BoreholeProperties" : {
       "type" : ["array", "null"],
       "description" : "A list of properties related to the borehole.",
@@ -79,5 +86,5 @@
       "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
-  "required" : ["Id", "Top", "Bottom", "CoordinateSystem", "Strata", "ContaminantSamples", "GeotechnicalTestResults", "BoreholeProperties"]
+  "required" : ["Id", "Top", "Bottom", "CoordinateSystem", "Strata", "ContaminantSamples", "GeotechnicalTestResults", "WaterStrikeResults", "BoreholeProperties"]
 }
