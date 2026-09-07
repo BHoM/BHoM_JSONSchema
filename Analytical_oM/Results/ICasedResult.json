@@ -4,7 +4,7 @@
   "required" : ["_t"],
   "properties" : {
     "_t" : {
-      "enum" : ["BH.oM.Adapters.ETABS.Results.PierForce", "BH.oM.Adapters.ETABS.Results.SpandrelForce", "BH.oM.Adapters.SAP2000.Results.AISCSteelUtilisation", "BH.oM.Analytical.Elements.ShortestPathResult", "BH.oM.Environment.Results.Illuminance.Lux", "BH.oM.Environment.Results.Mesh.MeshElementResult", "BH.oM.Environment.Results.Mesh.MeshResult", "BH.oM.Humans.ViewQuality.Avalue", "BH.oM.Humans.ViewQuality.Cvalue", "BH.oM.Humans.ViewQuality.Evalue", "BH.oM.Humans.ViewQuality.ViewQualityResult", "BH.oM.Lighting.Results.Illuminance.Lux", "BH.oM.Lighting.Results.Mesh.MeshElementResult", "BH.oM.Lighting.Results.Mesh.MeshResult", "BH.oM.Structure.Results.BarDeformation", "BH.oM.Structure.Results.BarDisplacement", "BH.oM.Structure.Results.BarForce", "BH.oM.Structure.Results.BarModeShape", "BH.oM.Structure.Results.BarRequiredArea", "BH.oM.Structure.Results.BarResult", "BH.oM.Structure.Results.BarStrain", "BH.oM.Structure.Results.BarStress", "BH.oM.Structure.Results.CompositeUtilisation", "BH.oM.Structure.Results.GlobalReactions", "BH.oM.Structure.Results.LinkDisplacement", "BH.oM.Structure.Results.LinkForce", "BH.oM.Structure.Results.LinkResult", "BH.oM.Structure.Results.MeshDisplacement", "BH.oM.Structure.Results.MeshElementResult", "BH.oM.Structure.Results.MeshForce", "BH.oM.Structure.Results.MeshModeShape", "BH.oM.Structure.Results.MeshRequiredArea", "BH.oM.Structure.Results.MeshResult", "BH.oM.Structure.Results.MeshStress", "BH.oM.Structure.Results.MeshVonMises", "BH.oM.Structure.Results.ModalDynamics", "BH.oM.Structure.Results.ModalMassAndFrequency", "BH.oM.Structure.Results.NodeAcceleration", "BH.oM.Structure.Results.NodeDisplacement", "BH.oM.Structure.Results.NodeModalMass", "BH.oM.Structure.Results.NodeModalResults", "BH.oM.Structure.Results.NodeModeShape", "BH.oM.Structure.Results.NodeReaction", "BH.oM.Structure.Results.NodeResult", "BH.oM.Structure.Results.NodeVelocity", "BH.oM.Structure.Results.SteelUtilisation", "BH.oM.Structure.Results.StoreyDrift", "BH.oM.Structure.Results.StructuralGlobalResult", "BH.oM.Test.Results.InputOutputComparisonDiffing", "BH.oM.Test.Results.InputOutputComparisonSummary", "BH.oM.Test.Results.InputOutputDifference"]
+      "enum" : ["BH.oM.Adapters.ETABS.Results.PierForce", "BH.oM.Adapters.ETABS.Results.SpandrelForce", "BH.oM.Adapters.SAP2000.Results.AISCSteelUtilisation", "BH.oM.Analytical.Elements.ShortestPathResult", "BH.oM.Environment.Results.Illuminance.Lux", "BH.oM.Environment.Results.Mesh.MeshElementResult", "BH.oM.Environment.Results.Mesh.MeshResult", "BH.oM.Humans.ViewQuality.Avalue", "BH.oM.Humans.ViewQuality.Cvalue", "BH.oM.Humans.ViewQuality.Evalue", "BH.oM.Humans.ViewQuality.ViewQualityResult", "BH.oM.Lighting.Results.Illuminance.Lux", "BH.oM.Lighting.Results.Mesh.MeshElementResult", "BH.oM.Lighting.Results.Mesh.MeshResult", "BH.oM.Structure.Design.DesignResult", "BH.oM.Structure.Results.BarDeformation", "BH.oM.Structure.Results.BarDisplacement", "BH.oM.Structure.Results.BarForce", "BH.oM.Structure.Results.BarModeShape", "BH.oM.Structure.Results.BarRequiredArea", "BH.oM.Structure.Results.BarResult", "BH.oM.Structure.Results.BarStrain", "BH.oM.Structure.Results.BarStress", "BH.oM.Structure.Results.CompositeUtilisation", "BH.oM.Structure.Results.GlobalReactions", "BH.oM.Structure.Results.LinkDisplacement", "BH.oM.Structure.Results.LinkForce", "BH.oM.Structure.Results.LinkResult", "BH.oM.Structure.Results.MeshDisplacement", "BH.oM.Structure.Results.MeshElementResult", "BH.oM.Structure.Results.MeshForce", "BH.oM.Structure.Results.MeshModeShape", "BH.oM.Structure.Results.MeshRequiredArea", "BH.oM.Structure.Results.MeshResult", "BH.oM.Structure.Results.MeshStress", "BH.oM.Structure.Results.MeshVonMises", "BH.oM.Structure.Results.ModalDynamics", "BH.oM.Structure.Results.ModalMassAndFrequency", "BH.oM.Structure.Results.NodeAcceleration", "BH.oM.Structure.Results.NodeDisplacement", "BH.oM.Structure.Results.NodeModalMass", "BH.oM.Structure.Results.NodeModalResults", "BH.oM.Structure.Results.NodeModeShape", "BH.oM.Structure.Results.NodeReaction", "BH.oM.Structure.Results.NodeResult", "BH.oM.Structure.Results.NodeVelocity", "BH.oM.Structure.Results.SteelUtilisation", "BH.oM.Structure.Results.StoreyDrift", "BH.oM.Structure.Results.StructuralGlobalResult", "BH.oM.Test.Results.InputOutputComparisonDiffing", "BH.oM.Test.Results.InputOutputComparisonSummary", "BH.oM.Test.Results.InputOutputDifference"]
     }
   },
   "allOf" : [{
@@ -188,6 +188,19 @@
       },
       "then" : {
         "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Lighting_oM/Results/Mesh/MeshResult.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Structure.Design.DesignResult"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Design/DesignResult.json"
       }
     }, {
       "if" : {
