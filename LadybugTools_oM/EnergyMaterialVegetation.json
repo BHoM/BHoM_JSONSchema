@@ -4,7 +4,7 @@
   "title" : "EnergyMaterialVegetation",
   "type" : ["object", "null"],
   "properties" : {
-    "Name" : {
+    "Identifier" : {
       "type" : ["string", "null"],
       "description" : "The name of this EnergyMaterialVegetation."
     },
@@ -60,9 +60,15 @@
       "type" : "number",
       "description" : "A number between 50 and 300 for the resistance of the plants to moisture transport [s/m]. Plants with low values of stomatal resistance will result in higher evapotranspiration rates than plants with high resistance."
     },
+    "Type" : {
+      "type" : ["string", "null"]
+    },
     "BHoM_Guid" : {
       "type" : "string",
       "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
     },
     "Fragments" : {
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
@@ -87,5 +93,5 @@
       "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
-  "required" : ["Name", "Thickness", "Conductivity", "Density", "SpecificHeat", "Roughness", "SoilThermalAbsorptance", "SoilSolarAbsorptance", "SoilVisibleAbsorptance", "PlantHeight", "LeafAreaIndex", "LeafReflectivity", "LeafEmissivity", "MinimumStomatalResistance"]
+  "required" : ["Identifier", "Thickness", "Conductivity", "Density", "SpecificHeat", "Roughness", "SoilThermalAbsorptance", "SoilSolarAbsorptance", "SoilVisibleAbsorptance", "PlantHeight", "LeafAreaIndex", "LeafReflectivity", "LeafEmissivity", "MinimumStomatalResistance", "Type"]
 }

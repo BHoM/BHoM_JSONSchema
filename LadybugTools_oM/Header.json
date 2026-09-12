@@ -20,6 +20,9 @@
       "type" : ["object", "null"],
       "description" : "The metadata associated with this header object."
     },
+    "Type" : {
+      "type" : ["string", "null"]
+    },
     "BHoM_Guid" : {
       "type" : "string",
       "format" : "uuid"
@@ -50,5 +53,5 @@
       "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
-  "required" : ["DataType", "Unit", "AnalysisPeriod", "Metadata"]
+  "required" : ["DataType", "Unit", "AnalysisPeriod", "Metadata", "Type"]
 }
