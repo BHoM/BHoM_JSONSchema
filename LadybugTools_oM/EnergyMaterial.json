@@ -4,7 +4,7 @@
   "title" : "EnergyMaterial",
   "type" : ["object", "null"],
   "properties" : {
-    "Name" : {
+    "Identifier" : {
       "type" : ["string", "null"],
       "description" : "The name of this EnergyMaterial."
     },
@@ -40,9 +40,15 @@
       "type" : "number",
       "description" : "Light absorptivity (1 - albedo) of material (0-1)."
     },
+    "Type" : {
+      "type" : ["string", "null"]
+    },
     "BHoM_Guid" : {
       "type" : "string",
       "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
     },
     "Fragments" : {
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
@@ -67,5 +73,5 @@
       "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
-  "required" : ["Name", "Thickness", "Conductivity", "Density", "SpecificHeat", "Roughness", "ThermalAbsorptance", "SolarAbsorptance", "VisibleAbsorptance"]
+  "required" : ["Identifier", "Thickness", "Conductivity", "Density", "SpecificHeat", "Roughness", "ThermalAbsorptance", "SolarAbsorptance", "VisibleAbsorptance", "Type"]
 }

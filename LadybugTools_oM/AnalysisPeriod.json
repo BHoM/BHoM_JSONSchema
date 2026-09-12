@@ -32,9 +32,12 @@
       "type" : "boolean",
       "description" : "Boolean flag for whether this represents a leap year."
     },
-    "TimeStep" : {
+    "Timestep" : {
       "type" : "integer",
       "description" : "The number of timesteps per hour."
+    },
+    "Type" : {
+      "type" : ["string", "null"]
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -66,5 +69,5 @@
       "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
-  "required" : ["StartMonth", "StartDay", "StartHour", "EndMonth", "EndDay", "EndHour", "IsLeapYear", "TimeStep"]
+  "required" : ["StartMonth", "StartDay", "StartHour", "EndMonth", "EndDay", "EndHour", "IsLeapYear", "Timestep", "Type"]
 }
