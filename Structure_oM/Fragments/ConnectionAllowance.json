@@ -1,0 +1,31 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Fragments/ConnectionAllowance.json",
+  "title" : "ConnectionAllowance",
+  "type" : ["object", "null"],
+  "description" : "ConnectionAllowance: The connection allowance of an element. Used when evaluating takeoffs to account for additional mass due to connections of the element.",
+  "properties" : {
+    "Allowance" : {
+      "type" : "number",
+      "description" : "Additional connection allowance expressed as a ratio of the mass of the element. For example, a value of 0.1 means a connection allowance equal to 10% of the mass of the element to which this fragment is applied. Property has a quantity of type Ratio measured in [-]."
+    },
+    "Material" : {
+      "description" : "Optional material to be used for the connection. If null, the material of the element will be assumed. IMaterialFragment: Base interface for structural materials used by structural properties or as a fragment of the physical material.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/IMaterialFragment.json"
+    },
+    "Name" : {
+      "type" : ["string", "null"],
+      "description" : "Optional name for the connection allowance. It will be assigned as the name of the takeoff material. If left empty, the name of the material (or the name of the material of the element) will be used instead.\nThis can be useful if one wants to differentiate between connection and element contributions in the takeoff."
+    },
+    "_t" : {
+      "type" : "string",
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.Structure.Fragments.ConnectionAllowance"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["Allowance", "Material", "Name"]
+}

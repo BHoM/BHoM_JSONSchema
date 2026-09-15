@@ -16,7 +16,7 @@
       "description" : "The shade material used in the processing of this object. IEnergyMaterialOpaque: An interface for opaque energy materials.",
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/IEnergyMaterialOpaque.json"
     },
-    "Name" : {
+    "Identifier" : {
       "type" : ["string", "null"],
       "description" : "The identifier used to distinguish existing results for this object."
     },
@@ -72,6 +72,9 @@
       "type" : "string",
       "format" : "uuid"
     },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
     "Fragments" : {
       "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
     },
@@ -95,5 +98,5 @@
       "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
-  "required" : ["EpwFile", "GroundMaterial", "ShadeMaterial", "Name", "ShadedDownTemperature", "ShadedUpTemperature", "ShadedRadiantTemperature", "ShadedLongwaveMeanRadiantTemperatureDelta", "ShadedShortwaveMeanRadiantTemperatureDelta", "ShadedMeanRadiantTemperature", "UnshadedDownTemperature", "UnshadedUpTemperature", "UnshadedRadiantTemperature", "UnshadedLongwaveMeanRadiantTemperatureDelta", "UnshadedShortwaveMeanRadiantTemperatureDelta", "UnshadedMeanRadiantTemperature"]
+  "required" : ["EpwFile", "GroundMaterial", "ShadeMaterial", "Identifier", "ShadedDownTemperature", "ShadedUpTemperature", "ShadedRadiantTemperature", "ShadedLongwaveMeanRadiantTemperatureDelta", "ShadedShortwaveMeanRadiantTemperatureDelta", "ShadedMeanRadiantTemperature", "UnshadedDownTemperature", "UnshadedUpTemperature", "UnshadedRadiantTemperature", "UnshadedLongwaveMeanRadiantTemperatureDelta", "UnshadedShortwaveMeanRadiantTemperatureDelta", "UnshadedMeanRadiantTemperature"]
 }

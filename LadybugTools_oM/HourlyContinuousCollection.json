@@ -15,6 +15,9 @@
         "type" : ["number", "null"]
       }
     },
+    "Type" : {
+      "type" : ["string", "null"]
+    },
     "BHoM_Guid" : {
       "type" : "string",
       "format" : "uuid"
@@ -45,5 +48,5 @@
       "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
     }
   },
-  "required" : ["Header", "Values"]
+  "required" : ["Header", "Values", "Type"]
 }
