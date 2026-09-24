@@ -1,0 +1,69 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/SQLite_oM/Requests/RangeFilterRequest.json",
+  "title" : "RangeFilterRequest",
+  "type" : ["object", "null"],
+  "description" : "RangeFilterRequest: Request for filtering database records based on value ranges for numeric and DateTime columns.",
+  "properties" : {
+    "ColumnRanges" : {
+      "type" : ["array", "null"],
+      "description" : "Column range filters where each column has minimum and maximum values defined by GeneralDomain objects. \nKey is the column name, value is a GeneralDomain with Min and Max values. \nSupports numeric types (int, double, decimal) and DateTime. \nExample: {'Price': new GeneralDomain(100.0, 500.0), 'DateCreated': new GeneralDomain(DateTime(2023,1,1), DateTime(2023,12,31))}",
+      "items" : {
+        "type" : ["object", "null"]
+      }
+    },
+    "TableName" : {
+      "type" : ["string", "null"],
+      "description" : "Target table name for the filter operation. If not specified, will be derived from the request context."
+    },
+    "InclusiveBounds" : {
+      "type" : "boolean",
+      "description" : "Whether range bounds are inclusive (default) or exclusive. \nIf true: Min <= value <= Max. If false: Min < value < Max."
+    },
+    "Logic" : {
+      "description" : "Logical operator to combine multiple column filters. Default is AND. LogicalOperator: Defines logical operators for combining multiple filter conditions in SQL queries.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/SQLite_oM/LogicalOperator.json"
+    },
+    "MaxResults" : {
+      "type" : "integer",
+      "description" : "Maximum number of results to return. If 0, returns all matching records."
+    },
+    "SortColumns" : {
+      "type" : ["array", "null"],
+      "description" : "List of columns to sort the results by. Applied in order of list sequence.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/SQLite_oM/Objects/SortColumn.json"
+      }
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      },
+      "uniqueItems" : true
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : "string",
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.SQLite.Requests.RangeFilterRequest"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["ColumnRanges", "TableName", "InclusiveBounds", "Logic", "MaxResults", "SortColumns"]
+}

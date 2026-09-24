@@ -1,0 +1,33 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/SQLite_oM/DatabaseMode.json",
+  "anyOf" : [{
+      "type" : "string",
+      "enum" : ["Undefined", "FileDatabase", "InMemoryDatabase", "TemporaryDatabase"]
+    }, {
+      "type" : "object",
+      "properties" : {
+        "_t" : {
+          "type" : "string",
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : "string",
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.SQLite.DatabaseMode"
+            }
+          }
+        },
+        "Value" : {
+          "type" : "string",
+          "enum" : ["Undefined", "FileDatabase", "InMemoryDatabase", "TemporaryDatabase"]
+        }
+      }
+    }]
+}

@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Fragments/ConnectionAllowance.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/Structure_oM/Fragments/ConnectionAllowance.json",
   "title" : "ConnectionAllowance",
   "type" : ["object", "null"],
   "description" : "ConnectionAllowance: The connection allowance of an element. Used when evaluating takeoffs to account for additional mass due to connections of the element.",
@@ -11,7 +11,7 @@
     },
     "Material" : {
       "description" : "Optional material to be used for the connection. If null, the material of the element will be assumed. IMaterialFragment: Base interface for structural materials used by structural properties or as a fragment of the physical material.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/MaterialFragments/IMaterialFragment.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/Structure_oM/MaterialFragments/IMaterialFragment.json"
     },
     "Name" : {
       "type" : ["string", "null"],

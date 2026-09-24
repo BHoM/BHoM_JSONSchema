@@ -1,0 +1,106 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/SQLite_oM/Configs/SQLiteSettings.json",
+  "title" : "SQLiteSettings",
+  "type" : ["object", "null"],
+  "description" : "SQLiteSettings: Configuration settings for SQLite database connections and operations.",
+  "properties" : {
+    "DatabaseMode" : {
+      "description" : "The database mode determining how the SQLite database is created and accessed. DatabaseMode: Defines the different modes for SQLite database creation and connection.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/SQLite_oM/DatabaseMode.json"
+    },
+    "ConnectionTimeoutSeconds" : {
+      "type" : "integer",
+      "description" : "The connection timeout in seconds for database operations."
+    },
+    "OptimisationMode" : {
+      "description" : "Performance optimisation strategy for database operations. OptimisationMode: Defines performance optimisation strategies for SQLite database operations.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/SQLite_oM/OptimisationMode.json"
+    },
+    "EnableWalMode" : {
+      "type" : "boolean",
+      "description" : "Whether to enable Write-Ahead Logging (WAL) mode for improved concurrency."
+    },
+    "EnableForeignKeys" : {
+      "type" : "boolean",
+      "description" : "Whether to enable foreign key constraints enforcement."
+    },
+    "CacheSize" : {
+      "type" : "integer",
+      "description" : "Cache size in pages for the database. Negative values represent kilobytes."
+    },
+    "AutoCreateTables" : {
+      "type" : "boolean",
+      "description" : "Whether to create tables automatically when they do not exist during data operations."
+    },
+    "InitialiseSystemTables" : {
+      "type" : "boolean",
+      "description" : "Whether to automatically initialize system tables (__Types, __Schema) on database connection."
+    },
+    "NaNHandling" : {
+      "description" : "Defines how NaN (Not a Number) and Infinity values are handled during SQLite conversion operations. NaNHandling: Defines how NaN (Not a Number) and Infinity values are handled when converting to SQLite storage.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/SQLite_oM/NaNHandling.json"
+    },
+    "BatchSize" : {
+      "type" : "integer",
+      "description" : "Batch size for INSERT operations. Controls how many objects are processed in a single transaction batch. Higher values improve performance for large datasets."
+    },
+    "WrapNonBHoMObjects" : {
+      "type" : "boolean",
+      "description" : "If your Toolkit needs support for non-BHoM objects, set this to true."
+    },
+    "DefaultPushType" : {
+      "description" : "If your Toolkit does not support the Full Push (FullCRUD method), you can select another behaviour here (e.g. CreateOnly). PushType: Controls which type of export should be done by the Adapter `Push` action.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/Adapter_oM/PushType.json"
+    },
+    "CloneBeforePush" : {
+      "type" : "boolean",
+      "description" : "Deep clones the objects before Pushing them.As the objects get modified during the Push (e.g. their externalId is added to them),this avoids backpropagation in visual programming environments like Grasshopper."
+    },
+    "DefaultPullType" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/Adapter_oM/PullType.json"
+    },
+    "HandleDependencies" : {
+      "type" : "boolean",
+      "description" : "If your adapter does not define DependencyTypes, this can be set to false for performance."
+    },
+    "HandlePriorities" : {
+      "type" : "boolean"
+    },
+    "UseAdapterId" : {
+      "type" : "boolean"
+    },
+    "UseHashComparerAsDefault" : {
+      "type" : "boolean"
+    },
+    "ProcessInMemory" : {
+      "type" : "boolean"
+    },
+    "OnlyUpdateChangedObjects" : {
+      "type" : "boolean",
+      "description" : "If true, Objects found to be the same according to the AdapterComparer for the provided type are checked for full equality using the HashComparer of the type (which by default checks every property except BHoM_Guid). If equal according to the HashComparer, they are not updated.\nOtherwise, Objects found identical according to the AdapterComparer for the provided type are sent to the Update method."
+    },
+    "CacheCRUDobjects" : {
+      "type" : "boolean",
+      "description" : "If true, CRUD operations will attempt read/write cache objects to speed things during a same Action."
+    },
+    "CreateOnly_DistinctObjects" : {
+      "type" : "boolean",
+      "description" : "If true, CreateOnly method calls Distinct() on the first-level objects."
+    },
+    "CreateOnly_DistinctDependencies" : {
+      "type" : "boolean",
+      "description" : "If true, CreateOnly method calls Distinct() on the dependency objects."
+    },
+    "_t" : {
+      "type" : "string",
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.SQLite.Configs.SQLiteSettings"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["DatabaseMode", "ConnectionTimeoutSeconds", "OptimisationMode", "EnableWalMode", "EnableForeignKeys", "CacheSize", "AutoCreateTables", "InitialiseSystemTables", "NaNHandling", "BatchSize"]
+}

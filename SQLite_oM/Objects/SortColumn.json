@@ -1,0 +1,51 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/SQLite_oM/Objects/SortColumn.json",
+  "title" : "SortColumn",
+  "type" : ["object", "null"],
+  "description" : "SortColumn: Defines sorting criteria for a specific column in query results.",
+  "properties" : {
+    "ColumnName" : {
+      "type" : ["string", "null"],
+      "description" : "The name of the column to sort by."
+    },
+    "SortDirection" : {
+      "description" : "The sort direction. SortOrder: Defines SQLite sorting types.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/SQLite_oM/SortOrder.json"
+    },
+    "Priority" : {
+      "type" : "integer",
+      "description" : "Optional priority order when multiple sort columns are specified. Lower numbers have higher priority. Default is 0."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      },
+      "uniqueItems" : true
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : "string",
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.SQLite.Objects.SortColumn"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["ColumnName", "SortDirection", "Priority"]
+}

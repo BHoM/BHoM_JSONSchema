@@ -1,17 +1,17 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/GSA_oM/Elements/Joint.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/GSA_oM/Elements/Joint.json",
   "title" : "Joint",
   "type" : ["object", "null"],
   "description" : "Joint: A joint describing linked degrees of freedom between nodes. Relates the displacement or force at the constrained degree of freedom to the primary degree of freedom without considering eccentricities.",
   "properties" : {
     "PrimaryNode" : {
       "description" : "Defines the primary node of the joint. Node: 0D finite element for structural analysis. Node class contains positional information as well as orientation and support.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Node.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/Structure_oM/Elements/Node.json"
     },
     "ConstrainedNode" : {
       "description" : "Defines the constrained node of the joint. Node: 0D finite element for structural analysis. Node class contains positional information as well as orientation and support.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Elements/Node.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/Structure_oM/Elements/Node.json"
     },
     "X" : {
       "type" : "boolean",
@@ -52,7 +52,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

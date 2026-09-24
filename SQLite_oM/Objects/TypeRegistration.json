@@ -1,0 +1,59 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/SQLite_oM/Objects/TypeRegistration.json",
+  "title" : "TypeRegistration",
+  "type" : ["object", "null"],
+  "description" : "TypeRegistration: Represents a type registration mapping between .NET types and SQLite database tables.",
+  "properties" : {
+    "Id" : {
+      "type" : "integer",
+      "description" : "The unique identifier for this type registration."
+    },
+    "FullTypeName" : {
+      "type" : ["string", "null"],
+      "description" : "The full type name including namespace (e.g., 'BH.oM.Structure.Elements.Bar')."
+    },
+    "TableName" : {
+      "type" : ["string", "null"],
+      "description" : "The database table name associated with this type."
+    },
+    "DateCreated" : {
+      "type" : "object",
+      "properties" : {
+        "$date" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      },
+      "uniqueItems" : true
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : "string",
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.SQLite.Objects.TypeRegistration"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["Id", "FullTypeName", "TableName", "DateCreated"]
+}

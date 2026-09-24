@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/UI_oM/CodeElementRecord.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/UI_oM/CodeElementRecord.json",
   "title" : "CodeElementRecord",
   "type" : ["object", "null"],
   "properties" : {
@@ -16,7 +16,7 @@
       }
     },
     "Type" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/UI_oM/CodeElementType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/UI_oM/CodeElementType.json"
     },
     "DisplayText" : {
       "type" : ["string", "null"]

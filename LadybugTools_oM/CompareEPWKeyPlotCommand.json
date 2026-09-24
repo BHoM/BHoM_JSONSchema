@@ -1,22 +1,22 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/CompareEPWKeyPlotCommand.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/LadybugTools_oM/CompareEPWKeyPlotCommand.json",
   "title" : "CompareEPWKeyPlotCommand",
   "type" : ["object", "null"],
   "properties" : {
     "EPWFile" : {
       "description" : "The EPW file that acts as the base for comparisons. FileSettings: The fileSettings, file name and directory, to use with an adapter for push and pull",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/FileSettings.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/Adapter_oM/FileSettings.json"
     },
     "EPWKey" : {
       "description" : "Key (e.g. Dry Bulb Temperature) to compare. EPWKey: An enum for keys that frequently appear in epw files.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/EPWKey.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/LadybugTools_oM/EPWKey.json"
     },
     "EPWCompareFiles" : {
       "type" : ["array", "null"],
       "description" : "The list of EPW files to be compared with the base file (or each other).",
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/FileSettings.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/Adapter_oM/FileSettings.json"
       }
     },
     "PlotTimeseries" : {

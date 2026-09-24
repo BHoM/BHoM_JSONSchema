@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/SQL_oM/SqlClientAssemblyFixSettings.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/SQL_oM/SqlClientAssemblyFixSettings.json",
   "title" : "SqlClientAssemblyFixSettings",
   "type" : ["object", "null"],
   "description" : "SqlClientAssemblyFixSettings: Initialisation settings for the SQL Toolkit ensuring that the correct Microsoft.Data.SqlClient assembly is loaded before any SQL component is used in Rhino 8. This is a fix until McNeel ships a working version of that dll.",
@@ -21,7 +21,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

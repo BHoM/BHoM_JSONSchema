@@ -1,0 +1,65 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/SQLite_oM/Requests/EqualityFilterRequest.json",
+  "title" : "EqualityFilterRequest",
+  "type" : ["object", "null"],
+  "description" : "EqualityFilterRequest: Request for filtering database records based on exact column value matches with support for multiple values per column (IN clause).",
+  "properties" : {
+    "ColumnFilters" : {
+      "type" : ["array", "null"],
+      "description" : "List of column filter conditions. Each filter can specify multiple values for IN clause filtering.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/SQLite_oM/Objects/ColumnFilter.json"
+      }
+    },
+    "TableName" : {
+      "type" : ["string", "null"],
+      "description" : "Target table name for the filter operation. If not specified, will be derived from the request context."
+    },
+    "Logic" : {
+      "description" : "Logical operator to combine multiple column filters. Default is AND. LogicalOperator: Defines logical operators for combining multiple filter conditions in SQL queries.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/SQLite_oM/LogicalOperator.json"
+    },
+    "MaxResults" : {
+      "type" : "integer",
+      "description" : "Maximum number of results to return. If 0, returns all matching records."
+    },
+    "SortColumns" : {
+      "type" : ["array", "null"],
+      "description" : "List of columns to sort the results by. Applied in order of list sequence.",
+      "items" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/SQLite_oM/Objects/SortColumn.json"
+      }
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      },
+      "uniqueItems" : true
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : "string",
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.SQLite.Requests.EqualityFilterRequest"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["ColumnFilters", "TableName", "Logic", "MaxResults", "SortColumns"]
+}

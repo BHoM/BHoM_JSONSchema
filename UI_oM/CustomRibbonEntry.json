@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/UI_oM/CustomRibbonEntry.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/UI_oM/CustomRibbonEntry.json",
   "title" : "CustomRibbonEntry",
   "type" : ["object", "null"],
   "properties" : {

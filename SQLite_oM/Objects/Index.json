@@ -1,0 +1,77 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/SQLite_oM/Objects/Index.json",
+  "title" : "Index",
+  "type" : ["object", "null"],
+  "description" : "Index: Represents the definition of an index in a SQLite database including columns and properties.",
+  "properties" : {
+    "TableName" : {
+      "type" : ["string", "null"],
+      "description" : "The name of the table this index belongs to."
+    },
+    "Columns" : {
+      "type" : ["array", "null"],
+      "description" : "List of column names included in this index in order.",
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "IsUnique" : {
+      "type" : "boolean",
+      "description" : "Whether this is a unique index that enforces uniqueness."
+    },
+    "IsPartial" : {
+      "type" : "boolean",
+      "description" : "Whether this is a partial index with a WHERE clause."
+    },
+    "WhereClause" : {
+      "type" : ["string", "null"],
+      "description" : "The WHERE clause for partial indexes."
+    },
+    "CreateStatement" : {
+      "type" : ["string", "null"],
+      "description" : "The SQL CREATE INDEX statement that created this index."
+    },
+    "IsAutoIndex" : {
+      "type" : "boolean",
+      "description" : "Whether this index was created automatically by SQLite (e.g., for primary keys)."
+    },
+    "SortOrders" : {
+      "type" : ["array", "null"],
+      "description" : "Sort order for each column in the index (ASC/DESC). Must match Columns list length.",
+      "items" : {
+        "type" : ["string", "null"]
+      }
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      },
+      "uniqueItems" : true
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : "string",
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.SQLite.Objects.Index"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["TableName", "Columns", "IsUnique", "IsPartial", "WhereClause", "CreateStatement", "IsAutoIndex", "SortOrders"]
+}

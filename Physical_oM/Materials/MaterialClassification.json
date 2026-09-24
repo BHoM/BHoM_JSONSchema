@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Materials/MaterialClassification.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/Physical_oM/Materials/MaterialClassification.json",
   "title" : "MaterialClassification",
   "type" : ["object", "null"],
   "description" : "MaterialClassification: Represents a generic material by its category, type, grade, and constituent. This classification can be used to identify and group materials for various purposes, such as material selection, specification, and analysis.\nThe classification can be put on a phsyical Material as a IMaterialProeprties or on a MaterialFragment as a IFragment.",
@@ -29,7 +29,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

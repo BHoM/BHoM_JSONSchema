@@ -1,28 +1,28 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MidasCivil_oM/TimeHistorySettings.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/MidasCivil_oM/TimeHistorySettings.json",
   "title" : "TimeHistorySettings",
   "type" : ["object", "null"],
   "properties" : {
     "LinearType" : {
       "description" : "Indicates whether the time history analysis is performed linear or nonlinear.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MidasCivil_oM/LinearType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/MidasCivil_oM/LinearType.json"
     },
     "IntegrationMethod" : {
       "description" : "Indicates how Midas performs the time history calculation.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MidasCivil_oM/IntegrationMethod.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/MidasCivil_oM/IntegrationMethod.json"
     },
     "DampingMethod" : {
       "description" : "Specifies how the damping matrix is calculated in the analysis.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MidasCivil_oM/DampingMethod.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/MidasCivil_oM/DampingMethod.json"
     },
     "TimeHistoryType" : {
       "description" : "Describes the type of time‑dependent loading used in the analysis.",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MidasCivil_oM/TimeHistoryType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/MidasCivil_oM/TimeHistoryType.json"
     },
     "DynamicLoadType" : {
       "description" : "Defines how the starting state for the time history analysis is determined. \nIt can either begin from the model’s initial, unloaded state (InitialLoad) \nor continue from the final state of another load case (SequentialOrder).",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/MidasCivil_oM/DynamicLoadType.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/MidasCivil_oM/DynamicLoadType.json"
     },
     "BHoM_Guid" : {
       "type" : "string",
@@ -32,7 +32,7 @@
       "type" : ["string", "null"]
     },
     "Fragments" : {
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/BHoM/FragmentSet.json"
     },
     "Tags" : {
       "type" : ["array", "null"],

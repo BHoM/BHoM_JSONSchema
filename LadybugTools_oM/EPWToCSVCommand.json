@@ -1,12 +1,12 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/LadybugTools_oM/EPWToCSVCommand.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/LadybugTools_oM/EPWToCSVCommand.json",
   "title" : "EPWToCSVCommand",
   "type" : ["object", "null"],
   "properties" : {
     "EPWFile" : {
       "description" : "The epw file to convert to a csv file. FileSettings: The fileSettings, file name and directory, to use with an adapter for push and pull",
-      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Adapter_oM/FileSettings.json"
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/Adapter_oM/FileSettings.json"
     },
     "OutputDirectory" : {
       "type" : ["string", "null"],

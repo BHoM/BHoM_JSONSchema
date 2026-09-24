@@ -1,0 +1,63 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/SQLite_oM/Objects/FilterCommand.json",
+  "title" : "FilterCommand",
+  "type" : ["object", "null"],
+  "description" : "FilterCommand: Contains the result of processing a filter request into SQL components. \nIncludes the generated WHERE clause and associated parameters for safe query execution.",
+  "properties" : {
+    "WhereClause" : {
+      "type" : ["string", "null"],
+      "description" : "The SQL WHERE clause generated from the filter, without the 'WHERE' keyword."
+    },
+    "Parameters" : {
+      "type" : ["object", "null"],
+      "description" : "Dictionary of parameter names and values for safe parameterised query execution. \nKeys are parameter names (including @ prefix), values are the parameter values."
+    },
+    "FilterType" : {
+      "type" : ["string", "null"],
+      "description" : "The type of filter that generated this result (e.g., 'Equality', 'Range', 'Combined')."
+    },
+    "Limit" : {
+      "type" : "integer",
+      "description" : "Optional limit on the number of results to return. Zero means no limit."
+    },
+    "TableName" : {
+      "type" : ["string", "null"],
+      "description" : "Optional table name the filter is intended for. Can be used for validation."
+    },
+    "OrderByClause" : {
+      "type" : ["string", "null"],
+      "description" : "The SQL ORDER BY clause generated from sort specifications, without the 'ORDER BY' keyword."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      },
+      "uniqueItems" : true
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : "string",
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.SQLite.Objects.FilterCommand"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["WhereClause", "Parameters", "FilterType", "Limit", "TableName", "OrderByClause"]
+}

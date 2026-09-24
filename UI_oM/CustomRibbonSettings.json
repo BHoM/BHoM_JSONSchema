@@ -1,6 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/UI_oM/CustomRibbonSettings.json",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/UI_oM/CustomRibbonSettings.json",
   "title" : "CustomRibbonSettings",
   "type" : ["object", "null"],
   "properties" : {
@@ -10,7 +10,7 @@
     "Entries" : {
       "type" : ["array", "null"],
       "items" : {
-        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/UI_oM/CustomRibbonEntry.json"
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/UI_oM/CustomRibbonEntry.json"
       }
     },
     "_t" : {

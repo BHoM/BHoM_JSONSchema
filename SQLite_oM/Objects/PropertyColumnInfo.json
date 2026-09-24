@@ -1,0 +1,79 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/SQLite_oM/Objects/PropertyColumnInfo.json",
+  "title" : "PropertyColumnInfo",
+  "type" : ["object", "null"],
+  "description" : "PropertyColumnInfo: Information about a property-to-column mapping including metadata about the mapping source.",
+  "properties" : {
+    "ColumnName" : {
+      "type" : ["string", "null"],
+      "description" : "The database column name."
+    },
+    "PropertyPath" : {
+      "type" : ["string", "null"],
+      "description" : "The object property path (supporting dot notation)."
+    },
+    "PropertyType" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : "string",
+          "const" : "System.Type"
+        },
+        "Name" : {
+          "type" : ["string", "null"]
+        }
+      }
+    },
+    "IsFromMapping" : {
+      "type" : "boolean",
+      "description" : "Whether this mapping came from PushConfig PropertyMappings (true) or automatic detection (false)."
+    },
+    "IsFragmentMapping" : {
+      "type" : "boolean",
+      "description" : "True if this is a fragment mapping, false for regular property mapping."
+    },
+    "FragmentType" : {
+      "type" : ["object", "null"],
+      "properties" : {
+        "_t" : {
+          "type" : "string",
+          "const" : "System.Type"
+        },
+        "Name" : {
+          "type" : ["string", "null"]
+        }
+      }
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/v9.3/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      },
+      "uniqueItems" : true
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : "string",
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.SQLite.Objects.PropertyColumnInfo"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["ColumnName", "PropertyPath", "PropertyType", "IsFromMapping", "IsFragmentMapping", "FragmentType"]
+}
