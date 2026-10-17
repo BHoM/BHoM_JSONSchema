@@ -1,0 +1,51 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/FloorSystem/RCVoidedFlatSlab.json",
+  "title" : "RCVoidedFlatSlab",
+  "type" : ["object", "null"],
+  "description" : "RCVoidedFlatSlab: Floor configuration of a two-way spanning reinforced concrete flat slab containing voids in both directions, supported directly on columns.",
+  "properties" : {
+    "Slab" : {
+      "description" : "Surface property defining the construction and thickness of the slab. BiDirectionalVoided: Property for 2D analytical elements, made up of two slabs with parallel ribs running in two directions between them, all sharing the same material.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/BiDirectionalVoided.json"
+    },
+    "SlabReinforcement" : {
+      "description" : "Reinforcement of the slab, defined either as an estimated density or as an explicit layout. Can be null if no slab reinforcement is to be accounted for. ISlabReinforcement: Base interface for the reinforcement definition of the slab in a floor configuration, for example estimated as a density (EstimateSlabReinforcement) or explicitly laid out (LayoutSlabReinforcement).",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/FloorSystem/ISlabReinforcement.json"
+    },
+    "VoidMaterial" : {
+      "description" : "Material in the voided zone of the slab. If null, assumed to be no material in the voided zone (air). Material: Physical material to be used for Takeoffs and asigned to Physical elements. Material is capable of storing discipline specific data in Properties.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Materials/Material.json"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      },
+      "uniqueItems" : true
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : "string",
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.Structure.FloorSystem.RCVoidedFlatSlab"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["Slab", "SlabReinforcement", "VoidMaterial"]
+}

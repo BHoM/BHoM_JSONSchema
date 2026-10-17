@@ -1,0 +1,75 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/FloorSystem/TimberJoistFloor.json",
+  "title" : "TimberJoistFloor",
+  "type" : ["object", "null"],
+  "description" : "TimberJoistFloor: Floor configuration of timber primary and secondary beams with tertiary beams (joists) spanning between the secondary beams, supporting a timber slab of constant thickness.",
+  "properties" : {
+    "Slab" : {
+      "description" : "Surface property defining the construction and thickness of the slab. ConstantThickness: Simplest property for 2D analytical elements with a constant thickness and homogenous material across the whole element.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/ConstantThickness.json"
+    },
+    "PrimaryBeam" : {
+      "description" : "Section of the primary beams (girders) spanning between columns in the local X direction. TimberSection: Timber section to be used on Bars. Defined by a section profile.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SectionProperties/TimberSection.json"
+    },
+    "SecondaryBeam" : {
+      "description" : "Section of the secondary (infill) beams spanning between the primary beams in the local Y direction. TimberSection: Timber section to be used on Bars. Defined by a section profile.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SectionProperties/TimberSection.json"
+    },
+    "TertiaryBeam" : {
+      "description" : "Section of the tertiary beams spanning between the secondary beams in the local X direction. TimberSection: Timber section to be used on Bars. Defined by a section profile.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SectionProperties/TimberSection.json"
+    },
+    "PrimaryBeamTopLevel" : {
+      "type" : "number",
+      "description" : "Distance from top of slab to top of primary beam. Set to slab thickness for slab on top but set to zero for within depth of slab. Property has a quantity of type Length measured in [m]."
+    },
+    "SecondaryBeamTopLevel" : {
+      "type" : "number",
+      "description" : "Distance from top of slab to top of secondary beam. Set to slab thickness for slab on top but set to zero for within depth of slab. Property has a quantity of type Length measured in [m]."
+    },
+    "TertiaryBeamTopLevel" : {
+      "type" : "number",
+      "description" : "Distance from top of slab to top of tertiary beam. Set to slab thickness for slab on top but set to zero for within depth of slab. Property has a quantity of type Length measured in [m]."
+    },
+    "NumSecondary" : {
+      "type" : "integer",
+      "description" : "Number of secondary (infill) beams in a bay, counting the beam on one edge of the bay but not the one on the opposite edge. Set to zero for no secondary beams."
+    },
+    "NumTertiary" : {
+      "type" : "integer",
+      "description" : "Number of tertiary beams, evenly spaced across the bay in the local Y direction and spanning in the local X direction between the secondary beams."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      },
+      "uniqueItems" : true
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : "string",
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.Structure.FloorSystem.TimberJoistFloor"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["Slab", "PrimaryBeam", "SecondaryBeam", "TertiaryBeam", "PrimaryBeamTopLevel", "SecondaryBeamTopLevel", "TertiaryBeamTopLevel", "NumSecondary", "NumTertiary"]
+}

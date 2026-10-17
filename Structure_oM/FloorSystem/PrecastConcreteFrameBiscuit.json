@@ -1,0 +1,71 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/FloorSystem/PrecastConcreteFrameBiscuit.json",
+  "title" : "PrecastConcreteFrameBiscuit",
+  "type" : ["object", "null"],
+  "description" : "PrecastConcreteFrameBiscuit: Floor configuration of a topped biscuit slab supported on a precast concrete frame of primary and secondary beams.",
+  "properties" : {
+    "Slab" : {
+      "description" : "Surface property defining the construction and thickness of the slab. ToppedSlab: Property for 2D analytical elements, made up of a slab property with concrete topping.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/ToppedSlab.json"
+    },
+    "SlabReinforcement" : {
+      "description" : "Reinforcement of the slab, defined either as an estimated density or as an explicit layout. Can be null if no slab reinforcement is to be accounted for. ISlabReinforcement: Base interface for the reinforcement definition of the slab in a floor configuration, for example estimated as a density (EstimateSlabReinforcement) or explicitly laid out (LayoutSlabReinforcement).",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/FloorSystem/ISlabReinforcement.json"
+    },
+    "PrimaryBeam" : {
+      "description" : "Section of the primary beams spanning between columns in the local X direction. ConcreteSection: Concrete section to be used on Bars. Defined by a section profile. Note that all section constants are assuming an uncracked section and are disregarding reinforcement.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SectionProperties/ConcreteSection.json"
+    },
+    "SecondaryBeam" : {
+      "description" : "Section of the secondary beams spanning between the primary beams in the local Y direction. ConcreteSection: Concrete section to be used on Bars. Defined by a section profile. Note that all section constants are assuming an uncracked section and are disregarding reinforcement.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SectionProperties/ConcreteSection.json"
+    },
+    "BeamReinforcement" : {
+      "description" : "Reinforcement applied to the beams. Can be left null if more detailed reinforcement is applied to the ConcreteSections for Primary and Secondary beams. IBeamReinforcement: Base interface for the reinforcement definition of the beams in a floor configuration, for example EstimateBeamReinforcement.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/FloorSystem/IBeamReinforcement.json"
+    },
+    "NumSecondary" : {
+      "type" : "integer",
+      "description" : "Number of secondary (infill) beams in a bay, counting the beam on one edge of the bay but not the one on the opposite edge. Set to zero for no secondary beams."
+    },
+    "PrimaryBeamTopLevel" : {
+      "type" : "number",
+      "description" : "Distance from top of slab to top of primary beam. Set to slab thickness for slab on top but set to zero for within depth of slab. Property has a quantity of type Length measured in [m]."
+    },
+    "SecondaryBeamTopLevel" : {
+      "type" : "number",
+      "description" : "Distance from top of slab to top of secondary beam. Set to slab thickness for slab on top but set to zero for within depth of slab. Property has a quantity of type Length measured in [m]."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      },
+      "uniqueItems" : true
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : "string",
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.Structure.FloorSystem.PrecastConcreteFrameBiscuit"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["Slab", "SlabReinforcement", "PrimaryBeam", "SecondaryBeam", "BeamReinforcement", "NumSecondary", "PrimaryBeamTopLevel", "SecondaryBeamTopLevel"]
+}

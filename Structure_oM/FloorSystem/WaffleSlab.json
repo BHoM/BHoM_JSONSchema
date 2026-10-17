@@ -1,0 +1,51 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/FloorSystem/WaffleSlab.json",
+  "title" : "WaffleSlab",
+  "type" : ["object", "null"],
+  "description" : "WaffleSlab: Floor configuration of a two-way spanning reinforced concrete waffle slab supported directly on columns, optionally with dropheads over the columns.",
+  "properties" : {
+    "Slab" : {
+      "description" : "Surface property defining the construction and thickness of the slab. Waffle: Property for 2D analytical elements, made up of a slab on top of parallel ribs running in two directions, all sharing the same material.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/Waffle.json"
+    },
+    "SlabReinforcement" : {
+      "description" : "Reinforcement of the slab, defined either as an estimated density or as an explicit layout. Can be null if no slab reinforcement is to be accounted for. ISlabReinforcement: Base interface for the reinforcement definition of the slab in a floor configuration, for example estimated as a density (EstimateSlabReinforcement) or explicitly laid out (LayoutSlabReinforcement).",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/FloorSystem/ISlabReinforcement.json"
+    },
+    "Drophead" : {
+      "description" : "Drophead in the slabs over columns. For a slab without dropheads this will be null. Drophead: Drophead on a flat slab, i.e. a local thickening of the slab over a column. Thickness is additional to the thickness of the main slab. The material of the drophead is taken from the main slab property.\nAlso applicable to be used with waffle slabs for a solid zone over dropheads.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/FloorSystem/Drophead.json"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      },
+      "uniqueItems" : true
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : "string",
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.Structure.FloorSystem.WaffleSlab"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["Slab", "SlabReinforcement", "Drophead"]
+}

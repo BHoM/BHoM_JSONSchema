@@ -1,0 +1,63 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/FloorSystem/TimberInfillBeams.json",
+  "title" : "TimberInfillBeams",
+  "type" : ["object", "null"],
+  "description" : "TimberInfillBeams: Floor configuration of timber primary beams (girders) and timber secondary (infill) beams supporting a timber slab.",
+  "properties" : {
+    "Slab" : {
+      "description" : "Surface property defining the construction and thickness of the slab. ISurfaceProperty: Base interface for properties for 2D finite element structural objects such as Panels and FEMeshes.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SurfaceProperties/ISurfaceProperty.json"
+    },
+    "PrimaryBeam" : {
+      "description" : "Section of the primary beams (girders) spanning between columns in the local X direction. TimberSection: Timber section to be used on Bars. Defined by a section profile.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SectionProperties/TimberSection.json"
+    },
+    "SecondaryBeam" : {
+      "description" : "Section of the secondary (infill) beams spanning between the primary beams in the local Y direction. TimberSection: Timber section to be used on Bars. Defined by a section profile.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SectionProperties/TimberSection.json"
+    },
+    "PrimaryBeamTopLevel" : {
+      "type" : "number",
+      "description" : "Distance from top of slab to top of primary beam. Set to slab thickness for slab on top but set to zero for within depth of slab. Property has a quantity of type Length measured in [m]."
+    },
+    "SecondaryBeamTopLevel" : {
+      "type" : "number",
+      "description" : "Distance from top of slab to top of secondary beam. Set to slab thickness for slab on top but set to zero for within depth of slab. Property has a quantity of type Length measured in [m]."
+    },
+    "NumSecondary" : {
+      "type" : "integer",
+      "description" : "Number of secondary (infill) beams in a bay, counting the beam on one edge of the bay but not the one on the opposite edge. Set to zero for no secondary beams."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      },
+      "uniqueItems" : true
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : "string",
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.Structure.FloorSystem.TimberInfillBeams"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["Slab", "PrimaryBeam", "SecondaryBeam", "PrimaryBeamTopLevel", "SecondaryBeamTopLevel", "NumSecondary"]
+}
