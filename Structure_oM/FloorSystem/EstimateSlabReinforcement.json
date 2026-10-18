@@ -1,0 +1,47 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/FloorSystem/EstimateSlabReinforcement.json",
+  "title" : "EstimateSlabReinforcement",
+  "type" : ["object", "null"],
+  "description" : "EstimateSlabReinforcement: Slab reinforcement for a floor configuration where the reinforcement has been defined as an estimated density.",
+  "properties" : {
+    "SlabReinforcement" : {
+      "description" : "Amount of reinforcement in the main slab. ReinforcementDensity: The reinforcement density of an element and its material.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Fragments/ReinforcementDensity.json"
+    },
+    "PrestressTendonDensity" : {
+      "description" : "Amount of Prestress tendon in the slab. Will be null if the slab does not contain any prestress tendons. ReinforcementDensity: The reinforcement density of an element and its material.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/Fragments/ReinforcementDensity.json"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      },
+      "uniqueItems" : true
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : "string",
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.Structure.FloorSystem.EstimateSlabReinforcement"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["SlabReinforcement", "PrestressTendonDensity"]
+}

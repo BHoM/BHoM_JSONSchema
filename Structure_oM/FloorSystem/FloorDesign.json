@@ -1,0 +1,88 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/FloorSystem/FloorDesign.json",
+  "title" : "FloorDesign",
+  "type" : ["object", "null"],
+  "description" : "FloorDesign: Design of a floor bay, combining a floor configuration and its column configurations with the spans, loading and performance data (depth, mass, fire rating, edge condition and design code) the design was developed for.",
+  "properties" : {
+    "Name" : {
+      "type" : ["string", "null"],
+      "description" : "Name of the floor design."
+    },
+    "FloorConfiguration" : {
+      "description" : "Configuration of the floor structure, i.e. the slab and framing, that the design is based on. IFloorConfiguration: Base interface for a floor structure configuration, describing the structural makeup of a floor bay such as RCFlatSlab or TimberInfillBeams. Specific configurations combine this with the interfaces describing the slab and framing they contain.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/FloorSystem/IFloorConfiguration.json"
+    },
+    "ColumnConfiguration" : {
+      "description" : "Column data for the columns supporting the floor, giving the column required for different numbers of supported stories. ColumnData: Collection of column configurations that together define the columns required to support a floor design. Each configuration gives the column required for a particular number of supported stories.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/FloorSystem/ColumnData.json"
+    },
+    "SpanX" : {
+      "type" : "number",
+      "description" : "Length of the primary beam or local X dimension. Property has a quantity of type Length measured in [m]."
+    },
+    "SpanY" : {
+      "type" : "number",
+      "description" : "Length of the secondary beam or local Y dimension. Property has a quantity of type Length measured in [m]."
+    },
+    "LoadSDL" : {
+      "type" : "number",
+      "description" : "Uniformly applied super-imposed dead load on the floor area. Property has a quantity of type Pressure measured in [Pa]."
+    },
+    "LoadLL" : {
+      "type" : "number",
+      "description" : "Uniformly applied live load on the floor area. Property has a quantity of type Pressure measured in [Pa]."
+    },
+    "Depth" : {
+      "type" : "number",
+      "description" : "Total floor depth from top of slab to bottom of deepest beam. Property has a quantity of type Length measured in [m]."
+    },
+    "Mass" : {
+      "type" : "number",
+      "description" : "Mass of the floor bay per area. Property has a quantity of type MassPerUnitArea measured in [kg/m²]."
+    },
+    "FireRating" : {
+      "type" : "number",
+      "description" : "Structural fire rating requirement. Property has a quantity of type Time measured in [s]."
+    },
+    "EdgeCondition" : {
+      "description" : "Position of the floor bay within the floor plate that the design applies to. Defaults to Interior. EdgeCondition: Position of a floor bay within the floor plate, which affects the design of the bay.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/FloorSystem/EdgeCondition.json"
+    },
+    "DesignCode" : {
+      "type" : ["string", "null"],
+      "description" : "Structural engineering code to which the floor bay has been designed."
+    },
+    "DesignNotes" : {
+      "type" : ["string", "null"],
+      "description" : "Design assumptions and additional information about the design."
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      },
+      "uniqueItems" : true
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : "string",
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.Structure.FloorSystem.FloorDesign"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["Name", "FloorConfiguration", "ColumnConfiguration", "SpanX", "SpanY", "LoadSDL", "LoadLL", "Depth", "Mass", "FireRating", "EdgeCondition", "DesignCode", "DesignNotes"]
+}

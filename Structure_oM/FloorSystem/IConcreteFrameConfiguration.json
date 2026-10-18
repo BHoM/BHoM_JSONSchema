@@ -1,0 +1,76 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/FloorSystem/IConcreteFrameConfiguration.json",
+  "required" : ["_t"],
+  "properties" : {
+    "_t" : {
+      "enum" : ["BH.oM.Structure.FloorSystem.FloorConfigurations.HybridTimberOnConcrete", "BH.oM.Structure.FloorSystem.InSituConcreteFrame", "BH.oM.Structure.FloorSystem.PrecastConcreteFrameBiscuit", "BH.oM.Structure.FloorSystem.PrecastConcreteFrameHollow", "BH.oM.Structure.FloorSystem.PrecastConcreteFrameRibbed"]
+    }
+  },
+  "allOf" : [{
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Structure.FloorSystem.FloorConfigurations.HybridTimberOnConcrete"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/FloorSystem/FloorConfigurations/HybridTimberOnConcrete.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Structure.FloorSystem.InSituConcreteFrame"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/FloorSystem/InSituConcreteFrame.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Structure.FloorSystem.PrecastConcreteFrameBiscuit"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/FloorSystem/PrecastConcreteFrameBiscuit.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Structure.FloorSystem.PrecastConcreteFrameHollow"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/FloorSystem/PrecastConcreteFrameHollow.json"
+      }
+    }, {
+      "if" : {
+        "properties" : {
+          "_t" : {
+            "type" : "string",
+            "const" : "BH.oM.Structure.FloorSystem.PrecastConcreteFrameRibbed"
+          }
+        },
+        "required" : ["_t"]
+      },
+      "then" : {
+        "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/FloorSystem/PrecastConcreteFrameRibbed.json"
+      }
+    }]
+}

@@ -1,0 +1,59 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/FloorSystem/SteelColumnConfiguration.json",
+  "title" : "SteelColumnConfiguration",
+  "type" : ["object", "null"],
+  "description" : "SteelColumnConfiguration: Steel column required to support a given number of stories at a given floor height, including the intumescent paint applied for fire protection.",
+  "properties" : {
+    "ColumnSection" : {
+      "description" : "Section of the column required for this configuration. SteelSection: Steel section to be used on Bars. Defined by a section profile.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/SectionProperties/SteelSection.json"
+    },
+    "FloorHeight" : {
+      "type" : "number",
+      "description" : "Floor-to-floor height that the column configuration is designed for. Property has a quantity of type Length measured in [m]."
+    },
+    "NumberOfStories" : {
+      "type" : "integer",
+      "description" : "Number of stories supported by the column in this configuration."
+    },
+    "IntumescentPaintThickness" : {
+      "type" : "number",
+      "description" : "Thickness of intumescent paint covering exposed steelwork. Allowance used for when computing takeoffs of the configuration. Property has a quantity of type Length measured in [m]."
+    },
+    "IntumescentPaintMaterial" : {
+      "description" : "Material of the intumescent paint. Used when computing material takeoffs of the configuration. Material: Physical material to be used for Takeoffs and asigned to Physical elements. Material is capable of storing discipline specific data in Properties.",
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Physical_oM/Materials/Material.json"
+    },
+    "BHoM_Guid" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "Name" : {
+      "type" : ["string", "null"]
+    },
+    "Fragments" : {
+      "$ref" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/BHoM/FragmentSet.json"
+    },
+    "Tags" : {
+      "type" : ["array", "null"],
+      "items" : {
+        "type" : ["string", "null"]
+      },
+      "uniqueItems" : true
+    },
+    "CustomData" : {
+      "type" : ["object", "null"]
+    },
+    "_t" : {
+      "type" : "string",
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.Structure.FloorSystem.SteelColumnConfiguration"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["ColumnSection", "FloorHeight", "NumberOfStories", "IntumescentPaintThickness", "IntumescentPaintMaterial"]
+}

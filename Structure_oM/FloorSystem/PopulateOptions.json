@@ -1,0 +1,55 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Structure_oM/FloorSystem/PopulateOptions.json",
+  "title" : "PopulateOptions",
+  "type" : ["object", "null"],
+  "description" : "PopulateOptions: Options controlling how a floor design is populated as structural elements in space.",
+  "properties" : {
+    "AtCenterLine" : {
+      "type" : "boolean",
+      "description" : "Output all objects in one plane, best for FE. Defaults to false; objects will be output at their physical elevations."
+    },
+    "IncludeSGirder" : {
+      "type" : "boolean",
+      "description" : "Include south primary girder; true by default."
+    },
+    "IncludeWGirder" : {
+      "type" : "boolean",
+      "description" : "Include west secondary girder; true by default."
+    },
+    "IncludeNGirder" : {
+      "type" : "boolean",
+      "description" : "Include north primary girder; false by default."
+    },
+    "IncludeEGirder" : {
+      "type" : "boolean",
+      "description" : "Include east secondary girder; false by default."
+    },
+    "OffsetBarsFromConnectingElements" : {
+      "type" : "boolean",
+      "description" : "If true, bar centrelines are offset based on the element they are connecting to. For Primary beams, and secondary end beams, this relates to the column size. For other secondary beams, relates to thickness of Primary beams, and tertiary beams cutoff by secondary beams."
+    },
+    "IncludeColumns" : {
+      "type" : "boolean",
+      "description" : "Include Columns; false by default."
+    },
+    "NumberOfStories" : {
+      "type" : "integer",
+      "description" : "The number of stories that the column data should be evaluated for. If a negative value is provided, the median configuration will be assumed ordered by number of stories."
+    },
+    "FloorHeight" : {
+      "type" : "number",
+      "description" : "The height of a populated column. By default, the value on the picked column configuration will be used. Property has a quantity of type Length measured in [m]."
+    },
+    "_t" : {
+      "type" : "string",
+      "description" : "Optional type disciminator.",
+      "const" : "BH.oM.Structure.FloorSystem.PopulateOptions"
+    },
+    "_bhomVersion" : {
+      "type" : ["string", "null"],
+      "description" : "Optional version of BHoM used as part of automatic versioning and schema upgrades."
+    }
+  },
+  "required" : ["AtCenterLine", "IncludeSGirder", "IncludeWGirder", "IncludeNGirder", "IncludeEGirder", "OffsetBarsFromConnectingElements", "IncludeColumns", "NumberOfStories", "FloorHeight"]
+}
