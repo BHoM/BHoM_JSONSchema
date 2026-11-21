@@ -1,0 +1,33 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Classification_oM/Structure/FoundationType.json",
+  "anyOf" : [{
+      "type" : "string",
+      "enum" : ["Undefined", "Concrete_MassPads", "Concrete_ReinforcedPads", "Concrete_MassAndReinforcedPads", "Concrete_PilesAndCaps", "Concrete_PiledRaft", "Concrete_RaftMatSlab", "Steel_DrivenPiles", "Stone_Blocks", "Stone_VibroColumns", "Timber_DrivenPiles", "None", "Other"]
+    }, {
+      "type" : "object",
+      "properties" : {
+        "_t" : {
+          "type" : "string",
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : "string",
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.Classification.Structure.FoundationType"
+            }
+          }
+        },
+        "Value" : {
+          "type" : "string",
+          "enum" : ["Undefined", "Concrete_MassPads", "Concrete_ReinforcedPads", "Concrete_MassAndReinforcedPads", "Concrete_PilesAndCaps", "Concrete_PiledRaft", "Concrete_RaftMatSlab", "Steel_DrivenPiles", "Stone_Blocks", "Stone_VibroColumns", "Timber_DrivenPiles", "None", "Other"]
+        }
+      }
+    }]
+}

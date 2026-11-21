@@ -1,0 +1,33 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Classification_oM/Structure/VerticalStructure.json",
+  "anyOf" : [{
+      "type" : "string",
+      "enum" : ["Undefined", "Steel_HotRolledSteel", "Steel_LightGaugeSteel", "Concrete_InSitu", "Concrete_PostTension", "Concrete_Precast", "Timber_SoftwoodHardwood", "Timber_EngineeredTimber", "Masonry_Brickwork", "Masonry_ConcreteBlockwork", "Hybrid", "None", "Other"]
+    }, {
+      "type" : "object",
+      "properties" : {
+        "_t" : {
+          "type" : "string",
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : "string",
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.Classification.Structure.VerticalStructure"
+            }
+          }
+        },
+        "Value" : {
+          "type" : "string",
+          "enum" : ["Undefined", "Steel_HotRolledSteel", "Steel_LightGaugeSteel", "Concrete_InSitu", "Concrete_PostTension", "Concrete_Precast", "Timber_SoftwoodHardwood", "Timber_EngineeredTimber", "Masonry_Brickwork", "Masonry_ConcreteBlockwork", "Hybrid", "None", "Other"]
+        }
+      }
+    }]
+}
