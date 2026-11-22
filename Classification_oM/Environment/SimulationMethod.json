@@ -1,0 +1,33 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id" : "https://raw.githubusercontent.com/BHoM/BHoM_JSONSchema/develop/Classification_oM/Environment/SimulationMethod.json",
+  "anyOf" : [{
+      "type" : "string",
+      "enum" : ["Undefined", "ASHRAE90_1Default", "ASHRAE90_1Tailored", "DesignForPerformance", "PartL1A", "PartL1B", "PartL2A", "PartL2B", "Section6", "TM54HVAC", "TM54Simple", "Other"]
+    }, {
+      "type" : "object",
+      "properties" : {
+        "_t" : {
+          "type" : "string",
+          "const" : "System.Enum"
+        },
+        "TypeName" : {
+          "type" : ["object", "null"],
+          "properties" : {
+            "_t" : {
+              "type" : "string",
+              "const" : "System.Type"
+            },
+            "Name" : {
+              "type" : ["string", "null"],
+              "const" : "BH.oM.Classification.Environment.SimulationMethod"
+            }
+          }
+        },
+        "Value" : {
+          "type" : "string",
+          "enum" : ["Undefined", "ASHRAE90_1Default", "ASHRAE90_1Tailored", "DesignForPerformance", "PartL1A", "PartL1B", "PartL2A", "PartL2B", "Section6", "TM54HVAC", "TM54Simple", "Other"]
+        }
+      }
+    }]
+}
